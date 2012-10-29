@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include cms_admin_style *
+recursive-exclude * *.pyc

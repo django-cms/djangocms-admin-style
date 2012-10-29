@@ -1,0 +1,90 @@
+form {
+	button, input, select, textarea { margin: 2px 0; }
+	small { color: $font-color-light; }
+	hr { margin: 5px 0; }
+	fieldset { vertical-align: middle; line-height: 2em; }
+	label {
+		min-width: 160px; color: $font-color-light;	display: inline-block;
+		&.required { font-weight: bold; }
+	}
+	// input
+	input, textarea { @include pie; @include border-radius(); border: 1px solid $button-silver-dark-color;
+		color: $button-silver-font-color; padding: 6px 5px; outline: none; width: 250px; }
+	input[type="checkbox"], input[type="radio"] { border: 0; display: inline; width: auto; margin-right: 6px; }
+	input[type="file"] { @include pie; @include border-radius(); border: 1px solid $button-silver-dark-color;
+		color: $button-silver-font-color; padding: 6px 5px; outline: none; width: 250px; }
+	select { font-weight: normal; }
+	small { margin-left: 15px; }
+	.form-controls {
+		text-align: right; margin: 15px 0 0 0;
+		p { margin-top: 6px; }
+	}
+	.input-list { display: inline-block; vertical-align: top; line-height: 20px; }
+	.extra {
+		.right { float: right; margin-right: 10px; }
+	}
+	.aligned p.help { padding-left: 100px; }
+	.aligned.wide p.help { padding-left: 55px; }
+}
+
+.form-row { border-bottom-color: $line-color-ultralight; padding: 12px; font-size: 13px; }
+
+input:valid, textarea:valid {}
+input:invalid, textarea:invalid {
+	@include pie;
+	@include border-radius();
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+// buttons
+button { @include button-common(); }
+input[type="submit"], input[type="button"] {
+	@include button-common(); padding: 8px 10px !important;
+	&.default { @include button-blue(); padding: 7px 10px !important; margin-top: 1px; }
+}
+a.button {
+	text-decoration: none; cursor: pointer; @include button-common();
+	&.tab { @include border-radius(0); }
+}
+
+// date time
+.form-row {
+	p.datetime { line-height: 30px !important; padding-left: 90px !important; }
+}
+
+// calendar
+div.calendar {
+	table {
+		caption { @include background-image(linear-gradient($background-color-dark, $background-color-medium));
+			background-color: $background-color-dark; color: $font-color-white !important;
+			@include border-top-radius(); }
+		td { padding: 0; }
+		td a { padding: 6px 4px; }
+	}
+}
+div.calendarbox {
+	width: 200px !important;
+	table th, table td { line-height: 12px; }
+	.calendarnav-previous, .calendarnav-next {
+		background: none; color: white; text-decoration: none; padding: 4px 7px 7px;
+		&:hover, &:focus { background: #666; }
+	}
+}
+div.calendarbox, div.clockbox {
+	@include border-radius();
+	padding: 0; margin: 0; @include box-shadow(0 1px 10px rgba(0,0,0,0.3)); border: 1px solid #ccc;
+	.calendar-cancel { @include border-bottom-radius(); background: none; margin-top: 5px !important }
+}
+// clock
+div.clockbox {
+	@include border-top-radius();
+	h2 { @include background-image(linear-gradient($background-color-dark, $background-color-medium));
+		background-color: $background-color-dark; color: $font-color-white !important;
+		@include border-top-radius(); }
+}
+.timelist a {
+	&, &:active, &:focus, &:hover { background: none !important; }
+}
+
+span.datetimeshortcuts a { color: $link-color; }

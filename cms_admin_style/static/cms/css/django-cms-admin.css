@@ -1,0 +1,375 @@
+/* Dimensions */
+/* inactive */
+/* Silver */
+/* Blue */
+/* Orange */
+/* Red */
+/* Green */
+/* Black */
+/* Paddings */
+/* Template Editor */
+@font-face { font-family: 'django-admin-icons'; src: url("../fonts/django-admin-icons.eot"); src: url("../fonts/django-admin-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/django-admin-icons.svg#django-admin-icons") format("svg"), url("../fonts/django-admin-icons.woff") format("woff"), url("../fonts/django-admin-icons.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+body { font-size: 13px; font-family: sans-serif; line-height: 1.231; *font-size: small; }
+
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+ul, ol { margin-left: 2em; }
+
+ol { list-style-type: decimal; }
+
+td { vertical-align: top; }
+
+sub { font-size: 75%; line-height: 0; position: relative; bottom: -0.25em; }
+
+sup { font-size: 75%; line-height: 0; position: relative; top: -0.5em; }
+
+a:hover, a:active { outline: none; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
+button, input, select, textarea { width: auto; overflow: visible; margin: 0; font-size: 100%; font-family: sans-serif; vertical-align: baseline; }
+
+textarea { overflow: auto; vertical-align: text-top; }
+
+input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
+
+::-moz-selection { background: none; color: none; text-shadow: none; }
+
+::selection { background: none; color: none; text-shadow: none; }
+
+a:link { -webkit-tap-highlight-color: none; }
+
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+
+nav ul, nav li { margin: 0; list-style: none; list-style-image: none; }
+
+.ir { text-indent: -119988px; overflow: hidden; text-align: left; direction: ltr; background-repeat: no-repeat; }
+
+.hidden { display: none; visibility: hidden; }
+
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+.clearfix { zoom: 1; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+
+html, body { height: 100%; }
+
+html { overflow: auto !important; }
+
+body { background: url("../images/bg-pattern-light.jpg") #fcfcfc repeat !important; }
+
+body, select, input, textarea { color: #444444; }
+
+h1 { font-size: 150%; color: #666666; font-weight: bold; margin: 20px 10px 10px; }
+
+h2 { font-size: 130%; color: #666666; font-weight: bold; line-height: 1.75em; }
+
+h3 { font-size: 120%; color: #444444; font-weight: bold; }
+
+h4 { font-size: 110%; color: #666666; font-weight: bold; }
+
+h5 { font-size: 100%; color: #444444; }
+
+h6 { font-size: 100%; color: #666666; }
+
+a, a:link { color: #029eee; text-decoration: none; }
+a:visited, a:link:visited { color: #029eee; }
+a:hover, a:link:hover { color: #2070b3; text-decoration: underline; }
+a:active, a:link:active { color: #2070b3; }
+
+p { font-weight: normal; margin-bottom: 6px; }
+
+code { font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace; background: inherit; color: #666; font-size: 11px; }
+code strong { color: #930; }
+
+pre { font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace; background: inherit; color: #666; font-size: 11px; }
+pre.literal-block { background: #eee; }
+
+div hr { background: #dddddd; margin: 20px 0; border: none; }
+
+strong { font-weight: bold; }
+
+.small, small { font-size: 85%; margin-top: 0; }
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+::selection, ::-moz-selection { background: #AFD7FF; color: #444; text-shadow: none; }
+
+/* Use the following CSS code if you want to have a class per icon */
+.addlink, .changelink, #changelist-search label, .deletelink, a.selector-clearall, a.active.selector-clearall, a.selector-chooseall, a.active.selector-chooseall, .selector-remove, .selector-add, .inline-group div.add-row a, a[id^="calendarlink"], a[id^="clocklink"] { background: none !important; padding-left: 10px; line-height: 10px; }
+.addlink:hover, .changelink:hover, #changelist-search label:hover, .deletelink:hover, a.selector-clearall:hover, a.active.selector-clearall:hover, a.selector-chooseall:hover, a.active.selector-chooseall:hover, .selector-remove:hover, .selector-add:hover, .inline-group div.add-row a:hover, a[id^="calendarlink"]:hover, a[id^="clocklink"]:hover { text-decoration: none !important; }
+
+.addlink:before, .changelink:before, #changelist-search label:before, .deletelink:before, a.selector-clearall:before, a.active.selector-clearall:before, a.selector-chooseall:before, a.active.selector-chooseall:before, .selector-remove:before, .selector-add:before, .inline-group div.add-row a:before, .add-another:before, a[id^="calendarlink"]:before, a[id^="clocklink"]:before { font-family: 'django-admin-icons'; font-style: normal; speak: none; font-weight: normal; font-size: 75%; -webkit-font-smoothing: antialiased; padding-right: 5px; }
+
+.addlink:before { content: "\22"; }
+
+.changelink:before { content: "\21"; }
+
+#changelist-search label:before { content: "\23"; }
+
+.deletelink:before { content: "\24"; }
+
+.selector-remove:before, a.selector-clearall:before, a.active.selector-clearall:before { content: "\25"; font-size: 100%; }
+
+.selector-add:before, a.selector-chooseall:before, a.active.selector-chooseall:before { content: "\26"; font-size: 100%; }
+
+.inline-group div.add-row a:before { content: "\22"; }
+
+.add-another:before { content: "\22"; }
+
+a[id^="calendarlink"]:before { content: "\2c"; }
+
+a[id^="clocklink"]:before { content: "\2d"; }
+
+.actionlist .addlink, .actionlist .changelink { padding-left: 0; }
+
+#changelist-search label { font-weight: bold; }
+
+#changelist-search label img { display: none; }
+
+.help-tooltip { display: none; }
+
+.selector-remove, .selector-add { display: inline !important; font-size: 125% !important; padding-left: 1px; color: white !important; }
+
+.selector-remove:before, .selector-add:before { color: #444444; }
+
+.inline-group div.add-row a { color: #9ab933 !important; padding-left: 5px !important; }
+
+.add-another { margin-left: 10px; }
+.add-another:hover, .add-another:link:hover { text-decoration: none; }
+
+.add-another img { display: none; }
+
+a[id^="calendarlink"], a[id^="clocklink"] { display: inline-block; font-size: 19px; height: 19px; width: 19px; padding-left: 0 !important; }
+
+a[id^="calendarlink"] img, a[id^="clocklink"] img { display: none; }
+
+/* Sepcials */
+.selector ul.selector-chooser { -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; -khtml-border-radius: 10px; border-radius: 10px; background: #f1f1f1 !important; height: 44px !important; }
+
+form button, form input, form select, form textarea { margin: 2px 0; }
+form small { color: #888888; }
+form hr { margin: 5px 0; }
+form fieldset { vertical-align: middle; line-height: 2em; }
+form label { min-width: 160px; color: #888888; display: inline-block; }
+form label.required { font-weight: bold; }
+form input, form textarea { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; border: 1px solid #cccccc; color: #555555; padding: 6px 5px; outline: none; width: 250px; }
+form input[type="checkbox"], form input[type="radio"] { border: 0; display: inline; width: auto; margin-right: 6px; }
+form input[type="file"] { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; border: 1px solid #cccccc; color: #555555; padding: 6px 5px; outline: none; width: 250px; }
+form select { font-weight: normal; }
+form small { margin-left: 15px; }
+form .form-controls { text-align: right; margin: 15px 0 0 0; }
+form .form-controls p { margin-top: 6px; }
+form .input-list { display: inline-block; vertical-align: top; line-height: 20px; }
+form .extra .right { float: right; margin-right: 10px; }
+form .aligned p.help { padding-left: 100px; }
+form .aligned.wide p.help { padding-left: 55px; }
+
+.form-row { border-bottom-color: #f3f3f3; padding: 12px; font-size: 13px; }
+
+input:invalid, textarea:invalid { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; }
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+button { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef)) !important; background-image: -webkit-linear-gradient(#ffffff, #efefef) !important; background-image: -moz-linear-gradient(#ffffff, #efefef) !important; background-image: -o-linear-gradient(#ffffff, #efefef) !important; background-image: linear-gradient(#ffffff, #efefef) !important; -moz-box-shadow: #efefef 0 0 2px inset !important; -webkit-box-shadow: #efefef 0 0 2px inset !important; -o-box-shadow: #efefef 0 0 2px inset !important; box-shadow: #efefef 0 0 2px inset !important; background-color: #efefef !important; border: 1px solid #efefef !important; border-bottom: 1px solid #cccccc !important; color: #555555 !important; font-weight: bolder !important; font-size: 12px !important; line-height: 15px !important; overflow: visible; padding: 5px 10px 5px !important; text-decoration: none !important; width: auto; }
+button.small { padding: 3px 8px 4px !important; }
+button:hover, button:active, button.select, button:visited { background: white; color: #555555; text-decoration: none; }
+button.animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+
+input[type="submit"], input[type="button"] { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef)) !important; background-image: -webkit-linear-gradient(#ffffff, #efefef) !important; background-image: -moz-linear-gradient(#ffffff, #efefef) !important; background-image: -o-linear-gradient(#ffffff, #efefef) !important; background-image: linear-gradient(#ffffff, #efefef) !important; -moz-box-shadow: #efefef 0 0 2px inset !important; -webkit-box-shadow: #efefef 0 0 2px inset !important; -o-box-shadow: #efefef 0 0 2px inset !important; box-shadow: #efefef 0 0 2px inset !important; background-color: #efefef !important; border: 1px solid #efefef !important; border-bottom: 1px solid #cccccc !important; color: #555555 !important; font-weight: bolder !important; font-size: 12px !important; line-height: 15px !important; overflow: visible; padding: 5px 10px 5px !important; text-decoration: none !important; width: auto; padding: 8px 10px !important; }
+input[type="submit"].small, input[type="button"].small { padding: 3px 8px 4px !important; }
+input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"].select, input[type="submit"]:visited, input[type="button"]:hover, input[type="button"]:active, input[type="button"].select, input[type="button"]:visited { background: white; color: #555555; text-decoration: none; }
+input[type="submit"].animate, input[type="button"].animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+input[type="submit"].default, input[type="button"].default { -moz-box-shadow: #5bbdee 0 0 2px inset !important; -webkit-box-shadow: #5bbdee 0 0 2px inset !important; -o-box-shadow: #5bbdee 0 0 2px inset !important; box-shadow: #5bbdee 0 0 2px inset !important; background-color: #029eee !important; background-image: none !important; border: 1px solid #5bbdee !important; border-bottom: 1px solid #0072ac !important; color: white !important; padding: 7px 10px !important; margin-top: 1px; }
+input[type="submit"].default, input[type="submit"].default:visited, input[type="button"].default, input[type="button"].default:visited { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5bbdee), color-stop(100%, #029eee)) !important; background-image: -webkit-linear-gradient(#5bbdee, #029eee) !important; background-image: -moz-linear-gradient(#5bbdee, #029eee) !important; background-image: -o-linear-gradient(#5bbdee, #029eee) !important; background-image: linear-gradient(#5bbdee, #029eee) !important; }
+input[type="submit"].default:hover, input[type="submit"].default:focus, input[type="button"].default:hover, input[type="button"].default:focus { background: #5bbdee !important; color: white !important; }
+input[type="submit"].default:active, input[type="button"].default:active { background: #029eee !important; }
+input[type="submit"].default.animate, input[type="button"].default.animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+
+a.button { text-decoration: none; cursor: pointer; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef)) !important; background-image: -webkit-linear-gradient(#ffffff, #efefef) !important; background-image: -moz-linear-gradient(#ffffff, #efefef) !important; background-image: -o-linear-gradient(#ffffff, #efefef) !important; background-image: linear-gradient(#ffffff, #efefef) !important; -moz-box-shadow: #efefef 0 0 2px inset !important; -webkit-box-shadow: #efefef 0 0 2px inset !important; -o-box-shadow: #efefef 0 0 2px inset !important; box-shadow: #efefef 0 0 2px inset !important; background-color: #efefef !important; border: 1px solid #efefef !important; border-bottom: 1px solid #cccccc !important; color: #555555 !important; font-weight: bolder !important; font-size: 12px !important; line-height: 15px !important; overflow: visible; padding: 5px 10px 5px !important; text-decoration: none !important; width: auto; }
+a.button.small { padding: 3px 8px 4px !important; }
+a.button:hover, a.button:active, a.button.select, a.button:visited { background: white; color: #555555; text-decoration: none; }
+a.button.animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+a.button.tab { -moz-border-radius: 0; -webkit-border-radius: 0; -o-border-radius: 0; -ms-border-radius: 0; -khtml-border-radius: 0; border-radius: 0; }
+
+.form-row p.datetime { line-height: 30px !important; padding-left: 90px !important; }
+
+div.calendar table caption { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #595f65), color-stop(100%, #464b50)); background-image: -webkit-linear-gradient(#595f65, #464b50); background-image: -moz-linear-gradient(#595f65, #464b50); background-image: -o-linear-gradient(#595f65, #464b50); background-image: linear-gradient(#595f65, #464b50); background-color: #595f65; color: white !important; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; -o-border-top-left-radius: 3px; -ms-border-top-left-radius: 3px; -khtml-border-top-left-radius: 3px; border-top-left-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; -o-border-top-right-radius: 3px; -ms-border-top-right-radius: 3px; -khtml-border-top-right-radius: 3px; border-top-right-radius: 3px; }
+div.calendar table td { padding: 0; }
+div.calendar table td a { padding: 6px 4px; }
+
+div.calendarbox { width: 200px !important; }
+div.calendarbox table th, div.calendarbox table td { line-height: 12px; }
+div.calendarbox .calendarnav-previous, div.calendarbox .calendarnav-next { background: none; color: white; text-decoration: none; padding: 4px 7px 7px; }
+div.calendarbox .calendarnav-previous:hover, div.calendarbox .calendarnav-previous:focus, div.calendarbox .calendarnav-next:hover, div.calendarbox .calendarnav-next:focus { background: #666; }
+
+div.calendarbox, div.clockbox { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; padding: 0; margin: 0; -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); -o-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); border: 1px solid #ccc; }
+div.calendarbox .calendar-cancel, div.clockbox .calendar-cancel { -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; -o-border-bottom-left-radius: 3px; -ms-border-bottom-left-radius: 3px; -khtml-border-bottom-left-radius: 3px; border-bottom-left-radius: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; -o-border-bottom-right-radius: 3px; -ms-border-bottom-right-radius: 3px; -khtml-border-bottom-right-radius: 3px; border-bottom-right-radius: 3px; background: none; margin-top: 5px !important; }
+
+div.clockbox { -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; -o-border-top-left-radius: 3px; -ms-border-top-left-radius: 3px; -khtml-border-top-left-radius: 3px; border-top-left-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; -o-border-top-right-radius: 3px; -ms-border-top-right-radius: 3px; -khtml-border-top-right-radius: 3px; border-top-right-radius: 3px; }
+div.clockbox h2 { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #595f65), color-stop(100%, #464b50)); background-image: -webkit-linear-gradient(#595f65, #464b50); background-image: -moz-linear-gradient(#595f65, #464b50); background-image: -o-linear-gradient(#595f65, #464b50); background-image: linear-gradient(#595f65, #464b50); background-color: #595f65; color: white !important; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; -o-border-top-left-radius: 3px; -ms-border-top-left-radius: 3px; -khtml-border-top-left-radius: 3px; border-top-left-radius: 3px; -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; -o-border-top-right-radius: 3px; -ms-border-top-right-radius: 3px; -khtml-border-top-right-radius: 3px; border-top-right-radius: 3px; }
+
+.timelist a, .timelist a:active, .timelist a:focus, .timelist a:hover { background: none !important; }
+
+span.datetimeshortcuts a { color: #029eee; }
+
+table { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background: white; border-bottom: 1px solid #dddddd; margin: 20px 0; padding: 5px; width: 100%; }
+table th { border-bottom: 1px solid #dddddd; }
+table th, table td { padding: 5px 10px; text-align: left; vertical-align: middle; }
+table thead th, table thead th.sorted, table tfoot td { background: #fcfcfc; }
+table thead th.sortable:hover { background: #f1f1f1; }
+table td, table th { font-family: sans-serif; padding: 5px; }
+table tbody tr:hover { background: #f1faff; }
+table tr th, table tr td { border-bottom: 1px solid #f3f3f3; }
+table th a, table th a:link, table th a:visited, table th a:link:visited { color: #444444; }
+table .row1 { background: white; }
+table .row2 { background: #fcfcfc; }
+
+#container { width: auto !important; min-width: auto !important; }
+
+#content { width: auto !important; min-width: auto !important; }
+
+#changelist { width: auto !important; }
+
+.module { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; -moz-box-shadow: #dddddd 0 1px 2px 0px; -webkit-box-shadow: #dddddd 0 1px 2px 0px; -o-box-shadow: #dddddd 0 1px 2px 0px; box-shadow: #dddddd 0 1px 2px 0px; padding: 0; background: white; border: 0; margin-bottom: 5px; margin-bottom: 10px; padding: 15px 20px 20px; }
+.module h2, .module h3, .module h4, .module h5, .module h6 { margin-bottom: 12px; margin-top: 0; }
+.module h2 { background: none; border-bottom: 1px solid #dddddd; color: #444444; font-size: 100%; margin-bottom: 2px; margin-top: 0; padding: 10px; }
+.module caption { background: none; color: #888888; font-size: 130%; font-weight: bold; line-height: 1.75em; margin-bottom: 10px; padding: 0; }
+.module caption a.section, .module caption a.section:link, .module caption a.section:visited { color: #888888; }
+.module table { margin: 0; }
+.module table th { padding: 0 5px !important; line-height: 22px; }
+.module table td { padding: 5px 5px; line-height: 22px; }
+
+#content-main .inline-group-- { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; border: 1px solid #dddddd; padding: 10px; -moz-box-shadow: white 0 0 2px inset !important; -webkit-box-shadow: white 0 0 2px inset !important; -o-box-shadow: white 0 0 2px inset !important; box-shadow: white 0 0 2px inset !important; background: rgba(255, 255, 255, 0.2) !important; }
+#content-main .inline-group-- h2 { background: none !important; color: #444444; font-size: 100%; margin-bottom: 10px; padding: 0 10px 8px 0px; }
+#content-main .inline-group-- div.add-row { background: none !important; border-bottom: 0 !important; }
+#content-main .inline-group-- .form-row { border-bottom: none !important; }
+#content-main .inline-related h3 { background: none; border-bottom: none; }
+#content-main .submit-row { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; border: 1px solid #dddddd; padding: 10px; -moz-box-shadow: white 0 0 2px inset !important; -webkit-box-shadow: white 0 0 2px inset !important; -o-box-shadow: white 0 0 2px inset !important; box-shadow: white 0 0 2px inset !important; background: #f1f1f1; background: rgba(255, 255, 255, 0.2) !important; }
+#content-main .submit-row .deletelink-box { margin: 0.5em 0 !important; }
+#content-main .selector .selector-available, #content-main .selector .selector-chosen { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; border: 1px solid #dddddd; }
+#content-main .selector .selector-available h2, #content-main .selector .selector-chosen h2 { color: #444444 !important; background: none !important; border: none; margin-bottom: 0; }
+#content-main .selector .selector-available input, #content-main .selector .selector-chosen input { width: 252px; }
+#content-main .selector .selector-filter { border: none; }
+#content-main .selector select[multiple] { border: 1px solid #dddddd; border-left: none; border-right: none; margin-bottom: 0; }
+
+body.login { background: #fcfcfc url("../images/bg-pattern.jpg") repeat !important; }
+body.login #container { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; -moz-box-shadow: #dddddd 0 1px 2px 0px; -webkit-box-shadow: #dddddd 0 1px 2px 0px; -o-box-shadow: #dddddd 0 1px 2px 0px; box-shadow: #dddddd 0 1px 2px 0px; padding: 0; background: white; border: 0; margin-bottom: 5px; border: none; width: 340px !important; -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px, white 0px 1px 1px inset; -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px, white 0px 1px 1px inset; -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px, white 0px 1px 1px inset; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px, white 0px 1px 1px inset; }
+body.login #container h2, body.login #container h3, body.login #container h4, body.login #container h5, body.login #container h6 { margin-bottom: 12px; margin-top: 0; }
+body.login #container #header { background: none !important; }
+body.login #container #header #branding h1 { color: #444444; margin: 20px 0 !important; text-align: center; }
+body.login #container #content { margin: 0 !important; padding: 25px 40px !important; }
+body.login #container #content #content-main form { margin-top: 0 !important; }
+body.login #container #content #content-main .form-row label { font-weight: normal; }
+body.login #container #content #content-main .form-row input { font-size: 16px; padding: 10px; width: 240px !important; }
+body.login #container #content #content-main .submit-row { border: none; background: none; padding: 20px 0 0 0; }
+body.login #container #content #content-main .submit-row input, body.login #container #content #content-main .submit-row input[type="submit"] { background-image: none; -moz-box-shadow: #5bbdee 0 0 2px inset !important; -webkit-box-shadow: #5bbdee 0 0 2px inset !important; -o-box-shadow: #5bbdee 0 0 2px inset !important; box-shadow: #5bbdee 0 0 2px inset !important; background-color: #029eee !important; background-image: none !important; border: 1px solid #5bbdee !important; border-bottom: 1px solid #0072ac !important; color: white !important; width: 262px !important; }
+body.login #container #content #content-main .submit-row input, body.login #container #content #content-main .submit-row input:visited, body.login #container #content #content-main .submit-row input[type="submit"], body.login #container #content #content-main .submit-row input[type="submit"]:visited { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5bbdee), color-stop(100%, #029eee)) !important; background-image: -webkit-linear-gradient(#5bbdee, #029eee) !important; background-image: -moz-linear-gradient(#5bbdee, #029eee) !important; background-image: -o-linear-gradient(#5bbdee, #029eee) !important; background-image: linear-gradient(#5bbdee, #029eee) !important; }
+body.login #container #content #content-main .submit-row input:hover, body.login #container #content #content-main .submit-row input:focus, body.login #container #content #content-main .submit-row input[type="submit"]:hover, body.login #container #content #content-main .submit-row input[type="submit"]:focus { background: #5bbdee !important; color: white !important; }
+body.login #container #content #content-main .submit-row input:active, body.login #container #content #content-main .submit-row input[type="submit"]:active { background: #029eee !important; }
+body.login #container #content #content-main .submit-row input.animate, body.login #container #content #content-main .submit-row input[type="submit"].animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+body.login #container #content #content-main .submit-row label { display: none; }
+body.login #container #footer { display: none; }
+
+#header { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #595f65), color-stop(100%, #464b50)); background-image: -webkit-linear-gradient(#595f65, #464b50); background-image: -moz-linear-gradient(#595f65, #464b50); background-image: -o-linear-gradient(#595f65, #464b50); background-image: linear-gradient(#595f65, #464b50); background-color: #595f65; color: white !important; height: 46px; }
+#header #branding h1 { color: white; padding: 3px 25px; }
+#header #user-tools { padding: 16px 25px 0; }
+
+div.breadcrumbs { background: #444444; border-top: 1px solid #444444; color: #cccccc; padding-left: 25px; }
+div.breadcrumbs a { color: #888888; }
+div.breadcrumbs a:hover { color: #cccccc; text-decoration: none; }
+
+.dashboard #container #content-main { min-width: 320px; max-width: 640px; }
+.dashboard #container #content-main table th, .dashboard #container #content-main table td { line-height: 30px; }
+.dashboard #container #content-related { float: left; }
+.dashboard #container #content-related .module { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; border: 1px solid #dddddd; margin-left: 10px; -moz-box-shadow: white 0 0 2px inset !important; -webkit-box-shadow: white 0 0 2px inset !important; -o-box-shadow: white 0 0 2px inset !important; box-shadow: white 0 0 2px inset !important; background: rgba(255, 255, 255, 0.2) !important; padding: 10px 20px !important; }
+.dashboard #container #content-related .module ul.actionlist { padding: 0; }
+.dashboard #container #content-related .module h2 { background: none; color: #888888; padding: 0 0 5px 0; }
+.dashboard #container #content-related .module h3 { border-bottom: 1px solid #dddddd; line-height: 20px; margin: 0 0 5px 0; padding: 0; }
+.dashboard #container #content-related .module p { padding: 0; }
+
+a.addlink, a.addlink:link, a.addlink:visited { color: #9ab933; }
+a.addlink:hover, a.addlink:focus, a.addlink:active { color: #8fad28; }
+
+.object-tools { margin-top: -38px; }
+.object-tools li { list-style: none; background: none; padding-left: 0; }
+.object-tools li:hover { background: none; }
+.object-tools li a { background: none !important; }
+.object-tools .addlink { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef)) !important; background-image: -webkit-linear-gradient(#ffffff, #efefef) !important; background-image: -moz-linear-gradient(#ffffff, #efefef) !important; background-image: -o-linear-gradient(#ffffff, #efefef) !important; background-image: linear-gradient(#ffffff, #efefef) !important; -moz-box-shadow: #efefef 0 0 2px inset !important; -webkit-box-shadow: #efefef 0 0 2px inset !important; -o-box-shadow: #efefef 0 0 2px inset !important; box-shadow: #efefef 0 0 2px inset !important; background-color: #efefef !important; border: 1px solid #efefef !important; border-bottom: 1px solid #cccccc !important; color: #555555 !important; font-weight: bolder !important; font-size: 12px !important; line-height: 15px !important; overflow: visible; padding: 5px 10px 5px !important; text-decoration: none !important; width: auto; -moz-box-shadow: #bcd077 0 0 2px inset !important; -webkit-box-shadow: #bcd077 0 0 2px inset !important; -o-box-shadow: #bcd077 0 0 2px inset !important; box-shadow: #bcd077 0 0 2px inset !important; background-color: #9ab933 !important; border: 1px solid #bcd077 !important; border-bottom: 1px solid #8fad28 !important; color: white !important; color: white !important; }
+.object-tools .addlink.small { padding: 3px 8px 4px !important; }
+.object-tools .addlink:hover, .object-tools .addlink:active, .object-tools .addlink.select, .object-tools .addlink:visited { background: white; color: #555555; text-decoration: none; }
+.object-tools .addlink.animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+.object-tools .addlink, .object-tools .addlink:visited { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bcd077), color-stop(100%, #9ab933)) !important; background-image: -webkit-linear-gradient(#bcd077, #9ab933) !important; background-image: -moz-linear-gradient(#bcd077, #9ab933) !important; background-image: -o-linear-gradient(#bcd077, #9ab933) !important; background-image: linear-gradient(#bcd077, #9ab933) !important; }
+.object-tools .addlink:hover { background: #bcd077 !important; color: white !important; }
+.object-tools .addlink:active { background: #9ab933 !important; }
+.object-tools .addlink.animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+.object-tools .historylink { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef)) !important; background-image: -webkit-linear-gradient(#ffffff, #efefef) !important; background-image: -moz-linear-gradient(#ffffff, #efefef) !important; background-image: -o-linear-gradient(#ffffff, #efefef) !important; background-image: linear-gradient(#ffffff, #efefef) !important; -moz-box-shadow: #efefef 0 0 2px inset !important; -webkit-box-shadow: #efefef 0 0 2px inset !important; -o-box-shadow: #efefef 0 0 2px inset !important; box-shadow: #efefef 0 0 2px inset !important; background-color: #efefef !important; border: 1px solid #efefef !important; border-bottom: 1px solid #cccccc !important; color: #555555 !important; font-weight: bolder !important; font-size: 12px !important; line-height: 15px !important; overflow: visible; padding: 5px 10px 5px !important; text-decoration: none !important; width: auto; }
+.object-tools .historylink.small { padding: 3px 8px 4px !important; }
+.object-tools .historylink:hover, .object-tools .historylink:active, .object-tools .historylink.select, .object-tools .historylink:visited { background: white; color: #555555; text-decoration: none; }
+.object-tools .historylink.animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+.object-tools .viewsitelink { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef)) !important; background-image: -webkit-linear-gradient(#ffffff, #efefef) !important; background-image: -moz-linear-gradient(#ffffff, #efefef) !important; background-image: -o-linear-gradient(#ffffff, #efefef) !important; background-image: linear-gradient(#ffffff, #efefef) !important; -moz-box-shadow: #efefef 0 0 2px inset !important; -webkit-box-shadow: #efefef 0 0 2px inset !important; -o-box-shadow: #efefef 0 0 2px inset !important; box-shadow: #efefef 0 0 2px inset !important; background-color: #efefef !important; border: 1px solid #efefef !important; border-bottom: 1px solid #cccccc !important; color: #555555 !important; font-weight: bolder !important; font-size: 12px !important; line-height: 15px !important; overflow: visible; padding: 5px 10px 5px !important; text-decoration: none !important; width: auto; -moz-box-shadow: #5bbdee 0 0 2px inset !important; -webkit-box-shadow: #5bbdee 0 0 2px inset !important; -o-box-shadow: #5bbdee 0 0 2px inset !important; box-shadow: #5bbdee 0 0 2px inset !important; background-color: #029eee !important; background-image: none !important; border: 1px solid #5bbdee !important; border-bottom: 1px solid #0072ac !important; color: white !important; }
+.object-tools .viewsitelink.small { padding: 3px 8px 4px !important; }
+.object-tools .viewsitelink:hover, .object-tools .viewsitelink:active, .object-tools .viewsitelink.select, .object-tools .viewsitelink:visited { background: white; color: #555555; text-decoration: none; }
+.object-tools .viewsitelink.animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+.object-tools .viewsitelink, .object-tools .viewsitelink:visited { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5bbdee), color-stop(100%, #029eee)) !important; background-image: -webkit-linear-gradient(#5bbdee, #029eee) !important; background-image: -moz-linear-gradient(#5bbdee, #029eee) !important; background-image: -o-linear-gradient(#5bbdee, #029eee) !important; background-image: linear-gradient(#5bbdee, #029eee) !important; }
+.object-tools .viewsitelink:hover, .object-tools .viewsitelink:focus { background: #5bbdee !important; color: white !important; }
+.object-tools .viewsitelink:active { background: #029eee !important; }
+.object-tools .viewsitelink.animate { -moz-background-size: 100% 400%; -webkit-background-size: 100% 400%; -o-background-size: 100% 400%; background-size: 100% 400%; background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)); }
+
+.change-list .filtered { min-height: auto; }
+.change-list .filtered table { border: none; }
+.change-list #changelist table tbody th, .change-list #changelist table tbody td { border-color: #f1f1f1; }
+.change-list #changelist table tbody th a, .change-list #changelist table tbody th a:link, .change-list #changelist table tbody th a:visited, .change-list #changelist table tbody th a:link:visited, .change-list #changelist table tbody td a, .change-list #changelist table tbody td a:link, .change-list #changelist table tbody td a:visited, .change-list #changelist table tbody td a:link:visited { color: #029eee; }
+.change-list #changelist table tbody tr.selected { background: #f6fcff !important; }
+.change-list #changelist #toolbar { background: none !important; border: 0 !important; margin: 0 0 10px 0; min-height: 30px; }
+.change-list #changelist #toolbar form label { min-width: auto; padding: 0; font-size: 150%; }
+.change-list #changelist #toolbar form #searchbar { padding: 6px 5px 8px 5px !important; font-size: 100%; }
+.change-list #changelist #changelist-filter h2 { background: none; color: #888888; padding: 2px 9px; }
+.change-list #changelist #changelist-filter h3 { margin-bottom: 5px; }
+.change-list #changelist #changelist-filter ul { font-size: 12px; margin-bottom: 10px; }
+.change-list #changelist #changelist-filter ul li { margin-bottom: 2px; }
+.change-list #changelist #changelist-filter ul li.selected a { color: #029eee !important; }
+.change-list #changelist .actions { background: none; border: none; padding: 0px 3px 10px 3px; }
+.change-list #changelist .paginator { border: none; background: none; }
+
+#sitemap .cont:hover .col-actions a.deletelink { color: #CC3434; }
+
+#sitemap .cont:hover .col-actions a.addlink { color: #9AB933; }
+
+.admin_shortcuts .shortcuts { -moz-box-shadow: none; -webkit-box-shadow: none; -o-box-shadow: none; box-shadow: none; background: #595f65; border-top: 1px solid #444444; color: #cccccc; }
+.admin_shortcuts .shortcuts h2 { border: none; font-weight: normal; }
+.admin_shortcuts .shortcuts li a { background-color: #464b50; border: 1px solid #444444; text-decoration: none; }
+.admin_shortcuts .shortcuts li a:hover { background-color: #4e5359; }
+.admin_shortcuts .shortcuts li a .count { color: #888888; }
+.admin_shortcuts .shortcuts li a .count_new { background: #029eee; border-color: #5bbdee; }
+
+@media only screen and (max-width: 1024px) { #quick-access { display: none; } }

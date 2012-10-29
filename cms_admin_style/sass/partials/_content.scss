@@ -1,0 +1,178 @@
+
+// containers
+#container { width: auto !important; min-width: auto !important; }
+#content { width: auto !important; min-width: auto !important; }
+#changelist { width: auto !important; }
+
+// module
+.module {
+	@include box(); margin-bottom: 10px; padding: 15px 20px 20px;
+	h2 { background: none; border-bottom: 1px solid $line-color-light; color: $font-color; font-size: 100%;
+		margin-bottom: 2px;	margin-top: 0; padding: 10px; }
+	caption {
+		background: none; color: $font-color-light; font-size: 130%; font-weight: bold;
+		line-height: 1.75em; margin-bottom: 10px; padding: 0;
+		a.section, a.section:link, a.section:visited { color: $font-color-light; }
+	}
+	table {
+		margin: 0;
+		th { padding: 0 5px !important; line-height: 22px; }
+		td { padding: 5px 5px; line-height: 22px; }
+	}
+}
+
+#content-main {
+	.inline-group-- {
+		@include border-radius(); border: 1px solid $line-color-light; padding: 10px;
+		@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
+		background: $background-color-transparent !important;
+		h2 { background: none !important; color: $font-color; font-size: 100%; margin-bottom: 10px;
+			padding: 0 10px 8px 0px; }
+		div.add-row { background: none !important; border-bottom: 0 !important; }
+		.form-row { border-bottom: none !important; }
+	}
+
+	.inline-related {
+		h3 { background: none; border-bottom: none; }
+	}
+
+	.submit-row {
+		@include border-radius(); border: 1px solid $line-color-light; padding: 10px;
+		@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
+		background: $background-color-light;
+		background: $background-color-transparent !important;
+		.deletelink-box { margin: 0.5em 0 !important; }
+	}
+	.selector {
+		.selector-available, .selector-chosen {
+			@include border-radius(); border: 1px solid $line-color-light;
+			h2 { color: $font-color !important; background: none !important; border: none; margin-bottom: 0; }
+			input { width: 252px; }
+		}
+		.selector-filter { border: none; }
+		select[multiple] { border: 1px solid $line-color-light; border-left: none; border-right: none;
+			margin-bottom: 0; }
+	}
+}
+
+// login
+body.login {
+	background: $background-color-ultralight url('../images/bg-pattern.jpg') repeat !important;
+	#container {
+		@include box(); border: none; width: 340px !important;
+		@include box-shadow(rgba(0, 0, 0, 0.3) 0px 1px 2px, #fff 0px 1px 1px inset);
+		#header {
+			background: none !important;
+			#branding h1 { color: $font-color; margin: 20px 0 !important; text-align: center; }
+		}
+		#content {
+			margin: 0 !important; padding: 25px 40px !important;
+			#content-main {
+				form { margin-top: 0 !important; }
+				.form-row {
+					label { font-weight: normal; }
+					input { font-size: 16px; padding: 10px; width: 240px !important; }
+				}
+				.submit-row {
+					border: none; background: none; padding: 20px 0 0 0;
+					input, input[type="submit"] { background-image: none; @include button-blue();
+						width: 262px !important; }
+					label { display: none; }
+				}
+			}
+		}
+		#footer { display: none; }
+	}
+}
+
+// header
+#header {
+	@include pie; @include background-image(linear-gradient($background-color-dark, $background-color-medium));
+	background-color: $background-color-dark; color: $font-color-white !important; height: 46px;
+	#branding h1 { color: $font-color-white; padding: 3px 25px; }
+	#user-tools { padding: 16px 25px 0; }
+}
+div.breadcrumbs { background: $line-color-dark; border-top: 1px solid $line-color-dark;
+	color: $font-color-ultralight; padding-left: 25px;
+	a {
+		color: $font-color-light;
+		&:hover { color: $font-color-ultralight; text-decoration: none; }
+	}
+}
+
+// dashboard
+.dashboard #container {
+	#content-main {
+		min-width: 320px; max-width: 640px;
+		table th, table td { line-height: 30px; }
+	}
+	#content-related {
+		float: left;
+		.module { @include border-radius(); border: 1px solid $line-color-light; margin-left: 10px;
+			@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
+			background: $background-color-transparent !important; padding: 10px 20px !important;
+			ul.actionlist { padding: 0; }
+			h2 { background: none; color: $font-color-light; padding: 0 0 5px 0; }
+			h3 { border-bottom: 1px solid $line-color-light; line-height: 20px; margin: 0 0 5px 0; padding: 0; }
+			p { padding: 0; }
+		}
+	}
+}
+
+a.addlink {
+	&, &:link, &:visited { color: $button-green-medium-color; }
+	&:hover, &:focus, &:active { color: $button-green-dark-color; }
+}
+
+// object tools
+.object-tools {
+	margin-top: -38px;
+	li {
+		list-style: none; background: none; padding-left: 0;
+		&:hover { background: none; }
+		a { background: none !important; }
+	}
+	.addlink { @include button-common(); @include button-green(); color: $button-green-font-color !important; }
+	.historylink { @include button-common(); }
+	.viewsitelink { @include button-common(); @include button-blue(); }
+}
+
+// changelist
+.change-list {
+	.filtered {
+		min-height: auto;
+		table { border: none; }
+	}
+	#changelist {
+		table {
+			tbody {
+				th, td {
+					a, a:link, a:visited, a:link:visited { color: $link-color; }
+					border-color: $background-color-light;
+				}
+				tr.selected { background: $background-color-highlight !important; }
+			}
+		}
+		#toolbar {
+			background: none !important; border: 0 !important; margin: 0 0 10px 0; min-height: 30px;
+			form label { min-width: auto; padding: 0; font-size: 150%; }
+			form #searchbar { padding: 6px 5px 8px 5px !important; font-size: 100%; }
+		}
+		#changelist-filter {
+			h2 { background: none; color: $font-color-light; padding: 2px 9px; }
+			h3 { margin-bottom: 5px; }
+			ul {
+				font-size: 12px; margin-bottom: 10px;
+				li { margin-bottom: 2px; }
+				li.selected a { color: $link-color !important; }
+			}
+		}
+		.actions { background: none; border: none; padding: 0px 3px 10px 3px; }
+		.paginator { border: none; background: none; }
+	}
+}
+
+// cms pagelist
+#sitemap .cont:hover .col-actions a.deletelink { color: #CC3434; }
+#sitemap .cont:hover .col-actions a.addlink { color: #9AB933; }
+

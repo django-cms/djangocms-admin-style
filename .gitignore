@@ -1,0 +1,10 @@
+*.pyc
+dist
+*egg-info*
+bin/
+include/
+lib/
+*.sqlite
+database.db
+.idea
+.sass-cache

@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/django-cms-admin.css" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+{% include 'admin/extrastyle.html' %}
+{% endblock %}
+
+{% block title %}{% include 'admin/page_title.html' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% include 'admin/site_name.html' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
