@@ -269,10 +269,11 @@ table .row2 { background: #fcfcfc; }
 .module table th { padding: 0 5px !important; line-height: 22px; }
 .module table td { padding: 5px 5px; line-height: 22px; }
 
-#content-main .inline-group-- { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; border: 1px solid #dddddd; padding: 10px; -moz-box-shadow: white 0 0 2px inset !important; -webkit-box-shadow: white 0 0 2px inset !important; -o-box-shadow: white 0 0 2px inset !important; box-shadow: white 0 0 2px inset !important; background: rgba(255, 255, 255, 0.2) !important; }
-#content-main .inline-group-- h2 { background: none !important; color: #444444; font-size: 100%; margin-bottom: 10px; padding: 0 10px 8px 0px; }
-#content-main .inline-group-- div.add-row { background: none !important; border-bottom: 0 !important; }
-#content-main .inline-group-- .form-row { border-bottom: none !important; }
+#content-main .inline-group { border: 0; }
+#content-main .inline-group .module { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; border: 1px solid #dddddd; padding: 10px; -moz-box-shadow: white 0 0 2px inset !important; -webkit-box-shadow: white 0 0 2px inset !important; -o-box-shadow: white 0 0 2px inset !important; box-shadow: white 0 0 2px inset !important; background: rgba(255, 255, 255, 0.2) !important; }
+#content-main .inline-group .module h2 { background: none !important; color: #444444; font-size: 100%; margin-bottom: 10px; padding: 0 10px 8px 0px; }
+#content-main .inline-group .module div.add-row { background: none !important; border-bottom: 0 !important; }
+#content-main .inline-group .module .form-row { border-bottom: none !important; }
 #content-main .inline-related h3 { background: none; border-bottom: none; }
 #content-main .submit-row { -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-border-radius: 3px; -ms-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; border: 1px solid #dddddd; padding: 10px; -moz-box-shadow: white 0 0 2px inset !important; -webkit-box-shadow: white 0 0 2px inset !important; -o-box-shadow: white 0 0 2px inset !important; box-shadow: white 0 0 2px inset !important; background: #f1f1f1; background: rgba(255, 255, 255, 0.2) !important; }
 #content-main .submit-row .deletelink-box { margin: 0.5em 0 !important; }

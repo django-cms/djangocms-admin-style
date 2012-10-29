@@ -22,14 +22,16 @@
 }
 
 #content-main {
-	.inline-group-- {
-		@include border-radius(); border: 1px solid $line-color-light; padding: 10px;
-		@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
-		background: $background-color-transparent !important;
-		h2 { background: none !important; color: $font-color; font-size: 100%; margin-bottom: 10px;
-			padding: 0 10px 8px 0px; }
-		div.add-row { background: none !important; border-bottom: 0 !important; }
-		.form-row { border-bottom: none !important; }
+	.inline-group { border: 0;
+		.module {
+			@include border-radius(); border: 1px solid $line-color-light; padding: 10px;
+			@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
+			background: $background-color-transparent !important;
+			h2 { background: none !important; color: $font-color; font-size: 100%; margin-bottom: 10px;
+				padding: 0 10px 8px 0px; }
+			div.add-row { background: none !important; border-bottom: 0 !important; }
+			.form-row { border-bottom: none !important; }
+		}
 	}
 
 	.inline-related {
