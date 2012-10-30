@@ -32,6 +32,7 @@
 			div.add-row { background: none !important; border-bottom: 0 !important; }
 			.form-row { border-bottom: none !important; }
 		}
+		.tabular tr.has_original td { padding-top: 5px; }
 	}
 
 	.inline-related {
@@ -106,14 +107,17 @@ div.breadcrumbs { background: $line-color-dark; border-top: 1px solid $line-colo
 .dashboard #container {
 	#content-main {
 		min-width: 320px; max-width: 640px;
-		table th, table td { line-height: 30px; }
+		table th, table td { line-height: 30px; width: auto; }
 	}
 	#content-related {
 		float: left;
 		.module { @include border-radius(); border: 1px solid $line-color-light; margin-left: 10px;
 			@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
 			background: $background-color-transparent !important; padding: 10px 20px !important;
-			ul.actionlist { padding: 0; }
+			ul.actionlist {
+				padding: 0;
+				.changelink a { line-height: 16px; }
+			}
 			h2 { background: none; color: $font-color-light; padding: 0 0 5px 0; }
 			h3 { border-bottom: 1px solid $line-color-light; line-height: 20px; margin: 0 0 5px 0; padding: 0; }
 			p { padding: 0; }
