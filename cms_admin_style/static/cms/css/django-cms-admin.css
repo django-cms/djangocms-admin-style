@@ -256,7 +256,7 @@ body.login #container #header { background: none !important; }
 body.login #container #header #branding h1 { color: #444444; margin: 20px 0 !important; text-align: center; }
 body.login #container #content { margin: 0 !important; padding: 25px 40px !important; }
 body.login #container #content #content-main form { margin-top: 0 !important; }
-body.login #container #content #content-main .form-row label { font-weight: normal; }
+body.login #container #content #content-main .form-row label { font-weight: normal; width: 160px; }
 body.login #container #content #content-main .form-row input { font-size: 16px; padding: 10px; width: 240px !important; }
 body.login #container #content #content-main .submit-row { border: none; background: none; padding: 20px 0 0 0; }
 body.login #container #content #content-main .submit-row input, body.login #container #content #content-main .submit-row input[type="submit"] { background-image: none; -moz-box-shadow: #5bbdee 0 0 2px inset !important; -webkit-box-shadow: #5bbdee 0 0 2px inset !important; -o-box-shadow: #5bbdee 0 0 2px inset !important; box-shadow: #5bbdee 0 0 2px inset !important; background-color: #029eee !important; background-image: none !important; border: 1px solid #5bbdee !important; border-bottom: 1px solid #0072ac !important; color: white !important; width: 262px !important; }
@@ -276,7 +276,7 @@ div.breadcrumbs a { color: #888888; }
 div.breadcrumbs a:hover { color: #cccccc; text-decoration: none; }
 
 .dashboard #container #content-main { min-width: 320px; max-width: 640px; }
-.dashboard #container #content-main table th, .dashboard #container #content-main table td { line-height: 20px; width: auto; }
+.dashboard #container #content-main table th, .dashboard #container #content-main table td { line-height: 20px; width: auto; border-color: #f3f3f3; }
 .dashboard #container #content-main table th { width: 100%; }
 .dashboard #container #content-related { float: left; }
 .dashboard #container #content-related .module { -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; border: 1px solid #dddddd; margin-left: 10px; -moz-box-shadow: white 0 0 2px inset !important; -webkit-box-shadow: white 0 0 2px inset !important; -o-box-shadow: white 0 0 2px inset !important; box-shadow: white 0 0 2px inset !important; background: rgba(255, 255, 255, 0.2) !important; padding: 10px 20px !important; }
