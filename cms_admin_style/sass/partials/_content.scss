@@ -6,7 +6,7 @@
 
 // module
 .module {
-	@include box(); margin-bottom: 10px; padding: 15px 20px 20px;
+	@include box(); margin-bottom: 10px; padding: 10px 15px 15px;
 	h2 { background: none; border-bottom: 1px solid $line-color-light; color: $font-color; font-size: 100%;
 		margin-bottom: 2px;	margin-top: 0; padding: 10px; }
 	caption {
@@ -26,7 +26,7 @@
 		.module {
 			padding: 10px;
 			h2 { margin-bottom: 10px; padding: 0 10px 8px 0px; }
-			.add-row a { background-image: none; border-bottom: none; }
+			.add-row a { border-bottom: none; }
 			.add-row td { background: none; border-bottom: none; }
 			tr.add-row:hover { background: none; }
 			.form-row { border-bottom: none !important; }
@@ -107,7 +107,7 @@ div.breadcrumbs { background: $line-color-dark; border-top: 1px solid $line-colo
 .dashboard #container {
 	#content-main {
 		min-width: 320px; max-width: 640px;
-		table th, table td { line-height: 30px; width: auto; }
+		table th, table td { line-height: 20px; width: auto; }
 		table th { width: 100%; }
 	}
 	#content-related {
@@ -135,7 +135,7 @@ a.addlink {
 .object-tools {
 	margin-top: -38px;
 	li {
-		list-style: none; background: none; padding-left: 0;
+		list-style: none; background: none; padding-left: 5px;
 		&:hover { background: none; }
 		a { background: none !important; }
 	}
@@ -162,7 +162,7 @@ a.addlink {
 		}
 		#toolbar {
 			background: none !important; border: 0 !important; margin: 0 0 10px 0; min-height: 30px;
-			form label { min-width: auto; padding: 0; font-size: 150%; }
+			form label { min-width: auto; padding: 0; font-size: 100%; }
 			form #searchbar { padding: 6px 5px 8px 5px !important; font-size: 100%; }
 		}
 		#changelist-filter {
@@ -174,7 +174,10 @@ a.addlink {
 				li.selected a { color: $link-color !important; }
 			}
 		}
-		.actions { background: none; border: none; padding: 0px 3px 10px 3px; }
+		.actions {
+			background: none; border: none; padding: 0px 3px 10px 3px;
+			button { height: 20px; vertical-align: middle; padding-top: 2px !important; }
+		}
 		.paginator { border: none; background: none; }
 	}
 }
@@ -183,8 +186,3 @@ a.addlink {
 #sitemap .cont:hover .col-actions a.deletelink { color: #CC3434; }
 #sitemap .cont:hover .col-actions a.addlink { color: #9AB933; }
 
-// filer
-h1.folder_header {
-	background-image: none !important; background: none; margin: 0;
-	.changelink { font-size: 16px; line-height: 30px; }
-}

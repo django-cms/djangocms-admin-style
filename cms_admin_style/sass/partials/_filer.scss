@@ -1,0 +1,9 @@
+// filer
+.filebrowser {
+	#content { margin-top: 20px; }
+	h1.folder_header {
+		background-image: none !important; background: none; margin: 0;
+		.changelink { font-size: 16px; line-height: 30px; }
+	}
+	.module table td { line-height: 16px; }
+}

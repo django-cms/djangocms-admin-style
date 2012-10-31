@@ -8,7 +8,7 @@ table {
 	td, th { font-family: $base-font-family; padding: 5px; }
 	tbody tr:hover { background: $background-color-highlighter; }
 	tr {
-		th, td { border-bottom: 1px solid $line-color-ultralight; }
+		td { border-bottom: 1px solid $line-color-ultralight; }
 	}
 	th {
 		a, a:link, a:visited, a:link:visited { color: $font-color; }

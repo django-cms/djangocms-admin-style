@@ -35,14 +35,16 @@ $pie-base-class: pie-element;
 // and add more as needed (i.e. forms, tables, nav)
 @import "partials/_mixins.scss";
 @import "partials/_base.scss";
-@import "partials/_icons.scss";
 @import "partials/_forms.scss";
 @import "partials/_tables.scss";
+@import "partials/_filer.scss";
+@import "partials/_cmsplaceholders.scss";
 @import "partials/_content.scss";
 
 @import "partials/_shortcuts.scss";
 
 // TODO:
+//@import "partials/_icons.scss";
 //@import "partials/_messages.scss";
 
 
