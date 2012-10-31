@@ -9,7 +9,7 @@ a.selector-chooseall,
 a.active.selector-chooseall,
 .selector-remove,
 .selector-add,
-.inline-group div.add-row a,
+.inline-group .add-row a,
 a[id^="calendarlink"],
 a[id^="clocklink"]
 {
@@ -32,7 +32,7 @@ a.selector-chooseall:before,
 a.active.selector-chooseall:before,
 .selector-remove:before,
 .selector-add:before,
-.inline-group div.add-row a:before,
+.inline-group .add-row a:before,
 .add-another:before,
 a[id^="calendarlink"]:before,
 a[id^="clocklink"]:before
@@ -53,7 +53,7 @@ a[id^="clocklink"]:before
 .deletelink:before { content: "\24"; }
 .selector-remove:before, a.selector-clearall:before, a.active.selector-clearall:before { content: "\25"; font-size: 100%; }
 .selector-add:before, a.selector-chooseall:before, a.active.selector-chooseall:before { content: "\26"; font-size: 100%; }
-.inline-group div.add-row a:before { content: "\22";  }
+.inline-group .add-row a:before { content: "\22";  }
 .add-another:before { content: "\22";  }
 a[id^="calendarlink"]:before { content: "\2c";  }
 a[id^="clocklink"]:before { content: "\2d"; }
@@ -68,7 +68,7 @@ a[id^="clocklink"]:before { content: "\2d"; }
 a.active.selector-chooseall {  }
 .selector-remove, .selector-add { display: inline !important; font-size: 125% !important; padding-left: 1px; color: $font-color-white !important; }
 .selector-remove:before, .selector-add:before { color: $font-color; }
-.inline-group div.add-row a { color: $success-color !important; padding-left: 5px !important; }
+.inline-group .add-row a { color: $success-color !important; padding-left: 5px !important; }
 
 .add-another { 
 	margin-left: 10px; 

@@ -24,12 +24,11 @@
 #content-main {
 	.inline-group { border: 0;
 		.module {
-			@include border-radius(); border: 1px solid $line-color-light; padding: 10px;
-			@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
-			background: $background-color-transparent !important;
-			h2 { background: none !important; color: $font-color; font-size: 100%; margin-bottom: 10px;
-				padding: 0 10px 8px 0px; }
-			div.add-row { background: none !important; border-bottom: 0 !important; }
+			padding: 10px;
+			h2 { margin-bottom: 10px; padding: 0 10px 8px 0px; }
+			.add-row a { background-image: none; border-bottom: none; }
+			.add-row td { background: none; border-bottom: none; }
+			tr.add-row:hover { background: none; }
 			.form-row { border-bottom: none !important; }
 		}
 		.tabular tr.has_original td { padding-top: 5px; }
@@ -45,6 +44,7 @@
 		background: $background-color-light;
 		background: $background-color-transparent !important;
 		.deletelink-box { margin: 0.5em 0 !important; }
+		input[type="submit"].default { margin-left: 10px; }
 	}
 	.selector {
 		.selector-available, .selector-chosen {
@@ -91,7 +91,7 @@ body.login {
 // header
 #header {
 	@include pie; @include background-image(linear-gradient($background-color-dark, $background-color-medium));
-	background-color: $background-color-dark; color: $font-color-white !important; height: 46px;
+	background-color: $background-color-medium; color: $font-color-white !important; height: 46px;
 	#branding h1 { color: $font-color-white; padding: 3px 25px; }
 	#user-tools { padding: 16px 25px 0; }
 }

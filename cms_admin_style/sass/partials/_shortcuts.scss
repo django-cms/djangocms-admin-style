@@ -4,12 +4,13 @@
 	color: $font-color-ultralight;
 	h2 { border: none; font-weight: normal; }
 	li {
-		a {
+		a, a:link, a:visited {
 			background-color: $background-color-medium; border: 1px solid $line-color-dark; text-decoration: none;
-			&:hover { background-color: #4e5359; }
 			.count { color: $font-color-light; }
 			.count_new { background: $button-blue-medium-color; border-color: $button-blue-light-color; }
 		}
+		a:hover, a:focus { background-color: #4e5359; }
+		a:active { background-color: $background-color-medium; }
 	}
 }
 
