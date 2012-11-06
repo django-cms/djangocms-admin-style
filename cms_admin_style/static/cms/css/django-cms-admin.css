@@ -192,6 +192,8 @@ div.clockbox h2 { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, c
 
 span.datetimeshortcuts a { color: #029eee; }
 
+.selector .selector-chooseall, .selector .selector-clearall { line-height: 14px; }
+
 table { -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; background: white; border: none; margin: 20px 0; padding: 5px; width: 100%; }
 table th { border-bottom: 1px solid #dddddd; }
 table th, table td { padding: 5px 10px; text-align: left; vertical-align: middle; }
@@ -275,8 +277,9 @@ div.breadcrumbs { background: #444444; border-top: 1px solid #444444; color: #cc
 div.breadcrumbs a { color: #888888; }
 div.breadcrumbs a:hover { color: #cccccc; text-decoration: none; }
 
-.dashboard #container #content-main { min-width: 320px; max-width: 640px; }
-.dashboard #container #content-main table th, .dashboard #container #content-main table td { line-height: 20px; width: auto; border-color: #f3f3f3; }
+.dashboard #container #content-main { min-width: 400px; max-width: 640px; }
+.dashboard #container #content-main table th, .dashboard #container #content-main table td { height: 20px; width: auto; border-color: #f3f3f3; }
+.dashboard #container #content-main table th a, .dashboard #container #content-main table td a { line-height: 16px; }
 .dashboard #container #content-main table th { width: 100%; }
 .dashboard #container #content-related { float: left; }
 .dashboard #container #content-related .module { -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; border: 1px solid #dddddd; margin-left: 10px; -moz-box-shadow: white 0 0 2px inset !important; -webkit-box-shadow: white 0 0 2px inset !important; -o-box-shadow: white 0 0 2px inset !important; box-shadow: white 0 0 2px inset !important; background: rgba(255, 255, 255, 0.2) !important; padding: 10px 20px !important; }
@@ -322,7 +325,7 @@ a.addlink:hover, a.addlink:focus, a.addlink:active { color: #8fad28; }
 .change-list #changelist table tbody th, .change-list #changelist table tbody td { border-color: #f1f1f1; }
 .change-list #changelist table tbody th a, .change-list #changelist table tbody th a:link, .change-list #changelist table tbody th a:visited, .change-list #changelist table tbody th a:link:visited, .change-list #changelist table tbody td a, .change-list #changelist table tbody td a:link, .change-list #changelist table tbody td a:visited, .change-list #changelist table tbody td a:link:visited { color: #029eee; }
 .change-list #changelist table tbody tr.selected { background: #f6fcff !important; }
-.change-list #changelist #toolbar { background: none !important; border: 0 !important; margin: 0 0 10px 0; min-height: 30px; }
+.change-list #changelist #toolbar { background: none !important; border: 0 !important; margin: 0 0 10px 0; min-height: 30px; height: auto; }
 .change-list #changelist #toolbar form label { min-width: auto; padding: 0; font-size: 100%; }
 .change-list #changelist #toolbar form #searchbar { padding: 6px 5px 8px 5px !important; font-size: 100%; }
 .change-list #changelist #changelist-filter h2 { background: none; color: #888888; padding: 2px 9px; }

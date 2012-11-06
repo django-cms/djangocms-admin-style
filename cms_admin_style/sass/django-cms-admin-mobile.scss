@@ -1,0 +1,50 @@
+@import "_settings.scss";
+
+// base
+html, body { height: auto; }
+#header, .breadcrfumbs { display: none; }
+#content { margin: 0 10px; }
+#container { margin: 0; margin-top: 31px; min-width: 250px !important; }
+
+// general
+.module {
+	border: none; background: none !important; box-shadow: none; margin: 0; padding: 10px 0 5px 0;
+	@include box-shadow(none !important);
+	caption { margin-bottom: 5px; }
+}
+.object-tools { margin-left: 0px; }
+
+// dashboard
+.colMS { margin-right: 10px !important; }
+.dashboard {
+	#container {
+		#content h1 { display: none; }
+		#content-main { min-width: 0; max-width: none; float: none; }
+		#content-related { width: auto; float: none; margin-right: 0; }
+		#content-related .module {
+			padding: 10px !important; margin: 10px 0;
+			.actionlist { margin-left: 10px; }
+		}
+	}
+}
+
+// changelist
+.change-list #content .filtered { background-color: transparent !important; }
+.change-list {
+	#content > h1 { display: none; }
+	#content { margin-top: 50px; }
+	#toolbar form #searchbar { width: 120px; }
+	#toolbar .small { display: block; }
+	.filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
+		margin-right: 0 !important; }
+}
+#changelist-filter-button, #changelist-filter { display: none !important; }
+.tree { background: white; }
+
+// page tree
+#sitemap li .col-softroot, #sitemap li .col-language, #sitemap li .col-actions, #sitemap li .col-published,
+#sitemap li .col-navigation, #sitemap li .col-moderator, #sitemap li .col-lastchange, #sitemap li .col-draft,
+#sitemap li .col-view-perms, #sitemap li .col-creator { display: none !important; }
+
+#sitemap li .col-softroot, #sitemap li .col-language { display: block !important; }
+

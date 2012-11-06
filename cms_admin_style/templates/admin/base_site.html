@@ -3,7 +3,7 @@
 
 {% block extrastyle %}
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/django-cms-admin.css" />
-    {% if request.GET.cms_admin_frontend %}<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/django-cms-admin-frontend.css" />{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/django-cms-admin-mobile.css" media="screen and (max-width: 420px)" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     {% include 'admin/inc/extrastyle.html' %}
 {% endblock %}

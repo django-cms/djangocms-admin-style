@@ -106,8 +106,11 @@ div.breadcrumbs { background: $line-color-dark; border-top: 1px solid $line-colo
 // dashboard
 .dashboard #container {
 	#content-main {
-		min-width: 320px; max-width: 640px;
-		table th, table td { line-height: 20px; width: auto; border-color: $line-color-ultralight; }
+		min-width: 400px; max-width: 640px;
+		table th, table td {
+			height: 20px; width: auto; border-color: $line-color-ultralight;
+			a { line-height: 16px; }
+		}
 		table th { width: 100%; }
 	}
 	#content-related {
@@ -161,7 +164,7 @@ a.addlink {
 			}
 		}
 		#toolbar {
-			background: none !important; border: 0 !important; margin: 0 0 10px 0; min-height: 30px;
+			background: none !important; border: 0 !important; margin: 0 0 10px 0; min-height: 30px; height: auto;
 			form label { min-width: auto; padding: 0; font-size: 100%; }
 			form #searchbar { padding: 6px 5px 8px 5px !important; font-size: 100%; }
 		}
