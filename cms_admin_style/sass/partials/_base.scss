@@ -1,9 +1,5 @@
 // base
 
-html, body { height: 100%; }
-
-html { overflow: auto !important; }
-
 body { background: url('../images/bg-pattern-light.jpg') $background-color-ultralight repeat !important; }
 
 body, select, input, textarea { color: $font-color; }
