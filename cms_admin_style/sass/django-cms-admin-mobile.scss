@@ -3,38 +3,51 @@
 // base
 html, body { height: auto; }
 #header, .breadcrfumbs { display: none; }
-#content { margin: 0 10px; }
+#content { margin: 0 5px; }
 #container { margin: 0; margin-top: 31px; min-width: 250px !important; }
 
 // general
 .module {
-	border: none; background: none !important; box-shadow: none; margin: 0; padding: 10px 0 5px 0;
+	border: none; box-shadow: none; margin: 0; padding: 5px 0 5px 0 !important;
 	@include box-shadow(none !important);
 	caption { margin-bottom: 5px; }
 }
-.object-tools { margin-left: 0px; }
+div.breadcrumbs { padding-left: 5px; }
+.plugin-holder { display: none !important; }
 
 // dashboard
 .colMS { margin-right: 10px !important; }
 .dashboard {
 	#container {
 		#content h1 { display: none; }
-		#content-main { min-width: 0; max-width: none; float: none; }
+		#content-main {
+			min-width: 0; max-width: none; float: none;
+			.addlink, .changelink { text-indent: -9999px; overflow: hidden; }
+		}
 		#content-related { width: auto; float: none; margin-right: 0; }
 		#content-related .module {
 			padding: 10px !important; margin: 10px 0;
 			.actionlist { margin-left: 10px; }
 		}
 	}
+	.module { background: none !important; }
 }
 
 // changelist
+.change-list #content {  }
 .change-list #content .filtered { background-color: transparent !important; }
 .change-list {
-	#content > h1 { display: none; }
-	#content { margin-top: 50px; }
-	#toolbar form #searchbar { width: 120px; }
-	#toolbar .small { display: block; }
+	#content {
+		margin-top: 38px;
+		> h1 { display: none; }
+		.object-tools { margin: -33px 0 0 0; }
+	}
+
+	#toolbar {
+		label { display: inline-block; }
+		form #searchbar { width: 120px; }
+		.small { display: block; }
+	}
 	.filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
 		margin-right: 0 !important; }
 }
@@ -48,3 +61,25 @@ html, body { height: auto; }
 
 #sitemap li .col-softroot, #sitemap li .col-language { display: block !important; }
 
+// chageform
+.change-form {
+	#content {
+		margin-top: 45px;
+		> h1 { display: none; }
+	}
+	.object-tools { margin: -35px 0 0 0; }
+	//.module { max-width: 250px; overflow: auto; }
+}
+
+// cms language buttons
+#page_form_lang_tabs input { font-weight: normal !important; font-size: 11px !important; padding: 2px 4px !important; }
+
+// forms
+form label, .aligned label { display: block; padding: 0 !important; float: none !important;
+	line-height: 14px; margin-top: 5px; }
+form {
+	input, input[type="file"], textarea, select { width: auto; max-width: 200px; }
+	.vTextField { width: auto; }
+	.aligned p, .aligned ul { padding-left: 0 !important; margin-left: 0 !important; }
+	.submit-row { text-align: left; }
+}

@@ -1,14 +1,12 @@
 {% extends "admin/base.html" %}
 {% load i18n %}
 
-{% block extrastyle %}
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/django-cms-admin.css" />
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/django-cms-admin-mobile.css" media="screen and (max-width: 420px)" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    {% include 'admin/inc/extrastyle.html' %}
-{% endblock %}
+{% block extrastyle %}{% include 'admin/inc/extrastyle.html' %}{% endblock %}
 
-{% block extrahead %}{% include 'admin/inc/extrahead.html' %}{% endblock %}
+{% block extrahead %}<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/django-cms-admin.css" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/django-cms-admin-mobile.css" media="screen and (max-width: 420px)" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+{% include 'admin/inc/extrahead.html' %}{% endblock %}
 
 {% block title %}{% include 'admin/inc/title.html' %}{% endblock %}
 

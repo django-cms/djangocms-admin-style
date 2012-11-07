@@ -21,41 +21,45 @@
 	}
 }
 
-#content-main {
-	.inline-group { border: 0;
-		.module {
-			padding: 10px;
-			h2 { margin-bottom: 10px; padding: 0 10px 8px 0px; }
-			.add-row a { border-bottom: none; }
-			.add-row td { background: none; border-bottom: none; }
-			tr.add-row:hover { background: none; }
-			.form-row { border-bottom: none !important; }
-		}
-		.tabular tr.has_original td { padding-top: 5px; }
+// inlines
+.module h2, .module caption, .inline-group h2 { background: none; color: $font-color-dark; font-size: 16px; }
+.inline-group {
+	border: 0; @include box();
+	.module {
+		background: none !important; @include border-radius(0); @include box-shadow(none); border: none !important;
+		h2 { margin-bottom: 10px; padding: 0 10px 8px 0px; }
+		.add-row a { border-bottom: none; color: $button-green-dark-color; }
+		.add-row td { background: none; border-bottom: none; }
+		tr.add-row:hover { background: none; }
+		.form-row { border-bottom: none !important; }
 	}
-
-	.inline-related {
-		h3 { background: none; border-bottom: none; }
+	.add-row {
+		&, td { border-bottom: none; background: none !important; }
+		a { color: $button-green-dark-color; }
 	}
-
-	.submit-row {
-		@include border-radius(); border: 1px solid $line-color-light; padding: 10px;
-		@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
-		background: $background-color-light;
-		background: $background-color-transparent !important;
-		.deletelink-box { margin: 0.5em 0 !important; }
-		input[type="submit"].default { margin-left: 10px; }
+	.tabular tr.has_original td { padding-top: 5px; }
+}
+.inline-related {
+	margin-bottom: 5px;
+	h3 { background: none; border-bottom: none; }
+}
+.submit-row {
+	@include border-radius(); border: 1px solid $line-color-light; padding: 10px;
+	@include box-shadow($background-color-white 0 0 $button-shadow-width inset !important);
+	background: $background-color-light;
+	background: $background-color-transparent !important;
+	.deletelink-box a {  }
+	input[type="submit"].default { margin-left: 10px; }
+}
+.selector {
+	.selector-available, .selector-chosen {
+		@include border-radius(); border: 1px solid $line-color-light;
+		h2 { color: $font-color !important; background: none !important; border: none; margin-bottom: 0; }
+		input { width: 252px; }
 	}
-	.selector {
-		.selector-available, .selector-chosen {
-			@include border-radius(); border: 1px solid $line-color-light;
-			h2 { color: $font-color !important; background: none !important; border: none; margin-bottom: 0; }
-			input { width: 252px; }
-		}
-		.selector-filter { border: none; }
-		select[multiple] { border: 1px solid $line-color-light; border-left: none; border-right: none;
-			margin-bottom: 0; }
-	}
+	.selector-filter { border: none; }
+	select[multiple] { border: 1px solid $line-color-light; border-left: none; border-right: none;
+		margin-bottom: 0; }
 }
 
 // login
@@ -185,7 +189,22 @@ a.addlink {
 	}
 }
 
+// changeform
+.change-form {}
+
 // cms pagelist
 #sitemap .cont:hover .col-actions a.deletelink { color: #CC3434; }
 #sitemap .cont:hover .col-actions a.addlink { color: #9AB933; }
+
+// cms language buttons
+#page_form_lang_tabs input {
+	@include border-bottom-radius(0); @include box-shadow(none !important);
+	background: white !important; color: $font-color-medium !important; font-weight: normal !important;
+	border: none !important; margin: 0;
+	&.selected { background: $info-color-ultralight !important; color: black !important; }
+	&.notfilled { background: $background-color-light !important; color: $font-color-light !important; }
+	&:hover, &:focus { color: black !important; }
+}
+#lang_tab_content h2.header { background: $info-color-ultralight !important; @include border-top-right-radius();
+	margin-bottom: -3px !important; position: relative; }
 

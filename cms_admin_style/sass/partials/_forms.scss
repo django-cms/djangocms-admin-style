@@ -1,5 +1,5 @@
 form {
-	button, input, select, textarea { margin: 2px 0; }
+	button, input, select, textarea { margin: 2px 0; font-size: 13px; }
 	small { color: $font-color-light; }
 	hr { margin: 5px 0; }
 	fieldset { vertical-align: middle; line-height: 2em; }
@@ -28,7 +28,6 @@ form {
 	//.aligned.wide p.help { padding-left: 55px; }
 }
 
-.form-row { border-bottom-color: $line-color-ultralight; padding: 12px; font-size: 13px; }
 
 input:valid, textarea:valid {}
 input:invalid, textarea:invalid {
