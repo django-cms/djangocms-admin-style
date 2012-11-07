@@ -127,7 +127,7 @@ div.breadcrumbs { padding-left: 5px; }
 .change-form #content { margin-top: 45px; }
 .change-form #content > h1 { display: none; }
 .change-form .object-tools { margin: -35px 0 0 0; }
-.change-form .collapsed h2 { border-bottom: none; margin-bottom: 0; }
+.change-form .collapsed h2 { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
 #page_form_lang_tabs input { font-weight: normal !important; font-size: 11px !important; padding: 2px 4px !important; }
 
@@ -138,7 +138,7 @@ form .vTextField { width: auto; }
 form .aligned p, form .aligned ul { padding-left: 0 !important; margin-left: 0 !important; }
 form .submit-row { text-align: left; }
 
-.inline-group { padding: 5px; }
+.inline-group { padding: 5px; margin-bottom: 10px; }
 .inline-group .module h2 { padding-left: 5px; }
 
 .selector { width: auto; float: none; }
