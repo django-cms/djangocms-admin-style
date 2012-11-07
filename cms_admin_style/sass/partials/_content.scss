@@ -16,8 +16,8 @@
 	}
 	table {
 		margin: 0;
-		th { padding: 0 5px !important; line-height: 22px; }
-		td { padding: 5px 5px; line-height: 22px; }
+		th { padding: 2px 5px !important; line-height: 13px; }
+		td { padding: 8px 5px; line-height: 13px; }
 	}
 }
 
@@ -117,7 +117,7 @@ div.breadcrumbs { background: $line-color-dark; border-top: 1px solid $line-colo
 	#content-main {
 		min-width: 400px; max-width: 640px;
 		table th, table td {
-			height: 20px; width: auto; border-color: $line-color-ultralight;
+			width: auto; border-color: $line-color-ultralight;
 			a { line-height: 16px; }
 		}
 		table th { width: 100%; }

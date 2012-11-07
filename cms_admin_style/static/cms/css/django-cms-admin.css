@@ -227,8 +227,8 @@ fieldset table { border: none; }
 .module caption { background: none; color: #888888; font-size: 130%; font-weight: bold; line-height: 1.75em; margin-bottom: 10px; padding: 0; }
 .module caption a.section, .module caption a.section:link, .module caption a.section:visited { color: #888888; }
 .module table { margin: 0; }
-.module table th { padding: 0 5px !important; line-height: 22px; }
-.module table td { padding: 5px 5px; line-height: 22px; }
+.module table th { padding: 2px 5px !important; line-height: 13px; }
+.module table td { padding: 8px 5px; line-height: 13px; }
 
 .module h2, .module caption, .inline-group h2 { background: none; color: #222222; font-size: 16px; }
 
@@ -284,7 +284,7 @@ div.breadcrumbs a { color: #888888; }
 div.breadcrumbs a:hover { color: #cccccc; text-decoration: none; }
 
 .dashboard #container #content-main { min-width: 400px; max-width: 640px; }
-.dashboard #container #content-main table th, .dashboard #container #content-main table td { height: 20px; width: auto; border-color: #f3f3f3; }
+.dashboard #container #content-main table th, .dashboard #container #content-main table td { width: auto; border-color: #f3f3f3; }
 .dashboard #container #content-main table th a, .dashboard #container #content-main table td a { line-height: 16px; }
 .dashboard #container #content-main table th { width: 100%; }
 .dashboard #container #content-related { float: left; }
