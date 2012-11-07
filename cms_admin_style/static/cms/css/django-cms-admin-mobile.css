@@ -136,3 +136,7 @@ form input, form input[type="file"], form textarea, form select { width: auto; m
 form .vTextField { width: auto; }
 form .aligned p, form .aligned ul { padding-left: 0 !important; margin-left: 0 !important; }
 form .submit-row { text-align: left; }
+
+.inline-group { padding: 5px; }
+.inline-group .module { width: 100%; overflow: auto; }
+.inline-group .module h2 { padding-left: 5px; }

@@ -24,10 +24,11 @@
 // inlines
 .module h2, .module caption, .inline-group h2 { background: none; color: $font-color-dark; font-size: 16px; }
 .inline-group {
-	border: 0; @include box();
+	border: 0; @include box(); padding: 10px 15px 15px;
 	.module {
 		background: none !important; @include border-radius(0); @include box-shadow(none); border: none !important;
-		h2 { margin-bottom: 10px; padding: 0 10px 8px 0px; }
+		padding: 0;
+		h2 { margin-bottom: 10px; padding-top: 0; padding-bottom: 8px; }
 		.add-row a { border-bottom: none; color: $button-green-dark-color; }
 		.add-row td { background: none; border-bottom: none; }
 		tr.add-row:hover { background: none; }

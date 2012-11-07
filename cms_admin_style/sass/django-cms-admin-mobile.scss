@@ -83,3 +83,12 @@ form {
 	.aligned p, .aligned ul { padding-left: 0 !important; margin-left: 0 !important; }
 	.submit-row { text-align: left; }
 }
+
+// inlines
+.inline-group {
+	padding: 5px;
+	.module {
+		width: 100%; overflow: auto;
+		h2 { padding-left: 5px; }
+	}
+}
