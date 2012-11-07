@@ -34,6 +34,7 @@
 		tr.add-row:hover { background: none; }
 		.form-row { border-bottom: none !important; }
 	}
+	.module { width: 100%; overflow: auto; }
 	.add-row {
 		&, td { border-bottom: none; background: none !important; }
 		a { color: $button-green-dark-color; }
@@ -155,7 +156,7 @@ a.addlink {
 // changelist
 .change-list {
 	.filtered {
-		min-height: auto;
+		min-height: auto; background-image: none !important;
 		table { border: none; }
 	}
 	#changelist {

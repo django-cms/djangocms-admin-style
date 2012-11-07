@@ -89,7 +89,7 @@ html, body { height: auto; }
 
 #container { margin: 0; margin-top: 31px; min-width: 250px !important; }
 
-.module { border: none; box-shadow: none; margin: 0; padding: 5px 0 5px 0 !important; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; -o-box-shadow: none !important; box-shadow: none !important; }
+.module { border: none; box-shadow: none; padding: 5px 0 5px 0 !important; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; -o-box-shadow: none !important; box-shadow: none !important; }
 .module caption { margin-bottom: 5px; }
 
 div.breadcrumbs { padding-left: 5px; }
@@ -106,8 +106,6 @@ div.breadcrumbs { padding-left: 5px; }
 .dashboard #container #content-related .module .actionlist { margin-left: 10px; }
 .dashboard .module { background: none !important; }
 
-.change-list #content .filtered { background-color: transparent !important; }
-
 .change-list #content { margin-top: 38px; }
 .change-list #content > h1 { display: none; }
 .change-list #content .object-tools { margin: -33px 0 0 0; }
@@ -115,6 +113,8 @@ div.breadcrumbs { padding-left: 5px; }
 .change-list #toolbar form #searchbar { width: 120px; }
 .change-list #toolbar .small { display: block; }
 .change-list .filtered .results, .change-list .change-list .filtered .paginator, .change-list .filtered #toolbar, .change-list .filtered div.xfull { margin-right: 0 !important; }
+.change-list .module #changelist-form .results { width: 100%; overflow: auto; }
+.change-list .filtered .actions, .change-list .filtered .paginator { margin-right: 0 !important; }
 
 #changelist-filter-button, #changelist-filter { display: none !important; }
 
@@ -127,6 +127,7 @@ div.breadcrumbs { padding-left: 5px; }
 .change-form #content { margin-top: 45px; }
 .change-form #content > h1 { display: none; }
 .change-form .object-tools { margin: -35px 0 0 0; }
+.change-form .collapsed h2 { border-bottom: none; margin-bottom: 0; }
 
 #page_form_lang_tabs input { font-weight: normal !important; font-size: 11px !important; padding: 2px 4px !important; }
 
@@ -138,5 +139,4 @@ form .aligned p, form .aligned ul { padding-left: 0 !important; margin-left: 0 !
 form .submit-row { text-align: left; }
 
 .inline-group { padding: 5px; }
-.inline-group .module { width: 100%; overflow: auto; }
 .inline-group .module h2 { padding-left: 5px; }

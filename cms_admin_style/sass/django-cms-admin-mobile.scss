@@ -8,7 +8,7 @@ html, body { height: auto; }
 
 // general
 .module {
-	border: none; box-shadow: none; margin: 0; padding: 5px 0 5px 0 !important;
+	border: none; box-shadow: none; padding: 5px 0 5px 0 !important;
 	@include box-shadow(none !important);
 	caption { margin-bottom: 5px; }
 }
@@ -35,14 +35,13 @@ div.breadcrumbs { padding-left: 5px; }
 
 // changelist
 .change-list #content {  }
-.change-list #content .filtered { background-color: transparent !important; }
 .change-list {
 	#content {
 		margin-top: 38px;
 		> h1 { display: none; }
 		.object-tools { margin: -33px 0 0 0; }
+		.filtered {  }
 	}
-
 	#toolbar {
 		label { display: inline-block; }
 		form #searchbar { width: 120px; }
@@ -50,6 +49,10 @@ div.breadcrumbs { padding-left: 5px; }
 	}
 	.filtered .results, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
 		margin-right: 0 !important; }
+	.module #changelist-form .results { width: 100%; overflow: auto; }
+	.filtered {
+		.actions, .paginator { margin-right: 0 !important; }
+	}
 }
 #changelist-filter-button, #changelist-filter { display: none !important; }
 .tree { background: white; }
@@ -68,7 +71,9 @@ div.breadcrumbs { padding-left: 5px; }
 		> h1 { display: none; }
 	}
 	.object-tools { margin: -35px 0 0 0; }
-	//.module { max-width: 250px; overflow: auto; }
+	.collapsed {
+		h2 { border-bottom: none; margin-bottom: 0; }
+	}
 }
 
 // cms language buttons
@@ -88,7 +93,6 @@ form {
 .inline-group {
 	padding: 5px;
 	.module {
-		width: 100%; overflow: auto;
 		h2 { padding-left: 5px; }
 	}
 }
