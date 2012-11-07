@@ -53,13 +53,17 @@
 	.deletelink-box a {  }
 	input[type="submit"].default { margin-left: 10px; }
 }
+
+// filter horizontal m2m
 .selector {
 	.selector-available, .selector-chosen {
 		@include border-radius(); border: 1px solid $line-color-light;
-		h2 { color: $font-color !important; background: none !important; border: none; margin-bottom: 0; }
-		input { width: 252px; }
+		h2 { color: $font-color !important; background: none !important; border: none; margin-bottom: 0;
+			font-size: 13px; line-height: 16px; }
+		input { width: 252px; margin: -5px 0 2px 0; }
 	}
 	.selector-filter { border: none; }
+	.selector-filter label { display: none; }
 	select[multiple] { border: 1px solid $line-color-light; border-left: none; border-right: none;
 		margin-bottom: 0; }
 }

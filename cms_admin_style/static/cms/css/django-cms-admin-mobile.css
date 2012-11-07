@@ -140,3 +140,12 @@ form .submit-row { text-align: left; }
 
 .inline-group { padding: 5px; }
 .inline-group .module h2 { padding-left: 5px; }
+
+.selector { width: auto; float: none; }
+.selector .selector-available, .selector .selector-chosen { width: auto; float: none; }
+.selector .selector-available p, .selector .selector-chosen p { text-align: center; }
+.selector .selector-chosen { margin-top: 60px; }
+.selector ul.selector-chooser { margin-top: 0; display: block; }
+.selector select[multiple], .selector select { max-width: none; width: 100%; }
+.selector label { display: inline-block; }
+.selector .selector-available input, .selector .selector-chosen input { width: auto; }
