@@ -6,6 +6,7 @@ table {
 	thead th, thead th.sorted, tfoot td { background: $background-color-ultralight; }
 	thead th.sortable:hover { background: $background-color-light; }
 	td, th { font-family: $base-font-family; padding: 5px; }
+	td.original { vertical-align: top; }
 	tbody tr:hover { background: $background-color-highlighter; }
 	tr {
 		td { border-bottom: 1px solid $line-color-ultralight; }
