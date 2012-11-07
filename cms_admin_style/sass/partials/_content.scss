@@ -195,9 +195,7 @@ a.addlink {
 }
 
 // changeform
-.change-form {
-	.collapsed h2 { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-}
+.change-form {}
 
 // cms pagelist
 #sitemap .cont:hover .col-actions a.deletelink { color: #CC3434; }
@@ -208,9 +206,10 @@ a.addlink {
 	@include border-bottom-radius(0); @include box-shadow(none !important);
 	background: white !important; color: $font-color-medium !important; font-weight: normal !important;
 	border: none !important; margin: 0;
-	&.selected { background: $info-color-ultralight !important; color: black !important; }
-	&.notfilled { background: $background-color-light !important; color: $font-color-light !important; }
 	&:hover, &:focus { color: black !important; }
+	&.selected { background: $info-color-ultralight !important; color: white !important;
+		@include text-shadow(0 1px 1px rgba(0,0,0,0.2)); }
+	&.notfilled { background: $background-color-light !important; color: $font-color-light !important; }
 }
 #lang_tab_content h2.header { background: $info-color-ultralight !important; @include border-top-right-radius();
 	margin-bottom: -3px !important; position: relative; }
@@ -220,14 +219,14 @@ a.addlink {
 	border-bottom: 5px solid $info-color-ultralight; margin-bottom: -3px; position: relative;
 	span { @include inline-block(); border: none !important; top: 0 !important; color: $font-color-medium !important;
 		font-weight: normal !important; vertical-align: top; background: white; padding: 8px 10px !important;
-		margin: 0 2px 0 0 !important; @include border-top-radius(); }
+		margin: 0 !important; @include border-top-radius(); }
 	a {
 		color: $font-color-medium !important; padding: 5px 10px;
 		&:hover, &:focus { color: black !important; text-decoration: none; }
 	}
 	.empty { opacity: 1 !important; background: $background-color-light; color: $font-color-light; }
-	.current { background: $info-color-ultralight; color: black; padding-left: 20px !important;
-		padding-right: 20px !important; }
+	.current { background: $info-color-ultralight; color: white !important; padding-left: 20px !important;
+		padding-right: 20px !important; @include text-shadow(0 1px 1px rgba(0,0,0,0.2)); }
 	.deletelink { display: inline; padding: 0 0 0 12px !important; margin: 0; @include border-top-radius(0);
 		background: url('../../admin/img/icon_deletelink.gif') 0 .25em no-repeat !important; bottom: 0px !important;
 		right: -3px !important; }
