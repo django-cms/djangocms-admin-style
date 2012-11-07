@@ -10,7 +10,7 @@
 /* Template Editor */
 @font-face { font-family: 'django-admin-icons'; src: url("../fonts/django-admin-icons.eot"); src: url("../fonts/django-admin-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/django-admin-icons.svg#django-admin-icons") format("svg"), url("../fonts/django-admin-icons.woff") format("woff"), url("../fonts/django-admin-icons.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 12px; vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
@@ -30,7 +30,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 
-body { font-size: 13px; font-family: "Lucida Grande", Verdana, Arial, sans-serif; line-height: 1.231; *font-size: small; }
+body { font-size: 12px; font-family: "Lucida Grande", Verdana, Arial, sans-serif; line-height: 1.231; *font-size: small; }
 
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
@@ -80,10 +80,6 @@ nav ul, nav li { margin: 0; list-style: none; list-style-image: none; }
 .clearfix { zoom: 1; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
-
-html, body { height: 100%; }
-
-html { overflow: auto !important; }
 
 body { background: url("../images/bg-pattern-light.jpg") #fcfcfc repeat !important; }
 
@@ -200,6 +196,7 @@ table th, table td { padding: 5px 10px; text-align: left; vertical-align: middle
 table thead th, table thead th.sorted, table tfoot td { background: #fcfcfc; }
 table thead th.sortable:hover { background: #f1f1f1; }
 table td, table th { font-family: "Lucida Grande", Verdana, Arial, sans-serif; padding: 5px; }
+table td.original { vertical-align: top; }
 table tbody tr:hover { background: #f1faff; }
 table tr td { border-bottom: 1px solid #f3f3f3; }
 table th a, table th a:link, table th a:visited, table th a:link:visited { color: #444444; }
@@ -246,7 +243,6 @@ fieldset table { border: none; }
 .inline-group .module { width: 100%; overflow: auto; }
 .inline-group .add-row, .inline-group .add-row td { border-bottom: none; background: none !important; }
 .inline-group .add-row a { color: #8fad28; }
-.inline-group .tabular tr.has_original td { padding-top: 5px; }
 
 .inline-related { margin-bottom: 5px; }
 .inline-related h3 { background: none; border-bottom: none; }
@@ -347,6 +343,8 @@ a.addlink:hover, a.addlink:focus, a.addlink:active { color: #8fad28; }
 .change-list #changelist .actions button { height: 20px; vertical-align: middle; padding-top: 2px !important; }
 .change-list #changelist .paginator { border: none; background: none; }
 
+.change-form .collapsed h2 { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
 #sitemap .cont:hover .col-actions a.deletelink { color: #CC3434; }
 
 #sitemap .cont:hover .col-actions a.addlink { color: #9AB933; }
@@ -357,6 +355,16 @@ a.addlink:hover, a.addlink:focus, a.addlink:active { color: #8fad28; }
 #page_form_lang_tabs input:hover, #page_form_lang_tabs input:focus { color: black !important; }
 
 #lang_tab_content h2.header { background: #addef6 !important; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -o-border-top-right-radius: 4px; -ms-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; margin-bottom: -3px !important; position: relative; }
+
+.nani-language-tabs { border-bottom: 5px solid #addef6; margin-bottom: -3px; position: relative; }
+.nani-language-tabs span { display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; border: none !important; top: 0 !important; color: #666666 !important; font-weight: normal !important; vertical-align: top; background: white; padding: 8px 10px !important; margin: 0 2px 0 0 !important; -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -o-border-top-left-radius: 4px; -ms-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -o-border-top-right-radius: 4px; -ms-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+.nani-language-tabs span { *display: inline; }
+.nani-language-tabs a { color: #666666 !important; padding: 5px 10px; }
+.nani-language-tabs a:hover, .nani-language-tabs a:focus { color: black !important; text-decoration: none; }
+.nani-language-tabs .empty { opacity: 1 !important; background: #f1f1f1; color: #888888; }
+.nani-language-tabs .current { background: #addef6; color: black; padding-left: 20px !important; padding-right: 20px !important; }
+.nani-language-tabs .deletelink { display: inline; padding: 0 0 0 12px !important; margin: 0; -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; -o-border-top-left-radius: 0; -ms-border-top-left-radius: 0; -khtml-border-top-left-radius: 0; border-top-left-radius: 0; -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; -o-border-top-right-radius: 0; -ms-border-top-right-radius: 0; -khtml-border-top-right-radius: 0; border-top-right-radius: 0; background: url("../../admin/img/icon_deletelink.gif") 0 0.25em no-repeat !important; bottom: 0px !important; right: -3px !important; }
+.nani-language-tabs .current .deletelink { right: -12px !important; }
 
 .admin_shortcuts .shortcuts { -moz-box-shadow: none; -webkit-box-shadow: none; -o-box-shadow: none; box-shadow: none; background: #595f65; border-top: 1px solid #444444; color: #cccccc; }
 .admin_shortcuts .shortcuts h2 { border: none; font-weight: normal; }

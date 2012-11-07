@@ -10,7 +10,7 @@
 /* Template Editor */
 @font-face { font-family: 'django-admin-icons'; src: url("../fonts/django-admin-icons.eot"); src: url("../fonts/django-admin-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/django-admin-icons.svg#django-admin-icons") format("svg"), url("../fonts/django-admin-icons.woff") format("woff"), url("../fonts/django-admin-icons.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 12px; vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
@@ -30,7 +30,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 
-body { font-size: 13px; font-family: "Lucida Grande", Verdana, Arial, sans-serif; line-height: 1.231; *font-size: small; }
+body { font-size: 12px; font-family: "Lucida Grande", Verdana, Arial, sans-serif; line-height: 1.231; *font-size: small; }
 
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
@@ -127,7 +127,6 @@ div.breadcrumbs { padding-left: 5px; }
 .change-form #content { margin-top: 45px; }
 .change-form #content > h1 { display: none; }
 .change-form .object-tools { margin: -35px 0 0 0; }
-.change-form .collapsed h2 { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
 #page_form_lang_tabs input { font-weight: normal !important; font-size: 11px !important; padding: 2px 4px !important; }
 
