@@ -58,10 +58,6 @@ textarea { overflow: auto; vertical-align: text-top; }
 
 input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
 
-::-moz-selection { background: none; color: none; text-shadow: none; }
-
-::selection { background: none; color: none; text-shadow: none; }
-
 a:link { -webkit-tap-highlight-color: none; }
 
 .ie7 img { -ms-interpolation-mode: bicubic; }

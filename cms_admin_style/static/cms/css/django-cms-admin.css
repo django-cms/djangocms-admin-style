@@ -58,10 +58,6 @@ textarea { overflow: auto; vertical-align: text-top; }
 
 input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
 
-::-moz-selection { background: none; color: none; text-shadow: none; }
-
-::selection { background: none; color: none; text-shadow: none; }
-
 a:link { -webkit-tap-highlight-color: none; }
 
 .ie7 img { -ms-interpolation-mode: bicubic; }
@@ -117,8 +113,6 @@ strong { font-weight: bold; }
 .small, small { font-size: 85%; margin-top: 0; }
 
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-
-::selection, ::-moz-selection { background: #AFD7FF; color: #444; text-shadow: none; }
 
 form button, form input, form select, form textarea { margin: 2px 0; font-size: 13px; }
 form small { color: #888888; }

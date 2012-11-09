@@ -31,7 +31,7 @@ $list-left-margin: 1.8em !default;
 
 	@include reset-form-elements;
 
-	@include selected-text;
+	//@include selected-text;
 
 	@include webkit-tap-highlight;
 
