@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 import os
-import cms_admin_style
+import djangocms_admin_style
 
 CLASSIFIERS = [
     'Environment :: Web Environment',
@@ -16,8 +16,8 @@ CLASSIFIERS = [
 setup(
     author="Ales Kocjancic",
     author_email="alesdotio@gmail.com",
-    name='django-cms-admin-style',
-    version=cms_admin_style.__version__,
+    name='djangocms-admin-style',
+    version=djangocms_admin_style.__version__,
     description='Adds pretty CSS styles for the django CMS admin interface.',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
     url='http://www.django-cms.org/',
