@@ -110,18 +110,18 @@
 
 @mixin button-red {
 	@include pie;
-	@include background-image(linear-gradient($button-red-light-color, $button-red-medium-color));
-	@include box-shadow($button-red-light-color 0 0 $button-shadow-width inset);
+	@include background-image(linear-gradient($button-red-light-color, $button-red-medium-color) !important);
+	@include box-shadow($button-red-light-color 0 0 $button-shadow-width inset !important);
 	background-color: $button-red-medium-color !important;
-	border: 1px solid $button-red-light-color;
-	border-bottom: 1px solid $button-red-dark-color;
+	border: 1px solid $button-red-light-color !important;
+	border-bottom: 1px solid $button-red-dark-color !important;
 	color: $button-red-font-color !important;
 	&:hover {
-		background: $button-red-light-color;
-		color: $button-red-font-color;
+		background: $button-red-light-color !important;
+		color: $button-red-font-color !important;
 	}
 	&:active {
-		background: $button-red-medium-color;
+		background: $button-red-medium-color !important;
 	}
 	&.animate {
 		@include stripes(.2);

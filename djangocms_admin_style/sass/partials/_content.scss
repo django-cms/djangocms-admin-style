@@ -198,6 +198,14 @@ a.addlink {
 // changeform
 .change-form {}
 
+// delete page
+.delete-confirmation .colM {
+	@include box(); padding: 20px; margin: 15px !important;
+	h1 { margin: 0 0 10px 0; }
+	li { line-height: 16px; }
+	input[type="submit"] { @include button-red(); float: right; }
+}
+
 // cms pagelist
 #sitemap li a.addlink, #sitemap li a.deletelink { width: 11px; height: 11px; }
 .tree {
