@@ -199,8 +199,10 @@ a.addlink {
 .change-form {}
 
 // cms pagelist
-#sitemap .cont:hover .col-actions a.deletelink { color: #CC3434; }
-#sitemap .cont:hover .col-actions a.addlink { color: #9AB933; }
+#sitemap li a.addlink, #sitemap li a.deletelink { width: 11px; height: 11px; }
+.tree {
+	.col1 .changelink { float: left; line-height: 16px !important; margin: 6px 0 0 15px !important; }
+}
 
 // cms language buttons
 #page_form_lang_tabs input {

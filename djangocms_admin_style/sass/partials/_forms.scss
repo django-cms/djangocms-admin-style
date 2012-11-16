@@ -59,24 +59,28 @@ a.button {
 div.calendar {
 	table {
 		caption { @include background-image(linear-gradient($background-color-dark, $background-color-medium));
-			background-color: $background-color-dark; color: $font-color-white !important;
+			background-color: $background-color-dark; color: $font-color-white !important; margin: 0;
 			@include border-top-radius(); }
-		td { padding: 0; }
+		td { padding: 0; background: #f3f3f3; }
 		td a { padding: 6px 4px; }
 	}
+	.today a { background: $info-color-ultralight; }
 }
 div.calendarbox {
 	width: 200px !important;
 	table th, table td { line-height: 12px; }
 	.calendarnav-previous, .calendarnav-next {
-		background: none; color: white; text-decoration: none; padding: 4px 7px 7px;
+		background: none; color: white; text-decoration: none; padding: 4px 7px 6px;
 		&:hover, &:focus { background: #666; }
 	}
+	.calendar-shortcuts { background: transparent; padding: 10px 0 6px 0; border-color: #ddd; }
 }
 div.calendarbox, div.clockbox {
-	@include border-radius();
-	padding: 0; margin: 0; @include box-shadow(0 1px 10px rgba(0,0,0,0.3)); border: 1px solid #ccc;
-	.calendar-cancel { @include border-bottom-radius(); background: none; margin-top: 5px !important }
+	@include border-radius(); background: #f3f3f3;
+	padding: 0; margin: 0; @include box-shadow(0 1px 10px rgba(0,0,0,0.1)); border: 1px solid #ccc;
+	caption, h2 { font-size: 14px; }
+	.calendar-cancel { @include border-bottom-radius(); background: none; margin-top: 5px !important;
+		padding: 5px 0 !important; }
 }
 // clock
 div.clockbox {
@@ -84,6 +88,7 @@ div.clockbox {
 	h2 { @include background-image(linear-gradient($background-color-dark, $background-color-medium));
 		background-color: $background-color-dark; color: $font-color-white !important;
 		@include border-top-radius(); }
+	.timelist a { padding: 5px 2px; }
 }
 .timelist a {
 	&, &:active, &:focus, &:hover { background: none !important; }

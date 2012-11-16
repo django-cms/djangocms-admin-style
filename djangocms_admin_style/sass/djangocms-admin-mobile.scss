@@ -6,6 +6,7 @@ html, body { height: auto; }
 #container { margin: 0; min-width: 200px !important; }
 #branding { display: none; }
 .login #branding { display: block; }
+#user-tools { position: relative; text-align: center; }
 
 // general
 .module {

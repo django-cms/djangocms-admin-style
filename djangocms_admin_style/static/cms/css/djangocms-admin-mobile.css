@@ -8,6 +8,8 @@ html, body { height: auto; }
 
 .login #branding { display: block; }
 
+#user-tools { position: relative; text-align: center; }
+
 .module { border: none; box-shadow: none; padding: 5px 0 5px 0 !important; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; -o-box-shadow: none !important; box-shadow: none !important; }
 .module caption { margin-bottom: 5px; margin-left: 5px; }
 
