@@ -1,96 +1,24 @@
-/* Dimensions */
-/* inactive */
-/* Silver */
-/* Blue */
-/* Orange */
-/* Red */
-/* Green */
-/* Black */
-/* Paddings */
-/* Template Editor */
-@font-face { font-family: 'django-admin-icons'; src: url("../fonts/django-admin-icons.eot"); src: url("../fonts/django-admin-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/django-admin-icons.svg#django-admin-icons") format("svg"), url("../fonts/django-admin-icons.woff") format("woff"), url("../fonts/django-admin-icons.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 12px; vertical-align: baseline; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-
-blockquote, q { quotes: none; }
-
-blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
-
-ins { background-color: #ff9; color: #000; text-decoration: none; }
-
-mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
-
-del { text-decoration: line-through; }
-
-abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-
-body { font-size: 12px; font-family: "Lucida Grande", Verdana, Arial, sans-serif; line-height: 1.231; *font-size: small; }
-
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
-
-html { overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-
-ul, ol { margin-left: 2em; }
-
-ol { list-style-type: decimal; }
-
-td { vertical-align: top; }
-
-sub { font-size: 75%; line-height: 0; position: relative; bottom: -0.25em; }
-
-sup { font-size: 75%; line-height: 0; position: relative; top: -0.5em; }
-
-a:hover, a:active { outline: none; }
-
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
-
-label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
-
-button, input, select, textarea { width: auto; overflow: visible; margin: 0; font-size: 100%; font-family: sans-serif; vertical-align: baseline; }
-
-textarea { overflow: auto; vertical-align: text-top; }
-
-input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
-
-a:link { -webkit-tap-highlight-color: none; }
-
-.ie7 img { -ms-interpolation-mode: bicubic; }
-
-.ie6 legend, .ie7 legend { margin-left: -7px; }
-
-nav ul, nav li { margin: 0; list-style: none; list-style-image: none; }
-
-.ir { text-indent: -119988px; overflow: hidden; text-align: left; direction: ltr; background-repeat: no-repeat; }
-
-.hidden { display: none; visibility: hidden; }
-
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-
-.clearfix { zoom: 1; }
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-
 html, body { height: auto; }
-
-#header, .breadcrfumbs { display: none; }
 
 #content { margin: 0 5px; }
 
-#container { margin: 0; margin-top: 31px; min-width: 250px !important; }
+#container { margin: 0; min-width: 200px !important; }
+
+#branding { display: none; }
+
+.login #branding { display: block; }
 
 .module { border: none; box-shadow: none; padding: 5px 0 5px 0 !important; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; -o-box-shadow: none !important; box-shadow: none !important; }
-.module caption { margin-bottom: 5px; }
+.module caption { margin-bottom: 5px; margin-left: 5px; }
 
 div.breadcrumbs { padding-left: 5px; }
 
 .plugin-holder { display: none !important; }
+
+body.login #container { width: auto !important; max-width: 320px; }
+body.login #container #content #content-main .form-row, body.login #container #content #content-main .submit-row { text-align: center; }
+body.login #container #content #content-main .form-row input { width: auto !important; max-width: none; min-width: 40px; }
+body.login #container #content #content-main .submit-row input, body.login #container #content #content-main .submit-row input[type="submit"] { width: 80% !important; }
 
 .colMS { margin-right: 10px !important; }
 
@@ -128,7 +56,7 @@ div.breadcrumbs { padding-left: 5px; }
 
 form label, .aligned label { display: block; padding: 0 !important; float: none !important; line-height: 14px; margin-top: 5px; }
 
-form input, form input[type="file"], form textarea, form select { width: auto; max-width: 200px; }
+form input, form input[type="file"], form textarea, form select { width: auto; /*max-width: 200px;*/ }
 form .vTextField { width: auto; }
 form .aligned p, form .aligned ul { padding-left: 0 !important; margin-left: 0 !important; }
 form .submit-row { text-align: left; }

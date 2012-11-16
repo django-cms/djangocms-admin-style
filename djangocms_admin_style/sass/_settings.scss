@@ -152,16 +152,16 @@ $tree-width: 250px;
 
 //@import "compass/css3/font-face"
 
-@font-face {
-	font-family: 'django-admin-icons';
-	src:url('../fonts/django-admin-icons.eot');
-	src:url('../fonts/django-admin-icons.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/django-admin-icons.svg#django-admin-icons') format('svg'),
-	url('../fonts/django-admin-icons.woff') format('woff'),
-	url('../fonts/django-admin-icons.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+//@font-face {
+//	font-family: 'django-admin-icons';
+//	src:url('../fonts/django-admin-icons.eot');
+//	src:url('../fonts/django-admin-icons.eot?#iefix') format('embedded-opentype'),
+//	url('../fonts/django-admin-icons.svg#django-admin-icons') format('svg'),
+//	url('../fonts/django-admin-icons.woff') format('woff'),
+//	url('../fonts/django-admin-icons.ttf') format('truetype');
+//	font-weight: normal;
+//	font-style: normal;
+//}
 
 
 // Then we'll import the compass extension

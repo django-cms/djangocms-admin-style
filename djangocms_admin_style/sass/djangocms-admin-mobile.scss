@@ -1,19 +1,32 @@
-@import "_settings.scss";
+@import "_compass.scss";
 
 // base
 html, body { height: auto; }
-#header, .breadcrfumbs { display: none; }
 #content { margin: 0 5px; }
-#container { margin: 0; margin-top: 31px; min-width: 250px !important; }
+#container { margin: 0; min-width: 200px !important; }
+#branding { display: none; }
+.login #branding { display: block; }
 
 // general
 .module {
 	border: none; box-shadow: none; padding: 5px 0 5px 0 !important;
 	@include box-shadow(none !important);
-	caption { margin-bottom: 5px; }
+	caption { margin-bottom: 5px; margin-left: 5px; }
 }
 div.breadcrumbs { padding-left: 5px; }
 .plugin-holder { display: none !important; }
+
+// login
+body.login {
+	#container {
+		width: auto !important; max-width: 320px;
+		#content #content-main {
+			.form-row, .submit-row { text-align: center; }
+			.form-row input { width: auto !important; max-width: none; min-width: 40px; }
+			.submit-row input, .submit-row input[type="submit"] { width: 80% !important; }
+		}
+	}
+}
 
 // dashboard
 .colMS { margin-right: 10px !important; }
@@ -80,7 +93,7 @@ div.breadcrumbs { padding-left: 5px; }
 form label, .aligned label { display: block; padding: 0 !important; float: none !important;
 	line-height: 14px; margin-top: 5px; }
 form {
-	input, input[type="file"], textarea, select { width: auto; max-width: 200px; }
+	input, input[type="file"], textarea, select { width: auto; /*max-width: 200px;*/ }
 	.vTextField { width: auto; }
 	.aligned p, .aligned ul { padding-left: 0 !important; margin-left: 0 !important; }
 	.submit-row { text-align: left; }

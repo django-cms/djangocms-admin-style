@@ -8,8 +8,6 @@
 /* Black */
 /* Paddings */
 /* Template Editor */
-@font-face { font-family: 'django-admin-icons'; src: url("../fonts/django-admin-icons.eot"); src: url("../fonts/django-admin-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/django-admin-icons.svg#django-admin-icons") format("svg"), url("../fonts/django-admin-icons.woff") format("woff"), url("../fonts/django-admin-icons.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 12px; vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -288,6 +286,7 @@ div.breadcrumbs a:hover { color: #cccccc; text-decoration: none; }
 .dashboard #container #content-related .module h2 { background: none; color: #888888; padding: 0 0 5px 0; }
 .dashboard #container #content-related .module h3 { border-bottom: 1px solid #dddddd; line-height: 20px; margin: 0 0 5px 0; padding: 0; }
 .dashboard #container #content-related .module p { padding: 0; }
+.dashboard #container table tbody tr:hover { background: none; }
 
 a.addlink, a.addlink:link, a.addlink:visited { color: #9ab933; }
 a.addlink:hover, a.addlink:focus, a.addlink:active { color: #8fad28; }

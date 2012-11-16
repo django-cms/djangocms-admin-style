@@ -6,6 +6,9 @@
 {% block extrahead %}<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/djangocms-admin.css" />
 <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/djangocms-admin-mobile.css" media="screen and (max-width: 420px)" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<script type="text/javascript">
+if (window.self!==window.top) { document.write('<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}cms/css/djangocms-admin-frontend.css" />'); }
+</script>
 {% include 'admin/inc/extrahead.html' %}{% endblock %}
 
 {% block title %}{% include 'admin/inc/title.html' %}{% endblock %}
