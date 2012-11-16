@@ -2,7 +2,7 @@ html, body { height: auto; }
 
 #content { margin: 0 5px; }
 
-#container { margin: 0; min-width: 200px !important; }
+#container { margin: 0; min-width: 240px !important; }
 
 #branding { display: none; }
 
