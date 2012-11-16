@@ -275,8 +275,8 @@ body.login #container #footer { display: none; }
 #header #branding h1 { color: white; padding: 3px 25px; }
 #header #user-tools { padding: 16px 25px 0; }
 
-div.breadcrumbs { background: #444444; border-top: 1px solid #444444; color: #cccccc; padding-left: 25px; }
-div.breadcrumbs a { color: #888888; }
+div.breadcrumbs { background: #595f65; border-top: 1px solid #444444; color: #ddd; padding-left: 25px; border-bottom: 0; padding-bottom: 4px; }
+div.breadcrumbs a { color: #bbb; }
 div.breadcrumbs a:hover { color: #cccccc; text-decoration: none; }
 
 .dashboard #container #content-main { min-width: 400px; max-width: 640px; }
