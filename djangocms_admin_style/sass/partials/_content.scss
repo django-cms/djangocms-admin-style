@@ -70,7 +70,7 @@
 
 // login
 body.login {
-	background: $background-color-ultralight url('../images/bg-pattern.jpg') repeat !important;
+	background: $background-color-ultralight url('../img/bg-pattern.jpg') repeat !important;
 	#container {
 		@include box(); border: none; width: 340px !important;
 		@include box-shadow(rgba(0, 0, 0, 0.3) 0px 1px 2px, #fff 0px 1px 1px inset);
@@ -241,7 +241,7 @@ a.addlink {
 	.current { background: $info-color-ultralight; color: white !important; padding-left: 20px !important;
 		padding-right: 20px !important; @include text-shadow(0 1px 1px rgba(0,0,0,0.2)); }
 	.deletelink { display: inline; padding: 0 0 0 12px !important; margin: 0; @include border-top-radius(0);
-		background: url('../../admin/img/icon_deletelink.gif') 0 .25em no-repeat !important; bottom: 0px !important;
+		background: url('../img/icon_deletelink.png') 0 .25em no-repeat !important; bottom: 0px !important;
 		right: -3px !important; }
 	.current .deletelink { right: -12px !important; }
 }

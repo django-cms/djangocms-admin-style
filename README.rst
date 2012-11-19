@@ -25,7 +25,7 @@ Compiling CSS
 
 ::
 
-    sass --watch djangocms_admin_style/sass/:djangocms_admin_style/static/cms/css/ --style compact
+    sass --watch djangocms_admin_style/sass/:djangocms_admin_style/static/djangocms_admin_style/css/ --style compact
 
 
 * If you keep getting this http://stackoverflow.com/questions/8723475/compass-add-compact-to-css-files try using something like ScoutApp.
