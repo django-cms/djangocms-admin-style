@@ -337,7 +337,7 @@ a.addlink:hover, a.addlink:focus, a.addlink:active { color: #8fad28; }
 .change-list #changelist table tbody th, .change-list #changelist table tbody td { border-color: #f1f1f1; }
 .change-list #changelist table tbody th a, .change-list #changelist table tbody th a:link, .change-list #changelist table tbody th a:visited, .change-list #changelist table tbody th a:link:visited, .change-list #changelist table tbody td a, .change-list #changelist table tbody td a:link, .change-list #changelist table tbody td a:visited, .change-list #changelist table tbody td a:link:visited { color: #029eee; }
 .change-list #changelist table tbody tr.selected { background: #f6fcff !important; }
-.change-list #changelist #toolbar { background: none !important; border: 0 !important; margin: 0 0 10px 0; min-height: 30px; height: auto; }
+.change-list #changelist #toolbar { background: none !important; border: 0 !important; margin: 0 0 5px 0; min-height: 30px; height: auto; }
 .change-list #changelist #toolbar form label { min-width: auto; padding: 0; font-size: 100%; }
 .change-list #changelist #toolbar form #searchbar { padding: 6px 5px 8px 5px !important; font-size: 100%; }
 .change-list #changelist #changelist-filter h2 { background: none; color: #888888; padding: 2px 9px; }
@@ -347,6 +347,7 @@ a.addlink:hover, a.addlink:focus, a.addlink:active { color: #8fad28; }
 .change-list #changelist #changelist-filter ul li.selected a { color: #029eee !important; }
 .change-list #changelist .actions { background: none; border: none; padding: 0px 3px 10px 3px; }
 .change-list #changelist .actions button { height: 20px; vertical-align: middle; padding-top: 2px !important; }
+.change-list #changelist .toplinks { border-bottom: none !important; background: none; margin-bottom: 5px !important; }
 .change-list #changelist .paginator { border: none; background: none; }
 
 .delete-confirmation .colM { -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.08); -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.08); -o-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.08); box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.08); padding: 0; background: white; border: none; margin-bottom: 5px; padding: 20px; margin: 15px !important; }
