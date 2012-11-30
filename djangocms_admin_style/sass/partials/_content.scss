@@ -181,8 +181,9 @@ a.addlink {
 			form #searchbar { padding: 6px 5px 8px 5px !important; font-size: 100%; }
 		}
 		#changelist-filter {
+			min-height: 100%; background: #fafafa; @include border-top-right-radius(); @include border-bottom-right-radius();
 			h2 { background: none; color: $font-color-light; padding: 2px 9px; }
-			h3 { margin-bottom: 5px; }
+			h3 { margin: 5px 0; }
 			ul {
 				font-size: 12px; margin-bottom: 10px;
 				li { margin-bottom: 2px; }
@@ -245,4 +246,10 @@ a.addlink {
 		background: url('../img/icon_deletelink.png') 0 .25em no-repeat !important; bottom: 0px !important;
 		right: -3px !important; }
 	.current .deletelink { right: -12px !important; }
+}
+
+// tinyMCE
+.mceEditor {
+	tr { background: none; }
+	tr:hover { background: inherit; }
 }
