@@ -206,10 +206,12 @@ fieldset table { border: none; }
 .filebrowser h1.folder_header .changelink { font-size: 16px; line-height: 30px; }
 .filebrowser .module table td { line-height: 16px; }
 
-.plugin-holder { background-color: white !important; }
+.plugin-holder { background: transparent url("../img/pluginlist-holder-bg.png") repeat-y !important; }
 .plugin-holder h2 { margin-bottom: 0 !important; }
 .plugin-holder .plugin-list-holder { width: 285px; }
 .plugin-holder .plugin-list-holder .text { width: 240px; }
+.plugin-holder .plugin-list-holder ul.plugin-list li.active { background: url("../img/bg-pattern-light.jpg") #efefef repeat; }
+.plugin-holder .plugin-list-holder ul.plugin-list li.active:hover { background: white url("../../cms/images/sitemap-li-bg.jpg") repeat-x 0px -100px; }
 
 .plugin-editor > iframe { min-height: 600px; }
 
