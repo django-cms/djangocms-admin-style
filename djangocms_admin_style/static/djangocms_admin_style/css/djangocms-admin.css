@@ -211,6 +211,8 @@ fieldset table { border: none; }
 .plugin-holder .plugin-list-holder { width: 285px; }
 .plugin-holder .plugin-list-holder .text { width: 240px; }
 
+.plugin-editor > iframe { min-height: 600px; }
+
 #container { width: auto !important; min-width: auto !important; }
 
 #content { width: auto !important; min-width: auto !important; }
