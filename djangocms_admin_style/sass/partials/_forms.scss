@@ -5,7 +5,7 @@ form {
 	fieldset { vertical-align: middle; line-height: 2em; }
 	fieldset.collapsed h2 { background-image: none; border-bottom: none; margin-bottom: 0; padding-bottom: 5px; }
 	label {
-		color: $font-color-light; line-height: 18px; display: inline-block; /*min-width: 160px;*/
+		word-break: break-all; color: $font-color-light; line-height: 18px; display: inline-block; /*min-width: 160px;*/
 		&.required { font-weight: bold; }
 	}
 	// input

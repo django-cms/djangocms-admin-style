@@ -117,7 +117,7 @@ form small { color: #888888; }
 form hr { margin: 5px 0; }
 form fieldset { vertical-align: middle; line-height: 2em; }
 form fieldset.collapsed h2 { background-image: none; border-bottom: none; margin-bottom: 0; padding-bottom: 5px; }
-form label { color: #888888; line-height: 18px; display: inline-block; /*min-width: 160px;*/ }
+form label { word-break: break-all; color: #888888; line-height: 18px; display: inline-block; /*min-width: 160px;*/ }
 form label.required { font-weight: bold; }
 form input, form textarea { -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; border: 1px solid #cccccc; color: #555555; padding: 6px 5px; outline: none; width: 250px; }
 form input[type="checkbox"], form input[type="radio"] { border: 0; display: inline; width: auto; margin-right: 6px; }
