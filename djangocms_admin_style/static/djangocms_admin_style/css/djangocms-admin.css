@@ -117,7 +117,7 @@ form small { color: #888888; }
 form hr { margin: 5px 0; }
 form fieldset { vertical-align: middle; line-height: 2em; }
 form fieldset.collapsed h2 { background-image: none; border-bottom: none; margin-bottom: 0; padding-bottom: 5px; }
-form label { word-break: break-all; color: #888888; line-height: 18px; display: inline-block; /*min-width: 160px;*/ }
+form label { word-wrap: break-word; color: #888888; line-height: 18px; display: inline-block; /*min-width: 160px;*/ }
 form label.required { font-weight: bold; }
 form input, form textarea { -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; border: 1px solid #cccccc; color: #555555; padding: 6px 5px; outline: none; width: 250px; }
 form input[type="checkbox"], form input[type="radio"] { border: 0; display: inline; width: auto; margin-right: 6px; }
@@ -193,13 +193,14 @@ table thead th, table thead th.sorted, table tfoot td { background: #fcfcfc; }
 table thead th.sortable:hover { background: #f1f1f1; }
 table td, table th { font-family: "Lucida Grande", Verdana, Arial, sans-serif; padding: 5px; }
 table td.original { vertical-align: top; }
-table tbody tr:hover { background: #f1faff; }
 table tr td { border-bottom: 1px solid #f3f3f3; }
 table th a, table th a:link, table th a:visited, table th a:link:visited { color: #444444; }
 table .row1 { background: white; }
 table .row2 { background: #fcfcfc; }
 
 fieldset table { border: none; }
+
+.results table tbody tr:hover { background: #f1faff; }
 
 .filebrowser #content { margin-top: 20px; }
 .filebrowser h1.folder_header { background-image: none !important; background: none; margin: 0; }
