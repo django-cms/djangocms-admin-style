@@ -7,7 +7,6 @@ table {
 	thead th.sortable:hover { background: $background-color-light; }
 	td, th { font-family: $base-font-family; padding: 5px; }
 	td.original { vertical-align: top; }
-	tbody tr:hover { background: $background-color-highlighter; }
 	tr {
 		td { border-bottom: 1px solid $line-color-ultralight; }
 	}
@@ -18,3 +17,4 @@ table {
 	.row2 { background: $background-color-ultralight; }
 }
 fieldset table { border: none; }
+.results table tbody tr:hover { background: $background-color-highlighter; }
