@@ -222,34 +222,37 @@ a.addlink {
 	background: white !important; color: $font-color-medium !important; font-weight: normal !important;
 	border: none !important; margin: 0;
 	&:hover, &:focus { color: black !important; }
-	&.selected { background: $info-color-ultralight !important; color: white !important;
+	&.selected { background: $button-blue-light-color !important; color: white !important;
 		@include text-shadow(0 1px 1px rgba(0,0,0,0.2)); }
 	&.notfilled { background: $background-color-light !important; color: $font-color-light !important; }
 }
-#lang_tab_content h2.header { background: $info-color-ultralight !important; @include border-top-right-radius();
+#lang_tab_content h2.header { background: $button-blue-light-color !important; @include border-top-right-radius();
 	margin-bottom: -3px !important; position: relative; }
 
-// nani language buttons
+// nani/hvad language buttons
 .nani-language-tabs {
-	border-bottom: 5px solid $info-color-ultralight; margin-bottom: -3px; position: relative;
-	span { @include inline-block(); border: none !important; top: 0 !important; color: $font-color-medium !important;
+	border-bottom: 5px solid $button-blue-light-color; margin-bottom: -3px; position: relative;
+	> span {
+		@include inline-block(); border: none !important; top: 0 !important; color: $font-color-medium !important;
 		font-weight: normal !important; vertical-align: top; background: white; padding: 8px 10px !important;
-		margin: 0 !important; @include border-top-radius(); }
-	a {
-		color: $font-color-medium !important; padding: 5px 10px;
-		&:hover, &:focus { color: black !important; text-decoration: none; }
+		margin: 0 !important; @include border-top-radius();
+		a {
+			color: $font-color-medium !important; padding: 5px 10px;
+			&:hover, &:focus { color: black !important; text-decoration: none; }
+		}
+		.deletelink { display: inline; padding: 0 0 0 12px !important; margin: 0; @include border-top-radius(0);
+			background: url('../img/icon_deletelink.png') 0 .25em no-repeat !important; bottom: 0px !important;
+			right: -3px !important; }
 	}
-	.empty { opacity: 1 !important; background: $background-color-light; color: $font-color-light; }
-	.current { background: $info-color-ultralight; color: white !important; padding-left: 20px !important;
+	> .empty { opacity: 1 !important; background: $background-color-light; color: $font-color-light; }
+	> .current { background: $button-blue-light-color; color: white !important; padding-left: 20px !important;
 		padding-right: 20px !important; @include text-shadow(0 1px 1px rgba(0,0,0,0.2)); }
-	.deletelink { display: inline; padding: 0 0 0 12px !important; margin: 0; @include border-top-radius(0);
-		background: url('../img/icon_deletelink.png') 0 .25em no-repeat !important; bottom: 0px !important;
-		right: -3px !important; }
-	.current .deletelink { right: -12px !important; }
+	> .current .deletelink { right: -12px !important; }
+}
+.inline-group .nani-language-tabs {
+	margin-bottom: 0;
+	> span { padding: 4px 10px !important; }
+	> .current { padding-left: 20px !important; padding-right: 20px !important; }
+	> .available { background: #eee; }
 }
 
-// tinyMCE
-.mceEditor {
-	tr { background: none; }
-	tr:hover { background: inherit; }
-}

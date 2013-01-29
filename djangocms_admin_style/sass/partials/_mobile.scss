@@ -1,4 +1,4 @@
-@import "_compass.scss";
+@import "../_compass";
 
 // base
 html, body { height: auto; }
@@ -89,10 +89,22 @@ body.login {
 
 // cms language buttons
 #page_form_lang_tabs input { font-weight: normal !important; font-size: 11px !important; padding: 2px 4px !important; }
+// nani/hvad language buttons
+.nani-language-tabs {
+	> span {
+		font-size: 11px !important; padding: 4px 1px !important;
+		a { padding: 3px 5px !important; }
+		.deletelink { right: 0 !important; }
+	}
+	> .current {
+		padding: 4px 10px 4px 5px !important;
+		.deletelink { right: -8px !important; }
+	}
+}
 
 // forms
 form label, .aligned label { display: block; padding: 0 !important; float: none !important;
-	line-height: 14px; margin-top: 5px; }
+	line-height: 14px; margin-top: 5px; width: auto; }
 form {
 	input, input[type="file"], textarea, select { width: auto; /*max-width: 200px;*/ }
 	.vTextField { width: auto; }

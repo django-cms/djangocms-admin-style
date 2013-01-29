@@ -10,10 +10,10 @@ form {
 	}
 	// input
 	input, textarea { @include pie; @include border-radius(); border: 1px solid $button-silver-dark-color;
-		color: $button-silver-font-color; padding: 6px 5px; outline: none; width: 250px; }
+		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
 	input[type="checkbox"], input[type="radio"] { border: 0; display: inline; width: auto; margin-right: 6px; }
 	input[type="file"] { @include pie; @include border-radius(); border: 1px solid $button-silver-dark-color;
-		color: $button-silver-font-color; padding: 6px 5px; outline: none; width: 250px; }
+		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
 	select { font-weight: normal; }
 	small { margin-left: 15px; }
 	.form-controls {
@@ -29,6 +29,8 @@ form {
 	.form-row { border-bottom-color: $line-color-ultralight; }
 	.form-row:last-child { border-bottom-color: transparent; }
 }
+.form-row input, .form-row textarea { width: 250px; }
+.inline-group .form-row input, .inline-group .form-row textarea { width: auto; }
 
 
 input:valid, textarea:valid {}
