@@ -4,6 +4,12 @@ django CMS Admin Style
 
 Adds pretty CSS styles for the django CMS admin interface.
 
+.. image:: https://raw.github.com/divio/djangocms-admin-style/gh-pages/images/img1.png
+
+.. image:: https://raw.github.com/divio/djangocms-admin-style/gh-pages/images/img3.png
+
+* the shortcuts you see on top of the dashboard are from `django-admin-shortcuts <https://github.com/alesdotio/django-admin-shortcuts/>`_
+
 Installation
 ============
 
