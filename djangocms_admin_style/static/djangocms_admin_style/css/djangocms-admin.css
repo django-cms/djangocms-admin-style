@@ -75,7 +75,7 @@ nav ul, nav li { margin: 0; list-style: none; list-style-image: none; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 
-@media only screen, print { body { background: url("../img/bg-pattern-light.jpg") #efefef repeat !important; }
+@media all { body { background: url("../img/bg-pattern-light.jpg") #efefef repeat !important; }
   body, select, input, textarea { color: #444444; }
   h1 { font-size: 150%; color: #666666; font-weight: bold; margin: 20px 10px 10px; }
   h2 { font-size: 130%; color: #666666; font-weight: bold; line-height: 1.75em; }
@@ -349,15 +349,6 @@ nav ul, nav li { margin: 0; list-style: none; list-style-image: none; }
   .admin_shortcuts .shortcuts li a .count_new, .admin_shortcuts .shortcuts li a:link .count_new, .admin_shortcuts .shortcuts li a:visited .count_new { background: #029eee; border-color: #5bbdee; }
   .admin_shortcuts .shortcuts li a:hover, .admin_shortcuts .shortcuts li a:focus { background-color: #4e5359; }
   .admin_shortcuts .shortcuts li a:active { background-color: #464b50; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .addlink { background-image: url("../img/icon_addlink@2x.gif"); background-size: 11px; }
-  .changelink { background-image: url("../img/icon_changelink@2x.gif"); background-size: 11px; }
-  .tree .changelink { background-image: url("../img/icon_changelink_white@2x.png"); background-size: 11px; }
-  .deletelink { background-image: url("../img/icon_deletelink@2x.png"); background-size: 11px; }
-  #sitemap li .col-softroot span.icon { background-image: url("../img/icon_softroot@2x.png"); background-size: 15px; }
-  .related-lookup { text-indent: -119988px; overflow: hidden; text-align: left; display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; width: 16px; height: 16px; background: url("../img/icon_searchbox@2x.png") 0 0 no-repeat; background-size: 16px; }
-  .related-lookup { *display: inline; }
-  .add-another { text-indent: -119988px; overflow: hidden; text-align: left; display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; width: 14px; height: 14px; background: url("../img/icon_addlink_large@2x.gif") 0 0 no-repeat; background-size: 14px; }
-  .add-another { *display: inline; } }
 @media only screen and (max-width: 420px), print { html, body { height: auto; }
   #content { margin: 0 5px; }
   #container { margin: 0; min-width: 240px !important; }

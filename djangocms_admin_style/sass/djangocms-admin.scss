@@ -1,6 +1,6 @@
 @import "_settings.scss";
 
-@media only screen, print {
+@media all {
 	@import "partials/_mixins.scss";
 	@import "partials/_base.scss";
 	@import "partials/_forms.scss";
