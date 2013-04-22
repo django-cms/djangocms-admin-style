@@ -152,7 +152,7 @@ a.addlink {
 	li {
 		list-style: none; background: none; padding-left: 5px;
 		&:hover { background: none; }
-		a { background: none !important; }
+		> a { @include button-common(); }
 	}
 	.addlink { @include button-common(); @include button-green(); color: $button-green-font-color !important; }
 	.recoverlink { @include button-common(); }
