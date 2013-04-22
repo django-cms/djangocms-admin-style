@@ -155,6 +155,10 @@ a.addlink {
 		a { background: none !important; }
 	}
 	.addlink { @include button-common(); @include button-green(); color: $button-green-font-color !important; }
+	.recoverlink { @include button-common(); }
+	.publishlink { @include button-common(); }
+	.previewdraftlink { @include button-common(); }
+	.revertlink { @include button-common(); }
 	.historylink { @include button-common(); }
 	.viewsitelink { @include button-common(); @include button-blue(); }
 }
