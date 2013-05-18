@@ -262,7 +262,7 @@ nav ul, nav li { margin: 0; list-style: none; list-style-image: none; }
   a.addlink, a.addlink:link, a.addlink:visited { color: #9ab933; }
   a.addlink:hover, a.addlink:focus, a.addlink:active { color: #8fad28; }
   .object-tools { margin-top: -38px; }
-  .object-tools li { list-style: none; background: none; padding-left: 5px; }
+  .object-tools li { list-style: none; background: none; padding-left: 5px; height: 32px; }
   .object-tools li:hover { background: none; }
   .object-tools li > a { -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; -ms-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef)) !important; background-image: -webkit-linear-gradient(#ffffff, #efefef) !important; background-image: -moz-linear-gradient(#ffffff, #efefef) !important; background-image: -o-linear-gradient(#ffffff, #efefef) !important; background-image: linear-gradient(#ffffff, #efefef) !important; -moz-box-shadow: #efefef 0 0 2px inset !important; -webkit-box-shadow: #efefef 0 0 2px inset !important; -o-box-shadow: #efefef 0 0 2px inset !important; box-shadow: #efefef 0 0 2px inset !important; background-color: white !important; border: 1px solid #efefef !important; border-bottom: 1px solid #cccccc !important; color: #555555 !important; font-weight: bolder !important; font-size: 12px !important; line-height: 15px !important; overflow: visible; padding: 5px 10px 5px !important; text-decoration: none !important; width: auto; }
   .object-tools li > a:hover { background: white !important; }
