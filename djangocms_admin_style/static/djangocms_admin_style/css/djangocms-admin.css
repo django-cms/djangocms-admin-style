@@ -28,7 +28,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 
-body { font-size: 12px; font-family: "Lucida Grande", Verdana, Arial, sans-serif; line-height: 1.231; *font-size: small; }
+body { font-size: 12px; font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; line-height: 1.231; *font-size: small; }
 
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
@@ -163,7 +163,7 @@ nav ul, nav li { margin: 0; list-style: none; list-style-image: none; }
   table th, table td { padding: 5px 10px; text-align: left; vertical-align: middle; }
   table thead th, table thead th.sorted, table tfoot td { background: #fcfcfc; }
   table thead th.sortable:hover { background: #f1f1f1; }
-  table td, table th { font-family: "Lucida Grande", Verdana, Arial, sans-serif; padding: 5px; }
+  table td, table th { font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; padding: 5px; }
   table td.original { vertical-align: top; }
   table tr td { border-bottom: 1px solid #f3f3f3; }
   table th a, table th a:link, table th a:visited, table th a:link:visited { color: #444444; }
