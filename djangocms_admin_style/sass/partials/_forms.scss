@@ -9,10 +9,10 @@ form {
 		&.required { font-weight: bold; }
 	}
 	// input
-	input, textarea { @include pie; @include border-radius(); border: 1px solid $button-silver-dark-color;
+	input, textarea { @include border-radius(); border: 1px solid $button-silver-dark-color;
 		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
 	input[type="checkbox"], input[type="radio"] { border: 0; display: inline; width: auto; margin-right: 6px; }
-	input[type="file"] { @include pie; @include border-radius(); border: 1px solid $button-silver-dark-color;
+	input[type="file"] { @include border-radius(); border: 1px solid $button-silver-dark-color;
 		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
 	select { font-weight: normal; }
 	small { margin-left: 15px; }
@@ -35,7 +35,6 @@ form {
 
 input:valid, textarea:valid {}
 input:invalid, textarea:invalid {
-	@include pie;
 	@include border-radius();
 }
 .no-boxshadow input:invalid,

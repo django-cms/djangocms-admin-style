@@ -1,7 +1,7 @@
 
 // containers
-#container { width: auto !important; min-width: auto !important; }
-#content { width: auto !important; min-width: auto !important; }
+#container { width: auto !important; min-width: 0 !important; }
+#content { width: auto !important; min-width: 0 !important; }
 #changelist { width: auto !important; }
 
 // module
@@ -100,7 +100,7 @@ body.login {
 
 // header
 #header {
-	@include pie; @include background-image(linear-gradient($background-color-dark, $background-color-medium));
+	@include background-image(linear-gradient($background-color-dark, $background-color-medium));
 	background-color: $background-color-medium; color: $font-color-white !important; height: 46px;
 	#branding h1 { color: $font-color-white; padding: 3px 25px; }
 	#user-tools { padding: 16px 25px 0; }
@@ -123,6 +123,7 @@ div.breadcrumbs {
 			a { line-height: 16px; }
 		}
 		table th { width: 100%; }
+		.module tr:first-child { th, td { border-top:1px solid $line-color-ultralight; } }
 	}
 	#content-related {
 		float: left;
@@ -223,15 +224,15 @@ a.addlink {
 // cms language buttons
 #page_form_lang_tabs input {
 	@include border-bottom-radius(0); @include box-shadow(none !important);
-	background: white !important; color: $font-color-medium !important; font-weight: normal !important;
+	background: #ccc !important; color: $font-color-medium !important; font-weight: normal !important;
 	border: none !important; margin: 0;
 	&:hover, &:focus { color: black !important; }
-	&.selected { background: $button-blue-light-color !important; color: white !important;
-		@include text-shadow(0 1px 1px rgba(0,0,0,0.2)); }
-	&.notfilled { background: $background-color-light !important; color: $font-color-light !important; }
+	&.selected { background: white !important; color: black !important; }
+	&.notfilled { background: $background-color-light !important; color: #bbb !important; }
 }
 #lang_tab_content h2.header { background: $button-blue-light-color !important; @include border-top-right-radius();
 	margin-bottom: -3px !important; position: relative; }
+
 
 // nani/hvad language buttons
 .nani-language-tabs {

@@ -1,7 +1,1 @@
-#header, .breadcrumbs { display: none; }
-
-.login #header { display: block; }
-
-#container { padding-top: 31px; }
-
-form select { max-width: 240px; }
+#header,.breadcrumbs{display:none}.login #header{display:block}#container{padding-top:31px}form select{max-width:240px}
