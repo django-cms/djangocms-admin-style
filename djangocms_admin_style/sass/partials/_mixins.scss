@@ -21,7 +21,6 @@
 }
 
 @mixin button-common() {
-	@include pie;
 	@include border-radius();
 	@include button-common-init();
 	color: $button-silver-font-color !important;
@@ -46,7 +45,6 @@
 }
 
 @mixin button-blue {
-	@include pie;
 	&, &:visited {
 		@include background-image(linear-gradient($button-blue-light-color, $button-blue-medium-color) !important); }
 	@include box-shadow($button-blue-light-color 0 0 $button-shadow-width inset !important);
@@ -68,7 +66,6 @@
 }
 
 @mixin button-green {
-	@include pie;
 	&, &:visited {
 		@include background-image(linear-gradient($button-green-light-color, $button-green-medium-color) !important); }
 	@include box-shadow($button-green-light-color 0 0 $button-shadow-width inset !important);
@@ -89,7 +86,6 @@
 }
 
 @mixin button-orange {
-	@include pie;
 	@include background-image(linear-gradient($button-orange-light-color, $button-orange-medium-color));
 	@include box-shadow($button-orange-light-color 0 0 $button-shadow-width inset);
 	background-color: $button-orange-medium-color !important;
@@ -109,7 +105,6 @@
 }
 
 @mixin button-red {
-	@include pie;
 	@include background-image(linear-gradient($button-red-light-color, $button-red-medium-color) !important);
 	@include box-shadow($button-red-light-color 0 0 $button-shadow-width inset !important);
 	background-color: $button-red-medium-color !important;
@@ -129,7 +124,6 @@
 }
 
 @mixin button-black {
-	@include pie;
 	@include background-image(linear-gradient($button-black-light-color, $button-black-medium-color));
 	@include box-shadow($button-black-light-color 0 0 $button-shadow-width inset);
 	background-color: $button-black-medium-color !important;
@@ -154,7 +148,6 @@
 }
 
 @mixin button-inactive {
-	@include pie;
 	@include background-image(linear-gradient($button-inactive-light-color, $button-inactive-medium-color));
 	@include box-shadow($button-inactive-light-color 0 0 $button-shadow-width inset);
 	background-color: $button-inactive-medium-color !important;
