@@ -146,6 +146,10 @@ $top-section-padding: 15px;
 $editor-height: 100%;
 $tree-width: 250px;
 
+// Compass mixins
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/typography";
 
 // font-face fonts
 // see http://compass-style.org/docs/reference/compass/css3/font_face/
@@ -170,25 +174,3 @@ $tree-width: 250px;
 // Now, you can simply include everything
 // (except media) by uncommeting this line
 @include html5-boilerplate;
-
-// Compass mixins
-@import "_compass.scss";
-
-// Note: Each element that has PIE enabled on it will add about 10ms to your page load.
-@import "libs/_pie.scss";
-
-// Set this to wherever you end up putting your behavior file.
-//
-// **Note:** this file must be served as a root-relative resource or
-// else IE will interpret it as relative to the current webpage
-// instead of the stylesheet.
-//
-// **Also Note:** this file must be delivered with a mime-type of:
-//
-//    text/x-component
-$pie-behavior: url("/static/cms/PIE.htc");
-
-// It is suggested that you use Sass's @extend directive to apply the PIE
-// behavior to your elements. Setting this variable will tell the `pie` mixin
-// to extend it. Or you can just extend the base class yourself.
-$pie-base-class: pie-element;
