@@ -136,3 +136,7 @@ form {
 .admin_shortcuts .shortcuts li a { background-size:20px 20px; padding:10px 10px 10px 40px; }
 .admin_shortcuts .shortcuts li a span { padding:0 !important; }
 .admin_shortcuts .shortcuts li:first-child a { padding:10px 20px; }
+
+// buttons
+.object-tools { float:none; @include clearfix(); }
+.object-tools li { float:left; }
