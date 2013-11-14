@@ -1,20 +1,18 @@
 @import "_settings.scss";
 
-@media all {
-	@import "partials/_mixins.scss";
-	@import "partials/_base.scss";
-	@import "partials/_forms.scss";
-	@import "partials/_tables.scss";
-	@import "partials/_filer.scss";
-	@import "partials/_cmsplaceholders.scss";
-	@import "partials/_content.scss";
-	@import "partials/_icons.scss";
+@import "partials/_mixins.scss";
+@import "partials/_base.scss";
+@import "partials/_forms.scss";
+@import "partials/_tables.scss";
+@import "partials/_filer.scss";
+@import "partials/_cmsplaceholders.scss";
+@import "partials/_content.scss";
+@import "partials/_icons.scss";
 
-	@import "partials/_shortcuts.scss";
+@import "partials/_shortcuts.scss";
 
-	// TODO:
-	//@import "partials/_messages.scss";
-}
+// TODO:
+//@import "partials/_messages.scss";
 
 @media only screen and (max-width: 420px), print {
 	@import "partials/_mobile.scss";
