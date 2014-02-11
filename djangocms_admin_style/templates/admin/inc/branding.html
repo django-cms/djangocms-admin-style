@@ -1,2 +1,6 @@
-{% load i18n %}
-<h1 id="site-name">{% trans 'Django administration' %}</h1>
+{% load i18n %} 
+{% if ADMIN_STYLE_BRANDING %}
+	{{ ADMIN_STYLE_BRANDING|safe }}
+{% else %}
+	<h1 id="site-name">{% trans 'Django administration' %}</h1>
+{% endif %}
