@@ -23,6 +23,14 @@ The django CMS Admin Style overrides django admin's ``base_site.html``, but you 
 Look at the source of ``templates/admin/base_site.html`` and override the templates that are included in various blocks.
 For example, you can add your own CSS in ``templates/admin/extrastyle.html``.
 
+Adding a logo or custom HTML for branding
+-----------------------------------------
+
+This is optional, but if you like to replace the "Django administration" text by a customer's logo in the admin's 
+header just define ``ADMIN_STYLE_BRANDING`` in your project's settings.py and add 
+``djangocms_admin_style.context_processors.admin_style_branding`` to the ``TEMPLATE_CONTEXT_PROCESSORS``.
+``ADMIN_STYLE_BRANDING`` must be valid HTML, for example ``<img src="media.tld.com/my-company-logo.png">`` or ``<h1 id="site-name">My Company Ltd.</h1>``.
+While rendering, the text will be marked as safe. 
 
 Compiling CSS
 =============
