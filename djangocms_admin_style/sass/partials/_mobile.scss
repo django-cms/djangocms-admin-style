@@ -69,11 +69,6 @@ body.login {
 #changelist-filter-button, #changelist-filter { display: none !important; }
 .tree { background: white; }
 
-// page tree
-#sitemap li .col-softroot, #sitemap li .col-language, #sitemap li .col-actions, #sitemap li .col-published,
-#sitemap li .col-navigation, #sitemap li .col-moderator, #sitemap li .col-lastchange, #sitemap li .col-draft,
-#sitemap li .col-view-perms, #sitemap li .col-creator { display: none !important; }
-
 // chageform
 .change-form {
 	#content {
