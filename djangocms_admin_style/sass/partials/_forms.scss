@@ -30,6 +30,7 @@ form {
 	.form-row:last-child { border-bottom-color: transparent; }
 }
 .form-row input, .form-row textarea { width: 250px; }
+.form-row .select2-container {min-width: 250px + 12px;} //standard input width + default input paddings
 .inline-group .form-row input, .inline-group .form-row textarea { width: auto; }
 
 
