@@ -149,7 +149,7 @@ a.addlink {
 
 // object tools
 .object-tools {
-	margin-top: -38px;
+	float:right; margin-top: -34px;
 	li {
 		list-style: none; background: none; padding-left: 5px; height: 32px;
 		&:hover { background: none; }
