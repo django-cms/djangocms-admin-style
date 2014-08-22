@@ -65,7 +65,7 @@
 	.selector-filter { border: none; }
 	.selector-filter label { display: none; }
 	select[multiple] { border: 1px solid $line-color-light; border-left: none; border-right: none;
-		margin-bottom: 0; }
+		margin-bottom: 0; overflow-y: auto; }
 }
 
 // login
