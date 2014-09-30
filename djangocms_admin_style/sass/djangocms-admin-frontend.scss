@@ -1,4 +1,12 @@
-#header, .breadcrumbs { display: none; }
-.login #header { display: block; }
+#header,
+.breadcrumbs {
+    display: none;
+}
 
-form select { max-width: 240px; }
+.login #header {
+    display: block;
+}
+
+form select {
+    max-width: 240px;
+}

@@ -76,7 +76,8 @@ code {
     background: inherit;
     color: #666;
     font-size: 11px;
-    strong {
+
+	strong {
         color: #930;
     }
 }
@@ -86,7 +87,8 @@ pre {
     background: inherit;
     color: #666;
     font-size: 11px;
-    &.literal-block {
+
+	&.literal-block {
         background: #eee;
     }
 }
