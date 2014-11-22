@@ -1,2 +1,2 @@
 {% load i18n %}
-{{ title }} | {% trans 'Django site admin' %}
+{{ title }} | {{ site_title|default:_('Django site admin') }}
