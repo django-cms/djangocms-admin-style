@@ -16,7 +16,8 @@
 	}
 	table {
 		margin: 0;
-		th { padding: 2px 5px !important; line-height: 13px; }
+		thead th { padding: 2px 5px !important; }
+		th { padding: 2px 5px; line-height: 13px; }
 		td { padding: 8px 5px; line-height: 13px; }
 	}
 }
