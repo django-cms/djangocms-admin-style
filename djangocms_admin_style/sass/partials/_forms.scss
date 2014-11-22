@@ -101,4 +101,5 @@ span.datetimeshortcuts a { color: $link-color; }
 // filter horizontal
 .selector {
 	.selector-chooseall, .selector-clearall { line-height: 14px; }
+	select { overflow: hidden; }
 }
