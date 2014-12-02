@@ -1,4 +1,4 @@
 #header, .breadcrumbs { display: none; }
 .login #header { display: block; }
 
-form select { max-width: 240px; }
+form select:not([multiple]) { max-width: 240px; }
