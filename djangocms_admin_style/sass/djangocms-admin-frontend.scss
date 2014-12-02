@@ -1,4 +1,5 @@
 #header, .breadcrumbs { display: none; }
 .login #header { display: block; }
+.selector .selector-available input, .selector .selector-chosen input { width: 360px; }
 
 form select:not([multiple]) { max-width: 240px; }
