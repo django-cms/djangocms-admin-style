@@ -40,4 +40,8 @@ strong { font-weight: bold; }
 
 .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
+#sitemap li .cont { overflow:visible!important; }
 
+@media only screen and (max-width: 800px){
+	#sitemap li .cont { overflow:hidden!important; }
+}
