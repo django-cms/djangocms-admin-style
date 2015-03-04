@@ -103,3 +103,6 @@ span.datetimeshortcuts a { color: $link-color; }
 	.selector-chooseall, .selector-clearall { line-height: 14px; }
 	select { overflow: hidden; }
 }
+
+form select[multiple] { overflow: auto; width: 100%;  max-width: 240px; }
+
