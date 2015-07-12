@@ -2,3 +2,4 @@ include LICENSE
 include README.rst
 recursive-include djangocms_admin_style *
 recursive-exclude * *.pyc
+recursive-exclude * *.scssc
