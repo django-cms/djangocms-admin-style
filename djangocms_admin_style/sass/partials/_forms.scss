@@ -9,10 +9,10 @@ form {
 		&.required { font-weight: bold; }
 	}
 	// input
-	input, textarea { @include border-radius(); border: 1px solid $button-silver-dark-color;
+	input, textarea { border-radius: $default-border-radius; border: 1px solid $button-silver-dark-color;
 		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
 	input[type="checkbox"], input[type="radio"] { border: 0; display: inline; width: auto; margin-right: 6px; }
-	input[type="file"] { @include border-radius(); border: 1px solid $button-silver-dark-color;
+	input[type="file"] { border-radius: $default-border-radius; border: 1px solid $button-silver-dark-color;
 		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
 	select { font-weight: normal; }
 	small { margin-left: 15px; }
@@ -36,7 +36,7 @@ form {
 
 input:valid, textarea:valid {}
 input:invalid, textarea:invalid {
-	@include border-radius();
+	border-radius: $default-border-radius;
 }
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
@@ -49,7 +49,7 @@ input[type="submit"], input[type="button"] {
 }
 a.button {
 	text-decoration: none; cursor: pointer; @include button-common();
-	&.tab { @include border-radius(0); }
+	&.tab { border-radius: 0; }
 }
 
 // date time
@@ -60,9 +60,9 @@ a.button {
 // calendar
 div.calendar {
 	table {
-		caption { @include background-image(linear-gradient($background-color-dark, $background-color-medium));
+		caption { background-image: linear-gradient($background-color-dark, $background-color-medium);
 			background-color: $background-color-dark; color: $font-color-white !important; margin: 0;
-			@include border-top-radius(); }
+			border-top-radius: $default-border-radius; }
 		td { padding: 0; background: #f3f3f3; }
 		td a { padding: 6px 4px; }
 	}
@@ -78,18 +78,18 @@ div.calendarbox {
 	.calendar-shortcuts { background: transparent; padding: 10px 0 6px 0; border-color: #ddd; }
 }
 div.calendarbox, div.clockbox {
-	@include border-radius(); background: #f3f3f3;
-	padding: 0; margin: 0; @include box-shadow(0 1px 10px rgba(0,0,0,0.1)); border: 1px solid #ccc;
+	border-radius: $default-border-radius; background: #f3f3f3;
+	padding: 0; margin: 0; box-shadow: 0 1px 10px rgba(0,0,0,0.1); border: 1px solid #ccc;
 	caption, h2 { font-size: 14px; }
-	.calendar-cancel { @include border-bottom-radius(); background: none; margin-top: 5px !important;
+	.calendar-cancel { border-bottom-radius: $default-border-radius; background: none; margin-top: 5px !important;
 		padding: 5px 0 !important; }
 }
 // clock
 div.clockbox {
-	@include border-top-radius();
-	h2 { @include background-image(linear-gradient($background-color-dark, $background-color-medium));
+	border-top-radius: $default-border-radius;
+	h2 { background-image: linear-gradient($background-color-dark, $background-color-medium);
 		background-color: $background-color-dark; color: $font-color-white !important;
-		@include border-top-radius(); }
+		border-top-radius: $default-border-radius; }
 	.timelist a { padding: 5px 2px; }
 }
 .timelist a {

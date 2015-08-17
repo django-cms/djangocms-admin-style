@@ -1,19 +1,25 @@
 // mixins
 
+@mixin hide-text () {
+	text-indent: -119988px;
+	overflow: hidden;
+	text-align: left;
+}
+
 @mixin box(){
-	@include border-radius(); @include box-shadow(0 1px 2px 1px rgba(0,0,0,0.08)); padding: 0;
+	border-radius: $default-border-radius; box-shadow: 0 1px 2px 1px rgba(0,0,0,0.08); padding: 0;
 	background: $background-color-white; border: none; margin-bottom: 5px;
 	h2, h3, h4, h5, h6 { margin-bottom: 12px; margin-top: 0; }
 }
 
 @mixin stripes($stripe-opacity){
-	@include background-size(100% 400%);
-	@include background-image(linear-gradient(-45deg, rgba(255, 255, 255, $stripe-opacity) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, $stripe-opacity) 50%, rgba(255, 255, 255, $stripe-opacity) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)));
+	background-size: 100% 400%;
+	background-image: linear-gradient(-45deg, rgba(255, 255, 255, $stripe-opacity) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, $stripe-opacity) 50%, rgba(255, 255, 255, $stripe-opacity) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
 }
 
 @mixin button-common-init {
-	@include background-image(linear-gradient($button-silver-light-color, $button-silver-medium-color) !important);
-	@include box-shadow($button-silver-medium-color 0 0 $button-shadow-width inset !important);
+	background-image: linear-gradient($button-silver-light-color, $button-silver-medium-color) !important;
+	box-shadow: $button-silver-medium-color 0 0 $button-shadow-width inset !important;
 	background-color: $button-silver-light-color !important;
 	border: 1px solid $button-silver-medium-color !important;
 	border-bottom: 1px solid $button-silver-dark-color !important;
@@ -21,7 +27,7 @@
 }
 
 @mixin button-common() {
-	@include border-radius();
+	border-radius: $default-border-radius;
 	@include button-common-init();
 	color: $button-silver-font-color !important;
 	font-weight: bolder !important;
@@ -46,8 +52,8 @@
 
 @mixin button-blue {
 	&, &:visited {
-		@include background-image(linear-gradient($button-blue-light-color, $button-blue-medium-color) !important); }
-	@include box-shadow($button-blue-light-color 0 0 $button-shadow-width inset !important);
+		background-image: linear-gradient($button-blue-light-color, $button-blue-medium-color) !important; }
+	box-shadow: $button-blue-light-color 0 0 $button-shadow-width inset !important;
 	background-color: $button-blue-medium-color !important;
 	background-image: none !important;
 	border: 1px solid $button-blue-light-color !important;
@@ -67,8 +73,8 @@
 
 @mixin button-green {
 	&, &:visited {
-		@include background-image(linear-gradient($button-green-light-color, $button-green-medium-color) !important); }
-	@include box-shadow($button-green-light-color 0 0 $button-shadow-width inset !important);
+		background-image: linear-gradient($button-green-light-color, $button-green-medium-color) !important; }
+	box-shadow: $button-green-light-color 0 0 $button-shadow-width inset !important;
 	background-color: $button-green-medium-color !important;
 	border: 1px solid $button-green-light-color !important;
 	border-bottom: 1px solid $button-green-dark-color !important;
@@ -86,8 +92,8 @@
 }
 
 @mixin button-orange {
-	@include background-image(linear-gradient($button-orange-light-color, $button-orange-medium-color));
-	@include box-shadow($button-orange-light-color 0 0 $button-shadow-width inset);
+	background-image: linear-gradient($button-orange-light-color, $button-orange-medium-color);
+	box-shadow: $button-orange-light-color 0 0 $button-shadow-width inset;
 	background-color: $button-orange-medium-color !important;
 	border: 1px solid $button-orange-light-color !important;
 	border-bottom: 1px solid $button-orange-dark-color !important;
@@ -105,8 +111,8 @@
 }
 
 @mixin button-red {
-	@include background-image(linear-gradient($button-red-light-color, $button-red-medium-color) !important);
-	@include box-shadow($button-red-light-color 0 0 $button-shadow-width inset !important);
+	background-image: linear-gradient($button-red-light-color, $button-red-medium-color) !important;
+	box-shadow: $button-red-light-color 0 0 $button-shadow-width inset !important;
 	background-color: $button-red-medium-color !important;
 	border: 1px solid $button-red-light-color !important;
 	border-bottom: 1px solid $button-red-dark-color !important;
@@ -124,21 +130,21 @@
 }
 
 @mixin button-black {
-	@include background-image(linear-gradient($button-black-light-color, $button-black-medium-color));
-	@include box-shadow($button-black-light-color 0 0 $button-shadow-width inset);
+	background-image: linear-gradient($button-black-light-color, $button-black-medium-color);
+	box-shadow: $button-black-light-color 0 0 $button-shadow-width inset;
 	background-color: $button-black-medium-color !important;
 	border: 1px solid $button-black-light-color;
 	border-bottom: 1px solid $button-black-dark-color;
 	color: $button-inactive-font-color !important;
 	cursor: default;
 	&:hover {
-		@include background-image(linear-gradient($button-black-light-color, $button-black-medium-color));
+		background-image: linear-gradient($button-black-light-color, $button-black-medium-color);
 		border-color: $button-black-medium-color;
 		color: $button-black-font-color;
 
 	}
 	&:active, &.select {
-		@include background-image(linear-gradient($button-black-light-color, $button-black-medium-color));
+		background-image: linear-gradient($button-black-light-color, $button-black-medium-color);
 		border-color: $button-black-medium-color;
 		color: $button-black-font-color;
 	}
@@ -148,21 +154,21 @@
 }
 
 @mixin button-inactive {
-	@include background-image(linear-gradient($button-inactive-light-color, $button-inactive-medium-color));
-	@include box-shadow($button-inactive-light-color 0 0 $button-shadow-width inset);
+	background-image: linear-gradient($button-inactive-light-color, $button-inactive-medium-color);
+	box-shadow: $button-inactive-light-color 0 0 $button-shadow-width inset;
 	background-color: $button-inactive-medium-color !important;
 	border: 1px solid $button-inactive-light-color;
 	border-bottom: 1px solid $button-inactive-dark-color;
 	color: $button-inactive-font-color;
 	cursor: default;
 	&:hover {
-		@include background-image(linear-gradient($button-inactive-light-color, $button-inactive-medium-color));
+		background-image: linear-gradient($button-inactive-light-color, $button-inactive-medium-color);
 		border-color: $button-inactive-medium-color;
 		color: $button-inactive-font-color;
 
 	}
 	&:active, &.select {
-		@include background-image(linear-gradient($button-inactive-light-color, $button-inactive-medium-color));
+		background-image: linear-gradient($button-inactive-light-color, $button-inactive-medium-color);
 		border-color: $button-inactive-medium-color;
 		color: $button-inactive-font-color;
 	}
