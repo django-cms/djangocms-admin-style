@@ -1,108 +1,250 @@
 form {
-	button, input, select, textarea { margin: 2px 0; font-size: 13px; }
-	small { color: $font-color-light; }
-	hr { margin: 5px 0; }
-	fieldset { vertical-align: middle; line-height: 2em; }
-	fieldset.collapsed h2 { background-image: none; border-bottom: none; margin-bottom: 0; padding-bottom: 5px; }
-	label {
-		word-wrap: break-word; color: $font-color-light; line-height: 18px; display: inline-block; /*min-width: 160px;*/
-		&.required { font-weight: bold; }
-	}
-	// input
-	input, textarea { border-radius: $default-border-radius; border: 1px solid $button-silver-dark-color;
-		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
-	input[type="checkbox"], input[type="radio"] { border: 0; display: inline; width: auto; margin-right: 6px; }
-	input[type="file"] { border-radius: $default-border-radius; border: 1px solid $button-silver-dark-color;
-		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
-	select { font-weight: normal; }
-	small { margin-left: 15px; }
-	.form-controls {
-		text-align: right; margin: 15px 0 0 0;
-		p { margin-top: 6px; }
-	}
-	.input-list { display: inline-block; vertical-align: top; line-height: 20px; }
-	.extra {
-		.right { float: right; margin-right: 10px; }
-	}
-	//.aligned p.help { padding-left: 100px; }
-	//.aligned.wide p.help { padding-left: 55px; }
-	.form-row { border-bottom-color: $line-color-ultralight; }
-	.form-row:last-child { border-bottom-color: transparent; }
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 13px; 
+        margin: 2px 0;
+    }
+    small {
+        color: $font-color-light;
+    }
+    hr {
+        margin: 5px 0;
+    }
+    fieldset {
+        line-height: 2em; 
+        vertical-align: middle;
+    }
+    fieldset.collapsed h2 {
+        margin-bottom: 0;
+        padding-bottom: 5px; 
+        border-bottom: none;
+        background-image: none;
+    }
+    label {
+        display: inline-block; /*min-width: 160px;*/
+        color: $font-color-light;
+        line-height: 18px;
+        word-wrap: break-word;
+        &.required {
+            font-weight: bold;
+        }
+    }
+    // input
+    input,
+    textarea {
+        color: $button-silver-font-color;
+        padding: 6px 5px;
+        border: 1px solid $button-silver-dark-color;
+        border-radius: $default-border-radius;
+        outline: none;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        display: inline;
+        width: auto;
+        margin-right: 6px; 
+        border: 0;
+    }
+    input[type="file"] {
+        color: $button-silver-font-color;
+        padding: 6px 5px;
+        border: 1px solid $button-silver-dark-color;
+        border-radius: $default-border-radius;
+        outline: none;
+    }
+    select {
+        font-weight: normal;
+    }
+    small {
+        margin-left: 15px;
+    }
+    .form-controls {
+        text-align: right;
+        margin: 15px 0 0 0;
+        p {
+            margin-top: 6px;
+        }
+    }
+    .input-list {
+        display: inline-block;
+        line-height: 20px; 
+        vertical-align: top;
+    }
+    .extra {
+        .right {
+            float: right;
+            margin-right: 10px;
+        }
+    }
+    //.aligned p.help { padding-left: 100px; }
+    //.aligned.wide p.help { padding-left: 55px; }
+    .form-row {
+        border-bottom-color: $line-color-ultralight;
+    }
+    .form-row:last-child {
+        border-bottom-color: transparent;
+    }
 }
-.form-row input, .form-row textarea { width: 250px; }
-.form-row .select2-container {min-width: 250px + 12px;} //standard input width + default input paddings
-.inline-group .form-row input, .inline-group .form-row textarea { width: auto; }
+.form-row input,
+.form-row textarea {
+    width: 250px;
+}
+.form-row .select2-container {
+    min-width: 250px + 12px;
+} //standard input width + default input paddings
+.inline-group .form-row input,
+.inline-group .form-row textarea {
+    width: auto;
+}
 
 
-input:valid, textarea:valid {}
-input:invalid, textarea:invalid {
-	border-radius: $default-border-radius;
+
+input:invalid,
+textarea:invalid {
+    border-radius: $default-border-radius;
 }
 .no-boxshadow input:invalid,
-.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+.no-boxshadow textarea:invalid {
+    background-color: #f0dddd;
+}
 
 // buttons
-button { @include button-common(); }
-input[type="submit"], input[type="button"] {
-	@include button-common(); padding: 8px 10px !important;
-	&.default { @include button-blue(); padding: 7px 10px !important; margin-top: 1px; }
+button {
+    @include button-common();
 }
-a.button {
-	text-decoration: none; cursor: pointer; @include button-common();
-	&.tab { border-radius: 0; }
+input[type="submit"],
+input[type="button"] {
+    @include button-common();
+    padding: 8px 10px !important;
+    &.default {
+        @include button-blue();
+        margin-top: 1px; 
+        padding: 7px 10px !important;
+    }
+}
+a.button {@include button-common();
+    text-decoration: none;
+    cursor: pointer; 
+    &.tab {
+        border-radius: 0;
+    }
 }
 
 // date time
 .form-row {
-	p.datetime { line-height: 36px; }
+    p.datetime {
+        line-height: 36px;
+    }
 }
 
 // calendar
 div.calendar {
-	table {
-		caption { background-image: linear-gradient($background-color-dark, $background-color-medium);
-			background-color: $background-color-dark; color: $font-color-white !important; margin: 0;
-			border-top-radius: $default-border-radius; }
-		td { padding: 0; background: #f3f3f3; }
-		td a { padding: 6px 4px; }
-	}
-	.today a { background: $info-color-ultralight; }
+    table {
+        caption {
+            color: $font-color-white !important;
+            margin: 0;
+            background-color: $background-color-dark;
+            background-image: linear-gradient($background-color-dark, $background-color-medium);
+
+            border-top-radius: $default-border-radius;
+        }
+        td {
+            padding: 0;
+            background: #f3f3f3;
+        }
+        td a {
+            padding: 6px 4px;
+        }
+    }
+    .today a {
+        background: $info-color-ultralight;
+    }
 }
 div.calendarbox {
-	width: 200px !important;
-	table th, table td { line-height: 12px; }
-	.calendarnav-previous, .calendarnav-next {
-		background: none; color: white; text-decoration: none; padding: 4px 7px 6px;
-		&:hover, &:focus { background: #666; }
-	}
-	.calendar-shortcuts { background: transparent; padding: 10px 0 6px 0; border-color: #ddd; }
+    width: 200px !important;
+    table th,
+    table td {
+        line-height: 12px;
+    }
+    .calendarnav-previous,
+    .calendarnav-next {
+        color: white;
+        text-decoration: none;
+        padding: 4px 7px 6px;
+        background: none;
+        &:hover,
+        &:focus {
+            background: #666;
+        }
+    }
+    .calendar-shortcuts {
+        padding: 10px 0 6px 0;
+        border-color: #ddd; 
+        background: transparent;
+    }
 }
-div.calendarbox, div.clockbox {
-	border-radius: $default-border-radius; background: #f3f3f3;
-	padding: 0; margin: 0; box-shadow: 0 1px 10px rgba(0,0,0,0.1); border: 1px solid #ccc;
-	caption, h2 { font-size: 14px; }
-	.calendar-cancel { border-bottom-radius: $default-border-radius; background: none; margin-top: 5px !important;
-		padding: 5px 0 !important; }
+div.calendarbox,
+div.clockbox {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: $default-border-radius;
+    background: #f3f3f3;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    caption,
+    h2 {
+        font-size: 14px;
+    }
+    .calendar-cancel {
+        margin-top: 5px !important;
+        padding: 5px 0 !important; 
+        background: none;
+
+        border-bottom-radius: $default-border-radius;
+    }
 }
 // clock
 div.clockbox {
-	border-top-radius: $default-border-radius;
-	h2 { background-image: linear-gradient($background-color-dark, $background-color-medium);
-		background-color: $background-color-dark; color: $font-color-white !important;
-		border-top-radius: $default-border-radius; }
-	.timelist a { padding: 5px 2px; }
+    border-top-radius: $default-border-radius;
+    h2 {
+        color: $font-color-white !important;
+        background-color: $background-color-dark;
+        background-image: linear-gradient($background-color-dark, $background-color-medium);
+
+        border-top-radius: $default-border-radius;
+    }
+    .timelist a {
+        padding: 5px 2px;
+    }
 }
 .timelist a {
-	&, &:active, &:focus, &:hover { background: none !important; }
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+        background: none !important;
+    }
 }
 
-span.datetimeshortcuts a { color: $link-color; }
+span.datetimeshortcuts a {
+    color: $link-color;
+}
 
 // filter horizontal
 .selector {
-	.selector-chooseall, .selector-clearall { line-height: 14px; }
-	select { overflow: hidden; }
+    .selector-chooseall,
+    .selector-clearall {
+        line-height: 14px;
+    }
+    select {
+        overflow: hidden;
+    }
 }
 
-form select[multiple] { overflow: auto; width: 100%;  max-width: 240px; }
-
+form select[multiple] {
+    overflow: auto;
+    width: 100%;
+    max-width: 240px;
+}
