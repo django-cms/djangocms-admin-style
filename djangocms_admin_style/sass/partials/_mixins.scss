@@ -188,6 +188,6 @@
         background-image: linear-gradient($button-inactive-light-color, $button-inactive-medium-color);
     }
     &.animate {
-        @include stripes(0.1); 
+        @include stripes(0.1);
     }
 }
