@@ -89,4 +89,4 @@ a[id^="calendarlink"], a[id^="clocklink"] {
 a[id^="calendarlink"] img, , a[id^="clocklink"] img { display: none;}
 
 /* Sepcials */
-.selector ul.selector-chooser { @include border-radius(10px); background: $background-color-light !important; height: 44px !important; }
+.selector ul.selector-chooser { border-radius: 10px; background: $background-color-light !important; height: 44px !important; }

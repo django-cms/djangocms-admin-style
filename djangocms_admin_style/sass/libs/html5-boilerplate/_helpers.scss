@@ -1,10 +1,13 @@
-@import "compass/typography/text/replacement";
-@import "compass/utilities/general/clearfix";
-
 //
 // Non-semantic helper classes
 // It's better to include these mixins in your own styles
 //
+
+@mixin hide-text () {
+	text-indent: -32767px;
+	overflow: hidden;
+	text-align: left;
+}
 
 @mixin html5-boilerplate-helpers {
 	.ir { @include image-replacement; }

@@ -1,62 +1,62 @@
 /* Statuses Mixins */
 
 @mixin message-info {
-	@include background-image(linear-gradient( $info-color-light, $info-color 80%, $info-color-dark));
+	background-image: linear-gradient( $info-color-light, $info-color 80%, $info-color-dark);
 	.close {
-		@include box-shadow($info-color 0 0 2px inset);
+		box-shadow: $info-color 0 0 2px inset;
 		background: $info-color;
 		border: 1px solid $info-color;
 		&:hover{
-			@include background-image(linear-gradient( $info-color-light, $info-color-dark)); 
-			@include box-shadow(none);
+			background-image: linear-gradient( $info-color-light, $info-color-dark);
+			box-shadow: none;
 			border: 1px solid $info-color;
 		}	
 	}
 }
 @mixin message-success {
-	@include background-image(linear-gradient( $success-color-light, $success-color 80%, $success-color-dark));
+	background-image: linear-gradient( $success-color-light, $success-color 80%, $success-color-dark);
 	.close {
-		@include box-shadow($success-color 0 0 2px inset);
+		box-shadow: $success-color 0 0 2px inset;
 		background: $success-color;
 		border: 1px solid $success-color;
 		&:hover{
-			@include background-image(linear-gradient( $success-color-light, $success-color-dark)); 
-			@include box-shadow(none);
+			background-image: linear-gradient( $success-color-light, $success-color-dark);
+			box-shadow: none;
 			border: 1px solid $success-color;
 		}	
 	}
 }
 @mixin message-warning {
-	@include background-image(linear-gradient( $warning-color-light, $warning-color 80%, $warning-color-dark));
+	background-image: linear-gradient( $warning-color-light, $warning-color 80%, $warning-color-dark);
 	.close {
-		@include box-shadow($warning-color 0 0 2px inset);
+		box-shadow: $warning-color 0 0 2px inset;
 		background: $warning-color;
 		border: 1px solid $warning-color;
 		&:hover{
-			@include background-image(linear-gradient( $warning-color-light, $warning-color-dark)); 
-			@include box-shadow(none);
+			background-image: linear-gradient($warning-color-light, $warning-color-dark);
+			box-shadow: none;
 			border: 1px solid $warning-color;
 		}	
 	}
 }
 
 @mixin message-error {
-	@include background-image(linear-gradient( $error-color-light, $error-color 80%, $error-color-dark));
+	background-image: linear-gradient( $error-color-light, $error-color 80%, $error-color-dark);
 	.close {
-		@include box-shadow($error-color 0 0 2px inset);
+		box-shadow: $error-color 0 0 2px inset;
 		background: $error-color;
 		border: 1px solid $error-color;
 		&:hover{
-			@include background-image(linear-gradient( $error-color-light, $error-color-dark)); 
-			@include box-shadow(none);
+			background-image: linear-gradient( $error-color-light, $error-color-dark);
+			box-shadow: none;
 			border: 1px solid $error-color;
 		}	
 	}
 }
 
 @mixin stripes($stripe-opacity){
-	@include background-size (60px 60px);
-	@include background-image(linear-gradient(-45deg, rgba(255, 255, 255, $stripe-opacity) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, $stripe-opacity) 50%, rgba(255, 255, 255, $stripe-opacity) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0)));			
+	background-size: 60px 60px;
+	background-image: linear-gradient(-45deg, rgba(255, 255, 255, $stripe-opacity) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, $stripe-opacity) 50%, rgba(255, 255, 255, $stripe-opacity) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
 }
 
 /* Messages */
@@ -79,7 +79,7 @@
 		line-height: 2.9;	
 	}
 	.close {
-		@include border-radius(10px);
+		border-radius: 10px;
 		display: block;
 		cursor: pointer;
 		color: #fff;
@@ -120,7 +120,7 @@
 	text-align: left;
 	position: relative;
 	.inline-message {
-		@include border-radius();
+		border-radius: $default-border-radius;
 		font-weight: bold;
 		padding: 5px 10px;			
 	}
@@ -152,7 +152,7 @@ header {
 			color: #fff;
 		}
 		nav li.internal {
-			@include box-shadow(0 0 0 0);
+			box-shadow: 0 0 0 0;
 		}
 	}
 	&.header-success {
@@ -161,7 +161,7 @@ header {
 			color: #fff;
 		}
 		nav li.internal {
-			@include box-shadow(0 0 0 0);
+			box-shadow: 0 0 0 0;
 		}
 	}
 	&.header-warning {
@@ -170,7 +170,7 @@ header {
 			color: #fff;
 		}
 		nav li.internal {
-			@include box-shadow(0 0 0 0);
+			box-shadow: 0 0 0 0;
 		}
 	}
 	&.header-error {
@@ -179,18 +179,18 @@ header {
 			color: #fff;
 		}
 		nav li.internal {
-			@include box-shadow(0 0 0 0);
+			box-shadow: 0 0 0 0;
 		}
 	}
 }
 
 .hint {
-	@include border-radius();
+	border-radius: $default-border-radius;
 	border-top: 1px solid $line-color-white;
 	margin-bottom: 15px; 
 	padding: 15px 20px;
 	&.hint-info{
-		@include box-shadow($info-color-light 0 1px 1px 0px);
+		box-shadow: $info-color-light 0 1px 1px 0;
 		background-color: $background-color-highlighter;
 		color: $info-color;
 		text-align: center;
@@ -215,7 +215,7 @@ header {
 		}
 	}
 	&.hint-success {
-		@include box-shadow($success-color-light 0 1px 1px 0px);
+		box-shadow: $success-color-light 0 1px 1px 0;
 		background-color: $success-color-ultralight;
 		color: $success-color;
 		font-size: 120%;
@@ -227,7 +227,7 @@ header {
 		}
 	}	
 	&.hint-warning {
-		@include box-shadow($warning-color-light 0 1px 1px 0px);
+		box-shadow: $warning-color-light 0 1px 1px 0;
 		background-color: $warning-color-ultralight;
 		color: $warning-color;
 		font-size: 120%;
@@ -242,7 +242,7 @@ header {
 		}
 	}	
 	&.hint-error {
-		@include box-shadow($error-color-light 0 1px 1px 0px);
+		box-shadow: $error-color-light 0 1px 1px 0;
 		background-color: $error-color-ultralight;
 		color: $error-color;
 		font-size: 120%;

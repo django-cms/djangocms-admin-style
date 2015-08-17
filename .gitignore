@@ -4,6 +4,7 @@ dist
 bin/
 include/
 lib/
+node_modules
 *.sqlite
 database.db
 .idea

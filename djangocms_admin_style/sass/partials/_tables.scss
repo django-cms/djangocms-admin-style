@@ -1,5 +1,5 @@
 table {
-	@include border-radius(); background: $background-color-white; border: none;
+	border-radius: $default-border-radius; background: $background-color-white; border: none;
 	margin: 20px 0; padding: 5px; width: 100%;
 	th { border-bottom: 1px solid $line-color-light; }
 	th, td { padding: 5px 10px; text-align: left; vertical-align: middle; }
