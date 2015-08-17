@@ -144,7 +144,7 @@ nav ul, nav li {
   list-style-image: none; }
 
 .ir {
-  text-indent: -119988px;
+  text-indent: -32767px;
   overflow: hidden;
   text-align: left;
   direction: ltr;
@@ -1410,7 +1410,7 @@ a.addlink:hover, a.addlink:focus, a.addlink:active {
     text-decoration: none !important; }
 
 .add-another {
-  text-indent: -119988px;
+  text-indent: -32767px;
   overflow: hidden;
   text-align: left;
   display: inline-block;
@@ -1444,7 +1444,7 @@ a.addlink:hover, a.addlink:focus, a.addlink:active {
     background-image: url("../img/icon_softroot@2x.png");
     background-size: 15px; }
   .related-lookup {
-    text-indent: -119988px;
+    text-indent: -32767px;
     overflow: hidden;
     text-align: left;
     display: inline-block;
@@ -1453,7 +1453,7 @@ a.addlink:hover, a.addlink:focus, a.addlink:active {
     background: url("../img/icon_searchbox@2x.png") 0 0 no-repeat;
     background-size: 16px; }
   .add-another {
-    text-indent: -119988px;
+    text-indent: -32767px;
     overflow: hidden;
     text-align: left;
     display: inline-block;
