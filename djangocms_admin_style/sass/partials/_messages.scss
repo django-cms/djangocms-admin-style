@@ -151,7 +151,7 @@ header {
             color: #fff;
         }
         nav li.internal {
-            box-shadow: 0 0 0 0;
+            box-shadow: none;
         }
     }
     &.header-success {
@@ -160,7 +160,7 @@ header {
             color: #fff;
         }
         nav li.internal {
-            box-shadow: 0 0 0 0;
+            box-shadow: none;
         }
     }
     &.header-warning {
@@ -169,7 +169,7 @@ header {
             color: #fff;
         }
         nav li.internal {
-            box-shadow: 0 0 0 0;
+            box-shadow: none;
         }
     }
     &.header-error {
@@ -178,7 +178,7 @@ header {
             color: #fff;
         }
         nav li.internal {
-            box-shadow: 0 0 0 0;
+            box-shadow: none;
         }
     }
 }
