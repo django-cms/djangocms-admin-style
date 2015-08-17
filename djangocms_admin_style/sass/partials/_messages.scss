@@ -5,7 +5,7 @@
     .close {
         border: 1px solid $info-color;
         background: $info-color;
-        box-shadow: $info-color 0 0 2px inset;
+        box-shadow: inset 0 0 2px $info-color;
         &:hover {
             border: 1px solid $info-color;
             background-image: linear-gradient( $info-color-light, $info-color-dark);
@@ -18,7 +18,7 @@
     .close {
         border: 1px solid $success-color;
         background: $success-color;
-        box-shadow: $success-color 0 0 2px inset;
+        box-shadow: inset 0 0 2px $success-color;
         &:hover {
             border: 1px solid $success-color;
             background-image: linear-gradient( $success-color-light, $success-color-dark);
@@ -31,7 +31,7 @@
     .close {
         border: 1px solid $warning-color;
         background: $warning-color;
-        box-shadow: $warning-color 0 0 2px inset;
+        box-shadow: inset 0 0 2px $warning-color;
         &:hover {
             border: 1px solid $warning-color;
             background-image: linear-gradient($warning-color-light, $warning-color-dark);
@@ -45,7 +45,7 @@
     .close {
         border: 1px solid $error-color;
         background: $error-color;
-        box-shadow: $error-color 0 0 2px inset;
+        box-shadow: inset 0 0 2px $error-color;
         &:hover {
             border: 1px solid $error-color;
             background-image: linear-gradient( $error-color-light, $error-color-dark);

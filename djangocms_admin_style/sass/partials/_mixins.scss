@@ -27,7 +27,7 @@
     border-bottom: 1px solid $button-silver-dark-color !important;
     background-color: $button-silver-light-color !important;
     background-image: linear-gradient($button-silver-light-color, $button-silver-medium-color) !important;
-    box-shadow: $button-silver-medium-color 0 0 $button-shadow-width inset !important;
+    box-shadow: inset 0 0 $button-shadow-width $button-silver-medium-color !important;
     &:hover {
         background: $button-silver-light-color !important;
     }
@@ -66,7 +66,7 @@
     border-bottom: 1px solid $button-blue-dark-color !important;
     background-color: $button-blue-medium-color !important;
     background-image: none !important;
-    box-shadow: $button-blue-light-color 0 0 $button-shadow-width inset !important;
+    box-shadow: inset 0 0 $button-shadow-width $button-blue-light-color !important;
     &,
     &:visited {
         background-image: linear-gradient($button-blue-light-color, $button-blue-medium-color) !important;
@@ -89,7 +89,7 @@
     border: 1px solid $button-green-light-color !important;
     border-bottom: 1px solid $button-green-dark-color !important;
     background-color: $button-green-medium-color !important;
-    box-shadow: $button-green-light-color 0 0 $button-shadow-width inset !important;
+    box-shadow: inset 0 0 $button-shadow-width $button-green-light-color !important;
     &,
     &:visited {
         background-image: linear-gradient($button-green-light-color, $button-green-medium-color) !important;
@@ -112,7 +112,7 @@
     border-bottom: 1px solid $button-orange-dark-color !important;
     background-color: $button-orange-medium-color !important;
     background-image: linear-gradient($button-orange-light-color, $button-orange-medium-color);
-    box-shadow: $button-orange-light-color 0 0 $button-shadow-width inset;
+    box-shadow: inset 0 0 $button-shadow-width $button-orange-light-color;
     &:hover {
         color: $button-orange-font-color;
         background: $button-orange-light-color;
@@ -131,7 +131,7 @@
     border-bottom: 1px solid $button-red-dark-color !important;
     background-color: $button-red-medium-color !important;
     background-image: linear-gradient($button-red-light-color, $button-red-medium-color) !important;
-    box-shadow: $button-red-light-color 0 0 $button-shadow-width inset !important;
+    box-shadow: inset 0 0 $button-shadow-width $button-red-light-color !important;
     &:hover {
         color: $button-red-font-color !important;
         background: $button-red-light-color !important;
@@ -151,7 +151,7 @@
     cursor: default;
     background-color: $button-black-medium-color !important;
     background-image: linear-gradient($button-black-light-color, $button-black-medium-color);
-    box-shadow: $button-black-light-color 0 0 $button-shadow-width inset;
+    box-shadow: inset 0 0 $button-shadow-width $button-black-light-color;
     &:hover {
         color: $button-black-font-color;
         border-color: $button-black-medium-color;
@@ -175,7 +175,7 @@
     cursor: default;
     background-color: $button-inactive-medium-color !important;
     background-image: linear-gradient($button-inactive-light-color, $button-inactive-medium-color);
-    box-shadow: $button-inactive-light-color 0 0 $button-shadow-width inset;
+    box-shadow: inset 0 0 $button-shadow-width $button-inactive-light-color;
     &:hover {
         color: $button-inactive-font-color;
         border-color: $button-inactive-medium-color;
