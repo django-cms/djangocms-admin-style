@@ -1,5 +1,5 @@
 // This file must be imported before loading html5-boilerplate
-$base-font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;  // default font-family
+$base-font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;  // default font-family
 $base-font-size: 12px;  // default font-size for YUI fonts
 $base-line-height: 1.231;  // default line-height for YUI fonts
 
@@ -8,22 +8,18 @@ $info-color-ultralight: #addef6;
 $info-color-light: #5bbdee;
 $info-color: #029eee;
 $info-color-dark: #0072ac;
-
 $success-color-ultralight: #ebf8e6;
 $success-color-light: #7cbe5a;
 $success-color: #5bae31;
 $success-color-dark: #5da03d;
-
 $warning-color-ultralight: #fffde4;
 $warning-color-light: #ffc600;
 $warning-color: #ffb400;
 $warning-color-dark: #ffa800;
-
 $error-color-ultralight: #fff3f3;
 $error-color-light: #ef4a4a;
 $error-color: #e80101;
 $error-color-dark: #d50101;
-
 $inactive-color: #ccc;
 
 
@@ -34,17 +30,13 @@ $background-color-light: #f1f1f1;
 $background-color-medium: #464b50 ;
 $background-color-dark: #595f65;
 $background-color-highlight: #f6fcff;
-$background-color-transparent: rgba(255,255,255, .2);
-
-
+$background-color-transparent: rgba(255,255,255, 0.2);
 $background-color-ok-light: #e6f1bf;
 $background-color-ok: #d3e1a3;
 $background-color-fail: #f2d1cf;
 $background-color-highlighter: #f1faff;
-
 $button-font-color-yellow: #fff;
 $button-font-color-yellow-hover: #fff;
-
 $button-border-color-yellow: #f6c509;
 $button-shadow-color-yellow: #fff;
 $button-background-color-top-yellow: #ffeb4c;
@@ -55,7 +47,7 @@ $button-background-color-bottom-yellow-hover: #ffca00;
 // Navigation
 $navigation-color-light: #5d6267;
 $navigation-color-medium: #464b50;
-$navigation-color-highlight: #676E74;
+$navigation-color-highlight: #676e74;
 $navigation-color-active-light: #fff;
 $navigation-color-active-medium: #fcfcfc;
 
@@ -63,7 +55,7 @@ $navigation-color-active-medium: #fcfcfc;
 $font-color-white: #fff;
 $font-color-ultralight: #ccc;
 $font-color-light: #888;
-$font-color-medium: #666; 
+$font-color-medium: #666;
 $font-color-dark: #222;
 $font-color: #444;
 
@@ -107,32 +99,32 @@ $button-silver-medium-color: #efefef;
 $button-silver-dark-color: #ccc;
 $button-silver-font-color: #555;
 
-/* Blue */ 
+/* Blue */
 $button-blue-light-color: #5bbdee;
 $button-blue-medium-color: #029eee;
 $button-blue-dark-color: #0072ac;
 $button-blue-font-color: #fff;
 
-/* Orange */ 
+/* Orange */
 $button-orange-light-color: #efaa4a;
 $button-orange-medium-color: #e88801;
 $button-orange-dark-color: #de8200;
 $button-orange-font-color: #fff;
 
-/* Red */ 
+/* Red */
 $button-red-light-color: #ef4a4a;
 $button-red-medium-color: #e80101;
 $button-red-dark-color: #d50101;
 $button-red-font-color: #fff;
 
 
-/* Green */ 
+/* Green */
 $button-green-light-color: #7cbe5a;
 $button-green-medium-color: #5bae31;
 $button-green-dark-color: #5da03d;
 $button-green-font-color: #fff;
 
-/* Black */ 
+/* Black */
 $button-black-light-color: #5d6267;
 $button-black-medium-color: #464b50;
 $button-black-dark-color: #333;
@@ -145,11 +137,6 @@ $top-section-padding: 15px;
 /* Template Editor */
 $editor-height: 100%;
 $tree-width: 250px;
-
-// Compass mixins
-@import "compass/css3";
-@import "compass/utilities";
-@import "compass/typography";
 
 // font-face fonts
 // see http://compass-style.org/docs/reference/compass/css3/font_face/

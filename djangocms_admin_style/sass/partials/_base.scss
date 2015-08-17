@@ -1,44 +1,112 @@
 // base
 
-body { background: url('../img/bg-pattern-light.jpg') #efefef repeat !important; }
-
-body, select, input, textarea { color: $font-color; }
-
-h1 { font-size: 150%; color: $font-color-medium; font-weight: bold; margin: 20px 10px 10px;  }
-h2 { font-size: 130%; color: $font-color-medium; font-weight: bold; line-height: 1.75em;}
-h3 { font-size: 120%; color: $font-color; font-weight: bold; }
-h4 { font-size: 110%; color: $font-color-medium; font-weight: bold;}
-h5 { font-size: 100%; color: $font-color; }
-h6 { font-size: 100%; color: $font-color-medium; }
-
-a, a:link {
-	color: $link-color;
-	text-decoration: none;
-	&:visited { color: $link-visited-color; }
-	&:hover { color: $link-hover-color; text-decoration: underline; }
-	&:active { color: $link-active-color; }
+body {
+    background: url("../img/bg-pattern-light.jpg") #efefef repeat !important;
 }
 
-p { font-weight: normal; margin-bottom: 6px; }
+body,
+select,
+input,
+textarea {
+    color: $font-color;
+}
+
+h1 {
+    color: $font-color-medium;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 20px 10px 10px;
+}
+h2 {
+    color: $font-color-medium;
+    font-size: 130%;
+    font-weight: bold;
+    line-height: 1.75em;
+}
+h3 {
+    color: $font-color;
+    font-size: 120%;
+    font-weight: bold;
+}
+h4 {
+    color: $font-color-medium;
+    font-size: 110%;
+    font-weight: bold;
+}
+h5 {
+    color: $font-color; 
+    font-size: 100%;
+}
+h6 {
+    color: $font-color-medium; 
+    font-size: 100%;
+}
+
+a,
+a:link {
+    color: $link-color;
+    text-decoration: none;
+    &:visited {
+        color: $link-visited-color;
+    }
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: underline;
+    }
+    &:active {
+        color: $link-active-color;
+    }
+}
+
+p {
+    font-weight: normal;
+    margin-bottom: 6px;
+}
 
 code {
-	font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace; background: inherit;
-	color: #666; font-size: 11px;
-	strong { color: #930; }
+    color: #666;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 11px;
+    background: inherit;
+    strong {
+        color: #930;
+    }
 }
 
 pre {
-	font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace; background: inherit;
-	color: #666; font-size: 11px;
-	&.literal-block { background: #eee; }
+    color: #666;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 11px;
+    background: inherit;
+    &.literal-block {
+        background: #eee;
+    }
 }
 
-div hr { background: $line-color-light; margin: 20px 0; border: none; }
+div hr {
+    margin: 20px 0;
+    border: none; 
+    background: $line-color-light;
+}
 
-strong { font-weight: bold; }
-.small, small { font-size: 85%; margin-top: 0; }
+strong {
+    font-weight: bold;
+}
+.small,
+small {
+    font-size: 85%;
+    margin-top: 0;
+}
 
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix:after {
+    content: ".";
+    display: block;
+    visibility: hidden; 
+    clear: both;
+    height: 0;
+}
 
 // FIXME: These are actually fixes in the django CMS code base but setting here too for a quicker release
-#sitemap li .cont { overflow:visible !important; }
+#sitemap li .cont {
+    overflow: visible !important;
+}
