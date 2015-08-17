@@ -1,9 +1,5 @@
 // base
 
-body {
-    background: url("../img/bg-pattern-light.jpg") #efefef repeat !important;
-}
-
 body,
 select,
 input,
@@ -51,7 +47,7 @@ a:link {
     }
     &:hover {
         color: $link-hover-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
     &:active {
         color: $link-active-color;
