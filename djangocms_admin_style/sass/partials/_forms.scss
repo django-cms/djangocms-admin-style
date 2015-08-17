@@ -124,7 +124,8 @@ input[type="button"] {
         padding: 7px 10px !important;
     }
 }
-a.button {@include button-common();
+a.button {
+    @include button-common();
     text-decoration: none;
     cursor: pointer; 
     &.tab {
