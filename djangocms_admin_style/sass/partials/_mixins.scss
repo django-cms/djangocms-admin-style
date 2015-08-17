@@ -1,11 +1,5 @@
 // mixins
 
-@mixin hide-text () {
-	text-indent: -119988px;
-	overflow: hidden;
-	text-align: left;
-}
-
 @mixin box(){
 	border-radius: $default-border-radius; box-shadow: 0 1px 2px 1px rgba(0,0,0,0.08); padding: 0;
 	background: $background-color-white; border: none; margin-bottom: 5px;

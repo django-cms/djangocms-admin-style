@@ -3,6 +3,12 @@
 // It's better to include these mixins in your own styles
 //
 
+@mixin hide-text () {
+	text-indent: -119988px;
+	overflow: hidden;
+	text-align: left;
+}
+
 @mixin html5-boilerplate-helpers {
 	.ir { @include image-replacement; }
 
@@ -16,7 +22,7 @@
 // Almost the same as compass replace-text
 // but adding direction: ltr
 @mixin image-replacement($img: none, $x: 50%, $y: 50%) {
-	//@include hide-text;
+	@include hide-text;
 	direction: ltr;
 	background-repeat: no-repeat;
 	@if $img != none {
