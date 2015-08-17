@@ -729,7 +729,6 @@ fieldset table {
   border: 1px solid #ddd;
   padding: 10px;
   box-shadow: #fff 0 0 2px inset !important;
-  background: #f1f1f1;
   background: rgba(255, 255, 255, 0.2) !important; }
   .submit-row .deletelink-box {
     line-height: 24px; }

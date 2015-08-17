@@ -48,7 +48,6 @@
 .submit-row {
 	border-radius: $default-border-radius; border: 1px solid $line-color-light; padding: 10px;
 	box-shadow: $background-color-white 0 0 $button-shadow-width inset !important;
-	background: $background-color-light;
 	background: $background-color-transparent !important;
 	.deletelink-box { line-height: 24px; }
 	.deletelink { @include button-common(); @include button-red(); }
