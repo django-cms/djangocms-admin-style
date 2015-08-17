@@ -73,7 +73,6 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        //border-bottom: 1px solid $line-color-medium;
     }
     li {
         line-height: 2.9;
@@ -152,7 +151,7 @@ header {
             color: #fff;
         }
         nav li.internal {
-            box-shadow: 0 0 0 0;
+            box-shadow: none;
         }
     }
     &.header-success {
@@ -161,7 +160,7 @@ header {
             color: #fff;
         }
         nav li.internal {
-            box-shadow: 0 0 0 0;
+            box-shadow: none;
         }
     }
     &.header-warning {
@@ -170,7 +169,7 @@ header {
             color: #fff;
         }
         nav li.internal {
-            box-shadow: 0 0 0 0;
+            box-shadow: none;
         }
     }
     &.header-error {
@@ -179,7 +178,7 @@ header {
             color: #fff;
         }
         nav li.internal {
-            box-shadow: 0 0 0 0;
+            box-shadow: none;
         }
     }
 }

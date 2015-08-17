@@ -23,7 +23,7 @@ form {
         background-image: none;
     }
     label {
-        display: inline-block; /*min-width: 160px;*/
+        display: inline-block;
         color: $font-color-light;
         line-height: 18px;
         word-wrap: break-word;
@@ -78,8 +78,6 @@ form {
             margin-right: 10px;
         }
     }
-    //.aligned p.help { padding-left: 100px; }
-    //.aligned.wide p.help { padding-left: 55px; }
     .form-row {
         border-bottom-color: $line-color-ultralight;
     }
@@ -193,7 +191,7 @@ div.clockbox {
     border: 1px solid #ccc;
     border-radius: $default-border-radius;
     background: #f3f3f3;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     caption,
     h2 {
         font-size: 14px;

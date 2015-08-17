@@ -66,14 +66,16 @@
     border: 0;
     // Extends the .visuallyhidden class to allow the element to be focusable
     // when navigated to via the keyboard: drupal.org/node/897638
-    &.focusable:active,
-    &.focusable:focus {
-        position: static;
-        overflow: visible;
-        clip: auto;
-        width: auto;
-        height: auto;
-        margin: 0;
+    &.focusable {
+        &:active,
+        &:focus {
+            position: static;
+            overflow: visible;
+            clip: auto;
+            width: auto;
+            height: auto;
+            margin: 0;
+        }
     }
 }
 
