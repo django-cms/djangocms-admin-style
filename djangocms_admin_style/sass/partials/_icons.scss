@@ -14,7 +14,8 @@
 
 .addlink,
 .changelink,
-.deletelink {
+.deletelink,
+.icon-arrow-right {
     background-image: none;
     &:before {
         font-family: "django-cms-admin" !important;
@@ -41,6 +42,10 @@
 }
 .deletelink:before {
   content: "\e002";
+}
+
+.icon-arrow-right:before {
+  content: "\e003";
 }
 
 .addlink,

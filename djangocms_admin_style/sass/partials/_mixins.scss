@@ -21,10 +21,10 @@
 
 @mixin button-common-init {
     border: 1px solid $button-silver-medium-color !important;
-    border-bottom: 1px solid $button-silver-dark-color !important;
-    background-color: $button-silver-light-color !important;
-    background-image: linear-gradient($button-silver-light-color, $button-silver-medium-color) !important;
-    box-shadow: inset 0 0 $button-shadow-width $button-silver-medium-color !important;
+    background-color: none!important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 15px 30px !important;
     &:hover {
         background: $button-silver-light-color !important;
     }
@@ -34,12 +34,11 @@
     @include button-common-init();
     overflow: visible;
     color: $button-silver-font-color !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: $default-border-radius;
     &.small {
         padding: 3px 8px 4px !important;

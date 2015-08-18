@@ -237,12 +237,15 @@ body.login {
     background-color: #fff;
     background-image: none;
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
-    #branding h1 {
-        float: left;
-        color: $font-color-medium;
-        font-weight: bold;
-        padding: 19px 25px;
-        margin: 0;
+    #branding {
+        width: 100%;
+        h1 {
+            float: left;
+            color: $font-color-medium;
+            font-weight: bold;
+            padding: 19px 25px;
+            margin: 0;
+        }
     }
     #user-tools {
         display: none;
@@ -254,11 +257,26 @@ body.login {
             color: $font-color-medium;
         }
     }
-}
-#header-logo {
-    float: left;
-    margin-right: 40px;
-    padding: 15px 0 15px 15px;
+    #header-btn {
+        float: right;
+        margin: 10px 20px 0 0;
+        input[type="submit"],
+        input[type="button"] {
+            padding: 10px 45px 10px 30px !important;;
+            &.icon-arrow-right {
+                background: url('/static/djangocms_admin_style/img/icon_arrow_right.png') no-repeat right center !important;
+                background-size: 35px !important;
+                &:hover {
+                    background-color: $button-silver-light-color !important;
+                }
+            }
+        }
+    }
+    #header-logo {
+        float: left;
+        margin-right: 40px;
+        padding: 15px 0 15px 15px;
+    }
 }
 div.breadcrumbs {
     color: #ddd;

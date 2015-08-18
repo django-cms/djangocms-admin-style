@@ -398,7 +398,7 @@ form label {
 
 form input,
 form textarea {
-  color: #555;
+  color: #6d6d6d;
   padding: 6px 5px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -412,7 +412,7 @@ form input[type="radio"] {
   border: 0; }
 
 form input[type="file"] {
-  color: #555;
+  color: #6d6d6d;
   padding: 6px 5px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -465,32 +465,30 @@ textarea:invalid {
   background-color: #f0dddd; }
 
 button {
-  border: 1px solid #efefef !important;
-  border-bottom: 1px solid #ccc !important;
-  background-color: #fff !important;
-  background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-  background-image: linear-gradient(#fff, #efefef) !important;
-  box-shadow: inset 0 0 2px #efefef !important;
+  border: 1px solid #d4d4d4 !important;
+  background-color: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 15px 30px !important;
   overflow: visible;
-  color: #555 !important;
-  font-size: 12px !important;
-  font-weight: bolder !important;
-  line-height: 15px !important;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
   text-decoration: none !important;
   width: auto;
-  padding: 5px 10px 5px !important;
   border-radius: 3px; }
   button:hover {
-    background: #fff !important; }
+    background: #ededed !important; }
   button.small {
     padding: 3px 8px 4px !important; }
   button:hover,
   button:active,
   button.select,
   button:visited {
-    color: #555;
+    color: #6d6d6d;
     text-decoration: none;
-    background: #fff; }
+    background: #ededed; }
   button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -498,25 +496,22 @@ button {
 
 input[type="submit"],
 input[type="button"] {
-  border: 1px solid #efefef !important;
-  border-bottom: 1px solid #ccc !important;
-  background-color: #fff !important;
-  background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-  background-image: linear-gradient(#fff, #efefef) !important;
-  box-shadow: inset 0 0 2px #efefef !important;
+  border: 1px solid #d4d4d4 !important;
+  background-color: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 15px 30px !important;
   overflow: visible;
-  color: #555 !important;
-  font-size: 12px !important;
-  font-weight: bolder !important;
-  line-height: 15px !important;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
   text-decoration: none !important;
   width: auto;
-  padding: 5px 10px 5px !important;
-  border-radius: 3px;
-  padding: 8px 10px !important; }
+  border-radius: 3px; }
   input[type="submit"]:hover,
   input[type="button"]:hover {
-    background: #fff !important; }
+    background: #ededed !important; }
   input[type="submit"].small,
   input[type="button"].small {
     padding: 3px 8px 4px !important; }
@@ -528,9 +523,9 @@ input[type="button"] {
   input[type="button"]:active,
   input[type="button"].select,
   input[type="button"]:visited {
-    color: #555;
+    color: #6d6d6d;
     text-decoration: none;
-    background: #fff; }
+    background: #ededed; }
   input[type="submit"].animate,
   input[type="button"].animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -568,34 +563,32 @@ input[type="button"] {
       background-size: 100% 400%; }
 
 a.button {
-  border: 1px solid #efefef !important;
-  border-bottom: 1px solid #ccc !important;
-  background-color: #fff !important;
-  background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-  background-image: linear-gradient(#fff, #efefef) !important;
-  box-shadow: inset 0 0 2px #efefef !important;
+  border: 1px solid #d4d4d4 !important;
+  background-color: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 15px 30px !important;
   overflow: visible;
-  color: #555 !important;
-  font-size: 12px !important;
-  font-weight: bolder !important;
-  line-height: 15px !important;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
   text-decoration: none !important;
   width: auto;
-  padding: 5px 10px 5px !important;
   border-radius: 3px;
   text-decoration: none;
   cursor: pointer; }
   a.button:hover {
-    background: #fff !important; }
+    background: #ededed !important; }
   a.button.small {
     padding: 3px 8px 4px !important; }
   a.button:hover,
   a.button:active,
   a.button.select,
   a.button:visited {
-    color: #555;
+    color: #6d6d6d;
     text-decoration: none;
-    background: #fff; }
+    background: #ededed; }
   a.button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -894,20 +887,18 @@ fieldset table {
   .submit-row .deletelink-box {
     line-height: 24px; }
   .submit-row .deletelink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 15px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px;
     color: #fff !important;
     border: 1px solid #ef4a4a !important;
@@ -917,16 +908,16 @@ fieldset table {
     background-image: linear-gradient(#ef4a4a, #e80101) !important;
     box-shadow: inset 0 0 2px #ef4a4a !important; }
     .submit-row .deletelink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .submit-row .deletelink.small {
       padding: 3px 8px 4px !important; }
     .submit-row .deletelink:hover,
     .submit-row .deletelink:active,
     .submit-row .deletelink.select,
     .submit-row .deletelink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .submit-row .deletelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1055,23 +1046,37 @@ body.login {
   background-color: #fff;
   background-image: none;
   box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3); }
-  #header #branding h1 {
-    float: left;
-    color: #1a1a1a;
-    font-weight: bold;
-    padding: 19px 25px;
-    margin: 0; }
+  #header #branding {
+    width: 100%; }
+    #header #branding h1 {
+      float: left;
+      color: #1a1a1a;
+      font-weight: bold;
+      padding: 19px 25px;
+      margin: 0; }
   #header #user-tools {
     display: none;
     padding: 16px 25px 0; }
   #header a:link,
   #header a:visited {
     color: #1a1a1a; }
-
-#header-logo {
-  float: left;
-  margin-right: 40px;
-  padding: 15px 0 15px 15px; }
+  #header #header-btn {
+    float: right;
+    margin: 10px 20px 0 0; }
+    #header #header-btn input[type="submit"],
+    #header #header-btn input[type="button"] {
+      padding: 10px 45px 10px 30px !important; }
+      #header #header-btn input[type="submit"].icon-arrow-right,
+      #header #header-btn input[type="button"].icon-arrow-right {
+        background: url("/static/djangocms_admin_style/img/icon_arrow_right.png") no-repeat right center !important;
+        background-size: 35px !important; }
+        #header #header-btn input[type="submit"].icon-arrow-right:hover,
+        #header #header-btn input[type="button"].icon-arrow-right:hover {
+          background-color: #ededed !important; }
+  #header #header-logo {
+    float: left;
+    margin-right: 40px;
+    padding: 15px 0 15px 15px; }
 
 div.breadcrumbs {
   color: #ddd;
@@ -1184,51 +1189,47 @@ a.addlink:active {
     .object-tools li:hover {
       background: none; }
     .object-tools li > a {
-      border: 1px solid #efefef !important;
-      border-bottom: 1px solid #ccc !important;
-      background-color: #fff !important;
-      background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-      background-image: linear-gradient(#fff, #efefef) !important;
-      box-shadow: inset 0 0 2px #efefef !important;
+      border: 1px solid #d4d4d4 !important;
+      background-color: none !important;
+      background-image: none !important;
+      box-shadow: none !important;
+      padding: 15px 30px !important;
       overflow: visible;
-      color: #555 !important;
-      font-size: 12px !important;
-      font-weight: bolder !important;
-      line-height: 15px !important;
+      color: #6d6d6d !important;
+      font-size: 18px !important;
+      font-weight: normal !important;
+      line-height: 21px !important;
       text-decoration: none !important;
       width: auto;
-      padding: 5px 10px 5px !important;
       border-radius: 3px; }
       .object-tools li > a:hover {
-        background: #fff !important; }
+        background: #ededed !important; }
       .object-tools li > a.small {
         padding: 3px 8px 4px !important; }
       .object-tools li > a:hover,
       .object-tools li > a:active,
       .object-tools li > a.select,
       .object-tools li > a:visited {
-        color: #555;
+        color: #6d6d6d;
         text-decoration: none;
-        background: #fff; }
+        background: #ededed; }
       .object-tools li > a.animate {
         background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
         background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
         background-size: 100% 400%; }
   .object-tools .addlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 15px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px;
     color: #fff !important;
     border: 1px solid #7cbe5a !important;
@@ -1237,16 +1238,16 @@ a.addlink:active {
     box-shadow: inset 0 0 2px #7cbe5a !important;
     color: #fff !important; }
     .object-tools .addlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .addlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .addlink:hover,
     .object-tools .addlink:active,
     .object-tools .addlink.select,
     .object-tools .addlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .addlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1265,175 +1266,163 @@ a.addlink:active {
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .recoverlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 15px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .recoverlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .recoverlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .recoverlink:hover,
     .object-tools .recoverlink:active,
     .object-tools .recoverlink.select,
     .object-tools .recoverlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .recoverlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .publishlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 15px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .publishlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .publishlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .publishlink:hover,
     .object-tools .publishlink:active,
     .object-tools .publishlink.select,
     .object-tools .publishlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .publishlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .previewdraftlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 15px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .previewdraftlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .previewdraftlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .previewdraftlink:hover,
     .object-tools .previewdraftlink:active,
     .object-tools .previewdraftlink.select,
     .object-tools .previewdraftlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .previewdraftlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .revertlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 15px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .revertlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .revertlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .revertlink:hover,
     .object-tools .revertlink:active,
     .object-tools .revertlink.select,
     .object-tools .revertlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .revertlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .historylink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 15px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .historylink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .historylink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .historylink:hover,
     .object-tools .historylink:active,
     .object-tools .historylink.select,
     .object-tools .historylink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .historylink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .viewsitelink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 15px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px;
     color: #fff !important;
     border: 1px solid #5bbdee !important;
@@ -1442,16 +1431,16 @@ a.addlink:active {
     background-image: none !important;
     box-shadow: inset 0 0 2px #5bbdee !important; }
     .object-tools .viewsitelink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .viewsitelink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .viewsitelink:hover,
     .object-tools .viewsitelink:active,
     .object-tools .viewsitelink.select,
     .object-tools .viewsitelink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .viewsitelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1675,11 +1664,13 @@ a.addlink:active {
 
 .addlink,
 .changelink,
-.deletelink {
+.deletelink,
+.icon-arrow-right {
   background-image: none; }
   .addlink:before,
   .changelink:before,
-  .deletelink:before {
+  .deletelink:before,
+  .icon-arrow-right:before {
     font-family: "django-cms-admin" !important;
     font-size: 20px;
     content: attr(data-icon);
@@ -1702,6 +1693,9 @@ a.addlink:active {
 
 .deletelink:before {
   content: "\e002"; }
+
+.icon-arrow-right:before {
+  content: "\e003"; }
 
 .addlink,
 .addlink a {

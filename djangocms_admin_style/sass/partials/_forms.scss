@@ -115,7 +115,6 @@ button {
 input[type="submit"],
 input[type="button"] {
     @include button-common();
-    padding: 8px 10px !important;
     &.default {
         @include button-blue();
         margin-top: 1px; 
