@@ -11,7 +11,9 @@ body {
     margin: 0;
 }
 #branding {
-    display: none;
+    .site-name {
+        display: none;
+    }
 }
 .login #branding {
     display: block;
@@ -25,7 +27,6 @@ body {
 .module {
     padding: 5px 0 5px 0 !important;
     border: none;
-    box-shadow: none;
     box-shadow: none !important;
     caption {
         margin-bottom: 5px;
@@ -68,29 +69,33 @@ body.login {
 }
 .dashboard {
     #container {
-        #content h1 {
-            display: none;
-        }
         #content-main {
             float: none;
             min-width: 0;
             max-width: none;
-            .addlink,
-            .changelink {
-                overflow: hidden; 
-                text-indent: -9999px;
+            .module {
+                table td {
+                    padding-left: 0;
+                }
             }
         }
         #content-related {
+            position: static;
             float: none;
             width: auto;
-            margin-right: 0;
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            border-left: 0;
         }
         #content-related .module {
             margin: 10px 0;
             padding: 10px !important;
             .actionlist {
                 margin-left: 10px;
+            }
+            h2 {
+                padding-bottom: 10px;
             }
         }
     }

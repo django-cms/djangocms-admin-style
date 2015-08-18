@@ -1,12 +1,14 @@
 
 // containers
 #container {
+    position: static;
     width: auto !important;
     min-width: 0 !important;
 }
 #content {
     width: auto !important;
     min-width: 0 !important;
+    margin: 95px 45px 0;
 }
 #changelist {
     width: auto !important;
@@ -16,7 +18,7 @@
 .module {
     @include box();
     margin-bottom: 10px;
-    padding: 10px 15px 15px;
+    padding: 35px 0 0;
     h2 {
         color: $font-color;
         font-size: 100%;
@@ -28,10 +30,11 @@
     }
     caption {
         color: $font-color-light;
-        font-size: 130%;
-        font-weight: bold;
+        font-size: 14px !important;
+        font-weight: normal;
         line-height: 1.75em;
-        margin: 0 0 5px 5px;
+        text-transform: uppercase;
+        margin: 0 0 10px 10px;
         padding: 0;
         background: none;
         a.section,
@@ -43,15 +46,15 @@
     table {
         margin: 0;
         thead th {
-            padding: 2px 5px !important;
+            padding: 20px 10px!important;
         }
         th {
             line-height: 13px; 
-            padding: 2px 5px;
+            padding: 16px 10px;
         }
         td {
             line-height: 13px; 
-            padding: 8px 5px;
+            padding: 8px 0 8px 40px;
         }
     }
 }
@@ -178,7 +181,9 @@ body.login {
         box-shadow: inset rgba(0, 0, 0, 0.3) 0 1px 2px, #fff 0 1px 1px;
         #header {
             background: none !important;
+            box-shadow: none;
             #branding h1 {
+                float: none;
                 color: $font-color;
                 text-align: center; 
                 margin: 20px 0 !important;
@@ -227,17 +232,33 @@ body.login {
 
 // header
 #header {
-    color: $font-color-white !important;
-    height: 46px;
-    background-color: $background-color-medium;
-    background-image: linear-gradient($background-color-dark, $background-color-medium);
+    color: $font-color-medium !important;
+    height: 63px;
+    background-color: #fff;
+    background-image: none;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
     #branding h1 {
-        color: $font-color-white;
-        padding: 3px 25px;
+        float: left;
+        color: $font-color-medium;
+        font-weight: bold;
+        padding: 19px 25px;
+        margin: 0;
     }
     #user-tools {
+        display: none;
         padding: 16px 25px 0;
     }
+    a {
+        &:link,
+        &:visited {
+            color: $font-color-medium;
+        }
+    }
+}
+#header-logo {
+    float: left;
+    margin-right: 40px;
+    padding: 15px 0 15px 15px;
 }
 div.breadcrumbs {
     color: #ddd;
@@ -260,12 +281,25 @@ div.breadcrumbs {
     #content-main {
         min-width: 400px;
         max-width: 640px;
+        padding-bottom: 20px;
         table th,
         table td {
             width: auto;
             border-color: $line-color-ultralight;
             a {
-                line-height: 16px;
+                font-size: 18px;
+                color: $font-color;
+                font-weight: normal;
+                line-height: 21px;
+                padding: 0 10px 0 0;
+                &.addlink {
+                    color: $success-color;
+                    font-size: 16px;
+                }
+                &.changelink {
+                    color: $info-color;
+                    font-size: 16px;
+                }
             }
         }
         table th {
@@ -279,30 +313,53 @@ div.breadcrumbs {
         }
     }
     #content-related {
-        float: left;
+        position: absolute;
+        right: 0;
+        top: 63px;
+        bottom: 0;
+        height: 100%;
+        width: 194px;
+        padding-top: 83px;
+        margin: 0;
+        border-left: 1px solid $line-color-light;
+        background-color: #f7f7f7;
+        z-index: -1;
         .module {
-            margin-left: 10px;
-            padding: 10px 20px !important;
-            border: 1px solid $line-color-light;
-            border-radius: $default-border-radius;
-            background: $background-color-transparent !important;
-            box-shadow: inset 0 0 $button-shadow-width $background-color-white !important;
+            margin-left: 0;
+            padding: 10px 30px !important;
+            background-color: transparent;
             ul.actionlist {
                 padding: 0;
+                li {
+                    font-size: 14px;
+                    padding: 9px 15px;
+                    border-bottom: solid 1px $line-color-ultralight;
+                    &:before {
+                        font-size: 17px;
+                    }
+                }
                 .changelink a {
                     line-height: 16px;
                 }
+                .mini {
+                    color: $font-color-light !important;
+                    margin-left: 30px;
+                }
             }
             h2 {
-                color: $font-color-light;
-                padding: 0 0 5px;
+                color: $font-color;
+                padding: 0 0 40px;
                 background: none;
+                border-bottom: 0;
             }
             h3 {
+                font-size: 14px;
+                font-weight: normal;
                 line-height: 20px;
-                margin: 0 0 5px ;
-                padding: 0; 
-                border-bottom: 1px solid $line-color-light;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0 0 13px;
+                border-bottom: 1px solid $line-color-ultralight;
             }
             p {
                 padding: 0;
@@ -555,8 +612,6 @@ a.addlink {
             bottom: 0 !important;
             margin: 0;
             padding: 0 0 0 12px !important;
-            background: url("../img/icon_deletelink.png") 0 0.25 no-repeat !important;
-
             border-top-radius: 0;
         }
     }
