@@ -24,7 +24,7 @@
     background-color: none!important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     &:hover {
         background: $button-silver-light-color !important;
     }
@@ -58,18 +58,18 @@
 
 @mixin button-blue {
     color: $button-blue-font-color !important;
-    border: 1px solid $button-blue-light-color !important;
-    border-bottom: 1px solid $button-blue-dark-color !important;
+    border: 1px solid $button-blue-medium-color !important;
     background-color: $button-blue-medium-color !important;
     background-image: none !important;
-    box-shadow: inset 0 0 $button-shadow-width $button-blue-light-color !important;
+    box-shadow: none !important;
     &,
     &:visited {
-        background-image: linear-gradient($button-blue-light-color, $button-blue-medium-color) !important;
+        background-image: none !important;
     }
     &:hover,
     &:focus {
         color: $button-blue-font-color !important;
+        border: 1px solid $button-blue-light-color !important;
         background: $button-blue-light-color !important;
     }
     &:active {
@@ -82,16 +82,16 @@
 
 @mixin button-green {
     color: $button-green-font-color !important;
-    border: 1px solid $button-green-light-color !important;
-    border-bottom: 1px solid $button-green-dark-color !important;
+    border: 1px solid $button-green-medium-color !important;
     background-color: $button-green-medium-color !important;
-    box-shadow: inset 0 0 $button-shadow-width $button-green-light-color !important;
+    box-shadow: none !important;
     &,
     &:visited {
-        background-image: linear-gradient($button-green-light-color, $button-green-medium-color) !important;
+        background-image: none !important;
     }
     &:hover {
         color: $button-green-font-color  !important;
+        border: 1px solid $button-green-light-color !important;
         background: $button-green-light-color  !important;
     }
     &:active {

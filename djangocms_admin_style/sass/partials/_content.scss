@@ -9,6 +9,9 @@
     width: auto !important;
     min-width: 0 !important;
     margin: 95px 45px 0;
+    &.colMS {
+        margin-right: 24em !important;
+    }
 }
 #changelist {
     width: auto !important;
@@ -120,8 +123,9 @@
     }
 }
 .submit-row {
-    padding: 10px;
-    border: 1px solid $line-color-light;
+    padding: 20px;
+    border: 0;
+    border-top: 1px solid $line-color-light;
     border-radius: $default-border-radius;
     background: $background-color-transparent !important;
     box-shadow: inset 0 0 $button-shadow-width $background-color-white !important;
@@ -133,7 +137,10 @@
         @include button-red();
     }
     input[type="submit"].default {
-        margin-left: 10px;
+        margin-left: 20px;
+    }
+    input {
+        margin-left: 15px;
     }
 }
 
@@ -298,7 +305,7 @@ div.breadcrumbs {
 .dashboard #container {
     #content-main {
         min-width: 400px;
-        max-width: 640px;
+        max-width: 900px;
         padding-bottom: 20px;
         table th,
         table td {
@@ -336,7 +343,7 @@ div.breadcrumbs {
         top: 63px;
         bottom: 0;
         height: 100%;
-        width: 194px;
+        width: 255px;
         padding-top: 83px;
         margin: 0;
         border-left: 1px solid $line-color-light;
@@ -405,7 +412,7 @@ a.addlink {
 // object tools
 .object-tools {
     float: right;
-    margin-top: -34px;
+    margin-top: -46px;
     li {
         height: 32px;
         padding-left: 5px;
@@ -484,7 +491,8 @@ a.addlink {
             }
             form #searchbar {
                 font-size: 100%; 
-                padding: 6px 5px 8px !important;
+                padding: 14px 5px !important;
+                vertical-align: top;
             }
         }
         #changelist-filter {
@@ -515,10 +523,10 @@ a.addlink {
             padding: 0 3px 10px;
             border: none;
             background: none;
-            button {
-                vertical-align: middle;
-                height: 20px;
-                padding-top: 2px !important;
+            select {
+                padding: 10px 40px 10px 20px;
+                border: 1px solid $button-silver-dark-color;
+                border-radius: $default-border-radius;
             }
         }
         .toplinks {

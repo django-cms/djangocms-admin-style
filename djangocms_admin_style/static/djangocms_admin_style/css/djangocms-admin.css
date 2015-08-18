@@ -399,8 +399,8 @@ form label {
 form input,
 form textarea {
   color: #6d6d6d;
-  padding: 6px 5px;
-  border: 1px solid #ccc;
+  padding: 10px;
+  border: 1px solid #d4d4d4;
   border-radius: 3px;
   outline: none; }
 
@@ -414,12 +414,21 @@ form input[type="radio"] {
 form input[type="file"] {
   color: #6d6d6d;
   padding: 6px 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #d4d4d4;
   border-radius: 3px;
   outline: none; }
 
 form select {
-  font-weight: normal; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 56px 40px 10px 20px;
+  background: transparent url("/static/djangocms_admin_style/img/icon_arrow_down.png") no-repeat right center;
+  background-size: 25px;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px; }
 
 form small {
   margin-left: 15px; }
@@ -469,7 +478,7 @@ button {
   background-color: none !important;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 15px 30px !important;
+  padding: 10px 30px !important;
   overflow: visible;
   color: #6d6d6d !important;
   font-size: 18px !important;
@@ -500,7 +509,7 @@ input[type="button"] {
   background-color: none !important;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 15px 30px !important;
+  padding: 10px 30px !important;
   overflow: visible;
   color: #6d6d6d !important;
   font-size: 18px !important;
@@ -534,28 +543,26 @@ input[type="button"] {
   input[type="submit"].default,
   input[type="button"].default {
     color: #fff !important;
-    border: 1px solid #5bbdee !important;
-    border-bottom: 1px solid #0072ac !important;
-    background-color: #029eee !important;
+    border: 1px solid #4fbef3 !important;
+    background-color: #4fbef3 !important;
     background-image: none !important;
-    box-shadow: inset 0 0 2px #5bbdee !important;
-    margin-top: 1px;
-    padding: 7px 10px !important; }
+    box-shadow: none !important;
+    padding: 10px 30px !important; }
     input[type="submit"].default,
     input[type="submit"].default:visited,
     input[type="button"].default,
     input[type="button"].default:visited {
-      background-image: -webkit-linear-gradient(#5bbdee, #029eee) !important;
-      background-image: linear-gradient(#5bbdee, #029eee) !important; }
+      background-image: none !important; }
     input[type="submit"].default:hover,
     input[type="submit"].default:focus,
     input[type="button"].default:hover,
     input[type="button"].default:focus {
       color: #fff !important;
-      background: #5bbdee !important; }
+      border: 1px solid #48abd9 !important;
+      background: #48abd9 !important; }
     input[type="submit"].default:active,
     input[type="button"].default:active {
-      background: #029eee !important; }
+      background: #4fbef3 !important; }
     input[type="submit"].default.animate,
     input[type="button"].default.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -567,7 +574,7 @@ a.button {
   background-color: none !important;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 15px 30px !important;
+  padding: 10px 30px !important;
   overflow: visible;
   color: #6d6d6d !important;
   font-size: 18px !important;
@@ -773,6 +780,8 @@ fieldset table {
   width: auto !important;
   min-width: 0 !important;
   margin: 95px 45px 0; }
+  #content.colMS {
+    margin-right: 24em !important; }
 
 #changelist {
   width: auto !important; }
@@ -879,8 +888,9 @@ fieldset table {
     background: none; }
 
 .submit-row {
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 20px;
+  border: 0;
+  border-top: 1px solid #ddd;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.2) !important;
   box-shadow: inset 0 0 2px #fff !important; }
@@ -891,7 +901,7 @@ fieldset table {
     background-color: none !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -932,7 +942,9 @@ fieldset table {
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .submit-row input[type="submit"].default {
-    margin-left: 10px; }
+    margin-left: 20px; }
+  .submit-row input {
+    margin-left: 15px; }
 
 .selector .selector-available,
 .selector .selector-chosen {
@@ -1008,28 +1020,27 @@ body.login {
         body.login #container #content #content-main .submit-row input,
         body.login #container #content #content-main .submit-row input[type="submit"] {
           color: #fff !important;
-          border: 1px solid #5bbdee !important;
-          border-bottom: 1px solid #0072ac !important;
-          background-color: #029eee !important;
+          border: 1px solid #4fbef3 !important;
+          background-color: #4fbef3 !important;
           background-image: none !important;
-          box-shadow: inset 0 0 2px #5bbdee !important;
+          box-shadow: none !important;
           width: 262px !important;
           background-image: none; }
           body.login #container #content #content-main .submit-row input,
           body.login #container #content #content-main .submit-row input:visited,
           body.login #container #content #content-main .submit-row input[type="submit"],
           body.login #container #content #content-main .submit-row input[type="submit"]:visited {
-            background-image: -webkit-linear-gradient(#5bbdee, #029eee) !important;
-            background-image: linear-gradient(#5bbdee, #029eee) !important; }
+            background-image: none !important; }
           body.login #container #content #content-main .submit-row input:hover,
           body.login #container #content #content-main .submit-row input:focus,
           body.login #container #content #content-main .submit-row input[type="submit"]:hover,
           body.login #container #content #content-main .submit-row input[type="submit"]:focus {
             color: #fff !important;
-            background: #5bbdee !important; }
+            border: 1px solid #48abd9 !important;
+            background: #48abd9 !important; }
           body.login #container #content #content-main .submit-row input:active,
           body.login #container #content #content-main .submit-row input[type="submit"]:active {
-            background: #029eee !important; }
+            background: #4fbef3 !important; }
           body.login #container #content #content-main .submit-row input.animate,
           body.login #container #content #content-main .submit-row input[type="submit"].animate {
             background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1093,7 +1104,7 @@ div.breadcrumbs {
 
 .dashboard #container #content-main {
   min-width: 400px;
-  max-width: 640px;
+  max-width: 900px;
   padding-bottom: 20px; }
   .dashboard #container #content-main table th,
   .dashboard #container #content-main table td {
@@ -1126,7 +1137,7 @@ div.breadcrumbs {
   top: 63px;
   bottom: 0;
   height: 100%;
-  width: 194px;
+  width: 255px;
   padding-top: 83px;
   margin: 0;
   border-left: 1px solid #ddd;
@@ -1180,7 +1191,7 @@ a.addlink:active {
 
 .object-tools {
   float: right;
-  margin-top: -34px; }
+  margin-top: -46px; }
   .object-tools li {
     height: 32px;
     padding-left: 5px;
@@ -1193,7 +1204,7 @@ a.addlink:active {
       background-color: none !important;
       background-image: none !important;
       box-shadow: none !important;
-      padding: 15px 30px !important;
+      padding: 10px 30px !important;
       overflow: visible;
       color: #6d6d6d !important;
       font-size: 18px !important;
@@ -1222,7 +1233,7 @@ a.addlink:active {
     background-color: none !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1232,10 +1243,9 @@ a.addlink:active {
     width: auto;
     border-radius: 3px;
     color: #fff !important;
-    border: 1px solid #7cbe5a !important;
-    border-bottom: 1px solid #5da03d !important;
+    border: 1px solid #5bae31 !important;
     background-color: #5bae31 !important;
-    box-shadow: inset 0 0 2px #7cbe5a !important;
+    box-shadow: none !important;
     color: #fff !important; }
     .object-tools .addlink:hover {
       background: #ededed !important; }
@@ -1254,10 +1264,10 @@ a.addlink:active {
       background-size: 100% 400%; }
     .object-tools .addlink,
     .object-tools .addlink:visited {
-      background-image: -webkit-linear-gradient(#7cbe5a, #5bae31) !important;
-      background-image: linear-gradient(#7cbe5a, #5bae31) !important; }
+      background-image: none !important; }
     .object-tools .addlink:hover {
       color: #fff !important;
+      border: 1px solid #7cbe5a !important;
       background: #7cbe5a !important; }
     .object-tools .addlink:active {
       background: #5bae31 !important; }
@@ -1270,7 +1280,7 @@ a.addlink:active {
     background-color: none !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1299,7 +1309,7 @@ a.addlink:active {
     background-color: none !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1328,7 +1338,7 @@ a.addlink:active {
     background-color: none !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1357,7 +1367,7 @@ a.addlink:active {
     background-color: none !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1386,7 +1396,7 @@ a.addlink:active {
     background-color: none !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1415,7 +1425,7 @@ a.addlink:active {
     background-color: none !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1425,11 +1435,10 @@ a.addlink:active {
     width: auto;
     border-radius: 3px;
     color: #fff !important;
-    border: 1px solid #5bbdee !important;
-    border-bottom: 1px solid #0072ac !important;
-    background-color: #029eee !important;
+    border: 1px solid #4fbef3 !important;
+    background-color: #4fbef3 !important;
     background-image: none !important;
-    box-shadow: inset 0 0 2px #5bbdee !important; }
+    box-shadow: none !important; }
     .object-tools .viewsitelink:hover {
       background: #ededed !important; }
     .object-tools .viewsitelink.small {
@@ -1447,14 +1456,14 @@ a.addlink:active {
       background-size: 100% 400%; }
     .object-tools .viewsitelink,
     .object-tools .viewsitelink:visited {
-      background-image: -webkit-linear-gradient(#5bbdee, #029eee) !important;
-      background-image: linear-gradient(#5bbdee, #029eee) !important; }
+      background-image: none !important; }
     .object-tools .viewsitelink:hover,
     .object-tools .viewsitelink:focus {
       color: #fff !important;
-      background: #5bbdee !important; }
+      border: 1px solid #48abd9 !important;
+      background: #48abd9 !important; }
     .object-tools .viewsitelink:active {
-      background: #029eee !important; }
+      background: #4fbef3 !important; }
     .object-tools .viewsitelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1494,7 +1503,8 @@ a.addlink:active {
     padding: 0; }
   .change-list #changelist #toolbar form #searchbar {
     font-size: 100%;
-    padding: 6px 5px 8px !important; }
+    padding: 14px 5px !important;
+    vertical-align: top; }
 
 .change-list #changelist #changelist-filter {
   min-height: 100%;
@@ -1519,10 +1529,10 @@ a.addlink:active {
   padding: 0 3px 10px;
   border: none;
   background: none; }
-  .change-list #changelist .actions button {
-    vertical-align: middle;
-    height: 20px;
-    padding-top: 2px !important; }
+  .change-list #changelist .actions select {
+    padding: 10px 40px 10px 20px;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px; }
 
 .change-list #changelist .toplinks {
   margin-bottom: 5px !important;
@@ -1601,12 +1611,12 @@ a.addlink:active {
   position: relative;
   margin-bottom: -3px !important;
   border-top-right-radius: 3px;
-  background: #5bbdee !important; }
+  background: #48abd9 !important; }
 
 .nani-language-tabs {
   position: relative;
   margin-bottom: -3px;
-  border-bottom: 5px solid #5bbdee; }
+  border-bottom: 5px solid #48abd9; }
   .nani-language-tabs > span {
     display: inline-block;
     top: 0 !important;
@@ -1641,7 +1651,7 @@ a.addlink:active {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     padding-right: 20px !important;
     padding-left: 20px !important;
-    background: #5bbdee; }
+    background: #48abd9; }
   .nani-language-tabs > .current .deletelink {
     right: -12px !important; }
 
@@ -1793,8 +1803,8 @@ a.addlink:active {
     .admin_shortcuts .shortcuts li a .count_new,
     .admin_shortcuts .shortcuts li a:link .count_new,
     .admin_shortcuts .shortcuts li a:visited .count_new {
-      border-color: #5bbdee;
-      background: #029eee; }
+      border-color: #48abd9;
+      background: #4fbef3; }
   .admin_shortcuts .shortcuts li a:hover,
   .admin_shortcuts .shortcuts li a:focus {
     background-color: #4e5359; }
@@ -1841,8 +1851,8 @@ a.addlink:active {
     body.login #container #content #content-main .submit-row input,
     body.login #container #content #content-main .submit-row input[type="submit"] {
       width: 80% !important; }
-  .colMS {
-    margin-right: 10px !important; }
+  #content.colMS {
+    margin-right: 5px !important; }
   .dashboard #container #content-main {
     float: none;
     min-width: 0;
@@ -1853,7 +1863,7 @@ a.addlink:active {
     position: static;
     float: none;
     width: auto;
-    margin: 0;
+    margin: 0 -5px;
     padding-top: 10px;
     padding-bottom: 20px;
     border-left: 0; }

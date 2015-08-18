@@ -64,8 +64,8 @@ body.login {
 }
 
 // dashboard
-.colMS {
-    margin-right: 10px !important;
+#content.colMS {
+    margin-right: 5px !important;
 }
 .dashboard {
     #container {
@@ -83,7 +83,7 @@ body.login {
             position: static;
             float: none;
             width: auto;
-            margin: 0;
+            margin: 0 -5px;
             padding-top: 10px;
             padding-bottom: 20px;
             border-left: 0;

@@ -35,7 +35,7 @@ form {
     input,
     textarea {
         color: $button-silver-font-color;
-        padding: 6px 5px;
+        padding: 10px;
         border: 1px solid $button-silver-dark-color;
         border-radius: $default-border-radius;
         outline: none;
@@ -55,7 +55,14 @@ form {
         outline: none;
     }
     select {
+        appearance:none;
+        font-size: 18px;
         font-weight: normal;
+        padding: 56px 40px 10px 20px;
+        background: transparent url('/static/djangocms_admin_style/img/icon_arrow_down.png') no-repeat right center;
+        background-size: 25px;
+        border: 1px solid $button-silver-dark-color;
+        border-radius: $default-border-radius;
     }
     small {
         margin-left: 15px;
@@ -117,8 +124,7 @@ input[type="button"] {
     @include button-common();
     &.default {
         @include button-blue();
-        margin-top: 1px; 
-        padding: 7px 10px !important;
+        padding: 10px 30px !important;
     }
 }
 a.button {
