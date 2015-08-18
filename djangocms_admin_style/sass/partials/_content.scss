@@ -281,6 +281,7 @@ div.breadcrumbs {
     #content-main {
         min-width: 400px;
         max-width: 640px;
+        padding-bottom: 20px;
         table th,
         table td {
             width: auto;
@@ -328,8 +329,20 @@ div.breadcrumbs {
             background-color: transparent;
             ul.actionlist {
                 padding: 0;
+                li {
+                    font-size: 14px;
+                    padding: 9px 15px;
+                    border-bottom: solid 1px $line-color-ultralight;
+                    &:before {
+                        font-size: 17px;
+                    }
+                }
                 .changelink a {
                     line-height: 16px;
+                }
+                .mini {
+                    color: $font-color-light !important;
+                    margin-left: 30px;
                 }
             }
             h2 {
@@ -343,7 +356,7 @@ div.breadcrumbs {
                 font-weight: normal;
                 line-height: 20px;
                 text-transform: uppercase;
-                margin: 0 0 5px ;
+                margin: 0;
                 padding: 0 0 13px 0;
                 border-bottom: 1px solid $line-color-ultralight;
             }
@@ -598,8 +611,6 @@ a.addlink {
             bottom: 0 !important;
             margin: 0;
             padding: 0 0 0 12px !important;
-            background: url("../img/icon_deletelink.png") 0 0.25 no-repeat !important;
-
             border-top-radius: 0;
         }
     }

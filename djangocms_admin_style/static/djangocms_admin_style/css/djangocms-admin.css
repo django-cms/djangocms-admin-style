@@ -352,6 +352,9 @@ small {
   font-size: 85%;
   margin-top: 0; }
 
+.mini {
+  font-size: 11px; }
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -1085,7 +1088,8 @@ div.breadcrumbs {
 
 .dashboard #container #content-main {
   min-width: 400px;
-  max-width: 640px; }
+  max-width: 640px;
+  padding-bottom: 20px; }
   .dashboard #container #content-main table th,
   .dashboard #container #content-main table td {
     width: auto;
@@ -1128,8 +1132,17 @@ div.breadcrumbs {
     background-color: transparent; }
     .dashboard #container #content-related .module ul.actionlist {
       padding: 0; }
+      .dashboard #container #content-related .module ul.actionlist li {
+        font-size: 14px;
+        padding: 9px 15px;
+        border-bottom: solid 1px #ebebeb; }
+        .dashboard #container #content-related .module ul.actionlist li:before {
+          font-size: 17px; }
       .dashboard #container #content-related .module ul.actionlist .changelink a {
         line-height: 16px; }
+      .dashboard #container #content-related .module ul.actionlist .mini {
+        color: #808080 !important;
+        margin-left: 30px; }
     .dashboard #container #content-related .module h2 {
       color: #333;
       padding: 0 0 40px;
@@ -1140,7 +1153,7 @@ div.breadcrumbs {
       font-weight: normal;
       line-height: 20px;
       text-transform: uppercase;
-      margin: 0 0 5px;
+      margin: 0;
       padding: 0 0 13px 0;
       border-bottom: 1px solid #ebebeb; }
     .dashboard #container #content-related .module p {
@@ -1628,7 +1641,6 @@ a.addlink:active {
       bottom: 0 !important;
       margin: 0;
       padding: 0 0 0 12px !important;
-      background: url("../img/icon_deletelink.png") 0 0.25 no-repeat !important;
       border-top-radius: 0; }
   .nani-language-tabs > .empty {
     color: #808080;
@@ -1691,12 +1703,21 @@ a.addlink:active {
   content: "\e002"; }
 
 .addlink,
+.addlink a {
+  color: #5bae31; }
+
+.changelink,
+.changelink a {
+  color: #029eee; }
+
+.deletelink,
+.deletelink a {
+  color: #e80101; }
+
+.addlink,
 .changelink,
 .deletelink {
   padding-left: 15px; }
-
-.deletelink {
-  background-image: url("../img/icon_deletelink.png"); }
 
 .related-lookup,
 .add-another {
@@ -1752,6 +1773,9 @@ a.addlink:active {
     height: 14px;
     background: url("../img/icon_addlink_large@2x.gif") 0 0 no-repeat;
     background-size: 14px; } }
+
+#footer {
+  padding: 0; }
 
 .admin_shortcuts .shortcuts {
   color: #ccc;
@@ -1824,8 +1848,6 @@ a.addlink:active {
       width: 80% !important; }
   .colMS {
     margin-right: 10px !important; }
-  .dashboard #container #content h1 {
-    display: none; }
   .dashboard #container #content-main {
     float: none;
     min-width: 0;
@@ -1833,17 +1855,20 @@ a.addlink:active {
     .dashboard #container #content-main .module table td {
       padding-left: 0; }
   .dashboard #container #content-related {
-    position: relative;
+    position: static;
     float: none;
     width: auto;
     margin: 0;
     padding-top: 10px;
+    padding-bottom: 20px;
     border-left: 0; }
   .dashboard #container #content-related .module {
     margin: 10px 0;
     padding: 10px !important; }
     .dashboard #container #content-related .module .actionlist {
       margin-left: 10px; }
+    .dashboard #container #content-related .module h2 {
+      padding-bottom: 10px; }
   .dashboard .module {
     background: none !important; }
   .change-list #content .object-tools {

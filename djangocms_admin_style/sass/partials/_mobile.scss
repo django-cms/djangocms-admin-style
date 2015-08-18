@@ -69,9 +69,6 @@ body.login {
 }
 .dashboard {
     #container {
-        #content h1 {
-            display: none;
-        }
         #content-main {
             float: none;
             min-width: 0;
@@ -83,11 +80,12 @@ body.login {
             }
         }
         #content-related {
-            position: relative;
+            position: static;
             float: none;
             width: auto;
             margin: 0;
             padding-top: 10px;
+            padding-bottom: 20px;
             border-left: 0;
         }
         #content-related .module {
@@ -95,6 +93,9 @@ body.login {
             padding: 10px !important;
             .actionlist {
                 margin-left: 10px;
+            }
+            h2 {
+                padding-bottom: 10px;
             }
         }
     }

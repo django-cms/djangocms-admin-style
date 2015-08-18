@@ -43,16 +43,23 @@
   content: "\e002";
 }
 
-
+.addlink,
+.addlink a {
+ color: $success-color;
+}
+.changelink,
+.changelink a {
+ color: $info-color;
+}
+.deletelink,
+.deletelink a {
+ color: $error-color;
+}
 
 .addlink,
 .changelink,
 .deletelink {
     padding-left: 15px;
-}
-
-.deletelink {
-    background-image: url("../img/icon_deletelink.png");
 }
 
 .related-lookup,
