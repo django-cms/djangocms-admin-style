@@ -21,13 +21,12 @@
 .module {
     @include box();
     margin-bottom: 10px;
-    padding: 35px 0 0;
     h2 {
         color: $font-color;
         font-size: 100%;
         margin-top: 0;
-        margin-bottom: 2px;
-        padding: 10px; 
+        margin-bottom: 30px;
+        padding: 10px 10px 10px 0;
         border-bottom: 1px solid $line-color-light;
         background: none;
     }
@@ -67,7 +66,7 @@
 .module caption,
 .inline-group h2 {
     color: $font-color-dark;
-    font-size: 16px; 
+    font-size: 16px;
     background: none;
 }
 .inline-group {
@@ -340,11 +339,11 @@ div.breadcrumbs {
     #content-related {
         position: absolute;
         right: 0;
-        top: 63px;
+        top: 0;
         bottom: 0;
         height: 100%;
         width: 255px;
-        padding-top: 83px;
+        padding-top: 146px;
         margin: 0;
         border-left: 1px solid $line-color-light;
         background-color: #f7f7f7;
@@ -409,6 +408,16 @@ a.addlink {
     }
 }
 
+#content-main .object-tools {
+     .addlink {
+        @include button-common();
+        @include button-green();
+    }
+    .recoverlink {
+        @include button-common();
+    }
+}
+
 // object tools
 .object-tools {
     float: right;
@@ -429,6 +438,7 @@ a.addlink {
         @include button-common();
         @include button-green();
         color: $button-green-font-color !important;
+        padding: 10px 30px !important;
     }
     .recoverlink {
         @include button-common();
@@ -527,6 +537,10 @@ a.addlink {
                 padding: 10px 40px 10px 20px;
                 border: 1px solid $button-silver-dark-color;
                 border-radius: $default-border-radius;
+            }
+            label {
+                font-size: 14px;
+                margin-left: 0;
             }
         }
         .toplinks {

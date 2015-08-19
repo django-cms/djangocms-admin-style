@@ -365,12 +365,34 @@ small {
 #sitemap li .cont {
   overflow: visible !important; }
 
+.popup input[type=text],
+.popup textarea,
+.popup select,
+.popup .select2-container,
+.cms-modal-window input[type=text],
+.cms-modal-window textarea,
+.cms-modal-window select,
+.cms-modal-window .select2-container {
+  width: 100%;
+  max-width: inherit !important;
+  box-sizing: border-box; }
+
+form .form-row {
+  border-bottom: 0; }
+
 form button,
 form input,
 form select,
 form textarea {
   font-size: 13px;
   margin: 2px 0; }
+
+form .aligned p.help {
+  font-size: 14px !important;
+  color: #808080;
+  margin-top: 10px;
+  padding-left: 0;
+  margin-left: 0; }
 
 form small {
   color: #808080; }
@@ -388,17 +410,32 @@ form fieldset.collapsed h2 {
   border-bottom: none;
   background-image: none; }
 
-form label {
-  display: inline-block;
-  color: #808080;
+form label select {
+  display: block;
+  margin-left: 0 !important;
+  margin-top: 5px; }
+
+form label,
+form label.aligned {
+  display: block;
+  float: none !important;
+  color: #808080 !important;
+  font-size: 14px;
   line-height: 18px;
-  word-wrap: break-word; }
-  form label.required {
-    font-weight: bold; }
+  text-transform: uppercase;
+  font-weight: normal !important;
+  word-wrap: break-word;
+  width: auto !important;
+  margin-bottom: 5px; }
+  form label.required,
+  form label.aligned.required {
+    color: #808080 !important;
+    font-weight: normal !important; }
 
 form input,
 form textarea {
-  color: #6d6d6d;
+  color: #333;
+  font-size: 18px;
   padding: 10px;
   border: 1px solid #d4d4d4;
   border-radius: 3px;
@@ -424,7 +461,7 @@ form select {
   appearance: none;
   font-size: 18px;
   font-weight: normal;
-  padding: 56px 40px 10px 20px;
+  padding: 10px 40px 10px 20px;
   background: transparent url("/static/djangocms_admin_style/img/icon_arrow_down.png") no-repeat right center;
   background-size: 25px;
   border: 1px solid #d4d4d4;
@@ -449,6 +486,7 @@ form .extra .right {
   margin-right: 10px; }
 
 form .form-row {
+  padding: 8px 0 30px;
   border-bottom-color: #ebebeb; }
 
 form .form-row:last-child {
@@ -464,6 +502,70 @@ form .form-row:last-child {
 .inline-group .form-row input,
 .inline-group .form-row textarea {
   width: auto; }
+
+form .select2-container.select2-container-active .select2-choice,
+form .select2-container.select2-container-active .select2-choices {
+  box-shadow: none; }
+
+form .select2-container .select2-choice {
+  line-height: inherit;
+  height: auto;
+  padding: 10px 40px 10px 20px;
+  background: none;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px; }
+  form .select2-container .select2-choice > .select2-chosen {
+    font-size: 18px; }
+  form .select2-container .select2-choice .select2-arrow {
+    right: 9px;
+    width: 17px;
+    background: none;
+    border: none;
+    border-radius: 0; }
+    form .select2-container .select2-choice .select2-arrow b {
+      background: url("/static/djangocms_admin_style/img/select2.png") no-repeat 0 12px;
+      background-size: 50px; }
+
+form .select2-dropdown-open.select2-drop-above .select2-choice,
+form .select2-dropdown-open.select2-drop-above .select2-choices {
+  background-image: none !important;
+  border-color: #d4d4d4 !important; }
+
+form .select2-dropdown-open .select2-choice {
+  background-color: #fff;
+  background-image: none; }
+  form .select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: -18px 1px; }
+
+.select2-drop-active {
+  border: 1px solid #d4d4d4 !important; }
+
+.select2-results {
+  margin: 0 10px 10px !important;
+  padding: 0 !important; }
+  .select2-results .select2-no-results,
+  .select2-results .select2-searching,
+  .select2-results .select2-ajax-error,
+  .select2-results .select2-selection-limit {
+    color: #808080;
+    font-size: 14px;
+    background-color: transparent !important; }
+  .select2-results .select2-highlighted {
+    border-radius: 3px;
+    background-color: #029eee !important; }
+
+.select2-match {
+  font-size: 14px !important; }
+
+.select2-search {
+  padding: 10px !important; }
+  .select2-search input {
+    font-size: 18px !important;
+    padding: 10px 40px 10px 20px !important;
+    background: url("/static/djangocms_admin_style/img/select2.png") no-repeat right -24px !important;
+    background-size: 50px !important;
+    border: 1px solid #d4d4d4 !important;
+    border-radius: 3px !important; }
 
 input:invalid,
 textarea:invalid {
@@ -790,8 +892,7 @@ fieldset table {
   margin-bottom: 5px;
   padding: 0;
   border: none;
-  margin-bottom: 10px;
-  padding: 35px 0 0; }
+  margin-bottom: 10px; }
   .module h2,
   .module h3,
   .module h4,
@@ -803,8 +904,8 @@ fieldset table {
     color: #333;
     font-size: 100%;
     margin-top: 0;
-    margin-bottom: 2px;
-    padding: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 0;
     border-bottom: 1px solid #ddd;
     background: none; }
   .module caption {
@@ -1134,11 +1235,11 @@ div.breadcrumbs {
 .dashboard #container #content-related {
   position: absolute;
   right: 0;
-  top: 63px;
+  top: 0;
   bottom: 0;
   height: 100%;
   width: 255px;
-  padding-top: 83px;
+  padding-top: 146px;
   margin: 0;
   border-left: 1px solid #ddd;
   background-color: #f7f7f7;
@@ -1188,6 +1289,83 @@ a.addlink:hover,
 a.addlink:focus,
 a.addlink:active {
   color: #5da03d; }
+
+#content-main .object-tools .addlink {
+  border: 1px solid #d4d4d4 !important;
+  background-color: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
+  overflow: visible;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
+  text-decoration: none !important;
+  width: auto;
+  border-radius: 3px;
+  color: #fff !important;
+  border: 1px solid #5bae31 !important;
+  background-color: #5bae31 !important;
+  box-shadow: none !important; }
+  #content-main .object-tools .addlink:hover {
+    background: #ededed !important; }
+  #content-main .object-tools .addlink.small {
+    padding: 3px 8px 4px !important; }
+  #content-main .object-tools .addlink:hover,
+  #content-main .object-tools .addlink:active,
+  #content-main .object-tools .addlink.select,
+  #content-main .object-tools .addlink:visited {
+    color: #6d6d6d;
+    text-decoration: none;
+    background: #ededed; }
+  #content-main .object-tools .addlink.animate {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 100% 400%; }
+  #content-main .object-tools .addlink,
+  #content-main .object-tools .addlink:visited {
+    background-image: none !important; }
+  #content-main .object-tools .addlink:hover {
+    color: #fff !important;
+    border: 1px solid #7cbe5a !important;
+    background: #7cbe5a !important; }
+  #content-main .object-tools .addlink:active {
+    background: #5bae31 !important; }
+  #content-main .object-tools .addlink.animate {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 100% 400%; }
+
+#content-main .object-tools .recoverlink {
+  border: 1px solid #d4d4d4 !important;
+  background-color: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
+  overflow: visible;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
+  text-decoration: none !important;
+  width: auto;
+  border-radius: 3px; }
+  #content-main .object-tools .recoverlink:hover {
+    background: #ededed !important; }
+  #content-main .object-tools .recoverlink.small {
+    padding: 3px 8px 4px !important; }
+  #content-main .object-tools .recoverlink:hover,
+  #content-main .object-tools .recoverlink:active,
+  #content-main .object-tools .recoverlink.select,
+  #content-main .object-tools .recoverlink:visited {
+    color: #6d6d6d;
+    text-decoration: none;
+    background: #ededed; }
+  #content-main .object-tools .recoverlink.animate {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 100% 400%; }
 
 .object-tools {
   float: right;
@@ -1246,7 +1424,8 @@ a.addlink:active {
     border: 1px solid #5bae31 !important;
     background-color: #5bae31 !important;
     box-shadow: none !important;
-    color: #fff !important; }
+    color: #fff !important;
+    padding: 10px 30px !important; }
     .object-tools .addlink:hover {
       background: #ededed !important; }
     .object-tools .addlink.small {
@@ -1533,6 +1712,9 @@ a.addlink:active {
     padding: 10px 40px 10px 20px;
     border: 1px solid #d4d4d4;
     border-radius: 3px; }
+  .change-list #changelist .actions label {
+    font-size: 14px;
+    margin-left: 0; }
 
 .change-list #changelist .toplinks {
   margin-bottom: 5px !important;
@@ -1878,7 +2060,7 @@ a.addlink:active {
     background: none !important; }
   .change-list #content .object-tools {
     float: right;
-    margin: -35px 0 0 0; }
+    margin: -46px 0 0 0; }
   .change-list #toolbar label {
     display: inline-block; }
   .change-list #toolbar form #searchbar {
