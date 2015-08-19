@@ -1,5 +1,5 @@
 .popup,
-.cms-modal-window{
+.cms-modal-window {
     input[type=text],
     textarea,
     select,
@@ -92,11 +92,11 @@ form {
         outline: none;
     }
     select {
-        appearance:none;
+        appearance: none;
         font-size: 18px;
         font-weight: normal;
         padding: 10px 40px 10px 20px;
-        background: transparent url('/static/djangocms_admin_style/img/icon_arrow_down.png') no-repeat right center;
+        background: transparent url('../img/icon_arrow_down.png') no-repeat right center;
         background-size: 25px;
         border: 1px solid $button-silver-dark-color;
         border-radius: $default-border-radius;
@@ -168,7 +168,7 @@ form {
                 border: none;
                 border-radius: 0;
                 b {
-                    background: url('/static/djangocms_admin_style/img/select2.png') no-repeat 0 12px;
+                    background: url('../img/select2.png') no-repeat 0 12px;
                     background-size: 50px;
                 }
 
@@ -219,7 +219,7 @@ form {
     input {
         font-size: 18px !important;
         padding: 10px 40px 10px 20px !important;
-        background: url('/static/djangocms_admin_style/img/select2.png') no-repeat right -24px !important;
+        background: url('../img/select2.png') no-repeat right -24px !important;
         background-size: 50px !important;
         border: 1px solid $button-silver-dark-color !important;
         border-radius: $default-border-radius !important;

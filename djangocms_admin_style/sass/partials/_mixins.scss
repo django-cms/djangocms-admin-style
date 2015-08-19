@@ -21,7 +21,7 @@
 
 @mixin button-common-init {
     border: 1px solid $button-silver-medium-color !important;
-    background-color: none!important;
+    background-color: transparent !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;

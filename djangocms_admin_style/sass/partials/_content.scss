@@ -8,9 +8,9 @@
 #content {
     width: auto !important;
     min-width: 0 !important;
-    margin: 95px 45px 0;
+    margin: 160px 45px 0;
     &.colMS {
-        margin-right: 24em !important;
+        margin-right: 300px !important;
     }
 }
 #changelist {
@@ -186,6 +186,7 @@ body.login {
         border: none;
         box-shadow: inset rgba(0, 0, 0, 0.3) 0 1px 2px, #fff 0 1px 1px;
         #header {
+            position: static;
             background: none !important;
             box-shadow: none;
             #branding h1 {
@@ -238,8 +239,10 @@ body.login {
 
 // header
 #header {
+    position: fixed;
+    top: 0;
     color: $font-color-medium !important;
-    height: 63px;
+    height: 65px;
     background-color: #fff;
     background-image: none;
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
@@ -249,7 +252,7 @@ body.login {
             float: left;
             color: $font-color-medium;
             font-weight: bold;
-            padding: 19px 25px;
+            padding: 20px 25px 20px 0;
             margin: 0;
         }
     }
@@ -265,12 +268,16 @@ body.login {
     }
     #header-btn {
         float: right;
-        margin: 10px 20px 0 0;
-        input[type="submit"],
-        input[type="button"] {
-            padding: 10px 45px 10px 30px !important;;
+        margin: 21px 20px 0 0;
+        .btn {
+            font-size: 18px;
+            color: $font-color-light;
+            padding: 10px 45px 10px 30px !important;
+            &:before {
+                display: none;
+            }
             &.icon-arrow-right {
-                background: url('/static/djangocms_admin_style/img/icon_arrow_right.png') no-repeat right center !important;
+                background: url('../img/icon_arrow_right.png') no-repeat right center !important;
                 background-size: 35px !important;
                 &:hover {
                     background-color: $button-silver-light-color !important;
@@ -281,7 +288,7 @@ body.login {
     #header-logo {
         float: left;
         margin-right: 40px;
-        padding: 15px 0 15px 15px;
+        padding: 17px 0 17px 15px;
     }
 }
 div.breadcrumbs {
@@ -343,7 +350,7 @@ div.breadcrumbs {
         bottom: 0;
         height: 100%;
         width: 255px;
-        padding-top: 146px;
+        padding-top: 150px;
         margin: 0;
         border-left: 1px solid $line-color-light;
         background-color: #f7f7f7;
@@ -373,6 +380,7 @@ div.breadcrumbs {
             h2 {
                 color: $font-color;
                 padding: 0 0 40px;
+                margin-bottom: 0;
                 background: none;
                 border-bottom: 0;
             }
@@ -409,7 +417,7 @@ a.addlink {
 }
 
 #content-main .object-tools {
-     .addlink {
+    .addlink {
         @include button-common();
         @include button-green();
     }
