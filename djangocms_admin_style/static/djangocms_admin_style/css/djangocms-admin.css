@@ -886,7 +886,8 @@ fieldset table {
 #container {
   position: static;
   width: auto !important;
-  min-width: 0 !important; }
+  min-width: 0 !important;
+  padding-top: 0 !important; }
 
 #content {
   width: auto !important;
