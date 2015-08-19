@@ -350,14 +350,14 @@ div.breadcrumbs {
         bottom: 0;
         height: 100%;
         width: 255px;
-        padding-top: 150px;
+        padding-top: 160px;
         margin: 0;
         border-left: 1px solid $line-color-light;
         background-color: #f7f7f7;
         z-index: -1;
         .module {
             margin-left: 0;
-            padding: 10px 30px !important;
+            padding: 0 30px 10px !important;
             background-color: transparent;
             ul.actionlist {
                 padding: 0;
