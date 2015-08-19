@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "django-cms-admin";
-  src:url("/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.eot");
-  src:url("/static/djangocms_admin_style/fonts/fontastic/djangocms_admin_style/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.eot?#iefix") format("embedded-opentype"),
-    url("/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.woff") format("woff"),
-    url("/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.ttf") format("truetype"),
-    url("/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.svg#django-cms-admin") format("svg");
+  src:url("../fonts/fontastic/django-cms-admin.eot");
+  src:url("../fonts/fontastic/djangocms_admin_style/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/fontastic/django-cms-admin.woff") format("woff"),
+    url("../fonts/fontastic/django-cms-admin.ttf") format("truetype"),
+    url("../fonts/fontastic/django-cms-admin.svg#django-cms-admin") format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -14,7 +14,8 @@
 
 .addlink,
 .changelink,
-.deletelink {
+.deletelink,
+.icon-arrow-right{
     background-image: none;
     &:before {
         font-family: "django-cms-admin" !important;
@@ -41,6 +42,10 @@
 }
 .deletelink:before {
   content: "\e002";
+}
+
+.icon-arrow-right:before {
+  content: "\e003";
 }
 
 .addlink,

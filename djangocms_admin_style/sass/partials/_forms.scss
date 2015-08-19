@@ -1,10 +1,33 @@
+.popup,
+.cms-modal-window {
+    input[type=text],
+    textarea,
+    select,
+    .select2-container {
+        width: 100%;
+        max-width: inherit !important;
+        box-sizing: border-box;
+    }
+}
 form {
+    .form-row {
+        border-bottom: 0;
+    }
     button,
     input,
     select,
     textarea {
         font-size: 13px; 
         margin: 2px 0;
+    }
+    .aligned {
+        p.help {
+            font-size: 14px !important;
+            color: $font-color-light;
+            margin-top: 10px;
+            padding-left: 0;
+            margin-left: 0;
+        }
     }
     small {
         color: $font-color-light;
@@ -22,20 +45,34 @@ form {
         border-bottom: none;
         background-image: none;
     }
-    label {
-        display: inline-block;
-        color: $font-color-light;
+    label select {
+        display: block;
+        margin-left: 0 !important;
+        margin-top: 5px;
+    }
+    label,
+    label.aligned {
+        display: block;
+        float: none !important;
+        color: $font-color-light !important;
+        font-size: 14px;
         line-height: 18px;
+        text-transform: uppercase;
+        font-weight: normal !important;
         word-wrap: break-word;
+        width: auto !important;
+        margin-bottom: 5px;
         &.required {
-            font-weight: bold;
+            color: $font-color-light !important;
+            font-weight: normal !important;
         }
     }
     // input
     input,
     textarea {
-        color: $button-silver-font-color;
-        padding: 6px 5px;
+        color: $font-color;
+        font-size: 18px;
+        padding: 10px;
         border: 1px solid $button-silver-dark-color;
         border-radius: $default-border-radius;
         outline: none;
@@ -55,7 +92,14 @@ form {
         outline: none;
     }
     select {
+        appearance: none;
+        font-size: 18px;
         font-weight: normal;
+        padding: 10px 40px 10px 20px;
+        background: transparent url('../img/icon_arrow_down.png') no-repeat right center;
+        background-size: 25px;
+        border: 1px solid $button-silver-dark-color;
+        border-radius: $default-border-radius;
     }
     small {
         margin-left: 15px;
@@ -79,6 +123,7 @@ form {
         }
     }
     .form-row {
+        padding: 8px 0 30px;
         border-bottom-color: $line-color-ultralight;
     }
     .form-row:last-child {
@@ -97,6 +142,89 @@ form {
     width: auto;
 }
 
+// select2
+form {
+    .select2-container {
+        &.select2-container-active {
+            .select2-choice,
+            .select2-choices {
+                box-shadow: none;
+            }
+        }
+        .select2-choice {
+            line-height: inherit;
+            height: auto;
+            padding: 10px 40px 10px 20px;
+            background: none;
+            border: 1px solid $button-silver-dark-color;
+            border-radius: $default-border-radius;
+            & > .select2-chosen {
+                font-size: 18px;
+            }
+            .select2-arrow {
+                right: 9px;
+                width: 17px;
+                background: none;
+                border: none;
+                border-radius: 0;
+                b {
+                    background: url('../img/select2.png') no-repeat 0 12px;
+                    background-size: 50px;
+                }
+
+            }
+        }
+    }
+    .select2-dropdown-open {
+        &.select2-drop-above {
+            .select2-choice,
+            .select2-choices {
+                background-image: none !important;
+                border-color: $button-silver-dark-color !important
+            }
+        }
+        .select2-choice {
+            background-color: #fff;
+            background-image: none;
+            .select2-arrow b {
+                background-position: -18px 1px;
+            }
+        }
+    }
+}
+.select2-drop-active {
+    border: 1px solid $button-silver-dark-color !important;
+}
+.select2-results {
+    margin: 0 10px 10px !important;
+    padding: 0 !important;
+    .select2-no-results,
+    .select2-searching,
+    .select2-ajax-error,
+    .select2-selection-limit {
+        color: $font-color-light;
+        font-size: 14px;
+        background-color: transparent !important;
+    }
+    .select2-highlighted {
+        border-radius: $default-border-radius;
+        background-color: $link-color !important;
+    }
+}
+.select2-match {
+    font-size: 14px !important;
+}
+.select2-search {
+    padding: 10px !important;
+    input {
+        font-size: 18px !important;
+        padding: 10px 40px 10px 20px !important;
+        background: url('../img/select2.png') no-repeat right -24px !important;
+        background-size: 50px !important;
+        border: 1px solid $button-silver-dark-color !important;
+        border-radius: $default-border-radius !important;
+    }
+}
 
 
 input:invalid,
@@ -115,11 +243,9 @@ button {
 input[type="submit"],
 input[type="button"] {
     @include button-common();
-    padding: 8px 10px !important;
     &.default {
         @include button-blue();
-        margin-top: 1px; 
-        padding: 7px 10px !important;
+        padding: 10px 30px !important;
     }
 }
 a.button {

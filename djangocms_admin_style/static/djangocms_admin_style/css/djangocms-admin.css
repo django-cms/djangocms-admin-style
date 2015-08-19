@@ -278,7 +278,7 @@ h1 {
   color: #1a1a1a;
   font-size: 150%;
   font-weight: bold;
-  margin: 20px 10px 10px; }
+  margin: 20px 10px 45px; }
 
 h2 {
   color: #1a1a1a;
@@ -303,6 +303,16 @@ h5 {
 h6 {
   color: #1a1a1a;
   font-size: 100%; }
+
+a.btn {
+  border: 1px solid #d4d4d4 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
+  border-radius: 3px; }
+  a.btn:hover {
+    background: #ededed !important; }
 
 a,
 a:link {
@@ -365,12 +375,34 @@ small {
 #sitemap li .cont {
   overflow: visible !important; }
 
+.popup input[type=text],
+.popup textarea,
+.popup select,
+.popup .select2-container,
+.cms-modal-window input[type=text],
+.cms-modal-window textarea,
+.cms-modal-window select,
+.cms-modal-window .select2-container {
+  width: 100%;
+  max-width: inherit !important;
+  box-sizing: border-box; }
+
+form .form-row {
+  border-bottom: 0; }
+
 form button,
 form input,
 form select,
 form textarea {
   font-size: 13px;
   margin: 2px 0; }
+
+form .aligned p.help {
+  font-size: 14px !important;
+  color: #808080;
+  margin-top: 10px;
+  padding-left: 0;
+  margin-left: 0; }
 
 form small {
   color: #808080; }
@@ -388,19 +420,34 @@ form fieldset.collapsed h2 {
   border-bottom: none;
   background-image: none; }
 
-form label {
-  display: inline-block;
-  color: #808080;
+form label select {
+  display: block;
+  margin-left: 0 !important;
+  margin-top: 5px; }
+
+form label,
+form label.aligned {
+  display: block;
+  float: none !important;
+  color: #808080 !important;
+  font-size: 14px;
   line-height: 18px;
-  word-wrap: break-word; }
-  form label.required {
-    font-weight: bold; }
+  text-transform: uppercase;
+  font-weight: normal !important;
+  word-wrap: break-word;
+  width: auto !important;
+  margin-bottom: 5px; }
+  form label.required,
+  form label.aligned.required {
+    color: #808080 !important;
+    font-weight: normal !important; }
 
 form input,
 form textarea {
-  color: #555;
-  padding: 6px 5px;
-  border: 1px solid #ccc;
+  color: #333;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #d4d4d4;
   border-radius: 3px;
   outline: none; }
 
@@ -412,14 +459,23 @@ form input[type="radio"] {
   border: 0; }
 
 form input[type="file"] {
-  color: #555;
+  color: #6d6d6d;
   padding: 6px 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #d4d4d4;
   border-radius: 3px;
   outline: none; }
 
 form select {
-  font-weight: normal; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 10px 40px 10px 20px;
+  background: transparent url("../img/icon_arrow_down.png") no-repeat right center;
+  background-size: 25px;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px; }
 
 form small {
   margin-left: 15px; }
@@ -440,6 +496,7 @@ form .extra .right {
   margin-right: 10px; }
 
 form .form-row {
+  padding: 8px 0 30px;
   border-bottom-color: #ebebeb; }
 
 form .form-row:last-child {
@@ -456,6 +513,70 @@ form .form-row:last-child {
 .inline-group .form-row textarea {
   width: auto; }
 
+form .select2-container.select2-container-active .select2-choice,
+form .select2-container.select2-container-active .select2-choices {
+  box-shadow: none; }
+
+form .select2-container .select2-choice {
+  line-height: inherit;
+  height: auto;
+  padding: 10px 40px 10px 20px;
+  background: none;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px; }
+  form .select2-container .select2-choice > .select2-chosen {
+    font-size: 18px; }
+  form .select2-container .select2-choice .select2-arrow {
+    right: 9px;
+    width: 17px;
+    background: none;
+    border: none;
+    border-radius: 0; }
+    form .select2-container .select2-choice .select2-arrow b {
+      background: url("../img/select2.png") no-repeat 0 12px;
+      background-size: 50px; }
+
+form .select2-dropdown-open.select2-drop-above .select2-choice,
+form .select2-dropdown-open.select2-drop-above .select2-choices {
+  background-image: none !important;
+  border-color: #d4d4d4 !important; }
+
+form .select2-dropdown-open .select2-choice {
+  background-color: #fff;
+  background-image: none; }
+  form .select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: -18px 1px; }
+
+.select2-drop-active {
+  border: 1px solid #d4d4d4 !important; }
+
+.select2-results {
+  margin: 0 10px 10px !important;
+  padding: 0 !important; }
+  .select2-results .select2-no-results,
+  .select2-results .select2-searching,
+  .select2-results .select2-ajax-error,
+  .select2-results .select2-selection-limit {
+    color: #808080;
+    font-size: 14px;
+    background-color: transparent !important; }
+  .select2-results .select2-highlighted {
+    border-radius: 3px;
+    background-color: #029eee !important; }
+
+.select2-match {
+  font-size: 14px !important; }
+
+.select2-search {
+  padding: 10px !important; }
+  .select2-search input {
+    font-size: 18px !important;
+    padding: 10px 40px 10px 20px !important;
+    background: url("../img/select2.png") no-repeat right -24px !important;
+    background-size: 50px !important;
+    border: 1px solid #d4d4d4 !important;
+    border-radius: 3px !important; }
+
 input:invalid,
 textarea:invalid {
   border-radius: 3px; }
@@ -465,32 +586,30 @@ textarea:invalid {
   background-color: #f0dddd; }
 
 button {
-  border: 1px solid #efefef !important;
-  border-bottom: 1px solid #ccc !important;
-  background-color: #fff !important;
-  background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-  background-image: linear-gradient(#fff, #efefef) !important;
-  box-shadow: inset 0 0 2px #efefef !important;
+  border: 1px solid #d4d4d4 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
   overflow: visible;
-  color: #555 !important;
-  font-size: 12px !important;
-  font-weight: bolder !important;
-  line-height: 15px !important;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
   text-decoration: none !important;
   width: auto;
-  padding: 5px 10px 5px !important;
   border-radius: 3px; }
   button:hover {
-    background: #fff !important; }
+    background: #ededed !important; }
   button.small {
     padding: 3px 8px 4px !important; }
   button:hover,
   button:active,
   button.select,
   button:visited {
-    color: #555;
+    color: #6d6d6d;
     text-decoration: none;
-    background: #fff; }
+    background: #ededed; }
   button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -498,25 +617,22 @@ button {
 
 input[type="submit"],
 input[type="button"] {
-  border: 1px solid #efefef !important;
-  border-bottom: 1px solid #ccc !important;
-  background-color: #fff !important;
-  background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-  background-image: linear-gradient(#fff, #efefef) !important;
-  box-shadow: inset 0 0 2px #efefef !important;
+  border: 1px solid #d4d4d4 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
   overflow: visible;
-  color: #555 !important;
-  font-size: 12px !important;
-  font-weight: bolder !important;
-  line-height: 15px !important;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
   text-decoration: none !important;
   width: auto;
-  padding: 5px 10px 5px !important;
-  border-radius: 3px;
-  padding: 8px 10px !important; }
+  border-radius: 3px; }
   input[type="submit"]:hover,
   input[type="button"]:hover {
-    background: #fff !important; }
+    background: #ededed !important; }
   input[type="submit"].small,
   input[type="button"].small {
     padding: 3px 8px 4px !important; }
@@ -528,9 +644,9 @@ input[type="button"] {
   input[type="button"]:active,
   input[type="button"].select,
   input[type="button"]:visited {
-    color: #555;
+    color: #6d6d6d;
     text-decoration: none;
-    background: #fff; }
+    background: #ededed; }
   input[type="submit"].animate,
   input[type="button"].animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -539,28 +655,26 @@ input[type="button"] {
   input[type="submit"].default,
   input[type="button"].default {
     color: #fff !important;
-    border: 1px solid #5bbdee !important;
-    border-bottom: 1px solid #0072ac !important;
-    background-color: #029eee !important;
+    border: 1px solid #4fbef3 !important;
+    background-color: #4fbef3 !important;
     background-image: none !important;
-    box-shadow: inset 0 0 2px #5bbdee !important;
-    margin-top: 1px;
-    padding: 7px 10px !important; }
+    box-shadow: none !important;
+    padding: 10px 30px !important; }
     input[type="submit"].default,
     input[type="submit"].default:visited,
     input[type="button"].default,
     input[type="button"].default:visited {
-      background-image: -webkit-linear-gradient(#5bbdee, #029eee) !important;
-      background-image: linear-gradient(#5bbdee, #029eee) !important; }
+      background-image: none !important; }
     input[type="submit"].default:hover,
     input[type="submit"].default:focus,
     input[type="button"].default:hover,
     input[type="button"].default:focus {
       color: #fff !important;
-      background: #5bbdee !important; }
+      border: 1px solid #48abd9 !important;
+      background: #48abd9 !important; }
     input[type="submit"].default:active,
     input[type="button"].default:active {
-      background: #029eee !important; }
+      background: #4fbef3 !important; }
     input[type="submit"].default.animate,
     input[type="button"].default.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -568,34 +682,32 @@ input[type="button"] {
       background-size: 100% 400%; }
 
 a.button {
-  border: 1px solid #efefef !important;
-  border-bottom: 1px solid #ccc !important;
-  background-color: #fff !important;
-  background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-  background-image: linear-gradient(#fff, #efefef) !important;
-  box-shadow: inset 0 0 2px #efefef !important;
+  border: 1px solid #d4d4d4 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
   overflow: visible;
-  color: #555 !important;
-  font-size: 12px !important;
-  font-weight: bolder !important;
-  line-height: 15px !important;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
   text-decoration: none !important;
   width: auto;
-  padding: 5px 10px 5px !important;
   border-radius: 3px;
   text-decoration: none;
   cursor: pointer; }
   a.button:hover {
-    background: #fff !important; }
+    background: #ededed !important; }
   a.button.small {
     padding: 3px 8px 4px !important; }
   a.button:hover,
   a.button:active,
   a.button.select,
   a.button:visited {
-    color: #555;
+    color: #6d6d6d;
     text-decoration: none;
-    background: #fff; }
+    background: #ededed; }
   a.button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -774,12 +886,15 @@ fieldset table {
 #container {
   position: static;
   width: auto !important;
-  min-width: 0 !important; }
+  min-width: 0 !important;
+  padding-top: 0 !important; }
 
 #content {
   width: auto !important;
   min-width: 0 !important;
-  margin: 95px 45px 0; }
+  margin: 160px 45px 0; }
+  #content.colMS {
+    margin-right: 300px !important; }
 
 #changelist {
   width: auto !important; }
@@ -788,8 +903,7 @@ fieldset table {
   margin-bottom: 5px;
   padding: 0;
   border: none;
-  margin-bottom: 10px;
-  padding: 35px 0 0; }
+  margin-bottom: 10px; }
   .module h2,
   .module h3,
   .module h4,
@@ -801,8 +915,8 @@ fieldset table {
     color: #333;
     font-size: 100%;
     margin-top: 0;
-    margin-bottom: 2px;
-    padding: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px 0;
     border-bottom: 1px solid #ddd;
     background: none; }
   .module caption {
@@ -886,28 +1000,27 @@ fieldset table {
     background: none; }
 
 .submit-row {
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 20px;
+  border: 0;
+  border-top: 1px solid #ddd;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.2) !important;
   box-shadow: inset 0 0 2px #fff !important; }
   .submit-row .deletelink-box {
     line-height: 24px; }
   .submit-row .deletelink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 10px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px;
     color: #fff !important;
     border: 1px solid #ef4a4a !important;
@@ -917,16 +1030,16 @@ fieldset table {
     background-image: linear-gradient(#ef4a4a, #e80101) !important;
     box-shadow: inset 0 0 2px #ef4a4a !important; }
     .submit-row .deletelink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .submit-row .deletelink.small {
       padding: 3px 8px 4px !important; }
     .submit-row .deletelink:hover,
     .submit-row .deletelink:active,
     .submit-row .deletelink.select,
     .submit-row .deletelink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .submit-row .deletelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -941,7 +1054,9 @@ fieldset table {
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .submit-row input[type="submit"].default {
-    margin-left: 10px; }
+    margin-left: 20px; }
+  .submit-row input {
+    margin-left: 15px; }
 
 .selector .selector-available,
 .selector .selector-chosen {
@@ -990,6 +1105,7 @@ body.login {
       margin-top: 0;
       margin-bottom: 12px; }
     body.login #container #header {
+      position: static;
       background: none !important;
       box-shadow: none; }
       body.login #container #header #branding h1 {
@@ -1017,28 +1133,27 @@ body.login {
         body.login #container #content #content-main .submit-row input,
         body.login #container #content #content-main .submit-row input[type="submit"] {
           color: #fff !important;
-          border: 1px solid #5bbdee !important;
-          border-bottom: 1px solid #0072ac !important;
-          background-color: #029eee !important;
+          border: 1px solid #4fbef3 !important;
+          background-color: #4fbef3 !important;
           background-image: none !important;
-          box-shadow: inset 0 0 2px #5bbdee !important;
+          box-shadow: none !important;
           width: 262px !important;
           background-image: none; }
           body.login #container #content #content-main .submit-row input,
           body.login #container #content #content-main .submit-row input:visited,
           body.login #container #content #content-main .submit-row input[type="submit"],
           body.login #container #content #content-main .submit-row input[type="submit"]:visited {
-            background-image: -webkit-linear-gradient(#5bbdee, #029eee) !important;
-            background-image: linear-gradient(#5bbdee, #029eee) !important; }
+            background-image: none !important; }
           body.login #container #content #content-main .submit-row input:hover,
           body.login #container #content #content-main .submit-row input:focus,
           body.login #container #content #content-main .submit-row input[type="submit"]:hover,
           body.login #container #content #content-main .submit-row input[type="submit"]:focus {
             color: #fff !important;
-            background: #5bbdee !important; }
+            border: 1px solid #48abd9 !important;
+            background: #48abd9 !important; }
           body.login #container #content #content-main .submit-row input:active,
           body.login #container #content #content-main .submit-row input[type="submit"]:active {
-            background: #029eee !important; }
+            background: #4fbef3 !important; }
           body.login #container #content #content-main .submit-row input.animate,
           body.login #container #content #content-main .submit-row input[type="submit"].animate {
             background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1050,28 +1165,45 @@ body.login {
       display: none; }
 
 #header {
+  position: fixed;
+  top: 0;
   color: #1a1a1a !important;
-  height: 63px;
+  height: 65px;
   background-color: #fff;
   background-image: none;
   box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3); }
-  #header #branding h1 {
-    float: left;
-    color: #1a1a1a;
-    font-weight: bold;
-    padding: 19px 25px;
-    margin: 0; }
+  #header #branding {
+    width: 100%; }
+    #header #branding h1 {
+      float: left;
+      color: #1a1a1a;
+      font-weight: bold;
+      padding: 20px 25px 20px 0;
+      margin: 0; }
   #header #user-tools {
     display: none;
     padding: 16px 25px 0; }
   #header a:link,
   #header a:visited {
     color: #1a1a1a; }
-
-#header-logo {
-  float: left;
-  margin-right: 40px;
-  padding: 15px 0 15px 15px; }
+  #header #header-btn {
+    float: right;
+    margin: 21px 20px 0 0; }
+    #header #header-btn .btn {
+      font-size: 18px;
+      color: #808080;
+      padding: 10px 45px 10px 30px !important; }
+      #header #header-btn .btn:before {
+        display: none; }
+      #header #header-btn .btn.icon-arrow-right {
+        background: url("../img/icon_arrow_right.png") no-repeat right center !important;
+        background-size: 35px !important; }
+        #header #header-btn .btn.icon-arrow-right:hover {
+          background-color: #ededed !important; }
+  #header #header-logo {
+    float: left;
+    margin-right: 40px;
+    padding: 17px 0 17px 15px; }
 
 div.breadcrumbs {
   color: #ddd;
@@ -1088,7 +1220,7 @@ div.breadcrumbs {
 
 .dashboard #container #content-main {
   min-width: 400px;
-  max-width: 640px;
+  max-width: 900px;
   padding-bottom: 20px; }
   .dashboard #container #content-main table th,
   .dashboard #container #content-main table td {
@@ -1118,18 +1250,18 @@ div.breadcrumbs {
 .dashboard #container #content-related {
   position: absolute;
   right: 0;
-  top: 63px;
+  top: 0;
   bottom: 0;
   height: 100%;
-  width: 194px;
-  padding-top: 83px;
+  width: 255px;
+  padding-top: 160px;
   margin: 0;
   border-left: 1px solid #ddd;
   background-color: #f7f7f7;
   z-index: -1; }
   .dashboard #container #content-related .module {
     margin-left: 0;
-    padding: 10px 30px !important;
+    padding: 0 30px 10px !important;
     background-color: transparent; }
     .dashboard #container #content-related .module ul.actionlist {
       padding: 0; }
@@ -1147,6 +1279,7 @@ div.breadcrumbs {
     .dashboard #container #content-related .module h2 {
       color: #333;
       padding: 0 0 40px;
+      margin-bottom: 0;
       background: none;
       border-bottom: 0; }
     .dashboard #container #content-related .module h3 {
@@ -1173,9 +1306,86 @@ a.addlink:focus,
 a.addlink:active {
   color: #5da03d; }
 
+#content-main .object-tools .addlink {
+  border: 1px solid #d4d4d4 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
+  overflow: visible;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
+  text-decoration: none !important;
+  width: auto;
+  border-radius: 3px;
+  color: #fff !important;
+  border: 1px solid #5bae31 !important;
+  background-color: #5bae31 !important;
+  box-shadow: none !important; }
+  #content-main .object-tools .addlink:hover {
+    background: #ededed !important; }
+  #content-main .object-tools .addlink.small {
+    padding: 3px 8px 4px !important; }
+  #content-main .object-tools .addlink:hover,
+  #content-main .object-tools .addlink:active,
+  #content-main .object-tools .addlink.select,
+  #content-main .object-tools .addlink:visited {
+    color: #6d6d6d;
+    text-decoration: none;
+    background: #ededed; }
+  #content-main .object-tools .addlink.animate {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 100% 400%; }
+  #content-main .object-tools .addlink,
+  #content-main .object-tools .addlink:visited {
+    background-image: none !important; }
+  #content-main .object-tools .addlink:hover {
+    color: #fff !important;
+    border: 1px solid #7cbe5a !important;
+    background: #7cbe5a !important; }
+  #content-main .object-tools .addlink:active {
+    background: #5bae31 !important; }
+  #content-main .object-tools .addlink.animate {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 100% 400%; }
+
+#content-main .object-tools .recoverlink {
+  border: 1px solid #d4d4d4 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
+  overflow: visible;
+  color: #6d6d6d !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  line-height: 21px !important;
+  text-decoration: none !important;
+  width: auto;
+  border-radius: 3px; }
+  #content-main .object-tools .recoverlink:hover {
+    background: #ededed !important; }
+  #content-main .object-tools .recoverlink.small {
+    padding: 3px 8px 4px !important; }
+  #content-main .object-tools .recoverlink:hover,
+  #content-main .object-tools .recoverlink:active,
+  #content-main .object-tools .recoverlink.select,
+  #content-main .object-tools .recoverlink:visited {
+    color: #6d6d6d;
+    text-decoration: none;
+    background: #ededed; }
+  #content-main .object-tools .recoverlink.animate {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 100% 400%; }
+
 .object-tools {
   float: right;
-  margin-top: -34px; }
+  margin-top: -46px; }
   .object-tools li {
     height: 32px;
     padding-left: 5px;
@@ -1184,79 +1394,75 @@ a.addlink:active {
     .object-tools li:hover {
       background: none; }
     .object-tools li > a {
-      border: 1px solid #efefef !important;
-      border-bottom: 1px solid #ccc !important;
-      background-color: #fff !important;
-      background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-      background-image: linear-gradient(#fff, #efefef) !important;
-      box-shadow: inset 0 0 2px #efefef !important;
+      border: 1px solid #d4d4d4 !important;
+      background-color: transparent !important;
+      background-image: none !important;
+      box-shadow: none !important;
+      padding: 10px 30px !important;
       overflow: visible;
-      color: #555 !important;
-      font-size: 12px !important;
-      font-weight: bolder !important;
-      line-height: 15px !important;
+      color: #6d6d6d !important;
+      font-size: 18px !important;
+      font-weight: normal !important;
+      line-height: 21px !important;
       text-decoration: none !important;
       width: auto;
-      padding: 5px 10px 5px !important;
       border-radius: 3px; }
       .object-tools li > a:hover {
-        background: #fff !important; }
+        background: #ededed !important; }
       .object-tools li > a.small {
         padding: 3px 8px 4px !important; }
       .object-tools li > a:hover,
       .object-tools li > a:active,
       .object-tools li > a.select,
       .object-tools li > a:visited {
-        color: #555;
+        color: #6d6d6d;
         text-decoration: none;
-        background: #fff; }
+        background: #ededed; }
       .object-tools li > a.animate {
         background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
         background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
         background-size: 100% 400%; }
   .object-tools .addlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 10px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px;
     color: #fff !important;
-    border: 1px solid #7cbe5a !important;
-    border-bottom: 1px solid #5da03d !important;
+    border: 1px solid #5bae31 !important;
     background-color: #5bae31 !important;
-    box-shadow: inset 0 0 2px #7cbe5a !important;
-    color: #fff !important; }
+    box-shadow: none !important;
+    color: #fff !important;
+    padding: 10px 30px !important; }
     .object-tools .addlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .addlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .addlink:hover,
     .object-tools .addlink:active,
     .object-tools .addlink.select,
     .object-tools .addlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .addlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
     .object-tools .addlink,
     .object-tools .addlink:visited {
-      background-image: -webkit-linear-gradient(#7cbe5a, #5bae31) !important;
-      background-image: linear-gradient(#7cbe5a, #5bae31) !important; }
+      background-image: none !important; }
     .object-tools .addlink:hover {
       color: #fff !important;
+      border: 1px solid #7cbe5a !important;
       background: #7cbe5a !important; }
     .object-tools .addlink:active {
       background: #5bae31 !important; }
@@ -1265,207 +1471,194 @@ a.addlink:active {
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .recoverlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 10px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .recoverlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .recoverlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .recoverlink:hover,
     .object-tools .recoverlink:active,
     .object-tools .recoverlink.select,
     .object-tools .recoverlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .recoverlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .publishlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 10px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .publishlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .publishlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .publishlink:hover,
     .object-tools .publishlink:active,
     .object-tools .publishlink.select,
     .object-tools .publishlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .publishlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .previewdraftlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 10px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .previewdraftlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .previewdraftlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .previewdraftlink:hover,
     .object-tools .previewdraftlink:active,
     .object-tools .previewdraftlink.select,
     .object-tools .previewdraftlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .previewdraftlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .revertlink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 10px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .revertlink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .revertlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .revertlink:hover,
     .object-tools .revertlink:active,
     .object-tools .revertlink.select,
     .object-tools .revertlink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .revertlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .historylink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 10px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px; }
     .object-tools .historylink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .historylink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .historylink:hover,
     .object-tools .historylink:active,
     .object-tools .historylink.select,
     .object-tools .historylink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .historylink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .viewsitelink {
-    border: 1px solid #efefef !important;
-    border-bottom: 1px solid #ccc !important;
-    background-color: #fff !important;
-    background-image: -webkit-linear-gradient(#fff, #efefef) !important;
-    background-image: linear-gradient(#fff, #efefef) !important;
-    box-shadow: inset 0 0 2px #efefef !important;
+    border: 1px solid #d4d4d4 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 10px 30px !important;
     overflow: visible;
-    color: #555 !important;
-    font-size: 12px !important;
-    font-weight: bolder !important;
-    line-height: 15px !important;
+    color: #6d6d6d !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
     text-decoration: none !important;
     width: auto;
-    padding: 5px 10px 5px !important;
     border-radius: 3px;
     color: #fff !important;
-    border: 1px solid #5bbdee !important;
-    border-bottom: 1px solid #0072ac !important;
-    background-color: #029eee !important;
+    border: 1px solid #4fbef3 !important;
+    background-color: #4fbef3 !important;
     background-image: none !important;
-    box-shadow: inset 0 0 2px #5bbdee !important; }
+    box-shadow: none !important; }
     .object-tools .viewsitelink:hover {
-      background: #fff !important; }
+      background: #ededed !important; }
     .object-tools .viewsitelink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .viewsitelink:hover,
     .object-tools .viewsitelink:active,
     .object-tools .viewsitelink.select,
     .object-tools .viewsitelink:visited {
-      color: #555;
+      color: #6d6d6d;
       text-decoration: none;
-      background: #fff; }
+      background: #ededed; }
     .object-tools .viewsitelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
     .object-tools .viewsitelink,
     .object-tools .viewsitelink:visited {
-      background-image: -webkit-linear-gradient(#5bbdee, #029eee) !important;
-      background-image: linear-gradient(#5bbdee, #029eee) !important; }
+      background-image: none !important; }
     .object-tools .viewsitelink:hover,
     .object-tools .viewsitelink:focus {
       color: #fff !important;
-      background: #5bbdee !important; }
+      border: 1px solid #48abd9 !important;
+      background: #48abd9 !important; }
     .object-tools .viewsitelink:active {
-      background: #029eee !important; }
+      background: #4fbef3 !important; }
     .object-tools .viewsitelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1505,7 +1698,8 @@ a.addlink:active {
     padding: 0; }
   .change-list #changelist #toolbar form #searchbar {
     font-size: 100%;
-    padding: 6px 5px 8px !important; }
+    padding: 14px 5px !important;
+    vertical-align: top; }
 
 .change-list #changelist #changelist-filter {
   min-height: 100%;
@@ -1530,10 +1724,13 @@ a.addlink:active {
   padding: 0 3px 10px;
   border: none;
   background: none; }
-  .change-list #changelist .actions button {
-    vertical-align: middle;
-    height: 20px;
-    padding-top: 2px !important; }
+  .change-list #changelist .actions select {
+    padding: 10px 40px 10px 20px;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px; }
+  .change-list #changelist .actions label {
+    font-size: 14px;
+    margin-left: 0; }
 
 .change-list #changelist .toplinks {
   margin-bottom: 5px !important;
@@ -1612,12 +1809,12 @@ a.addlink:active {
   position: relative;
   margin-bottom: -3px !important;
   border-top-right-radius: 3px;
-  background: #5bbdee !important; }
+  background: #48abd9 !important; }
 
 .nani-language-tabs {
   position: relative;
   margin-bottom: -3px;
-  border-bottom: 5px solid #5bbdee; }
+  border-bottom: 5px solid #48abd9; }
   .nani-language-tabs > span {
     display: inline-block;
     top: 0 !important;
@@ -1652,7 +1849,7 @@ a.addlink:active {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     padding-right: 20px !important;
     padding-left: 20px !important;
-    background: #5bbdee; }
+    background: #48abd9; }
   .nani-language-tabs > .current .deletelink {
     right: -12px !important; }
 
@@ -1668,18 +1865,20 @@ a.addlink:active {
 
 @font-face {
   font-family: "django-cms-admin";
-  src: url("/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.eot");
-  src: url("/static/djangocms_admin_style/fonts/fontastic/djangocms_admin_style/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.eot?#iefix") format("embedded-opentype"), url("/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.woff") format("woff"), url("/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.ttf") format("truetype"), url("/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.svg#django-cms-admin") format("svg");
+  src: url("../fonts/fontastic/django-cms-admin.eot");
+  src: url("../fonts/fontastic/djangocms_admin_style/static/djangocms_admin_style/fonts/fontastic/django-cms-admin.eot?#iefix") format("embedded-opentype"), url("../fonts/fontastic/django-cms-admin.woff") format("woff"), url("../fonts/fontastic/django-cms-admin.ttf") format("truetype"), url("../fonts/fontastic/django-cms-admin.svg#django-cms-admin") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 .addlink,
 .changelink,
-.deletelink {
+.deletelink,
+.icon-arrow-right {
   background-image: none; }
   .addlink:before,
   .changelink:before,
-  .deletelink:before {
+  .deletelink:before,
+  .icon-arrow-right:before {
     font-family: "django-cms-admin" !important;
     font-size: 20px;
     content: attr(data-icon);
@@ -1702,6 +1901,9 @@ a.addlink:active {
 
 .deletelink:before {
   content: "\e002"; }
+
+.icon-arrow-right:before {
+  content: "\e003"; }
 
 .addlink,
 .addlink a {
@@ -1799,8 +2001,8 @@ a.addlink:active {
     .admin_shortcuts .shortcuts li a .count_new,
     .admin_shortcuts .shortcuts li a:link .count_new,
     .admin_shortcuts .shortcuts li a:visited .count_new {
-      border-color: #5bbdee;
-      background: #029eee; }
+      border-color: #48abd9;
+      background: #4fbef3; }
   .admin_shortcuts .shortcuts li a:hover,
   .admin_shortcuts .shortcuts li a:focus {
     background-color: #4e5359; }
@@ -1847,8 +2049,8 @@ a.addlink:active {
     body.login #container #content #content-main .submit-row input,
     body.login #container #content #content-main .submit-row input[type="submit"] {
       width: 80% !important; }
-  .colMS {
-    margin-right: 10px !important; }
+  #content.colMS {
+    margin-right: 5px !important; }
   .dashboard #container #content-main {
     float: none;
     min-width: 0;
@@ -1859,7 +2061,7 @@ a.addlink:active {
     position: static;
     float: none;
     width: auto;
-    margin: 0;
+    margin: 0 -5px;
     padding-top: 10px;
     padding-bottom: 20px;
     border-left: 0; }
@@ -1874,7 +2076,7 @@ a.addlink:active {
     background: none !important; }
   .change-list #content .object-tools {
     float: right;
-    margin: -35px 0 0 0; }
+    margin: -46px 0 0 0; }
   .change-list #toolbar label {
     display: inline-block; }
   .change-list #toolbar form #searchbar {

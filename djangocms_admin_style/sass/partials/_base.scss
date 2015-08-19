@@ -11,7 +11,7 @@ h1 {
     color: $font-color-medium;
     font-size: 150%;
     font-weight: bold;
-    margin: 20px 10px 10px;
+    margin: 20px 10px 45px;
 }
 h2 {
     color: $font-color-medium;
@@ -37,7 +37,10 @@ h6 {
     color: $font-color-medium; 
     font-size: 100%;
 }
-
+a.btn {
+    @include button-common-init();
+    border-radius: $default-border-radius;
+}
 a,
 a:link {
     color: $link-color;

@@ -4,11 +4,15 @@
     position: static;
     width: auto !important;
     min-width: 0 !important;
+    padding-top: 0 !important;
 }
 #content {
     width: auto !important;
     min-width: 0 !important;
-    margin: 95px 45px 0;
+    margin: 160px 45px 0;
+    &.colMS {
+        margin-right: 300px !important;
+    }
 }
 #changelist {
     width: auto !important;
@@ -18,13 +22,12 @@
 .module {
     @include box();
     margin-bottom: 10px;
-    padding: 35px 0 0;
     h2 {
         color: $font-color;
         font-size: 100%;
         margin-top: 0;
-        margin-bottom: 2px;
-        padding: 10px; 
+        margin-bottom: 30px;
+        padding: 10px 10px 0;
         border-bottom: 1px solid $line-color-light;
         background: none;
     }
@@ -64,7 +67,7 @@
 .module caption,
 .inline-group h2 {
     color: $font-color-dark;
-    font-size: 16px; 
+    font-size: 16px;
     background: none;
 }
 .inline-group {
@@ -120,8 +123,9 @@
     }
 }
 .submit-row {
-    padding: 10px;
-    border: 1px solid $line-color-light;
+    padding: 20px;
+    border: 0;
+    border-top: 1px solid $line-color-light;
     border-radius: $default-border-radius;
     background: $background-color-transparent !important;
     box-shadow: inset 0 0 $button-shadow-width $background-color-white !important;
@@ -133,7 +137,10 @@
         @include button-red();
     }
     input[type="submit"].default {
-        margin-left: 10px;
+        margin-left: 20px;
+    }
+    input {
+        margin-left: 15px;
     }
 }
 
@@ -180,6 +187,7 @@ body.login {
         border: none;
         box-shadow: inset rgba(0, 0, 0, 0.3) 0 1px 2px, #fff 0 1px 1px;
         #header {
+            position: static;
             background: none !important;
             box-shadow: none;
             #branding h1 {
@@ -232,17 +240,22 @@ body.login {
 
 // header
 #header {
+    position: fixed;
+    top: 0;
     color: $font-color-medium !important;
-    height: 63px;
+    height: 65px;
     background-color: #fff;
     background-image: none;
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
-    #branding h1 {
-        float: left;
-        color: $font-color-medium;
-        font-weight: bold;
-        padding: 19px 25px;
-        margin: 0;
+    #branding {
+        width: 100%;
+        h1 {
+            float: left;
+            color: $font-color-medium;
+            font-weight: bold;
+            padding: 20px 25px 20px 0;
+            margin: 0;
+        }
     }
     #user-tools {
         display: none;
@@ -254,11 +267,30 @@ body.login {
             color: $font-color-medium;
         }
     }
-}
-#header-logo {
-    float: left;
-    margin-right: 40px;
-    padding: 15px 0 15px 15px;
+    #header-btn {
+        float: right;
+        margin: 21px 20px 0 0;
+        .btn {
+            font-size: 18px;
+            color: $font-color-light;
+            padding: 10px 45px 10px 30px !important;
+            &:before {
+                display: none;
+            }
+            &.icon-arrow-right {
+                background: url('../img/icon_arrow_right.png') no-repeat right center !important;
+                background-size: 35px !important;
+                &:hover {
+                    background-color: $button-silver-light-color !important;
+                }
+            }
+        }
+    }
+    #header-logo {
+        float: left;
+        margin-right: 40px;
+        padding: 17px 0 17px 15px;
+    }
 }
 div.breadcrumbs {
     color: #ddd;
@@ -280,7 +312,7 @@ div.breadcrumbs {
 .dashboard #container {
     #content-main {
         min-width: 400px;
-        max-width: 640px;
+        max-width: 900px;
         padding-bottom: 20px;
         table th,
         table td {
@@ -315,18 +347,18 @@ div.breadcrumbs {
     #content-related {
         position: absolute;
         right: 0;
-        top: 63px;
+        top: 0;
         bottom: 0;
         height: 100%;
-        width: 194px;
-        padding-top: 83px;
+        width: 255px;
+        padding-top: 160px;
         margin: 0;
         border-left: 1px solid $line-color-light;
         background-color: #f7f7f7;
         z-index: -1;
         .module {
             margin-left: 0;
-            padding: 10px 30px !important;
+            padding: 0 30px 10px !important;
             background-color: transparent;
             ul.actionlist {
                 padding: 0;
@@ -349,6 +381,7 @@ div.breadcrumbs {
             h2 {
                 color: $font-color;
                 padding: 0 0 40px;
+                margin-bottom: 0;
                 background: none;
                 border-bottom: 0;
             }
@@ -384,10 +417,20 @@ a.addlink {
     }
 }
 
+#content-main .object-tools {
+    .addlink {
+        @include button-common();
+        @include button-green();
+    }
+    .recoverlink {
+        @include button-common();
+    }
+}
+
 // object tools
 .object-tools {
     float: right;
-    margin-top: -34px;
+    margin-top: -46px;
     li {
         height: 32px;
         padding-left: 5px;
@@ -404,6 +447,7 @@ a.addlink {
         @include button-common();
         @include button-green();
         color: $button-green-font-color !important;
+        padding: 10px 30px !important;
     }
     .recoverlink {
         @include button-common();
@@ -466,7 +510,8 @@ a.addlink {
             }
             form #searchbar {
                 font-size: 100%; 
-                padding: 6px 5px 8px !important;
+                padding: 14px 5px !important;
+                vertical-align: top;
             }
         }
         #changelist-filter {
@@ -497,10 +542,14 @@ a.addlink {
             padding: 0 3px 10px;
             border: none;
             background: none;
-            button {
-                vertical-align: middle;
-                height: 20px;
-                padding-top: 2px !important;
+            select {
+                padding: 10px 40px 10px 20px;
+                border: 1px solid $button-silver-dark-color;
+                border-radius: $default-border-radius;
+            }
+            label {
+                font-size: 14px;
+                margin-left: 0;
             }
         }
         .toplinks {
