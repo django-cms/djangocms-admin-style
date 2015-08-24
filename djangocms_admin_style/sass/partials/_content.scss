@@ -508,9 +508,10 @@ a.addlink {
             }
         }
         #toolbar {
+            float: left;
             height: auto;
             min-height: 30px;
-            margin: 0 0 5px;
+            margin: 0 10px 5px 0 !important;
             border: 0 !important;
             background: none !important;
             form label {
@@ -520,8 +521,9 @@ a.addlink {
                 padding: 0;
             }
             form #searchbar {
-                font-size: 100%; 
-                padding: 14px 5px !important;
+                max-width: 350px;
+                font-size: 18px;
+                padding: 10px 5px !important;
                 vertical-align: top;
             }
         }
@@ -555,12 +557,20 @@ a.addlink {
             background: none;
             select {
                 padding: 10px 40px 10px 20px;
+                margin-top: 0;
+                margin-right: 10px;
                 border: 1px solid $button-silver-dark-color;
                 border-radius: $default-border-radius;
             }
             label {
+                display: inline-block;
+                text-indent: -999999px;
                 font-size: 14px;
+                margin-top: -12px;
                 margin-left: 0;
+            }
+            button {
+                padding: 10px 15px !important
             }
         }
         .toplinks {

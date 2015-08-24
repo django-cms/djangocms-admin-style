@@ -484,7 +484,7 @@ form select {
   font-size: 18px;
   font-weight: normal;
   padding: 10px 40px 10px 20px;
-  background: transparent url("../img/icon_arrow_down.png") no-repeat right center;
+  background: #fff url("../img/icon_arrow_down.png") no-repeat right center;
   background-size: 25px;
   border: 1px solid #d4d4d4;
   border-radius: 3px; }
@@ -1708,9 +1708,10 @@ a.addlink:active {
   background: #f6fcff !important; }
 
 .change-list #changelist #toolbar {
+  float: left;
   height: auto;
   min-height: 30px;
-  margin: 0 0 5px;
+  margin: 0 10px 5px 0 !important;
   border: 0 !important;
   background: none !important; }
   .change-list #changelist #toolbar form label {
@@ -1719,8 +1720,9 @@ a.addlink:active {
     min-width: auto;
     padding: 0; }
   .change-list #changelist #toolbar form #searchbar {
-    font-size: 100%;
-    padding: 14px 5px !important;
+    max-width: 350px;
+    font-size: 18px;
+    padding: 10px 5px !important;
     vertical-align: top; }
 
 .change-list #changelist #changelist-filter {
@@ -1748,11 +1750,18 @@ a.addlink:active {
   background: none; }
   .change-list #changelist .actions select {
     padding: 10px 40px 10px 20px;
+    margin-top: 0;
+    margin-right: 10px;
     border: 1px solid #d4d4d4;
     border-radius: 3px; }
   .change-list #changelist .actions label {
+    display: inline-block;
+    text-indent: -999999px;
     font-size: 14px;
+    margin-top: -12px;
     margin-left: 0; }
+  .change-list #changelist .actions button {
+    padding: 10px 15px !important; }
 
 .change-list #changelist .toplinks {
   margin-bottom: 5px !important;
@@ -2000,7 +2009,8 @@ table .deletelink:before,
   border: 1px solid #4fbef3 !important;
   background-color: #4fbef3 !important;
   background-image: none !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+  margin-left: 10px; }
   #changelist-search input[type="submit"],
   #changelist-search input[type="submit"]:visited {
     background-image: none !important; }
