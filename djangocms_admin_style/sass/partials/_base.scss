@@ -1,5 +1,12 @@
 // base
 
+body {
+    background-color: #f7f7f7;
+    &.dashboard {
+        background-color: #fff;
+    }
+}
+
 body,
 select,
 input,

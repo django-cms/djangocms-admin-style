@@ -268,6 +268,11 @@ sup {
   .clearfix:after {
     clear: both; }
 
+body {
+  background-color: #f7f7f7; }
+  body.dashboard {
+    background-color: #fff; }
+
 body,
 select,
 input,
@@ -908,7 +913,8 @@ fieldset table {
   margin-bottom: 5px;
   padding: 0;
   border: none;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background: none !important; }
   .module h2,
   .module h3,
   .module h4,
@@ -1176,7 +1182,8 @@ body.login {
   height: 65px;
   background-color: #fff;
   background-image: none;
-  box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1; }
   #header #branding {
     width: 100%; }
     #header #branding h1 {
@@ -1211,16 +1218,23 @@ body.login {
     padding: 17px 0 17px 15px; }
 
 div.breadcrumbs {
-  color: #ddd;
-  padding-bottom: 4px;
-  padding-left: 25px;
-  border-top: 1px solid #444;
-  border-bottom: 0;
-  background: #595f65; }
+  position: absolute;
+  top: 0;
+  right: 45px;
+  left: 45px;
+  color: #808080 !important;
+  font-size: 15px;
+  margin-top: 65px;
+  padding: 20px 10px;
+  border-top: 0;
+  border-bottom: 1px solid #ddd;
+  background: none !important; }
   div.breadcrumbs a {
-    color: #bbb; }
+    color: #029eee;
+    padding-right: 10px; }
+    div.breadcrumbs a:first-child {
+      padding-left: 0; }
     div.breadcrumbs a:hover {
-      color: #ccc;
       text-decoration: none; }
 
 .dashboard #container #content-main {
@@ -1671,7 +1685,7 @@ a.addlink:active {
 
 .change-list .filtered {
   min-height: auto;
-  background-image: none !important; }
+  background: none !important; }
   .change-list .filtered table {
     border: none; }
 
@@ -1978,6 +1992,30 @@ table .deletelink:before,
   height: 15px;
   margin: 7px 5px 0 0;
   background: url("../img/icon_softroot.png") 0 0 no-repeat; }
+
+#changelist-search input[type="submit"] {
+  color: #fff !important;
+  border: 1px solid #4fbef3 !important;
+  background-color: #4fbef3 !important;
+  background-image: none !important;
+  box-shadow: none !important; }
+  #changelist-search input[type="submit"],
+  #changelist-search input[type="submit"]:visited {
+    background-image: none !important; }
+  #changelist-search input[type="submit"]:hover,
+  #changelist-search input[type="submit"]:focus {
+    color: #fff !important;
+    border: 1px solid #48abd9 !important;
+    background: #48abd9 !important; }
+  #changelist-search input[type="submit"]:active {
+    background: #4fbef3 !important; }
+  #changelist-search input[type="submit"].animate {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 100% 400%; }
+
+#changelist-search label img {
+  display: none; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .tree .changelink {

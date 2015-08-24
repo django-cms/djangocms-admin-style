@@ -22,6 +22,7 @@
 .module {
     @include box();
     margin-bottom: 10px;
+    background: none !important;
     h2 {
         color: $font-color;
         font-size: 100%;
@@ -247,6 +248,7 @@ body.login {
     background-color: #fff;
     background-image: none;
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
+    z-index: 1;
     #branding {
         width: 100%;
         h1 {
@@ -293,16 +295,24 @@ body.login {
     }
 }
 div.breadcrumbs {
-    color: #ddd;
-    padding-bottom: 4px;
-    padding-left: 25px;
-    border-top: 1px solid $line-color-dark;
-    border-bottom: 0;
-    background: $background-color-dark;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    left: 45px;
+    color: $font-color-light !important;
+    font-size: 15px;
+    margin-top: 65px;
+    padding: 20px 10px;
+    border-top: 0;
+    border-bottom: 1px solid $line-color-light;
+    background: none !important;
     a {
-        color: #bbb;
+        color: $link-color;
+        padding-right: 10px;
+        &:first-child {
+            padding-left: 0;
+        }
         &:hover {
-            color: $font-color-ultralight;
             text-decoration: none;
         }
     }
@@ -474,7 +484,7 @@ a.addlink {
 .change-list {
     .filtered {
         min-height: auto;
-        background-image: none !important;
+        background: none !important;
         table {
             border: none;
         }

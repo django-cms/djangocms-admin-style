@@ -97,6 +97,14 @@ table,
     margin: 7px 5px 0 0; 
     background: url("../img/icon_softroot.png") 0 0 no-repeat;
 }
+#changelist-search {
+    input[type="submit"] {
+        @include button-blue;
+    }
+    label img {
+        display: none;
+    }
+}
 
 // retina
 @media only screen and (-webkit-min-device-pixel-ratio:2),
