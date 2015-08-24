@@ -311,7 +311,7 @@ h6 {
 
 a.btn {
   border: 1px solid #d4d4d4 !important;
-  background-color: transparent !important;
+  background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 30px !important;
@@ -321,18 +321,18 @@ a.btn {
 
 a,
 a:link {
-  color: #029eee;
+  color: #4fbef3;
   text-decoration: none; }
   a:visited,
   a:link:visited {
-    color: #029eee; }
+    color: #4fbef3; }
   a:hover,
   a:link:hover {
-    color: #2070b3;
+    color: #48abd9;
     text-decoration: none; }
   a:active,
   a:link:active {
-    color: #2070b3; }
+    color: #48abd9; }
 
 p {
   font-weight: normal;
@@ -380,21 +380,23 @@ small {
 #sitemap li .cont {
   overflow: visible !important; }
 
-.popup input[type=text],
-.popup textarea,
-.popup select,
-.popup .select2-container,
-.cms-modal-window input[type=text],
-.cms-modal-window textarea,
-.cms-modal-window select,
-.cms-modal-window .select2-container {
-  width: 100%;
-  max-width: inherit !important;
-  box-sizing: border-box; }
-
-.popup #content,
-.cms-modal-window #content {
-  margin-top: 0; }
+.popup,
+.cms-modal-window {
+  background-color: #fff; }
+  .popup input[type=text],
+  .popup textarea,
+  .popup select,
+  .popup .select2-container,
+  .cms-modal-window input[type=text],
+  .cms-modal-window textarea,
+  .cms-modal-window select,
+  .cms-modal-window .select2-container {
+    width: 100%;
+    max-width: inherit !important;
+    box-sizing: border-box; }
+  .popup #content,
+  .cms-modal-window #content {
+    margin-top: 0; }
 
 form .form-row {
   overflow: visible;
@@ -572,7 +574,7 @@ form .select2-dropdown-open .select2-choice {
     background-color: transparent !important; }
   .select2-results .select2-highlighted {
     border-radius: 3px;
-    background-color: #029eee !important; }
+    background-color: #4fbef3 !important; }
 
 .select2-match {
   font-size: 14px !important; }
@@ -597,7 +599,7 @@ textarea:invalid {
 
 button {
   border: 1px solid #d4d4d4 !important;
-  background-color: transparent !important;
+  background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 30px !important;
@@ -628,7 +630,7 @@ button {
 input[type="submit"],
 input[type="button"] {
   border: 1px solid #d4d4d4 !important;
-  background-color: transparent !important;
+  background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 30px !important;
@@ -693,7 +695,7 @@ input[type="button"] {
 
 a.button {
   border: 1px solid #d4d4d4 !important;
-  background-color: transparent !important;
+  background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 30px !important;
@@ -805,7 +807,7 @@ div.clockbox {
   background: none !important; }
 
 span.datetimeshortcuts a {
-  color: #029eee; }
+  color: #4fbef3; }
 
 .selector .selector-chooseall,
 .selector .selector-clearall {
@@ -1021,7 +1023,7 @@ fieldset table {
     line-height: 24px; }
   .submit-row .deletelink {
     border: 1px solid #d4d4d4 !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;
@@ -1230,7 +1232,7 @@ div.breadcrumbs {
   border-bottom: 1px solid #ddd;
   background: none !important; }
   div.breadcrumbs a {
-    color: #029eee;
+    color: #4fbef3;
     padding-right: 10px; }
     div.breadcrumbs a:first-child {
       padding-left: 0; }
@@ -1327,7 +1329,7 @@ a.addlink:active {
 
 #content-main .object-tools .addlink {
   border: 1px solid #d4d4d4 !important;
-  background-color: transparent !important;
+  background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 30px !important;
@@ -1374,7 +1376,7 @@ a.addlink:active {
 
 #content-main .object-tools .recoverlink {
   border: 1px solid #d4d4d4 !important;
-  background-color: transparent !important;
+  background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 30px !important;
@@ -1414,7 +1416,7 @@ a.addlink:active {
       background: none; }
     .object-tools li > a {
       border: 1px solid #d4d4d4 !important;
-      background-color: transparent !important;
+      background-color: #fff !important;
       background-image: none !important;
       box-shadow: none !important;
       padding: 10px 30px !important;
@@ -1443,7 +1445,7 @@ a.addlink:active {
         background-size: 100% 400%; }
   .object-tools .addlink {
     border: 1px solid #d4d4d4 !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;
@@ -1491,7 +1493,7 @@ a.addlink:active {
       background-size: 100% 400%; }
   .object-tools .recoverlink {
     border: 1px solid #d4d4d4 !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;
@@ -1520,7 +1522,7 @@ a.addlink:active {
       background-size: 100% 400%; }
   .object-tools .publishlink {
     border: 1px solid #d4d4d4 !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;
@@ -1549,7 +1551,7 @@ a.addlink:active {
       background-size: 100% 400%; }
   .object-tools .previewdraftlink {
     border: 1px solid #d4d4d4 !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;
@@ -1578,7 +1580,7 @@ a.addlink:active {
       background-size: 100% 400%; }
   .object-tools .revertlink {
     border: 1px solid #d4d4d4 !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;
@@ -1607,7 +1609,7 @@ a.addlink:active {
       background-size: 100% 400%; }
   .object-tools .historylink {
     border: 1px solid #d4d4d4 !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;
@@ -1636,7 +1638,7 @@ a.addlink:active {
       background-size: 100% 400%; }
   .object-tools .viewsitelink {
     border: 1px solid #d4d4d4 !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;
@@ -1700,7 +1702,7 @@ a.addlink:active {
   .change-list #changelist table tbody td a:link,
   .change-list #changelist table tbody td a:visited,
   .change-list #changelist table tbody td a:link:visited {
-    color: #029eee; }
+    color: #4fbef3; }
 
 .change-list #changelist table tbody tr.selected {
   background: #f6fcff !important; }
@@ -1738,7 +1740,7 @@ a.addlink:active {
     .change-list #changelist #changelist-filter ul li {
       margin-bottom: 2px; }
     .change-list #changelist #changelist-filter ul li.selected a {
-      color: #029eee !important; }
+      color: #4fbef3 !important; }
 
 .change-list #changelist .actions {
   padding: 0 3px 10px;
@@ -2080,11 +2082,11 @@ table .deletelink:before,
   body {
     height: auto; }
   #content {
-    margin: 20px 5px 0; }
+    margin: 160px 10px 0; }
   #container {
     min-width: 240px !important;
     margin: 0; }
-  #branding .site-name {
+  #branding #site-name {
     display: none; }
   .login #branding {
     display: block; }
@@ -2116,7 +2118,7 @@ table .deletelink:before,
     body.login #container #content #content-main .submit-row input[type="submit"] {
       width: 80% !important; }
   #content.colMS {
-    margin-right: 5px !important; }
+    margin-right: 10px !important; }
   .dashboard #container #content-main {
     float: none;
     min-width: 0;
@@ -2127,7 +2129,7 @@ table .deletelink:before,
     position: static;
     float: none;
     width: auto;
-    margin: 0 -5px;
+    margin: 0 -10px;
     padding-top: 10px;
     padding-bottom: 20px;
     border-left: 0; }
