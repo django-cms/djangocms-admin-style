@@ -11,37 +11,40 @@
   font-style: normal;
 
 }
-
-.addlink,
-.changelink,
-.deletelink,
-.icon-arrow-right{
-    background-image: none;
-    &:before {
-        font-family: "django-cms-admin" !important;
-        font-size: 20px;
-        content: attr(data-icon);
-        font-style: normal !important;
-        font-weight: normal !important;
-        font-variant: normal !important;
-        text-transform: none !important;
-        vertical-align: middle;
-        margin-right: 10px;
-        speak: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+table,
+.actionlist,
+.object-tools {
+    .addlink,
+    .changelink,
+    .deletelink,
+    .icon-arrow-right {
+        background-image: none;
+        &:before {
+            font-family: "django-cms-admin" !important;
+            font-size: 20px;
+            content: attr(data-icon);
+            font-style: normal !important;
+            font-weight: normal !important;
+            font-variant: normal !important;
+            text-transform: none !important;
+            vertical-align: middle;
+            margin-right: 10px;
+            speak: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
     }
-}
 
-.addlink:before {
-  content: "\e000";
-}
-.changelink:before {
-  content: "\e001";
-}
-.deletelink:before {
-  content: "\e002";
+    .addlink:before {
+      content: "\e000";
+    }
+    .changelink:before {
+      content: "\e001";
+    }
+    .deletelink:before {
+      content: "\e002";
+    }
 }
 
 .icon-arrow-right:before {

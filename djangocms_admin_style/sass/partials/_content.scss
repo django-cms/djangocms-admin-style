@@ -432,7 +432,7 @@ a.addlink {
     float: right;
     margin-top: -46px;
     li {
-        height: 32px;
+        height: 43px;
         padding-left: 5px;
         list-style: none;
         background: none;
@@ -504,6 +504,7 @@ a.addlink {
             border: 0 !important;
             background: none !important;
             form label {
+                display: inline-block;
                 font-size: 100%; 
                 min-width: auto;
                 padding: 0;

@@ -8,9 +8,13 @@
         max-width: inherit !important;
         box-sizing: border-box;
     }
+    #content {
+        margin-top: 0;
+    }
 }
 form {
     .form-row {
+        overflow: visible;
         border-bottom: 0;
     }
     button,
@@ -187,7 +191,7 @@ form {
             background-color: #fff;
             background-image: none;
             .select2-arrow b {
-                background-position: -18px 1px;
+                background-position: -16px 12px;
             }
         }
     }

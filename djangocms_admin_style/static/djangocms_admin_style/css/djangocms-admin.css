@@ -387,7 +387,12 @@ small {
   max-width: inherit !important;
   box-sizing: border-box; }
 
+.popup #content,
+.cms-modal-window #content {
+  margin-top: 0; }
+
 form .form-row {
+  overflow: visible;
   border-bottom: 0; }
 
 form button,
@@ -545,7 +550,7 @@ form .select2-dropdown-open .select2-choice {
   background-color: #fff;
   background-image: none; }
   form .select2-dropdown-open .select2-choice .select2-arrow b {
-    background-position: -18px 1px; }
+    background-position: -16px 12px; }
 
 .select2-drop-active {
   border: 1px solid #d4d4d4 !important; }
@@ -1387,7 +1392,7 @@ a.addlink:active {
   float: right;
   margin-top: -46px; }
   .object-tools li {
-    height: 32px;
+    height: 43px;
     padding-left: 5px;
     list-style: none;
     background: none; }
@@ -1693,6 +1698,7 @@ a.addlink:active {
   border: 0 !important;
   background: none !important; }
   .change-list #changelist #toolbar form label {
+    display: inline-block;
     font-size: 100%;
     min-width: auto;
     padding: 0; }
@@ -1870,15 +1876,31 @@ a.addlink:active {
   font-weight: normal;
   font-style: normal; }
 
-.addlink,
-.changelink,
-.deletelink,
-.icon-arrow-right {
+table .addlink,
+table .changelink,
+table .deletelink,
+table .icon-arrow-right,
+.actionlist .addlink,
+.actionlist .changelink,
+.actionlist .deletelink,
+.actionlist .icon-arrow-right,
+.object-tools .addlink,
+.object-tools .changelink,
+.object-tools .deletelink,
+.object-tools .icon-arrow-right {
   background-image: none; }
-  .addlink:before,
-  .changelink:before,
-  .deletelink:before,
-  .icon-arrow-right:before {
+  table .addlink:before,
+  table .changelink:before,
+  table .deletelink:before,
+  table .icon-arrow-right:before,
+  .actionlist .addlink:before,
+  .actionlist .changelink:before,
+  .actionlist .deletelink:before,
+  .actionlist .icon-arrow-right:before,
+  .object-tools .addlink:before,
+  .object-tools .changelink:before,
+  .object-tools .deletelink:before,
+  .object-tools .icon-arrow-right:before {
     font-family: "django-cms-admin" !important;
     font-size: 20px;
     content: attr(data-icon);
@@ -1893,13 +1915,19 @@ a.addlink:active {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
-.addlink:before {
+table .addlink:before,
+.actionlist .addlink:before,
+.object-tools .addlink:before {
   content: "\e000"; }
 
-.changelink:before {
+table .changelink:before,
+.actionlist .changelink:before,
+.object-tools .changelink:before {
   content: "\e001"; }
 
-.deletelink:before {
+table .deletelink:before,
+.actionlist .deletelink:before,
+.object-tools .deletelink:before {
   content: "\e002"; }
 
 .icon-arrow-right:before {
@@ -2014,7 +2042,7 @@ a.addlink:active {
   body {
     height: auto; }
   #content {
-    margin: 0 5px; }
+    margin: 20px 5px 0; }
   #container {
     min-width: 240px !important;
     margin: 0; }
@@ -2074,9 +2102,12 @@ a.addlink:active {
       padding-bottom: 10px; }
   .dashboard .module {
     background: none !important; }
+  #changelist {
+    position: static; }
   .change-list #content .object-tools {
-    float: right;
-    margin: -46px 0 0 0; }
+    overflow: hidden;
+    float: none;
+    margin: 0; }
   .change-list #toolbar label {
     display: inline-block; }
   .change-list #toolbar form #searchbar {

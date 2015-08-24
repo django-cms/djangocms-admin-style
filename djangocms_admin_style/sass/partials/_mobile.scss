@@ -4,7 +4,7 @@ body {
     height: auto;
 }
 #content {
-    margin: 0 5px;
+    margin: 20px 5px 0;
 }
 #container {
     min-width: 240px !important; 
@@ -106,11 +106,15 @@ body.login {
 
 // changelist
 
+#changelist {
+    position: static;
+}
 .change-list {
     #content {
         .object-tools {
-            float: right;
-            margin: -46px 0 0 0;
+            overflow: hidden;
+            float: none;
+            margin: 0;
         }
     }
     #toolbar {
