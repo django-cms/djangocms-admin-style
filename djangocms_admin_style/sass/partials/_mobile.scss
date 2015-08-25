@@ -146,7 +146,7 @@ body.login {
         margin-right: 0 !important;
     }
     .module #changelist-form .results {
-        overflow: auto; 
+        overflow: auto;
         width: 100%;
     }
     .filtered {
@@ -159,6 +159,12 @@ body.login {
         }
         .action-counter {
             margin-left: 0 !important;
+        }
+    }
+    #changelist {
+        .actions,
+        .paginator {
+            margin-right: 0 !important;
         }
     }
 }

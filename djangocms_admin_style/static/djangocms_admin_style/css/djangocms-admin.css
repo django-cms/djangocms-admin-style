@@ -669,21 +669,21 @@ input[type="button"] {
     color: #fff !important;
     border: 1px solid #4fbef3 !important;
     background-color: #4fbef3 !important;
-    background-image: none !important;
+    background-image: none;
     box-shadow: none !important;
     padding: 10px 30px !important; }
     input[type="submit"].default,
     input[type="submit"].default:visited,
     input[type="button"].default,
     input[type="button"].default:visited {
-      background-image: none !important; }
+      background-image: none; }
     input[type="submit"].default:hover,
     input[type="submit"].default:focus,
     input[type="button"].default:hover,
     input[type="button"].default:focus {
       color: #fff !important;
       border: 1px solid #48abd9 !important;
-      background: #48abd9 !important; }
+      background-color: #48abd9 !important; }
     input[type="submit"].default:active,
     input[type="button"].default:active {
       background: #4fbef3 !important; }
@@ -879,35 +879,190 @@ fieldset table {
 .filebrowser .module table td {
   line-height: 16px; }
 
-.change-list .filtered .results {
-  margin-right: 220px !important; }
+.change-list .filtered {
+  min-height: auto;
+  background: none !important; }
+  .change-list .filtered table {
+    border: none; }
+  .change-list .filtered .results {
+    margin-right: 220px !important;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
+  .change-list .filtered .paginator {
+    font-size: 14px;
+    color: #808080;
+    background-color: #fff !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); }
 
-#changelist-filter {
-  width: 200px !important;
-  background-color: transparent !important;
-  border-left: 0; }
-  #changelist-filter h2,
-  #changelist-filter h3 {
-    font-size: 16px;
-    margin-bottom: 15px !important;
-    padding-left: 0 !important;
-    padding-bottom: 10px;
-    border-bottom: solid 1px #ebebeb; }
-  #changelist-filter h2 {
-    font-weight: normal;
-    text-transform: uppercase; }
-  #changelist-filter h3 {
-    margin-top: 30px !important; }
-  #changelist-filter ul {
-    margin-left: 0 !important; }
-  #changelist-filter li {
-    font-size: 16px;
-    margin-bottom: 20px !important; }
-    #changelist-filter li.selected {
-      font-weight: bold;
-      border-left: 0 !important;
+.change-list #changelist {
+  width: auto !important; }
+  .change-list #changelist table tbody th,
+  .change-list #changelist table tbody td {
+    padding-left: 0;
+    border-color: #f1f1f1; }
+    .change-list #changelist table tbody th a,
+    .change-list #changelist table tbody th a:link,
+    .change-list #changelist table tbody th a:visited,
+    .change-list #changelist table tbody th a:link:visited,
+    .change-list #changelist table tbody td a,
+    .change-list #changelist table tbody td a:link,
+    .change-list #changelist table tbody td a:visited,
+    .change-list #changelist table tbody td a:link:visited {
+      color: #4fbef3; }
+  .change-list #changelist table tbody tr.selected {
+    background: #4fbef3 !important; }
+    .change-list #changelist table tbody tr.selected a {
+      color: #f1faff; }
+  .change-list #changelist #toolbar {
+    overflow: hidden;
+    float: left;
+    height: auto;
+    min-height: 30px;
+    margin: 0 10px 5px 0 !important;
+    border: 0 !important;
+    background: none !important; }
+    .change-list #changelist #toolbar form label {
+      display: inline-block;
+      font-size: 100%;
+      min-width: auto;
+      padding: 0; }
+    .change-list #changelist #toolbar form #searchbar {
+      max-width: 200px;
+      font-size: 18px;
+      padding: 10px 5px !important;
+      vertical-align: top; }
+  .change-list #changelist #changelist-filter {
+    width: 200px !important;
+    min-height: 100%;
+    padding-left: 18px;
+    border-left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #f7f7f7 !important; }
+    .change-list #changelist #changelist-filter h2,
+    .change-list #changelist #changelist-filter h3 {
+      font-size: 16px;
+      margin-bottom: 15px !important;
       padding-left: 0 !important;
-      margin-left: 0 !important; }
+      padding-bottom: 10px;
+      border-bottom: solid 1px #ebebeb; }
+    .change-list #changelist #changelist-filter h2 {
+      color: #808080;
+      font-weight: normal;
+      text-transform: uppercase;
+      padding: 2px 9px;
+      background: none; }
+    .change-list #changelist #changelist-filter h3 {
+      margin: 30px 0 10px !important; }
+    .change-list #changelist #changelist-filter ul {
+      font-size: 12px;
+      margin-left: 0 !important;
+      margin-bottom: 10px; }
+    .change-list #changelist #changelist-filter li {
+      font-size: 16px;
+      margin-bottom: 20px; }
+      .change-list #changelist #changelist-filter li.selected {
+        font-weight: bold;
+        border-left: 0 !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important; }
+        .change-list #changelist #changelist-filter li.selected a {
+          color: #4fbef3 !important; }
+  .change-list #changelist .actions {
+    padding: 0 3px 10px;
+    margin-right: 220px !important;
+    border: none;
+    background: none; }
+    .change-list #changelist .actions select {
+      padding: 10px 40px 10px 20px;
+      margin-top: 5px;
+      margin-right: 10px;
+      border: 1px solid #d4d4d4;
+      border-radius: 3px; }
+    .change-list #changelist .actions label {
+      display: inline-block;
+      font-size: 14px;
+      margin-left: 0; }
+    .change-list #changelist .actions button {
+      padding: 10px 15px !important; }
+    .change-list #changelist .actions .action-counter {
+      display: block !important; }
+  .change-list #changelist .toplinks {
+    margin-bottom: 5px !important;
+    border-bottom: none !important;
+    background: none; }
+  .change-list #changelist .paginator {
+    margin-right: 220px !important;
+    border: none;
+    background: none; }
+
+#result_list th,
+#result_list td {
+  font-size: 16px;
+  font-weight: normal;
+  border-left: 0 !important; }
+  #result_list th:first-child,
+  #result_list td:first-child {
+    border-right: 0 !important; }
+
+#result_list thead th {
+  text-transform: uppercase;
+  padding: 10px 0 5px !important;
+  border-color: #ebebeb;
+  background-color: #fff; }
+  #result_list thead th.sorted {
+    background-color: #fff; }
+  #result_list thead th.action-checkbox-column {
+    padding: 0 15px !important; }
+  #result_list thead th .text {
+    float: left;
+    padding-right: 0; }
+  #result_list thead th .sortoptions {
+    float: none;
+    display: inline-block;
+    padding-top: 0; }
+
+#result_list thead a {
+  font-size: 14px;
+  color: #808080;
+  font-weight: normal;
+  padding-left: 0; }
+
+#result_list .action-checkbox {
+  padding: 10px !important; }
+
+#changelist-search input[type="submit"] {
+  color: #fff !important;
+  border: 1px solid #4fbef3 !important;
+  background-color: #4fbef3 !important;
+  background-image: none;
+  box-shadow: none !important;
+  text-indent: -9999px;
+  padding: 10px 20px !important;
+  margin-left: 10px;
+  background-image: url("../img/icon_search_white@2x.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 8px center !important;
+  background-size: 25px !important; }
+  #changelist-search input[type="submit"],
+  #changelist-search input[type="submit"]:visited {
+    background-image: none; }
+  #changelist-search input[type="submit"]:hover,
+  #changelist-search input[type="submit"]:focus {
+    color: #fff !important;
+    border: 1px solid #48abd9 !important;
+    background-color: #48abd9 !important; }
+  #changelist-search input[type="submit"]:active {
+    background: #4fbef3 !important; }
+  #changelist-search input[type="submit"].animate {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 100% 400%; }
+
+#changelist-search label {
+  display: block !important;
+  margin-bottom: 0; }
+  #changelist-search label img {
+    visibility: hidden; }
 
 .plugin-holder {
   background: transparent url("../img/pluginlist-holder-bg.png") repeat-y !important; }
@@ -938,8 +1093,8 @@ fieldset table {
   #content.colMS {
     margin-right: 300px !important; }
 
-#changelist {
-  width: auto !important; }
+#sitemap {
+  clear: both; }
 
 .module {
   margin-bottom: 5px;
@@ -1178,7 +1333,7 @@ body.login {
           color: #fff !important;
           border: 1px solid #4fbef3 !important;
           background-color: #4fbef3 !important;
-          background-image: none !important;
+          background-image: none;
           box-shadow: none !important;
           width: 262px !important;
           background-image: none; }
@@ -1186,14 +1341,14 @@ body.login {
           body.login #container #content #content-main .submit-row input:visited,
           body.login #container #content #content-main .submit-row input[type="submit"],
           body.login #container #content #content-main .submit-row input[type="submit"]:visited {
-            background-image: none !important; }
+            background-image: none; }
           body.login #container #content #content-main .submit-row input:hover,
           body.login #container #content #content-main .submit-row input:focus,
           body.login #container #content #content-main .submit-row input[type="submit"]:hover,
           body.login #container #content #content-main .submit-row input[type="submit"]:focus {
             color: #fff !important;
             border: 1px solid #48abd9 !important;
-            background: #48abd9 !important; }
+            background-color: #48abd9 !important; }
           body.login #container #content #content-main .submit-row input:active,
           body.login #container #content #content-main .submit-row input[type="submit"]:active {
             background: #4fbef3 !important; }
@@ -1215,7 +1370,7 @@ body.login {
   background-color: #fff;
   background-image: none;
   box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
-  z-index: 1; }
+  z-index: 9999; }
   #header #branding {
     width: 100%; }
     #header #branding h1 {
@@ -1682,7 +1837,7 @@ a.addlink:active {
     color: #fff !important;
     border: 1px solid #4fbef3 !important;
     background-color: #4fbef3 !important;
-    background-image: none !important;
+    background-image: none;
     box-shadow: none !important; }
     .object-tools .viewsitelink:hover {
       background: #ededed !important; }
@@ -1701,107 +1856,18 @@ a.addlink:active {
       background-size: 100% 400%; }
     .object-tools .viewsitelink,
     .object-tools .viewsitelink:visited {
-      background-image: none !important; }
+      background-image: none; }
     .object-tools .viewsitelink:hover,
     .object-tools .viewsitelink:focus {
       color: #fff !important;
       border: 1px solid #48abd9 !important;
-      background: #48abd9 !important; }
+      background-color: #48abd9 !important; }
     .object-tools .viewsitelink:active {
       background: #4fbef3 !important; }
     .object-tools .viewsitelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
-
-.change-list .filtered {
-  min-height: auto;
-  background: none !important; }
-  .change-list .filtered table {
-    border: none; }
-
-.change-list #changelist table tbody th,
-.change-list #changelist table tbody td {
-  border-color: #f1f1f1; }
-  .change-list #changelist table tbody th a,
-  .change-list #changelist table tbody th a:link,
-  .change-list #changelist table tbody th a:visited,
-  .change-list #changelist table tbody th a:link:visited,
-  .change-list #changelist table tbody td a,
-  .change-list #changelist table tbody td a:link,
-  .change-list #changelist table tbody td a:visited,
-  .change-list #changelist table tbody td a:link:visited {
-    color: #4fbef3; }
-
-.change-list #changelist table tbody tr.selected {
-  background: #f6fcff !important; }
-
-.change-list #changelist #toolbar {
-  float: left;
-  height: auto;
-  min-height: 30px;
-  margin: 0 10px 5px 0 !important;
-  border: 0 !important;
-  background: none !important; }
-  .change-list #changelist #toolbar form label {
-    display: inline-block;
-    font-size: 100%;
-    min-width: auto;
-    padding: 0; }
-  .change-list #changelist #toolbar form #searchbar {
-    max-width: 200px;
-    font-size: 18px;
-    padding: 10px 5px !important;
-    vertical-align: top; }
-
-.change-list #changelist #changelist-filter {
-  min-height: 100%;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  background: #fafafa; }
-  .change-list #changelist #changelist-filter h2 {
-    color: #808080;
-    padding: 2px 9px;
-    background: none; }
-  .change-list #changelist #changelist-filter h3 {
-    margin: 5px 0; }
-  .change-list #changelist #changelist-filter ul {
-    font-size: 12px;
-    margin-bottom: 10px; }
-    .change-list #changelist #changelist-filter ul li {
-      margin-bottom: 2px; }
-    .change-list #changelist #changelist-filter ul li.selected a {
-      color: #4fbef3 !important; }
-
-.change-list #changelist .actions {
-  padding: 0 3px 10px;
-  border: none;
-  background: none; }
-  .change-list #changelist .actions select {
-    padding: 10px 40px 10px 20px;
-    margin-top: 0;
-    margin-right: 10px;
-    border: 1px solid #d4d4d4;
-    border-radius: 3px; }
-  .change-list #changelist .actions label {
-    display: inline-block;
-    text-indent: -999999px;
-    font-size: 14px;
-    margin-top: -12px;
-    margin-left: 0; }
-  .change-list #changelist .actions button {
-    padding: 10px 15px !important; }
-  .change-list #changelist .actions .action-counter {
-    display: block !important; }
-
-.change-list #changelist .toplinks {
-  margin-bottom: 5px !important;
-  border-bottom: none !important;
-  background: none; }
-
-.change-list #changelist .paginator {
-  border: none;
-  background: none; }
 
 .delete-confirmation .colM {
   margin-bottom: 5px;
@@ -2042,31 +2108,6 @@ table .icon-search:before,
   margin: 7px 5px 0 0;
   background: url("../img/icon_softroot.png") 0 0 no-repeat; }
 
-#changelist-search input[type="submit"] {
-  color: #fff !important;
-  border: 1px solid #4fbef3 !important;
-  background-color: #4fbef3 !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  margin-left: 10px; }
-  #changelist-search input[type="submit"],
-  #changelist-search input[type="submit"]:visited {
-    background-image: none !important; }
-  #changelist-search input[type="submit"]:hover,
-  #changelist-search input[type="submit"]:focus {
-    color: #fff !important;
-    border: 1px solid #48abd9 !important;
-    background: #48abd9 !important; }
-  #changelist-search input[type="submit"]:active {
-    background: #4fbef3 !important; }
-  #changelist-search input[type="submit"].animate {
-    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-size: 100% 400%; }
-
-#changelist-search label {
-  display: none !important; }
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .tree .changelink {
     background-image: url("../img/icon_changelink_white@2x.png");
@@ -2227,6 +2268,9 @@ table .icon-search:before,
     padding-left: 0 !important; }
   .change-list .filtered .action-counter {
     margin-left: 0 !important; }
+  .change-list #changelist .actions,
+  .change-list #changelist .paginator {
+    margin-right: 0 !important; }
   #changelist-filter-button,
   #changelist-filter {
     display: none !important; }

@@ -14,8 +14,8 @@
         margin-right: 300px !important;
     }
 }
-#changelist {
-    width: auto !important;
+#sitemap {
+    clear: both;
 }
 
 // module
@@ -248,7 +248,7 @@ body.login {
     background-color: #fff;
     background-image: none;
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 9999;
     #branding {
         width: 100%;
         h1 {
@@ -479,113 +479,6 @@ a.addlink {
     }
 }
 
-// changelist
-.change-list {
-    .filtered {
-        min-height: auto;
-        background: none !important;
-        table {
-            border: none;
-        }
-    }
-    #changelist {
-        table {
-            tbody {
-                th,
-                td {
-                    border-color: $background-color-light;
-                    a,
-                    a:link,
-                    a:visited,
-                    a:link:visited {
-                        color: $link-color;
-                    }
-                }
-                tr.selected {
-                    background: $background-color-highlight !important;
-                }
-            }
-        }
-        #toolbar {
-            float: left;
-            height: auto;
-            min-height: 30px;
-            margin: 0 10px 5px 0 !important;
-            border: 0 !important;
-            background: none !important;
-            form label {
-                display: inline-block;
-                font-size: 100%; 
-                min-width: auto;
-                padding: 0;
-            }
-            form #searchbar {
-                max-width: 200px;
-                font-size: 18px;
-                padding: 10px 5px !important;
-                vertical-align: top;
-            }
-        }
-        #changelist-filter {
-            min-height: 100%;
-            border-top-right-radius: $default-border-radius;
-            border-bottom-right-radius: $default-border-radius;
-            background: #fafafa;
-            h2 {
-                color: $font-color-light;
-                padding: 2px 9px; 
-                background: none;
-            }
-            h3 {
-                margin: 5px 0;
-            }
-            ul {
-                font-size: 12px;
-                margin-bottom: 10px;
-                li {
-                    margin-bottom: 2px;
-                }
-                li.selected a {
-                    color: $link-color !important;
-                }
-            }
-        }
-        .actions {
-            padding: 0 3px 10px;
-            border: none;
-            background: none;
-            select {
-                padding: 10px 40px 10px 20px;
-                margin-top: 0;
-                margin-right: 10px;
-                border: 1px solid $button-silver-dark-color;
-                border-radius: $default-border-radius;
-            }
-            label {
-                display: inline-block;
-                text-indent: -999999px;
-                font-size: 14px;
-                margin-top: -12px;
-                margin-left: 0;
-            }
-            button {
-                padding: 10px 15px !important
-            }
-            .action-counter {
-                display: block !important;
-            }
-        }
-        .toplinks {
-            margin-bottom: 5px !important; 
-            border-bottom: none !important;
-            background: none;
-        }
-        .paginator {
-            border: none;
-            background: none;
-        }
-    }
-}
 
 // changeform
 
