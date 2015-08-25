@@ -931,6 +931,7 @@ fieldset table {
       padding: 10px 5px !important;
       vertical-align: top; }
   .change-list #changelist #changelist-filter {
+    top: 31px;
     width: 200px !important;
     min-height: 100%;
     padding-left: 18px;
@@ -940,18 +941,19 @@ fieldset table {
     background-color: #f7f7f7 !important; }
     .change-list #changelist #changelist-filter h2,
     .change-list #changelist #changelist-filter h3 {
-      font-size: 16px;
       margin-bottom: 15px !important;
       padding-left: 0 !important;
       padding-bottom: 10px;
       border-bottom: solid 1px #ebebeb; }
     .change-list #changelist #changelist-filter h2 {
+      font-size: 14px;
       color: #808080;
       font-weight: normal;
       text-transform: uppercase;
       padding: 2px 9px;
       background: none; }
     .change-list #changelist #changelist-filter h3 {
+      font-size: 16px;
       margin: 30px 0 10px !important; }
     .change-list #changelist #changelist-filter ul {
       font-size: 12px;
@@ -1041,8 +1043,8 @@ fieldset table {
   margin-left: 10px;
   background-image: url("../img/icon_search_white@2x.png") !important;
   background-repeat: no-repeat !important;
-  background-position: 8px center !important;
-  background-size: 25px !important; }
+  background-position: 10px center !important;
+  background-size: 23px !important; }
   #changelist-search input[type="submit"],
   #changelist-search input[type="submit"]:visited {
     background-image: none; }
@@ -1063,6 +1065,17 @@ fieldset table {
   margin-bottom: 0; }
   #changelist-search label img {
     visibility: hidden; }
+
+#changelist-filter-button {
+  color: #808080;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 175px;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  background: url("../img/icon_arrow_down.png") no-repeat left center;
+  background-size: 25px;
+  border-left: 0; }
 
 .plugin-holder {
   background: transparent url("../img/pluginlist-holder-bg.png") repeat-y !important; }
