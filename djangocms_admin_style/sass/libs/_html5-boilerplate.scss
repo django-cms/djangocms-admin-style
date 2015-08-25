@@ -13,8 +13,8 @@
 @import "html5-boilerplate/_media.scss";
 
 @mixin html5-boilerplate {
-	@include html5-boilerplate-reset;
-	@include html5-boilerplate-fonts;
-	@include html5-boilerplate-styles;
-	@include html5-boilerplate-helpers;
+    @include html5-boilerplate-reset;
+    @include html5-boilerplate-fonts;
+    @include html5-boilerplate-styles;
+    @include html5-boilerplate-helpers;
 }
