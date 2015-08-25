@@ -37,18 +37,20 @@ table,
     }
 
     .addlink:before {
-      content: "\e000";
+        content: "\e000";
     }
     .changelink:before {
-      content: "\e001";
+        content: "\e001";
     }
     .deletelink:before {
-      content: "\e002";
+        content: "\e002";
     }
-}
-
-.icon-arrow-right:before {
-  content: "\e003";
+    .icon-arrow-right:before {
+        content: "\e003";
+    }
+    .icon-search:before {
+        content: "\e004";
+    }
 }
 
 .addlink,
@@ -102,8 +104,8 @@ table,
         @include button-blue;
         margin-left: 10px;
     }
-    label img {
-        display: none;
+    label {
+        display: none !important;
     }
 }
 

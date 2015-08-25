@@ -308,7 +308,6 @@ div.breadcrumbs {
     background: none !important;
     a {
         color: $link-color;
-        padding-right: 10px;
         &:first-child {
             padding-left: 0;
         }
@@ -440,7 +439,7 @@ a.addlink {
 // object tools
 .object-tools {
     float: right;
-    margin-top: -46px;
+    margin-top: -75px;
     li {
         height: 43px;
         padding-left: 5px;
@@ -521,7 +520,7 @@ a.addlink {
                 padding: 0;
             }
             form #searchbar {
-                max-width: 350px;
+                max-width: 200px;
                 font-size: 18px;
                 padding: 10px 5px !important;
                 vertical-align: top;
@@ -571,6 +570,9 @@ a.addlink {
             }
             button {
                 padding: 10px 15px !important
+            }
+            .action-counter {
+                display: block !important;
             }
         }
         .toplinks {

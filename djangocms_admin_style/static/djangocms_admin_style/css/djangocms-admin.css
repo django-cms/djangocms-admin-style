@@ -879,6 +879,36 @@ fieldset table {
 .filebrowser .module table td {
   line-height: 16px; }
 
+.change-list .filtered .results {
+  margin-right: 220px !important; }
+
+#changelist-filter {
+  width: 200px !important;
+  background-color: transparent !important;
+  border-left: 0; }
+  #changelist-filter h2,
+  #changelist-filter h3 {
+    font-size: 16px;
+    margin-bottom: 15px !important;
+    padding-left: 0 !important;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ebebeb; }
+  #changelist-filter h2 {
+    font-weight: normal;
+    text-transform: uppercase; }
+  #changelist-filter h3 {
+    margin-top: 30px !important; }
+  #changelist-filter ul {
+    margin-left: 0 !important; }
+  #changelist-filter li {
+    font-size: 16px;
+    margin-bottom: 20px !important; }
+    #changelist-filter li.selected {
+      font-weight: bold;
+      border-left: 0 !important;
+      padding-left: 0 !important;
+      margin-left: 0 !important; }
+
 .plugin-holder {
   background: transparent url("../img/pluginlist-holder-bg.png") repeat-y !important; }
   .plugin-holder h2 {
@@ -1232,8 +1262,7 @@ div.breadcrumbs {
   border-bottom: 1px solid #ddd;
   background: none !important; }
   div.breadcrumbs a {
-    color: #4fbef3;
-    padding-right: 10px; }
+    color: #4fbef3; }
     div.breadcrumbs a:first-child {
       padding-left: 0; }
     div.breadcrumbs a:hover {
@@ -1406,7 +1435,7 @@ a.addlink:active {
 
 .object-tools {
   float: right;
-  margin-top: -46px; }
+  margin-top: -75px; }
   .object-tools li {
     height: 43px;
     padding-left: 5px;
@@ -1720,7 +1749,7 @@ a.addlink:active {
     min-width: auto;
     padding: 0; }
   .change-list #changelist #toolbar form #searchbar {
-    max-width: 350px;
+    max-width: 200px;
     font-size: 18px;
     padding: 10px 5px !important;
     vertical-align: top; }
@@ -1762,6 +1791,8 @@ a.addlink:active {
     margin-left: 0; }
   .change-list #changelist .actions button {
     padding: 10px 15px !important; }
+  .change-list #changelist .actions .action-counter {
+    display: block !important; }
 
 .change-list #changelist .toplinks {
   margin-bottom: 5px !important;
@@ -1955,8 +1986,15 @@ table .deletelink:before,
 .object-tools .deletelink:before {
   content: "\e002"; }
 
-.icon-arrow-right:before {
+table .icon-arrow-right:before,
+.actionlist .icon-arrow-right:before,
+.object-tools .icon-arrow-right:before {
   content: "\e003"; }
+
+table .icon-search:before,
+.actionlist .icon-search:before,
+.object-tools .icon-search:before {
+  content: "\e004"; }
 
 .addlink,
 .addlink a {
@@ -2026,8 +2064,8 @@ table .deletelink:before,
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-size: 100% 400%; }
 
-#changelist-search label img {
-  display: none; }
+#changelist-search label {
+  display: none !important; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .tree .changelink {
@@ -2093,6 +2131,8 @@ table .deletelink:before,
     height: auto; }
   #content {
     margin: 160px 10px 0; }
+    #content h1 {
+      margin-left: 0; }
   #container {
     min-width: 240px !important;
     margin: 0; }
@@ -2111,6 +2151,8 @@ table .deletelink:before,
       margin-bottom: 5px;
       margin-left: 5px; }
   div.breadcrumbs {
+    left: 10px;
+    right: 10px;
     padding-left: 5px; }
   .plugin-holder {
     display: none !important; }
@@ -2158,12 +2200,18 @@ table .deletelink:before,
     overflow: hidden;
     float: none;
     margin: 0; }
-  .change-list #toolbar label {
-    display: inline-block; }
-  .change-list #toolbar form #searchbar {
-    width: 120px; }
-  .change-list #toolbar .small {
-    display: block; }
+    .change-list #content .object-tools li {
+      padding-left: 0;
+      margin-left: 0; }
+  .change-list #toolbar {
+    float: none !important;
+    padding-left: 0 !important; }
+    .change-list #toolbar label {
+      display: inline-block; }
+    .change-list #toolbar form #searchbar {
+      max-width: 225px !important; }
+    .change-list #toolbar .small {
+      display: block; }
   .change-list .filtered .results,
   .change-list .change-list .filtered .paginator,
   .change-list .filtered #toolbar,
@@ -2175,6 +2223,10 @@ table .deletelink:before,
   .change-list .filtered .actions,
   .change-list .filtered .paginator {
     margin-right: 0 !important; }
+  .change-list .filtered .actions {
+    padding-left: 0 !important; }
+  .change-list .filtered .action-counter {
+    margin-left: 0 !important; }
   #changelist-filter-button,
   #changelist-filter {
     display: none !important; }

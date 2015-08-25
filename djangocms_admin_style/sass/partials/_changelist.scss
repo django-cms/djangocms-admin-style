@@ -1,0 +1,36 @@
+.change-list .filtered .results {
+    margin-right: 220px !important;
+}
+#changelist-filter {
+    width: 200px !important;
+    background-color: transparent !important;
+    border-left: 0;
+    h2,
+    h3 {
+        font-size: 16px;
+        margin-bottom: 15px !important;
+        padding-left: 0 !important;
+        padding-bottom: 10px;
+        border-bottom: solid 1px $line-color-ultralight;
+    }
+    h2 {
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    h3 {
+        margin-top: 30px !important;
+    }
+    ul {
+        margin-left: 0 !important;
+    }
+    li {
+        font-size: 16px;
+        margin-bottom: 20px !important;
+        &.selected {
+            font-weight: bold;
+            border-left: 0 !important;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+        }
+    }
+}

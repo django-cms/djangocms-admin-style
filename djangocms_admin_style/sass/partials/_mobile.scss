@@ -5,6 +5,9 @@ body {
 }
 #content {
     margin: 160px 10px 0;
+    h1 {
+        margin-left: 0;
+    }
 }
 #container {
     min-width: 240px !important; 
@@ -34,6 +37,8 @@ body {
     }
 }
 div.breadcrumbs {
+    left: 10px;
+    right: 10px;
     padding-left: 5px;
 }
 .plugin-holder {
@@ -115,14 +120,20 @@ body.login {
             overflow: hidden;
             float: none;
             margin: 0;
+            li {
+                padding-left: 0;
+                margin-left: 0;
+            }
         }
     }
     #toolbar {
+        float: none !important;
+        padding-left: 0 !important;
         label {
             display: inline-block;
         }
         form #searchbar {
-            width: 120px;
+            max-width: 225px !important;
         }
         .small {
             display: block;
@@ -142,6 +153,12 @@ body.login {
         .actions,
         .paginator {
             margin-right: 0 !important;
+        }
+        .actions {
+            padding-left: 0 !important;
+        }
+        .action-counter {
+            margin-left: 0 !important;
         }
     }
 }
