@@ -21,7 +21,7 @@
 
 @mixin button-common-init {
     border: 1px solid $button-silver-medium-color !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 30px !important;
@@ -60,17 +60,17 @@
     color: $button-blue-font-color !important;
     border: 1px solid $button-blue-medium-color !important;
     background-color: $button-blue-medium-color !important;
-    background-image: none !important;
+    background-image: none;
     box-shadow: none !important;
     &,
     &:visited {
-        background-image: none !important;
+        background-image: none;
     }
     &:hover,
     &:focus {
         color: $button-blue-font-color !important;
         border: 1px solid $button-blue-light-color !important;
-        background: $button-blue-light-color !important;
+        background-color: $button-blue-light-color !important;
     }
     &:active {
         background: $button-blue-medium-color !important;

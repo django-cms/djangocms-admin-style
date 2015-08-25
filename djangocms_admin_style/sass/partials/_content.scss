@@ -14,14 +14,15 @@
         margin-right: 300px !important;
     }
 }
-#changelist {
-    width: auto !important;
+#sitemap {
+    clear: both;
 }
 
 // module
 .module {
     @include box();
     margin-bottom: 10px;
+    background: none !important;
     h2 {
         color: $font-color;
         font-size: 100%;
@@ -247,6 +248,7 @@ body.login {
     background-color: #fff;
     background-image: none;
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
+    z-index: 9999;
     #branding {
         width: 100%;
         h1 {
@@ -293,16 +295,23 @@ body.login {
     }
 }
 div.breadcrumbs {
-    color: #ddd;
-    padding-bottom: 4px;
-    padding-left: 25px;
-    border-top: 1px solid $line-color-dark;
-    border-bottom: 0;
-    background: $background-color-dark;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    left: 45px;
+    color: $font-color-light !important;
+    font-size: 15px;
+    margin-top: 65px;
+    padding: 20px 10px;
+    border-top: 0;
+    border-bottom: 1px solid $line-color-light;
+    background: none !important;
     a {
-        color: #bbb;
+        color: $link-color;
+        &:first-child {
+            padding-left: 0;
+        }
         &:hover {
-            color: $font-color-ultralight;
             text-decoration: none;
         }
     }
@@ -430,9 +439,9 @@ a.addlink {
 // object tools
 .object-tools {
     float: right;
-    margin-top: -46px;
+    margin-top: -75px;
     li {
-        height: 32px;
+        height: 43px;
         padding-left: 5px;
         list-style: none;
         background: none;
@@ -470,99 +479,6 @@ a.addlink {
     }
 }
 
-// changelist
-.change-list {
-    .filtered {
-        min-height: auto;
-        background-image: none !important;
-        table {
-            border: none;
-        }
-    }
-    #changelist {
-        table {
-            tbody {
-                th,
-                td {
-                    border-color: $background-color-light;
-                    a,
-                    a:link,
-                    a:visited,
-                    a:link:visited {
-                        color: $link-color;
-                    }
-                }
-                tr.selected {
-                    background: $background-color-highlight !important;
-                }
-            }
-        }
-        #toolbar {
-            height: auto;
-            min-height: 30px;
-            margin: 0 0 5px;
-            border: 0 !important;
-            background: none !important;
-            form label {
-                font-size: 100%; 
-                min-width: auto;
-                padding: 0;
-            }
-            form #searchbar {
-                font-size: 100%; 
-                padding: 14px 5px !important;
-                vertical-align: top;
-            }
-        }
-        #changelist-filter {
-            min-height: 100%;
-            border-top-right-radius: $default-border-radius;
-            border-bottom-right-radius: $default-border-radius;
-            background: #fafafa;
-            h2 {
-                color: $font-color-light;
-                padding: 2px 9px; 
-                background: none;
-            }
-            h3 {
-                margin: 5px 0;
-            }
-            ul {
-                font-size: 12px;
-                margin-bottom: 10px;
-                li {
-                    margin-bottom: 2px;
-                }
-                li.selected a {
-                    color: $link-color !important;
-                }
-            }
-        }
-        .actions {
-            padding: 0 3px 10px;
-            border: none;
-            background: none;
-            select {
-                padding: 10px 40px 10px 20px;
-                border: 1px solid $button-silver-dark-color;
-                border-radius: $default-border-radius;
-            }
-            label {
-                font-size: 14px;
-                margin-left: 0;
-            }
-        }
-        .toplinks {
-            margin-bottom: 5px !important; 
-            border-bottom: none !important;
-            background: none;
-        }
-        .paginator {
-            border: none;
-            background: none;
-        }
-    }
-}
 
 // changeform
 
