@@ -1094,6 +1094,9 @@ fieldset table {
 .plugin-editor > iframe {
   min-height: 600px; }
 
+html {
+  position: relative; }
+
 #container {
   position: static;
   width: auto !important;
