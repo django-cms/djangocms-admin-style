@@ -11,15 +11,13 @@ a.active.selector-chooseall,
 .selector-add,
 .inline-group .add-row a,
 a[id^="calendarlink"],
-a[id^="clocklink"]
-{
-	background: none !important;
-	padding-left: 10px;
-	line-height: 10px;
-	&:hover {
-		text-decoration: none !important;
-	}
-	
+a[id^="clocklink"] {
+    line-height: 10px;
+    padding-left: 10px;
+    background: none !important;
+    &:hover {
+        text-decoration: none !important;
+    }
 }
 
 .addlink:before,
@@ -35,58 +33,116 @@ a.active.selector-chooseall:before,
 .inline-group .add-row a:before,
 .add-another:before,
 a[id^="calendarlink"]:before,
-a[id^="clocklink"]:before
-{
-	font-family: 'django-admin-icons';
-	font-style: normal;
-	speak: none;
-	font-weight: normal;
-	font-size: 75%;
-	-webkit-font-smoothing: antialiased;
-	padding-right: 5px;
+a[id^="clocklink"]:before {
+    font-family: "django-admin-icons";
+    font-size: 75%;
+    font-weight: normal;
+    font-style: normal;
+    padding-right: 5px;
+    speak: none;
+
+    -webkit-font-smoothing: antialiased;
 }
 
 
-.addlink:before { content: "\22";  }
-.changelink:before { content: "\21"; }
-#changelist-search label:before { content: "\23"; }
-.deletelink:before { content: "\24"; }
-.selector-remove:before, a.selector-clearall:before, a.active.selector-clearall:before { content: "\25"; font-size: 100%; }
-.selector-add:before, a.selector-chooseall:before, a.active.selector-chooseall:before { content: "\26"; font-size: 100%; }
-.inline-group .add-row a:before { content: "\22";  }
-.add-another:before { content: "\22";  }
-a[id^="calendarlink"]:before { content: "\2c";  }
-a[id^="clocklink"]:before { content: "\2d"; }
+.addlink:before {
+    content: "\22";
+}
+.changelink:before {
+    content: "\21";
+}
+#changelist-search label:before {
+    content: "\23";
+}
+.deletelink:before {
+    content: "\24";
+}
+.selector-remove:before,
+a.selector-clearall:before,
+a.active.selector-clearall:before {
+    content: "\25";
+    font-size: 100%;
+}
+.selector-add:before,
+a.selector-chooseall:before,
+a.active.selector-chooseall:before {
+    content: "\26";
+    font-size: 100%;
+}
+.inline-group .add-row a:before {
+    content: "\22";
+}
+.add-another:before {
+    content: "\22";
+}
+a[id^="calendarlink"]:before {
+    content: "\2c";
+}
+a[id^="clocklink"]:before {
+    content: "\2d";
+}
 
 .actionlist {
-	.addlink, .changelink { padding-left: 0; }
+    .addlink,
+    .changelink {
+        padding-left: 0;
+    }
 }
 
-#changelist-search label { font-weight: bold; }
-#changelist-search label img { display: none;}
-.help-tooltip { display: none; }
-a.active.selector-chooseall {  }
-.selector-remove, .selector-add { display: inline !important; font-size: 125% !important; padding-left: 1px; color: $font-color-white !important; }
-.selector-remove:before, .selector-add:before { color: $font-color; }
-.inline-group .add-row a { color: $success-color !important; padding-left: 5px !important; }
-
-.add-another { 
-	margin-left: 10px; 
-	&:hover, &:link:hover {
-		text-decoration: none;
-	}
+#changelist-search label {
+    font-weight: bold;
 }
-.add-another img { display: none; }
-
-
-a[id^="calendarlink"], a[id^="clocklink"] {
-	display: inline-block;
-	font-size: 19px;
-	height: 19px;
-	width: 19px;
-	padding-left: 0 !important; 
+#changelist-search label img {
+    display: none;
 }
-a[id^="calendarlink"] img, , a[id^="clocklink"] img { display: none;}
+.help-tooltip {
+    display: none;
+}
+
+.selector-remove,
+.selector-add {
+    display: inline !important;
+    color: $font-color-white !important; 
+    font-size: 125% !important;
+    padding-left: 1px;
+}
+.selector-remove:before,
+.selector-add:before {
+    color: $font-color;
+}
+.inline-group .add-row a {
+    color: $success-color !important;
+    padding-left: 5px !important;
+}
+
+.add-another {
+    margin-left: 10px;
+    &:hover,
+    &:link:hover {
+        text-decoration: none;
+    }
+}
+.add-another img {
+    display: none;
+}
+
+
+a[id^="calendarlink"],
+a[id^="clocklink"] {
+    display: inline-block;
+    font-size: 19px;
+    width: 19px;
+    height: 19px;
+    padding-left: 0 !important;
+}
+a[id^="calendarlink"] img,
+a[id^="clocklink"] img {
+    display: none;
+}
 
 /* Sepcials */
-.selector ul.selector-chooser { @include border-radius(10px); background: $background-color-light !important; height: 44px !important; }
+.selector ul.selector-chooser {
+    height: 44px !important; 
+    border-radius: 10px;
+    background: $background-color-light !important;
+}
