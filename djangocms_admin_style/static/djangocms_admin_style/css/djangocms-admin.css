@@ -881,22 +881,33 @@ fieldset table {
 
 .change-list {
   min-height: auto;
-  background: none !important; }
+  background-image: none !important; }
   .change-list table {
     border: none; }
-  .change-list .results {
-    margin-right: 220px !important;
+  .change-list .filtered {
+    background: none !important; }
+  .change-list .results,
+  .change-list #toolbartable {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
   .change-list .paginator {
     font-size: 14px;
-    color: #808080;
-    background-color: #fff !important;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); }
+    color: #808080 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff !important; }
   .change-list #changelist {
     width: auto !important; }
+    .change-list #changelist.filtered .results,
+    .change-list #changelist.filtered .paginator {
+      margin-right: 220px !important; }
+    .change-list #changelist.filtered .paginator {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); }
+    .change-list #changelist #changelist-form {
+      clear: both; }
     .change-list #changelist table tbody th,
     .change-list #changelist table tbody td {
-      padding: 1px 0;
+      white-space: nowrap;
+      padding: 1px 10px;
       border-color: #f1f1f1; }
       .change-list #changelist table tbody th a,
       .change-list #changelist table tbody th a:link,
@@ -1001,46 +1012,63 @@ fieldset table {
       border-bottom: none !important;
       background: none; }
     .change-list #changelist .paginator {
-      margin-right: 220px !important;
       border: none;
       background: none; }
 
-#result_list th,
-#result_list td {
-  font-size: 16px;
-  font-weight: normal;
-  border-left: 0 !important; }
-  #result_list th:first-child,
-  #result_list td:first-child {
-    border-right: 0 !important; }
-
-#result_list thead th {
-  text-transform: uppercase;
-  padding: 10px 0 5px !important;
-  border-color: #ebebeb;
-  background-color: #fff; }
-  #result_list thead th.sorted {
+#result_list,
+#toolbartable {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
+  #result_list th,
+  #result_list td,
+  #toolbartable th,
+  #toolbartable td {
+    font-size: 16px;
+    font-weight: normal;
+    border-left: 0 !important; }
+    #result_list th:first-child,
+    #result_list td:first-child,
+    #toolbartable th:first-child,
+    #toolbartable td:first-child {
+      border-right: 0 !important; }
+  #result_list thead th,
+  #toolbartable thead th {
+    text-transform: uppercase;
+    padding: 10px 10px 5px !important;
+    border-color: #ebebeb;
     background-color: #fff; }
-  #result_list thead th.action-checkbox-column {
-    padding: 0 15px !important; }
-  #result_list thead th .text {
-    float: left;
-    padding-right: 0; }
-  #result_list thead th .sortoptions {
-    float: none;
-    display: inline-block;
-    padding-top: 0; }
+    #result_list thead th.sorted,
+    #toolbartable thead th.sorted {
+      background-color: #fff; }
+    #result_list thead th.action-checkbox-column,
+    #toolbartable thead th.action-checkbox-column {
+      padding: 0 15px !important; }
+    #result_list thead th .text,
+    #toolbartable thead th .text {
+      float: left;
+      padding-right: 0; }
+    #result_list thead th .sortoptions,
+    #toolbartable thead th .sortoptions {
+      float: none;
+      display: inline-block;
+      padding-top: 0; }
+  #result_list thead a,
+  #result_list thead span,
+  #toolbartable thead a,
+  #toolbartable thead span {
+    font-size: 14px;
+    color: #808080;
+    font-weight: normal;
+    padding-left: 0; }
+  #result_list .action-checkbox,
+  #toolbartable .action-checkbox {
+    text-align: left !important;
+    padding: 10px 15px !important; }
 
-#result_list thead a,
-#result_list thead span {
-  font-size: 14px;
-  color: #808080;
-  font-weight: normal;
-  padding-left: 0; }
+#changelist-search input {
+  float: left; }
 
-#result_list .action-checkbox {
-  text-align: left !important;
-  padding: 10px 15px !important; }
+#changelist-search input[type="chekbox"] {
+  display: block; }
 
 #changelist-search input[type="submit"] {
   color: #fff !important;
@@ -1075,6 +1103,14 @@ fieldset table {
   margin-bottom: 0; }
   #changelist-search label img {
     visibility: hidden; }
+
+#toolbartable .paginator {
+  box-shadow: none;
+  background-color: transparent; }
+  #toolbartable .paginator .this-page {
+    font-size: 14px;
+    color: #808080;
+    font-weight: normal; }
 
 #changelist-filter-button {
   color: #808080;
@@ -1588,34 +1624,18 @@ a.addlink:active {
     background-size: 100% 400%; }
 
 #content-main .object-tools .recoverlink {
-  border: 1px solid #d4d4d4 !important;
-  background-color: #fff !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  padding: 10px 15px !important;
-  overflow: visible;
-  color: #6d6d6d !important;
-  font-size: 18px !important;
-  font-weight: normal !important;
-  line-height: 21px !important;
-  text-decoration: none !important;
-  width: auto;
-  border-radius: 3px; }
-  #content-main .object-tools .recoverlink:hover {
-    background: #ededed !important; }
-  #content-main .object-tools .recoverlink.small {
-    padding: 3px 8px 4px !important; }
+  color: #4fbef3 !important;
+  padding: 12px 0 2px 0 !important;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  border-bottom: solid 1px #4fbef3 !important; }
   #content-main .object-tools .recoverlink:hover,
   #content-main .object-tools .recoverlink:active,
-  #content-main .object-tools .recoverlink.select,
-  #content-main .object-tools .recoverlink:visited {
-    color: #6d6d6d;
-    text-decoration: none;
-    background: #ededed; }
-  #content-main .object-tools .recoverlink.animate {
-    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-size: 100% 400%; }
+  #content-main .object-tools .recoverlink:focus {
+    background-color: transparent !important; }
 
 .object-tools {
   float: right;
@@ -1703,35 +1723,6 @@ a.addlink:active {
     .object-tools .addlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-      background-size: 100% 400%; }
-  .object-tools .recoverlink {
-    border: 1px solid #d4d4d4 !important;
-    background-color: #fff !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    padding: 10px 15px !important;
-    overflow: visible;
-    color: #6d6d6d !important;
-    font-size: 18px !important;
-    font-weight: normal !important;
-    line-height: 21px !important;
-    text-decoration: none !important;
-    width: auto;
-    border-radius: 3px; }
-    .object-tools .recoverlink:hover {
-      background: #ededed !important; }
-    .object-tools .recoverlink.small {
-      padding: 3px 8px 4px !important; }
-    .object-tools .recoverlink:hover,
-    .object-tools .recoverlink:active,
-    .object-tools .recoverlink.select,
-    .object-tools .recoverlink:visited {
-      color: #6d6d6d;
-      text-decoration: none;
-      background: #ededed; }
-    .object-tools .recoverlink.animate {
-      background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-      background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .publishlink {
     border: 1px solid #d4d4d4 !important;
