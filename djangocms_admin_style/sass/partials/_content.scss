@@ -21,7 +21,7 @@
 // module
 .module {
     @include box();
-    margin-bottom: 10px;
+    margin-bottom: 45px;
     background: none !important;
     h2 {
         color: $font-color;
@@ -49,6 +49,7 @@
     }
     table {
         margin: 0;
+        padding: 0;
         thead th {
             padding: 20px 10px!important;
         }
@@ -404,7 +405,10 @@ div.breadcrumbs {
                 border-bottom: 1px solid $line-color-ultralight;
             }
             p {
+                color: $font-color-light;
+                font-size: 14px;
                 padding: 0;
+                margin-top: 10px;
             }
         }
     }

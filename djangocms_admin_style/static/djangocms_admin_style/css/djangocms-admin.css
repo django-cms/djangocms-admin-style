@@ -917,6 +917,7 @@ fieldset table {
     float: left;
     height: auto;
     min-height: 30px;
+    padding-left: 0;
     margin: 0 10px 5px 0 !important;
     border: 0 !important;
     background: none !important; }
@@ -1113,7 +1114,7 @@ fieldset table {
   margin-bottom: 5px;
   padding: 0;
   border: none;
-  margin-bottom: 10px;
+  margin-bottom: 45px;
   background: none !important; }
   .module h2,
   .module h3,
@@ -1144,7 +1145,8 @@ fieldset table {
     .module caption a.section:visited {
       color: #808080; }
   .module table {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
     .module table thead th {
       padding: 20px 10px !important; }
     .module table th {
@@ -1509,7 +1511,10 @@ div.breadcrumbs {
       padding: 0 0 13px;
       border-bottom: 1px solid #ebebeb; }
     .dashboard #container #content-related .module p {
-      padding: 0; }
+      color: #808080;
+      font-size: 14px;
+      padding: 0;
+      margin-top: 10px; }
 
 .dashboard #container table tbody tr:hover {
   background: none; }
