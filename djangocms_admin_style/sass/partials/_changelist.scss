@@ -1,20 +1,18 @@
 .change-list {
-    .filtered {
-        min-height: auto;
-        background: none !important;
-        table {
-            border: none;
-        }
-        .results {
-            margin-right: 220px !important;
-            box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
-        }
-        .paginator {
-            font-size: 14px;
-            color: $font-color-light;
-            background-color: #fff !important;
-            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
-        }
+    min-height: auto;
+    background: none !important;
+    table {
+        border: none;
+    }
+    .results {
+        margin-right: 220px !important;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    }
+    .paginator {
+        font-size: 14px;
+        color: $font-color-light;
+        background-color: #fff !important;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
     }
     #changelist {
         width: auto !important;
@@ -22,7 +20,7 @@
             tbody {
                 th,
                 td {
-                    padding: 5px 0;
+                    padding: 1px 0;
                     border-color: $background-color-light;
                     a,
                     a:link,
@@ -42,7 +40,7 @@
                     }
                 }
                 .drag {
-                    padding: 21px 0;
+                    padding: 14px 0;
                     margin: 0 21px;
                     background: url('../img/drag.png');
                 }
@@ -118,7 +116,7 @@
             }
         }
         .actions {
-            padding: 0 3px 10px;
+            padding: 0 3px 10px 0;
             margin-right: 220px !important;
             border: none;
             background: none;
@@ -139,6 +137,7 @@
             }
             .action-counter {
                 display: block !important;
+                margin-left: 0;
             }
         }
         .toplinks {
@@ -195,7 +194,8 @@
         }
     }
     .action-checkbox {
-        padding: 10px !important;
+        text-align: left !important;
+        padding: 10px 15px !important;
     }
 }
 

@@ -35,7 +35,7 @@ body {
 #content {
     width: auto !important;
     min-width: 0 !important;
-    margin: 160px 45px 0;
+    margin: 160px 45px 0 !important;
     &.colMS {
         margin-right: 300px !important;
     }
@@ -523,26 +523,40 @@ a.addlink {
 }
 
 // cms language buttons
+#page_form_lang_tabs {
+   border-bottom: solid 1px $line-color-ultralight;
+}
 #page_form_lang_tabs input {
-    color: $font-color-medium !important;
+    color: $font-color !important;
     font-weight: normal !important;
+    text-transform: uppercase;
+    font-size: 14px !important;
     margin: 0;
+    padding: 10px 20px !important;
     border: none !important;
-    background: #ccc !important;
+    border-radius: 0 !important;
+    background: transparent !important;
     box-shadow: none !important;
-
-    border-bottom-radius: 0;
     &:hover,
     &:focus {
         color: black !important;
+        background-color: #fff !important;
+        border-bottom: solid 3px #fff !important;
     }
     &.selected {
-        color: black !important; 
-        background: white !important;
+        color: $link-color !important;
+        background: transparent !important;
+        border-bottom: solid 3px $link-color !important;
     }
     &.notfilled {
-        color: #bbb !important; 
-        background: $background-color-light !important;
+        color: $font-color-light !important;
+        background: transparent !important;
+        &:hover,
+        &:focus {
+            color: black !important;
+            background-color: #fff !important;
+            border-bottom: solid 3px #fff !important;
+        }
     }
 }
 #lang_tab_content h2.header {
