@@ -1,28 +1,43 @@
 .change-list {
+    min-height: auto;
+    background-image: none !important;
+    table {
+        border: none;
+    }
     .filtered {
-        min-height: auto;
         background: none !important;
-        table {
-            border: none;
-        }
-        .results {
-            margin-right: 220px !important;
-            box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
-        }
-        .paginator {
-            font-size: 14px;
-            color: $font-color-light;
-            background-color: #fff !important;
-            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
-        }
+    }
+    .results,
+    #toolbartable {
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    }
+    .paginator {
+        font-size: 14px;
+        color: $font-color-light !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #fff !important;
     }
     #changelist {
         width: auto !important;
+        &.filtered {
+            .results,
+            .paginator {
+                margin-right: 220px !important;
+            }
+            .paginator {
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+        #changelist-form {
+            clear: both;
+        }
         table {
             tbody {
                 th,
                 td {
-                    padding-left: 0;
+                    white-space: nowrap;
+                    padding: 1px 10px;
                     border-color: $background-color-light;
                     a,
                     a:link,
@@ -32,10 +47,19 @@
                     }
                 }
                 tr.selected {
+                    color: $background-color-highlighter;
                     background: $background-color-highlight !important;
                     a {
                         color: $background-color-highlighter;
                     }
+                    .drag {
+                        background: url('../img/drag-light.png');
+                    }
+                }
+                .drag {
+                    padding: 14px 0;
+                    margin: 0 21px;
+                    background: url('../img/drag.png');
                 }
             }
         }
@@ -44,6 +68,7 @@
             float: left;
             height: auto;
             min-height: 30px;
+            padding-left: 0;
             margin: 0 10px 5px 0 !important;
             border: 0 !important;
             background: none !important;
@@ -108,7 +133,7 @@
             }
         }
         .actions {
-            padding: 0 3px 10px;
+            padding: 0 3px 10px 0;
             margin-right: 220px !important;
             border: none;
             background: none;
@@ -129,6 +154,7 @@
             }
             .action-counter {
                 display: block !important;
+                margin-left: 0;
             }
         }
         .toplinks {
@@ -137,14 +163,15 @@
             background: none;
         }
         .paginator {
-            margin-right: 220px !important;
             border: none;
             background: none;
         }
     }
 }
 
-#result_list {
+#result_list,
+#toolbartable {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
     th,
     td {
         font-size: 16px;
@@ -157,7 +184,7 @@
     thead {
         th {
             text-transform: uppercase;
-            padding: 10px 0 5px !important;
+            padding: 10px 10px 5px !important;
             border-color: $line-color-ultralight;
             background-color: #fff;
             &.sorted {
@@ -176,7 +203,8 @@
                 padding-top: 0;
             }
         }
-        a {
+        a,
+        span {
             font-size: 14px;
             color: $font-color-light;
             font-weight: normal;
@@ -184,11 +212,17 @@
         }
     }
     .action-checkbox {
-        padding: 10px !important;
+        text-align: left !important;
+        padding: 10px 15px !important;
     }
 }
-
 #changelist-search {
+    input {
+        float: left;
+    }
+    input[type="chekbox"] {
+        display: block;
+    }
     input[type="submit"] {
         @include button-blue;
         text-indent: -9999px;
@@ -205,6 +239,15 @@
         img {
             visibility: hidden;
         }
+    }
+}
+#toolbartable .paginator {
+    box-shadow: none;
+    background-color: transparent;
+    .this-page {
+        font-size: 14px;
+        color: $font-color-light;
+        font-weight: normal;
     }
 }
 

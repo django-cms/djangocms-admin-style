@@ -1,15 +1,41 @@
-
+html {
+    position: relative;
+}
 // containers
-#container {
-    position: static;
-    width: auto !important;
-    min-width: 0 !important;
-    padding-top: 0 !important;
+body {
+    #container {
+        position: static;
+        width: auto !important;
+        min-width: 0 !important;
+        padding-top: 0 !important;
+        .breadcrumbs {
+            position: absolute;
+            top: 0;
+            right: 45px;
+            left: 45px;
+            color: $font-color-light !important;
+            font-size: 15px;
+            margin-top: 65px;
+            padding: 20px 10px;
+            border-top: 0;
+            border-bottom: 1px solid $line-color-light;
+            background: transparent !important;
+            a {
+                color: $link-color;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 #content {
     width: auto !important;
     min-width: 0 !important;
-    margin: 160px 45px 0;
+    margin: 160px 45px 0 !important;
     &.colMS {
         margin-right: 300px !important;
     }
@@ -21,7 +47,7 @@
 // module
 .module {
     @include box();
-    margin-bottom: 10px;
+    margin-bottom: 45px;
     background: none !important;
     h2 {
         color: $font-color;
@@ -49,6 +75,7 @@
     }
     table {
         margin: 0;
+        padding: 0;
         thead th {
             padding: 20px 10px!important;
         }
@@ -294,28 +321,6 @@ body.login {
         padding: 17px 0 17px 15px;
     }
 }
-div.breadcrumbs {
-    position: absolute;
-    top: 0;
-    right: 45px;
-    left: 45px;
-    color: $font-color-light !important;
-    font-size: 15px;
-    margin-top: 65px;
-    padding: 20px 10px;
-    border-top: 0;
-    border-bottom: 1px solid $line-color-light;
-    background: none !important;
-    a {
-        color: $link-color;
-        &:first-child {
-            padding-left: 0;
-        }
-        &:hover {
-            text-decoration: none;
-        }
-    }
-}
 
 // dashboard
 .dashboard #container {
@@ -404,7 +409,10 @@ div.breadcrumbs {
                 border-bottom: 1px solid $line-color-ultralight;
             }
             p {
+                color: $font-color-light;
+                font-size: 14px;
                 padding: 0;
+                margin-top: 10px;
             }
         }
     }
@@ -432,7 +440,19 @@ a.addlink {
         @include button-green();
     }
     .recoverlink {
-        @include button-common();
+        color: $link-color !important;
+        padding: 12px 0 2px 0 !important;
+        margin-bottom: 8px;
+        margin-right: 10px;
+        background-color: transparent !important;
+        border-radius: 0 !important;
+        border: 0 !important;
+        border-bottom: solid 1px $primary-color !important;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: transparent !important;
+        }
     }
 }
 
@@ -457,9 +477,6 @@ a.addlink {
         @include button-green();
         color: $button-green-font-color !important;
         padding: 10px 30px !important;
-    }
-    .recoverlink {
-        @include button-common();
     }
     .publishlink {
         @include button-common();
@@ -515,30 +532,44 @@ a.addlink {
 }
 
 // cms language buttons
+#page_form_lang_tabs {
+   border-bottom: solid 1px $line-color-ultralight;
+}
 #page_form_lang_tabs input {
-    color: $font-color-medium !important;
+    color: $font-color !important;
     font-weight: normal !important;
+    text-transform: uppercase;
+    font-size: 14px !important;
     margin: 0;
+    padding: 10px 20px !important;
     border: none !important;
-    background: #ccc !important;
+    border-radius: 0 !important;
+    background: transparent !important;
     box-shadow: none !important;
-
-    border-bottom-radius: 0;
     &:hover,
     &:focus {
         color: black !important;
+        background-color: #fff !important;
+        border-bottom: solid 3px #fff !important;
     }
     &.selected {
-        color: black !important; 
-        background: white !important;
+        color: $link-color !important;
+        background: transparent !important;
+        border-bottom: solid 3px $link-color !important;
     }
     &.notfilled {
-        color: #bbb !important; 
-        background: $background-color-light !important;
+        color: $font-color-light !important;
+        background: transparent !important;
+        &:hover,
+        &:focus {
+            color: black !important;
+            background-color: #fff !important;
+            border-bottom: solid 3px #fff !important;
+        }
     }
 }
 #lang_tab_content h2.header {
-    position: relative; 
+    position: relative;
     margin-bottom: -3px !important;
     border-top-right-radius: $default-border-radius;
     background: $button-blue-light-color !important;
@@ -573,7 +604,7 @@ a.addlink {
         }
         .deletelink {
             display: inline;
-            right: -3px !important; 
+            right: -3px !important;
             bottom: 0 !important;
             margin: 0;
             padding: 0 0 0 12px !important;
@@ -581,7 +612,7 @@ a.addlink {
         }
     }
     > .empty {
-        color: $font-color-light; 
+        color: $font-color-light;
         opacity: 1 !important;
         background: $background-color-light;
     }
@@ -602,7 +633,7 @@ a.addlink {
         padding: 4px 10px !important;
     }
     > .current {
-        padding-right: 20px !important; 
+        padding-right: 20px !important;
         padding-left: 20px !important;
     }
     > .available {

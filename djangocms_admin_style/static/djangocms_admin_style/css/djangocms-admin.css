@@ -314,7 +314,7 @@ a.btn {
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 10px 30px !important;
+  padding: 10px 15px !important;
   border-radius: 3px; }
   a.btn:hover {
     background: #ededed !important; }
@@ -602,7 +602,7 @@ button {
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 10px 30px !important;
+  padding: 10px 15px !important;
   overflow: visible;
   color: #6d6d6d !important;
   font-size: 18px !important;
@@ -633,7 +633,7 @@ input[type="button"] {
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 10px 30px !important;
+  padding: 10px 15px !important;
   overflow: visible;
   color: #6d6d6d !important;
   font-size: 18px !important;
@@ -698,7 +698,7 @@ a.button {
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 10px 30px !important;
+  padding: 10px 15px !important;
   overflow: visible;
   color: #6d6d6d !important;
   font-size: 18px !important;
@@ -879,158 +879,196 @@ fieldset table {
 .filebrowser .module table td {
   line-height: 16px; }
 
-.change-list .filtered {
+.change-list {
   min-height: auto;
-  background: none !important; }
-  .change-list .filtered table {
+  background-image: none !important; }
+  .change-list table {
     border: none; }
-  .change-list .filtered .results {
-    margin-right: 220px !important;
+  .change-list .filtered {
+    background: none !important; }
+  .change-list .results,
+  .change-list #toolbartable {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
-  .change-list .filtered .paginator {
+  .change-list .paginator {
+    font-size: 14px;
+    color: #808080 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff !important; }
+  .change-list #changelist {
+    width: auto !important; }
+    .change-list #changelist.filtered .results,
+    .change-list #changelist.filtered .paginator {
+      margin-right: 220px !important; }
+    .change-list #changelist.filtered .paginator {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); }
+    .change-list #changelist #changelist-form {
+      clear: both; }
+    .change-list #changelist table tbody th,
+    .change-list #changelist table tbody td {
+      white-space: nowrap;
+      padding: 1px 10px;
+      border-color: #f1f1f1; }
+      .change-list #changelist table tbody th a,
+      .change-list #changelist table tbody th a:link,
+      .change-list #changelist table tbody th a:visited,
+      .change-list #changelist table tbody th a:link:visited,
+      .change-list #changelist table tbody td a,
+      .change-list #changelist table tbody td a:link,
+      .change-list #changelist table tbody td a:visited,
+      .change-list #changelist table tbody td a:link:visited {
+        color: #4fbef3; }
+    .change-list #changelist table tbody tr.selected {
+      color: #f1faff;
+      background: #4fbef3 !important; }
+      .change-list #changelist table tbody tr.selected a {
+        color: #f1faff; }
+      .change-list #changelist table tbody tr.selected .drag {
+        background: url("../img/drag-light.png"); }
+    .change-list #changelist table tbody .drag {
+      padding: 14px 0;
+      margin: 0 21px;
+      background: url("../img/drag.png"); }
+    .change-list #changelist #toolbar {
+      overflow: hidden;
+      float: left;
+      height: auto;
+      min-height: 30px;
+      padding-left: 0;
+      margin: 0 10px 5px 0 !important;
+      border: 0 !important;
+      background: none !important; }
+      .change-list #changelist #toolbar form label {
+        display: inline-block;
+        font-size: 100%;
+        min-width: auto;
+        padding: 0; }
+      .change-list #changelist #toolbar form #searchbar {
+        max-width: 200px;
+        font-size: 18px;
+        padding: 10px 5px !important;
+        vertical-align: top; }
+    .change-list #changelist #changelist-filter {
+      top: 31px;
+      width: 200px !important;
+      min-height: 100%;
+      padding-left: 18px;
+      border-left: 0;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-color: #f7f7f7 !important; }
+      .change-list #changelist #changelist-filter h2,
+      .change-list #changelist #changelist-filter h3 {
+        margin-bottom: 15px !important;
+        padding-left: 0 !important;
+        padding-bottom: 10px;
+        border-bottom: solid 1px #ebebeb; }
+      .change-list #changelist #changelist-filter h2 {
+        font-size: 14px;
+        color: #808080;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding: 2px 9px;
+        background: none; }
+      .change-list #changelist #changelist-filter h3 {
+        font-size: 16px;
+        margin: 30px 0 10px !important; }
+      .change-list #changelist #changelist-filter ul {
+        font-size: 12px;
+        margin-left: 0 !important;
+        margin-bottom: 10px; }
+      .change-list #changelist #changelist-filter li {
+        font-size: 16px;
+        margin-bottom: 20px; }
+        .change-list #changelist #changelist-filter li.selected {
+          font-weight: bold;
+          border-left: 0 !important;
+          padding-left: 0 !important;
+          margin-left: 0 !important; }
+          .change-list #changelist #changelist-filter li.selected a {
+            color: #4fbef3 !important; }
+    .change-list #changelist .actions {
+      padding: 0 3px 10px 0;
+      margin-right: 220px !important;
+      border: none;
+      background: none; }
+      .change-list #changelist .actions select {
+        padding: 10px 40px 10px 20px;
+        margin-top: 5px;
+        margin-right: 10px;
+        border: 1px solid #d4d4d4;
+        border-radius: 3px; }
+      .change-list #changelist .actions label {
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 0; }
+      .change-list #changelist .actions button {
+        padding: 10px 15px !important; }
+      .change-list #changelist .actions .action-counter {
+        display: block !important;
+        margin-left: 0; }
+    .change-list #changelist .toplinks {
+      margin-bottom: 5px !important;
+      border-bottom: none !important;
+      background: none; }
+    .change-list #changelist .paginator {
+      border: none;
+      background: none; }
+
+#result_list,
+#toolbartable {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
+  #result_list th,
+  #result_list td,
+  #toolbartable th,
+  #toolbartable td {
+    font-size: 16px;
+    font-weight: normal;
+    border-left: 0 !important; }
+    #result_list th:first-child,
+    #result_list td:first-child,
+    #toolbartable th:first-child,
+    #toolbartable td:first-child {
+      border-right: 0 !important; }
+  #result_list thead th,
+  #toolbartable thead th {
+    text-transform: uppercase;
+    padding: 10px 10px 5px !important;
+    border-color: #ebebeb;
+    background-color: #fff; }
+    #result_list thead th.sorted,
+    #toolbartable thead th.sorted {
+      background-color: #fff; }
+    #result_list thead th.action-checkbox-column,
+    #toolbartable thead th.action-checkbox-column {
+      padding: 0 15px !important; }
+    #result_list thead th .text,
+    #toolbartable thead th .text {
+      float: left;
+      padding-right: 0; }
+    #result_list thead th .sortoptions,
+    #toolbartable thead th .sortoptions {
+      float: none;
+      display: inline-block;
+      padding-top: 0; }
+  #result_list thead a,
+  #result_list thead span,
+  #toolbartable thead a,
+  #toolbartable thead span {
     font-size: 14px;
     color: #808080;
-    background-color: #fff !important;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); }
+    font-weight: normal;
+    padding-left: 0; }
+  #result_list .action-checkbox,
+  #toolbartable .action-checkbox {
+    text-align: left !important;
+    padding: 10px 15px !important; }
 
-.change-list #changelist {
-  width: auto !important; }
-  .change-list #changelist table tbody th,
-  .change-list #changelist table tbody td {
-    padding-left: 0;
-    border-color: #f1f1f1; }
-    .change-list #changelist table tbody th a,
-    .change-list #changelist table tbody th a:link,
-    .change-list #changelist table tbody th a:visited,
-    .change-list #changelist table tbody th a:link:visited,
-    .change-list #changelist table tbody td a,
-    .change-list #changelist table tbody td a:link,
-    .change-list #changelist table tbody td a:visited,
-    .change-list #changelist table tbody td a:link:visited {
-      color: #4fbef3; }
-  .change-list #changelist table tbody tr.selected {
-    background: #4fbef3 !important; }
-    .change-list #changelist table tbody tr.selected a {
-      color: #f1faff; }
-  .change-list #changelist #toolbar {
-    overflow: hidden;
-    float: left;
-    height: auto;
-    min-height: 30px;
-    margin: 0 10px 5px 0 !important;
-    border: 0 !important;
-    background: none !important; }
-    .change-list #changelist #toolbar form label {
-      display: inline-block;
-      font-size: 100%;
-      min-width: auto;
-      padding: 0; }
-    .change-list #changelist #toolbar form #searchbar {
-      max-width: 200px;
-      font-size: 18px;
-      padding: 10px 5px !important;
-      vertical-align: top; }
-  .change-list #changelist #changelist-filter {
-    top: 31px;
-    width: 200px !important;
-    min-height: 100%;
-    padding-left: 18px;
-    border-left: 0;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-color: #f7f7f7 !important; }
-    .change-list #changelist #changelist-filter h2,
-    .change-list #changelist #changelist-filter h3 {
-      margin-bottom: 15px !important;
-      padding-left: 0 !important;
-      padding-bottom: 10px;
-      border-bottom: solid 1px #ebebeb; }
-    .change-list #changelist #changelist-filter h2 {
-      font-size: 14px;
-      color: #808080;
-      font-weight: normal;
-      text-transform: uppercase;
-      padding: 2px 9px;
-      background: none; }
-    .change-list #changelist #changelist-filter h3 {
-      font-size: 16px;
-      margin: 30px 0 10px !important; }
-    .change-list #changelist #changelist-filter ul {
-      font-size: 12px;
-      margin-left: 0 !important;
-      margin-bottom: 10px; }
-    .change-list #changelist #changelist-filter li {
-      font-size: 16px;
-      margin-bottom: 20px; }
-      .change-list #changelist #changelist-filter li.selected {
-        font-weight: bold;
-        border-left: 0 !important;
-        padding-left: 0 !important;
-        margin-left: 0 !important; }
-        .change-list #changelist #changelist-filter li.selected a {
-          color: #4fbef3 !important; }
-  .change-list #changelist .actions {
-    padding: 0 3px 10px;
-    margin-right: 220px !important;
-    border: none;
-    background: none; }
-    .change-list #changelist .actions select {
-      padding: 10px 40px 10px 20px;
-      margin-top: 5px;
-      margin-right: 10px;
-      border: 1px solid #d4d4d4;
-      border-radius: 3px; }
-    .change-list #changelist .actions label {
-      display: inline-block;
-      font-size: 14px;
-      margin-left: 0; }
-    .change-list #changelist .actions button {
-      padding: 10px 15px !important; }
-    .change-list #changelist .actions .action-counter {
-      display: block !important; }
-  .change-list #changelist .toplinks {
-    margin-bottom: 5px !important;
-    border-bottom: none !important;
-    background: none; }
-  .change-list #changelist .paginator {
-    margin-right: 220px !important;
-    border: none;
-    background: none; }
+#changelist-search input {
+  float: left; }
 
-#result_list th,
-#result_list td {
-  font-size: 16px;
-  font-weight: normal;
-  border-left: 0 !important; }
-  #result_list th:first-child,
-  #result_list td:first-child {
-    border-right: 0 !important; }
-
-#result_list thead th {
-  text-transform: uppercase;
-  padding: 10px 0 5px !important;
-  border-color: #ebebeb;
-  background-color: #fff; }
-  #result_list thead th.sorted {
-    background-color: #fff; }
-  #result_list thead th.action-checkbox-column {
-    padding: 0 15px !important; }
-  #result_list thead th .text {
-    float: left;
-    padding-right: 0; }
-  #result_list thead th .sortoptions {
-    float: none;
-    display: inline-block;
-    padding-top: 0; }
-
-#result_list thead a {
-  font-size: 14px;
-  color: #808080;
-  font-weight: normal;
-  padding-left: 0; }
-
-#result_list .action-checkbox {
-  padding: 10px !important; }
+#changelist-search input[type="chekbox"] {
+  display: block; }
 
 #changelist-search input[type="submit"] {
   color: #fff !important;
@@ -1066,6 +1104,14 @@ fieldset table {
   #changelist-search label img {
     visibility: hidden; }
 
+#toolbartable .paginator {
+  box-shadow: none;
+  background-color: transparent; }
+  #toolbartable .paginator .this-page {
+    font-size: 14px;
+    color: #808080;
+    font-weight: normal; }
+
 #changelist-filter-button {
   color: #808080;
   text-transform: uppercase;
@@ -1093,16 +1139,37 @@ fieldset table {
 .plugin-editor > iframe {
   min-height: 600px; }
 
-#container {
+html {
+  position: relative; }
+
+body #container {
   position: static;
   width: auto !important;
   min-width: 0 !important;
   padding-top: 0 !important; }
+  body #container .breadcrumbs {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    left: 45px;
+    color: #808080 !important;
+    font-size: 15px;
+    margin-top: 65px;
+    padding: 20px 10px;
+    border-top: 0;
+    border-bottom: 1px solid #ddd;
+    background: transparent !important; }
+    body #container .breadcrumbs a {
+      color: #4fbef3; }
+      body #container .breadcrumbs a:first-child {
+        padding-left: 0; }
+      body #container .breadcrumbs a:hover {
+        text-decoration: none; }
 
 #content {
   width: auto !important;
   min-width: 0 !important;
-  margin: 160px 45px 0; }
+  margin: 160px 45px 0 !important; }
   #content.colMS {
     margin-right: 300px !important; }
 
@@ -1113,7 +1180,7 @@ fieldset table {
   margin-bottom: 5px;
   padding: 0;
   border: none;
-  margin-bottom: 10px;
+  margin-bottom: 45px;
   background: none !important; }
   .module h2,
   .module h3,
@@ -1144,7 +1211,8 @@ fieldset table {
     .module caption a.section:visited {
       color: #808080; }
   .module table {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
     .module table thead th {
       padding: 20px 10px !important; }
     .module table th {
@@ -1224,7 +1292,7 @@ fieldset table {
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 10px 30px !important;
+    padding: 10px 15px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1417,25 +1485,6 @@ body.login {
     margin-right: 40px;
     padding: 17px 0 17px 15px; }
 
-div.breadcrumbs {
-  position: absolute;
-  top: 0;
-  right: 45px;
-  left: 45px;
-  color: #808080 !important;
-  font-size: 15px;
-  margin-top: 65px;
-  padding: 20px 10px;
-  border-top: 0;
-  border-bottom: 1px solid #ddd;
-  background: none !important; }
-  div.breadcrumbs a {
-    color: #4fbef3; }
-    div.breadcrumbs a:first-child {
-      padding-left: 0; }
-    div.breadcrumbs a:hover {
-      text-decoration: none; }
-
 .dashboard #container #content-main {
   min-width: 400px;
   max-width: 900px;
@@ -1509,7 +1558,10 @@ div.breadcrumbs {
       padding: 0 0 13px;
       border-bottom: 1px solid #ebebeb; }
     .dashboard #container #content-related .module p {
-      padding: 0; }
+      color: #808080;
+      font-size: 14px;
+      padding: 0;
+      margin-top: 10px; }
 
 .dashboard #container table tbody tr:hover {
   background: none; }
@@ -1529,7 +1581,7 @@ a.addlink:active {
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
-  padding: 10px 30px !important;
+  padding: 10px 15px !important;
   overflow: visible;
   color: #6d6d6d !important;
   font-size: 18px !important;
@@ -1572,34 +1624,18 @@ a.addlink:active {
     background-size: 100% 400%; }
 
 #content-main .object-tools .recoverlink {
-  border: 1px solid #d4d4d4 !important;
-  background-color: #fff !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  padding: 10px 30px !important;
-  overflow: visible;
-  color: #6d6d6d !important;
-  font-size: 18px !important;
-  font-weight: normal !important;
-  line-height: 21px !important;
-  text-decoration: none !important;
-  width: auto;
-  border-radius: 3px; }
-  #content-main .object-tools .recoverlink:hover {
-    background: #ededed !important; }
-  #content-main .object-tools .recoverlink.small {
-    padding: 3px 8px 4px !important; }
+  color: #4fbef3 !important;
+  padding: 12px 0 2px 0 !important;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  border-bottom: solid 1px #4fbef3 !important; }
   #content-main .object-tools .recoverlink:hover,
   #content-main .object-tools .recoverlink:active,
-  #content-main .object-tools .recoverlink.select,
-  #content-main .object-tools .recoverlink:visited {
-    color: #6d6d6d;
-    text-decoration: none;
-    background: #ededed; }
-  #content-main .object-tools .recoverlink.animate {
-    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-    background-size: 100% 400%; }
+  #content-main .object-tools .recoverlink:focus {
+    background-color: transparent !important; }
 
 .object-tools {
   float: right;
@@ -1616,7 +1652,7 @@ a.addlink:active {
       background-color: #fff !important;
       background-image: none !important;
       box-shadow: none !important;
-      padding: 10px 30px !important;
+      padding: 10px 15px !important;
       overflow: visible;
       color: #6d6d6d !important;
       font-size: 18px !important;
@@ -1645,7 +1681,7 @@ a.addlink:active {
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 10px 30px !important;
+    padding: 10px 15px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1688,41 +1724,12 @@ a.addlink:active {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
-  .object-tools .recoverlink {
-    border: 1px solid #d4d4d4 !important;
-    background-color: #fff !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    padding: 10px 30px !important;
-    overflow: visible;
-    color: #6d6d6d !important;
-    font-size: 18px !important;
-    font-weight: normal !important;
-    line-height: 21px !important;
-    text-decoration: none !important;
-    width: auto;
-    border-radius: 3px; }
-    .object-tools .recoverlink:hover {
-      background: #ededed !important; }
-    .object-tools .recoverlink.small {
-      padding: 3px 8px 4px !important; }
-    .object-tools .recoverlink:hover,
-    .object-tools .recoverlink:active,
-    .object-tools .recoverlink.select,
-    .object-tools .recoverlink:visited {
-      color: #6d6d6d;
-      text-decoration: none;
-      background: #ededed; }
-    .object-tools .recoverlink.animate {
-      background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-      background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-      background-size: 100% 400%; }
   .object-tools .publishlink {
     border: 1px solid #d4d4d4 !important;
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 10px 30px !important;
+    padding: 10px 15px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1751,7 +1758,7 @@ a.addlink:active {
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 10px 30px !important;
+    padding: 10px 15px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1780,7 +1787,7 @@ a.addlink:active {
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 10px 30px !important;
+    padding: 10px 15px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1809,7 +1816,7 @@ a.addlink:active {
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 10px 30px !important;
+    padding: 10px 15px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1838,7 +1845,7 @@ a.addlink:active {
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
-    padding: 10px 30px !important;
+    padding: 10px 15px !important;
     overflow: visible;
     color: #6d6d6d !important;
     font-size: 18px !important;
@@ -1928,23 +1935,37 @@ a.addlink:active {
   line-height: 16px !important;
   margin: 6px 0 0 15px !important; }
 
+#page_form_lang_tabs {
+  border-bottom: solid 1px #ebebeb; }
+
 #page_form_lang_tabs input {
-  color: #1a1a1a !important;
+  color: #333 !important;
   font-weight: normal !important;
+  text-transform: uppercase;
+  font-size: 14px !important;
   margin: 0;
+  padding: 10px 20px !important;
   border: none !important;
-  background: #ccc !important;
-  box-shadow: none !important;
-  border-bottom-radius: 0; }
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important; }
   #page_form_lang_tabs input:hover,
   #page_form_lang_tabs input:focus {
-    color: black !important; }
-  #page_form_lang_tabs input.selected {
     color: black !important;
-    background: white !important; }
+    background-color: #fff !important;
+    border-bottom: solid 3px #fff !important; }
+  #page_form_lang_tabs input.selected {
+    color: #4fbef3 !important;
+    background: transparent !important;
+    border-bottom: solid 3px #4fbef3 !important; }
   #page_form_lang_tabs input.notfilled {
-    color: #bbb !important;
-    background: #f1f1f1 !important; }
+    color: #808080 !important;
+    background: transparent !important; }
+    #page_form_lang_tabs input.notfilled:hover,
+    #page_form_lang_tabs input.notfilled:focus {
+      color: black !important;
+      background-color: #fff !important;
+      border-bottom: solid 3px #fff !important; }
 
 #lang_tab_content h2.header {
   position: relative;
