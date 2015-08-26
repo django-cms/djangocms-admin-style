@@ -2,11 +2,35 @@ html {
     position: relative;
 }
 // containers
-#container {
-    position: static;
-    width: auto !important;
-    min-width: 0 !important;
-    padding-top: 0 !important;
+body {
+    #container {
+        position: static;
+        width: auto !important;
+        min-width: 0 !important;
+        padding-top: 0 !important;
+        .breadcrumbs {
+            position: absolute;
+            top: 0;
+            right: 45px;
+            left: 45px;
+            color: $font-color-light !important;
+            font-size: 15px;
+            margin-top: 65px;
+            padding: 20px 10px;
+            border-top: 0;
+            border-bottom: 1px solid $line-color-light;
+            background: transparent !important;
+            a {
+                color: $link-color;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 #content {
     width: auto !important;
@@ -295,28 +319,6 @@ body.login {
         float: left;
         margin-right: 40px;
         padding: 17px 0 17px 15px;
-    }
-}
-div.breadcrumbs {
-    position: absolute;
-    top: 0;
-    right: 45px;
-    left: 45px;
-    color: $font-color-light !important;
-    font-size: 15px;
-    margin-top: 65px;
-    padding: 20px 10px;
-    border-top: 0;
-    border-bottom: 1px solid $line-color-light;
-    background: none !important;
-    a {
-        color: $link-color;
-        &:first-child {
-            padding-left: 0;
-        }
-        &:hover {
-            text-decoration: none;
-        }
     }
 }
 

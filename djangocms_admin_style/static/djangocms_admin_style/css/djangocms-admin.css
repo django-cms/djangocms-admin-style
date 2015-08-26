@@ -897,7 +897,7 @@ fieldset table {
   width: auto !important; }
   .change-list #changelist table tbody th,
   .change-list #changelist table tbody td {
-    padding-left: 0;
+    padding: 5px 0;
     border-color: #f1f1f1; }
     .change-list #changelist table tbody th a,
     .change-list #changelist table tbody th a:link,
@@ -909,9 +909,16 @@ fieldset table {
     .change-list #changelist table tbody td a:link:visited {
       color: #4fbef3; }
   .change-list #changelist table tbody tr.selected {
+    color: #f1faff;
     background: #4fbef3 !important; }
     .change-list #changelist table tbody tr.selected a {
       color: #f1faff; }
+    .change-list #changelist table tbody tr.selected .drag {
+      background: url("../img/drag-light.png"); }
+  .change-list #changelist table tbody .drag {
+    padding: 21px 0;
+    margin: 0 21px;
+    background: url("../img/drag.png"); }
   .change-list #changelist #toolbar {
     overflow: hidden;
     float: left;
@@ -1024,7 +1031,8 @@ fieldset table {
     display: inline-block;
     padding-top: 0; }
 
-#result_list thead a {
+#result_list thead a,
+#result_list thead span {
   font-size: 14px;
   color: #808080;
   font-weight: normal;
@@ -1097,11 +1105,29 @@ fieldset table {
 html {
   position: relative; }
 
-#container {
+body #container {
   position: static;
   width: auto !important;
   min-width: 0 !important;
   padding-top: 0 !important; }
+  body #container .breadcrumbs {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    left: 45px;
+    color: #808080 !important;
+    font-size: 15px;
+    margin-top: 65px;
+    padding: 20px 10px;
+    border-top: 0;
+    border-bottom: 1px solid #ddd;
+    background: transparent !important; }
+    body #container .breadcrumbs a {
+      color: #4fbef3; }
+      body #container .breadcrumbs a:first-child {
+        padding-left: 0; }
+      body #container .breadcrumbs a:hover {
+        text-decoration: none; }
 
 #content {
   width: auto !important;
@@ -1421,25 +1447,6 @@ body.login {
     float: left;
     margin-right: 40px;
     padding: 17px 0 17px 15px; }
-
-div.breadcrumbs {
-  position: absolute;
-  top: 0;
-  right: 45px;
-  left: 45px;
-  color: #808080 !important;
-  font-size: 15px;
-  margin-top: 65px;
-  padding: 20px 10px;
-  border-top: 0;
-  border-bottom: 1px solid #ddd;
-  background: none !important; }
-  div.breadcrumbs a {
-    color: #4fbef3; }
-    div.breadcrumbs a:first-child {
-      padding-left: 0; }
-    div.breadcrumbs a:hover {
-      text-decoration: none; }
 
 .dashboard #container #content-main {
   min-width: 400px;

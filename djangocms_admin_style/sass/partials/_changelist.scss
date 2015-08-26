@@ -22,7 +22,7 @@
             tbody {
                 th,
                 td {
-                    padding-left: 0;
+                    padding: 5px 0;
                     border-color: $background-color-light;
                     a,
                     a:link,
@@ -32,10 +32,19 @@
                     }
                 }
                 tr.selected {
+                    color: $background-color-highlighter;
                     background: $background-color-highlight !important;
                     a {
                         color: $background-color-highlighter;
                     }
+                    .drag {
+                        background: url('../img/drag-light.png');
+                    }
+                }
+                .drag {
+                    padding: 21px 0;
+                    margin: 0 21px;
+                    background: url('../img/drag.png');
                 }
             }
         }
@@ -177,7 +186,8 @@
                 padding-top: 0;
             }
         }
-        a {
+        a,
+        span {
             font-size: 14px;
             color: $font-color-light;
             font-weight: normal;
