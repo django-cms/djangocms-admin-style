@@ -1061,7 +1061,9 @@ fieldset table {
     font-weight: normal;
     padding-left: 0; }
   #result_list .action-checkbox,
-  #toolbartable .action-checkbox {
+  #result_list .action-checkbox-column,
+  #toolbartable .action-checkbox,
+  #toolbartable .action-checkbox-column {
     text-align: left !important;
     padding: 10px 15px !important; }
 
