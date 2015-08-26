@@ -1536,7 +1536,12 @@ body.login {
         font-size: 14px;
         padding: 9px 15px;
         border-bottom: solid 1px #ebebeb; }
+        .dashboard #container #content-related .module ul.actionlist li a {
+          position: relative;
+          left: 30px;
+          padding-right: 10px; }
         .dashboard #container #content-related .module ul.actionlist li:before {
+          position: absolute;
           font-size: 17px; }
       .dashboard #container #content-related .module ul.actionlist .changelink a {
         line-height: 16px; }

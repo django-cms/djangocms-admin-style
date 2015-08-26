@@ -380,7 +380,13 @@ body.login {
                     font-size: 14px;
                     padding: 9px 15px;
                     border-bottom: solid 1px $line-color-ultralight;
+                    a {
+                        position: relative;
+                        left: 30px;
+                        padding-right: 10px;
+                    }
                     &:before {
+                        position: absolute;
                         font-size: 17px;
                     }
                 }
