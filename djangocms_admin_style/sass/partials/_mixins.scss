@@ -124,10 +124,9 @@
 @mixin button-red {
     color: $button-red-font-color !important;
     border: 1px solid $button-red-light-color !important;
-    border-bottom: 1px solid $button-red-dark-color !important;
     background-color: $button-red-medium-color !important;
-    background-image: linear-gradient($button-red-light-color, $button-red-medium-color) !important;
-    box-shadow: inset 0 0 $button-shadow-width $button-red-light-color !important;
+    background-image: none !important;
+    box-shadow: none !important;
     &:hover {
         color: $button-red-font-color !important;
         background: $button-red-light-color !important;
