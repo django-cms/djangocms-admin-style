@@ -1,108 +1,382 @@
-form {
-	button, input, select, textarea { margin: 2px 0; font-size: 13px; }
-	small { color: $font-color-light; }
-	hr { margin: 5px 0; }
-	fieldset { vertical-align: middle; line-height: 2em; }
-	fieldset.collapsed h2 { background-image: none; border-bottom: none; margin-bottom: 0; padding-bottom: 5px; }
-	label {
-		word-wrap: break-word; color: $font-color-light; line-height: 18px; display: inline-block; /*min-width: 160px;*/
-		&.required { font-weight: bold; }
-	}
-	// input
-	input, textarea { @include border-radius(); border: 1px solid $button-silver-dark-color;
-		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
-	input[type="checkbox"], input[type="radio"] { border: 0; display: inline; width: auto; margin-right: 6px; }
-	input[type="file"] { @include border-radius(); border: 1px solid $button-silver-dark-color;
-		color: $button-silver-font-color; padding: 6px 5px; outline: none; }
-	select { font-weight: normal; }
-	small { margin-left: 15px; }
-	.form-controls {
-		text-align: right; margin: 15px 0 0 0;
-		p { margin-top: 6px; }
-	}
-	.input-list { display: inline-block; vertical-align: top; line-height: 20px; }
-	.extra {
-		.right { float: right; margin-right: 10px; }
-	}
-	//.aligned p.help { padding-left: 100px; }
-	//.aligned.wide p.help { padding-left: 55px; }
-	.form-row { border-bottom-color: $line-color-ultralight; }
-	.form-row:last-child { border-bottom-color: transparent; }
+.popup,
+.cms-modal-window {
+    background-color: #fff;
+    input[type=text],
+    textarea,
+    select,
+    .select2-container {
+        width: 100%;
+        max-width: inherit !important;
+        box-sizing: border-box;
+    }
+    #content {
+        margin-top: 20px !important;
+    }
 }
-.form-row input, .form-row textarea { width: 250px; }
-.form-row .select2-container {min-width: 250px + 12px;} //standard input width + default input paddings
-.inline-group .form-row input, .inline-group .form-row textarea { width: auto; }
+form {
+    .form-row {
+        overflow: visible;
+        border-bottom: 0;
+    }
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 13px;
+        width: 330px;
+        margin: 2px 0;
+    }
+    button {
+        width: auto !important;
+    }
+    .aligned {
+        p.help {
+            font-size: 14px !important;
+            color: $font-color-light;
+            margin-top: 10px;
+            padding-left: 0;
+            margin-left: 0;
+        }
+    }
+    small {
+        color: $font-color-light;
+    }
+    hr {
+        margin: 5px 0;
+    }
+    fieldset {
+        line-height: 2em; 
+        vertical-align: middle;
+    }
+    fieldset.collapsed h2 {
+        margin-bottom: 0;
+        padding-bottom: 5px; 
+        border-bottom: none;
+        background-image: none;
+    }
+    label select {
+        display: block;
+        margin-left: 0 !important;
+        margin-top: 5px;
+    }
+    label,
+    label.aligned {
+        display: block;
+        float: none !important;
+        color: $font-color-light !important;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        font-weight: normal !important;
+        word-wrap: break-word;
+        width: auto !important;
+        margin-bottom: 5px;
+        &.required {
+            color: $font-color-light !important;
+            font-weight: normal !important;
+        }
+    }
+    // input
+    input,
+    textarea {
+        color: $font-color;
+        font-size: 18px;
+        padding: 10px;
+        border: 1px solid $button-silver-dark-color;
+        box-sizing: border-box;
+        border-radius: $default-border-radius;
+        outline: none;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        display: inline;
+        width: auto;
+        margin-right: 6px; 
+        border: 0;
+    }
+    input[type="file"] {
+        color: $button-silver-font-color;
+        padding: 6px 5px;
+        border: 1px solid $button-silver-dark-color;
+        border-radius: $default-border-radius;
+        outline: none;
+    }
+    select {
+        appearance: none;
+        font-size: 18px;
+        font-weight: normal;
+        padding: 10px 40px 10px 20px;
+        background: #fff url('../img/icon_arrow_down.png') no-repeat right center;
+        background-size: 25px;
+        border: 1px solid $button-silver-dark-color;
+        border-radius: $default-border-radius;
+    }
+    small {
+        margin-left: 15px;
+    }
+    .form-controls {
+        text-align: right;
+        margin: 15px 0 0 0;
+        p {
+            margin-top: 6px;
+        }
+    }
+    .input-list {
+        display: inline-block;
+        line-height: 20px; 
+        vertical-align: top;
+    }
+    .extra {
+        .right {
+            float: right;
+            margin-right: 10px;
+        }
+    }
+    .form-row {
+        padding: 8px 0 30px;
+        border-bottom-color: $line-color-ultralight;
+    }
+    .form-row:last-child {
+        border-bottom-color: transparent;
+    }
+}
+
+.form-row .select2-container {
+    min-width: 250px + 12px;
+} //standard input width + default input paddings
+.inline-group .form-row input,
+.inline-group .form-row textarea {
+    width: auto;
+}
+
+// select2
+form {
+    .select2-container {
+        &.select2-container-active {
+            .select2-choice,
+            .select2-choices {
+                box-shadow: none;
+            }
+        }
+        .select2-choice {
+            line-height: inherit;
+            height: auto;
+            padding: 10px 40px 10px 20px;
+            background: none;
+            border: 1px solid $button-silver-dark-color;
+            border-radius: $default-border-radius;
+            & > .select2-chosen {
+                font-size: 18px;
+            }
+            .select2-arrow {
+                right: 9px;
+                width: 17px;
+                background: none;
+                border: none;
+                border-radius: 0;
+                b {
+                    background: url('../img/select2.png') no-repeat 0 12px;
+                    background-size: 50px;
+                }
+
+            }
+        }
+    }
+    .select2-dropdown-open {
+        &.select2-drop-above {
+            .select2-choice,
+            .select2-choices {
+                background-image: none !important;
+                border-color: $button-silver-dark-color !important
+            }
+        }
+        .select2-choice {
+            background-color: #fff;
+            background-image: none;
+            .select2-arrow b {
+                background-position: -16px 12px;
+            }
+        }
+    }
+}
+.select2-drop-active {
+    border: 1px solid $button-silver-dark-color !important;
+}
+.select2-results {
+    margin: 0 10px 10px !important;
+    padding: 0 !important;
+    .select2-no-results,
+    .select2-searching,
+    .select2-ajax-error,
+    .select2-selection-limit {
+        color: $font-color-light;
+        font-size: 14px;
+        background-color: transparent !important;
+    }
+    .select2-highlighted {
+        border-radius: $default-border-radius;
+        background-color: $link-color !important;
+    }
+}
+.select2-match {
+    font-size: 14px !important;
+}
+.select2-search {
+    padding: 10px !important;
+    input {
+        font-size: 18px !important;
+        padding: 10px 40px 10px 20px !important;
+        background: url('../img/select2.png') no-repeat right -24px !important;
+        background-size: 50px !important;
+        border: 1px solid $button-silver-dark-color !important;
+        border-radius: $default-border-radius !important;
+    }
+}
 
 
-input:valid, textarea:valid {}
-input:invalid, textarea:invalid {
-	@include border-radius();
+input:invalid,
+textarea:invalid {
+    border-radius: $default-border-radius;
 }
 .no-boxshadow input:invalid,
-.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+.no-boxshadow textarea:invalid {
+    background-color: #f0dddd;
+}
 
 // buttons
-button { @include button-common(); }
-input[type="submit"], input[type="button"] {
-	@include button-common(); padding: 8px 10px !important;
-	&.default { @include button-blue(); padding: 7px 10px !important; margin-top: 1px; }
+button {
+    @include button-common();
+}
+input[type="submit"],
+input[type="button"] {
+    @include button-common();
+    &.default {
+        @include button-blue();
+        padding: 10px 30px !important;
+    }
 }
 a.button {
-	text-decoration: none; cursor: pointer; @include button-common();
-	&.tab { @include border-radius(0); }
+    @include button-common();
+    text-decoration: none;
+    cursor: pointer; 
+    &.tab {
+        border-radius: 0;
+    }
 }
 
 // date time
 .form-row {
-	p.datetime { line-height: 36px; }
+    p.datetime {
+        line-height: 36px;
+    }
 }
 
 // calendar
 div.calendar {
-	table {
-		caption { @include background-image(linear-gradient($background-color-dark, $background-color-medium));
-			background-color: $background-color-dark; color: $font-color-white !important; margin: 0;
-			@include border-top-radius(); }
-		td { padding: 0; background: #f3f3f3; }
-		td a { padding: 6px 4px; }
-	}
-	.today a { background: $info-color-ultralight; }
+    table {
+        caption {
+            color: $font-color-white !important;
+            margin: 0;
+            background-color: $background-color-dark;
+            background-image: linear-gradient($background-color-dark, $background-color-medium);
+
+            border-top-radius: $default-border-radius;
+        }
+        td {
+            padding: 0;
+            background: #f3f3f3;
+        }
+        td a {
+            padding: 6px 4px;
+        }
+    }
+    .today a {
+        background: $info-color-ultralight;
+    }
 }
 div.calendarbox {
-	width: 200px !important;
-	table th, table td { line-height: 12px; }
-	.calendarnav-previous, .calendarnav-next {
-		background: none; color: white; text-decoration: none; padding: 4px 7px 6px;
-		&:hover, &:focus { background: #666; }
-	}
-	.calendar-shortcuts { background: transparent; padding: 10px 0 6px 0; border-color: #ddd; }
+    width: 200px !important;
+    table th,
+    table td {
+        line-height: 12px;
+    }
+    .calendarnav-previous,
+    .calendarnav-next {
+        color: white;
+        text-decoration: none;
+        padding: 4px 7px 6px;
+        background: none;
+        &:hover,
+        &:focus {
+            background: #666;
+        }
+    }
+    .calendar-shortcuts {
+        padding: 10px 0 6px 0;
+        border-color: #ddd; 
+        background: transparent;
+    }
 }
-div.calendarbox, div.clockbox {
-	@include border-radius(); background: #f3f3f3;
-	padding: 0; margin: 0; @include box-shadow(0 1px 10px rgba(0,0,0,0.1)); border: 1px solid #ccc;
-	caption, h2 { font-size: 14px; }
-	.calendar-cancel { @include border-bottom-radius(); background: none; margin-top: 5px !important;
-		padding: 5px 0 !important; }
+div.calendarbox,
+div.clockbox {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: $default-border-radius;
+    background: #f3f3f3;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    caption,
+    h2 {
+        font-size: 14px;
+    }
+    .calendar-cancel {
+        margin-top: 5px !important;
+        padding: 5px 0 !important; 
+        background: none;
+
+        border-bottom-radius: $default-border-radius;
+    }
 }
 // clock
 div.clockbox {
-	@include border-top-radius();
-	h2 { @include background-image(linear-gradient($background-color-dark, $background-color-medium));
-		background-color: $background-color-dark; color: $font-color-white !important;
-		@include border-top-radius(); }
-	.timelist a { padding: 5px 2px; }
+    border-top-radius: $default-border-radius;
+    h2 {
+        color: $font-color-white !important;
+        background-color: $background-color-dark;
+        background-image: linear-gradient($background-color-dark, $background-color-medium);
+
+        border-top-radius: $default-border-radius;
+    }
+    .timelist a {
+        padding: 5px 2px;
+    }
 }
 .timelist a {
-	&, &:active, &:focus, &:hover { background: none !important; }
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+        background: none !important;
+    }
 }
 
-span.datetimeshortcuts a { color: $link-color; }
+span.datetimeshortcuts a {
+    color: $link-color;
+}
 
 // filter horizontal
 .selector {
-	.selector-chooseall, .selector-clearall { line-height: 14px; }
-	select { overflow: hidden; }
+    .selector-chooseall,
+    .selector-clearall {
+        line-height: 14px;
+    }
+    select {
+        overflow: hidden;
+    }
 }
 
-form select[multiple] { overflow: auto; width: 100%;  max-width: 240px; }
-
+form select[multiple] {
+    overflow: auto;
+    width: 100%;
+    max-width: 240px;
+}
