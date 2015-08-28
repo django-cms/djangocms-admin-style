@@ -159,6 +159,7 @@ body {
     box-shadow: inset 0 0 $button-shadow-width $background-color-white !important;
     .deletelink-box {
         line-height: 24px;
+        margin: 0.9em;
     }
     .deletelink {
         @include button-common();
@@ -380,7 +381,13 @@ body.login {
                     font-size: 14px;
                     padding: 9px 15px;
                     border-bottom: solid 1px $line-color-ultralight;
+                    a {
+                        position: relative;
+                        left: 30px;
+                        padding-right: 10px;
+                    }
                     &:before {
+                        position: absolute;
                         font-size: 17px;
                     }
                 }
@@ -459,7 +466,7 @@ a.addlink {
 // object tools
 .object-tools {
     float: right;
-    margin-top: -75px;
+    margin-top: -78px;
     li {
         height: 43px;
         padding-left: 5px;
@@ -533,7 +540,8 @@ a.addlink {
 
 // cms language buttons
 #page_form_lang_tabs {
-   border-bottom: solid 1px $line-color-ultralight;
+    margin-bottom: 30px;
+    border-bottom: solid 1px $line-color-ultralight;
 }
 #page_form_lang_tabs input {
     color: $font-color !important;

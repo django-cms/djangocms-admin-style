@@ -270,8 +270,12 @@ sup {
 
 body {
   background-color: #f7f7f7; }
+  body h1 {
+    margin-left: 0; }
   body.dashboard {
     background-color: #fff; }
+    body.dashboard h1 {
+      margin-left: 10px; }
 
 body,
 select,
@@ -396,7 +400,7 @@ small {
     box-sizing: border-box; }
   .popup #content,
   .cms-modal-window #content {
-    margin-top: 0; }
+    margin-top: 20px !important; }
 
 form .form-row {
   overflow: visible;
@@ -407,7 +411,11 @@ form input,
 form select,
 form textarea {
   font-size: 13px;
+  width: 330px;
   margin: 2px 0; }
+
+form button {
+  width: auto !important; }
 
 form .aligned p.help {
   font-size: 14px !important;
@@ -460,6 +468,7 @@ form textarea {
   font-size: 18px;
   padding: 10px;
   border: 1px solid #d4d4d4;
+  box-sizing: border-box;
   border-radius: 3px;
   outline: none; }
 
@@ -513,10 +522,6 @@ form .form-row {
 
 form .form-row:last-child {
   border-bottom-color: transparent; }
-
-.form-row input,
-.form-row textarea {
-  width: 250px; }
 
 .form-row .select2-container {
   min-width: 262px; }
@@ -883,7 +888,7 @@ fieldset table {
   min-height: auto;
   background-image: none !important; }
   .change-list table {
-    border: none; }
+    border: 0 !important; }
   .change-list .filtered {
     background: none !important; }
   .change-list .results,
@@ -925,7 +930,11 @@ fieldset table {
         color: #f1faff; }
       .change-list #changelist table tbody tr.selected .drag {
         background: url("../img/drag-light.png"); }
+      .change-list #changelist table tbody tr.selected .lang-code {
+        color: #4fbef3;
+        background-color: #fff; }
     .change-list #changelist table tbody .drag {
+      max-width: 10px;
       padding: 14px 0;
       margin: 0 21px;
       background: url("../img/drag.png"); }
@@ -1006,12 +1015,14 @@ fieldset table {
         padding: 10px 15px !important; }
       .change-list #changelist .actions .action-counter {
         display: block !important;
+        font-size: 14px;
         margin-left: 0; }
     .change-list #changelist .toplinks {
       margin-bottom: 5px !important;
       border-bottom: none !important;
       background: none; }
     .change-list #changelist .paginator {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
       border: none;
       background: none; }
 
@@ -1060,7 +1071,9 @@ fieldset table {
     font-weight: normal;
     padding-left: 0; }
   #result_list .action-checkbox,
-  #toolbartable .action-checkbox {
+  #result_list .action-checkbox-column,
+  #toolbartable .action-checkbox,
+  #toolbartable .action-checkbox-column {
     text-align: left !important;
     padding: 10px 15px !important; }
 
@@ -1122,6 +1135,18 @@ fieldset table {
   background: url("../img/icon_arrow_down.png") no-repeat left center;
   background-size: 25px;
   border-left: 0; }
+
+.lang-code {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  margin-right: 10px;
+  border: solid 1px #4fbef3;
+  border-radius: 10px; }
+
+.collapse {
+  display: none; }
 
 .plugin-holder {
   background: transparent url("../img/pluginlist-holder-bg.png") repeat-y !important; }
@@ -1286,7 +1311,8 @@ body #container {
   background: rgba(255, 255, 255, 0.2) !important;
   box-shadow: inset 0 0 2px #fff !important; }
   .submit-row .deletelink-box {
-    line-height: 24px; }
+    line-height: 24px;
+    margin: 0.9em; }
   .submit-row .deletelink {
     border: 1px solid #d4d4d4 !important;
     background-color: #fff !important;
@@ -1303,11 +1329,9 @@ body #container {
     border-radius: 3px;
     color: #fff !important;
     border: 1px solid #ef4a4a !important;
-    border-bottom: 1px solid #d50101 !important;
     background-color: #e80101 !important;
-    background-image: -webkit-linear-gradient(#ef4a4a, #e80101) !important;
-    background-image: linear-gradient(#ef4a4a, #e80101) !important;
-    box-shadow: inset 0 0 2px #ef4a4a !important; }
+    background-image: none !important;
+    box-shadow: none !important; }
     .submit-row .deletelink:hover {
       background: #ededed !important; }
     .submit-row .deletelink.small {
@@ -1536,7 +1560,12 @@ body.login {
         font-size: 14px;
         padding: 9px 15px;
         border-bottom: solid 1px #ebebeb; }
+        .dashboard #container #content-related .module ul.actionlist li a {
+          position: relative;
+          left: 30px;
+          padding-right: 10px; }
         .dashboard #container #content-related .module ul.actionlist li:before {
+          position: absolute;
           font-size: 17px; }
       .dashboard #container #content-related .module ul.actionlist .changelink a {
         line-height: 16px; }
@@ -1639,7 +1668,7 @@ a.addlink:active {
 
 .object-tools {
   float: right;
-  margin-top: -75px; }
+  margin-top: -78px; }
   .object-tools li {
     height: 43px;
     padding-left: 5px;
@@ -1909,11 +1938,9 @@ a.addlink:active {
   .delete-confirmation .colM input[type="submit"] {
     color: #fff !important;
     border: 1px solid #ef4a4a !important;
-    border-bottom: 1px solid #d50101 !important;
     background-color: #e80101 !important;
-    background-image: -webkit-linear-gradient(#ef4a4a, #e80101) !important;
-    background-image: linear-gradient(#ef4a4a, #e80101) !important;
-    box-shadow: inset 0 0 2px #ef4a4a !important;
+    background-image: none !important;
+    box-shadow: none !important;
     float: right; }
     .delete-confirmation .colM input[type="submit"]:hover {
       color: #fff !important;
@@ -1936,6 +1963,7 @@ a.addlink:active {
   margin: 6px 0 0 15px !important; }
 
 #page_form_lang_tabs {
+  margin-bottom: 30px;
   border-bottom: solid 1px #ebebeb; }
 
 #page_form_lang_tabs input {

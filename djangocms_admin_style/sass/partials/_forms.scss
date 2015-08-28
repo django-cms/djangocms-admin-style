@@ -10,7 +10,7 @@
         box-sizing: border-box;
     }
     #content {
-        margin-top: 0;
+        margin-top: 20px !important;
     }
 }
 form {
@@ -22,8 +22,12 @@ form {
     input,
     select,
     textarea {
-        font-size: 13px; 
+        font-size: 13px;
+        width: 330px;
         margin: 2px 0;
+    }
+    button {
+        width: auto !important;
     }
     .aligned {
         p.help {
@@ -79,6 +83,7 @@ form {
         font-size: 18px;
         padding: 10px;
         border: 1px solid $button-silver-dark-color;
+        box-sizing: border-box;
         border-radius: $default-border-radius;
         outline: none;
     }
@@ -135,10 +140,7 @@ form {
         border-bottom-color: transparent;
     }
 }
-.form-row input,
-.form-row textarea {
-    width: 250px;
-}
+
 .form-row .select2-container {
     min-width: 250px + 12px;
 } //standard input width + default input paddings

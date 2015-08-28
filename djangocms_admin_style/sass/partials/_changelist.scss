@@ -2,7 +2,7 @@
     min-height: auto;
     background-image: none !important;
     table {
-        border: none;
+        border: 0 !important;
     }
     .filtered {
         background: none !important;
@@ -55,8 +55,13 @@
                     .drag {
                         background: url('../img/drag-light.png');
                     }
+                    .lang-code {
+                        color: $link-color;
+                        background-color: #fff;
+                    }
                 }
                 .drag {
+                    max-width: 10px;
                     padding: 14px 0;
                     margin: 0 21px;
                     background: url('../img/drag.png');
@@ -154,6 +159,7 @@
             }
             .action-counter {
                 display: block !important;
+                font-size: 14px;
                 margin-left: 0;
             }
         }
@@ -163,6 +169,7 @@
             background: none;
         }
         .paginator {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
             border: none;
             background: none;
         }
@@ -211,7 +218,8 @@
             padding-left: 0;
         }
     }
-    .action-checkbox {
+    .action-checkbox,
+    .action-checkbox-column {
         text-align: left !important;
         padding: 10px 15px !important;
     }
@@ -261,4 +269,16 @@
     background: url('../img/icon_arrow_down.png') no-repeat left center;
     background-size: 25px;
     border-left: 0;
+}
+.lang-code {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    margin-right: 10px;
+    border: solid 1px $link-color;
+    border-radius: 10px;
+}
+.collapse {
+    display: none;
 }
