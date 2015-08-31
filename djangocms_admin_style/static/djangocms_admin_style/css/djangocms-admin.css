@@ -274,6 +274,8 @@ body {
     padding: 20px 0 !important; }
   body h1 {
     margin-left: 0; }
+  body .module h2 {
+    padding-left: 0; }
   body.dashboard {
     background-color: #fff; }
     body.dashboard h1 {
@@ -836,7 +838,10 @@ span.datetimeshortcuts a {
 form select[multiple] {
   overflow: auto;
   width: 100%;
-  max-width: 240px; }
+  max-width: 240px;
+  padding: 0;
+  border: 0 !important;
+  background: none; }
 
 table {
   width: 100%;
@@ -1432,6 +1437,7 @@ body #container {
 
 .selector .selector-available,
 .selector .selector-chosen {
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 3px; }
   .selector .selector-available h2,

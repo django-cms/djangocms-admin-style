@@ -178,6 +178,7 @@ body {
 .selector {
     .selector-available,
     .selector-chosen {
+        background-color: #fff;
         border: 1px solid $line-color-light;
         border-radius: $default-border-radius;
         h2 {
