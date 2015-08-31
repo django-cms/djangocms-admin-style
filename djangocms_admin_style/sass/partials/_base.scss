@@ -2,13 +2,22 @@
 
 body {
     background-color: #f7f7f7;
+    .breadcrumbs {
+        padding: 20px 0 !important;
+    }
     h1 {
         margin-left: 0;
+    }
+    .module h2 {
+        padding-left: 0;
     }
     &.dashboard {
         background-color: #fff;
         h1 {
             margin-left: 10px;
+        }
+        .breadcrumbs {
+            padding: 20px 10px !important;
         }
     }
 }
@@ -31,6 +40,7 @@ h2 {
     font-size: 130%;
     font-weight: bold;
     line-height: 1.75em;
+    margin: 20px 10px 45px;
 }
 h3 {
     color: $font-color;
@@ -106,7 +116,7 @@ strong {
 }
 .small,
 small {
-    font-size: 85%;
+    font-size: 14px;
     margin-top: 0;
 }
 

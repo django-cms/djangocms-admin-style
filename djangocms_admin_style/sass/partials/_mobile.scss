@@ -140,14 +140,18 @@ body.login {
         }
     }
     .filtered .results,
-    .change-list .filtered .paginator,
+    #changelist.filtered .paginator,
     .filtered #toolbar,
-    .filtered div.xfull {
+    #changelist.filtered .results,
+    #changelist.filtered div.xfull {
         margin-right: 0 !important;
     }
     .module #changelist-form .results {
         overflow: auto;
         width: 100%;
+    }
+    #changelist-search {
+        max-width: none;
     }
     .filtered {
         .actions,

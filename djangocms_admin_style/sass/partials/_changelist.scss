@@ -17,20 +17,19 @@
         padding-left: 15px;
         padding-right: 15px;
         background-color: #fff !important;
+        clear: both;
     }
     #changelist {
         width: auto !important;
         &.filtered {
             .results,
-            .paginator {
+            .paginator,
+            .xfull {
                 margin-right: 220px !important;
             }
             .paginator {
                 box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
             }
-        }
-        #changelist-form {
-            clear: both;
         }
         table {
             tbody {
@@ -164,9 +163,34 @@
             }
         }
         .toplinks {
-            margin-bottom: 5px !important;
-            border-bottom: none !important;
+            overflow: hidden;
+            margin-bottom: 20px !important;
+            margin-top: 20px !important;
+            border-bottom: 0 !important;
+            border-top: 0;
             background: none;
+            clear: both;
+            li {
+                display: inline;
+                float: left;
+                color: $font-color;
+                font-size: 14px;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin-left: 25px;
+                cursor: pointer;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            a {
+                position: relative;
+                display: block;
+                font-size: 14px;
+                color: $link-color;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
         }
         .paginator {
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -225,6 +249,21 @@
     }
 }
 #changelist-search {
+    max-width: 260px;
+    #limit_search_to_folder {
+        margin-top: 7px;
+        + label {
+            display: inline-block !important;
+            font-size: 14px !important;
+            color: #999 !important;
+            text-transform: none;
+            margin-top: 5px;
+        }
+    }
+    .small {
+        display: inline-block;
+        margin-top: 10px;
+    }
     input {
         float: left;
     }

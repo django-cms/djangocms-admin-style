@@ -151,7 +151,7 @@ body {
     }
 }
 .submit-row {
-    padding: 20px;
+    padding: 20px 0;
     border: 0;
     border-top: 1px solid $line-color-light;
     border-radius: $default-border-radius;
@@ -159,16 +159,17 @@ body {
     box-shadow: inset 0 0 $button-shadow-width $background-color-white !important;
     .deletelink-box {
         line-height: 24px;
-        margin: 0.9em;
+        margin: 0.9em 0;
     }
     .deletelink {
         @include button-common();
-        @include button-red();
+        @include button-blue();
     }
     input[type="submit"].default {
         margin-left: 20px;
     }
     input {
+        width: auto !important;
         margin-left: 15px;
     }
 }
@@ -177,6 +178,7 @@ body {
 .selector {
     .selector-available,
     .selector-chosen {
+        background-color: #fff;
         border: 1px solid $line-color-light;
         border-radius: $default-border-radius;
         h2 {
@@ -444,7 +446,7 @@ a.addlink {
 #content-main .object-tools {
     .addlink {
         @include button-common();
-        @include button-green();
+        @include button-blue();
     }
     .recoverlink {
         color: $link-color !important;

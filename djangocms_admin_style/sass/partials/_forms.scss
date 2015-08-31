@@ -17,19 +17,24 @@ form {
     .form-row {
         overflow: visible;
         border-bottom: 0;
+        clear: both;
     }
     button,
     input,
     select,
     textarea {
         font-size: 13px;
-        width: 330px;
+        width: 330px !important;
         margin: 2px 0;
     }
     button {
         width: auto !important;
     }
     .aligned {
+        .field-number_of_visits p {
+            padding-left: 0;
+            margin-left: 0;
+        }
         p.help {
             font-size: 14px !important;
             color: $font-color-light;
@@ -90,8 +95,9 @@ form {
     input[type="checkbox"],
     input[type="radio"] {
         display: inline;
-        width: auto;
-        margin-right: 6px; 
+        width: auto !important;
+        margin-top: 0;
+        margin-right: 6px;
         border: 0;
     }
     input[type="file"] {
@@ -250,6 +256,7 @@ button {
 input[type="submit"],
 input[type="button"] {
     @include button-common();
+    width: auto !important;
     &.default {
         @include button-blue();
         padding: 10px 30px !important;
@@ -379,4 +386,7 @@ form select[multiple] {
     overflow: auto;
     width: 100%;
     max-width: 240px;
+    padding: 0;
+    border: 0 !important;
+    background: none;
 }
