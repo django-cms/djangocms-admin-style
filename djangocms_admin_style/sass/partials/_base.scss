@@ -2,6 +2,9 @@
 
 body {
     background-color: #f7f7f7;
+    .breadcrumbs {
+        padding: 20px 0 !important;
+    }
     h1 {
         margin-left: 0;
     }
@@ -9,6 +12,9 @@ body {
         background-color: #fff;
         h1 {
             margin-left: 10px;
+        }
+        .breadcrumbs {
+            padding: 20px 10px !important;
         }
     }
 }
