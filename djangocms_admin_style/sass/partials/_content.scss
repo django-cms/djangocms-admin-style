@@ -169,6 +169,7 @@ body {
         margin-left: 20px;
     }
     input {
+        width: auto !important;
         margin-left: 15px;
     }
 }
@@ -444,7 +445,7 @@ a.addlink {
 #content-main .object-tools {
     .addlink {
         @include button-common();
-        @include button-green();
+        @include button-blue();
     }
     .recoverlink {
         color: $link-color !important;
