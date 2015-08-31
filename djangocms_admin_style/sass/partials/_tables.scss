@@ -21,21 +21,21 @@ table {
     }
     thead th.sorted .sortoptions a {
         &.ascending {
-            background: url('../img/sorting-icons.png') -5px -50px no-repeat;
+            background: url("../img/sorting-icons.png") -5px -50px no-repeat;
             &:hover {
-                background: url('../img/sorting-icons.png') -5px -72px no-repeat;
+                background: url("../img/sorting-icons.png") -5px -72px no-repeat;
             }
         }
         &.descending {
-            background: url('../img/sorting-icons.png') -5px -94px no-repeat;
+            background: url("../img/sorting-icons.png") -5px -94px no-repeat;
             &:hover {
-                background: url('../img/sorting-icons.png') -5px -115px no-repeat;
+                background: url("../img/sorting-icons.png") -5px -115px no-repeat;
             }
         }
         &.sortremove {
-            background: url('../img/sorting-icons.png') -4px -5px no-repeat;
+            background: url("../img/sorting-icons.png") -4px -5px no-repeat;
             &:hover {
-                background: url('../img/sorting-icons.png') -4px -26px no-repeat;
+                background: url("../img/sorting-icons.png") -4px -26px no-repeat;
             }
         }
     }
