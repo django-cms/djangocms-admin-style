@@ -35,32 +35,12 @@ $content-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-
 
 
 // Background
-$background-color-white: #fff;
 $background-color-ultralight: #fcfcfc;
 $background-color-light: #f1f1f1;
 $background-color-medium: #464b50;
 $background-color-dark: #595f65;
-$background-color-highlight: $color-primary;
 $background-color-transparent: rgba(255, 255, 255, 0.2);
-$background-color-ok-light: #e6f1bf;
-$background-color-ok: #d3e1a3;
-$background-color-fail: #f2d1cf;
 $background-color-highlighter: #f1faff;
-$button-font-color-yellow: #fff;
-$button-font-color-yellow-hover: #fff;
-$button-border-color-yellow: #f6c509;
-$button-shadow-color-yellow: #fff;
-$button-background-color-top-yellow: #ffeb4c;
-$button-background-color-bottom-yellow: #ffca00;
-$button-background-color-top-yellow-hover: #ffeb4c;
-$button-background-color-bottom-yellow-hover: #ffca00;
-
-// Navigation
-$navigation-color-light: #5d6267;
-$navigation-color-medium: #464b50;
-$navigation-color-highlight: #676e74;
-$navigation-color-active-light: #fff;
-$navigation-color-active-medium: #fcfcfc;
 
 // Font
 $font-color-ultralight: #ccc;
@@ -70,18 +50,10 @@ $font-color-dark: #222;
 $font-color: #333;
 
 // Border
-$line-color-white: #fff;
 $line-color-ultralight: #ebebeb;
 $line-color-light: #ddd;
 $line-color-medium: #ccc;
 $line-color-dark: #444;
-
-
-// Links
-$link-color: $color-primary;
-$link-hover-color: #48abd9;
-$link-active-color: #48abd9;
-$link-visited-color: $color-primary;
 
 
 // Selected Text

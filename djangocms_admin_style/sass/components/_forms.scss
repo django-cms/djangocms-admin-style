@@ -261,7 +261,7 @@ form {
     }
     .select2-highlighted {
         border-radius: $border-radius-base;
-        background-color: $link-color !important;
+        background-color: $color-primary !important;
     }
 }
 .select2-match {
@@ -408,7 +408,7 @@ div.clockbox {
 }
 
 span.datetimeshortcuts a {
-    color: $link-color;
+    color: $color-primary;
 }
 
 // filter horizontal

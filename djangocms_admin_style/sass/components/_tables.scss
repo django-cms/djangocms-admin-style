@@ -4,7 +4,7 @@ table {
     padding: 5px;
     border: none;
     border-radius: $border-radius-base;
-    background: $background-color-white;
+    background: $white;
     th {
         border-bottom: 1px solid $line-color-light;
     }
@@ -73,7 +73,7 @@ table {
         }
     }
     .row1 {
-        background: $background-color-white;
+        background: $white;
     }
     .row2 {
         background: $background-color-ultralight;

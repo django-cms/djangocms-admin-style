@@ -21,7 +21,7 @@ body {
             border-bottom: 1px solid $line-color-light;
             background: transparent !important;
             a {
-                color: $link-color;
+                color: $color-primary;
                 &:first-child {
                     padding-left: 0;
                 }
@@ -157,7 +157,7 @@ body {
     border-top: 1px solid $line-color-light;
     border-radius: $border-radius-base;
     background: $background-color-transparent !important;
-    box-shadow: inset 0 0 $button-shadow-width $background-color-white !important;
+    box-shadow: inset 0 0 $button-shadow-width $white !important;
     .deletelink-box {
         line-height: 24px;
         margin: 0.9em 0;
@@ -471,7 +471,7 @@ a.addlink {
         @include button-blue();
     }
     .recoverlink {
-        color: $link-color !important;
+        color: $color-primary !important;
         padding: 12px 0 2px 0 !important;
         margin-bottom: 8px;
         margin-right: 10px;
@@ -585,9 +585,9 @@ a.addlink {
         border-bottom: solid 3px $white !important;
     }
     &.selected {
-        color: $link-color !important;
+        color: $color-primary !important;
         background: transparent !important;
-        border-bottom: solid 3px $link-color !important;
+        border-bottom: solid 3px $color-primary !important;
     }
     &.notfilled {
         color: $font-color-light !important;

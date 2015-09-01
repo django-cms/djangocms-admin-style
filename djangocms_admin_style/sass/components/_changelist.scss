@@ -42,12 +42,12 @@
                     a:link,
                     a:visited,
                     a:link:visited {
-                        color: $link-color;
+                        color: $color-primary;
                     }
                 }
                 tr.selected {
                     color: $background-color-highlighter;
-                    background: $background-color-highlight !important;
+                    background: $color-primary !important;
                     a {
                         color: $background-color-highlighter;
                     }
@@ -55,7 +55,7 @@
                         background: url('../img/drag-light.png');
                     }
                     .lang-code {
-                        color: $link-color;
+                        color: $color-primary;
                         background-color: $white;
                     }
                 }
@@ -131,7 +131,7 @@
                     padding-left: 0 !important;
                     margin-left: 0 !important;
                     a {
-                        color: $link-color !important;
+                        color: $color-primary !important;
                     }
                 }
             }
@@ -188,7 +188,7 @@
                 position: relative;
                 display: block;
                 font-size: 14px;
-                color: $link-color;
+                color: $color-primary;
                 font-weight: normal;
                 text-transform: uppercase;
             }
@@ -316,7 +316,7 @@
     text-transform: uppercase;
     padding: 2px 8px;
     margin-right: 10px;
-    border: solid 1px $link-color;
+    border: solid 1px $color-primary;
     border-radius: 10px;
 }
 .collapse {

@@ -66,17 +66,12 @@ a.btn {
 }
 a,
 a:link {
-    color: $link-color;
+    color: $color-primary;
     text-decoration: none;
-    &:visited {
-        color: $link-visited-color;
-    }
-    &:hover {
-        color: $link-hover-color;
-        text-decoration: none;
-    }
+    &:visited,
+    &:hover,
     &:active {
-        color: $link-active-color;
+        color: $color-primary;
     }
 }
 
