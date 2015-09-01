@@ -15,8 +15,8 @@ body {
             left: 45px;
             color: $font-color-light !important;
             font-size: 15px;
-            margin-top: 65px;
-            padding: 20px 10px;
+            margin-top: $toolbar-height;
+            padding: $breadcrumb-padding 10px;
             border-top: 0;
             border-bottom: 1px solid $line-color-light;
             background: transparent !important;
@@ -35,7 +35,7 @@ body {
 #content {
     width: auto !important;
     min-width: 0 !important;
-    margin: 160px 45px 0 !important;
+    margin: $content-margin-top 45px 0 !important;
     &.colMS {
         margin-right: 300px !important;
     }
@@ -273,25 +273,39 @@ body.login {
 #header {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     color: $font-color-medium !important;
-    height: 65px;
-    background-color: #fff;
+    width: auto !important;
+    min-height: $toolbar-height;
+    padding-left: $toolbar-left-space;
+    padding-right: $toolbar-left-space;
+    background-color: $white;
     background-image: none;
-    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: $toolbar-shadow;
     z-index: 9999;
     #branding {
-        width: 100%;
         h1 {
             float: left;
+            font-size: 14px;
+            line-height: $toolbar-height;
             color: $font-color-medium;
             font-weight: bold;
-            padding: 20px 25px 20px 0;
+            height: $toolbar-height;
+            padding: 0;
             margin: 0;
         }
     }
     #user-tools {
-        display: none;
-        padding: 16px 25px 0;
+        float: right;
+        font-size: 13px;
+        line-height: $toolbar-height;
+        height: $toolbar-height;
+        width: 270px;
+        padding: 0;
+        strong {
+            font-size: 13px;
+        }
     }
     a {
         &:link,
@@ -300,18 +314,21 @@ body.login {
         }
     }
     #header-btn {
-        float: right;
-        margin: 21px 20px 0 0;
+        float: left;
+        margin: $toolbar-margin-button 0 $toolbar-margin-button $toolbar-left-space;
         .btn {
-            font-size: 18px;
+            display: block;
+            font-size: $toolbar-button-font-size;
             color: $font-color-light;
-            padding: 10px 45px 10px 30px !important;
+            line-height: $toolbar-button-height;
+            height: $toolbar-button-height;
+            padding: 0 25px 0 12px !important;
             &:before {
                 display: none;
             }
             &.icon-arrow-right {
                 background: url('../img/icon_arrow_right.png') no-repeat right center !important;
-                background-size: 35px !important;
+                background-size: 20px !important;
                 &:hover {
                     background-color: $button-silver-light-color !important;
                 }
@@ -320,8 +337,12 @@ body.login {
     }
     #header-logo {
         float: left;
-        margin-right: 40px;
-        padding: 17px 0 17px 15px;
+        height: $toolbar-logo-height;
+        margin: $toolbar-margin-logo 40px $toolbar-margin-logo 0;
+        img {
+            height: 100%;
+            width: auto;
+        }
     }
 }
 
@@ -456,7 +477,7 @@ a.addlink {
         background-color: transparent !important;
         border-radius: 0 !important;
         border: 0 !important;
-        border-bottom: solid 1px $primary-color !important;
+        border-bottom: solid 1px $color-primary !important;
         &:hover,
         &:active,
         &:focus {

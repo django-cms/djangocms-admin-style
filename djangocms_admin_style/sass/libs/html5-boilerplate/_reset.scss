@@ -72,7 +72,8 @@
     mark,
     audio,
     video {
-        font-size: $base-font-size;
+        font-size: $font-size-normal;
+        line-height: $line-height-normal;
         vertical-align: baseline;
         margin: 0;
         padding: 0;
