@@ -1297,7 +1297,8 @@ body #container {
 #content {
   width: auto !important;
   min-width: 0 !important;
-  margin: 162px 45px 0 !important; }
+  margin: 162px 45px 0 !important;
+  padding-top: 0 !important; }
   #content.colMS {
     margin-right: 300px !important; }
 
