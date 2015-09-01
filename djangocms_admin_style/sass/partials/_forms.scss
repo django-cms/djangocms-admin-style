@@ -2,10 +2,11 @@
 .cms-modal-window {
     background-color: #fff;
     input[type=text],
+    input[type=number],
     textarea,
     select,
     .select2-container {
-        width: 100%;
+        width: 100% !important;
         max-width: inherit !important;
         box-sizing: border-box;
     }
@@ -18,17 +19,24 @@ form {
         overflow: visible;
         border-bottom: 0;
         clear: both;
+        .select2-container {
+            width: 830px;
+        }
     }
     button,
     input,
     select,
     textarea {
         font-size: 13px;
-        width: 330px !important;
+        width: 830px !important;
         margin: 2px 0;
     }
     button {
         width: auto !important;
+    }
+    .cke {
+        width: 830px;
+        box-sizing: border-box;
     }
     .aligned {
         .field-number_of_visits p {
@@ -41,6 +49,9 @@ form {
             margin-top: 10px;
             padding-left: 0;
             margin-left: 0;
+        }
+        .vCheckboxLabel {
+            vertical-align: middle;
         }
     }
     small {

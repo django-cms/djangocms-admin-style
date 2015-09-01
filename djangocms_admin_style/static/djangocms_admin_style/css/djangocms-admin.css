@@ -395,14 +395,16 @@ small {
 .cms-modal-window {
   background-color: #fff; }
   .popup input[type=text],
+  .popup input[type=number],
   .popup textarea,
   .popup select,
   .popup .select2-container,
   .cms-modal-window input[type=text],
+  .cms-modal-window input[type=number],
   .cms-modal-window textarea,
   .cms-modal-window select,
   .cms-modal-window .select2-container {
-    width: 100%;
+    width: 100% !important;
     max-width: inherit !important;
     box-sizing: border-box; }
   .popup #content,
@@ -413,17 +415,23 @@ form .form-row {
   overflow: visible;
   border-bottom: 0;
   clear: both; }
+  form .form-row .select2-container {
+    width: 830px; }
 
 form button,
 form input,
 form select,
 form textarea {
   font-size: 13px;
-  width: 330px !important;
+  width: 830px !important;
   margin: 2px 0; }
 
 form button {
   width: auto !important; }
+
+form .cke {
+  width: 830px;
+  box-sizing: border-box; }
 
 form .aligned .field-number_of_visits p {
   padding-left: 0;
@@ -435,6 +443,9 @@ form .aligned p.help {
   margin-top: 10px;
   padding-left: 0;
   margin-left: 0; }
+
+form .aligned .vCheckboxLabel {
+  vertical-align: middle; }
 
 form small {
   color: #808080; }
