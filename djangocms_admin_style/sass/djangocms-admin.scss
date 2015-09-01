@@ -1,6 +1,7 @@
 @import "settings/_all.scss";
 
-@import "components/_mixins.scss";
+@import "mixins/_all.scss";
+
 @import "components/_base.scss";
 @import "components/_forms.scss";
 @import "components/_tables.scss";
@@ -10,7 +11,6 @@
 @import "components/_content.scss";
 @import "components/_icons.scss";
 @import "components/_footer.scss";
-
 @import "components/_shortcuts.scss";
 
 // TODO:
