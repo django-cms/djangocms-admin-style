@@ -20,7 +20,7 @@
             overflow: hidden;
             padding-bottom: 10px;
             border-bottom: solid 1px $line-color-ultralight;
-             &.field-create {
+            &.field-create {
                 input {
                     width: 70px !important;
                 }
@@ -29,7 +29,7 @@
                     float: left;
                     width: 160px !important;
                 }
-             }
+            }
         }
         .field-box {
             label {
