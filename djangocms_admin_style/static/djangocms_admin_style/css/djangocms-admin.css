@@ -394,13 +394,14 @@ small {
 .popup,
 .cms-modal-window {
   background-color: #fff; }
+  .popup .module h2,
+  .cms-modal-window .module h2 {
+    padding-bottom: 10px; }
   .popup input[type=text],
-  .popup input[type=number],
   .popup textarea,
   .popup select,
   .popup .select2-container,
   .cms-modal-window input[type=text],
-  .cms-modal-window input[type=number],
   .cms-modal-window textarea,
   .cms-modal-window select,
   .cms-modal-window .select2-container {
@@ -410,6 +411,27 @@ small {
   .popup #content,
   .cms-modal-window #content {
     margin-top: 20px !important; }
+  .popup .bootstrap3-column .form-row,
+  .cms-modal-window .bootstrap3-column .form-row {
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ebebeb; }
+    .popup .bootstrap3-column .form-row.field-create input,
+    .cms-modal-window .bootstrap3-column .form-row.field-create input {
+      width: 70px !important; }
+    .popup .bootstrap3-column .form-row.field-create label,
+    .cms-modal-window .bootstrap3-column .form-row.field-create label {
+      display: inline-block;
+      float: left;
+      width: 160px !important; }
+  .popup .bootstrap3-column .field-box label,
+  .cms-modal-window .bootstrap3-column .field-box label {
+    display: inline-block;
+    float: left;
+    width: 70px !important; }
+  .popup .bootstrap3-column .field-box input,
+  .cms-modal-window .bootstrap3-column .field-box input {
+    width: auto !important; }
 
 form .form-row {
   overflow: visible;

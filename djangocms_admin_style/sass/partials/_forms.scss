@@ -1,8 +1,10 @@
 .popup,
 .cms-modal-window {
     background-color: #fff;
+    .module h2 {
+        padding-bottom: 10px;
+    }
     input[type=text],
-    input[type=number],
     textarea,
     select,
     .select2-container {
@@ -12,6 +14,33 @@
     }
     #content {
         margin-top: 20px !important;
+    }
+    .bootstrap3-column {
+        .form-row {
+            overflow: hidden;
+            padding-bottom: 10px;
+            border-bottom: solid 1px $line-color-ultralight;
+             &.field-create {
+                input {
+                    width: 70px !important;
+                }
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 160px !important;
+                }
+             }
+        }
+        .field-box {
+            label {
+                display: inline-block;
+                float: left;
+                width: 70px !important;
+            }
+            input {
+                width: auto !important;
+            }
+        }
     }
 }
 form {
