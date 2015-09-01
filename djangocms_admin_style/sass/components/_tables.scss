@@ -17,7 +17,7 @@ table {
     thead th,
     thead th.sorted,
     tfoot td {
-        background: $background-color-ultralight;
+        background: $gray-lightest;
     }
     thead th.sorted .sortoptions a {
         &.ascending {
@@ -42,7 +42,7 @@ table {
     thead th.sortable{
         min-width: 160px;
         &:hover {
-            background: $background-color-light;
+            background: $gray-lighter;
         }
         .sortpriority {
             color: white !important;
@@ -76,12 +76,12 @@ table {
         background: $white;
     }
     .row2 {
-        background: $background-color-ultralight;
+        background: $gray-lightest;
     }
 }
 fieldset table {
     border: none;
 }
 .results table tbody tr:hover {
-    background: $background-color-highlighter;
+    background: $color-primary-light;
 }

@@ -108,7 +108,7 @@
     border-bottom: 1px solid $button-orange-dark-color !important;
     background-color: $button-orange-medium-color !important;
     background-image: linear-gradient($button-orange-light-color, $button-orange-medium-color);
-    box-shadow: inset 0 0 $button-shadow-width $button-orange-light-color;
+    box-shadow: none;
     &:hover {
         color: $button-orange-font-color;
         background: $button-orange-light-color;
@@ -146,7 +146,7 @@
     cursor: default;
     background-color: $button-black-medium-color !important;
     background-image: linear-gradient($button-black-light-color, $button-black-medium-color);
-    box-shadow: inset 0 0 $button-shadow-width $button-black-light-color;
+    box-shadow: none;
     &:hover {
         color: $button-black-font-color;
         border-color: $button-black-medium-color;
@@ -165,22 +165,22 @@
 
 @mixin button-inactive {
     color: $button-inactive-font-color;
-    border: 1px solid $button-inactive-light-color;
+    border: 1px solid $white;
     border-bottom: 1px solid $button-inactive-dark-color;
     cursor: default;
     background-color: $button-inactive-medium-color !important;
-    background-image: linear-gradient($button-inactive-light-color, $button-inactive-medium-color);
-    box-shadow: inset 0 0 $button-shadow-width $button-inactive-light-color;
+    background-image: linear-gradient($white, $button-inactive-medium-color);
+    box-shadow: none;
     &:hover {
         color: $button-inactive-font-color;
         border-color: $button-inactive-medium-color;
-        background-image: linear-gradient($button-inactive-light-color, $button-inactive-medium-color);
+        background-image: linear-gradient($white, $button-inactive-medium-color);
     }
     &:active,
     &.select {
         color: $button-inactive-font-color;
         border-color: $button-inactive-medium-color;
-        background-image: linear-gradient($button-inactive-light-color, $button-inactive-medium-color);
+        background-image: linear-gradient($white, $button-inactive-medium-color);
     }
     &.animate {
         @include stripes(0.1);

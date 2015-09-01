@@ -37,7 +37,7 @@
                 td {
                     white-space: nowrap;
                     padding: 1px 10px;
-                    border-color: $background-color-light;
+                    border-color: $gray-lighter;
                     a,
                     a:link,
                     a:visited,
@@ -46,10 +46,10 @@
                     }
                 }
                 tr.selected {
-                    color: $background-color-highlighter;
+                    color: $color-primary-light;
                     background: $color-primary !important;
                     a {
-                        color: $background-color-highlighter;
+                        color: $color-primary-light;
                     }
                     .drag {
                         background: url('../img/drag-light.png');

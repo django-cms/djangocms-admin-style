@@ -2,10 +2,10 @@
 .admin_shortcuts .shortcuts {
     color: $font-color-ultralight;
     border-top: 1px solid $line-color-dark;
-    background: $background-color-dark;
+    background: $gray;
     box-shadow: none;
     h2 {
-        font-weight: normal; 
+        font-weight: normal;
         border: none;
     }
     li {
@@ -14,12 +14,12 @@
         a:visited {
             text-decoration: none;
             border: 1px solid $line-color-dark;
-            background-color: $background-color-medium;
+            background-color: $gray-darker;
             .count {
                 color: $font-color-light;
             }
             .count_new {
-                border-color: $button-blue-light-color; 
+                border-color: $button-blue-light-color;
                 background: $button-blue-medium-color;
             }
         }
@@ -28,7 +28,7 @@
             background-color: #4e5359;
         }
         a:active {
-            background-color: $background-color-medium;
+            background-color: $gray-darker;
         }
     }
 }

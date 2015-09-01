@@ -324,8 +324,8 @@ div.calendar {
         caption {
             color: $white !important;
             margin: 0;
-            background-color: $background-color-dark;
-            background-image: linear-gradient($background-color-dark, $background-color-medium);
+            background-color: $gray;
+            background-image: linear-gradient($gray, $gray-darker);
 
             border-top-radius: $border-radius-base;
         }
@@ -389,8 +389,8 @@ div.clockbox {
     border-top-radius: $border-radius-base;
     h2 {
         color: $white !important;
-        background-color: $background-color-dark;
-        background-image: linear-gradient($background-color-dark, $background-color-medium);
+        background-color: $gray;
+        background-image: linear-gradient($gray, $gray-darker);
 
         border-top-radius: $border-radius-base;
     }
