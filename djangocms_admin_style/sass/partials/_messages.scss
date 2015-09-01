@@ -63,7 +63,7 @@
 .messages {
     position: fixed;
     z-index: 1000;
-    color: #fff;
+    color: $white;
     font-size: 125%;
     font-weight: bold;
     text-align: center;
@@ -79,7 +79,7 @@
     }
     .close {
         display: block;
-        color: #fff;
+        color: $white;
         font-size: 10px;
         line-height: 2.5;
         vertical-align: middle;
@@ -115,7 +115,7 @@
 
 .inline-messages {
     position: relative;
-    color: #fff;
+    color: $white;
     font-size: 100%;
     text-align: left;
     .inline-message {
@@ -148,7 +148,7 @@ header {
     &.header-info {
         @include message-info;
         .meta small {
-            color: #fff;
+            color: $white;
         }
         nav li.internal {
             box-shadow: none;
@@ -157,7 +157,7 @@ header {
     &.header-success {
         @include message-success;
         .meta small {
-            color: #fff;
+            color: $white;
         }
         nav li.internal {
             box-shadow: none;
@@ -166,7 +166,7 @@ header {
     &.header-warning {
         @include message-warning;
         .meta small {
-            color: #fff;
+            color: $white;
         }
         nav li.internal {
             box-shadow: none;
@@ -175,7 +175,7 @@ header {
     &.header-error {
         @include message-error;
         .meta small {
-            color: #fff;
+            color: $white;
         }
         nav li.internal {
             box-shadow: none;

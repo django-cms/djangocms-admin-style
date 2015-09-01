@@ -16,7 +16,7 @@
         color: $font-color-light !important;
         padding-left: 15px;
         padding-right: 15px;
-        background-color: #fff !important;
+        background-color: $white !important;
         clear: both;
     }
     #changelist {
@@ -56,7 +56,7 @@
                     }
                     .lang-code {
                         color: $link-color;
-                        background-color: #fff;
+                        background-color: $white;
                     }
                 }
                 .drag {
@@ -218,9 +218,9 @@
             text-transform: uppercase;
             padding: 10px 10px 5px !important;
             border-color: $line-color-ultralight;
-            background-color: #fff;
+            background-color: $white;
             &.sorted {
-                background-color: #fff;
+                background-color: $white;
             }
             &.action-checkbox-column {
                 padding: 0 15px !important;

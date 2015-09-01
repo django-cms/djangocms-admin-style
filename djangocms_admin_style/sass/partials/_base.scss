@@ -12,7 +12,7 @@ body {
         padding-left: 0;
     }
     &.dashboard {
-        background-color: #fff;
+        background-color: $white;
         h1 {
             margin-left: 10px;
         }
@@ -53,11 +53,11 @@ h4 {
     font-weight: bold;
 }
 h5 {
-    color: $font-color; 
+    color: $font-color;
     font-size: 100%;
 }
 h6 {
-    color: $font-color-medium; 
+    color: $font-color-medium;
     font-size: 100%;
 }
 a.btn {
@@ -107,7 +107,7 @@ pre {
 
 div hr {
     margin: 20px 0;
-    border: none; 
+    border: none;
     background: $line-color-light;
 }
 
@@ -127,7 +127,7 @@ small {
 .clearfix:after {
     content: ".";
     display: block;
-    visibility: hidden; 
+    visibility: hidden;
     clear: both;
     height: 0;
 }

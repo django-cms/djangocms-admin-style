@@ -179,7 +179,7 @@ body {
 .selector {
     .selector-available,
     .selector-chosen {
-        background-color: #fff;
+        background-color: $white;
         border: 1px solid $line-color-light;
         border-radius: $default-border-radius;
         h2 {
@@ -217,7 +217,7 @@ body.login {
         @include box();
         width: 340px !important;
         border: none;
-        box-shadow: inset rgba(0, 0, 0, 0.3) 0 1px 2px, #fff 0 1px 1px;
+        box-shadow: inset rgba(0, 0, 0, 0.3) 0 1px 2px, $white 0 1px 1px;
         #header {
             position: static;
             background: none !important;
@@ -581,8 +581,8 @@ a.addlink {
     &:hover,
     &:focus {
         color: black !important;
-        background-color: #fff !important;
-        border-bottom: solid 3px #fff !important;
+        background-color: $white !important;
+        border-bottom: solid 3px $white !important;
     }
     &.selected {
         color: $link-color !important;
@@ -595,8 +595,8 @@ a.addlink {
         &:hover,
         &:focus {
             color: black !important;
-            background-color: #fff !important;
-            border-bottom: solid 3px #fff !important;
+            background-color: $white !important;
+            border-bottom: solid 3px $white !important;
         }
     }
 }

@@ -1,6 +1,6 @@
 .popup,
 .cms-modal-window {
-    background-color: #fff;
+    background-color: $white;
     .module h2 {
         padding-bottom: 10px;
     }
@@ -90,12 +90,12 @@ form {
         margin: 5px 0;
     }
     fieldset {
-        line-height: 2em; 
+        line-height: 2em;
         vertical-align: middle;
     }
     fieldset.collapsed h2 {
         margin-bottom: 0;
-        padding-bottom: 5px; 
+        padding-bottom: 5px;
         border-bottom: none;
         background-image: none;
     }
@@ -152,7 +152,7 @@ form {
         font-size: 18px;
         font-weight: normal;
         padding: 10px 40px 10px 20px;
-        background: #fff url('../img/icon_arrow_down.png') no-repeat right center;
+        background: $white url('../img/icon_arrow_down.png') no-repeat right center;
         background-size: 25px;
         border: 1px solid $button-silver-dark-color;
         border-radius: $default-border-radius;
@@ -169,7 +169,7 @@ form {
     }
     .input-list {
         display: inline-block;
-        line-height: 20px; 
+        line-height: 20px;
         vertical-align: top;
     }
     .extra {
@@ -237,7 +237,7 @@ form {
             }
         }
         .select2-choice {
-            background-color: #fff;
+            background-color: $white;
             background-image: none;
             .select2-arrow b {
                 background-position: -16px 12px;
@@ -305,7 +305,7 @@ input[type="button"] {
 a.button {
     @include button-common();
     text-decoration: none;
-    cursor: pointer; 
+    cursor: pointer;
     &.tab {
         border-radius: 0;
     }
@@ -322,7 +322,7 @@ a.button {
 div.calendar {
     table {
         caption {
-            color: $font-color-white !important;
+            color: $white !important;
             margin: 0;
             background-color: $background-color-dark;
             background-image: linear-gradient($background-color-dark, $background-color-medium);
@@ -360,7 +360,7 @@ div.calendarbox {
     }
     .calendar-shortcuts {
         padding: 10px 0 6px 0;
-        border-color: #ddd; 
+        border-color: #ddd;
         background: transparent;
     }
 }
@@ -378,7 +378,7 @@ div.clockbox {
     }
     .calendar-cancel {
         margin-top: 5px !important;
-        padding: 5px 0 !important; 
+        padding: 5px 0 !important;
         background: none;
 
         border-bottom-radius: $default-border-radius;
@@ -388,7 +388,7 @@ div.clockbox {
 div.clockbox {
     border-top-radius: $default-border-radius;
     h2 {
-        color: $font-color-white !important;
+        color: $white !important;
         background-color: $background-color-dark;
         background-image: linear-gradient($background-color-dark, $background-color-medium);
 
