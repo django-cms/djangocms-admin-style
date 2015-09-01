@@ -155,7 +155,7 @@ body {
     padding: 20px 0;
     border: 0;
     border-top: 1px solid $line-color-light;
-    border-radius: $default-border-radius;
+    border-radius: $border-radius-base;
     background: $background-color-transparent !important;
     box-shadow: inset 0 0 $button-shadow-width $background-color-white !important;
     .deletelink-box {
@@ -181,7 +181,7 @@ body {
     .selector-chosen {
         background-color: $white;
         border: 1px solid $line-color-light;
-        border-radius: $default-border-radius;
+        border-radius: $border-radius-base;
         h2 {
             color: $font-color !important;
             font-size: 13px;
@@ -603,7 +603,7 @@ a.addlink {
 #lang_tab_content h2.header {
     position: relative;
     margin-bottom: -3px !important;
-    border-top-right-radius: $default-border-radius;
+    border-top-right-radius: $border-radius-base;
     background: $button-blue-light-color !important;
 }
 
@@ -624,7 +624,7 @@ a.addlink {
         border: none !important;
         background: white;
 
-        border-top-radius: $default-border-radius;
+        border-top-radius: $border-radius-base;
         a {
             color: $font-color-medium !important;
             padding: 5px 10px;

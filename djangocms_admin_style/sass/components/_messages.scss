@@ -121,7 +121,7 @@
     .inline-message {
         font-weight: bold;
         padding: 5px 10px;
-        border-radius: $default-border-radius;
+        border-radius: $border-radius-base;
     }
     .animate {
         @include stripes(0.1);
@@ -187,7 +187,7 @@ header {
     margin-bottom: 15px;
     padding: 15px 20px;
     border-top: 1px solid $line-color-white;
-    border-radius: $default-border-radius;
+    border-radius: $border-radius-base;
     &.hint-info {
         color: $info-color;
         text-align: center;

@@ -129,7 +129,7 @@ form {
         padding: 10px;
         border: 1px solid $button-silver-dark-color;
         box-sizing: border-box;
-        border-radius: $default-border-radius;
+        border-radius: $border-radius-base;
         outline: none;
     }
     input[type="checkbox"],
@@ -144,7 +144,7 @@ form {
         color: $button-silver-font-color;
         padding: 6px 5px;
         border: 1px solid $button-silver-dark-color;
-        border-radius: $default-border-radius;
+        border-radius: $border-radius-base;
         outline: none;
     }
     select {
@@ -155,7 +155,7 @@ form {
         background: $white url('../img/icon_arrow_down.png') no-repeat right center;
         background-size: 25px;
         border: 1px solid $button-silver-dark-color;
-        border-radius: $default-border-radius;
+        border-radius: $border-radius-base;
     }
     small {
         margin-left: 15px;
@@ -210,7 +210,7 @@ form {
             padding: 10px 40px 10px 20px;
             background: none;
             border: 1px solid $button-silver-dark-color;
-            border-radius: $default-border-radius;
+            border-radius: $border-radius-base;
             & > .select2-chosen {
                 font-size: 18px;
             }
@@ -260,7 +260,7 @@ form {
         background-color: transparent !important;
     }
     .select2-highlighted {
-        border-radius: $default-border-radius;
+        border-radius: $border-radius-base;
         background-color: $link-color !important;
     }
 }
@@ -275,14 +275,14 @@ form {
         background: url('../img/select2.png') no-repeat right -24px !important;
         background-size: 50px !important;
         border: 1px solid $button-silver-dark-color !important;
-        border-radius: $default-border-radius !important;
+        border-radius: $border-radius-base !important;
     }
 }
 
 
 input:invalid,
 textarea:invalid {
-    border-radius: $default-border-radius;
+    border-radius: $border-radius-base;
 }
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid {
@@ -327,7 +327,7 @@ div.calendar {
             background-color: $background-color-dark;
             background-image: linear-gradient($background-color-dark, $background-color-medium);
 
-            border-top-radius: $default-border-radius;
+            border-top-radius: $border-radius-base;
         }
         td {
             padding: 0;
@@ -369,7 +369,7 @@ div.clockbox {
     margin: 0;
     padding: 0;
     border: 1px solid #ccc;
-    border-radius: $default-border-radius;
+    border-radius: $border-radius-base;
     background: #f3f3f3;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     caption,
@@ -381,18 +381,18 @@ div.clockbox {
         padding: 5px 0 !important;
         background: none;
 
-        border-bottom-radius: $default-border-radius;
+        border-bottom-radius: $border-radius-base;
     }
 }
 // clock
 div.clockbox {
-    border-top-radius: $default-border-radius;
+    border-top-radius: $border-radius-base;
     h2 {
         color: $white !important;
         background-color: $background-color-dark;
         background-image: linear-gradient($background-color-dark, $background-color-medium);
 
-        border-top-radius: $default-border-radius;
+        border-top-radius: $border-radius-base;
     }
     .timelist a {
         padding: 5px 2px;

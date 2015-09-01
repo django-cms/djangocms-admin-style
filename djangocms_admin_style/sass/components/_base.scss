@@ -62,7 +62,7 @@ h6 {
 }
 a.btn {
     @include button-common-init();
-    border-radius: $default-border-radius;
+    border-radius: $border-radius-base;
 }
 a,
 a:link {

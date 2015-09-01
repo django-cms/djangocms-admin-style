@@ -95,8 +95,8 @@
             min-height: 100%;
             padding-left: 18px;
             border-left: 0;
-            border-top-right-radius: $default-border-radius;
-            border-bottom-right-radius: $default-border-radius;
+            border-top-right-radius: $border-radius-base;
+            border-bottom-right-radius: $border-radius-base;
             background-color: #f7f7f7 !important;
             h2,
             h3 {
@@ -147,7 +147,7 @@
                 margin-top: 5px;
                 margin-right: 10px;
                 border: 1px solid $button-silver-dark-color;
-                border-radius: $default-border-radius;
+                border-radius: $border-radius-base;
             }
             label {
                 display: inline-block;
