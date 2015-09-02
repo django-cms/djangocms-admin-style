@@ -603,7 +603,7 @@ a.addlink {
     position: relative;
     margin-bottom: -3px !important;
     border-top-right-radius: $border-radius-base;
-    background: $button-blue-light-color !important;
+    background: $color-primary !important;
 }
 
 
@@ -611,7 +611,7 @@ a.addlink {
 .nani-language-tabs {
     position: relative;
     margin-bottom: -3px;
-    border-bottom: 5px solid $button-blue-light-color;
+    border-bottom: 5px solid $color-primary;
     > span {
         display: inline-block;
         top: 0 !important;
@@ -652,7 +652,7 @@ a.addlink {
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
         padding-right: 20px !important;
         padding-left: 20px !important;
-        background: $button-blue-light-color;
+        background: $color-primary;
     }
     > .current .deletelink {
         right: -12px !important;

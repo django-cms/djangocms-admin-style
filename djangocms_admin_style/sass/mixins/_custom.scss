@@ -58,8 +58,8 @@
 
 @mixin button-blue {
     color: $white !important;
-    border: 1px solid $button-blue-medium-color !important;
-    background-color: $button-blue-medium-color !important;
+    border: 1px solid $color-primary !important;
+    background-color: $color-primary !important;
     background-image: none;
     box-shadow: none !important;
     &,
@@ -69,76 +69,11 @@
     &:hover,
     &:focus {
         color: $white !important;
-        border: 1px solid $button-blue-light-color !important;
-        background-color: $button-blue-light-color !important;
+        border: 1px solid $color-primary !important;
+        background-color: $color-primary !important;
     }
     &:active {
-        background: $button-blue-medium-color !important;
-    }
-    &.animate {
-        @include stripes(0.1);
-    }
-}
-
-@mixin button-green {
-    color: $white !important;
-    border: 1px solid $button-green-medium-color !important;
-    background-color: $button-green-medium-color !important;
-    box-shadow: none !important;
-    &,
-    &:visited {
-        background-image: none !important;
-    }
-    &:hover {
-        color: $white !important;
-        border: 1px solid $button-green-light-color !important;
-        background: $button-green-light-color  !important;
-    }
-    &:active {
-        background: $button-green-medium-color  !important;
-    }
-    &.animate {
-        @include stripes(0.1);
-    }
-}
-
-
-@mixin button-red {
-    color: $white !important;
-    border: 1px solid $button-red-light-color !important;
-    background-color: $button-red-medium-color !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    &:hover {
-        color: $white !important;
-        background: $button-red-light-color !important;
-    }
-    &:active {
-        background: $button-red-medium-color !important;
-    }
-    &.animate {
-        @include stripes(0.2);
-    }
-}
-
-@mixin button-inactive {
-    color: $button-inactive-font-color;
-    border: 1px solid $white;
-    border-bottom: 1px solid $button-inactive-dark-color;
-    cursor: default;
-    background-color: $button-inactive-medium-color !important;
-    background-image: linear-gradient($white, $button-inactive-medium-color);
-    box-shadow: none;
-    &:hover {
-        color: $button-inactive-font-color;
-        border-color: $button-inactive-medium-color;
-        background-image: linear-gradient($white, $button-inactive-medium-color);
-    }
-    &:active,
-    &.select {
-        color: $button-inactive-font-color;
-        border-color: $button-inactive-medium-color;
-        background-image: linear-gradient($white, $button-inactive-medium-color);
+        background: $color-primary !important;
     }
     &.animate {
         @include stripes(0.1);

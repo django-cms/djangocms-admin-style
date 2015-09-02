@@ -37,29 +37,6 @@ $toolbar-margin-logo: ($toolbar-height - $toolbar-logo-height) / 2;
 $content-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + $content-margin;
 
 
-// Buttons
-
-/* inactive */
-$button-inactive-medium-color: #efefef;
-$button-inactive-dark-color: #eee;
-$button-inactive-font-color: #bbb;
-
-/* Blue */
-$button-blue-light-color: #48abd9;
-$button-blue-medium-color: $color-primary;
-$button-blue-dark-color: #0072ac;
-
-/* Red */
-$button-red-light-color: #ef4a4a;
-$button-red-medium-color: #e80101;
-$button-red-dark-color: #d50101;
-
-/* Green */
-$button-green-light-color: #7cbe5a;
-$button-green-medium-color: #5bae31;
-$button-green-dark-color: #5da03d;
-
-
 // Then we'll import the compass extension
 @import "libs/_html5-boilerplate.scss";
 
