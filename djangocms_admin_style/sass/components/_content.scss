@@ -50,6 +50,10 @@ body {
     @include box();
     margin-bottom: 45px;
     background: none !important;
+    &.collapse {
+        display: block;
+       margin-bottom: 0;
+    }
     h2 {
         color: $gray-darkest;
         font-size: 100%;

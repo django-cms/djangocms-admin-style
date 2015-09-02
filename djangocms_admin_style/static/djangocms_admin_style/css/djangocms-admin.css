@@ -338,12 +338,16 @@ a:link {
     color: #57bcf0; }
 
 p,
-.description {
+.description,
+.timezonewarning {
   font-size: 14px !important;
-  color: #666666;
+  color: #666666 !important;
   font-weight: normal;
   margin-bottom: 6px;
   padding-left: 0; }
+
+.datetimeshortcuts {
+  font-size: 14px !important; }
 
 code {
   color: #666666;
@@ -430,11 +434,15 @@ small {
     width: auto !important; }
 
 form .form-row {
-  overflow: visible;
+  overflow: hidden;
   border-bottom: 0;
   clear: both; }
   form .form-row .select2-container {
     width: 830px; }
+  form .form-row .field-box {
+    float: none; }
+    form .form-row .field-box:first-child {
+      padding-bottom: 30px; }
 
 form button,
 form input,
@@ -442,6 +450,7 @@ form select,
 form textarea {
   font-size: 13px;
   width: 830px !important;
+  max-width: none !important;
   margin: 2px 0; }
 
 form button {
@@ -460,7 +469,8 @@ form .aligned p.help {
   color: #666666;
   margin-top: 10px;
   padding-left: 0;
-  margin-left: 0; }
+  margin-left: 0;
+  clear: both; }
 
 form .aligned .vCheckboxLabel {
   vertical-align: middle; }
@@ -474,12 +484,13 @@ form hr {
 form fieldset {
   line-height: 2em;
   vertical-align: middle; }
-
-form fieldset.collapsed h2 {
-  margin-bottom: 0;
-  padding-bottom: 5px;
-  border-bottom: none;
-  background-image: none; }
+  form fieldset.collapse h2 {
+    padding-bottom: 10px; }
+  form fieldset.collapsed h2 {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
+    background-image: none; }
 
 form label select {
   display: block;
@@ -783,7 +794,11 @@ a.button {
     border-radius: 0; }
 
 .form-row p.datetime {
-  line-height: 36px; }
+  line-height: 36px;
+  margin-left: 0;
+  padding-left: 0; }
+  .form-row p.datetime input {
+    display: block; }
 
 div.calendar table caption {
   color: #fff !important;
@@ -1025,7 +1040,7 @@ fieldset table {
         min-width: auto;
         padding: 0; }
       .change-list #changelist #toolbar form #searchbar {
-        max-width: 200px;
+        max-width: 200px !important;
         font-size: 18px;
         padding: 10px 5px !important;
         vertical-align: top; }
@@ -1321,6 +1336,9 @@ body #container {
   .module h6 {
     margin-top: 0;
     margin-bottom: 12px; }
+  .module.collapse {
+    display: block;
+    margin-bottom: 0; }
   .module h2 {
     color: #333333;
     font-size: 100%;
