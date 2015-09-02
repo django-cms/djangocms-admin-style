@@ -55,15 +55,15 @@ table,
 
 .addlink,
 .addlink a {
- color: $success-color;
+ color: $color-success;
 }
 .changelink,
 .changelink a {
- color: $info-color;
+ color: $color-primary;
 }
 .deletelink,
 .deletelink a {
- color: $error-color;
+ color: $color-danger;
 }
 
 .addlink,

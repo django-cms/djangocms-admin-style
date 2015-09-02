@@ -115,7 +115,7 @@ body {
             padding-bottom: 8px;
         }
         .add-row a {
-            color: $button-green-dark-color;
+            color: $color-success;
             border-bottom: none;
         }
         .add-row td {
@@ -140,7 +140,7 @@ body {
             background: none !important;
         }
         a {
-            color: $button-green-dark-color;
+            color: $color-success;
         }
     }
 }
@@ -364,11 +364,11 @@ body.login {
                 line-height: 21px;
                 padding: 0 10px 0 0;
                 &.addlink {
-                    color: $success-color;
+                    color: $color-success;
                     font-size: 16px;
                 }
                 &.changelink {
-                    color: $info-color;
+                    color: $color-primary;
                     font-size: 16px;
                 }
             }
@@ -455,12 +455,12 @@ a.addlink {
     &,
     &:link,
     &:visited {
-        color: $button-green-medium-color;
+        color: $color-success;
     }
     &:hover,
     &:focus,
     &:active {
-        color: $button-green-dark-color;
+        color: $color-success;
     }
 }
 
@@ -504,7 +504,7 @@ a.addlink {
     }
     .addlink {
         @include button-common();
-        @include button-green();
+        @include button-blue();
         color: $white !important;
         padding: 10px 30px !important;
     }
@@ -542,7 +542,7 @@ a.addlink {
         line-height: 16px;
     }
     input[type="submit"] {
-        @include button-red();
+        @include button-blue();
         float: right;
     }
 }

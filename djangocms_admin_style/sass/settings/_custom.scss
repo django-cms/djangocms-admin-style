@@ -10,22 +10,21 @@ $line-height-normal: 21px;
 
 $color-primary-light: #f1faff;
 
-$info-color-ultralight: #addef6;
-$info-color-light: #5bbdee;
-$info-color: #029eee;
-$info-color-dark: #0072ac;
-$success-color-ultralight: #ebf8e6;
-$success-color-light: #7cbe5a;
-$success-color: #5bae31;
-$success-color-dark: #5da03d;
-$warning-color-ultralight: #fffde4;
-$warning-color-light: #ffc600;
-$warning-color: #ffb400;
-$warning-color-dark: #ffa800;
-$error-color-ultralight: #fff3f3;
-$error-color-light: #ef4a4a;
-$error-color: #e80101;
-$error-color-dark: #d50101;
+$color-info-ultralight: #addef6;
+$color-info-light: #5bbdee;
+$color-info-dark: #0072ac;
+
+$color-success-ultralight: #ebf8e6;
+$color-success-light: #7cbe5a;
+$color-success-dark: #5da03d;
+
+$color-warning-ultralight: #fffde4;
+$color-warning-light: #ffc600;
+$color-warning-dark: #ffa800;
+
+$color-danger-ultralight: #fff3f3;
+$color-danger-light: #ef4a4a;
+$color-danger-dark: #d50101;
 
 // Content
 $content-margin: 55px;

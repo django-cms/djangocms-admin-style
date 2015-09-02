@@ -1,7 +1,3 @@
-/* inactive */
-/* Blue */
-/* Red */
-/* Green */
 html,
 body,
 div,
@@ -726,8 +722,8 @@ input[type="button"] {
     input[type="button"].default:hover,
     input[type="button"].default:focus {
       color: #fff !important;
-      border: 1px solid #48abd9 !important;
-      background-color: #48abd9 !important; }
+      border: 1px solid #57bcf0 !important;
+      background-color: #57bcf0 !important; }
     input[type="submit"].default:active,
     input[type="button"].default:active {
       background: #57bcf0 !important; }
@@ -1197,8 +1193,8 @@ fieldset table {
     #changelist-search input[type="submit"]:hover,
     #changelist-search input[type="submit"]:focus {
       color: #fff !important;
-      border: 1px solid #48abd9 !important;
-      background-color: #48abd9 !important; }
+      border: 1px solid #57bcf0 !important;
+      background-color: #57bcf0 !important; }
     #changelist-search input[type="submit"]:active {
       background: #57bcf0 !important; }
     #changelist-search input[type="submit"].animate {
@@ -1373,7 +1369,7 @@ body #container {
       padding-top: 0;
       padding-bottom: 8px; }
     .inline-group .module .add-row a {
-      color: #5da03d;
+      color: #693;
       border-bottom: none; }
     .inline-group .module .add-row td {
       border-bottom: none;
@@ -1390,7 +1386,7 @@ body #container {
     border-bottom: none;
     background: none !important; }
   .inline-group .add-row a {
-    color: #5da03d; }
+    color: #693; }
 
 .inline-related {
   margin-bottom: 5px; }
@@ -1448,8 +1444,8 @@ body #container {
     .submit-row .deletelink:hover,
     .submit-row .deletelink:focus {
       color: #fff !important;
-      border: 1px solid #48abd9 !important;
-      background-color: #48abd9 !important; }
+      border: 1px solid #57bcf0 !important;
+      background-color: #57bcf0 !important; }
     .submit-row .deletelink:active {
       background: #57bcf0 !important; }
     .submit-row .deletelink.animate {
@@ -1554,8 +1550,8 @@ body.login {
           body.login #container #content #content-main .submit-row input[type="submit"]:hover,
           body.login #container #content #content-main .submit-row input[type="submit"]:focus {
             color: #fff !important;
-            border: 1px solid #48abd9 !important;
-            background-color: #48abd9 !important; }
+            border: 1px solid #57bcf0 !important;
+            background-color: #57bcf0 !important; }
           body.login #container #content #content-main .submit-row input:active,
           body.login #container #content #content-main .submit-row input[type="submit"]:active {
             background: #57bcf0 !important; }
@@ -1646,11 +1642,11 @@ body.login {
       padding: 0 10px 0 0; }
       .dashboard #container #content-main table th a.addlink,
       .dashboard #container #content-main table td a.addlink {
-        color: #5bae31;
+        color: #693;
         font-size: 16px; }
       .dashboard #container #content-main table th a.changelink,
       .dashboard #container #content-main table td a.changelink {
-        color: #029eee;
+        color: #57bcf0;
         font-size: 16px; }
   .dashboard #container #content-main table th {
     width: 100%; }
@@ -1717,12 +1713,12 @@ body.login {
 a.addlink,
 a.addlink:link,
 a.addlink:visited {
-  color: #5bae31; }
+  color: #693; }
 
 a.addlink:hover,
 a.addlink:focus,
 a.addlink:active {
-  color: #5da03d; }
+  color: #693; }
 
 #content-main .object-tools .addlink {
   border: 1px solid #e6e6e6 !important;
@@ -1764,8 +1760,8 @@ a.addlink:active {
   #content-main .object-tools .addlink:hover,
   #content-main .object-tools .addlink:focus {
     color: #fff !important;
-    border: 1px solid #48abd9 !important;
-    background-color: #48abd9 !important; }
+    border: 1px solid #57bcf0 !important;
+    background-color: #57bcf0 !important; }
   #content-main .object-tools .addlink:active {
     background: #57bcf0 !important; }
   #content-main .object-tools .addlink.animate {
@@ -1841,8 +1837,9 @@ a.addlink:active {
     width: auto;
     border-radius: 3px;
     color: #fff !important;
-    border: 1px solid #5bae31 !important;
-    background-color: #5bae31 !important;
+    border: 1px solid #57bcf0 !important;
+    background-color: #57bcf0 !important;
+    background-image: none;
     box-shadow: none !important;
     color: #fff !important;
     padding: 10px 30px !important; }
@@ -1863,13 +1860,14 @@ a.addlink:active {
       background-size: 100% 400%; }
     .object-tools .addlink,
     .object-tools .addlink:visited {
-      background-image: none !important; }
-    .object-tools .addlink:hover {
+      background-image: none; }
+    .object-tools .addlink:hover,
+    .object-tools .addlink:focus {
       color: #fff !important;
-      border: 1px solid #7cbe5a !important;
-      background: #7cbe5a !important; }
+      border: 1px solid #57bcf0 !important;
+      background-color: #57bcf0 !important; }
     .object-tools .addlink:active {
-      background: #5bae31 !important; }
+      background: #57bcf0 !important; }
     .object-tools .addlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -2030,8 +2028,8 @@ a.addlink:active {
     .object-tools .viewsitelink:hover,
     .object-tools .viewsitelink:focus {
       color: #fff !important;
-      border: 1px solid #48abd9 !important;
-      background-color: #48abd9 !important; }
+      border: 1px solid #57bcf0 !important;
+      background-color: #57bcf0 !important; }
     .object-tools .viewsitelink:active {
       background: #57bcf0 !important; }
     .object-tools .viewsitelink.animate {
@@ -2058,19 +2056,24 @@ a.addlink:active {
     line-height: 16px; }
   .delete-confirmation .colM input[type="submit"] {
     color: #fff !important;
-    border: 1px solid #ef4a4a !important;
-    background-color: #e80101 !important;
-    background-image: none !important;
+    border: 1px solid #57bcf0 !important;
+    background-color: #57bcf0 !important;
+    background-image: none;
     box-shadow: none !important;
     float: right; }
-    .delete-confirmation .colM input[type="submit"]:hover {
+    .delete-confirmation .colM input[type="submit"],
+    .delete-confirmation .colM input[type="submit"]:visited {
+      background-image: none; }
+    .delete-confirmation .colM input[type="submit"]:hover,
+    .delete-confirmation .colM input[type="submit"]:focus {
       color: #fff !important;
-      background: #ef4a4a !important; }
+      border: 1px solid #57bcf0 !important;
+      background-color: #57bcf0 !important; }
     .delete-confirmation .colM input[type="submit"]:active {
-      background: #e80101 !important; }
+      background: #57bcf0 !important; }
     .delete-confirmation .colM input[type="submit"].animate {
-      background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
-      background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+      background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+      background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
 
 #sitemap li a.addlink,
@@ -2120,12 +2123,12 @@ a.addlink:active {
   position: relative;
   margin-bottom: -3px !important;
   border-top-right-radius: 3px;
-  background: #48abd9 !important; }
+  background: #57bcf0 !important; }
 
 .nani-language-tabs {
   position: relative;
   margin-bottom: -3px;
-  border-bottom: 5px solid #48abd9; }
+  border-bottom: 5px solid #57bcf0; }
   .nani-language-tabs > span {
     display: inline-block;
     top: 0 !important;
@@ -2160,7 +2163,7 @@ a.addlink:active {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     padding-right: 20px !important;
     padding-left: 20px !important;
-    background: #48abd9; }
+    background: #57bcf0; }
   .nani-language-tabs > .current .deletelink {
     right: -12px !important; }
 
@@ -2247,15 +2250,15 @@ table .icon-search:before,
 
 .addlink,
 .addlink a {
-  color: #5bae31; }
+  color: #693; }
 
 .changelink,
 .changelink a {
-  color: #029eee; }
+  color: #57bcf0; }
 
 .deletelink,
 .deletelink a {
-  color: #e80101; }
+  color: #f00; }
 
 .addlink,
 .changelink,
@@ -2341,7 +2344,7 @@ table .icon-search:before,
     .admin_shortcuts .shortcuts li a .count_new,
     .admin_shortcuts .shortcuts li a:link .count_new,
     .admin_shortcuts .shortcuts li a:visited .count_new {
-      border-color: #48abd9;
+      border-color: #57bcf0;
       background: #57bcf0; }
   .admin_shortcuts .shortcuts li a:hover,
   .admin_shortcuts .shortcuts li a:focus {
