@@ -1,6 +1,6 @@
 // django-admin-shortcuts
 .admin_shortcuts .shortcuts {
-    color: $font-color-ultralight;
+    color: $gray-light;
     border-top: 1px solid $line-color-dark;
     background: $gray;
     box-shadow: none;
@@ -16,7 +16,7 @@
             border: 1px solid $line-color-dark;
             background-color: $gray-darker;
             .count {
-                color: $font-color-light;
+                color: $gray;
             }
             .count_new {
                 border-color: $button-blue-light-color;

@@ -36,13 +36,6 @@ $toolbar-margin-button: ($toolbar-height - $toolbar-button-height) / 2;
 $toolbar-margin-logo: ($toolbar-height - $toolbar-logo-height) / 2;
 $content-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + $content-margin;
 
-// Font
-$font-color-ultralight: #ccc;
-$font-color-light: #808080;
-$font-color-medium: #1a1a1a;
-$font-color-dark: #222;
-$font-color: #333;
-
 // Border
 $line-color-ultralight: #ebebeb;
 $line-color-light: #ddd;
@@ -89,7 +82,6 @@ $button-green-font-color: #fff;
 /* Black */
 $button-black-light-color: #5d6267;
 $button-black-medium-color: #464b50;
-$button-black-dark-color: #333;
 $button-black-font-color: #fff;
 
 

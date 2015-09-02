@@ -74,7 +74,7 @@ form {
         }
         p.help {
             font-size: 14px !important;
-            color: $font-color-light;
+            color: $gray;
             margin-top: 10px;
             padding-left: 0;
             margin-left: 0;
@@ -84,7 +84,7 @@ form {
         }
     }
     small {
-        color: $font-color-light;
+        color: $gray;
     }
     hr {
         margin: 5px 0;
@@ -108,7 +108,7 @@ form {
     label.aligned {
         display: block;
         float: none !important;
-        color: $font-color-light !important;
+        color: $gray !important;
         font-size: 14px;
         line-height: 18px;
         text-transform: uppercase;
@@ -117,14 +117,14 @@ form {
         width: auto !important;
         margin-bottom: 5px;
         &.required {
-            color: $font-color-light !important;
+            color: $gray !important;
             font-weight: normal !important;
         }
     }
     // input
     input,
     textarea {
-        color: $font-color;
+        color: $gray-darkest;
         font-size: 18px;
         padding: 10px;
         border: 1px solid $button-silver-dark-color;
@@ -255,7 +255,7 @@ form {
     .select2-searching,
     .select2-ajax-error,
     .select2-selection-limit {
-        color: $font-color-light;
+        color: $gray;
         font-size: 14px;
         background-color: transparent !important;
     }

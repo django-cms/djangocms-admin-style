@@ -13,7 +13,7 @@ body {
             top: 0;
             right: 45px;
             left: 45px;
-            color: $font-color-light !important;
+            color: $gray !important;
             font-size: 15px;
             margin-top: $toolbar-height;
             padding: $breadcrumb-padding 10px;
@@ -51,7 +51,7 @@ body {
     margin-bottom: 45px;
     background: none !important;
     h2 {
-        color: $font-color;
+        color: $gray-darkest;
         font-size: 100%;
         margin-top: 0;
         margin-bottom: 30px;
@@ -60,7 +60,7 @@ body {
         background: none;
     }
     caption {
-        color: $font-color-light;
+        color: $gray;
         font-size: 14px !important;
         font-weight: normal;
         line-height: 1.75em;
@@ -71,7 +71,7 @@ body {
         a.section,
         a.section:link,
         a.section:visited {
-            color: $font-color-light;
+            color: $gray;
         }
     }
     table {
@@ -95,7 +95,7 @@ body {
 .module h2,
 .module caption,
 .inline-group h2 {
-    color: $font-color-dark;
+    color: $gray-darkest;
     font-size: 16px;
     background: none;
 }
@@ -183,7 +183,7 @@ body {
         border: 1px solid $line-color-light;
         border-radius: $border-radius-base;
         h2 {
-            color: $font-color !important;
+            color: $gray-darkest !important;
             font-size: 13px;
             line-height: 16px;
             margin-bottom: 0;
@@ -224,7 +224,7 @@ body.login {
             box-shadow: none;
             #branding h1 {
                 float: none;
-                color: $font-color;
+                color: $gray-darkest;
                 text-align: center;
                 margin: 20px 0 !important;
             }
@@ -276,7 +276,7 @@ body.login {
     top: 0;
     left: 0;
     right: 0;
-    color: $font-color-medium !important;
+    color: $gray-darkest !important;
     width: auto !important;
     min-height: $toolbar-height;
     padding-left: $toolbar-left-space;
@@ -290,7 +290,7 @@ body.login {
             float: left;
             font-size: 14px;
             line-height: $toolbar-height;
-            color: $font-color-medium;
+            color: $gray-darkest;
             font-weight: bold;
             height: $toolbar-height;
             padding: 0;
@@ -311,7 +311,7 @@ body.login {
     a {
         &:link,
         &:visited {
-            color: $font-color-medium;
+            color: $gray-darkest;
         }
     }
     #header-btn {
@@ -320,7 +320,7 @@ body.login {
         .btn {
             display: block;
             font-size: $toolbar-button-font-size;
-            color: $font-color-light;
+            color: $gray;
             line-height: $toolbar-button-height;
             height: $toolbar-button-height;
             padding: 0 25px 0 12px !important;
@@ -359,7 +359,7 @@ body.login {
             border-color: $line-color-ultralight;
             a {
                 font-size: 18px;
-                color: $font-color;
+                color: $gray-darkest;
                 font-weight: normal;
                 line-height: 21px;
                 padding: 0 10px 0 0;
@@ -419,11 +419,11 @@ body.login {
                     line-height: 16px;
                 }
                 .mini {
-                    color: $font-color-light !important;
+                    color: $gray !important;
                 }
             }
             h2 {
-                color: $font-color;
+                color: $gray-darkest;
                 padding: 0 0 40px;
                 margin-bottom: 0;
                 background: none;
@@ -439,7 +439,7 @@ body.login {
                 border-bottom: 1px solid $line-color-ultralight;
             }
             p {
-                color: $font-color-light;
+                color: $gray;
                 font-size: 14px;
                 padding: 0;
                 margin-top: 10px;
@@ -567,7 +567,7 @@ a.addlink {
     border-bottom: solid 1px $line-color-ultralight;
 }
 #page_form_lang_tabs input {
-    color: $font-color !important;
+    color: $gray-darkest !important;
     font-weight: normal !important;
     text-transform: uppercase;
     font-size: 14px !important;
@@ -589,7 +589,7 @@ a.addlink {
         border-bottom: solid 3px $color-primary !important;
     }
     &.notfilled {
-        color: $font-color-light !important;
+        color: $gray !important;
         background: transparent !important;
         &:hover,
         &:focus {
@@ -615,7 +615,7 @@ a.addlink {
     > span {
         display: inline-block;
         top: 0 !important;
-        color: $font-color-medium !important;
+        color: $gray-darkest !important;
         font-weight: normal !important;
         vertical-align: top;
         margin: 0 !important;
@@ -625,7 +625,7 @@ a.addlink {
 
         border-top-radius: $border-radius-base;
         a {
-            color: $font-color-medium !important;
+            color: $gray-darkest !important;
             padding: 5px 10px;
             &:hover,
             &:focus {
@@ -643,7 +643,7 @@ a.addlink {
         }
     }
     > .empty {
-        color: $font-color-light;
+        color: $gray;
         opacity: 1 !important;
         background: $gray-lighter;
     }

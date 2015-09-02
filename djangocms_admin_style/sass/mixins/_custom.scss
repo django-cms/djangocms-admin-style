@@ -142,7 +142,7 @@
 @mixin button-black {
     color: $button-inactive-font-color !important;
     border: 1px solid $button-black-light-color;
-    border-bottom: 1px solid $button-black-dark-color;
+    border-bottom: 1px solid $gray-darkest;
     cursor: default;
     background-color: $button-black-medium-color !important;
     background-image: linear-gradient($button-black-light-color, $button-black-medium-color);

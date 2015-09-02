@@ -13,7 +13,7 @@
     }
     .paginator {
         font-size: 14px;
-        color: $font-color-light !important;
+        color: $gray !important;
         padding-left: 15px;
         padding-right: 15px;
         background-color: $white !important;
@@ -107,7 +107,7 @@
             }
             h2 {
                 font-size: 14px;
-                color: $font-color-light;
+                color: $gray;
                 font-weight: normal;
                 text-transform: uppercase;
                 padding: 2px 9px;
@@ -174,7 +174,7 @@
             li {
                 display: inline;
                 float: left;
-                color: $font-color;
+                color: $gray-darkest;
                 font-size: 14px;
                 font-weight: normal;
                 text-transform: uppercase;
@@ -238,7 +238,7 @@
         a,
         span {
             font-size: 14px;
-            color: $font-color-light;
+            color: $gray;
             font-weight: normal;
             padding-left: 0;
         }
@@ -294,13 +294,13 @@
     background-color: transparent;
     .this-page {
         font-size: 14px;
-        color: $font-color-light;
+        color: $gray;
         font-weight: normal;
     }
 }
 
 #changelist-filter-button {
-    color: $font-color-light;
+    color: $gray;
     text-transform: uppercase;
     font-size: 14px;
     width: 175px;

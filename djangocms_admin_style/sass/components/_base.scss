@@ -26,38 +26,38 @@ body,
 select,
 input,
 textarea {
-    color: $font-color;
+    color: $gray-darkest;
 }
 
 h1 {
-    color: $font-color-medium;
+    color: $gray-darkest;
     font-size: $font-size-normal;
     font-weight: bold;
     margin: 20px 10px 45px;
 }
 h2 {
-    color: $font-color-medium;
+    color: $gray-darkest;
     font-size: 130%;
     font-weight: bold;
     line-height: 1.75em;
     margin: 20px 10px 45px;
 }
 h3 {
-    color: $font-color;
+    color: $gray-darkest;
     font-size: 120%;
     font-weight: bold;
 }
 h4 {
-    color: $font-color-medium;
+    color: $gray-darkest;
     font-size: 110%;
     font-weight: bold;
 }
 h5 {
-    color: $font-color;
+    color: $gray-darkest;
     font-size: 100%;
 }
 h6 {
-    color: $font-color-medium;
+    color: $gray-darkest;
     font-size: 100%;
 }
 a.btn {
