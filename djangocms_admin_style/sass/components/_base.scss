@@ -81,12 +81,16 @@ a:link {
 }
 
 p,
-.description {
+.description,
+.timezonewarning {
     font-size: 14px !important;
-    color: $gray;
+    color: $gray !important;
     font-weight: normal;
     margin-bottom: 6px;
     padding-left: 0;
+}
+.datetimeshortcuts {
+    font-size: 14px !important;
 }
 
 code {

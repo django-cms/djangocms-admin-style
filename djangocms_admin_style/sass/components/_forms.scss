@@ -45,11 +45,17 @@
 }
 form {
     .form-row {
-        overflow: visible;
+        overflow: hidden;
         border-bottom: 0;
         clear: both;
         .select2-container {
             width: 830px;
+        }
+        .field-box {
+            float: none;
+            &:first-child {
+                padding-bottom: 30px;
+            }
         }
     }
     button,
@@ -58,6 +64,7 @@ form {
     textarea {
         font-size: 13px;
         width: 830px !important;
+        max-width: none !important;
         margin: 2px 0;
     }
     button {
@@ -78,6 +85,7 @@ form {
             margin-top: 10px;
             padding-left: 0;
             margin-left: 0;
+            clear: both;
         }
         .vCheckboxLabel {
             vertical-align: middle;
@@ -92,12 +100,14 @@ form {
     fieldset {
         line-height: 2em;
         vertical-align: middle;
-    }
-    fieldset.collapsed h2 {
-        margin-bottom: 0;
-        padding-bottom: 5px;
-        border-bottom: none;
-        background-image: none;
+        &.collapse h2 {
+            color: $gray-darkest;
+            margin-bottom: 0;
+            background-image: none;
+        }
+        &.collapsed {
+            margin-bottom: 30px !important;
+        }
     }
     label select {
         display: block;
@@ -315,6 +325,11 @@ a.button {
 .form-row {
     p.datetime {
         line-height: 36px;
+        margin-left: 0;
+        padding-left: 0;
+        input {
+            display: block;
+        }
     }
 }
 
