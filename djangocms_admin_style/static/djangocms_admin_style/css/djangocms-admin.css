@@ -363,7 +363,7 @@ pre {
 div hr {
   margin: 20px 0;
   border: none;
-  background: #ddd; }
+  background: #e6e6e6; }
 
 strong {
   font-weight: bold; }
@@ -410,7 +410,7 @@ small {
   .cms-modal-window .bootstrap3-column .form-row {
     overflow: hidden;
     padding-bottom: 10px;
-    border-bottom: solid 1px #ebebeb; }
+    border-bottom: solid 1px #e6e6e6; }
     .popup .bootstrap3-column .form-row.field-create input,
     .cms-modal-window .bootstrap3-column .form-row.field-create input {
       width: 70px !important; }
@@ -559,7 +559,7 @@ form .extra .right {
 
 form .form-row {
   padding: 8px 0 30px;
-  border-bottom-color: #ebebeb; }
+  border-bottom-color: #e6e6e6; }
 
 form .form-row:last-child {
   border-bottom-color: transparent; }
@@ -813,14 +813,14 @@ div.calendarbox {
       background: #666; }
   div.calendarbox .calendar-shortcuts {
     padding: 10px 0 6px 0;
-    border-color: #ddd;
+    border-color: #e6e6e6;
     background: transparent; }
 
 div.calendarbox,
 div.clockbox {
   margin: 0;
   padding: 0;
-  border: 1px solid #ccc;
+  border: 1px solid #e6e6e6;
   border-radius: 3px;
   background: #f3f3f3;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
@@ -879,7 +879,7 @@ table {
   border-radius: 3px;
   background: #fff; }
   table th {
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #e6e6e6; }
   table th,
   table td {
     text-align: left;
@@ -917,7 +917,7 @@ table {
   table td.original {
     vertical-align: top; }
   table tr td {
-    border-bottom: 1px solid #ebebeb; }
+    border-bottom: 1px solid #e6e6e6; }
   table th a,
   table th a:link,
   table th a:visited,
@@ -1035,7 +1035,7 @@ fieldset table {
         margin-bottom: 15px !important;
         padding-left: 0 !important;
         padding-bottom: 10px;
-        border-bottom: solid 1px #ebebeb; }
+        border-bottom: solid 1px #e6e6e6; }
       .change-list #changelist #changelist-filter h2 {
         font-size: 14px;
         color: #666666;
@@ -1132,7 +1132,7 @@ fieldset table {
   #toolbartable thead th {
     text-transform: uppercase;
     padding: 10px 10px 5px !important;
-    border-color: #ebebeb;
+    border-color: #e6e6e6;
     background-color: #fff; }
     #result_list thead th.sorted,
     #toolbartable thead th.sorted {
@@ -1279,7 +1279,7 @@ body #container {
     margin-top: 46px;
     padding: 20px 10px;
     border-top: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e6e6e6;
     background: transparent !important; }
     body #container .breadcrumbs a {
       color: #57bcf0; }
@@ -1318,7 +1318,7 @@ body #container {
     margin-top: 0;
     margin-bottom: 30px;
     padding: 10px 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e6e6e6;
     background: none; }
   .module caption {
     color: #666666;
@@ -1404,7 +1404,7 @@ body #container {
 .submit-row {
   padding: 20px 0;
   border: 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e6e6e6;
   border-radius: 3px;
   background: none !important;
   box-shadow: none !important; }
@@ -1468,7 +1468,7 @@ body #container {
 .selector .selector-available,
 .selector .selector-chosen {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #e6e6e6;
   border-radius: 3px; }
   .selector .selector-available h2,
   .selector .selector-chosen h2 {
@@ -1492,7 +1492,7 @@ body #container {
 .selector select[multiple] {
   overflow-y: auto;
   margin-bottom: 0;
-  border: 1px solid #ddd;
+  border: 1px solid #e6e6e6;
   border-right: none;
   border-left: none; }
 
@@ -1639,7 +1639,7 @@ body.login {
   .dashboard #container #content-main table th,
   .dashboard #container #content-main table td {
     width: auto;
-    border-color: #ebebeb; }
+    border-color: #e6e6e6; }
     .dashboard #container #content-main table th a,
     .dashboard #container #content-main table td a {
       font-size: 18px;
@@ -1659,7 +1659,7 @@ body.login {
     width: 100%; }
   .dashboard #container #content-main .module tr:first-child th,
   .dashboard #container #content-main .module tr:first-child td {
-    border-top: 1px solid #ebebeb; }
+    border-top: 1px solid #e6e6e6; }
 
 .dashboard #container #content-related {
   position: absolute;
@@ -1670,7 +1670,7 @@ body.login {
   width: 255px;
   padding-top: 160px;
   margin: 0;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #e6e6e6;
   background-color: #f7f7f7;
   z-index: -1; }
   .dashboard #container #content-related .module {
@@ -1683,7 +1683,7 @@ body.login {
         position: relative;
         font-size: 14px;
         padding: 9px 15px 9px 45px;
-        border-bottom: solid 1px #ebebeb; }
+        border-bottom: solid 1px #e6e6e6; }
         .dashboard #container #content-related .module ul.actionlist li a {
           padding-right: 10px; }
         .dashboard #container #content-related .module ul.actionlist li:before {
@@ -1707,7 +1707,7 @@ body.login {
       text-transform: uppercase;
       margin: 0;
       padding: 0 0 13px;
-      border-bottom: 1px solid #ebebeb; }
+      border-bottom: 1px solid #e6e6e6; }
     .dashboard #container #content-related .module p {
       color: #666666;
       font-size: 14px;
@@ -2088,7 +2088,7 @@ a.addlink:active {
 
 #page_form_lang_tabs {
   margin-bottom: 30px;
-  border-bottom: solid 1px #ebebeb; }
+  border-bottom: solid 1px #e6e6e6; }
 
 #page_form_lang_tabs input {
   color: #333333 !important;
@@ -2325,7 +2325,7 @@ table .icon-search:before,
 
 .admin_shortcuts .shortcuts {
   color: #a6a6a6;
-  border-top: 1px solid #444;
+  border-top: 1px solid #454545;
   background: #666666;
   box-shadow: none; }
   .admin_shortcuts .shortcuts h2 {
@@ -2335,7 +2335,7 @@ table .icon-search:before,
   .admin_shortcuts .shortcuts li a:link,
   .admin_shortcuts .shortcuts li a:visited {
     text-decoration: none;
-    border: 1px solid #444;
+    border: 1px solid #454545;
     background-color: #454545; }
     .admin_shortcuts .shortcuts li a .count,
     .admin_shortcuts .shortcuts li a:link .count,

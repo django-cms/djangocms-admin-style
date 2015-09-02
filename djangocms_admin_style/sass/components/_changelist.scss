@@ -103,7 +103,7 @@
                 margin-bottom: 15px !important;
                 padding-left: 0 !important;
                 padding-bottom: 10px;
-                border-bottom: solid 1px $line-color-ultralight;
+                border-bottom: solid 1px $gray-lighter;
             }
             h2 {
                 font-size: 14px;
@@ -217,7 +217,7 @@
         th {
             text-transform: uppercase;
             padding: 10px 10px 5px !important;
-            border-color: $line-color-ultralight;
+            border-color: $gray-lighter;
             background-color: $white;
             &.sorted {
                 background-color: $white;

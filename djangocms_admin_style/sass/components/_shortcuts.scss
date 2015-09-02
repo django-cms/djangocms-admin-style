@@ -1,7 +1,7 @@
 // django-admin-shortcuts
 .admin_shortcuts .shortcuts {
     color: $gray-light;
-    border-top: 1px solid $line-color-dark;
+    border-top: 1px solid $gray-darker;
     background: $gray;
     box-shadow: none;
     h2 {
@@ -13,7 +13,7 @@
         a:link,
         a:visited {
             text-decoration: none;
-            border: 1px solid $line-color-dark;
+            border: 1px solid $gray-darker;
             background-color: $gray-darker;
             .count {
                 color: $gray;

@@ -6,7 +6,7 @@ table {
     border-radius: $border-radius-base;
     background: $white;
     th {
-        border-bottom: 1px solid $line-color-light;
+        border-bottom: 1px solid $gray-lighter;
     }
     th,
     td {
@@ -61,7 +61,7 @@ table {
     }
     tr {
         td {
-            border-bottom: 1px solid $line-color-ultralight;
+            border-bottom: 1px solid $gray-lighter;
         }
     }
     th {
