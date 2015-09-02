@@ -337,7 +337,8 @@ a:link {
   a:link:active {
     color: #57bcf0; }
 
-p, .description {
+p,
+.description {
   font-size: 14px !important;
   color: #666666;
   font-weight: normal;
