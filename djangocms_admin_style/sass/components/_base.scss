@@ -1,7 +1,7 @@
 // base
 
 body {
-    background-color: #f7f7f7;
+    background-color: $gray-lightest;
     .breadcrumbs {
         padding: 20px 0 !important;
     }
@@ -81,7 +81,7 @@ p {
 }
 
 code {
-    color: #666;
+    color: $gray;
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
     font-size: 11px;
     background: inherit;
@@ -91,12 +91,12 @@ code {
 }
 
 pre {
-    color: #666;
+    color: $gray;
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
     font-size: 11px;
     background: inherit;
     &.literal-block {
-        background: #eee;
+        background: $gray-lighter;
     }
 }
 

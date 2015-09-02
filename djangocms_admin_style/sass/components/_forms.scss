@@ -286,7 +286,7 @@ textarea:invalid {
 }
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid {
-    background-color: #f0dddd;
+    background-color: $color-danger-ultralight;
 }
 
 // buttons
@@ -331,7 +331,7 @@ div.calendar {
         }
         td {
             padding: 0;
-            background: #f3f3f3;
+            background: $gray-lightest;
         }
         td a {
             padding: 6px 4px;
@@ -355,7 +355,7 @@ div.calendarbox {
         background: none;
         &:hover,
         &:focus {
-            background: #666;
+            background: $gray;
         }
     }
     .calendar-shortcuts {
@@ -370,7 +370,7 @@ div.clockbox {
     padding: 0;
     border: 1px solid $gray-lighter;
     border-radius: $border-radius-base;
-    background: #f3f3f3;
+    background: $gray-lightest;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     caption,
     h2 {

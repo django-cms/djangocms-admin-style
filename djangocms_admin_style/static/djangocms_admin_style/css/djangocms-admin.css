@@ -260,7 +260,7 @@ sup {
     clear: both; }
 
 body {
-  background-color: #f7f7f7; }
+  background-color: #fafafa; }
   body .breadcrumbs {
     padding: 20px 0 !important; }
   body h1 {
@@ -338,7 +338,7 @@ p {
   margin-bottom: 6px; }
 
 code {
-  color: #666;
+  color: #666666;
   font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
   font-size: 11px;
   background: inherit; }
@@ -346,12 +346,12 @@ code {
     color: #930; }
 
 pre {
-  color: #666;
+  color: #666666;
   font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
   font-size: 11px;
   background: inherit; }
   pre.literal-block {
-    background: #eee; }
+    background: #e6e6e6; }
 
 div hr {
   margin: 20px 0;
@@ -634,7 +634,7 @@ textarea:invalid {
 
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid {
-  background-color: #f0dddd; }
+  background-color: #fff3f3; }
 
 button {
   border: 1px solid #e6e6e6 !important;
@@ -780,7 +780,7 @@ div.calendar table caption {
 
 div.calendar table td {
   padding: 0;
-  background: #f3f3f3; }
+  background: #fafafa; }
 
 div.calendar table td a {
   padding: 6px 4px; }
@@ -803,7 +803,7 @@ div.calendarbox {
     div.calendarbox .calendarnav-previous:focus,
     div.calendarbox .calendarnav-next:hover,
     div.calendarbox .calendarnav-next:focus {
-      background: #666; }
+      background: #666666; }
   div.calendarbox .calendar-shortcuts {
     padding: 10px 0 6px 0;
     border-color: #e6e6e6;
@@ -815,7 +815,7 @@ div.clockbox {
   padding: 0;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
-  background: #f3f3f3;
+  background: #fafafa;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
   div.calendarbox caption,
   div.calendarbox h2,
@@ -1022,7 +1022,7 @@ fieldset table {
       border-left: 0;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
-      background-color: #f7f7f7 !important; }
+      background-color: #fafafa !important; }
       .change-list #changelist #changelist-filter h2,
       .change-list #changelist #changelist-filter h3 {
         margin-bottom: 15px !important;
@@ -1164,7 +1164,7 @@ fieldset table {
     #changelist-search #limit_search_to_folder + label {
       display: inline-block !important;
       font-size: 14px !important;
-      color: #999 !important;
+      color: #a6a6a6 !important;
       text-transform: none;
       margin-top: 5px; }
   #changelist-search .small {
@@ -1247,7 +1247,7 @@ fieldset table {
     .plugin-holder .plugin-list-holder .text {
       width: 240px; }
     .plugin-holder .plugin-list-holder ul.plugin-list li.active {
-      background: url("../img/bg-pattern-light.jpg") #efefef repeat; }
+      background: url("../img/bg-pattern-light.jpg") #e6e6e6 repeat; }
       .plugin-holder .plugin-list-holder ul.plugin-list li.active:hover {
         background: white url("../../cms/images/sitemap-li-bg.jpg") repeat-x 0 -100px; }
 
@@ -1664,7 +1664,7 @@ body.login {
   padding-top: 160px;
   margin: 0;
   border-left: 1px solid #e6e6e6;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   z-index: -1; }
   .dashboard #container #content-related .module {
     margin-left: 0;
@@ -2175,7 +2175,7 @@ a.addlink:active {
     padding-right: 20px !important;
     padding-left: 20px !important; }
   .inline-group .nani-language-tabs > .available {
-    background: #eee; }
+    background: #e6e6e6; }
 
 @font-face {
   font-family: "django-cms-admin";
@@ -2348,7 +2348,7 @@ table .icon-search:before,
       background: #57bcf0; }
   .admin_shortcuts .shortcuts li a:hover,
   .admin_shortcuts .shortcuts li a:focus {
-    background-color: #4e5359; }
+    background-color: #454545; }
   .admin_shortcuts .shortcuts li a:active {
     background-color: #454545; }
 

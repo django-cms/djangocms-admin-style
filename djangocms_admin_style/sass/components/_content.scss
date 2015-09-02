@@ -393,7 +393,7 @@ body.login {
         padding-top: 160px;
         margin: 0;
         border-left: 1px solid $gray-lighter;
-        background-color: #f7f7f7;
+        background-color: $gray-lightest;
         z-index: -1;
         .module {
             margin-left: 0;
@@ -668,6 +668,6 @@ a.addlink {
         padding-left: 20px !important;
     }
     > .available {
-        background: #eee;
+        background: $gray-lighter;
     }
 }

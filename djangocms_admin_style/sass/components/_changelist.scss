@@ -97,7 +97,7 @@
             border-left: 0;
             border-top-right-radius: $border-radius-base;
             border-bottom-right-radius: $border-radius-base;
-            background-color: #f7f7f7 !important;
+            background-color: $gray-lightest !important;
             h2,
             h3 {
                 margin-bottom: 15px !important;
@@ -256,7 +256,7 @@
         + label {
             display: inline-block !important;
             font-size: 14px !important;
-            color: #999 !important;
+            color: $gray-light !important;
             text-transform: none;
             margin-top: 5px;
         }
