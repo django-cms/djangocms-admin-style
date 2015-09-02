@@ -1,22 +1,22 @@
-@import "settings/_all.scss";
+@import "settings/all";
 
-@import "mixins/_all.scss";
+@import "mixins/all";
 
-@import "components/_base.scss";
-@import "components/_forms.scss";
-@import "components/_tables.scss";
-@import "components/_filer.scss";
-@import "components/_changelist.scss";
-@import "components/_cmsplaceholders.scss";
-@import "components/_content.scss";
-@import "components/_icons.scss";
-@import "components/_footer.scss";
-@import "components/_shortcuts.scss";
+@import "components/base";
+@import "components/forms";
+@import "components/tables";
+@import "components/filer";
+@import "components/changelist";
+@import "components/cmsplaceholders";
+@import "components/content";
+@import "components/icons";
+@import "components/footer";
+@import "components/shortcuts";
 
 // TODO:
 //@import "partials/_messages.scss";
 
 
 @media only screen and (max-width: 768px), print {
-    @import "components/_mobile.scss";
+    @import "components/mobile";
 }
