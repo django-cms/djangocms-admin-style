@@ -55,15 +55,15 @@ table,
 
 .addlink,
 .addlink a {
- color: $success-color;
+ color: $color-success;
 }
 .changelink,
 .changelink a {
- color: $info-color;
+ color: $color-primary;
 }
 .deletelink,
 .deletelink a {
- color: $error-color;
+ color: $color-danger;
 }
 
 .addlink,
@@ -96,7 +96,7 @@ table,
 #sitemap li .col-softroot span.icon {
     width: 15px;
     height: 15px;
-    margin: 7px 5px 0 0; 
+    margin: 7px 5px 0 0;
     background: url("../img/icon_softroot.png") 0 0 no-repeat;
 }
 

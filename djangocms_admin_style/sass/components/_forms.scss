@@ -1,6 +1,6 @@
 .popup,
 .cms-modal-window {
-    background-color: #fff;
+    background-color: $white;
     .module h2 {
         padding-bottom: 10px;
     }
@@ -19,7 +19,7 @@
         .form-row {
             overflow: hidden;
             padding-bottom: 10px;
-            border-bottom: solid 1px $line-color-ultralight;
+            border-bottom: solid 1px $gray-lighter;
             &.field-create {
                 input {
                     width: 70px !important;
@@ -74,7 +74,7 @@ form {
         }
         p.help {
             font-size: 14px !important;
-            color: $font-color-light;
+            color: $gray;
             margin-top: 10px;
             padding-left: 0;
             margin-left: 0;
@@ -84,18 +84,18 @@ form {
         }
     }
     small {
-        color: $font-color-light;
+        color: $gray;
     }
     hr {
         margin: 5px 0;
     }
     fieldset {
-        line-height: 2em; 
+        line-height: 2em;
         vertical-align: middle;
     }
     fieldset.collapsed h2 {
         margin-bottom: 0;
-        padding-bottom: 5px; 
+        padding-bottom: 5px;
         border-bottom: none;
         background-image: none;
     }
@@ -108,7 +108,7 @@ form {
     label.aligned {
         display: block;
         float: none !important;
-        color: $font-color-light !important;
+        color: $gray !important;
         font-size: 14px;
         line-height: 18px;
         text-transform: uppercase;
@@ -117,19 +117,19 @@ form {
         width: auto !important;
         margin-bottom: 5px;
         &.required {
-            color: $font-color-light !important;
+            color: $gray !important;
             font-weight: normal !important;
         }
     }
     // input
     input,
     textarea {
-        color: $font-color;
+        color: $gray-darkest;
         font-size: 18px;
         padding: 10px;
-        border: 1px solid $button-silver-dark-color;
+        border: 1px solid $gray-lighter;
         box-sizing: border-box;
-        border-radius: $default-border-radius;
+        border-radius: $border-radius-base;
         outline: none;
     }
     input[type="checkbox"],
@@ -141,10 +141,10 @@ form {
         border: 0;
     }
     input[type="file"] {
-        color: $button-silver-font-color;
+        color: $gray;
         padding: 6px 5px;
-        border: 1px solid $button-silver-dark-color;
-        border-radius: $default-border-radius;
+        border: 1px solid $gray-lighter;
+        border-radius: $border-radius-base;
         outline: none;
     }
     select {
@@ -152,10 +152,10 @@ form {
         font-size: 18px;
         font-weight: normal;
         padding: 10px 40px 10px 20px;
-        background: #fff url('../img/icon_arrow_down.png') no-repeat right center;
+        background: $white url('../img/icon_arrow_down.png') no-repeat right center;
         background-size: 25px;
-        border: 1px solid $button-silver-dark-color;
-        border-radius: $default-border-radius;
+        border: 1px solid $gray-lighter;
+        border-radius: $border-radius-base;
     }
     small {
         margin-left: 15px;
@@ -169,7 +169,7 @@ form {
     }
     .input-list {
         display: inline-block;
-        line-height: 20px; 
+        line-height: 20px;
         vertical-align: top;
     }
     .extra {
@@ -180,7 +180,7 @@ form {
     }
     .form-row {
         padding: 8px 0 30px;
-        border-bottom-color: $line-color-ultralight;
+        border-bottom-color: $gray-lighter;
     }
     .form-row:last-child {
         border-bottom-color: transparent;
@@ -209,8 +209,8 @@ form {
             height: auto;
             padding: 10px 40px 10px 20px;
             background: none;
-            border: 1px solid $button-silver-dark-color;
-            border-radius: $default-border-radius;
+            border: 1px solid $gray-lighter;
+            border-radius: $border-radius-base;
             & > .select2-chosen {
                 font-size: 18px;
             }
@@ -233,11 +233,11 @@ form {
             .select2-choice,
             .select2-choices {
                 background-image: none !important;
-                border-color: $button-silver-dark-color !important
+                border-color: $gray-lighter !important
             }
         }
         .select2-choice {
-            background-color: #fff;
+            background-color: $white;
             background-image: none;
             .select2-arrow b {
                 background-position: -16px 12px;
@@ -246,7 +246,7 @@ form {
     }
 }
 .select2-drop-active {
-    border: 1px solid $button-silver-dark-color !important;
+    border: 1px solid $gray-lighter !important;
 }
 .select2-results {
     margin: 0 10px 10px !important;
@@ -255,13 +255,13 @@ form {
     .select2-searching,
     .select2-ajax-error,
     .select2-selection-limit {
-        color: $font-color-light;
+        color: $gray;
         font-size: 14px;
         background-color: transparent !important;
     }
     .select2-highlighted {
-        border-radius: $default-border-radius;
-        background-color: $link-color !important;
+        border-radius: $border-radius-base;
+        background-color: $color-primary !important;
     }
 }
 .select2-match {
@@ -274,19 +274,19 @@ form {
         padding: 10px 40px 10px 20px !important;
         background: url('../img/select2.png') no-repeat right -24px !important;
         background-size: 50px !important;
-        border: 1px solid $button-silver-dark-color !important;
-        border-radius: $default-border-radius !important;
+        border: 1px solid $gray-lighter !important;
+        border-radius: $border-radius-base !important;
     }
 }
 
 
 input:invalid,
 textarea:invalid {
-    border-radius: $default-border-radius;
+    border-radius: $border-radius-base;
 }
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid {
-    background-color: #f0dddd;
+    background-color: $color-danger-ultralight;
 }
 
 // buttons
@@ -305,7 +305,7 @@ input[type="button"] {
 a.button {
     @include button-common();
     text-decoration: none;
-    cursor: pointer; 
+    cursor: pointer;
     &.tab {
         border-radius: 0;
     }
@@ -322,23 +322,23 @@ a.button {
 div.calendar {
     table {
         caption {
-            color: $font-color-white !important;
+            color: $white !important;
             margin: 0;
-            background-color: $background-color-dark;
-            background-image: linear-gradient($background-color-dark, $background-color-medium);
+            background-color: $gray;
+            background-image: linear-gradient($gray, $gray-darker);
 
-            border-top-radius: $default-border-radius;
+            border-top-radius: $border-radius-base;
         }
         td {
             padding: 0;
-            background: #f3f3f3;
+            background: $gray-lightest;
         }
         td a {
             padding: 6px 4px;
         }
     }
     .today a {
-        background: $info-color-ultralight;
+        background: $color-info-ultralight;
     }
 }
 div.calendarbox {
@@ -355,12 +355,12 @@ div.calendarbox {
         background: none;
         &:hover,
         &:focus {
-            background: #666;
+            background: $gray;
         }
     }
     .calendar-shortcuts {
         padding: 10px 0 6px 0;
-        border-color: #ddd; 
+        border-color: $gray-lighter;
         background: transparent;
     }
 }
@@ -368,9 +368,9 @@ div.calendarbox,
 div.clockbox {
     margin: 0;
     padding: 0;
-    border: 1px solid #ccc;
-    border-radius: $default-border-radius;
-    background: #f3f3f3;
+    border: 1px solid $gray-lighter;
+    border-radius: $border-radius-base;
+    background: $gray-lightest;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     caption,
     h2 {
@@ -378,21 +378,21 @@ div.clockbox {
     }
     .calendar-cancel {
         margin-top: 5px !important;
-        padding: 5px 0 !important; 
+        padding: 5px 0 !important;
         background: none;
 
-        border-bottom-radius: $default-border-radius;
+        border-bottom-radius: $border-radius-base;
     }
 }
 // clock
 div.clockbox {
-    border-top-radius: $default-border-radius;
+    border-top-radius: $border-radius-base;
     h2 {
-        color: $font-color-white !important;
-        background-color: $background-color-dark;
-        background-image: linear-gradient($background-color-dark, $background-color-medium);
+        color: $white !important;
+        background-color: $gray;
+        background-image: linear-gradient($gray, $gray-darker);
 
-        border-top-radius: $default-border-radius;
+        border-top-radius: $border-radius-base;
     }
     .timelist a {
         padding: 5px 2px;
@@ -408,7 +408,7 @@ div.clockbox {
 }
 
 span.datetimeshortcuts a {
-    color: $link-color;
+    color: $color-primary;
 }
 
 // filter horizontal

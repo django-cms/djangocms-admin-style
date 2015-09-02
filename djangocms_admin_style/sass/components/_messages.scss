@@ -1,54 +1,54 @@
 /* Statuses Mixins */
 
 @mixin message-info {
-    background-image: linear-gradient( $info-color-light, $info-color 80%, $info-color-dark);
+    background-image: linear-gradient( $color-info-light, $color-primary 80%, $color-info-dark);
     .close {
-        border: 1px solid $info-color;
-        background: $info-color;
-        box-shadow: inset 0 0 2px $info-color;
+        border: 1px solid $color-primary;
+        background: $color-primary;
+        box-shadow: inset 0 0 2px $color-primary;
         &:hover {
-            border: 1px solid $info-color;
-            background-image: linear-gradient( $info-color-light, $info-color-dark);
+            border: 1px solid $color-primary;
+            background-image: linear-gradient( $color-info-light, $color-info-dark);
             box-shadow: none;
         }
     }
 }
 @mixin message-success {
-    background-image: linear-gradient( $success-color-light, $success-color 80%, $success-color-dark);
+    background-image: linear-gradient( $color-success-light, $color-success 80%, $color-success-dark);
     .close {
-        border: 1px solid $success-color;
-        background: $success-color;
-        box-shadow: inset 0 0 2px $success-color;
+        border: 1px solid $color-success;
+        background: $color-success;
+        box-shadow: inset 0 0 2px $color-success;
         &:hover {
-            border: 1px solid $success-color;
-            background-image: linear-gradient( $success-color-light, $success-color-dark);
+            border: 1px solid $color-success;
+            background-image: linear-gradient( $color-success-light, $color-success-dark);
             box-shadow: none;
         }
     }
 }
 @mixin message-warning {
-    background-image: linear-gradient( $warning-color-light, $warning-color 80%, $warning-color-dark);
+    background-image: linear-gradient( $color-warning-light, $color-warning 80%, $color-warning-dark);
     .close {
-        border: 1px solid $warning-color;
-        background: $warning-color;
-        box-shadow: inset 0 0 2px $warning-color;
+        border: 1px solid $color-warning;
+        background: $color-warning;
+        box-shadow: inset 0 0 2px $color-warning;
         &:hover {
-            border: 1px solid $warning-color;
-            background-image: linear-gradient($warning-color-light, $warning-color-dark);
+            border: 1px solid $color-warning;
+            background-image: linear-gradient($color-warning-light, $color-warning-dark);
             box-shadow: none;
         }
     }
 }
 
 @mixin message-error {
-    background-image: linear-gradient( $error-color-light, $error-color 80%, $error-color-dark);
+    background-image: linear-gradient( $color-danger-light, $color-danger 80%, $color-danger-dark);
     .close {
-        border: 1px solid $error-color;
-        background: $error-color;
-        box-shadow: inset 0 0 2px $error-color;
+        border: 1px solid $color-danger;
+        background: $color-danger;
+        box-shadow: inset 0 0 2px $color-danger;
         &:hover {
-            border: 1px solid $error-color;
-            background-image: linear-gradient( $error-color-light, $error-color-dark);
+            border: 1px solid $color-danger;
+            background-image: linear-gradient( $color-danger-light, $color-danger-dark);
             box-shadow: none;
         }
     }
@@ -63,7 +63,7 @@
 .messages {
     position: fixed;
     z-index: 1000;
-    color: #fff;
+    color: $white;
     font-size: 125%;
     font-weight: bold;
     text-align: center;
@@ -79,7 +79,7 @@
     }
     .close {
         display: block;
-        color: #fff;
+        color: $white;
         font-size: 10px;
         line-height: 2.5;
         vertical-align: middle;
@@ -115,32 +115,32 @@
 
 .inline-messages {
     position: relative;
-    color: #fff;
+    color: $white;
     font-size: 100%;
     text-align: left;
     .inline-message {
         font-weight: bold;
         padding: 5px 10px;
-        border-radius: $default-border-radius;
+        border-radius: $border-radius-base;
     }
     .animate {
         @include stripes(0.1);
     }
     .inline-info {
-        border: 1px solid $info-color-dark;
-        background-color: $info-color;
+        border: 1px solid $color-info-dark;
+        background-color: $color-primary;
     }
     .inline-success {
         @include message-success;
-        border: 1px solid $success-color-dark;
+        border: 1px solid $color-success-dark;
     }
     .inline-warning {
         @include message-warning;
-        border: 1px solid $warning-color-dark;
+        border: 1px solid $color-warning-dark;
     }
     .inline-error {
         @include message-error;
-        border: 1px solid $error-color-dark;
+        border: 1px solid $color-danger-dark;
     }
 }
 
@@ -148,7 +148,7 @@ header {
     &.header-info {
         @include message-info;
         .meta small {
-            color: #fff;
+            color: $white;
         }
         nav li.internal {
             box-shadow: none;
@@ -157,7 +157,7 @@ header {
     &.header-success {
         @include message-success;
         .meta small {
-            color: #fff;
+            color: $white;
         }
         nav li.internal {
             box-shadow: none;
@@ -166,7 +166,7 @@ header {
     &.header-warning {
         @include message-warning;
         .meta small {
-            color: #fff;
+            color: $white;
         }
         nav li.internal {
             box-shadow: none;
@@ -175,7 +175,7 @@ header {
     &.header-error {
         @include message-error;
         .meta small {
-            color: #fff;
+            color: $white;
         }
         nav li.internal {
             box-shadow: none;
@@ -186,20 +186,20 @@ header {
 .hint {
     margin-bottom: 15px;
     padding: 15px 20px;
-    border-top: 1px solid $line-color-white;
-    border-radius: $default-border-radius;
+    border-top: 1px solid $white;
+    border-radius: $border-radius-base;
     &.hint-info {
-        color: $info-color;
+        color: $color-primary;
         text-align: center;
-        background-color: $background-color-highlighter;
-        box-shadow: $info-color-light 0 1px 1px 0;
+        background-color: $color-primary-light;
+        box-shadow: $color-info-light 0 1px 1px 0;
         h1,
         h2,
         h3,
         h4,
         h5,
         h6 {
-            color: $info-color;
+            color: $color-primary;
             margin: 5px 0;
         }
         p {
@@ -208,7 +208,7 @@ header {
         a {
             text-decoration: underline;
             &:hover {
-                color: $info-color-dark;
+                color: $color-info-dark;
             }
         }
         .close {
@@ -219,10 +219,10 @@ header {
         }
     }
     &.hint-success {
-        color: $success-color;
+        color: $color-success;
         font-size: 120%;
-        background-color: $success-color-ultralight;
-        box-shadow: $success-color-light 0 1px 1px 0;
+        background-color: $color-success-ultralight;
+        box-shadow: $color-success-light 0 1px 1px 0;
         .icon {
             margin-right: 10px;
         }
@@ -231,10 +231,10 @@ header {
         }
     }
     &.hint-warning {
-        color: $warning-color;
+        color: $color-warning;
         font-size: 120%;
-        background-color: $warning-color-ultralight;
-        box-shadow: $warning-color-light 0 1px 1px 0;
+        background-color: $color-warning-ultralight;
+        box-shadow: $color-warning-light 0 1px 1px 0;
         .icon {
             margin-right: 10px;
         }
@@ -246,10 +246,10 @@ header {
         }
     }
     &.hint-error {
-        color: $error-color;
+        color: $color-danger;
         font-size: 120%;
-        background-color: $error-color-ultralight;
-        box-shadow: $error-color-light 0 1px 1px 0;
+        background-color: $color-danger-ultralight;
+        box-shadow: $color-danger-light 0 1px 1px 0;
         .icon {
             margin-right: 10px;
         }

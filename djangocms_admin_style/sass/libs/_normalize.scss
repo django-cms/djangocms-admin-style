@@ -163,7 +163,7 @@
     //
 
     mark {
-        color: #000;
+        color: $black;
         background: #ff0;
     }
 
@@ -314,7 +314,7 @@
     fieldset {
         margin: 0 2px;
         padding: 0.35 0.625 0.75;
-        border: 1px solid #c0c0c0;
+        border: 1px solid $gray-light;
     }
 
     //

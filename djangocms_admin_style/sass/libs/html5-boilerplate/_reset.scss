@@ -108,13 +108,13 @@
     }
 
     ins {
-        color: #000;
-        text-decoration: none; 
+        color: $black;
+        text-decoration: none;
         background-color: #ff9;
     }
 
     mark {
-        color: #000;
+        color: $black;
         font-weight: bold; 
         font-style: italic;
         background-color: #ff9;
@@ -131,7 +131,7 @@
     }
 
     table {
-        border-spacing: 0; 
+        border-spacing: 0;
         border-collapse: collapse;
     }
 
@@ -139,7 +139,7 @@
         display: block;
         height: 1px;
         margin: 1em 0;
-        padding: 0; 
+        padding: 0;
         border: 0;
         border-top: 1px solid #ccc;
     }

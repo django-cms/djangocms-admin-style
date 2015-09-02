@@ -13,10 +13,10 @@
     }
     .paginator {
         font-size: 14px;
-        color: $font-color-light !important;
+        color: $gray !important;
         padding-left: 15px;
         padding-right: 15px;
-        background-color: #fff !important;
+        background-color: $white !important;
         clear: both;
     }
     #changelist {
@@ -37,26 +37,26 @@
                 td {
                     white-space: nowrap;
                     padding: 1px 10px;
-                    border-color: $background-color-light;
+                    border-color: $gray-lighter;
                     a,
                     a:link,
                     a:visited,
                     a:link:visited {
-                        color: $link-color;
+                        color: $color-primary;
                     }
                 }
                 tr.selected {
-                    color: $background-color-highlighter;
-                    background: $background-color-highlight !important;
+                    color: $color-primary-light;
+                    background: $color-primary !important;
                     a {
-                        color: $background-color-highlighter;
+                        color: $color-primary-light;
                     }
                     .drag {
                         background: url('../img/drag-light.png');
                     }
                     .lang-code {
-                        color: $link-color;
-                        background-color: #fff;
+                        color: $color-primary;
+                        background-color: $white;
                     }
                 }
                 .drag {
@@ -95,19 +95,19 @@
             min-height: 100%;
             padding-left: 18px;
             border-left: 0;
-            border-top-right-radius: $default-border-radius;
-            border-bottom-right-radius: $default-border-radius;
-            background-color: #f7f7f7 !important;
+            border-top-right-radius: $border-radius-base;
+            border-bottom-right-radius: $border-radius-base;
+            background-color: $gray-lightest !important;
             h2,
             h3 {
                 margin-bottom: 15px !important;
                 padding-left: 0 !important;
                 padding-bottom: 10px;
-                border-bottom: solid 1px $line-color-ultralight;
+                border-bottom: solid 1px $gray-lighter;
             }
             h2 {
                 font-size: 14px;
-                color: $font-color-light;
+                color: $gray;
                 font-weight: normal;
                 text-transform: uppercase;
                 padding: 2px 9px;
@@ -131,7 +131,7 @@
                     padding-left: 0 !important;
                     margin-left: 0 !important;
                     a {
-                        color: $link-color !important;
+                        color: $color-primary !important;
                     }
                 }
             }
@@ -146,8 +146,8 @@
                 padding: 10px 40px 10px 20px;
                 margin-top: 5px;
                 margin-right: 10px;
-                border: 1px solid $button-silver-dark-color;
-                border-radius: $default-border-radius;
+                border: 1px solid $gray-lighter;
+                border-radius: $border-radius-base;
             }
             label {
                 display: inline-block;
@@ -174,7 +174,7 @@
             li {
                 display: inline;
                 float: left;
-                color: $font-color;
+                color: $gray-darkest;
                 font-size: 14px;
                 font-weight: normal;
                 text-transform: uppercase;
@@ -188,7 +188,7 @@
                 position: relative;
                 display: block;
                 font-size: 14px;
-                color: $link-color;
+                color: $color-primary;
                 font-weight: normal;
                 text-transform: uppercase;
             }
@@ -217,10 +217,10 @@
         th {
             text-transform: uppercase;
             padding: 10px 10px 5px !important;
-            border-color: $line-color-ultralight;
-            background-color: #fff;
+            border-color: $gray-lighter;
+            background-color: $white;
             &.sorted {
-                background-color: #fff;
+                background-color: $white;
             }
             &.action-checkbox-column {
                 padding: 0 15px !important;
@@ -238,7 +238,7 @@
         a,
         span {
             font-size: 14px;
-            color: $font-color-light;
+            color: $gray;
             font-weight: normal;
             padding-left: 0;
         }
@@ -256,7 +256,7 @@
         + label {
             display: inline-block !important;
             font-size: 14px !important;
-            color: #999 !important;
+            color: $gray-light !important;
             text-transform: none;
             margin-top: 5px;
         }
@@ -294,13 +294,13 @@
     background-color: transparent;
     .this-page {
         font-size: 14px;
-        color: $font-color-light;
+        color: $gray;
         font-weight: normal;
     }
 }
 
 #changelist-filter-button {
-    color: $font-color-light;
+    color: $gray;
     text-transform: uppercase;
     font-size: 14px;
     width: 175px;
@@ -316,7 +316,7 @@
     text-transform: uppercase;
     padding: 2px 8px;
     margin-right: 10px;
-    border: solid 1px $link-color;
+    border: solid 1px $color-primary;
     border-radius: 10px;
 }
 .collapse {

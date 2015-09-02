@@ -3,21 +3,21 @@ table {
     margin: 20px 0;
     padding: 5px;
     border: none;
-    border-radius: $default-border-radius;
-    background: $background-color-white;
+    border-radius: $border-radius-base;
+    background: $white;
     th {
-        border-bottom: 1px solid $line-color-light;
+        border-bottom: 1px solid $gray-lighter;
     }
     th,
     td {
         text-align: left;
-        vertical-align: middle; 
+        vertical-align: middle;
         padding: 5px 10px;
     }
     thead th,
     thead th.sorted,
     tfoot td {
-        background: $background-color-ultralight;
+        background: $gray-lightest;
     }
     thead th.sorted .sortoptions a {
         &.ascending {
@@ -42,7 +42,7 @@ table {
     thead th.sortable{
         min-width: 160px;
         &:hover {
-            background: $background-color-light;
+            background: $gray-lighter;
         }
         .sortpriority {
             color: white !important;
@@ -61,7 +61,7 @@ table {
     }
     tr {
         td {
-            border-bottom: 1px solid $line-color-ultralight;
+            border-bottom: 1px solid $gray-lighter;
         }
     }
     th {
@@ -69,19 +69,19 @@ table {
         a:link,
         a:visited,
         a:link:visited {
-            color: $font-color;
+            color: $gray-darkest;
         }
     }
     .row1 {
-        background: $background-color-white;
+        background: $white;
     }
     .row2 {
-        background: $background-color-ultralight;
+        background: $gray-lightest;
     }
 }
 fieldset table {
     border: none;
 }
 .results table tbody tr:hover {
-    background: $background-color-highlighter;
+    background: $color-primary-light;
 }

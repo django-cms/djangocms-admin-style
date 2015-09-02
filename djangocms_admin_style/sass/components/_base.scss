@@ -1,7 +1,7 @@
 // base
 
 body {
-    background-color: #f7f7f7;
+    background-color: $gray-lightest;
     .breadcrumbs {
         padding: 20px 0 !important;
     }
@@ -12,7 +12,7 @@ body {
         padding-left: 0;
     }
     &.dashboard {
-        background-color: #fff;
+        background-color: $white;
         h1 {
             margin-left: 10px;
         }
@@ -26,57 +26,52 @@ body,
 select,
 input,
 textarea {
-    color: $font-color;
+    color: $gray-darkest;
 }
 
 h1 {
-    color: $font-color-medium;
+    color: $gray-darkest;
     font-size: $font-size-normal;
     font-weight: bold;
     margin: 20px 10px 45px;
 }
 h2 {
-    color: $font-color-medium;
+    color: $gray-darkest;
     font-size: 130%;
     font-weight: bold;
     line-height: 1.75em;
     margin: 20px 10px 45px;
 }
 h3 {
-    color: $font-color;
+    color: $gray-darkest;
     font-size: 120%;
     font-weight: bold;
 }
 h4 {
-    color: $font-color-medium;
+    color: $gray-darkest;
     font-size: 110%;
     font-weight: bold;
 }
 h5 {
-    color: $font-color; 
+    color: $gray-darkest;
     font-size: 100%;
 }
 h6 {
-    color: $font-color-medium; 
+    color: $gray-darkest;
     font-size: 100%;
 }
 a.btn {
     @include button-common-init();
-    border-radius: $default-border-radius;
+    border-radius: $border-radius-base;
 }
 a,
 a:link {
-    color: $link-color;
+    color: $color-primary;
     text-decoration: none;
-    &:visited {
-        color: $link-visited-color;
-    }
-    &:hover {
-        color: $link-hover-color;
-        text-decoration: none;
-    }
+    &:visited,
+    &:hover,
     &:active {
-        color: $link-active-color;
+        color: $color-primary;
     }
 }
 
@@ -86,7 +81,7 @@ p {
 }
 
 code {
-    color: #666;
+    color: $gray;
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
     font-size: 11px;
     background: inherit;
@@ -96,19 +91,19 @@ code {
 }
 
 pre {
-    color: #666;
+    color: $gray;
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
     font-size: 11px;
     background: inherit;
     &.literal-block {
-        background: #eee;
+        background: $gray-lighter;
     }
 }
 
 div hr {
     margin: 20px 0;
-    border: none; 
-    background: $line-color-light;
+    border: none;
+    background: $gray-lighter;
 }
 
 strong {
@@ -127,7 +122,7 @@ small {
 .clearfix:after {
     content: ".";
     display: block;
-    visibility: hidden; 
+    visibility: hidden;
     clear: both;
     height: 0;
 }

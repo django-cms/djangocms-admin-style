@@ -1,0 +1,81 @@
+// mixins
+
+@mixin box() {
+    margin-bottom: 5px;
+    padding: 0;
+    border: none;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+@mixin stripes($stripe-opacity) {
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, $stripe-opacity) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, $stripe-opacity) 50%, rgba(255, 255, 255, $stripe-opacity) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-size: 100% 400%;
+}
+
+@mixin button-common-init {
+    border: 1px solid $gray-lighter !important;
+    background-color: $white !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    padding: 10px 15px !important;
+    &:hover {
+        background: $gray-lighter !important;
+    }
+}
+
+@mixin button-common() {
+    @include button-common-init();
+    overflow: visible;
+    color: $gray !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 21px !important;
+    text-decoration: none !important;
+    width: auto;
+    border-radius: $border-radius-base;
+    &.small {
+        padding: 3px 8px 4px !important;
+    }
+    &:hover,
+    &:active,
+    &.select,
+    &:visited {
+        color: $gray;
+        text-decoration: none;
+        background: $gray-lighter;
+    }
+    &.animate {
+        @include stripes(0.2);
+    }
+}
+
+@mixin button-blue {
+    color: $white !important;
+    border: 1px solid $color-primary !important;
+    background-color: $color-primary !important;
+    background-image: none;
+    box-shadow: none !important;
+    &,
+    &:visited {
+        background-image: none;
+    }
+    &:hover,
+    &:focus {
+        color: $white !important;
+        border: 1px solid $color-primary !important;
+        background-color: $color-primary !important;
+    }
+    &:active {
+        background: $color-primary !important;
+    }
+    &.animate {
+        @include stripes(0.1);
+    }
+}
