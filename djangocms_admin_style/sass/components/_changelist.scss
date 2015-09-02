@@ -13,7 +13,7 @@
     }
     .paginator {
         font-size: 14px;
-        color: $gray !important;
+        color: $gray-light !important;
         padding-left: 15px;
         padding-right: 15px;
         background-color: $white !important;
@@ -137,6 +137,7 @@
             }
         }
         .actions {
+            color: $gray-light;
             padding: 0 3px 10px 0;
             margin-right: 220px !important;
             border: none;
@@ -294,7 +295,7 @@
     background-color: transparent;
     .this-page {
         font-size: 14px;
-        color: $gray;
+        color: $gray-light;
         font-weight: normal;
     }
 }

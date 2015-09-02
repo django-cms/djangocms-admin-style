@@ -275,6 +275,10 @@ body {
       padding: 20px 10px !important; }
 
 body,
+p {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+
+body,
 select,
 input,
 textarea {
@@ -333,9 +337,12 @@ a:link {
   a:link:active {
     color: #57bcf0; }
 
-p {
+p, .description {
+  font-size: 14px !important;
+  color: #666666;
   font-weight: normal;
-  margin-bottom: 6px; }
+  margin-bottom: 6px;
+  padding-left: 0; }
 
 code {
   color: #666666;
@@ -661,6 +668,8 @@ button {
     color: #666666;
     text-decoration: none;
     background: #e6e6e6; }
+  button:hover {
+    border: solid 1px #C7C7C1 !important; }
   button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -699,6 +708,9 @@ input[type="button"] {
     color: #666666;
     text-decoration: none;
     background: #e6e6e6; }
+  input[type="submit"]:hover,
+  input[type="button"]:hover {
+    border: solid 1px #C7C7C1 !important; }
   input[type="submit"].animate,
   input[type="button"].animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -722,8 +734,8 @@ input[type="button"] {
     input[type="button"].default:hover,
     input[type="button"].default:focus {
       color: #fff !important;
-      border: 1px solid #57bcf0 !important;
-      background-color: #57bcf0 !important; }
+      border: 1px solid #48abd9 !important;
+      background-color: #48abd9 !important; }
     input[type="submit"].default:active,
     input[type="button"].default:active {
       background: #57bcf0 !important; }
@@ -760,6 +772,8 @@ a.button {
     color: #666666;
     text-decoration: none;
     background: #e6e6e6; }
+  a.button:hover {
+    border: solid 1px #C7C7C1 !important; }
   a.button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -953,7 +967,7 @@ fieldset table {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
   .change-list .paginator {
     font-size: 14px;
-    color: #666666 !important;
+    color: #a6a6a6 !important;
     padding-left: 15px;
     padding-right: 15px;
     background-color: #fff !important;
@@ -1054,6 +1068,7 @@ fieldset table {
           .change-list #changelist #changelist-filter li.selected a {
             color: #57bcf0 !important; }
     .change-list #changelist .actions {
+      color: #a6a6a6;
       padding: 0 3px 10px 0;
       margin-right: 220px !important;
       border: none;
@@ -1193,8 +1208,8 @@ fieldset table {
     #changelist-search input[type="submit"]:hover,
     #changelist-search input[type="submit"]:focus {
       color: #fff !important;
-      border: 1px solid #57bcf0 !important;
-      background-color: #57bcf0 !important; }
+      border: 1px solid #48abd9 !important;
+      background-color: #48abd9 !important; }
     #changelist-search input[type="submit"]:active {
       background: #57bcf0 !important; }
     #changelist-search input[type="submit"].animate {
@@ -1212,7 +1227,7 @@ fieldset table {
   background-color: transparent; }
   #toolbartable .paginator .this-page {
     font-size: 14px;
-    color: #666666;
+    color: #a6a6a6;
     font-weight: normal; }
 
 #changelist-filter-button {
@@ -1434,6 +1449,8 @@ body #container {
       color: #666666;
       text-decoration: none;
       background: #e6e6e6; }
+    .submit-row .deletelink:hover {
+      border: solid 1px #C7C7C1 !important; }
     .submit-row .deletelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1444,8 +1461,8 @@ body #container {
     .submit-row .deletelink:hover,
     .submit-row .deletelink:focus {
       color: #fff !important;
-      border: 1px solid #57bcf0 !important;
-      background-color: #57bcf0 !important; }
+      border: 1px solid #48abd9 !important;
+      background-color: #48abd9 !important; }
     .submit-row .deletelink:active {
       background: #57bcf0 !important; }
     .submit-row .deletelink.animate {
@@ -1550,8 +1567,8 @@ body.login {
           body.login #container #content #content-main .submit-row input[type="submit"]:hover,
           body.login #container #content #content-main .submit-row input[type="submit"]:focus {
             color: #fff !important;
-            border: 1px solid #57bcf0 !important;
-            background-color: #57bcf0 !important; }
+            border: 1px solid #48abd9 !important;
+            background-color: #48abd9 !important; }
           body.login #container #content #content-main .submit-row input:active,
           body.login #container #content #content-main .submit-row input[type="submit"]:active {
             background: #57bcf0 !important; }
@@ -1616,7 +1633,8 @@ body.login {
         background: url("../img/icon_arrow_right.png") no-repeat right center !important;
         background-size: 20px !important; }
         #header #header-btn .btn.icon-arrow-right:hover {
-          background-color: #e6e6e6 !important; }
+          background-color: #e6e6e6 !important;
+          border: solid 1px #C7C7C1 !important; }
   #header #header-logo {
     float: left;
     height: 21px;
@@ -1750,6 +1768,8 @@ a.addlink:active {
     color: #666666;
     text-decoration: none;
     background: #e6e6e6; }
+  #content-main .object-tools .addlink:hover {
+    border: solid 1px #C7C7C1 !important; }
   #content-main .object-tools .addlink.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1760,8 +1780,8 @@ a.addlink:active {
   #content-main .object-tools .addlink:hover,
   #content-main .object-tools .addlink:focus {
     color: #fff !important;
-    border: 1px solid #57bcf0 !important;
-    background-color: #57bcf0 !important; }
+    border: 1px solid #48abd9 !important;
+    background-color: #48abd9 !important; }
   #content-main .object-tools .addlink:active {
     background: #57bcf0 !important; }
   #content-main .object-tools .addlink.animate {
@@ -1818,6 +1838,8 @@ a.addlink:active {
         color: #666666;
         text-decoration: none;
         background: #e6e6e6; }
+      .object-tools li > a:hover {
+        border: solid 1px #C7C7C1 !important; }
       .object-tools li > a.animate {
         background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
         background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1854,6 +1876,8 @@ a.addlink:active {
       color: #666666;
       text-decoration: none;
       background: #e6e6e6; }
+    .object-tools .addlink:hover {
+      border: solid 1px #C7C7C1 !important; }
     .object-tools .addlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1864,8 +1888,8 @@ a.addlink:active {
     .object-tools .addlink:hover,
     .object-tools .addlink:focus {
       color: #fff !important;
-      border: 1px solid #57bcf0 !important;
-      background-color: #57bcf0 !important; }
+      border: 1px solid #48abd9 !important;
+      background-color: #48abd9 !important; }
     .object-tools .addlink:active {
       background: #57bcf0 !important; }
     .object-tools .addlink.animate {
@@ -1897,6 +1921,8 @@ a.addlink:active {
       color: #666666;
       text-decoration: none;
       background: #e6e6e6; }
+    .object-tools .publishlink:hover {
+      border: solid 1px #C7C7C1 !important; }
     .object-tools .publishlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1926,6 +1952,8 @@ a.addlink:active {
       color: #666666;
       text-decoration: none;
       background: #e6e6e6; }
+    .object-tools .previewdraftlink:hover {
+      border: solid 1px #C7C7C1 !important; }
     .object-tools .previewdraftlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1955,6 +1983,8 @@ a.addlink:active {
       color: #666666;
       text-decoration: none;
       background: #e6e6e6; }
+    .object-tools .revertlink:hover {
+      border: solid 1px #C7C7C1 !important; }
     .object-tools .revertlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1984,6 +2014,8 @@ a.addlink:active {
       color: #666666;
       text-decoration: none;
       background: #e6e6e6; }
+    .object-tools .historylink:hover {
+      border: solid 1px #C7C7C1 !important; }
     .object-tools .historylink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -2018,6 +2050,8 @@ a.addlink:active {
       color: #666666;
       text-decoration: none;
       background: #e6e6e6; }
+    .object-tools .viewsitelink:hover {
+      border: solid 1px #C7C7C1 !important; }
     .object-tools .viewsitelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -2028,8 +2062,8 @@ a.addlink:active {
     .object-tools .viewsitelink:hover,
     .object-tools .viewsitelink:focus {
       color: #fff !important;
-      border: 1px solid #57bcf0 !important;
-      background-color: #57bcf0 !important; }
+      border: 1px solid #48abd9 !important;
+      background-color: #48abd9 !important; }
     .object-tools .viewsitelink:active {
       background: #57bcf0 !important; }
     .object-tools .viewsitelink.animate {
@@ -2067,8 +2101,8 @@ a.addlink:active {
     .delete-confirmation .colM input[type="submit"]:hover,
     .delete-confirmation .colM input[type="submit"]:focus {
       color: #fff !important;
-      border: 1px solid #57bcf0 !important;
-      background-color: #57bcf0 !important; }
+      border: 1px solid #48abd9 !important;
+      background-color: #48abd9 !important; }
     .delete-confirmation .colM input[type="submit"]:active {
       background: #57bcf0 !important; }
     .delete-confirmation .colM input[type="submit"].animate {

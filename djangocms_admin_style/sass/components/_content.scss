@@ -332,6 +332,7 @@ body.login {
                 background-size: 20px !important;
                 &:hover {
                     background-color: $gray-lighter !important;
+                    border: solid 1px #C7C7C1 !important;
                 }
             }
         }
