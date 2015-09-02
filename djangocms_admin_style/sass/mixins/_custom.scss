@@ -102,24 +102,6 @@
     }
 }
 
-@mixin button-orange {
-    color: $button-orange-font-color !important;
-    border: 1px solid $button-orange-light-color !important;
-    border-bottom: 1px solid $button-orange-dark-color !important;
-    background-color: $button-orange-medium-color !important;
-    background-image: linear-gradient($button-orange-light-color, $button-orange-medium-color);
-    box-shadow: none;
-    &:hover {
-        color: $button-orange-font-color;
-        background: $button-orange-light-color;
-    }
-    &:active {
-        background: $button-orange-medium-color;
-    }
-    &.animate {
-        @include stripes(0.2);
-    }
-}
 
 @mixin button-red {
     color: $button-red-font-color !important;
