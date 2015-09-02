@@ -23,6 +23,11 @@ body {
 }
 
 body,
+p {
+    font-family: $base-font-family !important;
+}
+
+body,
 select,
 input,
 textarea {
@@ -75,9 +80,13 @@ a:link {
     }
 }
 
-p {
+p,
+.description {
+    font-size: 14px !important;
+    color: $gray;
     font-weight: normal;
     margin-bottom: 6px;
+    padding-left: 0;
 }
 
 code {
