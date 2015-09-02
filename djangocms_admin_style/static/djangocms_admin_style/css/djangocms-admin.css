@@ -485,12 +485,11 @@ form fieldset {
   line-height: 2em;
   vertical-align: middle; }
   form fieldset.collapse h2 {
-    padding-bottom: 10px; }
-  form fieldset.collapsed h2 {
+    color: #333333;
     margin-bottom: 0;
-    padding-bottom: 5px;
-    border-bottom: none;
     background-image: none; }
+  form fieldset.collapsed {
+    margin-bottom: 30px !important; }
 
 form label select {
   display: block;

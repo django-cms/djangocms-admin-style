@@ -101,13 +101,12 @@ form {
         line-height: 2em;
         vertical-align: middle;
         &.collapse h2 {
-            padding-bottom: 10px;
-        }
-        &.collapsed h2 {
+            color: $gray-darkest;
             margin-bottom: 0;
-            padding-bottom: 5px;
-            border-bottom: none;
             background-image: none;
+        }
+        &.collapsed {
+            margin-bottom: 30px !important;
         }
     }
     label select {
