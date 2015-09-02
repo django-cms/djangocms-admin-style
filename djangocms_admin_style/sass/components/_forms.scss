@@ -127,7 +127,7 @@ form {
         color: $gray-darkest;
         font-size: 18px;
         padding: 10px;
-        border: 1px solid $button-silver-dark-color;
+        border: 1px solid $gray-lighter;
         box-sizing: border-box;
         border-radius: $border-radius-base;
         outline: none;
@@ -141,9 +141,9 @@ form {
         border: 0;
     }
     input[type="file"] {
-        color: $button-silver-font-color;
+        color: $gray;
         padding: 6px 5px;
-        border: 1px solid $button-silver-dark-color;
+        border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
         outline: none;
     }
@@ -154,7 +154,7 @@ form {
         padding: 10px 40px 10px 20px;
         background: $white url('../img/icon_arrow_down.png') no-repeat right center;
         background-size: 25px;
-        border: 1px solid $button-silver-dark-color;
+        border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
     }
     small {
@@ -209,7 +209,7 @@ form {
             height: auto;
             padding: 10px 40px 10px 20px;
             background: none;
-            border: 1px solid $button-silver-dark-color;
+            border: 1px solid $gray-lighter;
             border-radius: $border-radius-base;
             & > .select2-chosen {
                 font-size: 18px;
@@ -233,7 +233,7 @@ form {
             .select2-choice,
             .select2-choices {
                 background-image: none !important;
-                border-color: $button-silver-dark-color !important
+                border-color: $gray-lighter !important
             }
         }
         .select2-choice {
@@ -246,7 +246,7 @@ form {
     }
 }
 .select2-drop-active {
-    border: 1px solid $button-silver-dark-color !important;
+    border: 1px solid $gray-lighter !important;
 }
 .select2-results {
     margin: 0 10px 10px !important;
@@ -274,7 +274,7 @@ form {
         padding: 10px 40px 10px 20px !important;
         background: url('../img/select2.png') no-repeat right -24px !important;
         background-size: 50px !important;
-        border: 1px solid $button-silver-dark-color !important;
+        border: 1px solid $gray-lighter !important;
         border-radius: $border-radius-base !important;
     }
 }

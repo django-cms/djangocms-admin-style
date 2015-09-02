@@ -1,5 +1,4 @@
 /* inactive */
-/* Silver */
 /* Blue */
 /* Red */
 /* Green */
@@ -317,14 +316,14 @@ h6 {
   font-size: 100%; }
 
 a.btn {
-  border: 1px solid #d4d4d4 !important;
+  border: 1px solid #e6e6e6 !important;
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 15px !important;
   border-radius: 3px; }
   a.btn:hover {
-    background: #ededed !important; }
+    background: #e6e6e6 !important; }
 
 a,
 a:link {
@@ -505,7 +504,7 @@ form textarea {
   color: #333333;
   font-size: 18px;
   padding: 10px;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 3px;
   outline: none; }
@@ -519,9 +518,9 @@ form input[type="radio"] {
   border: 0; }
 
 form input[type="file"] {
-  color: #6d6d6d;
+  color: #666666;
   padding: 6px 5px;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #e6e6e6;
   border-radius: 3px;
   outline: none; }
 
@@ -534,7 +533,7 @@ form select {
   padding: 10px 40px 10px 20px;
   background: #fff url("../img/icon_arrow_down.png") no-repeat right center;
   background-size: 25px;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #e6e6e6;
   border-radius: 3px; }
 
 form small {
@@ -578,7 +577,7 @@ form .select2-container .select2-choice {
   height: auto;
   padding: 10px 40px 10px 20px;
   background: none;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #e6e6e6;
   border-radius: 3px; }
   form .select2-container .select2-choice > .select2-chosen {
     font-size: 18px; }
@@ -595,7 +594,7 @@ form .select2-container .select2-choice {
 form .select2-dropdown-open.select2-drop-above .select2-choice,
 form .select2-dropdown-open.select2-drop-above .select2-choices {
   background-image: none !important;
-  border-color: #d4d4d4 !important; }
+  border-color: #e6e6e6 !important; }
 
 form .select2-dropdown-open .select2-choice {
   background-color: #fff;
@@ -604,7 +603,7 @@ form .select2-dropdown-open .select2-choice {
     background-position: -16px 12px; }
 
 .select2-drop-active {
-  border: 1px solid #d4d4d4 !important; }
+  border: 1px solid #e6e6e6 !important; }
 
 .select2-results {
   margin: 0 10px 10px !important;
@@ -630,7 +629,7 @@ form .select2-dropdown-open .select2-choice {
     padding: 10px 40px 10px 20px !important;
     background: url("../img/select2.png") no-repeat right -24px !important;
     background-size: 50px !important;
-    border: 1px solid #d4d4d4 !important;
+    border: 1px solid #e6e6e6 !important;
     border-radius: 3px !important; }
 
 input:invalid,
@@ -642,13 +641,13 @@ textarea:invalid {
   background-color: #f0dddd; }
 
 button {
-  border: 1px solid #d4d4d4 !important;
+  border: 1px solid #e6e6e6 !important;
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 15px !important;
   overflow: visible;
-  color: #6d6d6d !important;
+  color: #666666 !important;
   font-size: 18px !important;
   font-weight: normal !important;
   line-height: 21px !important;
@@ -656,16 +655,16 @@ button {
   width: auto;
   border-radius: 3px; }
   button:hover {
-    background: #ededed !important; }
+    background: #e6e6e6 !important; }
   button.small {
     padding: 3px 8px 4px !important; }
   button:hover,
   button:active,
   button.select,
   button:visited {
-    color: #6d6d6d;
+    color: #666666;
     text-decoration: none;
-    background: #ededed; }
+    background: #e6e6e6; }
   button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -673,13 +672,13 @@ button {
 
 input[type="submit"],
 input[type="button"] {
-  border: 1px solid #d4d4d4 !important;
+  border: 1px solid #e6e6e6 !important;
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 15px !important;
   overflow: visible;
-  color: #6d6d6d !important;
+  color: #666666 !important;
   font-size: 18px !important;
   font-weight: normal !important;
   line-height: 21px !important;
@@ -689,7 +688,7 @@ input[type="button"] {
   width: auto !important; }
   input[type="submit"]:hover,
   input[type="button"]:hover {
-    background: #ededed !important; }
+    background: #e6e6e6 !important; }
   input[type="submit"].small,
   input[type="button"].small {
     padding: 3px 8px 4px !important; }
@@ -701,9 +700,9 @@ input[type="button"] {
   input[type="button"]:active,
   input[type="button"].select,
   input[type="button"]:visited {
-    color: #6d6d6d;
+    color: #666666;
     text-decoration: none;
-    background: #ededed; }
+    background: #e6e6e6; }
   input[type="submit"].animate,
   input[type="button"].animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -739,13 +738,13 @@ input[type="button"] {
       background-size: 100% 400%; }
 
 a.button {
-  border: 1px solid #d4d4d4 !important;
+  border: 1px solid #e6e6e6 !important;
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 15px !important;
   overflow: visible;
-  color: #6d6d6d !important;
+  color: #666666 !important;
   font-size: 18px !important;
   font-weight: normal !important;
   line-height: 21px !important;
@@ -755,16 +754,16 @@ a.button {
   text-decoration: none;
   cursor: pointer; }
   a.button:hover {
-    background: #ededed !important; }
+    background: #e6e6e6 !important; }
   a.button.small {
     padding: 3px 8px 4px !important; }
   a.button:hover,
   a.button:active,
   a.button.select,
   a.button:visited {
-    color: #6d6d6d;
+    color: #666666;
     text-decoration: none;
-    background: #ededed; }
+    background: #e6e6e6; }
   a.button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1068,7 +1067,7 @@ fieldset table {
         padding: 10px 40px 10px 20px;
         margin-top: 5px;
         margin-right: 10px;
-        border: 1px solid #d4d4d4;
+        border: 1px solid #e6e6e6;
         border-radius: 3px; }
       .change-list #changelist .actions label {
         display: inline-block;
@@ -1410,13 +1409,13 @@ body #container {
     line-height: 24px;
     margin: 0.9em 0; }
   .submit-row .deletelink {
-    border: 1px solid #d4d4d4 !important;
+    border: 1px solid #e6e6e6 !important;
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 15px !important;
     overflow: visible;
-    color: #6d6d6d !important;
+    color: #666666 !important;
     font-size: 18px !important;
     font-weight: normal !important;
     line-height: 21px !important;
@@ -1429,16 +1428,16 @@ body #container {
     background-image: none;
     box-shadow: none !important; }
     .submit-row .deletelink:hover {
-      background: #ededed !important; }
+      background: #e6e6e6 !important; }
     .submit-row .deletelink.small {
       padding: 3px 8px 4px !important; }
     .submit-row .deletelink:hover,
     .submit-row .deletelink:active,
     .submit-row .deletelink.select,
     .submit-row .deletelink:visited {
-      color: #6d6d6d;
+      color: #666666;
       text-decoration: none;
-      background: #ededed; }
+      background: #e6e6e6; }
     .submit-row .deletelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1621,7 +1620,7 @@ body.login {
         background: url("../img/icon_arrow_right.png") no-repeat right center !important;
         background-size: 20px !important; }
         #header #header-btn .btn.icon-arrow-right:hover {
-          background-color: #ededed !important; }
+          background-color: #e6e6e6 !important; }
   #header #header-logo {
     float: left;
     height: 21px;
@@ -1726,13 +1725,13 @@ a.addlink:active {
   color: #5da03d; }
 
 #content-main .object-tools .addlink {
-  border: 1px solid #d4d4d4 !important;
+  border: 1px solid #e6e6e6 !important;
   background-color: #fff !important;
   background-image: none !important;
   box-shadow: none !important;
   padding: 10px 15px !important;
   overflow: visible;
-  color: #6d6d6d !important;
+  color: #666666 !important;
   font-size: 18px !important;
   font-weight: normal !important;
   line-height: 21px !important;
@@ -1745,16 +1744,16 @@ a.addlink:active {
   background-image: none;
   box-shadow: none !important; }
   #content-main .object-tools .addlink:hover {
-    background: #ededed !important; }
+    background: #e6e6e6 !important; }
   #content-main .object-tools .addlink.small {
     padding: 3px 8px 4px !important; }
   #content-main .object-tools .addlink:hover,
   #content-main .object-tools .addlink:active,
   #content-main .object-tools .addlink.select,
   #content-main .object-tools .addlink:visited {
-    color: #6d6d6d;
+    color: #666666;
     text-decoration: none;
-    background: #ededed; }
+    background: #e6e6e6; }
   #content-main .object-tools .addlink.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1799,13 +1798,13 @@ a.addlink:active {
     .object-tools li:hover {
       background: none; }
     .object-tools li > a {
-      border: 1px solid #d4d4d4 !important;
+      border: 1px solid #e6e6e6 !important;
       background-color: #fff !important;
       background-image: none !important;
       box-shadow: none !important;
       padding: 10px 15px !important;
       overflow: visible;
-      color: #6d6d6d !important;
+      color: #666666 !important;
       font-size: 18px !important;
       font-weight: normal !important;
       line-height: 21px !important;
@@ -1813,28 +1812,28 @@ a.addlink:active {
       width: auto;
       border-radius: 3px; }
       .object-tools li > a:hover {
-        background: #ededed !important; }
+        background: #e6e6e6 !important; }
       .object-tools li > a.small {
         padding: 3px 8px 4px !important; }
       .object-tools li > a:hover,
       .object-tools li > a:active,
       .object-tools li > a.select,
       .object-tools li > a:visited {
-        color: #6d6d6d;
+        color: #666666;
         text-decoration: none;
-        background: #ededed; }
+        background: #e6e6e6; }
       .object-tools li > a.animate {
         background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
         background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
         background-size: 100% 400%; }
   .object-tools .addlink {
-    border: 1px solid #d4d4d4 !important;
+    border: 1px solid #e6e6e6 !important;
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 15px !important;
     overflow: visible;
-    color: #6d6d6d !important;
+    color: #666666 !important;
     font-size: 18px !important;
     font-weight: normal !important;
     line-height: 21px !important;
@@ -1848,16 +1847,16 @@ a.addlink:active {
     color: #fff !important;
     padding: 10px 30px !important; }
     .object-tools .addlink:hover {
-      background: #ededed !important; }
+      background: #e6e6e6 !important; }
     .object-tools .addlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .addlink:hover,
     .object-tools .addlink:active,
     .object-tools .addlink.select,
     .object-tools .addlink:visited {
-      color: #6d6d6d;
+      color: #666666;
       text-decoration: none;
-      background: #ededed; }
+      background: #e6e6e6; }
     .object-tools .addlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1876,13 +1875,13 @@ a.addlink:active {
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .publishlink {
-    border: 1px solid #d4d4d4 !important;
+    border: 1px solid #e6e6e6 !important;
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 15px !important;
     overflow: visible;
-    color: #6d6d6d !important;
+    color: #666666 !important;
     font-size: 18px !important;
     font-weight: normal !important;
     line-height: 21px !important;
@@ -1890,28 +1889,28 @@ a.addlink:active {
     width: auto;
     border-radius: 3px; }
     .object-tools .publishlink:hover {
-      background: #ededed !important; }
+      background: #e6e6e6 !important; }
     .object-tools .publishlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .publishlink:hover,
     .object-tools .publishlink:active,
     .object-tools .publishlink.select,
     .object-tools .publishlink:visited {
-      color: #6d6d6d;
+      color: #666666;
       text-decoration: none;
-      background: #ededed; }
+      background: #e6e6e6; }
     .object-tools .publishlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .previewdraftlink {
-    border: 1px solid #d4d4d4 !important;
+    border: 1px solid #e6e6e6 !important;
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 15px !important;
     overflow: visible;
-    color: #6d6d6d !important;
+    color: #666666 !important;
     font-size: 18px !important;
     font-weight: normal !important;
     line-height: 21px !important;
@@ -1919,28 +1918,28 @@ a.addlink:active {
     width: auto;
     border-radius: 3px; }
     .object-tools .previewdraftlink:hover {
-      background: #ededed !important; }
+      background: #e6e6e6 !important; }
     .object-tools .previewdraftlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .previewdraftlink:hover,
     .object-tools .previewdraftlink:active,
     .object-tools .previewdraftlink.select,
     .object-tools .previewdraftlink:visited {
-      color: #6d6d6d;
+      color: #666666;
       text-decoration: none;
-      background: #ededed; }
+      background: #e6e6e6; }
     .object-tools .previewdraftlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .revertlink {
-    border: 1px solid #d4d4d4 !important;
+    border: 1px solid #e6e6e6 !important;
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 15px !important;
     overflow: visible;
-    color: #6d6d6d !important;
+    color: #666666 !important;
     font-size: 18px !important;
     font-weight: normal !important;
     line-height: 21px !important;
@@ -1948,28 +1947,28 @@ a.addlink:active {
     width: auto;
     border-radius: 3px; }
     .object-tools .revertlink:hover {
-      background: #ededed !important; }
+      background: #e6e6e6 !important; }
     .object-tools .revertlink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .revertlink:hover,
     .object-tools .revertlink:active,
     .object-tools .revertlink.select,
     .object-tools .revertlink:visited {
-      color: #6d6d6d;
+      color: #666666;
       text-decoration: none;
-      background: #ededed; }
+      background: #e6e6e6; }
     .object-tools .revertlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .historylink {
-    border: 1px solid #d4d4d4 !important;
+    border: 1px solid #e6e6e6 !important;
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 15px !important;
     overflow: visible;
-    color: #6d6d6d !important;
+    color: #666666 !important;
     font-size: 18px !important;
     font-weight: normal !important;
     line-height: 21px !important;
@@ -1977,28 +1976,28 @@ a.addlink:active {
     width: auto;
     border-radius: 3px; }
     .object-tools .historylink:hover {
-      background: #ededed !important; }
+      background: #e6e6e6 !important; }
     .object-tools .historylink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .historylink:hover,
     .object-tools .historylink:active,
     .object-tools .historylink.select,
     .object-tools .historylink:visited {
-      color: #6d6d6d;
+      color: #666666;
       text-decoration: none;
-      background: #ededed; }
+      background: #e6e6e6; }
     .object-tools .historylink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-size: 100% 400%; }
   .object-tools .viewsitelink {
-    border: 1px solid #d4d4d4 !important;
+    border: 1px solid #e6e6e6 !important;
     background-color: #fff !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 15px !important;
     overflow: visible;
-    color: #6d6d6d !important;
+    color: #666666 !important;
     font-size: 18px !important;
     font-weight: normal !important;
     line-height: 21px !important;
@@ -2011,16 +2010,16 @@ a.addlink:active {
     background-image: none;
     box-shadow: none !important; }
     .object-tools .viewsitelink:hover {
-      background: #ededed !important; }
+      background: #e6e6e6 !important; }
     .object-tools .viewsitelink.small {
       padding: 3px 8px 4px !important; }
     .object-tools .viewsitelink:hover,
     .object-tools .viewsitelink:active,
     .object-tools .viewsitelink.select,
     .object-tools .viewsitelink:visited {
-      color: #6d6d6d;
+      color: #666666;
       text-decoration: none;
-      background: #ededed; }
+      background: #e6e6e6; }
     .object-tools .viewsitelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));

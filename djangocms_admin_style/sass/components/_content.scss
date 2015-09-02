@@ -331,7 +331,7 @@ body.login {
                 background: url('../img/icon_arrow_right.png') no-repeat right center !important;
                 background-size: 20px !important;
                 &:hover {
-                    background-color: $button-silver-light-color !important;
+                    background-color: $gray-lighter !important;
                 }
             }
         }
@@ -505,7 +505,7 @@ a.addlink {
     .addlink {
         @include button-common();
         @include button-green();
-        color: $button-green-font-color !important;
+        color: $white !important;
         padding: 10px 30px !important;
     }
     .publishlink {

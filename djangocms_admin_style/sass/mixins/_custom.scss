@@ -20,20 +20,20 @@
 }
 
 @mixin button-common-init {
-    border: 1px solid $button-silver-medium-color !important;
+    border: 1px solid $gray-lighter !important;
     background-color: $white !important;
     background-image: none !important;
     box-shadow: none !important;
     padding: 10px 15px !important;
     &:hover {
-        background: $button-silver-light-color !important;
+        background: $gray-lighter !important;
     }
 }
 
 @mixin button-common() {
     @include button-common-init();
     overflow: visible;
-    color: $button-silver-font-color !important;
+    color: $gray !important;
     font-size: 18px !important;
     font-weight: normal !important;
     line-height: 21px !important;
@@ -47,9 +47,9 @@
     &:active,
     &.select,
     &:visited {
-        color: $button-silver-font-color;
+        color: $gray;
         text-decoration: none;
-        background: $button-silver-light-color;
+        background: $gray-lighter;
     }
     &.animate {
         @include stripes(0.2);
@@ -57,7 +57,7 @@
 }
 
 @mixin button-blue {
-    color: $button-blue-font-color !important;
+    color: $white !important;
     border: 1px solid $button-blue-medium-color !important;
     background-color: $button-blue-medium-color !important;
     background-image: none;
@@ -68,7 +68,7 @@
     }
     &:hover,
     &:focus {
-        color: $button-blue-font-color !important;
+        color: $white !important;
         border: 1px solid $button-blue-light-color !important;
         background-color: $button-blue-light-color !important;
     }
@@ -81,7 +81,7 @@
 }
 
 @mixin button-green {
-    color: $button-green-font-color !important;
+    color: $white !important;
     border: 1px solid $button-green-medium-color !important;
     background-color: $button-green-medium-color !important;
     box-shadow: none !important;
@@ -90,7 +90,7 @@
         background-image: none !important;
     }
     &:hover {
-        color: $button-green-font-color  !important;
+        color: $white !important;
         border: 1px solid $button-green-light-color !important;
         background: $button-green-light-color  !important;
     }
@@ -104,13 +104,13 @@
 
 
 @mixin button-red {
-    color: $button-red-font-color !important;
+    color: $white !important;
     border: 1px solid $button-red-light-color !important;
     background-color: $button-red-medium-color !important;
     background-image: none !important;
     box-shadow: none !important;
     &:hover {
-        color: $button-red-font-color !important;
+        color: $white !important;
         background: $button-red-light-color !important;
     }
     &:active {
