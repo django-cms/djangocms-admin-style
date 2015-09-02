@@ -121,30 +121,6 @@
     }
 }
 
-@mixin button-black {
-    color: $button-inactive-font-color !important;
-    border: 1px solid $button-black-light-color;
-    border-bottom: 1px solid $gray-darkest;
-    cursor: default;
-    background-color: $button-black-medium-color !important;
-    background-image: linear-gradient($button-black-light-color, $button-black-medium-color);
-    box-shadow: none;
-    &:hover {
-        color: $button-black-font-color;
-        border-color: $button-black-medium-color;
-        background-image: linear-gradient($button-black-light-color, $button-black-medium-color);
-    }
-    &:active,
-    &.select {
-        color: $button-black-font-color;
-        border-color: $button-black-medium-color;
-        background-image: linear-gradient($button-black-light-color, $button-black-medium-color);
-    }
-    &.animate {
-        @include stripes(0.1);
-    }
-}
-
 @mixin button-inactive {
     color: $button-inactive-font-color;
     border: 1px solid $white;
