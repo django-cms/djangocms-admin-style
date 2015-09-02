@@ -670,7 +670,7 @@ button {
     text-decoration: none;
     background: #e6e6e6; }
   button:hover {
-    border: solid 1px #C7C7C1 !important; }
+    border: solid 1px #c7c7c7 !important; }
   button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -711,7 +711,7 @@ input[type="button"] {
     background: #e6e6e6; }
   input[type="submit"]:hover,
   input[type="button"]:hover {
-    border: solid 1px #C7C7C1 !important; }
+    border: solid 1px #c7c7c7 !important; }
   input[type="submit"].animate,
   input[type="button"].animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -774,7 +774,7 @@ a.button {
     text-decoration: none;
     background: #e6e6e6; }
   a.button:hover {
-    border: solid 1px #C7C7C1 !important; }
+    border: solid 1px #c7c7c7 !important; }
   a.button.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1451,7 +1451,7 @@ body #container {
       text-decoration: none;
       background: #e6e6e6; }
     .submit-row .deletelink:hover {
-      border: solid 1px #C7C7C1 !important; }
+      border: solid 1px #c7c7c7 !important; }
     .submit-row .deletelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1635,7 +1635,7 @@ body.login {
         background-size: 20px !important; }
         #header #header-btn .btn.icon-arrow-right:hover {
           background-color: #e6e6e6 !important;
-          border: solid 1px #C7C7C1 !important; }
+          border: solid 1px #c7c7c7 !important; }
   #header #header-logo {
     float: left;
     height: 21px;
@@ -1770,7 +1770,7 @@ a.addlink:active {
     text-decoration: none;
     background: #e6e6e6; }
   #content-main .object-tools .addlink:hover {
-    border: solid 1px #C7C7C1 !important; }
+    border: solid 1px #c7c7c7 !important; }
   #content-main .object-tools .addlink.animate {
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1840,7 +1840,7 @@ a.addlink:active {
         text-decoration: none;
         background: #e6e6e6; }
       .object-tools li > a:hover {
-        border: solid 1px #C7C7C1 !important; }
+        border: solid 1px #c7c7c7 !important; }
       .object-tools li > a.animate {
         background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
         background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1878,7 +1878,7 @@ a.addlink:active {
       text-decoration: none;
       background: #e6e6e6; }
     .object-tools .addlink:hover {
-      border: solid 1px #C7C7C1 !important; }
+      border: solid 1px #c7c7c7 !important; }
     .object-tools .addlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1923,7 +1923,7 @@ a.addlink:active {
       text-decoration: none;
       background: #e6e6e6; }
     .object-tools .publishlink:hover {
-      border: solid 1px #C7C7C1 !important; }
+      border: solid 1px #c7c7c7 !important; }
     .object-tools .publishlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1954,7 +1954,7 @@ a.addlink:active {
       text-decoration: none;
       background: #e6e6e6; }
     .object-tools .previewdraftlink:hover {
-      border: solid 1px #C7C7C1 !important; }
+      border: solid 1px #c7c7c7 !important; }
     .object-tools .previewdraftlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -1985,7 +1985,7 @@ a.addlink:active {
       text-decoration: none;
       background: #e6e6e6; }
     .object-tools .revertlink:hover {
-      border: solid 1px #C7C7C1 !important; }
+      border: solid 1px #c7c7c7 !important; }
     .object-tools .revertlink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -2016,7 +2016,7 @@ a.addlink:active {
       text-decoration: none;
       background: #e6e6e6; }
     .object-tools .historylink:hover {
-      border: solid 1px #C7C7C1 !important; }
+      border: solid 1px #c7c7c7 !important; }
     .object-tools .historylink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
@@ -2052,7 +2052,7 @@ a.addlink:active {
       text-decoration: none;
       background: #e6e6e6; }
     .object-tools .viewsitelink:hover {
-      border: solid 1px #C7C7C1 !important; }
+      border: solid 1px #c7c7c7 !important; }
     .object-tools .viewsitelink.animate {
       background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
       background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));

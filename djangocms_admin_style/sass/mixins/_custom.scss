@@ -52,7 +52,7 @@
         background: $gray-lighter;
     }
     &:hover {
-        border: solid 1px #C7C7C1 !important;
+        border: solid 1px darken($gray-lighter, 12%) !important;
     }
     &.animate {
         @include stripes(0.2);
