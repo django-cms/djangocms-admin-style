@@ -2,6 +2,17 @@
 <div id="header-logo">
     <a class="icon-logo" href="/" title="3.2.0dev2"><span>django CMS</span></a>
 </div>
-<h1 id="site-name">{{ site_header|default:_('example.com') }}</h1>
+<ul id="site-name" class="toolbar-item toolbar-item-navigation">
+    <li>
+        <a href="">{{ site_header|default:_('example.com') }}</a>
+        <ul>
+            <li><a href="password_change/">Change password</a></li>
+            <li class="toolbar-item-navigation-break">-----</li>
+            <li><a href="logout/"><span>Logout</span></a></li>
+        </ul>
+    </li>
+</ul>
 <div id="header-btn"><a href="/admin" class="icon-arrow-right btn">Back to {{ site_header|default:_('example.com') }}</a></div>
-
+<script src="../../../static/djangocms_admin_style/js/libs/class.min.js"></script>
+<script src="../../../static/djangocms_admin_style/js/libs/jquery.min.js"></script>
+<script src="../../../static/djangocms_admin_style/js/base.js"></script>
