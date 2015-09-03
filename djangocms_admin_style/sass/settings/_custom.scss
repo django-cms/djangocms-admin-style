@@ -3,10 +3,12 @@ $base-font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;  // defau
 
 //##############################################################################
 // BASE Variables
+
 $font-size-normal: 18px;
 $line-height-normal: 21px;
 
-// #COLORS#
+//##############################################################################
+// #COLORS
 
 $color-primary-light: #f1faff;
 $color-primary-dark: #48abd9;
@@ -27,10 +29,10 @@ $color-danger-ultralight: #fff3f3;
 $color-danger-light: #ef4a4a;
 $color-danger-dark: #d50101;
 
-// Content
+//##############################################################################
+// #MARGIN/PADDING
 $content-margin: 55px;
 
-// Padding & Margin
 $breadcrumb-padding: 20px;
 $toolbar-margin-button: ($toolbar-height - $toolbar-button-height) / 2;
 $toolbar-margin-logo: ($toolbar-height - $toolbar-logo-height) / 2;

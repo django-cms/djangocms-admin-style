@@ -19,66 +19,63 @@
     background-size: 100% 400%;
 }
 
-@mixin button-common-init {
-    border: 1px solid $gray-lighter !important;
-    background-color: $white !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    padding: 10px 15px !important;
-    &:hover {
-        background: $gray-lighter !important;
+// taken from bootstrap with adaptations
+@function important($important) {
+    @if($important == true) {
+        @return !important;
+    } @else {
+        @return true;
     }
 }
+@mixin button-variant($color, $background, $border, $important: false) {
+    background-image: none important($important);
+    margin-bottom: 0; // For input.btn
+    padding: 10px 30px important($important);
+    border-radius: $btn-border-radius-base important($important);
+    color: $color important($important);
+    font-weight: normal important($important);
+    font-size: $font-size-normal important($important);
+    background-color: $background important($important);
+    border: 1px solid $border important($important);
 
-@mixin button-common() {
-    @include button-common-init();
-    overflow: visible;
-    color: $gray !important;
-    font-size: 18px !important;
-    font-weight: normal !important;
-    line-height: 21px !important;
-    text-decoration: none !important;
-    width: auto;
-    border-radius: $border-radius-base;
-    &.small {
-        padding: 3px 8px 4px !important;
-    }
-    &:hover,
-    &:active,
-    &.select,
-    &:visited {
-        color: $gray;
-        text-decoration: none;
-        background: $gray-lighter;
-    }
-    &:hover {
-        border: solid 1px darken($gray-lighter, 12%) !important;
-    }
-    &.animate {
-        @include stripes(0.2);
-    }
-}
-
-@mixin button-blue {
-    color: $white !important;
-    border: 1px solid $color-primary !important;
-    background-color: $color-primary !important;
-    background-image: none;
-    box-shadow: none !important;
-    &,
-    &:visited {
-        background-image: none;
-    }
-    &:hover,
     &:focus {
-        color: $white !important;
-        border: 1px solid $color-primary-dark !important;
-        background-color: $color-primary-dark !important;
+        color: $color important($important);
+        background-color: darken($background, 10%) important($important);
+        border-color: darken($border, 25%) important($important);
+        text-decoration: none important($important);
+    }
+    &:hover {
+        color: $color important($important);
+        background-color: darken($background, 10%) important($important);
+        border-color: darken($border, 12%) important($important);
+        text-decoration: none important($important);
     }
     &:active {
-        background: $color-primary !important;
+        color: $color important($important);
+        background-color: darken($background, 10%) important($important);
+        border-color: darken($border, 12%) important($important);
+        box-shadow: $btn-active-shadow important($important);
+
+        &:hover,
+        &:focus {
+            color: $color important($important);
+            background-color: darken($background, 17%) important($important);
+            border-color: darken($border, 25%) important($important);
+        }
     }
-    &.animate {
-        @include stripes(0.1);
+    &:active {
+        background-image: none important($important);
+    }
+    &[disabled] {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $background important($important);
+            border-color: $border important($important);
+            opacity: 0.65;
+            cursor: not-allowed;
+            box-shadow: none important($important);
+        }
     }
 }
