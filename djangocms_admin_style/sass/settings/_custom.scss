@@ -1,0 +1,58 @@
+// This file must be imported before loading html5-boilerplate
+$base-font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;  // default font-family
+
+//##############################################################################
+// BASE Variables
+
+$font-size-normal: 18px;
+$line-height-normal: 21px;
+
+//##############################################################################
+// #COLORS
+
+$color-primary-light: #f1faff;
+$color-primary-dark: #48abd9;
+
+$color-info-ultralight: #addef6;
+$color-info-light: #5bbdee;
+$color-info-dark: #0072ac;
+
+$color-success-ultralight: #ebf8e6;
+$color-success-light: #7cbe5a;
+$color-success-dark: #5da03d;
+
+$color-warning-ultralight: #fffde4;
+$color-warning-light: #ffc600;
+$color-warning-dark: #ffa800;
+
+$color-danger-ultralight: #fff3f3;
+$color-danger-light: #ef4a4a;
+$color-danger-dark: #d50101;
+
+//##############################################################################
+// #BUTTONS
+
+$btn-default-color: $gray;
+$btn-default-bgcolor: $white;
+$btn-default-border: $gray-lighter;
+
+$btn-action-color: $white;
+$btn-action-bgcolor: $color-primary;
+$btn-action-border: $color-primary;
+
+//##############################################################################
+// #MARGIN/PADDING
+$content-margin: 55px;
+
+$breadcrumb-padding: 20px;
+$toolbar-margin-button: ($toolbar-height - $toolbar-button-height) / 2;
+$toolbar-margin-logo: ($toolbar-height - $toolbar-logo-height) / 2;
+$content-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + $content-margin;
+
+
+// Then we'll import the compass extension
+@import "libs/_html5-boilerplate.scss";
+
+// Now, you can simply include everything
+// (except media) by uncommeting this line
+@include html5-boilerplate;

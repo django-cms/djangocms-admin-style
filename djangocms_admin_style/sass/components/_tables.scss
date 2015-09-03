@@ -1,0 +1,87 @@
+table {
+    width: 100%;
+    margin: 20px 0;
+    padding: 5px;
+    border: none;
+    border-radius: $border-radius-base;
+    background: $white;
+    th {
+        border-bottom: 1px solid $gray-lighter;
+    }
+    th,
+    td {
+        text-align: left;
+        vertical-align: middle;
+        padding: 5px 10px;
+    }
+    thead th,
+    thead th.sorted,
+    tfoot td {
+        background: $gray-lightest;
+    }
+    thead th.sorted .sortoptions a {
+        &.ascending {
+            background: url("../img/sorting-icons.png") -5px -50px no-repeat;
+            &:hover {
+                background: url("../img/sorting-icons.png") -5px -72px no-repeat;
+            }
+        }
+        &.descending {
+            background: url("../img/sorting-icons.png") -5px -94px no-repeat;
+            &:hover {
+                background: url("../img/sorting-icons.png") -5px -115px no-repeat;
+            }
+        }
+        &.sortremove {
+            background: url("../img/sorting-icons.png") -4px -5px no-repeat;
+            &:hover {
+                background: url("../img/sorting-icons.png") -4px -26px no-repeat;
+            }
+        }
+    }
+    thead th.sortable{
+        min-width: 160px;
+        &:hover {
+            background: $gray-lighter;
+        }
+        .sortpriority {
+            color: white !important;
+            padding: 2px 6px !important;
+            background-color: $color-primary;
+            border-radius: 10px;
+        }
+    }
+    td,
+    th {
+        font-family: $base-font-family;
+        padding: 5px;
+    }
+    td.original {
+        vertical-align: top;
+    }
+    tr {
+        td {
+            border-bottom: 1px solid $gray-lighter;
+        }
+    }
+    th {
+        a,
+        a:link,
+        a:visited,
+        a:link:visited {
+            color: $gray-darkest;
+        }
+    }
+    .row1 {
+        background: $white;
+    }
+    .row2 {
+        background: $gray-lightest;
+    }
+}
+fieldset table {
+    border: none;
+}
+.results table tbody tr:hover {
+    background: $color-primary-light;
+}

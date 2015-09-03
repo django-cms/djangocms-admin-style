@@ -1,2 +1,6 @@
 {% load i18n %}
-<h1 id="site-name">{{ site_header|default:_('Django administration') }}</h1>
+<div id="header-logo">
+    <img src="/static/djangocms_admin_style/img/django-cms-logo.png" alt="django CMS" height="23">
+</div>
+<h1 id="site-name">{{ site_header|default:_('example.com') }}</h1>
+<div id="header-btn"><a href="/admin" class="icon-arrow-right btn">Back to {{ site_header|default:_('example.com') }}</a></div>
