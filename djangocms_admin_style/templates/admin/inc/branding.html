@@ -1,6 +1,15 @@
 {% load i18n %}
 <div id="header-logo">
-    <img src="/static/djangocms_admin_style/img/django-cms-logo.png" alt="django CMS" height="23">
+    <a class="icon-logo" href="/"><span>django CMS</span></a>
 </div>
-<h1 id="site-name">{{ site_header|default:_('example.com') }}</h1>
+<ul id="site-name" class="toolbar-item toolbar-item-navigation">
+    <li>
+        <a href="">{{ site_header|default:_('example.com') }}</a>
+        <ul>
+            <li><a href="password_change/">Change password</a></li>
+            <li class="toolbar-item-navigation-break">-----</li>
+            <li><a href="logout/"><span>Logout</span></a></li>
+        </ul>
+    </li>
+</ul>
 <div id="header-btn"><a href="/admin" class="icon-arrow-right btn">Back to {{ site_header|default:_('example.com') }}</a></div>

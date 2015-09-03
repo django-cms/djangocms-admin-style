@@ -12,6 +12,8 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var karma = require('karma').server;
 var sass = require('gulp-sass');
+var iconfont = require('gulp-iconfont');
+var iconfontCss = require('gulp-iconfont-css');
 var sourcemaps = require('gulp-sourcemaps');
 var minifyCss = require('gulp-minify-css');
 var protractor = require('gulp-protractor').protractor;
@@ -23,12 +25,16 @@ var PROJECT_ROOT = __dirname;
 var PROJECT_PATH = {
     'sass': PROJECT_ROOT + '/djangocms_admin_style/sass',
     'css': PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/css',
-    'tests': PROJECT_ROOT + '/tests'
+    'tests': PROJECT_ROOT + '/tests',
+    'icons': PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/fonts'
 };
 
 var PROJECT_PATTERNS = {
     'sass': [
         PROJECT_PATH.sass + '/**/*.{scss,sass}'
+    ],
+    icons: [
+        PROJECT_PATH.icons + '/src/*.svg'
     ]
 };
 
@@ -56,6 +62,24 @@ gulp.task('sass', function () {
         // Sourcemaps are disabled by default to reduce filesize
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest(PROJECT_PATH.css));
+});
+
+gulp.task('icons', function () {
+    gulp.src(PROJECT_PATTERNS.icons)
+    .pipe(iconfontCss({
+        fontName: 'django-admin-iconfont',
+        fontPath: '../fonts/',
+        path: PROJECT_PATH.sass + '/libs/_iconfont.scss',
+        targetPath: '../../../sass/components/_iconography.scss'
+    }))
+    .pipe(iconfont({
+        fontName: 'django-admin-iconfont',
+        normalize: true
+    }))
+    .on('glyphs', function (glyphs, options) {
+        gutil.log.bind(glyphs, options);
+    })
+    .pipe(gulp.dest(PROJECT_PATH.icons));
 });
 
 // #######################################

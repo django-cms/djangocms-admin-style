@@ -275,20 +275,20 @@ body.login {
 
 // header
 #header {
+    overflow: visible;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     color: $gray-darkest !important;
-    width: auto !important;
+    width: 100% !important;
     min-height: $toolbar-height;
-    padding-left: $toolbar-left-space;
-    padding-right: $toolbar-left-space;
     background-color: $white;
     background-image: none;
     box-shadow: $toolbar-shadow;
     z-index: 9999;
     #branding {
+        width: 100%;
         h1 {
             float: left;
             font-size: 14px;
@@ -301,6 +301,7 @@ body.login {
         }
     }
     #user-tools {
+        display: none;
         float: right;
         font-size: 13px;
         line-height: $toolbar-height;
@@ -317,8 +318,79 @@ body.login {
             color: $gray-darkest;
         }
     }
+    .toolbar-item-navigation-break {
+        text-indent: -119988px;
+        overflow: hidden;
+        text-align: left;
+        height: 1px;
+        margin: 0 0 4px;
+        padding: 0 0 3px;
+        border-bottom: 1px solid $gray-lighter;
+    }
+    .toolbar-item-navigation {
+        li  {
+            position: relative;
+            float: left;
+            list-style-type: none;
+            &:hover {
+                > a,
+                a:hover {
+                    color: $white!important;
+                    background: $color-primary;
+                }
+                ul {
+                    display: block;
+                    position: absolute;
+                    top: $toolbar-height;
+                    left: 0;
+                    min-width: 180px;
+                    margin-left: 0;
+                    padding: 3px 0;
+                    border: 1px solid $white;
+                    border-top: none;
+                    border-radius: 0 0 4px 4px;
+                    background: rgba(255,255,255,.97);
+                    box-shadow: 0 1px 1px rgba(0,0,0,.4);
+                }
+            }
+            > a {
+                font-weight: bold;
+            }
+            a {
+                float: left;
+                color: $black;
+                font-size: 14px;
+                line-height: $toolbar-height;
+                list-style-type: none;
+                height: $toolbar-height;
+                padding: 0 10px;
+                cursor: default;
+            }
+            ul {
+                display: none;
+                li {
+                    float: none;
+                    a {
+                        display: block;
+                        float: none;
+                        white-space: nowrap;
+                        line-height: 30px;
+                        font-weight: normal;
+                        height: 30px;
+                        padding: 0 10px 0 15px !important;
+                        cursor: pointer;
+                        span {
+                            font-weight: bold;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     #header-btn {
-        float: left;
+        float: right;
+        padding-right: $toolbar-right-space;
         margin: $toolbar-margin-button 0 $toolbar-margin-button $toolbar-left-space;
         .btn {
             display: block;
@@ -349,11 +421,28 @@ body.login {
     }
     #header-logo {
         float: left;
-        height: $toolbar-logo-height;
-        margin: $toolbar-margin-logo 25px $toolbar-margin-logo 0;
-        img {
-            height: 100%;
-            width: auto;
+        padding-left: $toolbar-left-space;
+        margin-right: 15px;
+        span {
+            display: none;
+        }
+        a {
+            color: $black;
+            display: block;
+            font-size: 21px;
+            line-height: $toolbar-height;
+            height: $toolbar-height;
+            transition: color 200ms;
+            &:hover {
+                color: $color-primary;
+            }
+            &:before {
+                box-sizing: border-box;
+                vertical-align: inherit;
+                line-height: 46px;
+                height: 46px;
+                margin-right: 0;
+            }
         }
     }
 }
@@ -415,6 +504,7 @@ body.login {
                 li {
                     position: relative;
                     font-size: 14px;
+                    line-height: 14px;
                     padding: 9px 15px 9px 45px;
                     border-bottom: solid 1px $gray-lighter;
                     a {
@@ -423,7 +513,9 @@ body.login {
                     &:before {
                         position: absolute;
                         left: 15px;
-                        font-size: 17px;
+                        top: 50%;
+                        font-size: 15px;
+                        margin-top: -9px;
                     }
                 }
                 .changelink a {
