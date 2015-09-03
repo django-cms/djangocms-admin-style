@@ -66,8 +66,7 @@ h6 {
     font-size: 100%;
 }
 a.btn {
-    @include button-common-init();
-    border-radius: $border-radius-base;
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
 }
 a,
 a:link {

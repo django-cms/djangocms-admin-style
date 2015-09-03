@@ -273,7 +273,7 @@
         display: block;
     }
     input[type="submit"] {
-        @include button-blue;
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
         text-indent: -9999px;
         padding: 10px 20px !important;
         margin-left: 10px;
@@ -301,7 +301,7 @@
 }
 
 #changelist-filter-button {
-    color: $gray;
+    @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
     text-transform: uppercase;
     font-size: 14px;
     width: 175px;

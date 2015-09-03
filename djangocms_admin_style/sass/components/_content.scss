@@ -167,8 +167,7 @@ body {
         margin: 0.9em 0;
     }
     .deletelink {
-        @include button-common();
-        @include button-blue();
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
     }
     input[type="submit"].default {
         margin-left: 20px;
@@ -258,7 +257,7 @@ body.login {
                     background: none;
                     input,
                     input[type="submit"] {
-                        @include button-blue();
+                        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
                         width: 262px !important;
                         background-image: none;
                     }
@@ -323,8 +322,7 @@ body.login {
         margin: $toolbar-margin-button 0 $toolbar-margin-button $toolbar-left-space;
         .btn {
             display: block;
-            font-size: $toolbar-button-font-size;
-            color: $gray;
+            font-size: $toolbar-button-font-size !important;
             line-height: $toolbar-button-height;
             height: $toolbar-button-height;
             padding: 0 25px 0 12px !important;
@@ -334,9 +332,17 @@ body.login {
             &.icon-arrow-right {
                 background: url('../img/icon_arrow_right.png') no-repeat right center !important;
                 background-size: 20px !important;
+                &:focus {
+                    color: $btn-default-color !important;
+                    background-color: darken($btn-default-bgcolor, 10%) !important;
+                    border-color: darken($btn-default-border, 25%) !important;
+                    text-decoration: none !important;
+                }
                 &:hover {
-                    background-color: $gray-lighter !important;
-                    border: solid 1px darken($gray-lighter, 12%) !important;
+                    color: $btn-default-color !important;
+                    background-color: darken($btn-default-bgcolor, 10%) !important;
+                    border-color: darken($btn-default-border, 12%) !important;
+                    text-decoration: none !important;
                 }
             }
         }
@@ -471,8 +477,7 @@ a.addlink {
 
 #content-main .object-tools {
     .addlink {
-        @include button-common();
-        @include button-blue();
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
     }
     .recoverlink {
         color: $color-primary !important;
@@ -504,30 +509,28 @@ a.addlink {
             background: none;
         }
         > a {
-            @include button-common();
+            @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
         }
     }
     .addlink {
-        @include button-common();
-        @include button-blue();
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
         color: $white !important;
         padding: 10px 30px !important;
     }
     .publishlink {
-        @include button-common();
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     }
     .previewdraftlink {
-        @include button-common();
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     }
     .revertlink {
-        @include button-common();
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);;
     }
     .historylink {
-        @include button-common();
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     }
     .viewsitelink {
-        @include button-common();
-        @include button-blue();
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
     }
 }
 
@@ -547,7 +550,7 @@ a.addlink {
         line-height: 16px;
     }
     input[type="submit"] {
-        @include button-blue();
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
         float: right;
     }
 }
