@@ -38,7 +38,7 @@ gulp.task('sass', function () {
     gulp.src(PROJECT_PATTERNS.sass)
         // Sourcemaps are disabled by default to reduce filesize
         // .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .on('error', function (error) {
             gutil.log(gutil.colors.red(
                 'Error (' + error.plugin + '): ' + error.messageFormatted)
