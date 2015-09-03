@@ -301,19 +301,19 @@ textarea:invalid {
 
 // buttons
 button {
-    @include button-common();
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
 }
 input[type="submit"],
 input[type="button"] {
-    @include button-common();
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     width: auto !important;
     &.default {
-        @include button-blue();
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
         padding: 10px 30px !important;
     }
 }
 a.button {
-    @include button-common();
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     text-decoration: none;
     cursor: pointer;
     &.tab {
