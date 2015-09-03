@@ -325,8 +325,7 @@ a.btn {
   font-size: 18px !important;
   background-color: #fff !important;
   border: 1px solid #e6e6e6 !important; }
-  a.btn:focus,
-  a.btn.focus {
+  a.btn:focus {
     color: #666666 !important;
     background-color: #e6e6e6 !important;
     border-color: #a6a6a6 !important;
@@ -336,36 +335,22 @@ a.btn {
     background-color: #e6e6e6 !important;
     border-color: #c7c7c7 !important;
     text-decoration: none !important; }
-  a.btn:active,
-  a.btn.cms-btn-active {
+  a.btn:active {
     color: #666666 !important;
     background-color: #e6e6e6 !important;
     border-color: #c7c7c7 !important;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
     a.btn:active:hover,
-    a.btn:active:focus,
-    a.btn:active.focus,
-    a.btn.cms-btn-active:hover,
-    a.btn.cms-btn-active:focus,
-    a.btn.cms-btn-active.focus {
+    a.btn:active:focus {
       color: #666666 !important;
       background-color: #d4d4d4 !important;
       border-color: #a6a6a6 !important; }
-  a.btn:active,
-  a.btn.cms-btn-active {
+  a.btn:active {
     background-image: none !important; }
-  a.btn.cms-btn-disabled,
-  a.btn.cms-btn-disabled:hover,
-  a.btn.cms-btn-disabled:focus,
-  a.btn.cms-btn-disabled.focus,
-  a.btn.cms-btn-disabled:active,
-  a.btn.cms-btn-disabled.cms-btn-active,
   a.btn[disabled],
   a.btn[disabled]:hover,
   a.btn[disabled]:focus,
-  a.btn[disabled].focus,
-  a.btn[disabled]:active,
-  a.btn[disabled].cms-btn-active {
+  a.btn[disabled]:active {
     background-color: #fff !important;
     border-color: #e6e6e6 !important;
     opacity: 0.65;
@@ -711,8 +696,7 @@ button {
   font-size: 18px !important;
   background-color: #fff !important;
   border: 1px solid #e6e6e6 !important; }
-  button:focus,
-  button.focus {
+  button:focus {
     color: #666666 !important;
     background-color: #e6e6e6 !important;
     border-color: #a6a6a6 !important;
@@ -722,36 +706,22 @@ button {
     background-color: #e6e6e6 !important;
     border-color: #c7c7c7 !important;
     text-decoration: none !important; }
-  button:active,
-  button.cms-btn-active {
+  button:active {
     color: #666666 !important;
     background-color: #e6e6e6 !important;
     border-color: #c7c7c7 !important;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
     button:active:hover,
-    button:active:focus,
-    button:active.focus,
-    button.cms-btn-active:hover,
-    button.cms-btn-active:focus,
-    button.cms-btn-active.focus {
+    button:active:focus {
       color: #666666 !important;
       background-color: #d4d4d4 !important;
       border-color: #a6a6a6 !important; }
-  button:active,
-  button.cms-btn-active {
+  button:active {
     background-image: none !important; }
-  button.cms-btn-disabled,
-  button.cms-btn-disabled:hover,
-  button.cms-btn-disabled:focus,
-  button.cms-btn-disabled.focus,
-  button.cms-btn-disabled:active,
-  button.cms-btn-disabled.cms-btn-active,
   button[disabled],
   button[disabled]:hover,
   button[disabled]:focus,
-  button[disabled].focus,
-  button[disabled]:active,
-  button[disabled].cms-btn-active {
+  button[disabled]:active {
     background-color: #fff !important;
     border-color: #e6e6e6 !important;
     opacity: 0.65;
@@ -771,9 +741,7 @@ input[type="button"] {
   border: 1px solid #e6e6e6 !important;
   width: auto !important; }
   input[type="submit"]:focus,
-  input[type="submit"].focus,
-  input[type="button"]:focus,
-  input[type="button"].focus {
+  input[type="button"]:focus {
     color: #666666 !important;
     background-color: #e6e6e6 !important;
     border-color: #a6a6a6 !important;
@@ -785,57 +753,29 @@ input[type="button"] {
     border-color: #c7c7c7 !important;
     text-decoration: none !important; }
   input[type="submit"]:active,
-  input[type="submit"].cms-btn-active,
-  input[type="button"]:active,
-  input[type="button"].cms-btn-active {
+  input[type="button"]:active {
     color: #666666 !important;
     background-color: #e6e6e6 !important;
     border-color: #c7c7c7 !important;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
     input[type="submit"]:active:hover,
     input[type="submit"]:active:focus,
-    input[type="submit"]:active.focus,
-    input[type="submit"].cms-btn-active:hover,
-    input[type="submit"].cms-btn-active:focus,
-    input[type="submit"].cms-btn-active.focus,
     input[type="button"]:active:hover,
-    input[type="button"]:active:focus,
-    input[type="button"]:active.focus,
-    input[type="button"].cms-btn-active:hover,
-    input[type="button"].cms-btn-active:focus,
-    input[type="button"].cms-btn-active.focus {
+    input[type="button"]:active:focus {
       color: #666666 !important;
       background-color: #d4d4d4 !important;
       border-color: #a6a6a6 !important; }
   input[type="submit"]:active,
-  input[type="submit"].cms-btn-active,
-  input[type="button"]:active,
-  input[type="button"].cms-btn-active {
+  input[type="button"]:active {
     background-image: none !important; }
-  input[type="submit"].cms-btn-disabled,
-  input[type="submit"].cms-btn-disabled:hover,
-  input[type="submit"].cms-btn-disabled:focus,
-  input[type="submit"].cms-btn-disabled.focus,
-  input[type="submit"].cms-btn-disabled:active,
-  input[type="submit"].cms-btn-disabled.cms-btn-active,
   input[type="submit"][disabled],
   input[type="submit"][disabled]:hover,
   input[type="submit"][disabled]:focus,
-  input[type="submit"][disabled].focus,
   input[type="submit"][disabled]:active,
-  input[type="submit"][disabled].cms-btn-active,
-  input[type="button"].cms-btn-disabled,
-  input[type="button"].cms-btn-disabled:hover,
-  input[type="button"].cms-btn-disabled:focus,
-  input[type="button"].cms-btn-disabled.focus,
-  input[type="button"].cms-btn-disabled:active,
-  input[type="button"].cms-btn-disabled.cms-btn-active,
   input[type="button"][disabled],
   input[type="button"][disabled]:hover,
   input[type="button"][disabled]:focus,
-  input[type="button"][disabled].focus,
-  input[type="button"][disabled]:active,
-  input[type="button"][disabled].cms-btn-active {
+  input[type="button"][disabled]:active {
     background-color: #fff !important;
     border-color: #e6e6e6 !important;
     opacity: 0.65;
@@ -854,9 +794,7 @@ input[type="button"] {
     border: 1px solid #57bcf0 !important;
     padding: 10px 30px !important; }
     input[type="submit"].default:focus,
-    input[type="submit"].default.focus,
-    input[type="button"].default:focus,
-    input[type="button"].default.focus {
+    input[type="button"].default:focus {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #107eb7 !important;
@@ -868,57 +806,29 @@ input[type="button"] {
       border-color: #1fa6eb !important;
       text-decoration: none !important; }
     input[type="submit"].default:active,
-    input[type="submit"].default.cms-btn-active,
-    input[type="button"].default:active,
-    input[type="button"].default.cms-btn-active {
+    input[type="button"].default:active {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #1fa6eb !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       input[type="submit"].default:active:hover,
       input[type="submit"].default:active:focus,
-      input[type="submit"].default:active.focus,
-      input[type="submit"].default.cms-btn-active:hover,
-      input[type="submit"].default.cms-btn-active:focus,
-      input[type="submit"].default.cms-btn-active.focus,
       input[type="button"].default:active:hover,
-      input[type="button"].default:active:focus,
-      input[type="button"].default:active.focus,
-      input[type="button"].default.cms-btn-active:hover,
-      input[type="button"].default.cms-btn-active:focus,
-      input[type="button"].default.cms-btn-active.focus {
+      input[type="button"].default:active:focus {
         color: #fff !important;
         background-color: #1498dd !important;
         border-color: #107eb7 !important; }
     input[type="submit"].default:active,
-    input[type="submit"].default.cms-btn-active,
-    input[type="button"].default:active,
-    input[type="button"].default.cms-btn-active {
+    input[type="button"].default:active {
       background-image: none !important; }
-    input[type="submit"].default.cms-btn-disabled,
-    input[type="submit"].default.cms-btn-disabled:hover,
-    input[type="submit"].default.cms-btn-disabled:focus,
-    input[type="submit"].default.cms-btn-disabled.focus,
-    input[type="submit"].default.cms-btn-disabled:active,
-    input[type="submit"].default.cms-btn-disabled.cms-btn-active,
     input[type="submit"].default[disabled],
     input[type="submit"].default[disabled]:hover,
     input[type="submit"].default[disabled]:focus,
-    input[type="submit"].default[disabled].focus,
     input[type="submit"].default[disabled]:active,
-    input[type="submit"].default[disabled].cms-btn-active,
-    input[type="button"].default.cms-btn-disabled,
-    input[type="button"].default.cms-btn-disabled:hover,
-    input[type="button"].default.cms-btn-disabled:focus,
-    input[type="button"].default.cms-btn-disabled.focus,
-    input[type="button"].default.cms-btn-disabled:active,
-    input[type="button"].default.cms-btn-disabled.cms-btn-active,
     input[type="button"].default[disabled],
     input[type="button"].default[disabled]:hover,
     input[type="button"].default[disabled]:focus,
-    input[type="button"].default[disabled].focus,
-    input[type="button"].default[disabled]:active,
-    input[type="button"].default[disabled].cms-btn-active {
+    input[type="button"].default[disabled]:active {
       background-color: #57bcf0 !important;
       border-color: #57bcf0 !important;
       opacity: 0.65;
@@ -937,8 +847,7 @@ a.button {
   border: 1px solid #e6e6e6 !important;
   text-decoration: none;
   cursor: pointer; }
-  a.button:focus,
-  a.button.focus {
+  a.button:focus {
     color: #666666 !important;
     background-color: #e6e6e6 !important;
     border-color: #a6a6a6 !important;
@@ -948,36 +857,22 @@ a.button {
     background-color: #e6e6e6 !important;
     border-color: #c7c7c7 !important;
     text-decoration: none !important; }
-  a.button:active,
-  a.button.cms-btn-active {
+  a.button:active {
     color: #666666 !important;
     background-color: #e6e6e6 !important;
     border-color: #c7c7c7 !important;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
     a.button:active:hover,
-    a.button:active:focus,
-    a.button:active.focus,
-    a.button.cms-btn-active:hover,
-    a.button.cms-btn-active:focus,
-    a.button.cms-btn-active.focus {
+    a.button:active:focus {
       color: #666666 !important;
       background-color: #d4d4d4 !important;
       border-color: #a6a6a6 !important; }
-  a.button:active,
-  a.button.cms-btn-active {
+  a.button:active {
     background-image: none !important; }
-  a.button.cms-btn-disabled,
-  a.button.cms-btn-disabled:hover,
-  a.button.cms-btn-disabled:focus,
-  a.button.cms-btn-disabled.focus,
-  a.button.cms-btn-disabled:active,
-  a.button.cms-btn-disabled.cms-btn-active,
   a.button[disabled],
   a.button[disabled]:hover,
   a.button[disabled]:focus,
-  a.button[disabled].focus,
-  a.button[disabled]:active,
-  a.button[disabled].cms-btn-active {
+  a.button[disabled]:active {
     background-color: #fff !important;
     border-color: #e6e6e6 !important;
     opacity: 0.65;
@@ -1415,8 +1310,7 @@ fieldset table {
     background-repeat: no-repeat !important;
     background-position: 10px center !important;
     background-size: 23px !important; }
-    #changelist-search input[type="submit"]:focus,
-    #changelist-search input[type="submit"].focus {
+    #changelist-search input[type="submit"]:focus {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #107eb7 !important;
@@ -1426,36 +1320,22 @@ fieldset table {
       background-color: #28a9ec !important;
       border-color: #1fa6eb !important;
       text-decoration: none !important; }
-    #changelist-search input[type="submit"]:active,
-    #changelist-search input[type="submit"].cms-btn-active {
+    #changelist-search input[type="submit"]:active {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #1fa6eb !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       #changelist-search input[type="submit"]:active:hover,
-      #changelist-search input[type="submit"]:active:focus,
-      #changelist-search input[type="submit"]:active.focus,
-      #changelist-search input[type="submit"].cms-btn-active:hover,
-      #changelist-search input[type="submit"].cms-btn-active:focus,
-      #changelist-search input[type="submit"].cms-btn-active.focus {
+      #changelist-search input[type="submit"]:active:focus {
         color: #fff !important;
         background-color: #1498dd !important;
         border-color: #107eb7 !important; }
-    #changelist-search input[type="submit"]:active,
-    #changelist-search input[type="submit"].cms-btn-active {
+    #changelist-search input[type="submit"]:active {
       background-image: none !important; }
-    #changelist-search input[type="submit"].cms-btn-disabled,
-    #changelist-search input[type="submit"].cms-btn-disabled:hover,
-    #changelist-search input[type="submit"].cms-btn-disabled:focus,
-    #changelist-search input[type="submit"].cms-btn-disabled.focus,
-    #changelist-search input[type="submit"].cms-btn-disabled:active,
-    #changelist-search input[type="submit"].cms-btn-disabled.cms-btn-active,
     #changelist-search input[type="submit"][disabled],
     #changelist-search input[type="submit"][disabled]:hover,
     #changelist-search input[type="submit"][disabled]:focus,
-    #changelist-search input[type="submit"][disabled].focus,
-    #changelist-search input[type="submit"][disabled]:active,
-    #changelist-search input[type="submit"][disabled].cms-btn-active {
+    #changelist-search input[type="submit"][disabled]:active {
       background-color: #57bcf0 !important;
       border-color: #57bcf0 !important;
       opacity: 0.65;
@@ -1493,8 +1373,7 @@ fieldset table {
   background: url("../img/icon_arrow_down.png") no-repeat left center;
   background-size: 25px;
   border-left: 0; }
-  #changelist-filter-button:focus,
-  #changelist-filter-button.focus {
+  #changelist-filter-button:focus {
     color: #fff !important;
     background-color: #28a9ec !important;
     border-color: #107eb7 !important;
@@ -1504,36 +1383,22 @@ fieldset table {
     background-color: #28a9ec !important;
     border-color: #1fa6eb !important;
     text-decoration: none !important; }
-  #changelist-filter-button:active,
-  #changelist-filter-button.cms-btn-active {
+  #changelist-filter-button:active {
     color: #fff !important;
     background-color: #28a9ec !important;
     border-color: #1fa6eb !important;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
     #changelist-filter-button:active:hover,
-    #changelist-filter-button:active:focus,
-    #changelist-filter-button:active.focus,
-    #changelist-filter-button.cms-btn-active:hover,
-    #changelist-filter-button.cms-btn-active:focus,
-    #changelist-filter-button.cms-btn-active.focus {
+    #changelist-filter-button:active:focus {
       color: #fff !important;
       background-color: #1498dd !important;
       border-color: #107eb7 !important; }
-  #changelist-filter-button:active,
-  #changelist-filter-button.cms-btn-active {
+  #changelist-filter-button:active {
     background-image: none !important; }
-  #changelist-filter-button.cms-btn-disabled,
-  #changelist-filter-button.cms-btn-disabled:hover,
-  #changelist-filter-button.cms-btn-disabled:focus,
-  #changelist-filter-button.cms-btn-disabled.focus,
-  #changelist-filter-button.cms-btn-disabled:active,
-  #changelist-filter-button.cms-btn-disabled.cms-btn-active,
   #changelist-filter-button[disabled],
   #changelist-filter-button[disabled]:hover,
   #changelist-filter-button[disabled]:focus,
-  #changelist-filter-button[disabled].focus,
-  #changelist-filter-button[disabled]:active,
-  #changelist-filter-button[disabled].cms-btn-active {
+  #changelist-filter-button[disabled]:active {
     background-color: #57bcf0 !important;
     border-color: #57bcf0 !important;
     opacity: 0.65;
@@ -1731,8 +1596,7 @@ body #container {
     font-size: 18px !important;
     background-color: #57bcf0 !important;
     border: 1px solid #57bcf0 !important; }
-    .submit-row .deletelink:focus,
-    .submit-row .deletelink.focus {
+    .submit-row .deletelink:focus {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #107eb7 !important;
@@ -1742,36 +1606,22 @@ body #container {
       background-color: #28a9ec !important;
       border-color: #1fa6eb !important;
       text-decoration: none !important; }
-    .submit-row .deletelink:active,
-    .submit-row .deletelink.cms-btn-active {
+    .submit-row .deletelink:active {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #1fa6eb !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       .submit-row .deletelink:active:hover,
-      .submit-row .deletelink:active:focus,
-      .submit-row .deletelink:active.focus,
-      .submit-row .deletelink.cms-btn-active:hover,
-      .submit-row .deletelink.cms-btn-active:focus,
-      .submit-row .deletelink.cms-btn-active.focus {
+      .submit-row .deletelink:active:focus {
         color: #fff !important;
         background-color: #1498dd !important;
         border-color: #107eb7 !important; }
-    .submit-row .deletelink:active,
-    .submit-row .deletelink.cms-btn-active {
+    .submit-row .deletelink:active {
       background-image: none !important; }
-    .submit-row .deletelink.cms-btn-disabled,
-    .submit-row .deletelink.cms-btn-disabled:hover,
-    .submit-row .deletelink.cms-btn-disabled:focus,
-    .submit-row .deletelink.cms-btn-disabled.focus,
-    .submit-row .deletelink.cms-btn-disabled:active,
-    .submit-row .deletelink.cms-btn-disabled.cms-btn-active,
     .submit-row .deletelink[disabled],
     .submit-row .deletelink[disabled]:hover,
     .submit-row .deletelink[disabled]:focus,
-    .submit-row .deletelink[disabled].focus,
-    .submit-row .deletelink[disabled]:active,
-    .submit-row .deletelink[disabled].cms-btn-active {
+    .submit-row .deletelink[disabled]:active {
       background-color: #57bcf0 !important;
       border-color: #57bcf0 !important;
       opacity: 0.65;
@@ -1870,9 +1720,7 @@ body.login {
           width: 262px !important;
           background-image: none; }
           body.login #container #content #content-main .submit-row input:focus,
-          body.login #container #content #content-main .submit-row input.focus,
-          body.login #container #content #content-main .submit-row input[type="submit"]:focus,
-          body.login #container #content #content-main .submit-row input[type="submit"].focus {
+          body.login #container #content #content-main .submit-row input[type="submit"]:focus {
             color: #fff !important;
             background-color: #28a9ec !important;
             border-color: #107eb7 !important;
@@ -1884,57 +1732,29 @@ body.login {
             border-color: #1fa6eb !important;
             text-decoration: none !important; }
           body.login #container #content #content-main .submit-row input:active,
-          body.login #container #content #content-main .submit-row input.cms-btn-active,
-          body.login #container #content #content-main .submit-row input[type="submit"]:active,
-          body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-active {
+          body.login #container #content #content-main .submit-row input[type="submit"]:active {
             color: #fff !important;
             background-color: #28a9ec !important;
             border-color: #1fa6eb !important;
             box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
             body.login #container #content #content-main .submit-row input:active:hover,
             body.login #container #content #content-main .submit-row input:active:focus,
-            body.login #container #content #content-main .submit-row input:active.focus,
-            body.login #container #content #content-main .submit-row input.cms-btn-active:hover,
-            body.login #container #content #content-main .submit-row input.cms-btn-active:focus,
-            body.login #container #content #content-main .submit-row input.cms-btn-active.focus,
             body.login #container #content #content-main .submit-row input[type="submit"]:active:hover,
-            body.login #container #content #content-main .submit-row input[type="submit"]:active:focus,
-            body.login #container #content #content-main .submit-row input[type="submit"]:active.focus,
-            body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-active:hover,
-            body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-active:focus,
-            body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-active.focus {
+            body.login #container #content #content-main .submit-row input[type="submit"]:active:focus {
               color: #fff !important;
               background-color: #1498dd !important;
               border-color: #107eb7 !important; }
           body.login #container #content #content-main .submit-row input:active,
-          body.login #container #content #content-main .submit-row input.cms-btn-active,
-          body.login #container #content #content-main .submit-row input[type="submit"]:active,
-          body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-active {
+          body.login #container #content #content-main .submit-row input[type="submit"]:active {
             background-image: none !important; }
-          body.login #container #content #content-main .submit-row input.cms-btn-disabled,
-          body.login #container #content #content-main .submit-row input.cms-btn-disabled:hover,
-          body.login #container #content #content-main .submit-row input.cms-btn-disabled:focus,
-          body.login #container #content #content-main .submit-row input.cms-btn-disabled.focus,
-          body.login #container #content #content-main .submit-row input.cms-btn-disabled:active,
-          body.login #container #content #content-main .submit-row input.cms-btn-disabled.cms-btn-active,
           body.login #container #content #content-main .submit-row input[disabled],
           body.login #container #content #content-main .submit-row input[disabled]:hover,
           body.login #container #content #content-main .submit-row input[disabled]:focus,
-          body.login #container #content #content-main .submit-row input[disabled].focus,
           body.login #container #content #content-main .submit-row input[disabled]:active,
-          body.login #container #content #content-main .submit-row input[disabled].cms-btn-active,
-          body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-disabled,
-          body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-disabled:hover,
-          body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-disabled:focus,
-          body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-disabled.focus,
-          body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-disabled:active,
-          body.login #container #content #content-main .submit-row input[type="submit"].cms-btn-disabled.cms-btn-active,
           body.login #container #content #content-main .submit-row input[type="submit"][disabled],
           body.login #container #content #content-main .submit-row input[type="submit"][disabled]:hover,
           body.login #container #content #content-main .submit-row input[type="submit"][disabled]:focus,
-          body.login #container #content #content-main .submit-row input[type="submit"][disabled].focus,
-          body.login #container #content #content-main .submit-row input[type="submit"][disabled]:active,
-          body.login #container #content #content-main .submit-row input[type="submit"][disabled].cms-btn-active {
+          body.login #container #content #content-main .submit-row input[type="submit"][disabled]:active {
             background-color: #57bcf0 !important;
             border-color: #57bcf0 !important;
             opacity: 0.65;
@@ -2117,8 +1937,7 @@ a.addlink:active {
   font-size: 18px !important;
   background-color: #57bcf0 !important;
   border: 1px solid #57bcf0 !important; }
-  #content-main .object-tools .addlink:focus,
-  #content-main .object-tools .addlink.focus {
+  #content-main .object-tools .addlink:focus {
     color: #fff !important;
     background-color: #28a9ec !important;
     border-color: #107eb7 !important;
@@ -2128,36 +1947,22 @@ a.addlink:active {
     background-color: #28a9ec !important;
     border-color: #1fa6eb !important;
     text-decoration: none !important; }
-  #content-main .object-tools .addlink:active,
-  #content-main .object-tools .addlink.cms-btn-active {
+  #content-main .object-tools .addlink:active {
     color: #fff !important;
     background-color: #28a9ec !important;
     border-color: #1fa6eb !important;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
     #content-main .object-tools .addlink:active:hover,
-    #content-main .object-tools .addlink:active:focus,
-    #content-main .object-tools .addlink:active.focus,
-    #content-main .object-tools .addlink.cms-btn-active:hover,
-    #content-main .object-tools .addlink.cms-btn-active:focus,
-    #content-main .object-tools .addlink.cms-btn-active.focus {
+    #content-main .object-tools .addlink:active:focus {
       color: #fff !important;
       background-color: #1498dd !important;
       border-color: #107eb7 !important; }
-  #content-main .object-tools .addlink:active,
-  #content-main .object-tools .addlink.cms-btn-active {
+  #content-main .object-tools .addlink:active {
     background-image: none !important; }
-  #content-main .object-tools .addlink.cms-btn-disabled,
-  #content-main .object-tools .addlink.cms-btn-disabled:hover,
-  #content-main .object-tools .addlink.cms-btn-disabled:focus,
-  #content-main .object-tools .addlink.cms-btn-disabled.focus,
-  #content-main .object-tools .addlink.cms-btn-disabled:active,
-  #content-main .object-tools .addlink.cms-btn-disabled.cms-btn-active,
   #content-main .object-tools .addlink[disabled],
   #content-main .object-tools .addlink[disabled]:hover,
   #content-main .object-tools .addlink[disabled]:focus,
-  #content-main .object-tools .addlink[disabled].focus,
-  #content-main .object-tools .addlink[disabled]:active,
-  #content-main .object-tools .addlink[disabled].cms-btn-active {
+  #content-main .object-tools .addlink[disabled]:active {
     background-color: #57bcf0 !important;
     border-color: #57bcf0 !important;
     opacity: 0.65;
@@ -2198,8 +2003,7 @@ a.addlink:active {
       font-size: 18px !important;
       background-color: #fff !important;
       border: 1px solid #e6e6e6 !important; }
-      .object-tools li > a:focus,
-      .object-tools li > a.focus {
+      .object-tools li > a:focus {
         color: #666666 !important;
         background-color: #e6e6e6 !important;
         border-color: #a6a6a6 !important;
@@ -2209,36 +2013,22 @@ a.addlink:active {
         background-color: #e6e6e6 !important;
         border-color: #c7c7c7 !important;
         text-decoration: none !important; }
-      .object-tools li > a:active,
-      .object-tools li > a.cms-btn-active {
+      .object-tools li > a:active {
         color: #666666 !important;
         background-color: #e6e6e6 !important;
         border-color: #c7c7c7 !important;
         box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
         .object-tools li > a:active:hover,
-        .object-tools li > a:active:focus,
-        .object-tools li > a:active.focus,
-        .object-tools li > a.cms-btn-active:hover,
-        .object-tools li > a.cms-btn-active:focus,
-        .object-tools li > a.cms-btn-active.focus {
+        .object-tools li > a:active:focus {
           color: #666666 !important;
           background-color: #d4d4d4 !important;
           border-color: #a6a6a6 !important; }
-      .object-tools li > a:active,
-      .object-tools li > a.cms-btn-active {
+      .object-tools li > a:active {
         background-image: none !important; }
-      .object-tools li > a.cms-btn-disabled,
-      .object-tools li > a.cms-btn-disabled:hover,
-      .object-tools li > a.cms-btn-disabled:focus,
-      .object-tools li > a.cms-btn-disabled.focus,
-      .object-tools li > a.cms-btn-disabled:active,
-      .object-tools li > a.cms-btn-disabled.cms-btn-active,
       .object-tools li > a[disabled],
       .object-tools li > a[disabled]:hover,
       .object-tools li > a[disabled]:focus,
-      .object-tools li > a[disabled].focus,
-      .object-tools li > a[disabled]:active,
-      .object-tools li > a[disabled].cms-btn-active {
+      .object-tools li > a[disabled]:active {
         background-color: #fff !important;
         border-color: #e6e6e6 !important;
         opacity: 0.65;
@@ -2256,8 +2046,7 @@ a.addlink:active {
     border: 1px solid #57bcf0 !important;
     color: #fff !important;
     padding: 10px 30px !important; }
-    .object-tools .addlink:focus,
-    .object-tools .addlink.focus {
+    .object-tools .addlink:focus {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #107eb7 !important;
@@ -2267,36 +2056,22 @@ a.addlink:active {
       background-color: #28a9ec !important;
       border-color: #1fa6eb !important;
       text-decoration: none !important; }
-    .object-tools .addlink:active,
-    .object-tools .addlink.cms-btn-active {
+    .object-tools .addlink:active {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #1fa6eb !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       .object-tools .addlink:active:hover,
-      .object-tools .addlink:active:focus,
-      .object-tools .addlink:active.focus,
-      .object-tools .addlink.cms-btn-active:hover,
-      .object-tools .addlink.cms-btn-active:focus,
-      .object-tools .addlink.cms-btn-active.focus {
+      .object-tools .addlink:active:focus {
         color: #fff !important;
         background-color: #1498dd !important;
         border-color: #107eb7 !important; }
-    .object-tools .addlink:active,
-    .object-tools .addlink.cms-btn-active {
+    .object-tools .addlink:active {
       background-image: none !important; }
-    .object-tools .addlink.cms-btn-disabled,
-    .object-tools .addlink.cms-btn-disabled:hover,
-    .object-tools .addlink.cms-btn-disabled:focus,
-    .object-tools .addlink.cms-btn-disabled.focus,
-    .object-tools .addlink.cms-btn-disabled:active,
-    .object-tools .addlink.cms-btn-disabled.cms-btn-active,
     .object-tools .addlink[disabled],
     .object-tools .addlink[disabled]:hover,
     .object-tools .addlink[disabled]:focus,
-    .object-tools .addlink[disabled].focus,
-    .object-tools .addlink[disabled]:active,
-    .object-tools .addlink[disabled].cms-btn-active {
+    .object-tools .addlink[disabled]:active {
       background-color: #57bcf0 !important;
       border-color: #57bcf0 !important;
       opacity: 0.65;
@@ -2312,8 +2087,7 @@ a.addlink:active {
     font-size: 18px !important;
     background-color: #fff !important;
     border: 1px solid #e6e6e6 !important; }
-    .object-tools .publishlink:focus,
-    .object-tools .publishlink.focus {
+    .object-tools .publishlink:focus {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #a6a6a6 !important;
@@ -2323,36 +2097,22 @@ a.addlink:active {
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       text-decoration: none !important; }
-    .object-tools .publishlink:active,
-    .object-tools .publishlink.cms-btn-active {
+    .object-tools .publishlink:active {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       .object-tools .publishlink:active:hover,
-      .object-tools .publishlink:active:focus,
-      .object-tools .publishlink:active.focus,
-      .object-tools .publishlink.cms-btn-active:hover,
-      .object-tools .publishlink.cms-btn-active:focus,
-      .object-tools .publishlink.cms-btn-active.focus {
+      .object-tools .publishlink:active:focus {
         color: #666666 !important;
         background-color: #d4d4d4 !important;
         border-color: #a6a6a6 !important; }
-    .object-tools .publishlink:active,
-    .object-tools .publishlink.cms-btn-active {
+    .object-tools .publishlink:active {
       background-image: none !important; }
-    .object-tools .publishlink.cms-btn-disabled,
-    .object-tools .publishlink.cms-btn-disabled:hover,
-    .object-tools .publishlink.cms-btn-disabled:focus,
-    .object-tools .publishlink.cms-btn-disabled.focus,
-    .object-tools .publishlink.cms-btn-disabled:active,
-    .object-tools .publishlink.cms-btn-disabled.cms-btn-active,
     .object-tools .publishlink[disabled],
     .object-tools .publishlink[disabled]:hover,
     .object-tools .publishlink[disabled]:focus,
-    .object-tools .publishlink[disabled].focus,
-    .object-tools .publishlink[disabled]:active,
-    .object-tools .publishlink[disabled].cms-btn-active {
+    .object-tools .publishlink[disabled]:active {
       background-color: #fff !important;
       border-color: #e6e6e6 !important;
       opacity: 0.65;
@@ -2368,8 +2128,7 @@ a.addlink:active {
     font-size: 18px !important;
     background-color: #fff !important;
     border: 1px solid #e6e6e6 !important; }
-    .object-tools .previewdraftlink:focus,
-    .object-tools .previewdraftlink.focus {
+    .object-tools .previewdraftlink:focus {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #a6a6a6 !important;
@@ -2379,36 +2138,22 @@ a.addlink:active {
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       text-decoration: none !important; }
-    .object-tools .previewdraftlink:active,
-    .object-tools .previewdraftlink.cms-btn-active {
+    .object-tools .previewdraftlink:active {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       .object-tools .previewdraftlink:active:hover,
-      .object-tools .previewdraftlink:active:focus,
-      .object-tools .previewdraftlink:active.focus,
-      .object-tools .previewdraftlink.cms-btn-active:hover,
-      .object-tools .previewdraftlink.cms-btn-active:focus,
-      .object-tools .previewdraftlink.cms-btn-active.focus {
+      .object-tools .previewdraftlink:active:focus {
         color: #666666 !important;
         background-color: #d4d4d4 !important;
         border-color: #a6a6a6 !important; }
-    .object-tools .previewdraftlink:active,
-    .object-tools .previewdraftlink.cms-btn-active {
+    .object-tools .previewdraftlink:active {
       background-image: none !important; }
-    .object-tools .previewdraftlink.cms-btn-disabled,
-    .object-tools .previewdraftlink.cms-btn-disabled:hover,
-    .object-tools .previewdraftlink.cms-btn-disabled:focus,
-    .object-tools .previewdraftlink.cms-btn-disabled.focus,
-    .object-tools .previewdraftlink.cms-btn-disabled:active,
-    .object-tools .previewdraftlink.cms-btn-disabled.cms-btn-active,
     .object-tools .previewdraftlink[disabled],
     .object-tools .previewdraftlink[disabled]:hover,
     .object-tools .previewdraftlink[disabled]:focus,
-    .object-tools .previewdraftlink[disabled].focus,
-    .object-tools .previewdraftlink[disabled]:active,
-    .object-tools .previewdraftlink[disabled].cms-btn-active {
+    .object-tools .previewdraftlink[disabled]:active {
       background-color: #fff !important;
       border-color: #e6e6e6 !important;
       opacity: 0.65;
@@ -2424,8 +2169,7 @@ a.addlink:active {
     font-size: 18px !important;
     background-color: #fff !important;
     border: 1px solid #e6e6e6 !important; }
-    .object-tools .revertlink:focus,
-    .object-tools .revertlink.focus {
+    .object-tools .revertlink:focus {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #a6a6a6 !important;
@@ -2435,36 +2179,22 @@ a.addlink:active {
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       text-decoration: none !important; }
-    .object-tools .revertlink:active,
-    .object-tools .revertlink.cms-btn-active {
+    .object-tools .revertlink:active {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       .object-tools .revertlink:active:hover,
-      .object-tools .revertlink:active:focus,
-      .object-tools .revertlink:active.focus,
-      .object-tools .revertlink.cms-btn-active:hover,
-      .object-tools .revertlink.cms-btn-active:focus,
-      .object-tools .revertlink.cms-btn-active.focus {
+      .object-tools .revertlink:active:focus {
         color: #666666 !important;
         background-color: #d4d4d4 !important;
         border-color: #a6a6a6 !important; }
-    .object-tools .revertlink:active,
-    .object-tools .revertlink.cms-btn-active {
+    .object-tools .revertlink:active {
       background-image: none !important; }
-    .object-tools .revertlink.cms-btn-disabled,
-    .object-tools .revertlink.cms-btn-disabled:hover,
-    .object-tools .revertlink.cms-btn-disabled:focus,
-    .object-tools .revertlink.cms-btn-disabled.focus,
-    .object-tools .revertlink.cms-btn-disabled:active,
-    .object-tools .revertlink.cms-btn-disabled.cms-btn-active,
     .object-tools .revertlink[disabled],
     .object-tools .revertlink[disabled]:hover,
     .object-tools .revertlink[disabled]:focus,
-    .object-tools .revertlink[disabled].focus,
-    .object-tools .revertlink[disabled]:active,
-    .object-tools .revertlink[disabled].cms-btn-active {
+    .object-tools .revertlink[disabled]:active {
       background-color: #fff !important;
       border-color: #e6e6e6 !important;
       opacity: 0.65;
@@ -2480,8 +2210,7 @@ a.addlink:active {
     font-size: 18px !important;
     background-color: #fff !important;
     border: 1px solid #e6e6e6 !important; }
-    .object-tools .historylink:focus,
-    .object-tools .historylink.focus {
+    .object-tools .historylink:focus {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #a6a6a6 !important;
@@ -2491,36 +2220,22 @@ a.addlink:active {
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       text-decoration: none !important; }
-    .object-tools .historylink:active,
-    .object-tools .historylink.cms-btn-active {
+    .object-tools .historylink:active {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       .object-tools .historylink:active:hover,
-      .object-tools .historylink:active:focus,
-      .object-tools .historylink:active.focus,
-      .object-tools .historylink.cms-btn-active:hover,
-      .object-tools .historylink.cms-btn-active:focus,
-      .object-tools .historylink.cms-btn-active.focus {
+      .object-tools .historylink:active:focus {
         color: #666666 !important;
         background-color: #d4d4d4 !important;
         border-color: #a6a6a6 !important; }
-    .object-tools .historylink:active,
-    .object-tools .historylink.cms-btn-active {
+    .object-tools .historylink:active {
       background-image: none !important; }
-    .object-tools .historylink.cms-btn-disabled,
-    .object-tools .historylink.cms-btn-disabled:hover,
-    .object-tools .historylink.cms-btn-disabled:focus,
-    .object-tools .historylink.cms-btn-disabled.focus,
-    .object-tools .historylink.cms-btn-disabled:active,
-    .object-tools .historylink.cms-btn-disabled.cms-btn-active,
     .object-tools .historylink[disabled],
     .object-tools .historylink[disabled]:hover,
     .object-tools .historylink[disabled]:focus,
-    .object-tools .historylink[disabled].focus,
-    .object-tools .historylink[disabled]:active,
-    .object-tools .historylink[disabled].cms-btn-active {
+    .object-tools .historylink[disabled]:active {
       background-color: #fff !important;
       border-color: #e6e6e6 !important;
       opacity: 0.65;
@@ -2536,8 +2251,7 @@ a.addlink:active {
     font-size: 18px !important;
     background-color: #57bcf0 !important;
     border: 1px solid #57bcf0 !important; }
-    .object-tools .viewsitelink:focus,
-    .object-tools .viewsitelink.focus {
+    .object-tools .viewsitelink:focus {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #107eb7 !important;
@@ -2547,36 +2261,22 @@ a.addlink:active {
       background-color: #28a9ec !important;
       border-color: #1fa6eb !important;
       text-decoration: none !important; }
-    .object-tools .viewsitelink:active,
-    .object-tools .viewsitelink.cms-btn-active {
+    .object-tools .viewsitelink:active {
       color: #fff !important;
       background-color: #28a9ec !important;
       border-color: #1fa6eb !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       .object-tools .viewsitelink:active:hover,
-      .object-tools .viewsitelink:active:focus,
-      .object-tools .viewsitelink:active.focus,
-      .object-tools .viewsitelink.cms-btn-active:hover,
-      .object-tools .viewsitelink.cms-btn-active:focus,
-      .object-tools .viewsitelink.cms-btn-active.focus {
+      .object-tools .viewsitelink:active:focus {
         color: #fff !important;
         background-color: #1498dd !important;
         border-color: #107eb7 !important; }
-    .object-tools .viewsitelink:active,
-    .object-tools .viewsitelink.cms-btn-active {
+    .object-tools .viewsitelink:active {
       background-image: none !important; }
-    .object-tools .viewsitelink.cms-btn-disabled,
-    .object-tools .viewsitelink.cms-btn-disabled:hover,
-    .object-tools .viewsitelink.cms-btn-disabled:focus,
-    .object-tools .viewsitelink.cms-btn-disabled.focus,
-    .object-tools .viewsitelink.cms-btn-disabled:active,
-    .object-tools .viewsitelink.cms-btn-disabled.cms-btn-active,
     .object-tools .viewsitelink[disabled],
     .object-tools .viewsitelink[disabled]:hover,
     .object-tools .viewsitelink[disabled]:focus,
-    .object-tools .viewsitelink[disabled].focus,
-    .object-tools .viewsitelink[disabled]:active,
-    .object-tools .viewsitelink[disabled].cms-btn-active {
+    .object-tools .viewsitelink[disabled]:active {
       background-color: #57bcf0 !important;
       border-color: #57bcf0 !important;
       opacity: 0.65;
@@ -2611,8 +2311,7 @@ a.addlink:active {
     background-color: #fff !important;
     border: 1px solid #e6e6e6 !important;
     float: right; }
-    .delete-confirmation .colM input[type="submit"]:focus,
-    .delete-confirmation .colM input[type="submit"].focus {
+    .delete-confirmation .colM input[type="submit"]:focus {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #a6a6a6 !important;
@@ -2622,36 +2321,22 @@ a.addlink:active {
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       text-decoration: none !important; }
-    .delete-confirmation .colM input[type="submit"]:active,
-    .delete-confirmation .colM input[type="submit"].cms-btn-active {
+    .delete-confirmation .colM input[type="submit"]:active {
       color: #666666 !important;
       background-color: #e6e6e6 !important;
       border-color: #c7c7c7 !important;
       box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important; }
       .delete-confirmation .colM input[type="submit"]:active:hover,
-      .delete-confirmation .colM input[type="submit"]:active:focus,
-      .delete-confirmation .colM input[type="submit"]:active.focus,
-      .delete-confirmation .colM input[type="submit"].cms-btn-active:hover,
-      .delete-confirmation .colM input[type="submit"].cms-btn-active:focus,
-      .delete-confirmation .colM input[type="submit"].cms-btn-active.focus {
+      .delete-confirmation .colM input[type="submit"]:active:focus {
         color: #666666 !important;
         background-color: #d4d4d4 !important;
         border-color: #a6a6a6 !important; }
-    .delete-confirmation .colM input[type="submit"]:active,
-    .delete-confirmation .colM input[type="submit"].cms-btn-active {
+    .delete-confirmation .colM input[type="submit"]:active {
       background-image: none !important; }
-    .delete-confirmation .colM input[type="submit"].cms-btn-disabled,
-    .delete-confirmation .colM input[type="submit"].cms-btn-disabled:hover,
-    .delete-confirmation .colM input[type="submit"].cms-btn-disabled:focus,
-    .delete-confirmation .colM input[type="submit"].cms-btn-disabled.focus,
-    .delete-confirmation .colM input[type="submit"].cms-btn-disabled:active,
-    .delete-confirmation .colM input[type="submit"].cms-btn-disabled.cms-btn-active,
     .delete-confirmation .colM input[type="submit"][disabled],
     .delete-confirmation .colM input[type="submit"][disabled]:hover,
     .delete-confirmation .colM input[type="submit"][disabled]:focus,
-    .delete-confirmation .colM input[type="submit"][disabled].focus,
-    .delete-confirmation .colM input[type="submit"][disabled]:active,
-    .delete-confirmation .colM input[type="submit"][disabled].cms-btn-active {
+    .delete-confirmation .colM input[type="submit"][disabled]:active {
       background-color: #fff !important;
       border-color: #e6e6e6 !important;
       opacity: 0.65;
