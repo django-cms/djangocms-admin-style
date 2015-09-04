@@ -9,7 +9,7 @@
     }
     .results,
     #toolbartable {
-        box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+        box-shadow: $base-box-shadow;
     }
     .paginator {
         font-size: 14px;
@@ -204,7 +204,7 @@
 
 #result_list,
 #toolbartable {
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    box-shadow: $base-box-shadow;
     th,
     td {
         font-size: 16px;

@@ -138,6 +138,30 @@ small {
     clear: both;
     height: 0;
 }
+.errornote {
+    display: inline-block;
+    font-weight: normal;
+    color: $color-danger !important;
+    font-size: 14px !important;
+    line-height: 21px;
+    width: 240px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: $border-radius-base;
+    background: none;
+    background-color: $color-danger-ultralight;
+}
+ul.errorlist {
+    color: $color-danger !important;
+    margin-bottom: 10px !important;
+    background-color: transparent !important;
+    li {
+        font-size: 14px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
 
 // FIXME: These are actually fixes in the django CMS code base but setting here too for a quicker release
 #sitemap li .cont {
