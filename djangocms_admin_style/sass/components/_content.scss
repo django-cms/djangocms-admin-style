@@ -262,9 +262,6 @@ body.login {
                         font-size: 18px;
                         width: 100% !important;
                         padding: 10px;
-                        &:-webkit-autofill {
-                          background: inherit !important;
-                        }
                     }
                 }
                 .submit-row {
