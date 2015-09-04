@@ -246,6 +246,9 @@ body.login {
         #content {
             margin: 0 !important;
             padding: 25px 40px !important;
+            .errornote {
+                width: 240px !important;
+            }
             #content-main {
                 form {
                     margin-top: 0 !important;
