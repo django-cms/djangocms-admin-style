@@ -309,7 +309,7 @@ input[type="button"] {
     width: auto !important;
     &.default {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
-        padding: 10px 30px !important;
+        padding: 10px 20px !important;
     }
 }
 a.button {
@@ -386,7 +386,7 @@ div.clockbox {
     border: 1px solid $gray-lighter;
     border-radius: $border-radius-base;
     background: $gray-lightest;
-    box-shadow: 0 1px 10px rgba($black 0.1);
+    box-shadow: 0 1px 10px rgba($black, 0.1);
     caption,
     h2 {
         font-size: 14px;
