@@ -1,0 +1,325 @@
+.change-list {
+    min-height: auto;
+    background-image: none !important;
+    table {
+        border: 0 !important;
+    }
+    .filtered {
+        background: none !important;
+    }
+    .results,
+    #toolbartable {
+        box-shadow: $base-box-shadow;
+    }
+    .paginator {
+        font-size: 14px;
+        color: $gray-light !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: $white !important;
+        clear: both;
+    }
+    #changelist {
+        width: auto !important;
+        &.filtered {
+            .results,
+            .paginator,
+            .xfull {
+                margin-right: 220px !important;
+            }
+            .paginator {
+                box-shadow: 0 2px 5px 0 rgba($black, 0.2);
+            }
+        }
+        table {
+            tbody {
+                th,
+                td {
+                    white-space: nowrap;
+                    padding: 1px 10px;
+                    border-color: $gray-lighter;
+                    a,
+                    a:link,
+                    a:visited,
+                    a:link:visited {
+                        color: $color-primary;
+                    }
+                }
+                tr.selected {
+                    color: $color-primary-light;
+                    background: $color-primary !important;
+                    a {
+                        color: $color-primary-light;
+                    }
+                    .drag {
+                        background: url('../img/drag-light.png');
+                    }
+                    .lang-code {
+                        color: $color-primary;
+                        background-color: $white;
+                    }
+                }
+                .drag {
+                    max-width: 10px;
+                    padding: 14px 0;
+                    margin: 0 21px;
+                    background: url('../img/drag.png');
+                }
+            }
+        }
+        #toolbar {
+            overflow: hidden;
+            float: left;
+            height: auto;
+            min-height: 30px;
+            padding-left: 0;
+            margin: 0 10px 5px 0 !important;
+            border: 0 !important;
+            background: none !important;
+            form label {
+                display: inline-block;
+                font-size: 100%;
+                min-width: auto;
+                padding: 0;
+            }
+            form #searchbar {
+                max-width: 200px !important;
+                font-size: 18px;
+                padding: 10px 5px !important;
+                vertical-align: top;
+            }
+        }
+        #changelist-filter {
+            top: 31px;
+            width: 200px !important;
+            min-height: 100%;
+            padding-left: 18px;
+            border-left: 0;
+            border-top-right-radius: $border-radius-base;
+            border-bottom-right-radius: $border-radius-base;
+            background-color: $gray-lightest !important;
+            h2,
+            h3 {
+                margin-bottom: 15px !important;
+                padding-left: 0 !important;
+                padding-bottom: 10px;
+                border-bottom: solid 1px $gray-lighter;
+            }
+            h2 {
+                font-size: 14px;
+                color: $gray;
+                font-weight: normal;
+                text-transform: uppercase;
+                padding: 2px 9px;
+                background: none;
+            }
+            h3 {
+                font-size: 16px;
+                margin: 30px 0 10px !important;
+            }
+            ul {
+                font-size: 12px;
+                margin-left: 0 !important;
+                margin-bottom: 10px;
+            }
+            li {
+                font-size: 16px;
+                margin-bottom: 20px;
+                &.selected {
+                    font-weight: bold;
+                    border-left: 0 !important;
+                    padding-left: 0 !important;
+                    margin-left: 0 !important;
+                    a {
+                        color: $color-primary !important;
+                    }
+                }
+            }
+        }
+        .actions {
+            color: $gray-light;
+            padding: 0 3px 10px 0;
+            margin-right: 220px !important;
+            border: none;
+            background: none;
+            select {
+                width: 330px !important;
+                padding: 10px 40px 10px 20px;
+                margin-top: 5px;
+                margin-right: 10px;
+                border: 1px solid $gray-lighter;
+                border-radius: $border-radius-base;
+            }
+            label {
+                display: inline-block;
+                font-size: 14px;
+                margin-left: 0;
+            }
+            button {
+                padding: 10px 15px !important
+            }
+            .action-counter {
+                display: block !important;
+                font-size: 14px;
+                margin-left: 0;
+            }
+        }
+        .toplinks {
+            overflow: hidden;
+            margin-bottom: 20px !important;
+            margin-top: 20px !important;
+            border-bottom: 0 !important;
+            border-top: 0;
+            background: none;
+            clear: both;
+            li {
+                display: inline;
+                float: left;
+                color: $gray-darkest;
+                font-size: 14px;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin-left: 25px;
+                cursor: pointer;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            a {
+                position: relative;
+                display: block;
+                font-size: 14px;
+                color: $color-primary;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+        }
+        .paginator {
+            box-shadow: 0 2px 5px 0 rgba($black, 0.2);
+            border: none;
+            background: none;
+        }
+    }
+}
+
+#result_list,
+#toolbartable {
+    box-shadow: $base-box-shadow;
+    th,
+    td {
+        font-size: 16px;
+        font-weight: normal;
+        border-left: 0 !important;
+        &:first-child {
+            border-right: 0 !important;
+        }
+    }
+    thead {
+        th {
+            text-transform: uppercase;
+            padding: 10px 10px 5px !important;
+            border-color: $gray-lighter;
+            background-color: $white;
+            &.sorted {
+                background-color: $white;
+            }
+            &.action-checkbox-column {
+                padding: 0 15px !important;
+            }
+            .text {
+                float: left;
+                padding-right: 0;
+            }
+            .sortoptions {
+                float: none;
+                display: inline-block;
+                padding-top: 0;
+            }
+        }
+        a,
+        span {
+            font-size: 14px;
+            color: $gray;
+            font-weight: normal;
+            padding-left: 0;
+        }
+    }
+    .action-checkbox,
+    .action-checkbox-column {
+        text-align: left !important;
+        padding: 10px 15px !important;
+    }
+}
+#changelist-search {
+    max-width: 260px;
+    #limit_search_to_folder {
+        margin-top: 7px;
+        + label {
+            display: inline-block !important;
+            font-size: 14px !important;
+            color: $gray-light !important;
+            text-transform: none;
+            margin-top: 5px;
+        }
+    }
+    .small {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    input {
+        float: left;
+    }
+    input[type="chekbox"] {
+        display: block;
+    }
+    input[type="submit"] {
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+        text-indent: -9999px;
+        padding: 10px 20px !important;
+        margin-left: 10px;
+        background-image: url('../img/icon_search_white@2x.png') !important;
+        background-repeat: no-repeat !important;
+        background-position: 10px center !important;
+        background-size: 23px !important;
+    }
+    label {
+        display: block !important;
+        margin-bottom: 0;
+        img {
+            visibility: hidden;
+        }
+    }
+}
+#toolbartable .paginator {
+    box-shadow: none;
+    background-color: transparent;
+    .this-page {
+        font-size: 14px;
+        color: $gray-light;
+        font-weight: normal;
+    }
+}
+
+#changelist-filter-button {
+    color: $gray-light;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 175px;
+    margin-bottom: 5px;
+    padding-left: 25px;
+    background: url('../img/icon_arrow_down.png') no-repeat left center;
+    background-size: 25px;
+    border-left: 0;
+}
+.lang-code {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    margin-right: 10px;
+    border: solid 1px $color-primary;
+    border-radius: 10px;
+}
+.collapse {
+    display: none;
+}

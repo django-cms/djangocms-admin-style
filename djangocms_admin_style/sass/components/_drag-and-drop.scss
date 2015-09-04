@@ -1,0 +1,43 @@
+#drag_line {
+    border-top: solid 2px $color-primary;
+    background: transparent !important;
+    span {
+        display: none;
+    }
+}
+#ghost {
+    max-width: 220px;
+    padding: 20px !important;
+    background-color: $color-primary;
+    box-shadow: $base-box-shadow;
+    opacity: 1 !important;
+    .drag-handler,
+    .action-checkbox {
+        display: none !important;
+    }
+    tr {
+        background-color: $color-primary !important;
+        td {
+            font-weight: normal;
+            vertical-align: middle;
+            border-radius: $border-radius-base;
+        }
+    }
+    .collapse {
+        display: none;
+    }
+    a {
+        color: $white;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: normal;
+    }
+}
+.drag-handler {
+    margin: 4px 0;
+    span {
+        width: 10px !important;
+        padding: 10px 0 !important;
+        background: url('../img/drag.png') repeat !important;
+    }
+}
