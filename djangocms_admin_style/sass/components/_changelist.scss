@@ -301,7 +301,7 @@
 }
 
 #changelist-filter-button {
-    @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+    color: $gray-light;
     text-transform: uppercase;
     font-size: 14px;
     width: 175px;
