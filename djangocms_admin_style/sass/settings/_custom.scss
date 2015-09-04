@@ -40,7 +40,7 @@ $content-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-
 
 //##############################################################################
 // #SHADOW
-$base-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+$base-box-shadow: 0 0 5px 0 rgba($black, 0.2);
 
 
 // Then we'll import the compass extension

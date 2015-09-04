@@ -15,7 +15,7 @@
 }
 
 @mixin stripes($stripe-opacity) {
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, $stripe-opacity) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, $stripe-opacity) 50%, rgba(255, 255, 255, $stripe-opacity) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(-45deg, rgba($white, $stripe-opacity) 25%, rgba($white, 0) 25%, rgba($white, 0) 50%, rgba($white, $stripe-opacity) 50%, rgba($white, $stripe-opacity) 75%, rgba($white, 0) 75%, rgba($white, 0));
     background-size: 100% 400%;
 }
 
