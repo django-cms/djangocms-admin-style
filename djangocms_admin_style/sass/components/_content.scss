@@ -35,10 +35,10 @@ body {
 #content {
     width: auto !important;
     min-width: 0 !important;
-    margin: $content-margin-top 45px 0 !important;
+    margin: $content-margin-top 3% 0 !important;
     padding-top: 0 !important;
     &.colMS {
-        margin-right: 300px !important;
+        margin-right: 35% !important;
     }
 }
 #sitemap {
@@ -352,7 +352,7 @@ body.login {
         top: 0;
         bottom: 0;
         height: 100%;
-        width: 255px;
+        width: 25%;
         padding-top: 160px;
         margin: 0;
         border-left: 1px solid $gray-lighter;
