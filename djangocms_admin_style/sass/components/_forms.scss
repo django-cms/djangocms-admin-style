@@ -1,5 +1,4 @@
-.popup,
-.cms-modal-window {
+.popup {
     background-color: $white;
     .module h2 {
         padding-bottom: 10px;
@@ -38,6 +37,7 @@
             }
         }
         .field-box {
+            float: left;
             label {
                 display: inline-block;
                 float: left;
