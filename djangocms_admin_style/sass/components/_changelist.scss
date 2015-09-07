@@ -1,3 +1,13 @@
+// reset form background white
+#changelist-form,
+#changelist-search,
+#changelist form,
+#content-related form {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
 .change-list {
     min-height: auto;
     background-image: none !important;

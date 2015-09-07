@@ -4,6 +4,12 @@
     .module h2 {
         padding-bottom: 10px;
     }
+    form {
+        padding: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
     input[type=text],
     textarea,
     select,
@@ -44,6 +50,10 @@
     }
 }
 form {
+    padding: 25px 25px 0;
+    margin-bottom: 20px;
+    background-color: $white;
+    box-shadow: $base-box-shadow;
     .form-row {
         overflow: hidden;
         border-bottom: 0;
