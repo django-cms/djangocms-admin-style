@@ -182,14 +182,18 @@ body {
 .selector {
     .selector-available,
     .selector-chosen {
+        width: 380px;
+        padding: 10px;
         background-color: $white;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
         h2 {
-            color: $gray-darkest !important;
-            font-size: 13px;
-            line-height: 16px;
-            margin-bottom: 0;
+            color: $gray !important;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
             border: none;
             background: none !important;
         }
@@ -199,17 +203,31 @@ body {
         }
     }
     .selector-filter {
+        padding-left: 0;
         border: none;
-    }
-    .selector-filter label {
-        display: none;
+        label {
+            display: none;
+        }
+        input {
+            width: 100% !important;
+            margin-bottom: 5px;
+        }
     }
     select[multiple] {
         overflow-y: auto;
-        margin-bottom: 0;
-        border: 1px solid $gray-lighter;
-        border-right: none;
-        border-left: none;
+        width: 100% !important;
+        margin-bottom: 5px;
+        border: 1px solid $gray-lighter !important;
+
+    }
+    a {
+        font-size: 14px;
+        &:hover {
+            color: $color-primary-dark !important;
+        }
+    }
+    ul.selector-chooser {
+        background-color: transparent;
     }
 }
 
