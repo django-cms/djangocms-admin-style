@@ -1,0 +1,169 @@
+// base
+
+body {
+    background-color: $gray-lightest;
+    .breadcrumbs {
+        padding: 20px 0 !important;
+    }
+    h1 {
+        margin-left: 0;
+    }
+    .module h2 {
+        padding-left: 0;
+    }
+    &.dashboard {
+        background-color: $white;
+        h1 {
+            margin-left: 10px;
+        }
+        .breadcrumbs {
+            padding: 20px 10px !important;
+        }
+    }
+}
+
+body,
+p {
+    font-family: $base-font-family !important;
+}
+
+body,
+select,
+input,
+textarea {
+    color: $gray-darkest;
+}
+
+h1 {
+    color: $gray-darkest;
+    font-size: $font-size-normal;
+    font-weight: bold;
+    margin: 20px 10px 45px;
+}
+h2 {
+    color: $gray-darkest;
+    font-size: 130%;
+    font-weight: bold;
+    line-height: 1.75em;
+    margin: 20px 10px 45px;
+}
+h3 {
+    color: $gray-darkest;
+    font-size: 120%;
+    font-weight: bold;
+}
+h4 {
+    color: $gray-darkest;
+    font-size: 110%;
+    font-weight: bold;
+}
+h5 {
+    color: $gray-darkest;
+    font-size: 100%;
+}
+h6 {
+    color: $gray-darkest;
+    font-size: 100%;
+}
+a.btn {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+}
+a,
+a:link {
+    color: $color-primary;
+    text-decoration: none;
+    &:visited,
+    &:hover,
+    &:active {
+        color: $color-primary;
+    }
+}
+
+p,
+.description,
+.timezonewarning {
+    font-size: 14px !important;
+    color: $gray !important;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+.datetimeshortcuts {
+    font-size: 14px !important;
+}
+
+code {
+    color: $gray;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 11px;
+    background: inherit;
+    strong {
+        color: #930;
+    }
+}
+
+pre {
+    color: $gray;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 11px;
+    background: inherit;
+    &.literal-block {
+        background: $gray-lighter;
+    }
+}
+
+div hr {
+    margin: 20px 0;
+    border: none;
+    background: $gray-lighter;
+}
+
+strong {
+    font-weight: bold;
+}
+.small,
+small {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.mini {
+    font-size: 11px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+.errornote {
+    display: inline-block;
+    font-weight: normal;
+    color: $color-danger !important;
+    font-size: 14px !important;
+    line-height: 21px;
+    width: 810px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: $border-radius-base;
+    background: none;
+    background-color: $color-danger-ultralight;
+}
+ul.errorlist {
+    color: $color-danger !important;
+    margin-bottom: 10px !important;
+    background-color: transparent !important;
+    li {
+        font-size: 14px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+// FIXME: These are actually fixes in the django CMS code base but setting here too for a quicker release
+#sitemap li .cont {
+    overflow: visible !important;
+}

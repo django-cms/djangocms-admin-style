@@ -1,0 +1,481 @@
+.popup {
+    background-color: $white;
+    .module h2 {
+        padding-bottom: 10px;
+    }
+    form {
+        padding: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    input[type=text],
+    textarea,
+    select,
+    .select2-container {
+        width: 100% !important;
+        max-width: inherit !important;
+        box-sizing: border-box;
+    }
+    #content {
+        margin-top: 20px !important;
+    }
+    .bootstrap3-column {
+        .form-row {
+            overflow: hidden;
+            padding-bottom: 10px;
+            border-bottom: solid 1px $gray-lighter;
+            &.field-create {
+                input {
+                    width: 70px !important;
+                }
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 160px !important;
+                }
+            }
+        }
+        .field-box {
+            float: left;
+            label {
+                display: inline-block;
+                float: left !important;
+                width: 70px !important;
+            }
+            input {
+                width: auto !important;
+            }
+        }
+    }
+}
+form {
+    padding: 25px 25px 0;
+    margin-bottom: 20px;
+    background-color: $white;
+    box-shadow: $base-box-shadow;
+    .form-row {
+        overflow: hidden;
+        border-bottom: 0;
+        clear: both;
+        .select2-container {
+            width: 830px;
+        }
+        .field-box {
+            float: none;
+            &:first-child {
+                padding-bottom: 30px;
+            }
+        }
+    }
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 13px;
+        width: 830px !important;
+        max-width: none !important;
+        margin: 2px 0;
+    }
+    button {
+        width: auto !important;
+    }
+    .cke {
+        width: 830px;
+        box-sizing: border-box;
+    }
+    .aligned {
+        .field-number_of_visits p {
+            padding-left: 0;
+            margin-left: 0;
+        }
+        p.help {
+            font-size: 14px !important;
+            color: $gray;
+            margin-top: 10px;
+            padding-left: 0;
+            margin-left: 0;
+            clear: both;
+        }
+        .vCheckboxLabel {
+            vertical-align: middle;
+        }
+    }
+    small {
+        color: $gray;
+    }
+    hr {
+        margin: 5px 0;
+    }
+    fieldset {
+        line-height: 2em;
+        vertical-align: middle;
+        &.collapse h2 {
+            color: $gray-darkest;
+            margin-bottom: 0;
+            background-image: none;
+        }
+        &.collapsed {
+            margin-bottom: 30px !important;
+        }
+    }
+    label select {
+        display: block;
+        margin-left: 0 !important;
+        margin-top: 5px;
+    }
+    label,
+    label.aligned {
+        display: block;
+        float: none !important;
+        color: $gray !important;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        font-weight: normal !important;
+        word-wrap: break-word;
+        width: auto !important;
+        margin-bottom: 5px;
+        &.required {
+            color: $gray !important;
+            font-weight: normal !important;
+        }
+    }
+    // input
+    input,
+    textarea {
+        color: $gray-darkest;
+        font-size: 18px;
+        padding: 10px;
+        border: 1px solid $gray-lighter !important;
+        box-sizing: border-box;
+        border-radius: $border-radius-base;
+        outline: none;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        display: inline;
+        width: auto !important;
+        margin-top: 0;
+        margin-right: 6px;
+        border: 0;
+    }
+    input[type="file"] {
+        color: $gray;
+        padding: 6px 5px;
+        border: 1px solid $gray-lighter;
+        border-radius: $border-radius-base;
+        outline: none;
+    }
+    select {
+        appearance: none;
+        font-size: 18px;
+        font-weight: normal;
+        padding: 10px 40px 10px 20px;
+        background: $white url('../img/icon_arrow_down.png') no-repeat right center;
+        background-size: 25px;
+        border: 1px solid $gray-lighter;
+        border-radius: $border-radius-base;
+    }
+    small {
+        margin-left: 15px;
+    }
+    .form-controls {
+        text-align: right;
+        margin: 15px 0 0 0;
+        p {
+            margin-top: 6px;
+        }
+    }
+    .input-list {
+        display: inline-block;
+        line-height: 20px;
+        vertical-align: top;
+    }
+    .extra {
+        .right {
+            float: right;
+            margin-right: 10px;
+        }
+    }
+    .form-row {
+        padding: 8px 0 30px;
+        border-bottom-color: $gray-lighter;
+    }
+    .form-row:last-child {
+        border-bottom-color: transparent;
+    }
+}
+
+.form-row .select2-container {
+    min-width: 250px + 12px;
+} //standard input width + default input paddings
+.inline-group .form-row input,
+.inline-group .form-row textarea {
+    width: auto;
+}
+
+// select2
+form {
+    .select2-container {
+        &.select2-container-active {
+            .select2-choice,
+            .select2-choices {
+                box-shadow: none;
+            }
+        }
+        .select2-choice {
+            line-height: inherit;
+            height: auto;
+            padding: 10px 40px 10px 20px;
+            background: none;
+            border: 1px solid $gray-lighter;
+            border-radius: $border-radius-base;
+            & > .select2-chosen {
+                font-size: 18px;
+            }
+            .select2-arrow {
+                right: 9px;
+                width: 17px;
+                background: none;
+                border: none;
+                border-radius: 0;
+                b {
+                    background: url('../img/select2.png') no-repeat 0 12px;
+                    background-size: 50px;
+                }
+
+            }
+        }
+    }
+    .select2-dropdown-open {
+        &.select2-drop-above {
+            .select2-choice,
+            .select2-choices {
+                background-image: none !important;
+                border-color: $gray-lighter !important
+            }
+        }
+        .select2-choice {
+            background-color: $white;
+            background-image: none;
+            .select2-arrow b {
+                background-position: -16px 12px;
+            }
+        }
+    }
+}
+.select2-drop-active {
+    border: 1px solid $gray-lighter !important;
+}
+.select2-results {
+    margin: 0 10px 10px !important;
+    padding: 0 !important;
+    .select2-no-results,
+    .select2-searching,
+    .select2-ajax-error,
+    .select2-selection-limit {
+        color: $gray;
+        font-size: 14px;
+        background-color: transparent !important;
+    }
+    .select2-highlighted {
+        border-radius: $border-radius-base;
+        background-color: $color-primary !important;
+    }
+}
+.select2-match {
+    font-size: 14px !important;
+}
+.select2-search {
+    padding: 10px !important;
+    input {
+        font-size: 18px !important;
+        padding: 10px 40px 10px 20px !important;
+        background: url('../img/select2.png') no-repeat right -24px !important;
+        background-size: 50px !important;
+        border: 1px solid $gray-lighter !important;
+        border-radius: $border-radius-base !important;
+    }
+}
+
+
+input:invalid,
+textarea:invalid {
+    border-radius: $border-radius-base;
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+    background-color: $color-danger-ultralight;
+}
+
+// buttons
+button {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+}
+input[type="submit"],
+input[type="button"] {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    width: auto !important;
+    &.default {
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+        padding: 10px 20px !important;
+    }
+}
+a.button {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    text-decoration: none;
+    cursor: pointer;
+    &.tab {
+        border-radius: 0;
+    }
+}
+
+// date time
+.form-row {
+    p.datetime {
+        line-height: 36px;
+        margin-left: 0;
+        padding-left: 0;
+        input {
+            display: block;
+        }
+    }
+}
+
+// calendar
+div.calendar {
+    table {
+        caption {
+            color: $gray !important;
+            padding: 5px 30px;
+            margin: 0;
+            background-color: $white;
+            background-image: none;
+            border-bottom: solid 1px $gray-lighter;
+            border-top-radius: $border-radius-base;
+        }
+        th {
+            background: none;
+        }
+        td {
+            padding: 0;
+            background: $gray-lightest;
+            &.nonday {
+                background-color: $gray-lighter;
+            }
+        }
+        td a {
+            padding: 6px 4px;
+            &:hover,
+            &:active,
+            &:focus {
+                background: $color-primary-dark !important;
+            }
+        }
+    }
+    .today a {
+        color: $white;
+        background: $color-info-ultralight;
+    }
+}
+div.calendarbox {
+    width: 220px !important;
+    table th,
+    table td {
+        font-size: 14px;
+        line-height: 18px;
+        border-color: $gray-lighter;
+    }
+    .calendarnav-previous,
+    .calendarnav-next {
+        color: $gray;
+        text-decoration: none;
+        padding: 4px 7px 6px;
+        background: none;
+        &:hover,
+        &:focus {
+            background: none;
+        }
+    }
+    .calendar-shortcuts {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 15px 0 10px;
+        border-color: $gray-lighter !important;
+        background: $white;
+    }
+}
+div.calendarbox,
+div.clockbox {
+    margin: 0;
+    padding: 0;
+    border: 1px solid $gray-lighter;
+    border-radius: $border-radius-base;
+    background: $white !important;
+    box-shadow: $base-box-shadow;
+    caption,
+    h2 {
+        font-size: 14px;
+    }
+    .calendar-cancel {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 5px !important;
+        padding: 5px 0 !important;
+        background: $white;
+        border-color: $gray-lighter !important;
+        border-bottom-radius: $border-radius-base;
+    }
+}
+// clock
+div.clockbox {
+    border-top-radius: $border-radius-base;
+    h2 {
+        color: $gray !important;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding: 5px 30px;
+        background-color: $white;
+        background-image: none;
+        border-top-radius: $border-radius-base;
+    }
+    .timelist a {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 5px 2px;
+    }
+}
+.timelist a {
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+        background: none !important;
+    }
+}
+
+span.datetimeshortcuts a {
+    color: $color-primary;
+}
+
+// filter horizontal
+.selector {
+    .selector-chooseall,
+    .selector-clearall {
+        line-height: 14px;
+    }
+    select {
+        overflow: hidden;
+    }
+}
+
+form select[multiple] {
+    overflow: auto;
+    width: 100%;
+    max-width: 240px;
+    padding: 0;
+    border: 0 !important;
+    background: none;
+}
