@@ -337,46 +337,63 @@ a.button {
 div.calendar {
     table {
         caption {
-            color: $white !important;
+            color: $gray !important;
+            padding: 5px 30px;
             margin: 0;
-            background-color: $gray;
-            background-image: linear-gradient($gray, $gray-darker);
-
+            background-color: $white;
+            background-image: none;
+            border-bottom: solid 1px $gray-lighter;
             border-top-radius: $border-radius-base;
+        }
+        th {
+            background: none;
         }
         td {
             padding: 0;
             background: $gray-lightest;
+            &.nonday {
+                background-color: $gray-lighter;
+            }
         }
         td a {
             padding: 6px 4px;
+            &:hover,
+            &:active,
+            &:focus {
+                background: $color-primary-dark !important;
+            }
         }
     }
     .today a {
+        color: $white;
         background: $color-info-ultralight;
     }
 }
 div.calendarbox {
-    width: 200px !important;
+    width: 220px !important;
     table th,
     table td {
-        line-height: 12px;
+        font-size: 14px;
+        line-height: 18px;
+        border-color: $gray-lighter;
     }
     .calendarnav-previous,
     .calendarnav-next {
-        color: white;
+        color: $gray;
         text-decoration: none;
         padding: 4px 7px 6px;
         background: none;
         &:hover,
         &:focus {
-            background: $gray;
+            background: none;
         }
     }
     .calendar-shortcuts {
-        padding: 10px 0 6px 0;
-        border-color: $gray-lighter;
-        background: transparent;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 15px 0 10px;
+        border-color: $gray-lighter !important;
+        background: $white;
     }
 }
 div.calendarbox,
@@ -385,17 +402,19 @@ div.clockbox {
     padding: 0;
     border: 1px solid $gray-lighter;
     border-radius: $border-radius-base;
-    background: $gray-lightest;
-    box-shadow: 0 1px 10px rgba($black, 0.1);
+    background: $white !important;
+    box-shadow: $base-box-shadow;
     caption,
     h2 {
         font-size: 14px;
     }
     .calendar-cancel {
+        font-size: 14px;
+        line-height: 18px;
         margin-top: 5px !important;
         padding: 5px 0 !important;
-        background: none;
-
+        background: $white;
+        border-color: $gray-lighter !important;
         border-bottom-radius: $border-radius-base;
     }
 }
@@ -403,13 +422,18 @@ div.clockbox {
 div.clockbox {
     border-top-radius: $border-radius-base;
     h2 {
-        color: $white !important;
-        background-color: $gray;
-        background-image: linear-gradient($gray, $gray-darker);
-
+        color: $gray !important;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding: 5px 30px;
+        background-color: $white;
+        background-image: none;
         border-top-radius: $border-radius-base;
     }
     .timelist a {
+        font-size: 14px;
+        line-height: 18px;
         padding: 5px 2px;
     }
 }
