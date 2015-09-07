@@ -10,7 +10,7 @@ body {
     }
 }
 #container {
-    min-width: 240px !important; 
+    min-width: 240px !important;
     margin: 0;
 }
 #branding {
@@ -57,7 +57,7 @@ body.login {
             }
             .form-row input {
                 width: auto !important;
-                min-width: 40px; 
+                min-width: 40px;
                 max-width: none;
             }
             .submit-row input,
@@ -111,9 +111,7 @@ body.login {
 
 // changelist
 
-#changelist {
-    position: static;
-}
+
 .change-list {
     #content {
         .object-tools {
@@ -126,17 +124,23 @@ body.login {
             }
         }
     }
-    #toolbar {
-        float: none !important;
-        padding-left: 0 !important;
-        label {
-            display: inline-block;
+    #changelist {
+        position: static;
+        .actions select {
+            width: 285px !important;
         }
-        form #searchbar {
-            max-width: 225px !important;
-        }
-        .small {
-            display: block;
+        #toolbar {
+            float: none !important;
+            padding-left: 0 !important;
+            label {
+                display: inline-block;
+            }
+            form #searchbar {
+                max-width: 285px !important;
+            }
+            .small {
+                display: block;
+            }
         }
     }
     .filtered .results,
@@ -219,7 +223,7 @@ form label,
     display: block;
     float: none !important;
     line-height: 14px;
-    width: auto; 
+    width: auto;
     margin-top: 5px;
     padding: 0 !important;
 }
@@ -235,7 +239,7 @@ form {
     }
     .aligned p,
     .aligned ul {
-        margin-left: 0 !important; 
+        margin-left: 0 !important;
         padding-left: 0 !important;
     }
     .submit-row {
@@ -270,12 +274,12 @@ form {
         margin-top: 60px;
     }
     ul.selector-chooser {
-        display: block; 
+        display: block;
         margin-top: 0;
     }
     select[multiple],
     select {
-        width: 100%; 
+        width: 100%;
         max-width: none;
     }
     label {
@@ -289,7 +293,7 @@ form {
 
 // shortcuts
 .admin_shortcuts .shortcuts li a {
-    padding: 10px 10px 10px 40px; 
+    padding: 10px 10px 10px 40px;
     background-size: 20px 20px;
 }
 .admin_shortcuts .shortcuts li a span {

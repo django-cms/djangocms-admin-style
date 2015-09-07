@@ -14,6 +14,7 @@
     .paginator {
         font-size: 14px;
         color: $gray-light !important;
+        min-height: 20px;
         padding-left: 15px;
         padding-right: 15px;
         background-color: $white !important;
@@ -32,10 +33,14 @@
             }
         }
         table {
+            thead th {
+                height: 27px;
+            }
             tbody {
                 th,
                 td {
                     white-space: nowrap;
+                    height: 22px;
                     padding: 1px 10px;
                     border-color: $gray-lighter;
                     a,
@@ -83,7 +88,7 @@
                 padding: 0;
             }
             form #searchbar {
-                max-width: 200px !important;
+                max-width: 310px !important;
                 font-size: 18px;
                 padding: 10px 5px !important;
                 vertical-align: top;
@@ -143,7 +148,7 @@
             border: none;
             background: none;
             select {
-                width: 330px !important;
+                width: 310px !important;
                 padding: 10px 40px 10px 20px;
                 margin-top: 5px;
                 margin-right: 10px;
@@ -217,7 +222,7 @@
     thead {
         th {
             text-transform: uppercase;
-            padding: 10px 10px 5px !important;
+            padding: 5px 10px 3px !important;
             border-color: $gray-lighter;
             background-color: $white;
             &.sorted {
@@ -256,7 +261,7 @@
     }
 }
 #changelist-search {
-    max-width: 260px;
+    max-width: 370px;
     #limit_search_to_folder {
         margin-top: 7px;
         + label {
@@ -281,7 +286,7 @@
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
         text-indent: -9999px;
         padding: 10px 20px !important;
-        margin-left: 10px;
+        margin-left: 15px;
         background-image: url('../img/icon_search_white@2x.png') !important;
         background-repeat: no-repeat !important;
         background-position: 10px center !important;
