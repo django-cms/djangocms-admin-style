@@ -250,6 +250,11 @@
         padding: 10px 15px !important;
     }
 }
+#result_list {
+    tr[style*=background] {
+        background: $color-primary-light !important;
+    }
+}
 #changelist-search {
     max-width: 260px;
     #limit_search_to_folder {
