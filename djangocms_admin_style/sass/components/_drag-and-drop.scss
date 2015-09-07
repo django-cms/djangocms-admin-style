@@ -1,5 +1,6 @@
 #drag_line {
     border-top: solid 2px $color-primary;
+    border-width: 2px !important;
     background: transparent !important;
     span {
         display: none;
@@ -7,6 +8,7 @@
 }
 #ghost {
     max-width: 220px;
+    min-height: 22px;
     padding: 20px !important;
     background-color: $color-primary;
     box-shadow: $base-box-shadow;
