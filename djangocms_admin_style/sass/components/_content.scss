@@ -156,7 +156,8 @@ body {
     }
 }
 .submit-row {
-    padding: 20px 0;
+    margin: 0 -25px;
+    padding: 20px 25px;
     border: 0;
     border-top: 1px solid $gray-lighter;
     border-radius: $border-radius-base;
