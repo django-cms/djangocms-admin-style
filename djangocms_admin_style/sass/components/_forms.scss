@@ -37,7 +37,6 @@
             }
         }
         .field-box {
-            float: left;
             label {
                 display: inline-block;
                 float: left;
@@ -63,6 +62,7 @@ form {
         }
         .field-box {
             float: none;
+            margin-right: 0 !important;
             &:first-child {
                 padding-bottom: 30px;
             }

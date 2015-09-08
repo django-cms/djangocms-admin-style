@@ -253,11 +253,8 @@ body {
     width: 80% !important;
     .selector-filter {
         position: relative;
-        display: flex;
         width: 100% !important;
         input {
-            display: flex;
-            flex: 1 0 auto;
             width: calc(100% - 65px) !important;
             margin: 5px 65px 5px 0 !important;
         }
@@ -267,6 +264,9 @@ body {
             order: 2;
             margin: 5px 0;
         }
+    }
+    + .add-another {
+        margin: 20px 0;
     }
 }
 .selector {
