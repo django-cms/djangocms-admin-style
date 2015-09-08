@@ -201,6 +201,10 @@ form {
     .form-row {
         padding: 8px 0 30px;
         border-bottom-color: $gray-lighter;
+        &.errors {
+            border: 0;
+            background: none;
+        }
     }
     .form-row:last-child {
         border-bottom-color: transparent;
