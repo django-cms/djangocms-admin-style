@@ -62,7 +62,7 @@ body {
     tbody {
         th,
         td {
-            color: $gray-darker;
+            color: $gray-darkest;
             font-size: 16px;
             line-height: 21px;
             vertical-align: middle;
@@ -84,7 +84,7 @@ body {
         }
         p {
             position: static;
-            color: $gray-darker;
+            color: $gray-darkest !important;
         }
         a {
             color: $color-primary;
