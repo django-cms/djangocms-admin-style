@@ -45,6 +45,62 @@ body {
     clear: both;
 }
 
+#change-history,
+#applications-group table {
+    margin-bottom: 30px;
+    border-radius: 0;
+    box-shadow: $base-box-shadow;
+    thead {
+        th {
+            font-size: 14px;
+            font-weight: normal;
+            text-transform: uppercase;
+            height: 27px;
+            padding: 5px 10px 3px !important;
+        }
+    }
+    tbody {
+        th,
+        td {
+            color: $gray-darkest;
+            font-size: 16px;
+            line-height: 21px;
+            vertical-align: middle;
+            height: 41px;
+            padding: 1px 10px;
+        }
+    }
+    td,
+    th {
+        border-left: 0;
+        background: none;
+        p,
+        a {
+            font-size: 16px !important;
+            line-height: 21px;
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+        }
+        p {
+            position: static;
+            color: $gray-darkest !important;
+        }
+        a {
+            color: $color-primary;
+        }
+    }
+}
+
+#applications-group {
+    h2 {
+        margin-bottom: 30px;
+    }
+    .module {
+        overflow: visible;
+    }
+}
+
 // module
 .module {
     @include box();
