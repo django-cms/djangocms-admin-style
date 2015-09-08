@@ -1,12 +1,14 @@
 table,
 .actionlist,
 .object-tools,
-#header-logo {
+#header-logo,
+.inline-group {
     .addlink,
     .changelink,
     .deletelink,
     .icon-arrow-right,
-    .icon-logo {
+    .icon-logo,
+    .add-row a {
         background-image: none;
         &:before {
             @extend %icon;
@@ -16,7 +18,8 @@ table,
         }
     }
 
-    .addlink {
+    .addlink,
+    .add-row a {
         @include icon(plus);
     }
     .changelink {

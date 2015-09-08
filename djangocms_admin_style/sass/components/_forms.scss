@@ -59,7 +59,7 @@ form {
         border-bottom: 0;
         clear: both;
         .select2-container {
-            width: 830px;
+            width: 80%;
         }
         .field-box {
             float: none;
@@ -73,7 +73,7 @@ form {
     select,
     textarea {
         font-size: 13px;
-        width: 830px !important;
+        width: 80% !important;
         max-width: none !important;
         margin: 2px 0;
     }
@@ -81,7 +81,7 @@ form {
         width: auto !important;
     }
     .cke {
-        width: 830px;
+        width: 80%;
         box-sizing: border-box;
     }
     .aligned {
