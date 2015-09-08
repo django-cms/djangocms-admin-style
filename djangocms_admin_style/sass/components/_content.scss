@@ -101,11 +101,12 @@ body {
 .inline-group h2 {
     color: $gray-darkest;
     font-size: 16px;
+    padding-left: 0;
     background: none;
 }
 .inline-group {
     @include box();
-    padding: 10px 15px 15px;
+    padding: 0;
     border: 0;
     .module {
         padding: 0;
@@ -138,21 +139,33 @@ body {
         width: 100%;
     }
     .add-row {
+        border-bottom: 0 !important;
         &,
         td {
             border-bottom: none;
             background: none !important;
         }
         a {
+            font-size: 16px !important;
             color: $color-success;
+            padding-left: 0 !important;
+            background: none !important;
         }
     }
 }
 .inline-related {
     margin-bottom: 5px;
     h3 {
+        color: $gray;
+        font-weight: normal;
+        padding: 0;
+        margin-bottom: 0;
         border-bottom: none;
         background: none;
+        b, span {
+            font-size: 14px;
+            font-weight: normal;
+        }
     }
 }
 .submit-row {
