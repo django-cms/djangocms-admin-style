@@ -243,7 +243,11 @@ form {
         padding-left: 0 !important;
     }
     .submit-row {
-        text-align: left;
+        text-align: right;
+        input {
+            float: right;
+            margin-bottom: 10px !important;
+        }
     }
 }
 

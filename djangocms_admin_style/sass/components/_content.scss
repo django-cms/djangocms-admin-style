@@ -249,6 +249,26 @@ body {
 }
 
 // filter horizontal m2m
+.sortedm2m-container {
+    width: 80% !important;
+    .selector-filter {
+        position: relative;
+        display: flex;
+        width: 100% !important;
+        input {
+            display: flex;
+            flex: 1 0 auto;
+            width: calc(100% - 65px) !important;
+            margin: 5px 65px 5px 0 !important;
+        }
+        img {
+            position: absolute;
+            right: 0;
+            order: 2;
+            margin: 5px 0;
+        }
+    }
+}
 .selector {
     .selector-available,
     .selector-chosen {
