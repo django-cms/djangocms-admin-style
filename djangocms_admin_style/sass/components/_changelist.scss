@@ -245,7 +245,7 @@
                 float: left;
                 padding-right: 0;
                 a {
-                    padding: 0;
+                    padding: 0 !important;
                 }
             }
             .sortoptions {
@@ -288,9 +288,6 @@
     .small {
         display: inline-block;
         margin-top: 10px;
-    }
-    input {
-        float: left;
     }
     input[type="chekbox"] {
         display: block;
