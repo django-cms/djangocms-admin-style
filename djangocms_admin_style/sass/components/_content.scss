@@ -6,13 +6,13 @@ body {
     #container {
         position: static;
         width: auto !important;
-        min-width: 0 !important;
+        min-width: 960px !important;
         padding-top: 0 !important;
         .breadcrumbs {
             position: absolute;
             top: 0;
-            right: 45px;
-            left: 45px;
+            right: 3%;
+            left: 3%;
             color: $gray !important;
             font-size: 15px;
             margin-top: $toolbar-height;
@@ -544,10 +544,14 @@ a.addlink {
 // object tools
 .object-tools {
     float: right;
+    max-width: 70%;
     margin-top: -78px;
+    margin-left: 0;
     li {
+        float: right;
         height: 43px;
         padding-left: 5px;
+        margin-bottom: 10px;
         list-style: none;
         background: none;
         &:hover {
@@ -555,6 +559,7 @@ a.addlink {
         }
         > a {
             @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+            margin-right: 0 !important;
         }
     }
     .addlink {

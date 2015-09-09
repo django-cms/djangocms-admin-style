@@ -2,16 +2,16 @@
 html,
 body {
     height: auto;
+    #container {
+        min-width: 240px !important;
+        margin: 0;
+    }
 }
 #content {
     margin: 160px 10px 0;
     h1 {
         margin-left: 0;
     }
-}
-#container {
-    min-width: 240px !important;
-    margin: 0;
 }
 #branding {
     #site-name {
@@ -37,8 +37,6 @@ body {
     }
 }
 div.breadcrumbs {
-    left: 10px;
-    right: 10px;
     padding-left: 5px;
 }
 .plugin-holder {
@@ -109,8 +107,15 @@ body.login {
     }
 }
 
+.object-tools {
+    float: left;
+    max-width: 100% !important;
+    li {
+        float: left;
+        margin-right: 10px;
+    }
+}
 // changelist
-
 
 .change-list {
     #content {
