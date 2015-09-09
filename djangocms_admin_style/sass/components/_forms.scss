@@ -7,6 +7,9 @@ form {
         overflow: hidden;
         border-bottom: 0;
         clear: both;
+        &.field-thumbnail {
+            margin: 0;
+        }
         .select2-container {
             width: 80%;
         }
@@ -47,12 +50,13 @@ form {
             margin-left: 0;
             clear: both;
         }
-        .vCheckboxLabel {
-            vertical-align: middle;
-            color: $gray-darker !important;
-            font-size: 18px !important;
-            text-transform: none;
-        }
+    }
+    .vCheckboxLabel,
+    .field-type label {
+        vertical-align: middle;
+        color: $gray-darker !important;
+        font-size: 18px !important;
+        text-transform: none;
     }
     small {
         color: $gray;
@@ -93,6 +97,14 @@ form {
         &.required {
             color: $gray !important;
             font-weight: normal !important;
+        }
+        &.btn {
+            float: left !important;
+            color: $white !important;
+            padding: 6px 12px !important;
+        }
+        &.btn-default {
+            color: $gray-darker !important;
         }
     }
     // input
