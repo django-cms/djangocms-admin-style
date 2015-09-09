@@ -52,7 +52,8 @@ form {
         }
     }
     .vCheckboxLabel,
-    .field-type label {
+    .field-type label,
+    .sortedm2m label {
         vertical-align: middle;
         color: $gray-darker !important;
         font-size: 18px !important;

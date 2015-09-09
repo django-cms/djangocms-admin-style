@@ -40,13 +40,19 @@ body {
     &.colMS {
         margin-right: 35% !important;
     }
+    .module {
+        padding: 0;
+    }
 }
 #sitemap {
     clear: both;
 }
 
 #change-history,
-#applications-group table {
+#applications-group table,
+.module table.ui-sortable {
+    width: 99% !important;
+    margin-left: 0.5%;
     margin-bottom: 30px;
     border-radius: 0;
     box-shadow: $base-box-shadow;
@@ -178,8 +184,11 @@ body {
             padding-bottom: 0;
         }
         .add-row a {
-            color: $color-primary;
+            color: $gray-light;
             border-bottom: none;
+            &:before {
+                color: $color-primary;
+            }
         }
         .add-row td {
             border-bottom: none;

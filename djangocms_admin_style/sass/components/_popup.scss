@@ -21,9 +21,12 @@
     textarea,
     select,
     .select2-container {
-        width: 100% !important;
+        width: 95% !important;
         max-width: inherit !important;
         box-sizing: border-box;
+        & + .add-another {
+            margin-left: 10px;
+        }
     }
     #content {
         margin-top: 20px !important;
@@ -43,15 +46,16 @@
                     width: 160px !important;
                 }
             }
-        }
-        .field-box {
-            label {
-                display: inline-block;
+            .field-box {
                 float: left;
-                width: 70px !important;
-            }
-            input {
-                width: auto !important;
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 70px !important;
+                }
+                input {
+                    width: auto !important;
+                }
             }
         }
     }
