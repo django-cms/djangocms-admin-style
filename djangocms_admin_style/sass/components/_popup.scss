@@ -18,9 +18,11 @@
         box-shadow: none;
     }
     input[type=text],
+    input[type=password],
     textarea,
     select,
-    .select2-container {
+    .select2-container,
+    .sortedm2m-container {
         width: 95% !important;
         max-width: inherit !important;
         box-sizing: border-box;
@@ -57,6 +59,12 @@
                     width: auto !important;
                 }
             }
+        }
+    }
+    .well-wrapper {
+        width: 95%;
+        .well {
+            width: 100%;
         }
     }
 }
