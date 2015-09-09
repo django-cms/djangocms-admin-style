@@ -215,6 +215,69 @@
             background: none;
         }
     }
+    #changelist-search {
+        max-width: 370px;
+        #limit_search_to_folder {
+            vertical-align: middle;
+            margin-top: 2px;
+            + label {
+                display: inline-block !important;
+                font-size: 14px !important;
+                color: $gray-light !important;
+                text-transform: none;
+            }
+        }
+        .small {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        input[type="chekbox"] {
+            display: block;
+        }
+        input[type="submit"] {
+            @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+            text-indent: -9999px;
+            padding: 10px 20px !important;
+            margin-left: 15px;
+            background-image: url('../img/icon_search_white@2x.png') !important;
+            background-repeat: no-repeat !important;
+            background-position: 10px center !important;
+            background-size: 23px !important;
+        }
+        label {
+            display: block !important;
+            margin-bottom: 0;
+            img {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+#change-history,
+#applications-group table,
+.popup .module table.ui-sortable,
+#result_list,
+#toolbartable {
+    select {
+        float: left;
+        width: auto !important;
+        margin: -1px 0;
+        & + .add-another {
+            height: 41px;
+            width: 41px;
+            margin: -1px 0 -1px 10px;
+            vertical-align: middle;
+            background-position: center;
+            border-radius: $border-radius-normal;
+            border: solid 1px $gray-lighter;
+        }
+    }
+    .delete {
+       a {
+           float: left;
+       }
+    }
 }
 
 #result_list,
@@ -272,43 +335,6 @@
 #result_list {
     tr[style*=background] {
         background: $color-primary-light !important;
-    }
-}
-#changelist-search {
-    max-width: 370px;
-    #limit_search_to_folder {
-        vertical-align: middle;
-        margin-top: 2px;
-        + label {
-            display: inline-block !important;
-            font-size: 14px !important;
-            color: $gray-light !important;
-            text-transform: none;
-        }
-    }
-    .small {
-        display: inline-block;
-        margin-top: 10px;
-    }
-    input[type="chekbox"] {
-        display: block;
-    }
-    input[type="submit"] {
-        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
-        text-indent: -9999px;
-        padding: 10px 20px !important;
-        margin-left: 15px;
-        background-image: url('../img/icon_search_white@2x.png') !important;
-        background-repeat: no-repeat !important;
-        background-position: 10px center !important;
-        background-size: 23px !important;
-    }
-    label {
-        display: block !important;
-        margin-bottom: 0;
-        img {
-            visibility: hidden;
-        }
     }
 }
 #toolbartable .paginator {
