@@ -544,14 +544,16 @@ a.addlink {
 // object tools
 .object-tools {
     float: right;
+    text-align: right;
     max-width: 70%;
     margin-top: -78px;
     margin-left: 0;
     li {
-        float: right;
+        float: none;
+        display: inline-block;
         height: 43px;
         padding-left: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         list-style: none;
         background: none;
         &:hover {
