@@ -33,6 +33,9 @@
     #content {
         margin-top: 20px !important;
     }
+    .form-row .field-box {
+        float: left;
+    }
     .bootstrap3-column {
         .form-row {
             overflow: hidden;
@@ -49,7 +52,6 @@
                 }
             }
             .field-box {
-                float: left;
                 label {
                     display: inline-block;
                     float: left;
