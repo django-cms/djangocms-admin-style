@@ -1,0 +1,62 @@
+.cms-modal-window {
+    .module h2 {
+        padding-bottom: 0;
+    }
+    &.popup {
+        .module h2 {
+            padding-bottom: 5px;
+        }
+    }
+}
+.popup,
+.cms-modal-window {
+    background-color: $white;
+    form {
+        padding: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    input[type=text],
+    textarea,
+    select,
+    .select2-container {
+        width: 95% !important;
+        max-width: inherit !important;
+        box-sizing: border-box;
+        & + .add-another {
+            margin-left: 10px;
+        }
+    }
+    #content {
+        margin-top: 20px !important;
+    }
+    .bootstrap3-column {
+        .form-row {
+            overflow: hidden;
+            padding-bottom: 10px;
+            border-bottom: solid 1px $gray-lighter;
+            &.field-create {
+                input {
+                    width: 70px !important;
+                }
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 160px !important;
+                }
+            }
+            .field-box {
+                float: left;
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 70px !important;
+                }
+                input {
+                    width: auto !important;
+                }
+            }
+        }
+    }
+}

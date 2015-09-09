@@ -1,53 +1,3 @@
-.popup {
-    background-color: $white;
-    .module h2 {
-        padding-bottom: 10px;
-    }
-    form {
-        padding: 0;
-        margin-bottom: 0;
-        background-color: transparent;
-        box-shadow: none;
-    }
-    input[type=text],
-    textarea,
-    select,
-    .select2-container {
-        width: 100% !important;
-        max-width: inherit !important;
-        box-sizing: border-box;
-    }
-    #content {
-        margin-top: 20px !important;
-    }
-    .bootstrap3-column {
-        .form-row {
-            overflow: hidden;
-            padding-bottom: 10px;
-            border-bottom: solid 1px $gray-lighter;
-            &.field-create {
-                input {
-                    width: 70px !important;
-                }
-                label {
-                    display: inline-block;
-                    float: left;
-                    width: 160px !important;
-                }
-            }
-        }
-        .field-box {
-            label {
-                display: inline-block;
-                float: left;
-                width: 70px !important;
-            }
-            input {
-                width: auto !important;
-            }
-        }
-    }
-}
 form {
     padding: 25px 25px 0;
     margin-bottom: 20px;
@@ -57,6 +7,9 @@ form {
         overflow: hidden;
         border-bottom: 0;
         clear: both;
+        &.field-thumbnail {
+            margin: 0;
+        }
         .select2-container {
             width: 80%;
         }
@@ -97,9 +50,14 @@ form {
             margin-left: 0;
             clear: both;
         }
-        .vCheckboxLabel {
-            vertical-align: middle;
-        }
+    }
+    .vCheckboxLabel,
+    .field-type label,
+    .sortedm2m label {
+        vertical-align: middle;
+        color: $gray-darker !important;
+        font-size: 18px !important;
+        text-transform: none;
     }
     small {
         color: $gray;
@@ -111,6 +69,7 @@ form {
         line-height: 2em;
         vertical-align: middle;
         &.collapse h2 {
+            font-size: 18px;
             color: $gray-darkest;
             margin-bottom: 0;
             background-image: none;
@@ -140,6 +99,14 @@ form {
             color: $gray !important;
             font-weight: normal !important;
         }
+        &.btn {
+            float: left !important;
+            color: $white !important;
+            padding: 6px 12px !important;
+        }
+        &.btn-default {
+            color: $gray-darker !important;
+        }
     }
     // input
     input,
@@ -156,8 +123,8 @@ form {
     input[type="radio"] {
         display: inline;
         width: auto !important;
-        margin-top: 0;
-        margin-right: 6px;
+        margin-top: 2px;
+        margin-right: 10px;
         border: 0;
     }
     input[type="file"] {
@@ -199,7 +166,7 @@ form {
         }
     }
     .form-row {
-        padding: 8px 0 30px;
+        padding: 8px 2px 30px;
         border-bottom-color: $gray-lighter;
         &.errors {
             border: 0;
@@ -208,6 +175,13 @@ form {
     }
     .form-row:last-child {
         border-bottom-color: transparent;
+    }
+    .checkbox-row {
+        label {
+            color: $gray-darkest !important;
+            font-size: 18px;
+            text-transform: none;
+        }
     }
 }
 
@@ -482,4 +456,15 @@ form select[multiple] {
     padding: 0;
     border: 0 !important;
     background: none;
+}
+.js-icon-widgets {
+    select {
+        display: inline-block;
+        width: 88% !important;
+    }
+    .btn {
+        width: 10%;
+        margin-left: 1%;
+        padding: 0 !important;
+    }
 }

@@ -40,13 +40,19 @@ body {
     &.colMS {
         margin-right: 35% !important;
     }
+    .module {
+        padding: 0;
+    }
 }
 #sitemap {
     clear: both;
 }
 
 #change-history,
-#applications-group table {
+#applications-group table,
+.module table.ui-sortable {
+    width: 99% !important;
+    margin-left: 0.5%;
     margin-bottom: 30px;
     border-radius: 0;
     box-shadow: $base-box-shadow;
@@ -113,6 +119,7 @@ body {
     h2 {
         color: $gray-darkest;
         font-size: 100%;
+        font-weight: normal;
         margin-top: 0;
         margin-bottom: 30px;
         padding: 10px 10px 0;
@@ -156,7 +163,8 @@ body {
 .module caption,
 .inline-group h2 {
     color: $gray-darkest;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: normal;
     padding-left: 0;
     background: none;
 }
@@ -173,11 +181,14 @@ body {
         h2 {
             margin-bottom: 10px;
             padding-top: 0;
-            padding-bottom: 8px;
+            padding-bottom: 0;
         }
         .add-row a {
-            color: $color-success;
+            color: $gray-light;
             border-bottom: none;
+            &:before {
+                color: $color-primary;
+            }
         }
         .add-row td {
             border-bottom: none;
@@ -203,9 +214,12 @@ body {
         }
         a {
             font-size: 16px !important;
-            color: $color-success;
+            color: $gray-light;
             padding-left: 0 !important;
             background: none !important;
+            &:before {
+                color: $color-primary;
+            }
         }
     }
 }
@@ -219,7 +233,7 @@ body {
         border-bottom: none;
         background: none;
         b, span {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: normal;
         }
     }
@@ -458,7 +472,7 @@ body.login {
                     position: relative;
                     font-size: 14px;
                     line-height: 14px;
-                    padding: 8px 15px 8px 45px;
+                    padding: 11px 15px 12px 45px;
                     border-bottom: solid 1px $gray-lighter;
                     a {
                         padding-right: 10px;
@@ -470,6 +484,9 @@ body.login {
                         font-size: 15px;
                         margin-top: -9px;
                     }
+                    .mini {
+                        line-height: 11px;
+                    }
                 }
                 .changelink a {
                     line-height: 16px;
@@ -480,6 +497,7 @@ body.login {
             }
             h2 {
                 color: $gray-darkest;
+                font-weight: bold;
                 padding: 0 0 40px;
                 margin-bottom: 0;
                 background: none;

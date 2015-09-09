@@ -231,6 +231,7 @@
     }
     thead {
         th {
+            font-size: 14px;
             text-transform: uppercase;
             padding: 5px 10px 3px !important;
             border-color: $gray-lighter;
@@ -245,7 +246,7 @@
                 float: left;
                 padding-right: 0;
                 a {
-                    padding: 0;
+                    padding: 0 !important;
                 }
             }
             .sortoptions {
@@ -276,21 +277,18 @@
 #changelist-search {
     max-width: 370px;
     #limit_search_to_folder {
-        margin-top: 7px;
+        vertical-align: middle;
+        margin-top: 2px;
         + label {
             display: inline-block !important;
             font-size: 14px !important;
             color: $gray-light !important;
             text-transform: none;
-            margin-top: 5px;
         }
     }
     .small {
         display: inline-block;
         margin-top: 10px;
-    }
-    input {
-        float: left;
     }
     input[type="chekbox"] {
         display: block;
