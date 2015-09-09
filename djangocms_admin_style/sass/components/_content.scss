@@ -6,13 +6,13 @@ body {
     #container {
         position: static;
         width: auto !important;
-        min-width: 0 !important;
+        min-width: 960px !important;
         padding-top: 0 !important;
         .breadcrumbs {
             position: absolute;
             top: 0;
-            right: 45px;
-            left: 45px;
+            right: 3%;
+            left: 3%;
             color: $gray !important;
             font-size: 15px;
             margin-top: $toolbar-height;
@@ -458,7 +458,7 @@ body.login {
                     position: relative;
                     font-size: 14px;
                     line-height: 14px;
-                    padding: 9px 15px 9px 45px;
+                    padding: 8px 15px 8px 45px;
                     border-bottom: solid 1px $gray-lighter;
                     a {
                         padding-right: 10px;
@@ -544,10 +544,16 @@ a.addlink {
 // object tools
 .object-tools {
     float: right;
+    text-align: right;
+    max-width: 70%;
     margin-top: -78px;
+    margin-left: 0;
     li {
+        float: none;
+        display: inline-block;
         height: 43px;
         padding-left: 5px;
+        margin-bottom: 5px;
         list-style: none;
         background: none;
         &:hover {
@@ -555,6 +561,7 @@ a.addlink {
         }
         > a {
             @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+            margin-right: 0 !important;
         }
     }
     .addlink {
