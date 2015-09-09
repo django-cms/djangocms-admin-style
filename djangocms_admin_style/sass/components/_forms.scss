@@ -99,6 +99,9 @@ form {
         }
         .vCheckboxLabel {
             vertical-align: middle;
+            color: $gray-darker !important;
+            font-size: 18px !important;
+            text-transform: none;
         }
     }
     small {
