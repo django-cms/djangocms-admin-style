@@ -175,7 +175,7 @@ body {
         h2 {
             margin-bottom: 10px;
             padding-top: 0;
-            padding-bottom: 8px;
+            padding-bottom: 0;
         }
         .add-row a {
             color: $color-primary;
@@ -488,6 +488,7 @@ body.login {
             }
             h2 {
                 color: $gray-darkest;
+                font-weight: bold;
                 padding: 0 0 40px;
                 margin-bottom: 0;
                 background: none;
