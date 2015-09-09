@@ -113,6 +113,7 @@ body {
     h2 {
         color: $gray-darkest;
         font-size: 100%;
+        font-weight: normal;
         margin-top: 0;
         margin-bottom: 30px;
         padding: 10px 10px 0;
@@ -156,7 +157,8 @@ body {
 .module caption,
 .inline-group h2 {
     color: $gray-darkest;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: normal;
     padding-left: 0;
     background: none;
 }
@@ -176,7 +178,7 @@ body {
             padding-bottom: 8px;
         }
         .add-row a {
-            color: $color-success;
+            color: $color-primary;
             border-bottom: none;
         }
         .add-row td {
@@ -203,9 +205,12 @@ body {
         }
         a {
             font-size: 16px !important;
-            color: $color-success;
+            color: $gray-light;
             padding-left: 0 !important;
             background: none !important;
+            &:before {
+                color: $color-primary;
+            }
         }
     }
 }
@@ -219,7 +224,7 @@ body {
         border-bottom: none;
         background: none;
         b, span {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: normal;
         }
     }
