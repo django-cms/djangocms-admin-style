@@ -149,7 +149,8 @@ body.login {
     #changelist.filtered .paginator,
     .filtered #toolbar,
     #changelist.filtered .results,
-    #changelist.filtered div.xfull {
+    #changelist.filtered div.xfull,
+    #changelist.filtered .actions {
         margin-right: 0 !important;
     }
     .module #changelist-form .results {
