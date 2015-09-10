@@ -265,6 +265,9 @@ body {
 // filter horizontal m2m
 .sortedm2m-container {
     width: 80% !important;
+    .sortedm2m {
+        min-height: inherit !important;
+    }
     .selector-filter {
         position: relative;
         width: 100% !important;
@@ -574,7 +577,7 @@ a.addlink {
         float: none;
         display: inline-block;
         height: 43px;
-        padding-left: 5px;
+        margin-left: 20px;
         margin-bottom: 5px;
         list-style: none;
         background: none;
