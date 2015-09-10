@@ -63,15 +63,11 @@ body.login {
 }
 
 //filebrowser
-.filebrowser {
-    #container {
-        #content-related {
-            overflow: hidden;
-            float: none;
-            width: 100%;
-            margin-right: 0;
-        }
-    }
+.filebrowser #container #content-related {
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    margin-right: 0;
 }
 
 // dashboard
