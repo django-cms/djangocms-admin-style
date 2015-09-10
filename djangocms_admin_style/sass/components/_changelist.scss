@@ -184,14 +184,19 @@
                 display: inline-block;
                 font-size: 14px;
                 margin-left: 0;
+                margin-bottom: 0;
             }
             button {
+                vertical-align: bottom;
+                min-height: 45px;
+                margin-bottom: 1px;
                 padding: 10px 15px !important
             }
             .action-counter {
                 display: block !important;
                 font-size: 14px;
                 margin-left: 0;
+                margin-top: 5px;
             }
         }
         .toplinks {
@@ -305,6 +310,7 @@
 #result_list,
 #toolbartable {
     box-shadow: $base-box-shadow;
+    border-collapse: separate;
     th,
     td {
         font-size: 16px;
