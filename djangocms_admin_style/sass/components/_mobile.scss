@@ -62,9 +62,21 @@ body.login {
     }
 }
 
+//filebrowser
+.filebrowser {
+    #container {
+        #content-related {
+            overflow: hidden;
+            float: none;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
 // dashboard
 #content.colMS {
-    margin-right: 10px !important;
+    margin-right: 3% !important;
 }
 .dashboard {
     #container {
@@ -125,6 +137,9 @@ body.login {
                 margin-left: 0;
             }
         }
+    }
+    #toolbartable .paginator {
+        width: calc(100% - 30px - 6%) !important;
     }
     #changelist {
         position: static;
