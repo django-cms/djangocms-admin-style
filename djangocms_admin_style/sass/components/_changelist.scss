@@ -9,7 +9,7 @@
     box-shadow: none;
 }
 .change-list {
-    min-height: auto;
+    min-height: inherit;
     background-image: none !important;
     table {
         border: 0 !important;
@@ -44,7 +44,8 @@
             .xfull {
                 margin-right: 220px !important;
             }
-            .results + .paginator {
+            .results + .paginator,
+            #toolbartable .paginator {
                 clip: rect(0, 99999px, 99999px, -2px);
             }
             .paginator {
@@ -171,6 +172,7 @@
             border: none;
             background: none;
             select {
+                white-space: nowrap;
                 width: 310px !important;
                 padding: 10px 40px 10px 20px;
                 margin-top: 5px;
@@ -222,7 +224,8 @@
                 text-transform: uppercase;
             }
         }
-        .results + .paginator {
+        .results + .paginator,
+        #toolbartable .paginator {
             clip: rect(0, 99999px, 99999px, -2px);
         }
         .paginator {
@@ -247,7 +250,7 @@
         }
         .small {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 5px;
         }
         input[type="chekbox"] {
             display: block;
@@ -356,6 +359,7 @@
     }
 }
 #toolbartable .paginator {
+    width: calc(100% - 29px) !important;
     box-shadow: none;
     background-color: transparent;
     .this-page {
