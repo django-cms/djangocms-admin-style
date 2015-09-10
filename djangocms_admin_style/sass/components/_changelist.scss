@@ -188,6 +188,8 @@
             }
             button {
                 vertical-align: bottom;
+                min-height: 45px;
+                margin-bottom: 1px;
                 padding: 10px 15px !important
             }
             .action-counter {
@@ -308,6 +310,7 @@
 #result_list,
 #toolbartable {
     box-shadow: $base-box-shadow;
+    border-collapse: separate;
     th,
     td {
         font-size: 16px;

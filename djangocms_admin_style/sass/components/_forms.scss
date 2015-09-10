@@ -30,6 +30,9 @@ form {
         max-width: none !important;
         margin: 2px 0;
     }
+    select::-ms-expand {
+        display: none;
+    }
     button {
         width: auto !important;
     }
