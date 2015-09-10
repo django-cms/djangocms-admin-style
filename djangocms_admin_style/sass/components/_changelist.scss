@@ -41,6 +41,9 @@
             .paginator {
                 box-shadow: 0 2px 5px 0 rgba($black, 0.2);
             }
+            .actions {
+                margin-right: 220px !important;
+            }
         }
         table {
             thead th {
@@ -154,7 +157,6 @@
         .actions {
             color: $gray-light;
             padding: 0 3px 10px 0;
-            margin-right: 220px !important;
             border: none;
             background: none;
             select {
