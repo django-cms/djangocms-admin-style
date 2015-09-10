@@ -21,6 +21,9 @@
     #toolbartable {
         box-shadow: $base-box-shadow;
     }
+    #toolbartable .paginator {
+        box-shadow: none !important;
+    }
     .paginator {
         font-size: 14px;
         color: $gray-light !important;
