@@ -54,10 +54,15 @@ form {
     .vCheckboxLabel,
     .field-type label,
     .sortedm2m label {
+        display: inline-block !important;
         vertical-align: middle;
         color: $gray-darker !important;
         font-size: 18px !important;
         text-transform: none;
+    }
+    .sortedm2m a {
+        vertical-align: middle;
+        padding-top: 3px;
     }
     small {
         color: $gray;
