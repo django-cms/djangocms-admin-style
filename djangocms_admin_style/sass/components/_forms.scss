@@ -268,6 +268,7 @@ form {
     padding: 10px !important;
     input {
         font-size: 18px !important;
+        width: 100% !important;
         padding: 10px 40px 10px 20px !important;
         background: url('../img/select2.png') no-repeat right -24px !important;
         background-size: 50px !important;
@@ -453,7 +454,6 @@ form select[multiple] {
     width: 100%;
     max-width: 240px;
     padding: 0;
-    border: 0 !important;
     background: none;
 }
 .js-icon-widgets {
