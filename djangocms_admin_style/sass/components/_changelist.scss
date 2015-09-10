@@ -184,14 +184,17 @@
                 display: inline-block;
                 font-size: 14px;
                 margin-left: 0;
+                margin-bottom: 0;
             }
             button {
+                vertical-align: bottom;
                 padding: 10px 15px !important
             }
             .action-counter {
                 display: block !important;
                 font-size: 14px;
                 margin-left: 0;
+                margin-top: 5px;
             }
         }
         .toplinks {
