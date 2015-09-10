@@ -225,7 +225,8 @@
             }
         }
         .results + .paginator,
-        #toolbartable .paginator {
+        #toolbartable .paginator,
+        #has-filters + script + .paginator{
             clip: rect(0, 99999px, 99999px, -2px);
         }
         .paginator {
