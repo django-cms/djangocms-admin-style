@@ -62,9 +62,17 @@ body.login {
     }
 }
 
+//filebrowser
+.filebrowser #container #content-related {
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    margin-right: 0;
+}
+
 // dashboard
 #content.colMS {
-    margin-right: 10px !important;
+    margin-right: 3% !important;
 }
 .dashboard {
     #container {
@@ -153,9 +161,9 @@ body.login {
     #changelist.filtered .actions {
         margin-right: 0 !important;
     }
+    #changelist .paginator,
     #changelist.filtered .paginator {
-        position: static;
-        width: auto!important;
+        width: calc(100% - 30px - 6%) !important;
     }
     .module #changelist-form .results {
         overflow: auto;

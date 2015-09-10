@@ -345,6 +345,7 @@ body.login {
         @include box();
         overflow: hidden;
         width: 340px !important;
+        min-width: auto !important;
         border: none;
         box-shadow: $base-box-shadow;
         background-color: $gray-lightest !important;
