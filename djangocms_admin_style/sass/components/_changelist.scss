@@ -21,6 +21,9 @@
     #toolbartable {
         box-shadow: $base-box-shadow;
     }
+    .results #result_list {
+        box-shadow: none;
+    }
     #toolbartable .paginator {
         box-shadow: none !important;
     }
@@ -41,11 +44,14 @@
             .xfull {
                 margin-right: 220px !important;
             }
+            .results + .paginator {
+                clip: rect(0, 99999px, 99999px, -2px);
+            }
             .paginator {
                 position: absolute;
                 width: calc(100% - 250px) !important;
                 box-shadow: $base-box-shadow;
-                clip: rect(0, 99999px, 99999px, -2px);
+                clip: rect(0, 99999px, 99999px, 0);
             }
             .actions {
                 margin-right: 220px !important;
