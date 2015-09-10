@@ -42,7 +42,10 @@
                 margin-right: 220px !important;
             }
             .paginator {
-                box-shadow: 0 2px 5px 0 rgba($black, 0.2);
+                position: absolute;
+                width: calc(100% - 250px) !important;
+                box-shadow: $base-box-shadow;
+                clip: rect(0, 99999px, 99999px, -2px);
             }
             .actions {
                 margin-right: 220px !important;
@@ -215,10 +218,12 @@
             }
         }
         .paginator {
-            box-shadow: 0 2px 5px 0 rgba($black, 0.2);
+            position: absolute;
+            width: calc(100% - 30px);
+            box-shadow: $base-box-shadow !important;
             border: none;
-            border-right: solid 1px $gray-lighter;
             background: none;
+            clip: rect(0, 99999px, 99999px, -2px);
         }
     }
     #changelist-search {

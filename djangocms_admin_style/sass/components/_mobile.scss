@@ -153,6 +153,10 @@ body.login {
     #changelist.filtered .actions {
         margin-right: 0 !important;
     }
+    #changelist.filtered .paginator {
+        position: static;
+        width: auto!important;
+    }
     .module #changelist-form .results {
         overflow: auto;
         width: 100%;
