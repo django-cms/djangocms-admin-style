@@ -217,6 +217,7 @@
         .paginator {
             box-shadow: 0 2px 5px 0 rgba($black, 0.2);
             border: none;
+            border-right: solid 1px $gray-lighter;
             background: none;
         }
     }
