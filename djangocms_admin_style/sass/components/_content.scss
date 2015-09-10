@@ -265,6 +265,9 @@ body {
 // filter horizontal m2m
 .sortedm2m-container {
     width: 80% !important;
+    .sortedm2m {
+        min-height: inherit !important;
+    }
     .selector-filter {
         position: relative;
         width: 100% !important;
