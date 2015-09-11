@@ -43,6 +43,9 @@ body {
     .module {
         padding: 0;
     }
+    .submit-row {
+        padding: 20px 25px !important;
+    }
 }
 #sitemap {
     clear: both;
@@ -50,12 +53,13 @@ body {
 
 #change-history,
 #applications-group table,
-.popup .module table.ui-sortable {
+.cms-modal-window .module table {
     width: 99% !important;
     margin-left: 0.5%;
     margin-bottom: 30px;
     border-radius: 0;
     box-shadow: $base-box-shadow;
+    border-collapse: separate;
     thead {
         th {
             font-size: 14px;
@@ -63,6 +67,7 @@ body {
             text-transform: uppercase;
             height: 27px;
             padding: 5px 10px 3px !important;
+            white-space: nowrap;
         }
     }
     tbody {
@@ -253,8 +258,12 @@ body {
     .deletelink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
     }
-    input[type="submit"].default {
-        margin-left: 20px;
+    input[type="submit"] {
+        padding: 10px 20px !important;
+        &.default {
+            margin-left: 20px;
+            padding: 10px 20px !important;
+        }
     }
     input {
         width: auto !important;
@@ -323,9 +332,9 @@ body {
     select[multiple] {
         overflow-y: auto;
         width: 100% !important;
+        padding: 10px;
         margin-bottom: 5px;
         border: 1px solid $gray-lighter !important;
-
     }
     a {
         font-size: 14px;
@@ -399,7 +408,7 @@ body.login {
                 .submit-row {
                     float: right;
                     width: 100%;
-                    padding: 20px 0 0;
+                    padding: 20px 0 0 !important;
                     margin-top: 20px;
                     margin-right: 0;
                     background: none;

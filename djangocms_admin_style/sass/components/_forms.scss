@@ -132,7 +132,8 @@ form {
         width: auto !important;
         margin-top: 2px;
         margin-right: 10px;
-        border: 0;
+        padding: 0 !important;
+        border: 0 !important;
     }
     input[type="file"] {
         color: $gray;
@@ -461,7 +462,7 @@ form select[multiple] {
     overflow: auto;
     width: 100%;
     max-width: 240px;
-    padding: 0;
+    padding: 10px;
     background: none;
 }
 .js-icon-widgets {
