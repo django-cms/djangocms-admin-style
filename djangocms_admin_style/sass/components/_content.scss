@@ -53,7 +53,7 @@ body {
 
 #change-history,
 #applications-group table,
-.popup .module table.ui-sortable {
+.cms-modal-window .module table {
     width: 99% !important;
     margin-left: 0.5%;
     margin-bottom: 30px;
@@ -67,6 +67,7 @@ body {
             text-transform: uppercase;
             height: 27px;
             padding: 5px 10px 3px !important;
+            white-space: nowrap;
         }
     }
     tbody {
