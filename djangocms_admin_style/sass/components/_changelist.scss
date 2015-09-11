@@ -254,6 +254,7 @@
 }
 
 #result_list {
+    margin-bottom: 0 !important;
     tr[style*=background] {
         background: $color-primary-light !important;
     }
