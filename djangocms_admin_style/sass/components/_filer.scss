@@ -15,4 +15,9 @@
     .module table td {
         line-height: 16px;
     }
+    #content-related {
+        table {
+            box-shadow: none !important;
+        }
+    }
 }

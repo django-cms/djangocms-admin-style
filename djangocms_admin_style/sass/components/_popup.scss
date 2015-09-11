@@ -1,4 +1,4 @@
-.cms-modal-window {
+.cms-admin-modal {
     .module h2 {
         padding-bottom: 0;
     }
@@ -9,13 +9,16 @@
     }
 }
 .popup,
-.cms-modal-window {
+.cms-admin-modal {
     background-color: $white;
     form {
         padding: 0;
         margin-bottom: 0;
         background-color: transparent;
         box-shadow: none;
+    }
+    table td > select {
+       width: auto !important;
     }
     input[type=text],
     input[type=password],
