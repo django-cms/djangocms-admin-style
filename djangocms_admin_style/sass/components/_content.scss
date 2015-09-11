@@ -56,6 +56,7 @@ body {
     margin-bottom: 30px;
     border-radius: 0;
     box-shadow: $base-box-shadow;
+    border-collapse: separate;
     thead {
         th {
             font-size: 14px;
@@ -253,8 +254,12 @@ body {
     .deletelink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
     }
-    input[type="submit"].default {
-        margin-left: 20px;
+    input[type="submit"] {
+        padding: 10px 20px !important;
+        &.default {
+            margin-left: 20px;
+            padding: 10px 20px !important;
+        }
     }
     input {
         width: auto !important;
@@ -323,9 +328,9 @@ body {
     select[multiple] {
         overflow-y: auto;
         width: 100% !important;
+        padding: 10px;
         margin-bottom: 5px;
         border: 1px solid $gray-lighter !important;
-
     }
     a {
         font-size: 14px;

@@ -8,8 +8,14 @@ body {
     h1 {
         margin-left: 0;
     }
-    .module h2 {
-        padding-left: 0;
+    .module {
+        h2 {
+            padding-left: 0;
+        }
+        p {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     &.dashboard {
         background-color: $white;
