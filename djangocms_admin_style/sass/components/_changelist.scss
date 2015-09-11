@@ -11,21 +11,8 @@
 .change-list {
     min-height: inherit;
     background-image: none !important;
-    table {
-        border: 0 !important;
-    }
     .filtered {
         background: none !important;
-    }
-    .results,
-    #toolbartable {
-        box-shadow: $base-box-shadow;
-    }
-    .results #result_list {
-        box-shadow: none;
-    }
-    #toolbartable .paginator {
-        box-shadow: none !important;
     }
     .paginator {
         font-size: 14px;
@@ -38,6 +25,9 @@
     }
     #changelist {
         width: auto !important;
+        .results {
+            box-shadow: $base-box-shadow;
+        }
         &.filtered {
             .results,
             .paginator,
@@ -58,35 +48,17 @@
             }
         }
         table {
-            thead th {
-                height: 27px;
-            }
             tbody {
                 th,
                 td {
                     white-space: nowrap;
                     height: 22px;
                     padding: 1px 10px;
-                    border-color: $gray-lighter;
                     a,
                     a:link,
                     a:visited,
                     a:link:visited {
                         color: $color-primary;
-                    }
-                }
-                tr.selected {
-                    color: $color-primary-light;
-                    background: $color-primary !important;
-                    a {
-                        color: $color-primary-light;
-                    }
-                    .drag {
-                        background: url('../img/drag-light.png');
-                    }
-                    .lang-code {
-                        color: $color-primary;
-                        background-color: $white;
                     }
                 }
                 .drag {
@@ -281,99 +253,26 @@
     }
 }
 
-#change-history,
-#applications-group table,
-.cms-modal-window .module table,
-#result_list,
-#toolbartable {
-    select {
-        float: left;
-        width: auto !important;
-        margin: -2px 0;
-        height: 45px;
-        & + .add-another {
-            height: 45px;
-            width: 45px;
-            margin: -2px 0 -2px 10px;
-            vertical-align: middle;
-            background-position: center;
-            border-radius: $border-radius-normal;
-            border: solid 1px $gray-lighter;
-            box-sizing: border-box;
-        }
-    }
-    .delete {
-       a {
-           float: left;
-       }
-    }
-}
-
-#result_list,
-#toolbartable {
-    box-shadow: $base-box-shadow;
-    border-collapse: separate;
-    th,
-    td {
-        font-size: 16px;
-        font-weight: normal;
-        border-left: 0 !important;
-        &:first-child {
-            border-right: 0 !important;
-        }
-    }
-    thead {
-        th {
-            font-size: 14px;
-            text-transform: uppercase;
-            padding: 5px 10px 3px !important;
-            border-color: $gray-lighter;
-            background-color: $white;
-            &.sorted {
-                background-color: $white;
-            }
-            &.action-checkbox-column {
-                padding: 0 15px !important;
-            }
-            .text {
-                float: left;
-                padding-right: 0;
-                a {
-                    padding: 0 !important;
-                }
-            }
-            .sortoptions {
-                float: rigth;
-                display: inline-block;
-                padding-top: 0;
-            }
-        }
-        a,
-        span {
-            font-size: 14px;
-            color: $gray;
-            font-weight: normal;
-            padding-left: 0;
-        }
-    }
-    .action-checkbox,
-    .action-checkbox-column {
-        text-align: left !important;
-        padding: 10px 15px !important;
-    }
-}
 #result_list {
     tr[style*=background] {
         background: $color-primary-light !important;
     }
+    .drag {
+        cursor: move !important;
+    }
 }
-#toolbartable .paginator {
-    box-shadow: none;
-    background-color: transparent;
-    .this-page {
-        font-size: 14px;
-        color: $gray-light;
-        font-weight: normal;
+#toolbartable {
+    table {
+        margin-bottom: 0 !important;
+    }
+    .paginator {
+        box-shadow: none;
+        background-color: transparent;
+        .this-page {
+            font-size: 14px;
+            color: $gray-light;
+            font-weight: normal;
+        }
     }
 }
 
@@ -389,7 +288,7 @@
     border-left: 0;
 }
 .lang-code {
-    font-size: 13px;
+    font-size: 13px !important;
     font-weight: bold;
     text-transform: uppercase;
     padding: 2px 8px;

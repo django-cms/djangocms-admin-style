@@ -17,6 +17,9 @@
         background-color: transparent;
         box-shadow: none;
     }
+    table td > select {
+       width: auto !important;
+    }
     input[type=text],
     input[type=password],
     textarea,

@@ -17,6 +17,9 @@ body {
             padding-right: 0;
             margin-left: 0 !important;
         }
+        table {
+            margin-bottom: 20px !important;
+        }
     }
     &.dashboard {
         background-color: $white;
