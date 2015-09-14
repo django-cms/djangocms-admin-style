@@ -349,7 +349,7 @@ div.calendar {
             padding: 0;
             background: $gray-lightest;
             &.nonday {
-                background-color: $gray-lighter;
+                background-color: $gray-lighter !important;
             }
         }
         td a {
@@ -363,16 +363,25 @@ div.calendar {
     }
     .today a {
         color: $white;
-        background: $color-info-ultralight;
+        background: $color-info-ultralight !important;
     }
 }
 div.calendarbox {
     width: 220px !important;
-    table th,
-    table td {
-        font-size: 14px;
-        line-height: 18px;
-        border-color: $gray-lighter;
+    table {
+        td {
+            height: auto !important;
+        }
+        th {
+            border-bottom: 0;
+        }
+        th,
+        td {
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0 !important;
+            border-color: $gray-lighter;
+        }
     }
     .calendarnav-previous,
     .calendarnav-next {
