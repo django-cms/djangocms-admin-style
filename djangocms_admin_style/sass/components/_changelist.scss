@@ -52,10 +52,10 @@
             }
             .results + .paginator,
             #toolbartable .paginator {
+                position: absolute;
                 clip: rect(0, 99999px, 99999px, -2px);
             }
             .paginator {
-                position: absolute;
                 width: calc(100% - 250px) !important;
                 box-shadow: $base-box-shadow;
                 border-right: 0;
@@ -242,11 +242,11 @@
         }
         .results + .paginator,
         #toolbartable .paginator,
-        #has-filters + script + .paginator{
+        #has-filters + script + .paginator {
+            position: absolute;
             clip: rect(0, 99999px, 99999px, -2px);
         }
         .paginator {
-            position: absolute;
             width: calc(100% - 30px);
             box-shadow: $base-box-shadow !important;
             border-top: none;
