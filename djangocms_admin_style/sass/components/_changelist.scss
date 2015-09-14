@@ -34,8 +34,7 @@
         font-size: 14px;
         color: $gray-light !important;
         min-height: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 5px 15px !important;
         background-color: $white !important;
         clear: both;
     }
@@ -111,7 +110,7 @@
             height: auto;
             min-height: 30px;
             padding-left: 0;
-            margin: 0 10px 5px 0 !important;
+            margin: 0 30px 5px 0 !important;
             border: 0 !important;
             background: none !important;
             form label {
@@ -276,7 +275,7 @@
             @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
             text-indent: -9999px;
             padding: 10px 20px !important;
-            margin-left: 15px;
+            margin-left: 10px;
             background-image: url('../img/icon_search_white@2x.png') !important;
             background-repeat: no-repeat !important;
             background-position: 10px center !important;
