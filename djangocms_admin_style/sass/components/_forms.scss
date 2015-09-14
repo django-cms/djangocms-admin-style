@@ -368,15 +368,20 @@ div.calendar {
 }
 div.calendarbox {
     width: 220px !important;
-    table td {
-        height: auto !important;
-    }
-    table th,
-    table td {
-        font-size: 14px;
-        line-height: 18px;
-        padding: 0 !important;
-        border-color: $gray-lighter;
+    table {
+        td {
+            height: auto !important;
+        }
+        th {
+            border-bottom: 0;
+        }
+        th,
+        td {
+            font-size: 14px;
+            line-height: 18px;
+            padding: 0 !important;
+            border-color: $gray-lighter;
+        }
     }
     .calendarnav-previous,
     .calendarnav-next {
