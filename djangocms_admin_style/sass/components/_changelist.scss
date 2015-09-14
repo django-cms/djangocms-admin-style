@@ -20,6 +20,9 @@
     .results,
     #toolbartable {
         box-shadow: $base-box-shadow;
+        table {
+            box-shadow: none;
+        }
     }
     .results #result_list {
         box-shadow: none;
@@ -98,6 +101,7 @@
                     height: 36px;
                     margin: 0 21px;
                     background: url('../img/drag.png');
+                    cursor: move !important;
                 }
             }
         }
