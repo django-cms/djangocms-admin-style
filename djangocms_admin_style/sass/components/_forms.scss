@@ -144,9 +144,12 @@ form {
     }
     select {
         appearance: none;
+        text-indent:0.01px;
+        text-overflow:'';
         font-size: 18px;
         font-weight: normal;
-        padding: 10px 40px 10px 20px;
+        min-width: 160px;
+        padding: 10px 10px 10px 20px;
         background: $white url('../img/icon_arrow_down.png') no-repeat right center;
         background-size: 25px;
         border: 1px solid $gray-lighter;
