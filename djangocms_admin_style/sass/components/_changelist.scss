@@ -39,6 +39,9 @@
     #changelist {
         width: auto !important;
         &.filtered {
+            table {
+                border: 0;
+            }
             .results,
             .paginator,
             .xfull {
@@ -52,6 +55,7 @@
                 position: absolute;
                 width: calc(100% - 250px) !important;
                 box-shadow: $base-box-shadow;
+                border-right: 0;
             }
             .actions {
                 margin-right: 220px !important;
@@ -168,7 +172,7 @@
         }
         .actions {
             color: $gray-light;
-            padding: 0 3px 10px 0;
+            padding: 0 0 10px 0;
             border: none;
             background: none;
             select {
@@ -229,6 +233,9 @@
                 text-transform: uppercase;
             }
         }
+        .results table {
+            box-shadow: none !important;
+        }
         .results + .paginator,
         #toolbartable .paginator,
         #has-filters + script + .paginator{
@@ -238,7 +245,7 @@
             position: absolute;
             width: calc(100% - 30px);
             box-shadow: $base-box-shadow !important;
-            border: none;
+            border-top: none;
             background: none;
         }
     }
@@ -343,7 +350,7 @@
                 }
             }
             .sortoptions {
-                float: rigth;
+                float: right;
                 display: inline-block;
                 padding-top: 0;
             }
@@ -353,7 +360,7 @@
             font-size: 14px;
             color: $gray;
             font-weight: normal;
-            padding-left: 0;
+            padding: 0;
         }
     }
     .action-checkbox,

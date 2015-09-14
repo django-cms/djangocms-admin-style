@@ -437,6 +437,9 @@ body.login {
         min-width: 400px;
         max-width: 900px;
         padding-bottom: 20px;
+        table {
+            box-shadow: none;
+        }
         table th,
         table td {
             width: auto;
