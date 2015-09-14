@@ -2,10 +2,12 @@ table {
     width: 100% !important;
     margin: 0!important;
     padding: 5px;
+    border: none;
+    border-radius: 0;
     border: 0;
     background: $white;
     box-shadow: $base-box-shadow;
-    border-collapse: separate;
+    border-collapse: separate !important;
     th {
         font-size: 14px;
         text-transform: uppercase;
@@ -154,19 +156,20 @@ table {
             border-bottom: 1px solid $gray-lighter;
         }
         &.selected {
-        color: $color-primary-light;
-        background: $color-primary !important;
-        a {
             color: $color-primary-light;
+            background: $color-primary !important;
+            a,
+            td {
+                color: $color-primary-light !important;
+            }
+            .drag {
+                background: url('../img/drag-light.png');
+            }
+            .lang-code {
+                color: $color-primary !important;
+                background-color: $white;
+            }
         }
-        .drag {
-            background: url('../img/drag-light.png');
-        }
-        .lang-code {
-            color: $color-primary;
-            background-color: $white;
-        }
-    }
     }
     th {
         a,

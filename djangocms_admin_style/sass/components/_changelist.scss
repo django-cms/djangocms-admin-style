@@ -14,12 +14,24 @@
     .filtered {
         background: none !important;
     }
+    .results,
+    #toolbartable {
+        box-shadow: $base-box-shadow;
+        table {
+            box-shadow: none;
+        }
+    }
+    .results #result_list {
+        box-shadow: none;
+    }
+    #toolbartable .paginator {
+        box-shadow: none !important;
+    }
     .paginator {
         font-size: 14px;
         color: $gray-light !important;
         min-height: 20px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 5px 15px !important;
         background-color: $white !important;
         clear: both;
     }
@@ -29,6 +41,9 @@
             box-shadow: $base-box-shadow;
         }
         &.filtered {
+            table {
+                border: 0;
+            }
             .results,
             .paginator,
             .xfull {
@@ -36,12 +51,13 @@
             }
             .results + .paginator,
             #toolbartable .paginator {
+                position: absolute;
                 clip: rect(0, 99999px, 99999px, -2px);
             }
             .paginator {
-                position: absolute;
                 width: calc(100% - 250px) !important;
                 box-shadow: $base-box-shadow;
+                border-right: 0;
             }
             .actions {
                 margin-right: 220px !important;
@@ -66,6 +82,7 @@
                     height: 36px;
                     margin: 0 21px;
                     background: url('../img/drag.png');
+                    cursor: move !important;
                 }
             }
         }
@@ -75,7 +92,7 @@
             height: auto;
             min-height: 30px;
             padding-left: 0;
-            margin: 0 10px 5px 0 !important;
+            margin: 0 30px 5px 0 !important;
             border: 0 !important;
             background: none !important;
             form label {
@@ -140,7 +157,7 @@
         }
         .actions {
             color: $gray-light;
-            padding: 0 3px 10px 0;
+            padding: 0 0 10px 0;
             border: none;
             background: none;
             select {
@@ -167,8 +184,7 @@
             .action-counter {
                 display: block !important;
                 font-size: 14px;
-                margin-left: 0;
-                margin-top: 5px;
+                margin: 5px 0 0;
             }
         }
         .toplinks {
@@ -201,16 +217,19 @@
                 text-transform: uppercase;
             }
         }
+        .results table {
+            box-shadow: none !important;
+        }
         .results + .paginator,
         #toolbartable .paginator,
-        #has-filters + script + .paginator{
+        #has-filters + script + .paginator {
+            position: absolute;
             clip: rect(0, 99999px, 99999px, -2px);
         }
         .paginator {
-            position: absolute;
             width: calc(100% - 30px);
             box-shadow: $base-box-shadow !important;
-            border: none;
+            border-top: none;
             background: none;
         }
     }
@@ -237,7 +256,7 @@
             @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
             text-indent: -9999px;
             padding: 10px 20px !important;
-            margin-left: 15px;
+            margin-left: 10px;
             background-image: url('../img/icon_search_white@2x.png') !important;
             background-repeat: no-repeat !important;
             background-position: 10px center !important;
@@ -266,6 +285,33 @@
     table {
         margin-bottom: 0 !important;
     }
+    thead {
+        th {
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 5px 10px 3px !important;
+            border-color: $gray-lighter;
+            background-color: $white;
+            &.sorted {
+                background-color: $white;
+            }
+            &.action-checkbox-column {
+                padding: 0 15px !important;
+            }
+            .text {
+                float: left;
+                padding-right: 0;
+                a {
+                    padding: 0 !important;
+                }
+            }
+            .sortoptions {
+                float: right;
+                display: inline-block;
+                padding-top: 0;
+            }
+        }
+    }
     .paginator {
         box-shadow: none;
         background-color: transparent;
@@ -273,6 +319,8 @@
             font-size: 14px;
             color: $gray-light;
             font-weight: normal;
+            padding: 0;
+
         }
     }
 }
