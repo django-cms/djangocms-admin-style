@@ -51,57 +51,6 @@ body {
     clear: both;
 }
 
-#change-history,
-#applications-group table,
-.cms-modal-window .module table {
-    width: 99% !important;
-    margin-left: 0.5%;
-    margin-bottom: 30px;
-    border-radius: 0;
-    box-shadow: $base-box-shadow;
-    border-collapse: separate;
-    thead {
-        th {
-            font-size: 14px;
-            font-weight: normal;
-            text-transform: uppercase;
-            height: 27px;
-            padding: 5px 10px 3px !important;
-            white-space: nowrap;
-        }
-    }
-    tbody {
-        th,
-        td {
-            color: $gray-darkest;
-            font-size: 16px;
-            line-height: 21px;
-            vertical-align: middle;
-            height: 41px;
-            padding: 1px 10px;
-        }
-    }
-    td,
-    th {
-        border-left: 0;
-        background: none;
-        p,
-        a {
-            font-size: 16px !important;
-            line-height: 21px;
-            font-weight: normal;
-            padding: 0;
-            margin: 0;
-        }
-        p {
-            position: static;
-            color: $gray-darkest !important;
-        }
-        a {
-            color: $color-primary;
-        }
-    }
-}
 
 #applications-group {
     h2 {
@@ -150,7 +99,7 @@ body {
         margin: 0;
         padding: 0;
         thead th {
-            padding: 20px 10px!important;
+            padding: 20px 10px;
         }
         th {
             line-height: 13px;
@@ -241,6 +190,10 @@ body {
             font-size: 16px;
             font-weight: normal;
         }
+    }
+    table {
+        width: calc(100% - 4px) !important;
+        margin: 0 2px !important;
     }
 }
 .submit-row {
@@ -477,7 +430,7 @@ body.login {
         bottom: 0;
         height: 100%;
         width: 25%;
-        padding-top: 160px;
+        padding-top: 157px;
         margin: 0;
         border-left: 1px solid $gray-lighter;
         background-color: $gray-lightest;
@@ -492,7 +445,7 @@ body.login {
                     position: relative;
                     font-size: 14px;
                     line-height: 14px;
-                    padding: 11px 15px 12px 45px;
+                    padding: 15px 15px 15px 45px;
                     border-bottom: solid 1px $gray-lighter;
                     a {
                         padding-right: 10px;

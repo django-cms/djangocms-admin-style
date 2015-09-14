@@ -1,43 +1,100 @@
 table {
-    width: 100%;
-    margin: 20px 0;
+    width: 100% !important;
+    margin: 0!important;
     padding: 5px;
     border: none;
     border-radius: 0;
+    border: 0;
     background: $white;
     box-shadow: $base-box-shadow;
     border-collapse: separate !important;
     th {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 5px 10px 3px !important;
+        background-color: $white;
         border-bottom: 1px solid $gray-lighter;
     }
     th,
     td {
+        font-family: $base-font-family;
+        font-size: 16px;
+        font-weight: normal;
         text-align: left;
         vertical-align: middle;
         padding: 5px 10px;
+        border-left: 0 !important;
+        background: none !important;
+        &:first-child {
+            border-right: 0 !important;
+        }
+        p,
+        a {
+            font-size: 16px !important;
+            line-height: 21px;
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+        }
+        p {
+            position: static;
+            color: $gray-darkest !important;
+        }
+        a {
+            color: $color-primary;
+        }
     }
     thead th,
     thead th.sorted,
     tfoot td {
-        background: $gray-lightest;
+        background-color: $white;
     }
-    thead th.sorted .sortoptions a {
-        &.ascending {
-            background: url("../img/sorting-icons.png") -5px -50px no-repeat;
-            &:hover {
-                background: url("../img/sorting-icons.png") -5px -72px no-repeat;
+    thead {
+        th {
+            font-size: 14px;
+            font-weight: normal;
+            text-transform: uppercase;
+            height: 27px;
+            padding: 5px 10px 3px !important;
+            white-space: nowrap;
+            .text {
+                float: left;
+                padding-right: 0 !important;
+                a {
+                    padding: 0 !important;
+                }
             }
         }
-        &.descending {
-            background: url("../img/sorting-icons.png") -5px -94px no-repeat;
-            &:hover {
-                background: url("../img/sorting-icons.png") -5px -115px no-repeat;
-            }
+        a,
+        span {
+            font-size: 14px !important;
+            color: $gray !important;
+            font-weight: normal;
+            padding-left: 0 !important;
         }
-        &.sortremove {
-            background: url("../img/sorting-icons.png") -4px -5px no-repeat;
-            &:hover {
-                background: url("../img/sorting-icons.png") -4px -26px no-repeat;
+    }
+    thead th.sorted .sortoptions {
+        float: right;
+        display: inline-block;
+        padding-top: 0;
+        a {
+            &.ascending {
+                background: url("../img/sorting-icons.png") -5px -50px no-repeat;
+                &:hover {
+                    background: url("../img/sorting-icons.png") -5px -72px no-repeat;
+                }
+            }
+            &.descending {
+                background: url("../img/sorting-icons.png") -5px -94px no-repeat;
+                &:hover {
+                    background: url("../img/sorting-icons.png") -5px -115px no-repeat;
+                }
+            }
+            &.sortremove {
+                background: url("../img/sorting-icons.png") -4px -5px no-repeat;
+                &:hover {
+                    background: url("../img/sorting-icons.png") -4px -26px no-repeat;
+                }
             }
         }
     }
@@ -53,13 +110,46 @@ table {
             border-radius: 10px;
         }
     }
-    td,
-    th {
-        font-family: $base-font-family;
-        padding: 5px;
+    thead th.action-checkbox-column {
+        padding: 0 15px !important;
     }
-    td.original {
-        vertical-align: top;
+    tbody {
+        th,
+        td {
+            color: $gray-darkest;
+            font-size: 16px;
+            line-height: 21px;
+            text-transform: none;
+            vertical-align: middle;
+            height: 41px;
+            padding: 1px 10px !important;
+        }
+    }
+    td {
+        > select {
+            float: left;
+            width: auto !important;
+            margin: -2px 0;
+            height: 45px;
+            & + .add-another {
+                height: 45px;
+                width: 45px;
+                margin: -2px 0 -2px 10px;
+                vertical-align: middle;
+                background-position: center;
+                border-radius: $border-radius-normal;
+                border: solid 1px $gray-lighter;
+                box-sizing: border-box;
+            }
+        }
+        &.delete {
+            a {
+                float: left;
+            }
+        }
+        &.original {
+            vertical-align: top;
+        }
     }
     tr {
         td {
@@ -94,6 +184,14 @@ table {
     }
     .row2 {
         background: $gray-lightest;
+    }
+    .action-checkbox,
+    .action-checkbox-column {
+        text-align: left !important;
+        padding: 10px 15px !important;
+    }
+    .paginator {
+        box-shadow: none !important;
     }
 }
 fieldset table {
