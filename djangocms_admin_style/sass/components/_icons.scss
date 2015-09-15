@@ -2,13 +2,15 @@ table,
 .actionlist,
 .object-tools,
 #header-logo,
-.inline-group {
+.inline-group,
+.filerFile {
     .addlink,
     .changelink,
     .deletelink,
     .icon-arrow-right,
     .icon-logo,
-    .add-row a {
+    .add-row a,
+    .related-lookup {
         background-image: none;
         &:before {
             @extend %icon;
@@ -31,7 +33,8 @@ table,
     .icon-arrow-right {
         @include icon(arrow-right);
     }
-    .icon-search {
+    .icon-search,
+    .related-lookup {
         @include icon(search);
     }
     .icon-logo {

@@ -20,3 +20,63 @@
         }
     }
 }
+
+.field-image {
+  width: 80%;
+}
+#id_image_thumbnail_img {
+    margin-right: 10px;
+    &[src*="nofile"] {
+        margin-right: 0;
+        border: solid 1px $gray-lighter;
+        border-radius: $border-radius-base;
+    }
+}
+
+#id_image_thumbnail_img,
+.related-lookup {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 43px;
+    height: 43px;
+}
+
+.related-lookup {
+    border: solid 1px $gray-lighter;
+    border-radius: $border-radius-base;
+}
+
+.filerClearer {
+    width: 13px;
+    height: 13px;
+    padding: 15px;
+    border: solid 1px $gray-lighter;
+    border-radius: $border-radius-base;
+    cursor: pointer;
+}
+
+.related-lookup,
+.filerClearer {
+    float: right;
+    color: $gray-light !important;
+    margin: 0 0 0 5px !important;
+    &:before {
+        line-height: 43px!important;
+        margin-right: 0 !important;
+    }
+    img {
+        display: none;
+    }
+}
+#id_image_description_txt {
+    display: inline-block;
+    color: $gray;
+    font-weight: normal;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    &:empty + .related-lookup {
+        float: none;
+        margin-left: 0 !important;
+    }
+}
