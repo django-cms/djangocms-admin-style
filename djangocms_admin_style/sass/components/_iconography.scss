@@ -42,8 +42,14 @@
     @if $filename == remove {
         $char: "E005";
     }
-    @if $filename == search {
+    @if $filename == scissors {
         $char: "E006";
+    }
+    @if $filename == search {
+        $char: "E007";
+    }
+    @if $filename == trash {
+        $char: "E008";
     }
 
     @return $char;
@@ -83,6 +89,14 @@
     @include icon(remove);
 }
 
+.cms-icon-scissors {
+    @include icon(scissors);
+}
+
 .cms-icon-search {
     @include icon(search);
+}
+
+.cms-icon-trash {
+    @include icon(trash);
 }

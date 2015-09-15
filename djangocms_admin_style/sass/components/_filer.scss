@@ -16,7 +16,51 @@
     }
     #content-related {
         table {
-            box-shadow: none !important;
+            padding: 0 !important;
+            border: none !important;
+            thead th {
+                font-weight: bold;
+                color: $gray-darker;
+                font-size: 18px;
+                text-transform: none;
+            }
+            .noItemsRow td {
+                text-align: left !important;
+            }
+        }
+    }
+    #toolbartable table {
+        tbody {
+            th,
+            td {
+                div,
+                .tiny {
+                    font-size: 12px !important;
+                    color: $gray-light !important;
+                }
+                a {
+                    font-size: 16px !important;
+                    &.changelink,
+                    &.deletelink {
+                        position: relative;
+                        display: block;
+                        text-indent: -9999px;
+                        padding: 0 15px;
+                        &:before {
+                            position: absolute;
+                            top: 0;
+                            left: 9999px;
+                        }
+                    }
+                    &.deletelink {
+                        @include icon(trash);
+                    }
+                }
+            }
+        }
+        img {
+            width: 48px;
+            height: 48px;
         }
     }
 }
