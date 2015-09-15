@@ -26,6 +26,10 @@
 }
 #id_image_thumbnail_img {
     margin-right: 10px;
+    &[src*="nofile"] {
+        border: solid 1px $gray-lighter;
+        border-radius: $border-radius-base;
+    }
 }
 
 #id_image_thumbnail_img,
@@ -35,6 +39,9 @@
     text-align: center;
     width: 43px;
     height: 43px;
+}
+
+.related-lookup {
     border: solid 1px $gray-lighter;
     border-radius: $border-radius-base;
 }
@@ -67,4 +74,8 @@
     font-weight: normal;
     margin-top: 12px;
     margin-bottom: 12px;
+    &:empty + .related-lookup {
+        float: none;
+        margin-left: 0 !important;
+    }
 }
