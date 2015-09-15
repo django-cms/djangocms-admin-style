@@ -27,6 +27,7 @@
 #id_image_thumbnail_img {
     margin-right: 10px;
     &[src*="nofile"] {
+        margin-right: 0;
         border: solid 1px $gray-lighter;
         border-radius: $border-radius-base;
     }
