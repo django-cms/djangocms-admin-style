@@ -14,21 +14,7 @@
     .module table td {
         line-height: 16px;
     }
-    #content-related {
-        table {
-            padding: 0 !important;
-            border: none !important;
-            thead th {
-                font-weight: bold;
-                color: $gray-darker;
-                font-size: 18px;
-                text-transform: none;
-            }
-            .noItemsRow td {
-                text-align: left !important;
-            }
-        }
-    }
+    .change-list #changelist .paginator
     #toolbartable table {
         tbody {
             th,
