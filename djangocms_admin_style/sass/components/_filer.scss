@@ -1,7 +1,7 @@
 // filer
 .filebrowser {
     #content {
-        margin-top: 20px;
+        margin-right: 220px !important;
     }
     h1.folder_header {
         margin: 0;
@@ -13,6 +13,12 @@
     }
     .module table td {
         line-height: 16px;
+    }
+    #changelist {
+        overflow: visible;
+    }
+    #changelist-form {
+        float: none;
     }
     #toolbartable table {
         tbody {
@@ -47,6 +53,10 @@
             width: 48px;
             height: 48px;
         }
+    }
+    .clipboard {
+        margin-left: 0 !important;
+        float: right !important;
     }
 }
 

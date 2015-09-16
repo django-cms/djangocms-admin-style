@@ -34,6 +34,9 @@
         padding: 5px 15px !important;
         background-color: $white !important;
         clear: both;
+        .this-page {
+            font-weight: normal;
+        }
     }
     #changelist {
         width: auto !important;
