@@ -8,6 +8,7 @@ table,
     .addlink,
     .changelink,
     .deletelink,
+    .pastelink,
     .icon-arrow-right,
     .icon-logo,
     .add-row a,
@@ -54,6 +55,9 @@ table,
     }
     .movetolink span {
        @include icon(scissors);
+    }
+    .pastelink {
+        @include icon(clipboard);
     }
 }
 

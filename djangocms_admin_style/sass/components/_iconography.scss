@@ -33,32 +33,35 @@
     @if $filename == chevron-left {
         $char: "E002";
     }
-    @if $filename == folder {
+    @if $filename == clipboard {
         $char: "E003";
     }
-    @if $filename == logo {
+    @if $filename == folder {
         $char: "E004";
     }
-    @if $filename == pencil {
+    @if $filename == logo {
         $char: "E005";
     }
-    @if $filename == plus {
+    @if $filename == pencil {
         $char: "E006";
     }
-    @if $filename == remove {
+    @if $filename == plus {
         $char: "E007";
     }
-    @if $filename == scissors {
+    @if $filename == remove {
         $char: "E008";
     }
-    @if $filename == search {
+    @if $filename == scissors {
         $char: "E009";
     }
-    @if $filename == trash {
+    @if $filename == search {
         $char: "E00A";
     }
-    @if $filename == upload {
+    @if $filename == trash {
         $char: "E00B";
+    }
+    @if $filename == upload {
+        $char: "E00C";
     }
 
     @return $char;
@@ -84,6 +87,10 @@
 
 .cms-icon-chevron-left {
     @include icon(chevron-left);
+}
+
+.cms-icon-clipboard {
+    @include icon(clipboard);
 }
 
 .cms-icon-folder {

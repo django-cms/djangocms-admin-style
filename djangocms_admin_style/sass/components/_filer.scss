@@ -43,7 +43,16 @@
         padding-top: 10px !important;
         border-bottom: solid 1px $gray-lighter;
         .object-tools {
-            margin-top: 0 !important
+            margin-top: 0 !important;
+            .changelink {
+                color: $color-primary !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                background-image: none !important;
+                &:before {
+                    vertical-align: top;
+                }
+            }
         }
     }
     .module table td {
@@ -121,14 +130,69 @@
         padding: 0;
         margin-top: 103px !important;
         border-radius: $border-radius-base;
+        .noItemsRow td {
+            text-align: left !important;
+        }
+        .clipboardItem {
+            .label {
+                color: $color-primary;
+                padding: 0 !important;
+            }
+            .thumbnail {
+                padding: 5px 0 5px 10px !important;
+            }
+        }
         thead th {
             font-size: 18px;
             font-weight: bold;
             text-transform: none;
         }
+        tfoot td {
+            padding-bottom: 0;
+        }
+        td {
+            border-bottom: 0 !important;
+        }
+        td form {
+            display: block !important;
+            margin: 0 -10px;
+            padding: 10px;
+            border-top: solid 1px $gray-lighter;
+            background: none;
+            &:first-child {
+                border-top: 0;
+            }
+        }
         form {
             padding: 0;
             box-shadow: none !important;
+        }
+        button {
+            padding: 0 !important;
+            border: 0 !important;
+            &:hover,
+            &:active,
+            &focus {
+                border: 0;
+                background: none !important;
+                box-shadow: none !important;
+                outline: none;
+            }
+            &.deletelink {
+                @include icon(trash);
+                border-top: solid 1px $gray-lighter;
+            }
+            &.pastelink {
+                color: $color-primary !important;
+                span {
+                    display: none;
+                }
+            }
+            &:before {
+                vertical-align: top;
+                margin-right: 7px;
+                margin-left: 7px;
+            }
         }
     }
     #toolbartable {
@@ -136,10 +200,14 @@
             padding: 0 !important;
             border: 0 !important;
             background: none !important;
+            box-shadow: none !important;
+            outline: none;
             &:hover,
             &:active,
             &focus {
+                border: 0;
                 background: none !important;
+                outline: none;
             }
             span {
                 font: 0/0 a !important;
