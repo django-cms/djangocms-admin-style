@@ -140,6 +140,10 @@
             }
             .thumbnail {
                 padding: 5px 0 5px 10px !important;
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
             }
         }
         thead th {
@@ -244,7 +248,6 @@
     width: 43px;
     height: 43px;
 }
-
 .related-lookup {
     border: solid 1px $gray-lighter;
     border-radius: $border-radius-base;

@@ -4,7 +4,8 @@ table,
 #header-logo,
 .inline-group,
 .filerFile,
-.filebrowser {
+.filebrowser,
+.module {
     .addlink,
     .changelink,
     .deletelink,
@@ -58,6 +59,16 @@ table,
     }
     .pastelink {
         @include icon(clipboard);
+    }
+}
+
+
+
+.related-lookup {
+    @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+    padding: 0 !important;
+    &:before {
+        color: $white;
     }
 }
 
