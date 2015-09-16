@@ -15,7 +15,8 @@ table,
     .add-row a,
     .related-lookup,
     .backtoroot,
-    .movetolink span {
+    .movetolink span,
+    .file-upload a {
         background-image: none;
         &:before {
             @extend %icon;
@@ -23,6 +24,10 @@ table,
             vertical-align: middle;
             margin-right: 10px;
         }
+    }
+
+    .file-upload a {
+      @include icon(picture);
     }
 
     .addlink,

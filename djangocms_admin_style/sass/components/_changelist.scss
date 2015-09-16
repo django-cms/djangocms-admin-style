@@ -8,6 +8,20 @@
     background-color: transparent;
     box-shadow: none;
 }
+#image_container {
+    margin-bottom: 5px;
+}
+#content-related {
+    h3 {
+        color: $gray-darker;
+        font-size: 18px !important;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    ul li {
+        font-size: 16px !important;
+    }
+}
 .change-list {
     min-height: inherit;
     background-image: none !important;

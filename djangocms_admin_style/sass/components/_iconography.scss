@@ -30,38 +30,44 @@
     @if $filename == arrow-right {
         $char: "E001";
     }
-    @if $filename == chevron-left {
+    @if $filename == camera {
         $char: "E002";
     }
-    @if $filename == clipboard {
+    @if $filename == chevron-left {
         $char: "E003";
     }
-    @if $filename == folder {
+    @if $filename == clipboard {
         $char: "E004";
     }
-    @if $filename == logo {
+    @if $filename == folder {
         $char: "E005";
     }
-    @if $filename == pencil {
+    @if $filename == logo {
         $char: "E006";
     }
-    @if $filename == plus {
+    @if $filename == pencil {
         $char: "E007";
     }
-    @if $filename == remove {
+    @if $filename == picture {
         $char: "E008";
     }
-    @if $filename == scissors {
+    @if $filename == plus {
         $char: "E009";
     }
-    @if $filename == search {
+    @if $filename == remove {
         $char: "E00A";
     }
-    @if $filename == trash {
+    @if $filename == scissors {
         $char: "E00B";
     }
-    @if $filename == upload {
+    @if $filename == search {
         $char: "E00C";
+    }
+    @if $filename == trash {
+        $char: "E00D";
+    }
+    @if $filename == upload {
+        $char: "E00E";
     }
 
     @return $char;
@@ -85,6 +91,10 @@
     @include icon(arrow-right);
 }
 
+.cms-icon-camera {
+    @include icon(camera);
+}
+
 .cms-icon-chevron-left {
     @include icon(chevron-left);
 }
@@ -103,6 +113,10 @@
 
 .cms-icon-pencil {
     @include icon(pencil);
+}
+
+.cms-icon-picture {
+    @include icon(picture);
 }
 
 .cms-icon-plus {

@@ -69,6 +69,12 @@ body.login {
     width: 100%;
     margin-right: 0;
 }
+.filebrowser .clipboard,
+.filebrowser.change-list #changelist{
+    float: none !important;
+    width: 100% !important;
+}
+
 
 // dashboard
 #content.colMS {

@@ -7,6 +7,50 @@ form {
         overflow: hidden;
         border-bottom: 0;
         clear: both;
+        &.field-sha1 {
+            label {
+                display: inline-block;
+            }
+            p {
+                display: inline-block;
+                color: $gray-darkest !important;
+            }
+        }
+        &.field-file {
+            p {
+                font-weight: normal;
+            }
+            a {
+                position: relative;
+                padding-left: 30px;
+                &:before {
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            a,
+            input[type="file"] {
+                display: block;
+                font-size: 18px;
+                line-height: 18px;
+                margin: 10px 0;
+            }
+            a:before {
+                color: $gray;
+                vertical-align: top;
+            }
+            .clearable-file-input {
+                display: inline-block;
+                margin-bottom: 20px;
+                label {
+                    font-size: 18px;
+                    text-transform: none;
+                }
+            }
+        }
+        &.field-owner .related-lookup {
+           float: none !important;
+        }
         &.field-thumbnail {
             margin: 0;
         }

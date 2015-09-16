@@ -39,7 +39,7 @@
         }
     }
     #content-top-bar {
-        height: 54px;
+        min-height: 54px;
         padding-top: 10px !important;
         border-bottom: solid 1px $gray-lighter;
         .object-tools {
@@ -127,16 +127,21 @@
     }
     .clipboard {
         float: right !important;
-        padding: 0;
-        margin-top: 103px !important;
+        margin-top: 25px !important;
         border-radius: $border-radius-base;
+        box-shadow: $base-box-shadow;
+        table {
+            padding: 0;
+            border: 0 !important;
+        }
         .noItemsRow td {
             text-align: left !important;
         }
         .clipboardItem {
             .label {
                 color: $color-primary;
-                padding: 0 !important;
+                font-size: 16px !important;
+                padding: 0 0 0 10px !important;
             }
             .thumbnail {
                 padding: 5px 0 5px 10px !important;
@@ -172,6 +177,8 @@
             box-shadow: none !important;
         }
         button {
+            text-align: left;
+            white-space: nowrap;
             padding: 0 !important;
             border: 0 !important;
             &:hover,
