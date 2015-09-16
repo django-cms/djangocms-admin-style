@@ -3,14 +3,17 @@ table,
 .object-tools,
 #header-logo,
 .inline-group,
-.filerFile {
+.filerFile,
+.filebrowser {
     .addlink,
     .changelink,
     .deletelink,
     .icon-arrow-right,
     .icon-logo,
     .add-row a,
-    .related-lookup {
+    .related-lookup,
+    .backtoroot,
+    .movetolink span {
         background-image: none;
         &:before {
             @extend %icon;
@@ -39,6 +42,18 @@ table,
     }
     .icon-logo {
         @include icon(logo);
+    }
+    #id_upload_button {
+       @include icon(upload);
+    }
+    #id_new_folder {
+        @include icon(folder);
+    }
+    .backtoroot  {
+       @include icon(chevron-left);
+    }
+    .movetolink span {
+       @include icon(scissors);
     }
 }
 

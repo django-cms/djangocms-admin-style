@@ -1,30 +1,93 @@
 // filer
 .filebrowser {
     #content {
-        margin-right: 220px !important;
+        margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal !important;
+    }
+    h2 {
+        display: none;
     }
     h1.folder_header {
+        float: left;
+        font-size: 20px;
         margin: 0;
         background: none;
         .changelink {
+            @include icon(pencil);
             font-size: 16px;
             line-height: 30px;
+            font-weight: normal;
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        .backtoroot {
+            position: relative;
+            display: inline-block;
+            text-indent: -9999px;
+            padding: 0 15px;
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 9999px;
+            }
+        }
+        .small {
+            margin-left: 5px;
+        }
+    }
+    #content-top-bar {
+        height: 54px;
+        padding-top: 10px !important;
+        border-bottom: solid 1px $gray-lighter;
+        .object-tools {
+            margin-top: 0 !important
         }
     }
     .module table td {
         line-height: 16px;
     }
-    #changelist {
-        overflow: visible;
+    &.change-list #changelist {
+        overflow: visible !important;
+        padding: 0 !important;
+        margin-right: 0 !important;
     }
-    #changelist-form {
-        float: none;
+    #changelist-form > input + #toolbartable {
+        clear: both;
+    }
+    #id_new_folder {
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     }
     #toolbartable table {
+        thead th {
+            width: 0 !important;
+            &.action-checkbox-column {
+                text-align: center !important;
+            }
+        }
         tbody {
+            td:first-child {
+               text-align: center;
+            }
             th,
             td {
-                div,
+                font-size: 12px !important;
+                color: $gray-light !important;
+                outline: 0;
+                &.transpTiling {
+                    padding-top: 5px !important;
+                    padding-bottom: 5px !important;
+                    img {
+                        height: 35px;
+                        width: 35px;
+                    }
+                }
+                &.moveto {
+                    text-align: left !important;
+                    padding-left: 0 !important;
+                }
                 .tiny {
                     font-size: 12px !important;
                     color: $gray-light !important;
@@ -33,14 +96,13 @@
                     font-size: 16px !important;
                     &.changelink,
                     &.deletelink {
-                        position: relative;
-                        display: block;
-                        text-indent: -9999px;
-                        padding: 0 15px;
+                        display: inline-block;
+                        float: left !important;
+                        font: 0/0 a !important;
+                        padding: 0 !important;
+                        margin: 0 0 0 20px !important;
                         &:before {
-                            position: absolute;
-                            top: 0;
-                            left: 9999px;
+                           margin-right: 0;
                         }
                     }
                     &.deletelink {
@@ -50,13 +112,47 @@
             }
         }
         img {
-            width: 48px;
-            height: 48px;
+            width: 43px;
+            height: 43px;
         }
     }
     .clipboard {
-        margin-left: 0 !important;
         float: right !important;
+        padding: 0;
+        margin-top: 103px !important;
+        border-radius: $border-radius-base;
+        thead th {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: none;
+        }
+        form {
+            padding: 0;
+            box-shadow: none !important;
+        }
+    }
+    #toolbartable {
+        button {
+            padding: 0 !important;
+            border: 0 !important;
+            background: none !important;
+            &:hover,
+            &:active,
+            &focus {
+                background: none !important;
+            }
+            span {
+                font: 0/0 a !important;
+                &:before {
+                    color: $color-primary;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+    #toolbartable + .paginator {
+        position: absolute;
+        clip: rect(0, 99999px, 99999px, -2px);
     }
 }
 
