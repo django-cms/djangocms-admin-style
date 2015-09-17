@@ -50,6 +50,7 @@
         clear: both;
         .this-page {
             font-weight: normal;
+            padding: 0;
         }
     }
     #changelist {
@@ -313,7 +314,7 @@
                 background-color: $white;
             }
             &.action-checkbox-column {
-                padding: 0 10px !important;
+                padding: 0 15px !important;
             }
             .text {
                 float: left;
