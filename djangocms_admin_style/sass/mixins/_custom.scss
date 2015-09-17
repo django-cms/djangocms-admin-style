@@ -55,9 +55,6 @@
         background-color: darken($background, 10%) important($important);
         border-color: darken($border, 12%) important($important);
         box-shadow: $btn-active-shadow important($important);
-        &:before {
-            color: $white;
-        }
         &:hover,
         &:focus {
             color: $color important($important);
