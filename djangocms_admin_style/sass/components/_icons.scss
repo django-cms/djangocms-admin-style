@@ -1,70 +1,61 @@
-table,
-.actionlist,
-.object-tools,
-#header-logo,
-.inline-group,
-.filerFile,
-.filebrowser,
-.module {
-    .addlink,
-    .changelink,
-    .deletelink,
-    .pastelink,
-    .icon-arrow-right,
-    .icon-logo,
-    .add-row a,
-    .related-lookup,
-    .backtoroot,
-    .movetolink span,
-    .file-upload a {
-        background-image: none;
-        &:before {
-            @extend %icon;
-            font-size: 21px;
-            vertical-align: middle;
-            margin-right: 10px;
-        }
+.addlink,
+.changelink,
+.deletelink,
+.pastelink,
+.icon-arrow-right,
+.icon-logo,
+.add-row a,
+.related-lookup,
+.backtoroot,
+.movetolink span,
+.file-upload a {
+    background-image: none;
+    &:before {
+        @extend %icon;
+        font-size: 21px;
+        vertical-align: middle;
+        margin-right: 10px;
     }
+}
 
-    .file-upload a {
-      @include icon(picture);
-    }
+.file-upload a {
+  @include icon(picture);
+}
 
-    .addlink,
-    .add-row a {
-        @include icon(plus);
-    }
-    .changelink {
-        @include icon(pencil);
-    }
-    .deletelink {
-        @include icon(remove);
-    }
-    .icon-arrow-right {
-        @include icon(arrow-right);
-    }
-    .icon-search,
-    .related-lookup {
-        @include icon(search);
-    }
-    .icon-logo {
-        @include icon(logo);
-    }
-    #id_upload_button {
-       @include icon(upload);
-    }
-    #id_new_folder {
-        @include icon(folder);
-    }
-    .backtoroot  {
-       @include icon(chevron-left);
-    }
-    .movetolink span {
-       @include icon(scissors);
-    }
-    .pastelink {
-        @include icon(clipboard);
-    }
+.addlink,
+.add-row a {
+    @include icon(plus);
+}
+.changelink {
+    @include icon(pencil);
+}
+.deletelink {
+    @include icon(remove);
+}
+.icon-arrow-right {
+    @include icon(arrow-right);
+}
+.icon-search,
+.related-lookup {
+    @include icon(search);
+}
+.icon-logo {
+    @include icon(logo);
+}
+#id_upload_button {
+   @include icon(upload);
+}
+#id_new_folder {
+    @include icon(folder);
+}
+.backtoroot  {
+   @include icon(chevron-left);
+}
+.movetolink span {
+   @include icon(scissors);
+}
+.pastelink {
+    @include icon(clipboard);
 }
 
 .related-lookup {
@@ -111,8 +102,24 @@ table,
     background: url("../img/icon_addlink_large.gif") 0 0 no-repeat;
 }
 
-.tree .changelink {
-    background-image: url("../img/icon_changelink_white.png");
+.tree {
+    .col-navigation img {
+        vertical-align: middle;
+    }
+    .col-language a {
+        vertical-align: top !important;
+    }
+    .changelink {
+        background-image: url("../img/icon_changelink_white.png");
+    }
+    .addlink,
+    .deletelink {
+        display: inline !important;
+        &:before {
+            font-size: 14px;
+            margin: 0;
+        }
+    }
 }
 
 #sitemap li .col-softroot span.icon {
