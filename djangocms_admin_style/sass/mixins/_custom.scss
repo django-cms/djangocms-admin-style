@@ -73,7 +73,7 @@
         &:active {
             background-color: $background important($important);
             border-color: $border important($important);
-            opacity: 0.65;
+            opacity: 0.5;
             cursor: not-allowed;
             box-shadow: none important($important);
         }

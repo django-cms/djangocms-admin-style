@@ -94,8 +94,12 @@
                     }
                 }
                 &.moveto {
-                    text-align: left !important;
+                    text-align: right !important;
                     padding-left: 0 !important;
+                    .movetolink {
+                        margin: 0 0 0 20px;
+                        vertical-align: middle;
+                    }
                 }
                 .tiny {
                     font-size: 12px !important;
@@ -106,10 +110,11 @@
                     &.changelink,
                     &.deletelink {
                         display: inline-block;
-                        float: left !important;
+                        float: none !important;
                         font: 0/0 a !important;
                         padding: 0 !important;
                         margin: 0 0 0 20px !important;
+                        vertical-align: middle;
                         &:before {
                            margin-right: 0;
                         }
