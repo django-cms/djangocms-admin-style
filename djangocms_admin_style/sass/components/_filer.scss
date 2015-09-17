@@ -291,6 +291,7 @@
     color: $gray-light !important;
     margin: 0 0 0 5px !important;
     &:before {
+        color: $gray-light;
         line-height: 43px!important;
         margin-right: 0 !important;
     }
