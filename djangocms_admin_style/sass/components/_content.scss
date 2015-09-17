@@ -15,7 +15,7 @@ body {
             left: 3%;
             color: $gray !important;
             font-size: 14px;
-            margin-top: $toolbar-height - 2px;
+            margin-top: $toolbar-height + 2;
             padding: $breadcrumb-padding 10px;
             border-top: 0;
             border-bottom: 1px solid $gray-lighter;
