@@ -17,6 +17,22 @@
         background-color: transparent;
         box-shadow: none;
     }
+    &.change-list {
+        #changelist {
+            #changelist-filter {
+                background: none !important;
+            }
+            #changelist-form > input + .results {
+                clear: both ;
+            }
+        }
+        #result_list {
+            tbody td,
+            tbody th {
+                height: 41px;
+            }
+        }
+    }
     table td > select {
        width: auto !important;
     }

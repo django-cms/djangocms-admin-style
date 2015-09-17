@@ -69,6 +69,26 @@ body.login {
     width: 100%;
     margin-right: 0;
 }
+.filebrowser .clipboard,
+.filebrowser.change-list #changelist{
+    float: none !important;
+    width: 100% !important;
+}
+.filebrowser #changelist {
+    margin-bottom: 20px;
+    #changelist-wrapper {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .paginator {
+        width: calc(100% - 30px) !important;
+    }
+    .clipboard {
+        margin-top: 60px !important
+    }
+}
+
 
 // dashboard
 #content.colMS {

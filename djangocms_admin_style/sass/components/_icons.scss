@@ -3,14 +3,20 @@ table,
 .object-tools,
 #header-logo,
 .inline-group,
-.filerFile {
+.filerFile,
+.filebrowser,
+.module {
     .addlink,
     .changelink,
     .deletelink,
+    .pastelink,
     .icon-arrow-right,
     .icon-logo,
     .add-row a,
-    .related-lookup {
+    .related-lookup,
+    .backtoroot,
+    .movetolink span,
+    .file-upload a {
         background-image: none;
         &:before {
             @extend %icon;
@@ -18,6 +24,10 @@ table,
             vertical-align: middle;
             margin-right: 10px;
         }
+    }
+
+    .file-upload a {
+      @include icon(picture);
     }
 
     .addlink,
@@ -39,6 +49,29 @@ table,
     }
     .icon-logo {
         @include icon(logo);
+    }
+    #id_upload_button {
+       @include icon(upload);
+    }
+    #id_new_folder {
+        @include icon(folder);
+    }
+    .backtoroot  {
+       @include icon(chevron-left);
+    }
+    .movetolink span {
+       @include icon(scissors);
+    }
+    .pastelink {
+        @include icon(clipboard);
+    }
+}
+
+.related-lookup {
+    @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+    padding: 0 !important;
+    &:before {
+        color: $white;
     }
 }
 

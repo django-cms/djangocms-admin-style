@@ -8,6 +8,20 @@
     background-color: transparent;
     box-shadow: none;
 }
+#image_container {
+    margin-bottom: 5px;
+}
+#content-related {
+    h3 {
+        color: $gray-darker;
+        font-size: 18px !important;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    ul li {
+        font-size: 16px !important;
+    }
+}
 .change-list {
     min-height: inherit;
     background-image: none !important;
@@ -34,6 +48,10 @@
         padding: 5px 15px !important;
         background-color: $white !important;
         clear: both;
+        .this-page {
+            font-weight: normal;
+            padding: 0;
+        }
     }
     #changelist {
         width: auto !important;
@@ -68,7 +86,6 @@
                 th,
                 td {
                     white-space: nowrap;
-                    height: 22px;
                     padding: 1px 10px;
                     a,
                     a:link,
@@ -289,7 +306,6 @@
         th {
             font-size: 14px;
             text-transform: uppercase;
-            padding: 5px 10px 3px !important;
             border-color: $gray-lighter;
             background-color: $white;
             &.sorted {

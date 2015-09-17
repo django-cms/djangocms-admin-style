@@ -8,13 +8,6 @@ table {
     background: $white;
     box-shadow: $base-box-shadow;
     border-collapse: separate !important;
-    th {
-        font-size: 14px;
-        text-transform: uppercase;
-        padding: 5px 10px 3px !important;
-        background-color: $white;
-        border-bottom: 1px solid $gray-lighter;
-    }
     th,
     td {
         font-family: $base-font-family;
@@ -22,8 +15,8 @@ table {
         font-weight: normal;
         text-align: left;
         vertical-align: middle;
-        padding: 5px 10px;
         border-left: 0 !important;
+        border-bottom: 1px solid $gray-lighter;
         background: none !important;
         &:first-child {
             border-right: 0 !important;
@@ -52,15 +45,17 @@ table {
     thead {
         th {
             font-size: 14px;
+            line-height: inherit !important;
             font-weight: normal;
             text-transform: uppercase;
-            height: 27px;
-            padding: 5px 10px 3px !important;
+            padding: 5px 10px !important;
             white-space: nowrap;
+            background-color: $white;
             .text {
                 float: left;
                 padding-right: 0 !important;
                 a {
+                    display: inline-block;
                     padding: 0 !important;
                 }
             }
@@ -119,10 +114,9 @@ table {
         td {
             color: $gray-darkest;
             font-size: 16px;
-            line-height: 21px;
+            line-height: 21px !important;
             text-transform: none;
             vertical-align: middle;
-            height: 41px;
             padding: 1px 10px !important;
         }
     }

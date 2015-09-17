@@ -1,23 +1,253 @@
 // filer
 .filebrowser {
     #content {
-        margin-top: 20px;
+        margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal !important;
+    }
+    h2 {
+        display: none;
     }
     h1.folder_header {
+        float: left;
+        font-size: 20px;
         margin: 0;
         background: none;
         .changelink {
+            @include icon(pencil);
             font-size: 16px;
             line-height: 30px;
+            font-weight: normal;
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        .backtoroot {
+            display: inline-block;
+            font: 0/0 a;
+            padding-left: 15px;
+            vertical-align: middle;
+        }
+        .small {
+            margin-left: 5px;
+        }
+    }
+    #content-top-bar {
+        min-height: 54px;
+        padding-top: 10px !important;
+        border-bottom: solid 1px $gray-lighter;
+        .object-tools {
+            margin-top: 0 !important;
+            .changelink {
+                color: $color-primary !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                background-image: none !important;
+                &:before {
+                    vertical-align: top;
+                }
+            }
         }
     }
     .module table td {
         line-height: 16px;
     }
-    #content-related {
+    #changelist {
+        margin-bottom: 0;
+        .paginator {
+            width: calc(80% - 30px) !important;
+        }
+    }
+    &.change-list #changelist {
+        overflow: visible !important;
+        padding: 0 !important;
+        margin-right: 0 !important;
+    }
+    #changelist-form > input + #toolbartable {
+        clear: both;
+    }
+    #id_new_folder {
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    }
+    #toolbartable table {
+        thead th {
+            width: 0 !important;
+            &.action-checkbox-column {
+                text-align: left !important;
+            }
+        }
+        tbody {
+            td:first-child {
+               text-align: left;
+                padding-left: 15px !important;
+            }
+            th,
+            td {
+                font-size: 12px !important;
+                color: $gray-light !important;
+                outline: 0;
+                &.transpTiling {
+                    padding-top: 5px !important;
+                    padding-bottom: 5px !important;
+                    img {
+                        height: 35px;
+                        width: 35px;
+                    }
+                }
+                &.moveto {
+                    text-align: right !important;
+                    padding-left: 0 !important;
+                    .movetolink {
+                        margin: 0 0 0 20px;
+                        vertical-align: middle;
+                    }
+                }
+                .tiny {
+                    font-size: 12px !important;
+                    color: $gray-light !important;
+                }
+                a {
+                    font-size: 16px !important;
+                    &.changelink,
+                    &.deletelink {
+                        display: inline-block;
+                        float: none !important;
+                        font: 0/0 a !important;
+                        padding: 0 !important;
+                        margin: 0 0 0 20px !important;
+                        vertical-align: middle;
+                        &:before {
+                           margin-right: 0;
+                        }
+                    }
+                    &.deletelink {
+                        @include icon(trash);
+                    }
+                }
+            }
+        }
+        img {
+            width: 43px;
+            height: 43px;
+        }
+    }
+    .clipboard {
+        float: right !important;
+        border-radius: $border-radius-base;
+        box-shadow: $base-box-shadow;
         table {
+            padding: 0;
+            margin-bottom: 0 !important;
+            border: 0 !important;
+        }
+        .noItemsRow td {
+            text-align: left !important;
+            padding: 15px 0 15px 15px !important;
+        }
+        .clipboardItem {
+            .label {
+                color: $color-primary;
+                font-size: 16px !important;
+                padding: 0 0 0 10px !important;
+            }
+            .thumbnail {
+                padding: 7px 0 7px 10px !important;
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+        thead th {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: none;
+        }
+        tfoot td {
+            padding: 10px 10px 0;
+            button {
+                padding-bottom: 10px !important;
+            }
+        }
+        td {
+            height: auto !important;
+            border-bottom: solid 1px $gray-lighter !important;
+            border-top: 0;
+            form {
+                display: block !important;
+                margin: 0 -10px !important;
+                padding: 10px !important;
+                border-top: solid 1px $gray-lighter;
+                background: none;
+                &:first-child {
+                    border-top: 0;
+                }
+                button {
+                    padding-bottom: 0 !important;
+                }
+            }
+        }
+        form {
+            padding: 0;
             box-shadow: none !important;
         }
+        button {
+            text-align: left;
+            white-space: nowrap;
+            padding: 0 !important;
+            border: 0 !important;
+            &:hover,
+            &:active,
+            &focus {
+                border: 0;
+                background: none !important;
+                box-shadow: none !important;
+                outline: none;
+            }
+            &.deletelink {
+                @include icon(trash);
+                border-top: solid 1px $gray-lighter;
+            }
+            &.pastelink {
+                color: $color-primary !important;
+                span {
+                    display: none;
+                }
+            }
+            &:before {
+                vertical-align: top;
+                margin-right: 7px;
+                margin-left: 7px;
+            }
+        }
+    }
+    #toolbartable {
+        button {
+            padding: 0 !important;
+            border: 0 !important;
+            background: none !important;
+            box-shadow: none !important;
+            outline: none;
+            &:hover,
+            &:active,
+            &focus {
+                border: 0;
+                background: none !important;
+                outline: none;
+            }
+            span {
+                font: 0/0 a !important;
+                &:before {
+                    color: $color-primary;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+    #toolbartable + .paginator {
+        position: absolute;
+        clip: rect(0, 99999px, 99999px, -2px);
     }
 }
 
@@ -41,7 +271,6 @@
     width: 43px;
     height: 43px;
 }
-
 .related-lookup {
     border: solid 1px $gray-lighter;
     border-radius: $border-radius-base;
