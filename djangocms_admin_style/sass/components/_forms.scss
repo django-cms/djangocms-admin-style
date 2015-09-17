@@ -48,9 +48,14 @@ form {
                 }
             }
         }
-        &.field-owner .related-lookup {
-           float: none !important;
-            margin-right: 10px !important;
+        &.field-owner {
+            input {
+                margin-bottom: 10px;
+            }
+            .related-lookup {
+               float: none !important;
+                margin-right: 10px !important;
+            }
         }
         &.field-thumbnail {
             margin: 0;

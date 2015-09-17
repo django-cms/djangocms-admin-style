@@ -26,6 +26,12 @@
                 clear: both ;
             }
         }
+        #result_list {
+            tbody td,
+            tbody th {
+                height: 41px;
+            }
+        }
     }
     table td > select {
        width: auto !important;

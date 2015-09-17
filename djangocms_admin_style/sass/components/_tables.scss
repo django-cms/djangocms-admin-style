@@ -54,7 +54,6 @@ table {
             font-size: 14px;
             font-weight: normal;
             text-transform: uppercase;
-            height: 27px;
             padding: 5px 10px 3px !important;
             white-space: nowrap;
             .text {
@@ -119,10 +118,9 @@ table {
         td {
             color: $gray-darkest;
             font-size: 16px;
-            line-height: 21px;
+            line-height: 21px !important;
             text-transform: none;
             vertical-align: middle;
-            height: 41px;
             padding: 1px 10px !important;
         }
     }
