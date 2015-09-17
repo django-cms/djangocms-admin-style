@@ -53,6 +53,12 @@
     .module table td {
         line-height: 16px;
     }
+    #changelist {
+        margin-bottom: 0;
+        .paginator {
+            width: calc(80% - 30px) !important;
+        }
+    }
     &.change-list #changelist {
         overflow: visible !important;
         padding: 0 !important;
@@ -128,11 +134,11 @@
     }
     .clipboard {
         float: right !important;
-        margin-top: 25px !important;
         border-radius: $border-radius-base;
         box-shadow: $base-box-shadow;
         table {
             padding: 0;
+            margin-bottom: 0 !important;
             border: 0 !important;
         }
         .noItemsRow td {
@@ -145,7 +151,7 @@
                 padding: 0 0 0 10px !important;
             }
             .thumbnail {
-                padding: 5px 0 5px 10px !important;
+                padding: 7px 0 7px 10px !important;
                 img {
                     width: 32px;
                     height: 32px;
@@ -158,19 +164,27 @@
             text-transform: none;
         }
         tfoot td {
-            padding-bottom: 0;
+            padding: 10px 10px 0;
+            button {
+                padding-bottom: 10px !important;
+            }
         }
         td {
-            border-bottom: 0 !important;
-        }
-        td form {
-            display: block !important;
-            margin: 0 -10px;
-            padding: 10px;
-            border-top: solid 1px $gray-lighter;
-            background: none;
-            &:first-child {
-                border-top: 0;
+            height: auto !important;
+            border-bottom: solid 1px $gray-lighter !important;
+            border-top: 0;
+            form {
+                display: block !important;
+                margin: 0 -10px !important;
+                padding: 10px !important;
+                border-top: solid 1px $gray-lighter;
+                background: none;
+                &:first-child {
+                    border-top: 0;
+                }
+                button {
+                    padding-bottom: 0 !important;
+                }
             }
         }
         form {
