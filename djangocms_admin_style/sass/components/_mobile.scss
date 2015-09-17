@@ -156,8 +156,13 @@ body.login {
     }
     #changelist {
         position: static;
-        .actions select {
-            width: 285px !important;
+        .actions {
+            select {
+                width: 285px !important;
+            }
+            .action-counter {
+                display: block !important;
+            }
         }
         #toolbar {
             float: none !important;

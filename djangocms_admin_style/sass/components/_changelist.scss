@@ -126,7 +126,7 @@
             }
         }
         #changelist-filter {
-            top: 31px;
+            top: 15px;
             width: 200px !important;
             min-height: 100%;
             padding-left: 18px;
@@ -151,7 +151,7 @@
             }
             h3 {
                 font-size: 16px;
-                margin: 30px 0 10px !important;
+                margin: 19px 0 10px !important;
             }
             ul {
                 font-size: 12px;
@@ -160,7 +160,7 @@
             }
             li {
                 font-size: 16px;
-                margin-bottom: 20px;
+                margin-bottom: 19px;
                 &.selected {
                     font-weight: bold;
                     border-left: 0 !important;
@@ -188,7 +188,7 @@
             }
             label {
                 display: inline-block;
-                font-size: 14px;
+                font: 0/0 a;
                 margin-left: 0;
                 margin-bottom: 0;
             }
@@ -196,10 +196,11 @@
                 vertical-align: bottom;
                 min-height: 45px;
                 margin-bottom: 1px;
+                margin-right: 10px;
                 padding: 10px 15px !important
             }
             .action-counter {
-                display: block !important;
+                display: inline !important;
                 font-size: 14px;
                 margin: 5px 0 0;
             }
@@ -280,7 +281,7 @@
             background-size: 23px !important;
         }
         label {
-            display: block !important;
+            display: none !important;
             margin-bottom: 0;
             img {
                 visibility: hidden;

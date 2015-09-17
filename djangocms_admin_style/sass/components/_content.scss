@@ -14,8 +14,8 @@ body {
             right: 3%;
             left: 3%;
             color: $gray !important;
-            font-size: 15px;
-            margin-top: $toolbar-height;
+            font-size: 14px;
+            margin-top: $toolbar-height + 2;
             padding: $breadcrumb-padding 10px;
             border-top: 0;
             border-bottom: 1px solid $gray-lighter;
@@ -538,7 +538,7 @@ a.addlink {
     float: right;
     text-align: right;
     max-width: 70%;
-    margin-top: -78px;
+    margin-top: -72px;
     margin-left: 0;
     li {
         float: none;

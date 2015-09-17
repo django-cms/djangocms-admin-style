@@ -31,9 +31,9 @@ $color-danger-dark: #d50101;
 
 //##############################################################################
 // #MARGIN/PADDING
-$content-margin: 55px;
+$content-margin: 45px;
 
-$breadcrumb-padding: 20px;
+$breadcrumb-padding: 15px;
 $toolbar-margin-button: ($toolbar-height - $toolbar-button-height) / 2;
 $toolbar-margin-logo: ($toolbar-height - $toolbar-logo-height) / 2;
 $content-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + $content-margin;

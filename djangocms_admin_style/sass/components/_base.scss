@@ -2,9 +2,6 @@
 
 body {
     background-color: $gray-lightest;
-    .breadcrumbs {
-        padding: 20px 0 !important;
-    }
     h1 {
         margin-left: 0;
     }
@@ -27,7 +24,7 @@ body {
             margin-left: 10px;
         }
         .breadcrumbs {
-            padding: 20px 10px !important;
+            padding: 15px 10px !important;
         }
     }
 }
@@ -46,9 +43,9 @@ textarea {
 
 h1 {
     color: $gray-darkest;
-    font-size: $font-size-normal;
+    font-size: 20px;
     font-weight: bold;
-    margin: 20px 10px 45px;
+    margin: 0 10px 40px;
 }
 h2 {
     color: $gray-darkest;
