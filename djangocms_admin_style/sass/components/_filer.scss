@@ -24,15 +24,10 @@
             margin-right: 10px;
         }
         .backtoroot {
-            position: relative;
             display: inline-block;
-            text-indent: -9999px;
-            padding: 0 15px;
-            &:before {
-                position: absolute;
-                top: 0;
-                left: 9999px;
-            }
+            font: 0/0 a;
+            padding-left: 15px;
+            vertical-align: middle;
         }
         .small {
             margin-left: 5px;
