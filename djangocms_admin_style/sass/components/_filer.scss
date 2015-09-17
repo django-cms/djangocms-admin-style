@@ -262,18 +262,15 @@
         border-radius: $border-radius-base;
     }
 }
-
+#id_image_thumbnail_img, {
+    width: 43px;
+    height: 43px;
+}
 #id_image_thumbnail_img,
 .related-lookup {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    width: 43px;
-    height: 43px;
-}
-.related-lookup {
-    border: solid 1px $gray-lighter;
-    border-radius: $border-radius-base;
 }
 
 .filerClearer {
@@ -287,17 +284,21 @@
 
 .related-lookup,
 .filerClearer {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     float: right;
-    color: $gray-light !important;
+    padding: 0 !important;
     margin: 0 0 0 5px !important;
     &:before {
-        color: $gray-light;
-        line-height: 43px!important;
-        margin-right: 0 !important;
+        color: $gray-light !important;
+        margin: 0;
+        vertical-align: middle;
     }
     img {
         display: none;
     }
+}
+.related-lookup {
+    padding: 10px !important;
 }
 #id_image_description_txt {
     display: inline-block;
