@@ -68,17 +68,18 @@
         thead th {
             width: 0 !important;
             &.action-checkbox-column {
-                text-align: center !important;
+                text-align: left !important;
             }
         }
         tbody {
             td:first-child {
-               text-align: center;
+               text-align: left;
             }
             th,
             td {
                 font-size: 12px !important;
                 color: $gray-light !important;
+                padding: 1px 15px !important;
                 outline: 0;
                 &.transpTiling {
                     padding-top: 5px !important;
