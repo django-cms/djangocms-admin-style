@@ -43,11 +43,11 @@
     .select2-container,
     .sortedm2m-container,
     form .cke {
-        width: 95% !important;
+        width: 100% !important;
         max-width: inherit !important;
         box-sizing: border-box;
         & + .add-another {
-            margin-left: 10px;
+            margin-top: 10px;
         }
     }
     .select2-search input {
@@ -56,13 +56,20 @@
     #container {
         min-width: inherit !important;
     }
-    #content {
-        margin-top: 20px !important;
+    #content,
+    &.filebrowser #content {
+        margin: 20px 2% 0 !important;
     }
     .form-row .field-box {
         float: left;
         margin-right: 20px !important;
         padding-bottom: 30px;
+    }
+    .filerFile {
+        img {
+            width: 45px;
+            height: 45px;
+        }
     }
     .bootstrap3-column {
         .form-row {
@@ -95,7 +102,7 @@
         }
     }
     .well-wrapper {
-        width: 95%;
+        width: 100%;
         .well {
             width: 100%;
         }
