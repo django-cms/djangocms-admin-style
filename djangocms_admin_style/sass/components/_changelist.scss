@@ -126,7 +126,7 @@
             }
         }
         #changelist-filter {
-            top: 30px;
+            top: 15px;
             width: 200px !important;
             min-height: 100%;
             padding-left: 18px;
@@ -279,6 +279,9 @@
             background-repeat: no-repeat !important;
             background-position: 10px center !important;
             background-size: 23px !important;
+            &:active {
+                background-image: url('../img/icon_search_white@2x.png') !important;
+            }
         }
         label {
             display: none !important;
@@ -286,6 +289,20 @@
             img {
                 visibility: hidden;
             }
+        }
+    }
+    #changelist-filter-button {
+        color: $gray-light;
+        text-transform: uppercase;
+        font-size: 14px;
+        width: 175px;
+        margin-bottom: 5px;
+        padding-left: 25px;
+        background: url('../img/icon_arrow_down.png') no-repeat left center;
+        background-size: 25px;
+        border-left: 0;
+        + #changelist-filter {
+            top: 30px;
         }
     }
 }
@@ -342,17 +359,6 @@
     }
 }
 
-#changelist-filter-button {
-    color: $gray-light;
-    text-transform: uppercase;
-    font-size: 14px;
-    width: 175px;
-    margin-bottom: 5px;
-    padding-left: 25px;
-    background: url('../img/icon_arrow_down.png') no-repeat left center;
-    background-size: 25px;
-    border-left: 0;
-}
 .lang-code {
     font-size: 13px !important;
     font-weight: bold;

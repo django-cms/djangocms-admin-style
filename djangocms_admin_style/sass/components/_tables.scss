@@ -112,6 +112,10 @@ table {
     tbody {
         td {
             vertical-align: baseline !important;
+            &.field-_reorder,
+            &.drag-handler {
+                vertical-align: middle !important;
+            }
         }
         th,
         td {
