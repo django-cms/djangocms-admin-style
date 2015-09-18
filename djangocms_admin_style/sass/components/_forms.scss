@@ -75,9 +75,10 @@ form {
         }
         .field-box {
             float: none;
+            margin-top: 20px;
             margin-right: 0 !important;
             &:first-child {
-                padding-bottom: 30px;
+                margin-top: 0;
             }
         }
     }
@@ -235,11 +236,14 @@ form {
         }
     }
     .form-row {
-        padding: 8px 2px 30px;
+        padding: 8px 2px 15px;
         border-bottom-color: $gray-lighter;
         &.errors {
             border: 0;
             background: none;
+        }
+        &.field-type {
+            padding-bottom: 0;
         }
     }
     .form-row:last-child {

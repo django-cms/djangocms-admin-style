@@ -112,6 +112,10 @@ table {
     tbody {
         td {
             vertical-align: baseline !important;
+            &.field-_reorder,
+            &.drag-handler {
+                vertical-align: middle !important;
+            }
         }
         th,
         td {
@@ -132,7 +136,7 @@ table {
             & + .add-another {
                 height: 45px;
                 width: 45px;
-                margin: -2px 0 -2px 10px;
+                margin: -2px 0 -2px 10px !important;
                 vertical-align: middle;
                 background-position: center;
                 border-radius: $border-radius-normal;
