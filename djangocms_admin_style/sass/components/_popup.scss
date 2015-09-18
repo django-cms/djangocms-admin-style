@@ -38,6 +38,7 @@
     }
     input[type=text],
     input[type=password],
+    .vURLField,
     textarea,
     select,
     .select2-container,
@@ -60,10 +61,22 @@
     &.filebrowser #content {
         margin: 20px 2% 0 !important;
     }
-    .form-row .field-box {
-        float: left;
-        margin-right: 20px !important;
-        padding-bottom: 30px;
+    .form-row {
+        &.field-enable_registration,
+        &.field-registration_deadline_at,
+        &.field-is_published,
+        &.field-publish_at {
+             .field-box {
+                float: none;
+                margin-right: 0 !important;
+                margin-top: 20px;
+            }
+        }
+        .field-box {
+            float: left;
+            margin-right: 20px !important;
+            margin-top: 0;
+        }
     }
     .filerFile {
         img {
@@ -115,6 +128,19 @@
         .field-user,
         .field-group {
             min-width: 215px;
+        }
+    }
+    .selector {
+        width: 100%;
+        .selector-available,
+        .selector-chosen {
+            width: 43.5% !important;
+        }
+        ul.selector-chooser {
+            width: 5% !important;
+            a {
+                margin-right: 0;
+            }
         }
     }
 }
