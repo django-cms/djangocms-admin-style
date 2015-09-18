@@ -110,6 +110,9 @@ table {
         padding: 0 15px !important;
     }
     tbody {
+        td {
+            vertical-align: baseline !important;
+        }
         th,
         td {
             color: $gray-darkest;
@@ -154,7 +157,8 @@ table {
             color: $color-primary-light;
             background: $color-primary !important;
             a,
-            td {
+            td,
+            span {
                 color: $color-primary-light !important;
             }
             .drag {

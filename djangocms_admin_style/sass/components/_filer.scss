@@ -78,6 +78,13 @@
             }
         }
         tbody {
+            tr.selected {
+                span,
+                td,
+                button span:before {
+                    color: $color-primary-light !important;
+                }
+            }
             td:first-child {
                text-align: left;
                 padding-left: 15px !important;
@@ -135,6 +142,7 @@
     .clipboard {
         float: right !important;
         border-radius: $border-radius-base;
+        border: 0 !important;
         box-shadow: $base-box-shadow;
         table {
             padding: 0;
@@ -163,6 +171,7 @@
             font-size: 18px;
             font-weight: bold;
             text-transform: none;
+            padding: 5px 10px !important;
         }
         tfoot td {
             padding: 10px 10px 0;
@@ -223,6 +232,10 @@
         }
     }
     #toolbartable {
+        td,
+        th {
+            border-right: 0;
+        }
         button {
             padding: 0 !important;
             border: 0 !important;
@@ -248,6 +261,7 @@
     #toolbartable + .paginator {
         position: absolute;
         clip: rect(0, 99999px, 99999px, -2px);
+        border-right: 0;
     }
 }
 
