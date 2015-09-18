@@ -254,60 +254,59 @@
 .field-image {
   width: 80%;
 }
-#id_image_thumbnail_img {
-    margin-right: 10px;
-    &[src*="nofile"] {
-        margin-right: 0;
+.filerFile {
+    img {
+        width: 43px;
+        height: 43px;
+        margin-right: 10px;
+        &[src*="nofile"] {
+            margin-right: 0;
+            border: solid 1px $gray-lighter;
+            border-radius: $border-radius-base;
+        }
+    }
+    img,
+    .related-lookup {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center !important;
+    }
+    span {
+        display: inline-block;
+        color: $gray;
+        font-weight: normal;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        &:empty + .related-lookup {
+            float: none;
+            margin-left: 0 !important;
+        }
+    }
+
+    .related-lookup,
+    .filerClearer {
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+        float: right;
+        margin: 0 0 0 5px !important;
+        &:before {
+            color: $gray-light !important;
+            margin: 0;
+            vertical-align: middle;
+        }
+    }
+    .filerClearer {
+        width: 13px;
+        height: 13px;
+        padding: 15px !important;
         border: solid 1px $gray-lighter;
         border-radius: $border-radius-base;
+        cursor: pointer;
     }
-}
-#id_image_thumbnail_img, {
-    width: 43px;
-    height: 43px;
-}
-#id_image_thumbnail_img,
-.related-lookup {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-}
-
-.filerClearer {
-    width: 13px;
-    height: 13px;
-    padding: 15px;
-    border: solid 1px $gray-lighter;
-    border-radius: $border-radius-base;
-    cursor: pointer;
-}
-
-.related-lookup,
-.filerClearer {
-    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
-    float: right;
-    padding: 0 !important;
-    margin: 0 0 0 5px !important;
-    &:before {
-        color: $gray-light !important;
-        margin: 0;
-        vertical-align: middle;
-    }
-    img {
-        display: none;
-    }
-}
-.related-lookup {
-    padding: 10px !important;
-}
-#id_image_description_txt {
-    display: inline-block;
-    color: $gray;
-    font-weight: normal;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    &:empty + .related-lookup {
-        float: none;
-        margin-left: 0 !important;
+    .related-lookup {
+        display: inline-block !important;
+        padding: 10px !important;
+        img {
+            display: none;
+        }
     }
 }
