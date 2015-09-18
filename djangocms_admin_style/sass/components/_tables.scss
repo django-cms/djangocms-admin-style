@@ -154,7 +154,8 @@ table {
             color: $color-primary-light;
             background: $color-primary !important;
             a,
-            td {
+            td,
+            span {
                 color: $color-primary-light !important;
             }
             .drag {
