@@ -53,8 +53,18 @@ form {
                 margin-bottom: 10px;
             }
             .related-lookup {
-               float: none !important;
-                margin-right: 10px !important;
+                float: none !important;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+                padding: 9px !important;
+                margin: 2px 10px !important;
+                &:before {
+                    margin: 0 !important;
+                }
+                img {
+                    display: none;
+                }
             }
         }
         &.field-thumbnail {

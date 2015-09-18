@@ -8,8 +8,12 @@
 .related-lookup,
 .backtoroot,
 .movetolink span,
-.file-upload a {
+.file-upload a,
+a.insertlinkButton {
     background-image: none;
+    &:hover {
+      background-image: none;
+    }
     &:before {
         @extend %icon;
         font-size: 21px;
@@ -56,6 +60,10 @@
 }
 .pastelink {
     @include icon(clipboard);
+}
+.insertlinkButton {
+    @include icon(arrow-left);
+    padding: 0 !important;
 }
 
 .related-lookup {
