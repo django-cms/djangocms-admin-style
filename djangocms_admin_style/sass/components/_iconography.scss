@@ -27,47 +27,50 @@
 @function icon-char($filename) {
     $char: "";
 
-    @if $filename == arrow-right {
+    @if $filename == arrow-left {
         $char: "E001";
     }
-    @if $filename == camera {
+    @if $filename == arrow-right {
         $char: "E002";
     }
-    @if $filename == chevron-left {
+    @if $filename == camera {
         $char: "E003";
     }
-    @if $filename == clipboard {
+    @if $filename == chevron-left {
         $char: "E004";
     }
-    @if $filename == folder {
+    @if $filename == clipboard {
         $char: "E005";
     }
-    @if $filename == logo {
+    @if $filename == folder {
         $char: "E006";
     }
-    @if $filename == pencil {
+    @if $filename == logo {
         $char: "E007";
     }
-    @if $filename == picture {
+    @if $filename == pencil {
         $char: "E008";
     }
-    @if $filename == plus {
+    @if $filename == picture {
         $char: "E009";
     }
-    @if $filename == remove {
+    @if $filename == plus {
         $char: "E00A";
     }
-    @if $filename == scissors {
+    @if $filename == remove {
         $char: "E00B";
     }
-    @if $filename == search {
+    @if $filename == scissors {
         $char: "E00C";
     }
-    @if $filename == trash {
+    @if $filename == search {
         $char: "E00D";
     }
-    @if $filename == upload {
+    @if $filename == trash {
         $char: "E00E";
+    }
+    @if $filename == upload {
+        $char: "E00F";
     }
 
     @return $char;
@@ -86,6 +89,10 @@
 // #ICONS:start#
 // use unicode characters for accessibility reasons and use aria-hidden="true" for decorative icons
 // DOCS: http://filamentgroup.com/lab/bulletproof_icon_fonts.html
+
+.cms-icon-arrow-left {
+    @include icon(arrow-left);
+}
 
 .cms-icon-arrow-right {
     @include icon(arrow-right);
