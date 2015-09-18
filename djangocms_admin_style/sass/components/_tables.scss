@@ -110,6 +110,9 @@ table {
         padding: 0 15px !important;
     }
     tbody {
+        td {
+            vertical-align: baseline !important;
+        }
         th,
         td {
             color: $gray-darkest;
