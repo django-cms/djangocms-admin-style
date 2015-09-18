@@ -47,7 +47,7 @@
         max-width: inherit !important;
         box-sizing: border-box;
         & + .add-another {
-            margin-left: 10px;
+            margin-top: 10px;
         }
     }
     .select2-search input {
@@ -102,7 +102,7 @@
         }
     }
     .well-wrapper {
-        width: 95%;
+        width: 100%;
         .well {
             width: 100%;
         }
