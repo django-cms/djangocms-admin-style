@@ -118,3 +118,8 @@
         }
     }
 }
+.cms-admin-sideframe {
+    #content {
+        margin-top: $toolbar-height + $content-margin !important;
+    }
+}
