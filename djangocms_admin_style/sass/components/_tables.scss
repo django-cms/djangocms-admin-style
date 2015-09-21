@@ -1,6 +1,7 @@
 .dashboard,
 .change-list,
-.tabular {
+.tabular,
+.results {
     table {
         background: red;
         width: 100% !important;
@@ -32,6 +33,10 @@
                 font-weight: normal;
                 padding: 0;
                 margin: 0;
+                &.lang-code {
+                    font-size: 13px !important;
+                }
+
             }
             p {
                 position: static;
@@ -176,6 +181,7 @@
                 }
                 .lang-code {
                     color: $color-primary !important;
+                    font-size: 13px !important;
                     background-color: $white;
                 }
             }
