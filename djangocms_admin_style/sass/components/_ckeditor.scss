@@ -1,0 +1,17 @@
+
+.cke_dialog_contents {
+    margin-top: 30px !important;
+    td {
+        padding: 0 !important;
+        border: 0;
+    }
+    table {
+        box-shadow: none;
+        border: 0;
+        tbody th,
+        tbody td {
+            padding: 0 !important;
+            border: 0 !important;
+        }
+    }
+}
