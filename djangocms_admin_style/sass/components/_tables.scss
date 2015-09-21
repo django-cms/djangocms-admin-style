@@ -135,8 +135,10 @@
             > select {
                 float: left;
                 width: auto !important;
-                margin: -2px 0;
+                max-width: 160px !important;
                 height: 45px;
+                margin: -2px 0;
+                padding-right: 30px;
                 & + .add-another {
                     height: 45px;
                     width: 45px;
@@ -204,6 +206,9 @@
             border: none;
         }
     }
+}
+.tabular table tbody td {
+    vertical-align: middle !important;
 }
 .results table tbody tr:hover {
     background: $color-primary-light;
