@@ -361,12 +361,12 @@
 
 .lang-code {
     font-size: 13px !important;
-    font-weight: bold;
+    font-weight: bold !important;
     text-transform: uppercase;
-    padding: 2px 8px;
-    margin-right: 10px;
+    padding: 2px 8px !important;
+    margin-right: 10px !important;
     border: solid 1px $color-primary;
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 .collapse {
     display: none;
