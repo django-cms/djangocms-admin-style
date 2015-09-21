@@ -95,10 +95,9 @@ form {
     input,
     select,
     textarea {
-        font-size: 13px;
+        font-size: 12px;
         width: 80% !important;
         max-width: none !important;
-        margin: 2px 0;
     }
     select::-ms-expand {
         display: none;
@@ -116,7 +115,7 @@ form {
             margin-left: 0;
         }
         p.help {
-            font-size: 14px !important;
+            font-size: 12px !important;
             color: $gray;
             margin-top: 10px;
             padding-left: 0;
@@ -130,8 +129,9 @@ form {
         display: inline-block !important;
         vertical-align: middle;
         color: $gray-darker !important;
-        font-size: 18px !important;
+        font-size: 16px !important;
         text-transform: none;
+        margin-bottom: 2px;
     }
     .sortedm2m a {
         vertical-align: middle;
@@ -189,7 +189,7 @@ form {
     input,
     textarea {
         color: $gray-darkest;
-        font-size: 18px;
+        font-size: 12px;
         padding: 10px;
         border: 1px solid $gray-lighter !important;
         box-sizing: border-box;
@@ -214,10 +214,10 @@ form {
     }
     select {
         appearance: none;
-        font-size: 18px;
+        font-size: 12px;
         font-weight: normal;
         min-width: 160px;
-        padding: 10px 10px 10px 20px;
+        padding: 10px;
         background: $white url('../img/icon_arrow_down.png') no-repeat right center;
         background-size: 25px;
         border: 1px solid $gray-lighter;
@@ -446,6 +446,8 @@ div.calendarbox {
     table {
         td {
             height: auto !important;
+            padding: 0 !important;
+
         }
         th {
             border-bottom: 0;
@@ -454,7 +456,6 @@ div.calendarbox {
         td {
             font-size: 14px;
             line-height: 18px;
-            padding: 0 !important;
             border-color: $gray-lighter;
         }
     }

@@ -121,7 +121,7 @@
         .btn {
             display: block;
             font-size: $toolbar-button-font-size !important;
-            line-height: $toolbar-button-height;
+            line-height: $toolbar-button-height !important;
             height: $toolbar-button-height;
             padding: 0 25px 0 12px !important;
             &:before {
@@ -163,11 +163,12 @@
                 color: $color-primary;
             }
             &:before {
-                box-sizing: border-box;
+                font-size: 21px;
                 vertical-align: inherit;
                 line-height: 46px;
                 height: 46px;
                 margin-right: 0;
+                box-sizing: border-box;
             }
         }
     }

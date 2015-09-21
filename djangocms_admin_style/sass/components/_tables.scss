@@ -16,7 +16,7 @@
         th,
         td {
             font-family: $base-font-family;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: normal;
             text-align: left;
             vertical-align: middle;
@@ -28,8 +28,8 @@
             }
             p,
             a {
-                font-size: 16px !important;
-                line-height: 21px;
+                font-size: 14px !important;
+                line-height: 14px;
                 font-weight: normal;
                 padding: 0;
                 margin: 0;
@@ -129,7 +129,7 @@
             th,
             td {
                 color: $gray-darkest;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 21px !important;
                 text-transform: none;
                 vertical-align: middle;
