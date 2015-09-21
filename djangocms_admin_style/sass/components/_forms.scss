@@ -82,6 +82,15 @@ form {
             }
         }
     }
+    .dynamic-taggit_taggeditem_items {
+        width: 80% !important;
+        button,
+        input,
+        select,
+        textarea {
+            width: 100% !important;
+        }
+    }
     button,
     input,
     select,
