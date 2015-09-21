@@ -1,4 +1,4 @@
-table {
+table:not(.app-djangocms_text_ckeditor .cke_dialog) {
     width: 100% !important;
     margin: 0!important;
     padding: 5px;
