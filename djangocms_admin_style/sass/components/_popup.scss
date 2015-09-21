@@ -62,6 +62,9 @@
     &.filebrowser #content {
         margin: 20px 2% 0 !important;
     }
+    #content .submit-row {
+        margin: 20px -2% 0 !important;
+    }
     .form-row {
         &.field-enable_registration,
         &.field-registration_deadline_at,
