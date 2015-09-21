@@ -45,7 +45,7 @@ h1 {
     color: $gray-darkest;
     font-size: 16px;
     font-weight: bold;
-    margin: 0 10px 40px;
+    margin: 0 10px 25px;
 }
 h2 {
     color: $gray-darkest;
@@ -94,14 +94,14 @@ ol {
 p,
 .description,
 .timezonewarning {
-    font-size: 14px !important;
+    font-size: 12px !important;
     color: $gray !important;
     font-weight: normal;
     margin-bottom: 10px;
     padding-left: 0;
 }
 .datetimeshortcuts {
-    font-size: 14px !important;
+    font-size: 12px !important;
 }
 
 code {

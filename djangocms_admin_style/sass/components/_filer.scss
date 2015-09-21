@@ -270,8 +270,8 @@
 }
 .filerFile {
     img {
-        width: 43px;
-        height: 43px;
+        width: 36px;
+        height: 36px;
         margin-right: 10px;
         &[src*="nofile"] {
             margin-right: 0;
@@ -289,8 +289,8 @@
         display: inline-block;
         color: $gray;
         font-weight: normal;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 6px;
+        margin-bottom: 6px;
         &:empty + .related-lookup {
             float: none;
             margin-left: 0 !important;
@@ -309,16 +309,16 @@
         }
     }
     .filerClearer {
-        width: 13px;
-        height: 13px;
-        padding: 15px !important;
+        width: 10px;
+        height: 10px;
+        padding: 13px !important;
         border: solid 1px $gray-lighter;
         border-radius: $border-radius-base;
         cursor: pointer;
     }
     .related-lookup {
         display: inline-block !important;
-        padding: 10px !important;
+        padding: 9px !important;
         img {
             display: none;
         }
