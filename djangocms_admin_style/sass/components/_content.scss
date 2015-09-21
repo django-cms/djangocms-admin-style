@@ -64,7 +64,7 @@ body {
 // module
 .module {
     @include box();
-    margin-bottom: 20px;
+    margin-bottom: 0;
     background: none !important;
     &.collapse {
         display: block;
