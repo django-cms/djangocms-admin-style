@@ -122,6 +122,12 @@ form {
             margin-left: 0;
             clear: both;
         }
+        label {
+            padding: 0 !important;
+        }
+        label + label {
+            margin-left: 10px;
+        }
     }
     .vCheckboxLabel,
     .field-type label,
@@ -190,6 +196,7 @@ form {
     textarea {
         color: $gray-darkest;
         font-size: 12px;
+        line-height: 12px;
         padding: 10px;
         border: 1px solid $gray-lighter !important;
         box-sizing: border-box;
@@ -222,6 +229,9 @@ form {
         background-size: 25px;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
+    }
+    select + select {
+        margin-top: 10px !important;
     }
     small {
         margin-left: 15px;

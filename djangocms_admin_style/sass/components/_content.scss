@@ -134,6 +134,7 @@ body {
         background: none !important;
         box-shadow: none;
         h2 {
+            font-size: 16px !important;
             margin-bottom: 10px;
             padding-top: 0;
             padding-bottom: 0;
@@ -474,7 +475,7 @@ body.login {
                 }
             }
             h2 {
-                font-size: 16px;
+                font-size: 16px !important;
                 line-height: 16px;
                 color: $gray-darkest;
                 font-weight: bold;
