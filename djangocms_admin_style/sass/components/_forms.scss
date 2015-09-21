@@ -420,7 +420,7 @@ div.calendar {
         width: 220px !important;
         caption {
             color: $gray !important;
-            padding: 5px 30px;
+            padding: 10px 30px;
             margin: 0;
             background-color: $white;
             background-image: none;
@@ -473,7 +473,7 @@ div.calendarbox {
     .calendarnav-next {
         color: $gray;
         text-decoration: none;
-        padding: 4px 7px 6px;
+        padding: 6px 7px;
         background: none;
         &:hover,
         &:focus {

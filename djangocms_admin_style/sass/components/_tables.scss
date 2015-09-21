@@ -213,8 +213,13 @@
         }
     }
 }
-.tabular table tbody td {
-    vertical-align: middle !important;
+.tabular table {
+    tr.add-row td {
+       padding: 4px 5px 3px !important;
+    }
+    tbody td {
+        vertical-align: middle !important;
+    }
 }
 .results table tbody tr:hover {
     background: $color-primary-light;

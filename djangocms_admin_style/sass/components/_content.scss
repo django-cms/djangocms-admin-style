@@ -72,7 +72,7 @@ body {
     }
     h2 {
         color: $gray-darkest;
-        font-size: 100%;
+        font-size: 16px !important;
         font-weight: normal;
         margin-top: 0;
         margin-bottom: 15px;
@@ -137,7 +137,6 @@ body {
             font-size: 16px !important;
             margin-bottom: 10px;
             padding-top: 0;
-            padding-bottom: 0;
         }
         .add-row a {
             color: $gray-light;
