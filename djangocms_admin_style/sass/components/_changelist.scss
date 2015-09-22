@@ -39,7 +39,7 @@
         box-shadow: none !important;
     }
     .paginator {
-        font-size: 12px;
+        font-size: $font-size-small;
         color: $gray-light !important;
         min-height: 20px;
         padding: 5px 15px !important;
@@ -123,7 +123,7 @@
             }
             form #searchbar {
                 max-width: 310px !important;
-                font-size: 12px;
+                font-size: $font-size-small;
                 padding: 10px 5px !important;
                 vertical-align: middle;
             }
@@ -145,7 +145,7 @@
                 border-bottom: solid 1px $gray-lighter;
             }
             h2 {
-                font-size: 14px;
+                font-size: $font-size-normal;
                 color: $gray;
                 font-weight: normal;
                 text-transform: uppercase;
@@ -153,16 +153,16 @@
                 background: none;
             }
             h3 {
-                font-size: 14px;
+                font-size: $font-size-normal;
                 margin: 17px 0 10px !important;
             }
             ul {
-                font-size: 12px;
+                font-size: $font-size-small;
                 margin-left: 0 !important;
                 margin-bottom: 10px;
             }
             li {
-                font-size: 14px;
+                font-size: $font-size-normal;
                 margin-bottom: 19px;
                 &.selected {
                     font-weight: bold;
@@ -202,7 +202,7 @@
             }
             .action-counter {
                 display: inline !important;
-                font-size: 12px;
+                font-size: $font-size-small;
                 margin: 5px 0 0;
             }
         }
@@ -218,7 +218,7 @@
                 display: inline;
                 float: left;
                 color: $gray-darkest;
-                font-size: 14px;
+                font-size: $font-size-normal;
                 font-weight: normal;
                 text-transform: uppercase;
                 margin-left: 25px;
@@ -230,7 +230,7 @@
             a {
                 position: relative;
                 display: block;
-                font-size: 14px;
+                font-size: $font-size-normal;
                 color: $color-primary;
                 font-weight: normal;
                 text-transform: uppercase;
@@ -259,7 +259,7 @@
             margin-top: 2px;
             + label {
                 display: inline-block !important;
-                font-size: 12px !important;
+                font-size: $font-size-small !important;
                 color: $gray-light !important;
                 text-transform: none;
             }
@@ -295,7 +295,7 @@
     #changelist-filter-button {
         color: $gray-light;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: $font-size-normal;
         width: 175px;
         margin-bottom: 5px;
         padding-left: 25px;
@@ -323,7 +323,7 @@
     }
     thead {
         th {
-            font-size: 14px;
+            font-size: $font-size-normal;
             text-transform: uppercase;
             border-color: $gray-lighter;
             background-color: $white;
@@ -351,7 +351,7 @@
         box-shadow: none;
         background-color: transparent;
         .this-page {
-            font-size: 14px;
+            font-size: $font-size-small;
             color: $gray-light;
             font-weight: normal;
             padding: 0;

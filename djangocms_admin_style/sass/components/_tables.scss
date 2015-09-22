@@ -14,7 +14,7 @@
     th,
     td {
         font-family: $base-font-family;
-        font-size: 14px;
+        font-size: $font-size-normal;
         font-weight: normal;
         text-align: left;
         vertical-align: middle;
@@ -26,8 +26,8 @@
         }
         p,
         a {
-            font-size: 14px !important;
-            line-height: 14px;
+            font-size: $font-size-normal !important;
+            line-height: $font-size-normal;
             font-weight: normal;
             padding: 0;
             margin: 0;
@@ -51,7 +51,7 @@
     }
     thead {
         th {
-            font-size: 14px;
+            font-size: $font-size-normal;
             line-height: inherit !important;
             font-weight: normal;
             text-transform: uppercase;
@@ -69,7 +69,7 @@
         }
         a,
         span {
-            font-size: 14px !important;
+            font-size: $font-size-normal !important;
             color: $gray !important;
             font-weight: normal;
             padding-left: 0 !important;
@@ -128,8 +128,8 @@
         th,
         td {
             color: $gray-darkest;
-            font-size: 14px;
-            line-height: 21px !important;
+            font-size: $font-size-normal;
+            line-height: $line-height-normal !important;
             text-transform: none;
             vertical-align: middle;
             padding: 10px 15px !important;

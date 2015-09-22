@@ -43,7 +43,7 @@ textarea {
 
 h1 {
     color: $gray-darkest;
-    font-size: 16px;
+    font-size: $font-size-large;
     font-weight: bold;
     margin: 0 10px 25px;
 }
@@ -94,14 +94,14 @@ ol {
 p,
 .description,
 .timezonewarning {
-    font-size: 12px !important;
+    font-size: $font-size-small !important;
     color: $gray !important;
     font-weight: normal;
     margin-bottom: 10px;
     padding-left: 0;
 }
 .datetimeshortcuts {
-    font-size: 12px !important;
+    font-size: $font-size-small !important;
 }
 
 code {
@@ -135,7 +135,7 @@ strong {
 }
 .small,
 small {
-    font-size: 12px;
+    font-size: $font-size-small;
     margin-top: 0;
 }
 
@@ -154,8 +154,8 @@ small {
     display: inline-block;
     font-weight: normal;
     color: $color-danger !important;
-    font-size: 14px !important;
-    line-height: 21px;
+    font-size: $font-size-normal !important;
+    line-height: $line-height-normal;
     width: 810px;
     margin-bottom: 20px;
     padding: 10px;
@@ -169,7 +169,7 @@ ul.errorlist {
     margin-bottom: 10px !important;
     background-color: transparent !important;
     li {
-        font-size: 14px !important;
+        font-size: $font-size-normal !important;
         padding: 0 !important;
         margin: 0 !important;
     }

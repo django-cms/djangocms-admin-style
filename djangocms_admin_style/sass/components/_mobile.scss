@@ -256,7 +256,7 @@ form label,
 .aligned label {
     display: block;
     float: none !important;
-    line-height: 14px;
+    line-height: $font-size-normal;
     width: auto;
     margin-top: 5px;
     padding: 0 !important;

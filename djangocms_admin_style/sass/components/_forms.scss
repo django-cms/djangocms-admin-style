@@ -95,7 +95,7 @@ form {
     input,
     select,
     textarea {
-        font-size: 12px;
+        font-size: $font-size-small;
         width: 80% !important;
         max-width: none !important;
     }
@@ -115,7 +115,7 @@ form {
             margin-left: 0;
         }
         p.help {
-            font-size: 12px !important;
+            font-size: $font-size-small !important;
             color: $gray;
             margin-top: 10px;
             padding-left: 0;
@@ -135,7 +135,7 @@ form {
         display: inline-block !important;
         vertical-align: middle;
         color: $gray-darker !important;
-        font-size: 16px !important;
+        font-size: $font-size-large !important;
         text-transform: none;
         margin-bottom: 2px;
     }
@@ -153,7 +153,7 @@ form {
         line-height: 2em;
         vertical-align: middle;
         &.collapse h2 {
-            font-size: 16px;
+            font-size: $font-size-large;
             color: $gray-darkest;
             background-image: none;
         }
@@ -171,8 +171,8 @@ form {
         display: block;
         float: none !important;
         color: $gray !important;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: $font-size-normal;
+        line-height: $line-height-normal;
         text-transform: uppercase;
         font-weight: normal !important;
         word-wrap: break-word;
@@ -195,8 +195,8 @@ form {
     input,
     textarea {
         color: $gray-darkest;
-        font-size: 12px;
-        line-height: 12px;
+        font-size: $font-size-small;
+        line-height: $font-size-small;
         padding: 10px;
         border: 1px solid $gray-lighter !important;
         box-sizing: border-box;
@@ -221,7 +221,7 @@ form {
     }
     select {
         appearance: none;
-        font-size: 12px;
+        font-size: $font-size-small;
         font-weight: normal;
         min-width: 160px;
         padding: 10px;
@@ -346,7 +346,7 @@ form {
     .select2-ajax-error,
     .select2-selection-limit {
         color: $gray;
-        font-size: 14px;
+        font-size: $font-size-normal;
         background-color: transparent !important;
     }
     .select2-highlighted {
@@ -355,7 +355,7 @@ form {
     }
 }
 .select2-match {
-    font-size: 14px !important;
+    font-size: $font-size-normal !important;
 }
 .select2-search {
     padding: 10px !important;
@@ -464,8 +464,8 @@ div.calendarbox {
         }
         th,
         td {
-            font-size: 14px;
-            line-height: 18px;
+            font-size: $font-size-normal;
+            line-height: $line-height-normal;
             border-color: $gray-lighter;
         }
     }
@@ -481,8 +481,8 @@ div.calendarbox {
         }
     }
     .calendar-shortcuts {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: $font-size-normal;
+        line-height: $line-height-normal;
         padding: 15px 0 10px;
         border-color: $gray-lighter !important;
         background: $white;
@@ -498,11 +498,11 @@ div.clockbox {
     box-shadow: $base-box-shadow;
     caption,
     h2 {
-        font-size: 14px;
+        font-size: $font-size-normal;
     }
     .calendar-cancel {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: $font-size-normal;
+        line-height: $line-height-normal;
         margin-top: 5px !important;
         padding: 5px 0 !important;
         background: $white;
@@ -524,8 +524,8 @@ div.clockbox {
         border-top-radius: $border-radius-base;
     }
     .timelist a {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: $font-size-normal;
+        line-height: $line-height-normal;
         padding: 5px 2px;
     }
 }
@@ -546,7 +546,7 @@ span.datetimeshortcuts a {
 .selector {
     .selector-chooseall,
     .selector-clearall {
-        line-height: 14px;
+        line-height: $font-size-normal;
     }
     select {
         overflow: hidden;
@@ -573,5 +573,5 @@ form select[multiple] {
 }
 
 .fa-question-circle:before {
-    font-size: 14px;
+    font-size: $font-size-normal;
 }
