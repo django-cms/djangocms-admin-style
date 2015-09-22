@@ -16,7 +16,7 @@ a.insertlinkButton {
     }
     &:before {
         @extend %icon;
-        font-size: 16px;
+        font-size: $font-size-large;
         vertical-align: middle;
         margin-right: 5px;
     }
@@ -124,7 +124,7 @@ a.insertlinkButton {
     .deletelink {
         display: inline !important;
         &:before {
-            font-size: 14px;
+            font-size: $font-size-normal;
             margin: 0;
         }
     }

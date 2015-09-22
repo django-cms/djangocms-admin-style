@@ -14,7 +14,7 @@ body {
             right: 3%;
             left: 3%;
             color: $gray !important;
-            font-size: 14px;
+            font-size: $font-size-normal;
             margin-top: $toolbar-height + 2;
             padding: $breadcrumb-padding 10px;
             border-top: 0;
@@ -72,7 +72,7 @@ body {
     }
     h2 {
         color: $gray-darkest;
-        font-size: 16px !important;
+        font-size: $font-size-large !important;
         font-weight: normal;
         margin-top: 0;
         margin-bottom: 15px;
@@ -82,9 +82,9 @@ body {
     }
     caption {
         color: $gray;
-        font-size: 14px !important;
+        font-size: $font-size-normal !important;
+        line-height: $font-size-normal;
         font-weight: normal;
-        line-height: 14px;
         text-transform: uppercase;
         margin: 0 0 10px 10px;
         padding: 0;
@@ -117,8 +117,8 @@ body {
 .module caption,
 .inline-group h2 {
     color: $gray-darkest;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: $font-size-normal;
+    line-height: $font-size-normal;
     font-weight: normal;
     padding-left: 0;
     background: none;
@@ -134,7 +134,7 @@ body {
         background: none !important;
         box-shadow: none;
         h2 {
-            font-size: 16px !important;
+            font-size: $font-size-large !important;
             margin-bottom: 10px;
             padding-top: 0;
         }
@@ -168,7 +168,7 @@ body {
             background: none !important;
         }
         a {
-            font-size: 14px !important;
+            font-size: $font-size-normal !important;
             color: $gray-light;
             padding-left: 0 !important;
             background: none !important;
@@ -188,7 +188,7 @@ body {
         border-bottom: none;
         background: none;
         b, span {
-            font-size: 14px;
+            font-size: $font-size-normal;
             font-weight: normal;
         }
     }
@@ -260,8 +260,8 @@ body {
         h2 {
             color: $gray !important;
             font-weight: normal;
-            font-size: 14px;
-            line-height: 18px;
+            font-size: $font-size-normal;
+            line-height: $line-height-normal;
             text-transform: uppercase;
             margin-bottom: 5px;
             border: none;
@@ -291,7 +291,7 @@ body {
         border: 1px solid $gray-lighter !important;
     }
     a {
-        font-size: 14px;
+        font-size: $font-size-normal;
         &:hover {
             color: $color-primary-dark !important;
         }
@@ -323,7 +323,7 @@ body.login {
                 display: block;
                 float: none;
                 color: $gray-darkest;
-                font-size: 16px;
+                font-size: $font-size-large;
                 margin: 20px 40px 30px !important;
             }
         }
@@ -349,12 +349,12 @@ body.login {
                     label {
                         float: left !important;
                         color: $gray !important;
-                        font-size: 14px;
-                        line-height: 18px;
+                        font-size: $font-size-normal;
+                        line-height: $line-height-normal;
                     }
                     input {
                         color: $gray-darkest !important;
-                        font-size: 12px;
+                        font-size: $font-size-small;
                         width: 100% !important;
                         padding: 10px;
                     }
@@ -400,15 +400,15 @@ body.login {
         table th,
         table td {
             vertical-align: baseline;
-            line-height: 14px !important;
+            line-height: $font-size-normal !important;
             width: auto;
             padding: 13px 10px !important;
             border-color: $gray-lighter;
             a {
-                font-size: 14px;
+                font-size: $font-size-normal;
+                line-height: $font-size-normal;
                 color: $gray-darkest;
                 font-weight: normal;
-                line-height: 14px;
                 padding: 0 10px 0 0;
                 &.addlink {
                     color: $color-success;
@@ -448,8 +448,8 @@ body.login {
                 padding: 0;
                 li {
                     position: relative;
-                    font-size: 14px;
-                    line-height: 14px;
+                    font-size: $font-size-normal;
+                    line-height: $font-size-normal;
                     padding: 7px 15px 7px 45px;
                     border-bottom: solid 1px $gray-lighter;
                     a {
@@ -459,7 +459,7 @@ body.login {
                         position: absolute;
                         left: 15px;
                         top: 50%;
-                        font-size: 14px;
+                        font-size: $font-size-normal;
                         margin-top: -9px;
                     }
                     .mini {
@@ -467,15 +467,15 @@ body.login {
                     }
                 }
                 .changelink a {
-                    line-height: 16px;
+                    line-height: $font-size-large;
                 }
                 .mini {
                     color: $gray !important;
                 }
             }
             h2 {
-                font-size: 16px !important;
-                line-height: 16px;
+                font-size: $font-size-large !important;
+                line-height: $font-size-large;
                 color: $gray-darkest;
                 font-weight: bold;
                 padding: 0 0 25px;
@@ -484,10 +484,10 @@ body.login {
                 border-bottom: 0;
             }
             h3 {
-                font-size: 14px !important;
+                font-size: $font-size-normal !important;
+                line-height: $font-size-normal;
                 color: $gray;
                 font-weight: normal;
-                line-height: 14px;
                 text-transform: uppercase;
                 margin: 0;
                 padding: 0 0 11px;
@@ -495,7 +495,7 @@ body.login {
             }
             p {
                 color: $gray;
-                font-size: 14px;
+                font-size: $font-size-normal;
                 padding: 0;
                 margin-top: 10px;
             }
@@ -602,7 +602,7 @@ a.addlink {
         border-bottom: solid 1px $gray-lighter;
     }
     li {
-        font-size: 16px;
+        font-size: $font-size-large;
         list-style-type: none;
         padding: 10px 0;
         border-top: solid 1px $gray-lighter;
@@ -626,7 +626,7 @@ a.addlink {
 .tree {
     .col1 .changelink {
         float: left;
-        line-height: 16px !important;
+        line-height: $font-size-large !important;
         margin: 6px 0 0 15px !important;
     }
 }
@@ -640,7 +640,7 @@ a.addlink {
     color: $gray-darkest !important;
     font-weight: normal !important;
     text-transform: uppercase;
-    font-size: 14px !important;
+    font-size: $font-size-normal !important;
     margin: 0;
     padding: 10px 20px !important;
     border: none !important;

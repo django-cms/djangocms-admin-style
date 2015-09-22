@@ -8,12 +8,12 @@
     }
     h1.folder_header {
         float: left;
-        font-size: 16px;
+        font-size: $font-size-large;
         margin: 0;
         background: none;
         .changelink {
             @include icon(pencil);
-            font-size: 16px;
+            font-size: $font-size-large;
             line-height: 30px;
             font-weight: normal;
         }
@@ -51,7 +51,7 @@
         }
     }
     .module table td {
-        line-height: 16px;
+        line-height: $font-size-large;
     }
     #changelist {
         margin-bottom: 0;
@@ -91,7 +91,7 @@
             }
             th,
             td {
-                font-size: 12px !important;
+                font-size: $font-size-small !important;
                 color: $gray-light !important;
                 outline: 0;
                 padding: 1px 10px !important;
@@ -112,11 +112,11 @@
                     }
                 }
                 .tiny {
-                    font-size: 12px !important;
+                    font-size: $font-size-small !important;
                     color: $gray-light !important;
                 }
                 a {
-                    font-size: 14px !important;
+                    font-size: $font-size-normal !important;
                     &.changelink,
                     &.deletelink {
                         display: inline-block;
@@ -157,7 +157,7 @@
         .clipboardItem {
             .label {
                 color: $color-primary;
-                font-size: 16px !important;
+                font-size: $font-size-large !important;
                 padding: 0 0 0 10px !important;
             }
             .thumbnail {
@@ -169,7 +169,7 @@
             }
         }
         thead th {
-            font-size: 16px;
+            font-size: $font-size-large;
             font-weight: bold;
             text-transform: none;
             padding: 5px 10px !important;

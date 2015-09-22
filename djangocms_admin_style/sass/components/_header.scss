@@ -17,7 +17,7 @@
         h1 {
             display: none;
             float: left;
-            font-size: 14px;
+            font-size: $font-size-normal;
             line-height: $toolbar-height;
             color: $gray-darkest;
             font-weight: bold;
@@ -85,7 +85,7 @@
             a {
                 float: left;
                 color: $black;
-                font-size: 14px;
+                font-size: $font-size-normal;
                 line-height: $toolbar-height;
                 list-style-type: none;
                 height: $toolbar-height;
@@ -107,7 +107,7 @@
                         cursor: pointer;
                         span {
                             font-weight: bold;
-                            font-size: 14px;
+                            font-size: $font-size-normal;
                         }
                     }
                 }
