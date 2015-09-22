@@ -83,12 +83,17 @@
                 th,
                 td {
                     white-space: nowrap;
-                    padding: 1px 10px;
                     a,
                     a:link,
                     a:visited,
                     a:link:visited {
                         color: $color-primary;
+                    }
+                }
+                .noItemsRow {
+                    th,
+                    td {
+                       padding: 12px 0 12px 15px !important;
                     }
                 }
                 .drag {
@@ -254,7 +259,7 @@
             margin-top: 2px;
             + label {
                 display: inline-block !important;
-                font-size: 14px !important;
+                font-size: 12px !important;
                 color: $gray-light !important;
                 text-transform: none;
             }

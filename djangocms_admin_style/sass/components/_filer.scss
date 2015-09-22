@@ -8,7 +8,7 @@
     }
     h1.folder_header {
         float: left;
-        font-size: 20px;
+        font-size: 16px;
         margin: 0;
         background: none;
         .changelink {
@@ -34,7 +34,7 @@
         }
     }
     #content-top-bar {
-        min-height: 54px;
+        min-height: 47px;
         padding-top: 10px !important;
         border-bottom: solid 1px $gray-lighter;
         .object-tools {
@@ -94,6 +94,7 @@
                 font-size: 12px !important;
                 color: $gray-light !important;
                 outline: 0;
+                padding: 1px 10px !important;
                 &.transpTiling {
                     padding-top: 5px !important;
                     padding-bottom: 5px !important;
@@ -115,7 +116,7 @@
                     color: $gray-light !important;
                 }
                 a {
-                    font-size: 16px !important;
+                    font-size: 14px !important;
                     &.changelink,
                     &.deletelink {
                         display: inline-block;
@@ -168,7 +169,7 @@
             }
         }
         thead th {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
             text-transform: none;
             padding: 5px 10px !important;
@@ -235,6 +236,12 @@
         td,
         th {
             border-right: 0;
+            &:nth-child(1) {
+                width: 20px;
+            }
+            &:nth-child(2) {
+                width: 50px;
+            }
         }
         button {
             padding: 0 !important;
