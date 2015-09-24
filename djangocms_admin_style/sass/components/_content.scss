@@ -202,12 +202,10 @@ body {
     border-radius: $border-radius-base;
     background: none !important;
     box-shadow: none !important;
-    .deletelink-box {
-        line-height: 24px;
-        margin: 0.9em 0;
-    }
     .deletelink {
-        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+        @include icon(trash);
+        padding: 10px 20px !important;
     }
     input[type="submit"] {
         padding: 10px 20px !important;
