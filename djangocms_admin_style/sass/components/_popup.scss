@@ -1,12 +1,6 @@
 .cms-admin-modal {
     .module h2 {
         font-size: $font-size-large !important;
-        padding-bottom: 5px;
-    }
-    &.popup {
-        .module h2 {
-            padding-bottom: 5px;
-        }
     }
 }
 .popup,
@@ -74,7 +68,7 @@
         &.field-publish_at {
              .field-box {
                 float: none;
-                margin-right: 0 !important;
+                margin-left: 0 !important;
                 margin-top: 20px;
             }
         }
@@ -86,8 +80,8 @@
     }
     .filerFile {
         img {
-            width: 36px;
-            height: 36px;
+            width: 38px;
+            height: 38px;
         }
     }
     .bootstrap3-column {

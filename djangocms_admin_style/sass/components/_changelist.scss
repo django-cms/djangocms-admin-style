@@ -129,9 +129,11 @@
             }
         }
         #changelist-filter {
-            top: 15px;
+            position: static;
+            float: right;
             width: 200px !important;
             min-height: 100%;
+            margin-top: 12px;
             padding-left: 18px;
             border-left: 0;
             border-top-right-radius: $border-radius-base;
@@ -141,7 +143,7 @@
             h3 {
                 margin-bottom: 15px !important;
                 padding-left: 0 !important;
-                padding-bottom: 10px;
+                padding-bottom: 10px !important;
                 border-bottom: solid 1px $gray-lighter;
             }
             h2 {
@@ -154,7 +156,8 @@
             }
             h3 {
                 font-size: $font-size-normal;
-                margin: 17px 0 10px !important;
+                margin: 15px 0 10px !important;
+                padding-bottom: 7px !important;
             }
             ul {
                 font-size: $font-size-small;
@@ -273,8 +276,9 @@
         }
         input[type="submit"] {
             @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+            vertical-align: middle;
             text-indent: -9999px;
-            padding: 10px 20px !important;
+            padding: 11px 20px !important;
             margin-left: 10px;
             background-image: url('../img/icon_search_white@2x.png') !important;
             background-repeat: no-repeat !important;
@@ -303,7 +307,9 @@
         background-size: 25px;
         border-left: 0;
         + #changelist-filter {
+            position: absolute;
             top: 30px;
+            margin-top: 0;
         }
     }
 }

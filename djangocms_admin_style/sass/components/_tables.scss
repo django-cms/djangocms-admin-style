@@ -65,6 +65,9 @@
                     display: inline-block;
                     padding: 0 !important;
                 }
+                span {
+                    padding: 0;
+                }
             }
         }
         a,
@@ -220,6 +223,7 @@
         vertical-align: middle !important;
     }
 }
+#result_list tbody tr:hover,
 .results table tbody tr:hover {
     background: $color-primary-light;
 }
