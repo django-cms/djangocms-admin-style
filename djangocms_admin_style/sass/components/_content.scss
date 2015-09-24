@@ -597,21 +597,38 @@ a.addlink {
         margin: 0 0 10px;
     }
     ul {
-        margin-top: 20px;
-        margin-left: 0;
+        margin: 20px 0 0;
         border-bottom: solid 1px $gray-lighter;
-    }
-    li {
-        font-size: $font-size-large;
-        list-style-type: none;
-        padding: 10px 0;
-        border-top: solid 1px $gray-lighter;
+        li {
+            color: $gray-darkest;
+            font-size: $font-size-normal;
+            font-weight: bold;
+            list-style-type: none;
+            padding: 10px 0;
+            border-top: solid 1px $gray-lighter;
+        }
+        ul {
+            margin: 10px 0 -10px;
+            border-bottom: 0;
+            li {
+                font-weight: normal;
+            }
+            ul {
+                margin-left: 20px;
+                li {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
     }
     input[type="submit"] {
-        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
         float: right;
+        line-height: 20px;
     }
     form {
+        padding-right: 0;
         background: none;
         box-shadow: none;
     }
