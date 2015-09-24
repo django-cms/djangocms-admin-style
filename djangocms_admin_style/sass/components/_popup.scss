@@ -146,6 +146,17 @@
             }
         }
     }
+    .delete-confirmation .colM {
+        ul {
+            margin: 20px -2% 0;
+            li {
+                padding: 10px 2%;
+            }
+            ul {
+                margin: 10px -2% -10px;
+            }
+        }
+    }
 }
 .cms-admin-sideframe {
     #content {
