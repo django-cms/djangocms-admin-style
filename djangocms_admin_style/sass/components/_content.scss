@@ -136,10 +136,10 @@ body {
             padding-top: 0;
         }
         .add-row a {
-            color: $gray-light;
+            color: $color-success;
             border-bottom: none;
             &:before {
-                color: $color-primary;
+                color: $color-success;
             }
         }
         .add-row td {
@@ -166,12 +166,39 @@ body {
         }
         a {
             font-size: $font-size-normal !important;
-            color: $gray-light;
+            color: $color-success;
             padding-left: 0 !important;
             background: none !important;
             &:before {
-                color: $color-primary;
+                color: $color-success;
             }
+        }
+    }
+}
+#taggit_taggeditem_items-group {
+    h2 {
+        font-weight: bold;
+        font-size: $font-size-large;
+    }
+    h3 {
+        color: $gray-darkest;
+        margin-top: 20px;
+    }
+    .module {
+        padding: 10px;
+        margin: 5px -10px 0;
+        border-top: solid 1px $gray-lighter !important;
+        border-bottom: solid 1px $gray-lighter !important;
+    }
+    .add-row {
+        margin-top: 10px;
+    }
+    .inline-deletelink {
+        color: $gray-darkest !important;
+        font: 0/0 a;
+        text-indent: inherit;
+        &:before {
+            font-size: $font-size-small;
         }
     }
 }

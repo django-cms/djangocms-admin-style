@@ -2,6 +2,14 @@
     .module h2 {
         font-size: $font-size-large !important;
     }
+    &.dashboard {
+        #content-related {
+            padding-top: 30px !important;
+        }
+        #content {
+            margin-top: 74px !important;
+        }
+    }
 }
 .popup,
 .cms-admin-modal {
@@ -154,6 +162,10 @@
             }
             ul {
                 margin: 10px -2% -10px;
+                ul {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
             }
         }
     }
