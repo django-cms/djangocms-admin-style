@@ -154,6 +154,10 @@
             }
             ul {
                 margin: 10px -2% -10px;
+                ul {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
             }
         }
     }

@@ -1,6 +1,7 @@
 .addlink,
 .changelink,
 .deletelink,
+.inline-deletelink,
 .pastelink,
 .icon-arrow-right,
 .icon-logo,
@@ -33,7 +34,8 @@ a.insertlinkButton {
 .changelink {
     @include icon(pencil);
 }
-.deletelink {
+.deletelink,
+.inline-deletelink {
     @include icon(remove);
 }
 .icon-arrow-right {
