@@ -43,9 +43,6 @@ body {
     .module {
         padding: 0;
     }
-    .submit-row {
-        padding: 20px 25px !important;
-    }
 }
 #sitemap {
     clear: both;
@@ -76,7 +73,7 @@ body {
         font-weight: normal;
         margin-top: 0;
         margin-bottom: 15px;
-        padding: 10px 10px 5px;
+        padding: 10px 10px;
         border-bottom: 1px solid $gray-lighter;
         background: none;
     }
@@ -198,8 +195,8 @@ body {
     }
 }
 .submit-row {
-    margin: 0 -25px;
-    padding: 20px 25px;
+    margin: 10px -25px;
+    padding: 20px 25px !important;
     border: 0;
     border-top: 1px solid $gray-lighter;
     border-radius: $border-radius-base;
@@ -235,8 +232,8 @@ body {
         position: relative;
         width: 100% !important;
         input {
-            width: calc(100% - 56px) !important;
-            margin: 5px 56px 5px 0 !important;
+            width: calc(100% - 50px) !important;
+            margin: 5px 50px 5px 0 !important;
         }
         img {
             position: absolute;
@@ -250,9 +247,10 @@ body {
     }
 }
 .selector {
+    width: 820px;
     .selector-available,
     .selector-chosen {
-        width: 380px;
+        width: 370px;
         padding: 0 10px 10px;
         background-color: $white;
         border: 1px solid $gray-lighter;
@@ -260,7 +258,7 @@ body {
         h2 {
             color: $gray !important;
             font-weight: normal;
-            font-size: $font-size-normal;
+            font-size: $font-size-normal !important;
             line-height: $line-height-normal;
             text-transform: uppercase;
             margin-bottom: 5px;
@@ -547,7 +545,7 @@ a.addlink {
     float: right;
     text-align: right;
     max-width: 70%;
-    margin-top: -54px;
+    margin-top: -60px;
     margin-left: 0;
     li {
         float: none;
@@ -567,7 +565,6 @@ a.addlink {
     .addlink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
         color: $white !important;
-        padding: 10px 30px !important;
     }
     .publishlink {
         @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);

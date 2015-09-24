@@ -220,6 +220,7 @@
                 border-top: solid 1px $gray-lighter;
             }
             &.pastelink {
+                font-size: $font-size-normal;
                 color: $color-primary !important;
                 span {
                     display: none;
@@ -325,7 +326,7 @@
     }
     .related-lookup {
         display: inline-block !important;
-        padding: 9px !important;
+        padding: 8px 10px !important;
         img {
             display: none;
         }

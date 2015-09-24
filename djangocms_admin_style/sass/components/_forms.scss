@@ -222,6 +222,7 @@ form {
     select {
         appearance: none;
         font-size: $font-size-small;
+        line-height: $font-size-small;
         font-weight: normal;
         min-width: 160px;
         padding: 10px;
@@ -455,17 +456,19 @@ div.calendar {
 div.calendarbox {
     width: 220px !important;
     table {
+        margin-bottom: 0 !important;
         td {
             height: auto !important;
             padding: 0 !important;
 
         }
         th {
+            padding: 10px;
             border-bottom: 0;
         }
         th,
         td {
-            font-size: $font-size-normal;
+            font-size: $font-size-small;
             line-height: $line-height-normal;
             border-color: $gray-lighter;
         }
@@ -482,7 +485,7 @@ div.calendarbox {
         }
     }
     .calendar-shortcuts {
-        font-size: $font-size-normal;
+        font-size: $font-size-small;
         line-height: $line-height-normal;
         padding: 15px 0 10px;
         border-color: $gray-lighter !important;
@@ -516,16 +519,17 @@ div.clockbox {
     border-top-radius: $border-radius-base;
     h2 {
         color: $gray !important;
+        font-size: 14px !important;
         font-weight: normal;
         text-transform: uppercase;
         margin-bottom: 0;
         padding: 5px 30px;
         background-color: $white;
         background-image: none;
-        border-top-radius: $border-radius-base;
+        border-radius: $border-radius-base;
     }
     .timelist a {
-        font-size: $font-size-normal;
+        font-size: $font-size-small;
         line-height: $line-height-normal;
         padding: 5px 2px;
     }
@@ -547,6 +551,7 @@ span.datetimeshortcuts a {
 .selector {
     .selector-chooseall,
     .selector-clearall {
+        font-size: $font-size-small;
         line-height: $font-size-normal;
     }
     select {
