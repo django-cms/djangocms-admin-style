@@ -387,6 +387,7 @@ button {
 input[type="submit"],
 input[type="button"] {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    font-weight: normal !important;
     width: auto !important;
     &.default {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);

@@ -129,9 +129,11 @@
             }
         }
         #changelist-filter {
-            top: 15px;
+            position: static;
+            float: right;
             width: 200px !important;
             min-height: 100%;
+            margin-top: 11px;
             padding-left: 18px;
             border-left: 0;
             border-top-right-radius: $border-radius-base;
@@ -141,7 +143,7 @@
             h3 {
                 margin-bottom: 15px !important;
                 padding-left: 0 !important;
-                padding-bottom: 10px;
+                padding-bottom: 10px !important;
                 border-bottom: solid 1px $gray-lighter;
             }
             h2 {
@@ -303,7 +305,9 @@
         background-size: 25px;
         border-left: 0;
         + #changelist-filter {
+            position: absolute;
             top: 30px;
+            margin-top: 0;
         }
     }
 }

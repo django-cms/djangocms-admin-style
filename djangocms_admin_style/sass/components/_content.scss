@@ -522,9 +522,11 @@ a.addlink {
 #content-main .object-tools {
     .addlink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+        font-weight: normal;
     }
     .recoverlink {
         color: $color-primary !important;
+        font-weight: normal;
         padding: 12px 0 2px 0 !important;
         margin-bottom: 8px;
         margin-right: 10px;
@@ -550,7 +552,7 @@ a.addlink {
     li {
         float: none;
         display: inline-block;
-        height: 43px;
+        height: auto;
         margin-left: 10px;
         list-style: none;
         background: none;
