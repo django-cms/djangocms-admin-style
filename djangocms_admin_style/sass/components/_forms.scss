@@ -3,10 +3,26 @@ form {
     margin-bottom: 20px;
     background-color: $white;
     box-shadow: $base-box-shadow;
+    fieldset {
+        width: 80%;
+    }
     .form-row {
         overflow: hidden;
         border-bottom: 0;
         clear: both;
+        &.field-get_attachment_address a {
+            position: relative;
+            display: block;
+            font-size: $font-size-large;
+            line-height: $font-size-large;
+            margin: 10px 0;
+            padding-left: 30px;
+            &:before {
+                position: absolute;
+                left: 0;
+                color: $gray;
+            }
+        }
         &.field-sha1 {
             label {
                 display: inline-block;
@@ -16,62 +32,55 @@ form {
                 color: $gray-darkest !important;
             }
         }
-        &.field-file .file-upload {
-            p {
-                font-weight: normal;
+        &.field-file {
+            .related-lookup {
+                padding: 8px 10px !important;
             }
-            a {
-                position: relative;
-                padding-left: 30px;
-                &:before {
-                    position: absolute;
-                    left: 0;
+            .file-upload {
+                p {
+                    font-weight: normal;
                 }
-            }
-            a,
-            input[type="file"] {
-                display: block;
-                font-size: 18px;
-                line-height: 18px;
-                margin: 10px 0;
-            }
-            a:before {
-                color: $gray;
-                vertical-align: top;
-            }
-            .clearable-file-input {
-                display: inline-block;
-                margin-bottom: 20px;
-                label {
-                    font-size: 18px;
-                    text-transform: none;
+                a {
+                    position: relative;
+                    padding-left: 30px;
+                    &:before {
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                a,
+                input[type="file"] {
+                    display: block;
+                    font-size: 16px;
+                    line-height: 16px;
+                    margin: 10px 0;
+                }
+                a:before {
+                    color: $gray;
+                    vertical-align: top;
+                }
+                .clearable-file-input {
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    label {
+                        font-size: 16px;
+                        text-transform: none;
+                    }
                 }
             }
         }
-        &.field-owner {
+        &.field-owner,
+        &.field-job_opening {
             input {
+                width: calc(100% - 48px) !important;
                 margin-bottom: 10px;
             }
             .related-lookup {
-                float: none !important;
-                display: inline-block;
-                vertical-align: top;
-                text-align: center;
-                padding: 9px !important;
-                margin: 2px 10px !important;
-                &:before {
-                    margin: 0 !important;
-                }
-                img {
-                    display: none;
-                }
+                float: right;
             }
         }
         &.field-thumbnail {
             margin: 0;
-        }
-        .select2-container {
-            width: 80%;
         }
         .field-box {
             float: none;
@@ -81,14 +90,19 @@ form {
                 margin-top: 0;
             }
         }
-    }
-    .dynamic-taggit_taggeditem_items {
-        width: 80% !important;
-        button,
-        input,
-        select,
-        textarea {
-            width: 100% !important;
+        .related-lookup {
+            float: none;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            padding: 7px 10px !important;
+            margin: 0 0 0 10px !important;
+            &:before {
+                margin: 0 !important;
+            }
+            img {
+                display: none;
+            }
         }
     }
     button,
@@ -96,7 +110,7 @@ form {
     select,
     textarea {
         font-size: $font-size-small;
-        width: 80% !important;
+        width: 100% !important;
         max-width: none !important;
     }
     select::-ms-expand {
@@ -106,7 +120,6 @@ form {
         width: auto !important;
     }
     .cke {
-        width: 80%;
         box-sizing: border-box;
     }
     .aligned {
@@ -138,6 +151,9 @@ form {
         font-size: $font-size-large !important;
         text-transform: none;
         margin-bottom: 2px;
+        + a {
+            font-size: $font-size-large;
+        }
     }
     .sortedm2m a {
         vertical-align: middle;
@@ -272,7 +288,7 @@ form {
     .checkbox-row {
         label {
             color: $gray-darkest !important;
-            font-size: 18px;
+            font-size: $font-size-large;
             text-transform: none;
         }
     }
@@ -303,7 +319,7 @@ form {
             border: 1px solid $gray-lighter;
             border-radius: $border-radius-base;
             & > .select2-chosen {
-                font-size: 18px;
+                font-size: $font-size-large;
             }
             .select2-arrow {
                 right: 9px;
@@ -361,7 +377,7 @@ form {
 .select2-search {
     padding: 10px !important;
     input {
-        font-size: 18px !important;
+        font-size: $font-size-large !important;
         width: 100% !important;
         padding: 10px 40px 10px 20px !important;
         background: url('../img/select2.png') no-repeat right -24px !important;

@@ -32,7 +32,7 @@
             padding: 0;
             margin: 0;
             &.lang-code {
-                font-size: 13px !important;
+                font-size: $font-size-small !important;
             }
 
         }
@@ -135,7 +135,7 @@
             line-height: $line-height-normal !important;
             text-transform: none;
             vertical-align: middle;
-            padding: 10px 15px !important;
+            padding: 10px !important;
         }
     }
     td {
@@ -184,7 +184,7 @@
             }
             .lang-code {
                 color: $color-primary !important;
-                font-size: 13px !important;
+                font-size: $font-size-small !important;
                 background-color: $white;
             }
         }
@@ -221,6 +221,10 @@
     }
     tbody td {
         vertical-align: middle !important;
+    }
+    td.original p {
+        position: static !important;
+        padding: 0 !important;
     }
 }
 #result_list tbody tr:hover,
