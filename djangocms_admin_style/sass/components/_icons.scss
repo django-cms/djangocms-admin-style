@@ -10,7 +10,8 @@
 .backtoroot,
 .movetolink span,
 .file-upload a,
-a.insertlinkButton {
+a.insertlinkButton,
+.field-get_attachment_address a {
     background-image: none;
     &:hover {
       background-image: none;
@@ -23,7 +24,8 @@ a.insertlinkButton {
     }
 }
 
-.file-upload a {
+.file-upload a,
+.field-get_attachment_address a {
   @include icon(picture);
 }
 
@@ -70,7 +72,7 @@ a.insertlinkButton {
 
 .related-lookup {
     @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
-    padding: 0 !important;
+    padding: 0;
     &:before {
         color: $white;
     }
@@ -109,6 +111,7 @@ a.insertlinkButton {
     display: inline-block;
     width: 14px;
     height: 14px;
+    margin-top: 10px;
     background: url("../img/icon_addlink_large.gif") 0 0 no-repeat;
 }
 
