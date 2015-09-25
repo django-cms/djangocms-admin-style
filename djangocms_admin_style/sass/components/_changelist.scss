@@ -14,7 +14,7 @@
 #content-related {
     h3 {
         color: $gray-darker;
-        font-size: 18px !important;
+        font-size: $font-size-large !important;
         margin-top: 15px;
         margin-bottom: 10px;
     }
@@ -44,7 +44,6 @@
         min-height: 20px;
         padding: 5px 15px !important;
         background-color: $white !important;
-        clear: both;
         .this-page {
             font-weight: normal;
             padding: 0;
@@ -122,9 +121,10 @@
                 padding: 0;
             }
             form #searchbar {
+                width: auto !important;
                 max-width: 310px !important;
                 font-size: $font-size-small;
-                padding: 10px 5px !important;
+                padding: 9px 5px !important;
                 vertical-align: middle;
             }
         }
@@ -133,7 +133,7 @@
             float: right;
             width: 200px !important;
             min-height: 100%;
-            margin-top: 12px;
+            margin-top: 8px;
             padding-left: 18px;
             border-left: 0;
             border-top-right-radius: $border-radius-base;
@@ -187,7 +187,7 @@
                 white-space: nowrap;
                 width: 310px !important;
                 padding: 10px 40px 10px 20px;
-                margin-top: 5px;
+                margin-top: 3px;
                 margin-right: 10px;
                 border: 1px solid $gray-lighter;
                 border-radius: $border-radius-base;
@@ -256,7 +256,7 @@
         }
     }
     #changelist-search {
-        max-width: 370px;
+        max-width: 315px;
         #limit_search_to_folder {
             vertical-align: middle;
             margin-top: 2px;
@@ -278,7 +278,7 @@
             @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
             vertical-align: middle;
             text-indent: -9999px;
-            padding: 11px 20px !important;
+            padding: 10px 20px !important;
             margin-left: 10px;
             background-image: url('../img/icon_search_white@2x.png') !important;
             background-repeat: no-repeat !important;
@@ -367,7 +367,7 @@
 }
 
 .lang-code {
-    font-size: 13px !important;
+    font-size: $font-size-small !important;
     font-weight: bold !important;
     text-transform: uppercase;
     padding: 2px 8px !important;

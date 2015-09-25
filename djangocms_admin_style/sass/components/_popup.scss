@@ -1,6 +1,11 @@
 .cms-admin-modal {
-    .module h2 {
-        font-size: $font-size-large !important;
+    .module {
+        h2 {
+            font-size: $font-size-large !important;
+        }
+        table td {
+            padding: 1px 20px !important;
+        }
     }
     &.dashboard {
         #content-related {
@@ -19,6 +24,9 @@
         margin-bottom: 0;
         background-color: transparent;
         box-shadow: none;
+        fieldset {
+            width: 100%;
+        }
     }
     &.change-list {
         #changelist {
@@ -49,15 +57,11 @@
     .sortedm2m-container,
     form .cke,
     .field-image {
-        width: 100% !important;
         max-width: inherit !important;
         box-sizing: border-box;
         & + .add-another {
             margin-top: 10px;
         }
-    }
-    .select2-search input {
-        width: 100% !important;
     }
     #container {
         min-width: inherit !important;
@@ -68,6 +72,7 @@
     }
     #content .submit-row {
         margin: 20px -2% 0 !important;
+        padding: 20px 2% !important;
     }
     .form-row {
         &.field-enable_registration,
@@ -84,12 +89,25 @@
             float: left;
             margin-right: 20px !important;
             margin-top: 0;
+            &.field-registration_deadline_at {
+                margin-right: 0 !important;
+            }
         }
-    }
-    .filerFile {
-        img {
-            width: 38px;
-            height: 38px;
+        &.field-file,
+        &.field-link_file {
+            .filerFile {
+                img {
+                    width: 34px;
+                    height: 34px;
+                    &.filerClearer {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+                .related-lookup {
+                    padding: 6px 10px !important;
+                }
+            }
         }
     }
     .bootstrap3-column {
@@ -125,12 +143,6 @@
             margin-bottom: 20px;
         }
     }
-    .well-wrapper {
-        width: 100%;
-        .well {
-            width: 100%;
-        }
-    }
     .inline-group {
         overflow: auto;
         .module {
@@ -139,19 +151,6 @@
         .field-user,
         .field-group {
             min-width: 215px;
-        }
-    }
-    .selector {
-        width: 100%;
-        .selector-available,
-        .selector-chosen {
-            width: 43.5% !important;
-        }
-        ul.selector-chooser {
-            width: 5% !important;
-            a {
-                margin-right: 0;
-            }
         }
     }
     &.delete-confirmation .colM {

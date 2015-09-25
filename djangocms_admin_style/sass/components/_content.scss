@@ -176,6 +176,7 @@ body {
     }
 }
 #taggit_taggeditem_items-group {
+    width: 80%;
     h2 {
         font-weight: bold;
         font-size: $font-size-large;
@@ -252,7 +253,7 @@ body {
 
 // filter horizontal m2m
 .sortedm2m-container {
-    width: 80% !important;
+    width: 100% !important;
     .sortedm2m {
         min-height: inherit !important;
     }
@@ -271,14 +272,14 @@ body {
         }
     }
     + .add-another {
-        margin: 20px 0;
+        margin: 15px 0;
     }
 }
 .selector {
-    width: 820px;
+    width: 100%;
     .selector-available,
     .selector-chosen {
-        width: 370px;
+        width: 43%;
         padding: 0 10px 10px;
         background-color: $white;
         border: 1px solid $gray-lighter;
@@ -324,6 +325,10 @@ body {
     }
     ul.selector-chooser {
         background-color: transparent;
+        width: 4% !important;
+        a {
+            margin-right: 0;
+        }
     }
 }
 
@@ -554,7 +559,7 @@ a.addlink {
         color: $color-primary !important;
         font-weight: normal;
         padding: 12px 0 2px 0 !important;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
         margin-right: 10px;
         background-color: transparent !important;
         border-radius: 0 !important;
@@ -573,7 +578,7 @@ a.addlink {
     float: right;
     text-align: right;
     max-width: 70%;
-    margin-top: -60px;
+    margin-top: -57px;
     margin-left: 0;
     li {
         float: none;
