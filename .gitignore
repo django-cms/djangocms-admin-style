@@ -9,3 +9,6 @@ node_modules
 database.db
 .idea
 .sass-cache
+build
+dist
+.eggs
