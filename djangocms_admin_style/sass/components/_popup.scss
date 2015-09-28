@@ -93,22 +93,6 @@
                 margin-right: 0 !important;
             }
         }
-        &.field-file,
-        &.field-link_file {
-            .filerFile {
-                img {
-                    width: 34px;
-                    height: 34px;
-                    &.filerClearer {
-                        width: 10px;
-                        height: 10px;
-                    }
-                }
-                .related-lookup {
-                    padding: 6px 10px !important;
-                }
-            }
-        }
     }
     .bootstrap3-column {
         .form-row {
@@ -167,6 +151,10 @@
                 }
             }
         }
+    }
+    .filerFile .filerClearer {
+        width: 36px !important;
+        height: 36px !important;
     }
 }
 .cms-admin-sideframe {
