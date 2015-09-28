@@ -274,8 +274,8 @@
 }
 .filerFile {
     img {
-        width: 34px;
-        height: 34px;
+        width: 36px;
+        height: 36px;
         margin-right: 10px;
         &[src*="nofile"] {
             margin-right: 0;
@@ -316,8 +316,8 @@
         }
     }
     .filerClearer {
-        width: 10px;
-        height: 10px;
+        width: 10px !important;
+        height: 10px !important;
         padding: 12px !important;
         border: solid 1px $gray-lighter;
         border-radius: $border-radius-base;

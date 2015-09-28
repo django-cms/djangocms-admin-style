@@ -32,9 +32,19 @@ form {
                 color: $gray-darkest !important;
             }
         }
+        &.field-image {
+            .filerFile img {
+                width: 34px;
+                height: 34px;
+            }
+        }
         &.field-file {
+            input {
+                width: calc(100% - 48px) !important;
+                margin-bottom: 10px;
+            }
             .related-lookup {
-                padding: 8px 10px !important;
+                float: right;
             }
             .file-upload {
                 p {
@@ -69,16 +79,6 @@ form {
                 }
             }
         }
-        &.field-owner,
-        &.field-job_opening {
-            input {
-                width: calc(100% - 48px) !important;
-                margin-bottom: 10px;
-            }
-            .related-lookup {
-                float: right;
-            }
-        }
         &.field-thumbnail {
             margin: 0;
         }
@@ -90,12 +90,15 @@ form {
                 margin-top: 0;
             }
         }
+        .vForeignKeyRawIdAdminField {
+            width: calc(100% - 48px) !important;
+        }
         .related-lookup {
             float: none;
             display: inline-block;
             vertical-align: top;
             text-align: center;
-            padding: 7px 10px !important;
+            padding: 7px 9px !important;
             margin: 0 0 0 10px !important;
             &:before {
                 margin: 0 !important;
@@ -238,7 +241,7 @@ form {
     select {
         appearance: none;
         font-size: $font-size-small;
-        line-height: $font-size-small;
+        line-height: $font-size-normal;
         font-weight: normal;
         min-width: 160px;
         padding: 10px;
