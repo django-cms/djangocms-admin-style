@@ -7,7 +7,7 @@
     right: 0;
     color: $gray-darkest !important;
     width: 100% !important;
-    min-height: $toolbar-height;
+    height: $toolbar-height;
     background-color: $white;
     background-image: none;
     box-shadow: $toolbar-shadow;
@@ -58,6 +58,7 @@
             position: relative;
             float: left;
             list-style-type: none;
+            padding: 0;
             &:hover {
                 > a,
                 a:hover {
@@ -124,6 +125,7 @@
             line-height: $toolbar-button-height !important;
             height: $toolbar-button-height;
             padding: 0 25px 0 12px !important;
+            box-sizing: border-box;
             &:before {
                 display: none;
             }
