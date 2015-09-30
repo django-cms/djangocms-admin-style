@@ -32,6 +32,9 @@ body {
         }
     }
 }
+ul.messagelist + #content {
+   margin-top: $content-margin-top + 27px !important; // plus messages list
+}
 #content {
     width: auto !important;
     min-width: 0 !important;
@@ -224,7 +227,7 @@ body {
 }
 .submit-row {
     margin: 10px -25px;
-    padding: 20px 25px !important;
+    padding: 20px 25px 0 !important;
     border: 0;
     border-top: 1px solid $gray-lighter;
     border-radius: $border-radius-base;
@@ -627,32 +630,6 @@ a.addlink {
     padding: 0;
     h1 {
         margin: 0 0 10px;
-    }
-    ul {
-        margin: 20px 0 0;
-        border-bottom: solid 1px $gray-lighter;
-        li {
-            color: $gray-darkest;
-            font-size: $font-size-normal;
-            font-weight: bold;
-            list-style-type: none;
-            padding: 10px 0;
-            border-top: solid 1px $gray-lighter;
-        }
-        ul {
-            margin: 10px 0 -10px;
-            border-bottom: 0;
-            li {
-                font-weight: normal;
-            }
-            ul {
-                margin-left: 20px;
-                li {
-                    padding-left: 0;
-                    padding-right: 0;
-                }
-            }
-        }
     }
     input[type="submit"] {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);

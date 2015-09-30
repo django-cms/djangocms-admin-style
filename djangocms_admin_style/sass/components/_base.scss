@@ -110,6 +110,35 @@ ul,
 ol {
     margin-left: 20px;
 }
+.colM ul:not(.object-tools) {
+    margin: 20px 0 25px;
+    border-bottom: solid 1px $gray-lighter;
+    &:empty {
+        border-bottom: 0;
+    }
+    li {
+        color: $gray-darkest;
+        font-size: $font-size-normal;
+        font-weight: bold;
+        list-style-type: none;
+        padding: 10px 0;
+        border-top: solid 1px $gray-lighter;
+    }
+    ul {
+        margin: 10px 0 -10px;
+        border-bottom: 0;
+        li {
+            font-weight: normal;
+        }
+        ul {
+            margin-left: 20px;
+            li {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
 
 p,
 .description,
@@ -176,7 +205,7 @@ small {
     color: $color-danger !important;
     font-size: $font-size-normal !important;
     line-height: $line-height-normal;
-    width: 810px;
+    width: calc(80% - 20px);
     margin-bottom: 20px;
     padding: 10px;
     border: 0;
@@ -194,7 +223,9 @@ ul.errorlist {
         margin: 0 !important;
     }
 }
-
+.breadcrumbs + ul.messagelist {
+   margin-top: $messages-breadcrumb-margin-top!important;
+}
 ul.messagelist {
     position: absolute;
     top: 0;

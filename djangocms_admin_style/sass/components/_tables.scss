@@ -108,6 +108,9 @@
         &:hover {
             background: $gray-lighter;
         }
+        &.column-app_config {
+            min-width: 220px;
+        }
         .sortpriority {
             vertical-align: middle;
             color: white !important;
@@ -126,6 +129,9 @@
             &.drag-handler {
                 vertical-align: middle !important;
                 padding: 1px 5px !important;
+            }
+            &.field-app_config {
+                padding: 1px 10px !important;
             }
         }
         th,

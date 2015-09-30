@@ -1,7 +1,10 @@
 // filer
 .filebrowser {
+    ul.messagelist + #content {
+        margin-top: $filer-content-margin + 27px !important; // plus messages list
+    }
     #content {
-        margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal !important;
+        margin-top: $filer-content-margin !important;
     }
     h2 {
         display: none;
