@@ -1,5 +1,5 @@
 form {
-    padding: 25px 25px 0;
+    padding: 25px 25px 15px;
     margin-bottom: 20px;
     background-color: $white;
     box-shadow: $base-box-shadow;
@@ -274,6 +274,10 @@ form {
             margin-right: 10px;
         }
     }
+    .errors {
+        border: 0;
+        background: none;
+    }
     .form-row {
         padding: 8px 2px 15px;
         border-bottom-color: $gray-lighter;
@@ -411,6 +415,7 @@ input[type="button"] {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     font-weight: normal !important;
     width: auto !important;
+    padding: 10px 20px !important;
     &.default {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
         padding: 10px 20px !important;
