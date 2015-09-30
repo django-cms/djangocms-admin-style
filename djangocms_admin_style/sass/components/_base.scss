@@ -75,6 +75,26 @@ h6 {
 a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
 }
+.cms-btn-group {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    display: inline-block;
+    &:first-child {
+        border-radius: 3px 0 0 3px !important;
+    }
+    &:last-child {
+        margin-left: -4px;
+        border-radius: 0 3px 3px 0 !important;
+
+    }
+}
+.cms-btn-active {
+    box-shadow: $btn-active-shadow;
+    background-color: $btn-cms-active !important;
+    &:hover {
+        background-color: $btn-cms-active-hover !important;
+        border-color: $btn-cms-active-hover-border !important;
+    }
+}
 a,
 a:link {
     color: $color-primary;

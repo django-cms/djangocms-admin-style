@@ -33,6 +33,12 @@ $toolbar-margin-logo: ($toolbar-height - $toolbar-logo-height) / 2;
 $content-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + $content-margin;
 
 //##############################################################################
+// #BUTTONS
+$btn-cms-active: #e6e6e6;
+$btn-cms-active-hover: #d4d4d4;
+$btn-cms-active-hover-border: #8c8c8c;
+
+//##############################################################################
 // #SHADOW
 $base-box-shadow: 0 0 5px 0 rgba($black, 0.2);
 
