@@ -322,7 +322,8 @@ form {
             border: 1px solid $gray-lighter;
             border-radius: $border-radius-base;
             & > .select2-chosen {
-                font-size: $font-size-large;
+                font-size: $font-size-small;
+                line-height: $font-size-small;
             }
             .select2-arrow {
                 right: 9px;
@@ -331,7 +332,7 @@ form {
                 border: none;
                 border-radius: 0;
                 b {
-                    background: url('../img/select2.png') no-repeat 0 12px;
+                    background: url('../img/select2.png') no-repeat 0 5px;
                     background-size: 50px;
                 }
 
@@ -350,7 +351,7 @@ form {
             background-color: $white;
             background-image: none;
             .select2-arrow b {
-                background-position: -16px 12px;
+                background-position: -16px 5px;
             }
         }
     }
@@ -366,7 +367,8 @@ form {
     .select2-ajax-error,
     .select2-selection-limit {
         color: $gray;
-        font-size: $font-size-normal;
+        font-size: $font-size-small;
+        padding: 0 !important;
         background-color: transparent !important;
     }
     .select2-highlighted {
@@ -380,7 +382,7 @@ form {
 .select2-search {
     padding: 10px !important;
     input {
-        font-size: $font-size-large !important;
+        font-size: $font-size-small !important;
         width: 100% !important;
         padding: 10px 40px 10px 20px !important;
         background: url('../img/select2.png') no-repeat right -24px !important;
