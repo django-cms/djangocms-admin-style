@@ -284,6 +284,7 @@
             margin-right: 0;
             border: solid 1px $gray-lighter;
             border-radius: $border-radius-base;
+            box-sizing: border-box;
         }
     }
     img,
