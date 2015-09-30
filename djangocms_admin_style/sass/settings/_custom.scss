@@ -31,6 +31,7 @@ $breadcrumb-padding: 15px;
 $toolbar-margin-button: ($toolbar-height - $toolbar-button-height) / 2;
 $toolbar-margin-logo: ($toolbar-height - $toolbar-logo-height) / 2;
 $content-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + $content-margin;
+$messages-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + 3; //3 stands for breadcrumb border and toolbar shadow size
 
 //##############################################################################
 // #BUTTONS
