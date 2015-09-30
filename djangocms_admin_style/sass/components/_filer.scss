@@ -42,6 +42,9 @@
         border-bottom: solid 1px $gray-lighter;
         .object-tools {
             margin-top: 0 !important;
+            a:before {
+                font-size: $font-size-normal;
+            }
             .changelink {
                 color: $color-primary !important;
                 padding-left: 0 !important;
@@ -284,6 +287,7 @@
             margin-right: 0;
             border: solid 1px $gray-lighter;
             border-radius: $border-radius-base;
+            box-sizing: border-box;
         }
     }
     img,

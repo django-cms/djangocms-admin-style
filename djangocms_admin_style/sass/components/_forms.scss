@@ -1,5 +1,5 @@
 form {
-    padding: 25px 25px 15px;
+    padding: 25px 25px;
     margin-bottom: 20px;
     background-color: $white;
     box-shadow: $base-box-shadow;
@@ -225,6 +225,7 @@ form {
     input[type="checkbox"],
     input[type="radio"] {
         display: inline;
+        vertical-align: middle;
         width: auto !important;
         margin-bottom: 2px;
         margin-right: 10px;
@@ -277,6 +278,11 @@ form {
     .errors {
         border: 0;
         background: none;
+        input,
+        select,
+        textarea {
+           border-color: $gray-lighter;
+        }
     }
     .form-row {
         padding: 8px 2px 15px;

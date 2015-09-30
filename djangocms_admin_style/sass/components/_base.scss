@@ -105,7 +105,9 @@ a:link {
         color: $color-primary;
     }
 }
-
+.cancel-link {
+    margin-left: 10px;
+}
 ul,
 ol {
     margin-left: 20px;
@@ -217,10 +219,14 @@ ul.errorlist {
     color: $color-danger !important;
     margin-bottom: 10px !important;
     background-color: transparent !important;
+    border: 0;
     li {
+        color: $color-danger !important;
         font-size: $font-size-normal !important;
+        font-weight: normal;
         padding: 0 !important;
         margin: 0 !important;
+        border: 0;
     }
 }
 .breadcrumbs + ul.messagelist {
