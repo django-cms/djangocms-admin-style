@@ -41,7 +41,8 @@
             color: $gray-darkest !important;
         }
         a {
-            color: $color-primary;
+            display: block;
+            color: $color-primary !important;
         }
     }
     thead th,
@@ -234,6 +235,7 @@
     }
 }
 #result_list tbody tr:hover,
-.results table tbody tr:hover {
+.results table tbody tr:hover,
+#change-history tbody tr:hover {
     background: $color-primary-light;
 }
