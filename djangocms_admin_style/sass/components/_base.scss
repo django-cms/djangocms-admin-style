@@ -195,18 +195,18 @@ ul.errorlist {
     }
 }
 
-.messagelist {
+ul.messagelist {
     position: absolute;
     top: 0;
     left: 3%;
     right: 3%;
     margin-top: $messages-margin-top !important;
     li {
-        color: $color-success !important;
-        font-weight: normal !important;
-        padding: 2px 10px !important;
-        background-image: none !important;
-        border-bottom: 0 !important;
+        color: $color-success;
+        font-weight: normal;
+        padding: 2px 10px;
+        background-image: none;
+        border-bottom: 0;
     }
 }
 
