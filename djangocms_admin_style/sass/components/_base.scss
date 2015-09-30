@@ -195,6 +195,21 @@ ul.errorlist {
     }
 }
 
+.messagelist {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    right: 3%;
+    margin-top: $messages-margin-top !important;
+    li {
+        color: $color-success !important;
+        font-weight: normal !important;
+        padding: 2px 10px !important;
+        background-image: none !important;
+        border-bottom: 0 !important;
+    }
+}
+
 // FIXME: These are actually fixes in the django CMS code base but setting here too for a quicker release
 #sitemap li .cont {
     overflow: visible !important;
