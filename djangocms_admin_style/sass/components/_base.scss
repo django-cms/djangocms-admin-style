@@ -112,144 +112,142 @@ ul,
 ol {
     margin-left: 20px;
 }
-.colM {
-    ul:not(.object-tools) {
-        margin: 20px 0 25px;
-        border-bottom: solid 1px $gray-lighter;
-        &:empty {
-            border-bottom: 0;
-        }
+.colM ul:not(.object-tools) {
+    margin: 20px 0 25px;
+    border-bottom: solid 1px $gray-lighter;
+    &:empty {
+        border-bottom: 0;
+    }
+    li {
+        color: $gray-darkest;
+        font-size: $font-size-normal;
+        font-weight: bold;
+        list-style-type: none;
+        padding: 10px 0;
+        border-top: solid 1px $gray-lighter;
+    }
+    ul {
+        margin: 10px 0 -10px;
+        border-bottom: 0;
         li {
-            color: $gray-darkest;
-            font-size: $font-size-normal;
-            font-weight: bold;
-            list-style-type: none;
-            padding: 10px 0;
-            border-top: solid 1px $gray-lighter;
+            font-weight: normal;
         }
         ul {
-            margin: 10px 0 -10px;
-            border-bottom: 0;
+            margin-left: 20px;
             li {
-                font-weight: normal;
-            }
-            ul {
-                margin-left: 20px;
-                li {
-                    padding-left: 0;
-                    padding-right: 0;
-                }
+                padding-left: 0;
+                padding-right: 0;
             }
         }
     }
+}
 
-    p,
-    .description,
-    .timezonewarning {
-        font-size: $font-size-small !important;
-        color: $gray !important;
-        font-weight: normal;
-        margin-bottom: 10px;
-        padding-left: 0;
-    }
-    .datetimeshortcuts {
-        font-size: $font-size-small !important;
-    }
+p,
+.description,
+.timezonewarning {
+    font-size: $font-size-small !important;
+    color: $gray !important;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+.datetimeshortcuts {
+    font-size: $font-size-small !important;
+}
 
-    code {
-        color: $gray;
-        font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
-        font-size: 11px;
-        background: inherit;
-        strong {
-            color: #930;
-        }
+code {
+    color: $gray;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 11px;
+    background: inherit;
+    strong {
+        color: #930;
     }
+}
 
-    pre {
-        color: $gray;
-        font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
-        font-size: 11px;
-        background: inherit;
-        &.literal-block {
-            background: $gray-lighter;
-        }
-    }
-
-    div hr {
-        margin: 20px 0;
-        border: none;
+pre {
+    color: $gray;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 11px;
+    background: inherit;
+    &.literal-block {
         background: $gray-lighter;
     }
+}
 
-    strong {
-        font-weight: bold;
-    }
-    .small,
-    small {
-        font-size: $font-size-small;
-        margin-top: 0;
-    }
+div hr {
+    margin: 20px 0;
+    border: none;
+    background: $gray-lighter;
+}
 
-    .mini {
-        font-size: 11px;
-    }
+strong {
+    font-weight: bold;
+}
+.small,
+small {
+    font-size: $font-size-small;
+    margin-top: 0;
+}
 
-    .clearfix:after {
-        content: ".";
-        display: block;
-        visibility: hidden;
-        clear: both;
-        height: 0;
-    }
-    .errornote {
-        display: inline-block;
-        font-weight: normal;
+.mini {
+    font-size: 11px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+.errornote {
+    display: inline-block;
+    font-weight: normal;
+    color: $color-danger !important;
+    font-size: $font-size-normal !important;
+    line-height: $line-height-normal;
+    width: calc(80% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: $border-radius-base;
+    background: none;
+    background-color: $color-danger-ultralight;
+}
+ul.errorlist {
+    color: $color-danger !important;
+    margin-bottom: 10px !important;
+    background-color: transparent !important;
+    border: 0;
+    li {
         color: $color-danger !important;
         font-size: $font-size-normal !important;
-        line-height: $line-height-normal;
-        width: calc(80% - 20px);
-        margin-bottom: 20px;
-        padding: 10px;
+        font-weight: normal;
+        padding: 0 !important;
+        margin: 0 !important;
         border: 0;
-        border-radius: $border-radius-base;
-        background: none;
-        background-color: $color-danger-ultralight;
     }
-    ul.errorlist {
-        color: $color-danger !important;
-        margin-bottom: 10px !important;
-        background-color: transparent !important;
-        border: 0;
-        li {
-            color: $color-danger !important;
-            font-size: $font-size-normal !important;
-            font-weight: normal;
-            padding: 0 !important;
-            margin: 0 !important;
-            border: 0;
-        }
+}
+.breadcrumbs + ul.messagelist {
+    margin-top: $messages-breadcrumb-margin-top!important;
+}
+ul.messagelist {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    right: 3%;
+    margin-top: $messages-margin-top !important;
+    li {
+        color: $color-success;
+        font-weight: normal;
+        padding: 2px 10px;
+        background-image: none;
+        border-bottom: 0;
     }
-    .breadcrumbs + ul.messagelist {
-        margin-top: $messages-breadcrumb-margin-top!important;
-    }
-    ul.messagelist {
-        position: absolute;
-        top: 0;
-        left: 3%;
-        right: 3%;
-        margin-top: $messages-margin-top !important;
-        li {
-            color: $color-success;
-            font-weight: normal;
-            padding: 2px 10px;
-            background-image: none;
-            border-bottom: 0;
-        }
-    }
+}
 
-    // FIXME: These are actually fixes in the django CMS code base but setting here too for a quicker release
-    #sitemap li .cont {
-        overflow: visible !important;
-    }
+// FIXME: These are actually fixes in the django CMS code base but setting here too for a quicker release
+#sitemap li .cont {
+    overflow: visible !important;
 }
