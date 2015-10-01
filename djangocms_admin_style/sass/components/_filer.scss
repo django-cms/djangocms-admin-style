@@ -41,7 +41,10 @@
         padding-top: 10px !important;
         border-bottom: solid 1px $gray-lighter;
         .object-tools {
-            margin-top: 0 !important;
+            margin-top: 2px !important;
+            a {
+                padding: 6px 20px !important;
+            }
             a:before {
                 font-size: $font-size-normal;
             }
@@ -198,6 +201,7 @@
                 border-top: solid 1px $gray-lighter;
                 background: none;
                 &:first-child {
+                    padding-top: 0 !important;
                     border-top: 0;
                 }
                 button {
@@ -206,7 +210,7 @@
             }
         }
         form {
-            padding: 0;
+            padding: 0 !important;
             box-shadow: none !important;
         }
         button {
@@ -274,7 +278,7 @@
                 font: 0/0 a !important;
                 &:before {
                     color: $color-primary;
-                    vertical-align: top;
+                    vertical-align: middle;
                 }
             }
         }
