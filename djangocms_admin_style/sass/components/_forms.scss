@@ -115,6 +115,7 @@ form {
         font-size: $font-size-small;
         width: 100% !important;
         max-width: none !important;
+        appearance: none;
     }
     select::-ms-expand {
         display: none;

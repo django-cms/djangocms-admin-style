@@ -576,13 +576,11 @@ a.addlink {
     .recoverlink {
         color: $color-primary !important;
         font-weight: normal;
-        padding: 12px 0 2px 0 !important;
-        margin-bottom: 10px;
-        margin-right: 10px;
+        text-decoration: underline;
+        padding: 9px 0 !important;
         background-color: transparent !important;
         border-radius: 0 !important;
         border: 0 !important;
-        border-bottom: solid 1px $color-primary !important;
         &:hover,
         &:active,
         &:focus {
@@ -596,7 +594,7 @@ a.addlink {
     float: right;
     text-align: right;
     max-width: 70%;
-    margin-top: -57px;
+    margin-top: -54px;
     margin-left: 0;
     li {
         float: none;
@@ -610,6 +608,7 @@ a.addlink {
         }
         > a {
             @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+            line-height: inherit !important;
             margin-right: 0 !important;
         }
     }

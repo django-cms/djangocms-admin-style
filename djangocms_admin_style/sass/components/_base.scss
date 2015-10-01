@@ -238,6 +238,7 @@ ul.messagelist {
     left: 3%;
     right: 3%;
     margin-top: $messages-margin-top !important;
+    z-index: 5;
     li {
         color: $color-success;
         font-weight: normal;
