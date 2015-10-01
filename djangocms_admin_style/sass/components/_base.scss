@@ -245,6 +245,10 @@ ul.messagelist {
         padding: 2px 10px;
         background-image: none;
         border-bottom: 0;
+        &.error {
+            color: $color-danger;
+            background-image: none;
+        }
     }
 }
 
