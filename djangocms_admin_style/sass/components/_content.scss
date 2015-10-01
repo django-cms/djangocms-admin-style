@@ -288,11 +288,12 @@ ul.messagelist + #content {
     width: 100%;
     .selector-available,
     .selector-chosen {
-        width: 43%;
+        width: 45%;
         padding: 0 10px 10px;
         background-color: $white;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
+        box-sizing: border-box;
         h2 {
             color: $gray !important;
             font-weight: normal;
@@ -333,9 +334,17 @@ ul.messagelist + #content {
         }
     }
     ul.selector-chooser {
+        width: 5% !important;
+        margin: 10em 5px 0 5px;
+        border: 0;
         background-color: transparent;
-        width: 4% !important;
+        li {
+            text-align: center;
+            padding: 3px;
+            border: 0;
+        }
         a {
+            display: inline-block;
             margin-right: 0;
         }
     }
