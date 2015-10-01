@@ -571,6 +571,7 @@ a.addlink {
 #content-main .object-tools {
     .addlink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+        padding: 6px 20px !important;
         font-weight: normal;
     }
     .recoverlink {
