@@ -219,14 +219,14 @@ ul.errorlist {
     color: $color-danger !important;
     margin-bottom: 10px !important;
     background-color: transparent !important;
-    border: 0;
+    border: 0 !important;
     li {
         color: $color-danger !important;
         font-size: $font-size-normal !important;
-        font-weight: normal;
+        font-weight: normal !important;
         padding: 0 !important;
         margin: 0 !important;
-        border: 0;
+        border: 0 !important;
     }
 }
 .breadcrumbs + ul.messagelist {

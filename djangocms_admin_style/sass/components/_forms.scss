@@ -98,7 +98,7 @@ form {
             display: inline-block;
             vertical-align: top;
             text-align: center;
-            padding: 7px 9px !important;
+            padding: 9px !important;
             margin: 0 0 0 10px !important;
             &:before {
                 margin: 0 !important;
@@ -492,6 +492,12 @@ div.calendarbox {
         td {
             height: auto !important;
             padding: 0 !important;
+            &.selected {
+                a {
+                    color: $white;
+                    background-color: $color-primary;
+                }
+            }
 
         }
         th {

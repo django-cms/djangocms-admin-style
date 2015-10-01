@@ -40,10 +40,6 @@
             position: static;
             color: $gray-darkest !important;
         }
-        a {
-            display: block;
-            color: $color-primary !important;
-        }
     }
     thead th,
     thead th.sorted,
@@ -238,4 +234,13 @@
 .results table tbody tr:hover,
 #change-history tbody tr:hover {
     background: $color-primary-light;
+}
+
+#change-history {
+    th,
+    td {
+        a {
+            color: $color-primary !important;
+        }
+    }
 }
