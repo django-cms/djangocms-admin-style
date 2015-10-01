@@ -3,7 +3,7 @@ html,
 body {
     height: auto;
     #container {
-        min-width: 240px !important;
+        min-width: 450px !important;
         margin: 0;
     }
 }
@@ -139,7 +139,8 @@ body.login {
 }
 // changelist
 
-.change-list {
+.change-list,
+.change-form {
     #content {
         .object-tools {
             overflow: hidden;
@@ -276,7 +277,7 @@ form {
     .submit-row {
         text-align: right;
         input {
-            float: right;
+            float: none;
             margin-bottom: 10px !important;
         }
     }

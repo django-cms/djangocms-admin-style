@@ -100,6 +100,7 @@
                 font-size: $font-size-small !important;
                 color: $gray-light !important;
                 outline: 0;
+                height: inherit !important;
                 padding: 1px 10px !important;
                 &.transpTiling {
                     padding-top: 5px !important;
@@ -224,12 +225,18 @@
             &.deletelink {
                 @include icon(trash);
                 border-top: solid 1px $gray-lighter;
+                &[disabled] {
+                    opacity: 0.5;
+                }
             }
             &.pastelink {
                 font-size: $font-size-normal;
                 color: $color-primary !important;
                 span {
                     display: none;
+                }
+                &[disabled] {
+                    opacity: 0.5;
                 }
             }
             &:before {
