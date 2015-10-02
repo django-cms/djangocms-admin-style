@@ -112,6 +112,8 @@ form {
     input[type="text"],
     input[type="email"],
     input[type="password"],
+    input[type="number"],
+    input[type="url"],
     select,
     textarea {
         font-size: $font-size-small;
@@ -159,6 +161,7 @@ form {
         margin-bottom: 2px;
         + a {
             font-size: $font-size-large;
+            font-weight: normal;
         }
     }
     .sortedm2m a {
