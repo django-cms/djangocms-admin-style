@@ -158,7 +158,7 @@ ul.messagelist + #content {
     }
     .module {
         overflow: auto;
-        width: 100%;
+        width: 80%;
     }
     .add-row {
         border-bottom: 0 !important;
@@ -189,6 +189,7 @@ ul.messagelist + #content {
         margin-top: 20px;
     }
     .module {
+        width: 100%;
         padding: 10px;
         margin: 5px -10px 0;
         border-top: solid 1px $gray-lighter !important;
@@ -235,11 +236,12 @@ ul.messagelist + #content {
     box-shadow: none !important;
     .deletelink-box {
         margin: 0;
-    }
-    .deletelink {
-        display: block;
-        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
-        @include icon(trash);
+        .deletelink {
+            @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+            @include icon(trash);
+            display: block;
+            padding: 8px 20px !important;
+        }
     }
     input[type="submit"] {
         padding: 10px 20px !important;
@@ -288,7 +290,7 @@ ul.messagelist + #content {
     width: 100%;
     .selector-available,
     .selector-chosen {
-        width: 45%;
+        width: calc(47.5% - 5px);
         padding: 0 10px 10px;
         background-color: $white;
         border: 1px solid $gray-lighter;
