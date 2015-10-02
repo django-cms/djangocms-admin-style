@@ -17,13 +17,24 @@ function toggleClass (element, className) {
 
 var submenu = document.getElementsByClassName('submenu')[0];
 var menuItem = document.getElementsByClassName('menu-item')[0];
+var html = document.getElementsByTagName('html')[0];
 
 
 menuItem.addEventListener('click', function (event) {
     event = event || window.event;
     event.preventDefault();
 
-    toggleClass(submenu, 'menu-open');
+    toggleClass(submenu, 'submenu-open');
     toggleClass(menuItem, 'menu-item-open');
 
+});
+
+html.addEventListener('click', function (event) {
+    if (event.target !== menuItem) {
+        var submenuOpen = document.getElementsByClassName('submenu-open')[0];
+        var menuItemOpen = document.getElementsByClassName('menu-item-open')[0];
+
+        submenuOpen.className = submenuOpen.className.replace('submenu-open', '');
+        menuItemOpen.className = menuItemOpen.className.replace('menu-item-open', '');
+    }
 });
