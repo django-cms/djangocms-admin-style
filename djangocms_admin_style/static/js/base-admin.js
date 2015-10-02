@@ -1,7 +1,7 @@
 function toggleClass (element, className) {
 
-    var classString = element.className,
-        nameIndex = classString.indexOf(className);
+    var classString = element.className;
+    var nameIndex = classString.indexOf(className);
 
     if (!element || !className) {
         return true;
@@ -27,7 +27,6 @@ menuItem.addEventListener('click', function (event) {
 
     toggleClass(submenu, 'submenu-open');
     toggleClass(menuItem, 'menu-item-open');
-
 });
 
 html.addEventListener('click', function (event) {
