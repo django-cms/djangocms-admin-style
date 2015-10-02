@@ -4,7 +4,7 @@
             font-size: $font-size-large !important;
         }
         table td {
-            padding: 1px 20px !important;
+            padding: 1px 10px !important;
         }
     }
     &.dashboard {
@@ -26,6 +26,11 @@
         box-shadow: none;
         fieldset {
             width: 100%;
+        }
+    }
+    .calendarbox table {
+        td {
+            padding: 0 !important;
         }
     }
     &.change-list {
@@ -131,6 +136,7 @@
         overflow: auto;
         .module {
             overflow: visible;
+            width: 100%;
         }
         .field-user,
         .field-group {
