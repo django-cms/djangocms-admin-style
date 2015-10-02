@@ -18,11 +18,9 @@
 }
 .popup,
 .cms-admin-modal {
-    &.app-aldryn_bootstrap3 {
-        .filerFile .filerClearer {
-            width: 36px !important;
-            height: 36px !important;
-        }
+    &.app-aldryn_bootstrap3 .filerFile .filerClearer {
+        width: 36px !important;
+        height: 36px !important;
     }
     background-color: $white;
     form {
