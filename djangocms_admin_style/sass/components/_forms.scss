@@ -446,6 +446,8 @@ a.button {
 // date time
 .form-row {
     p.datetime {
+        font-weight: normal;
+        font-size: $font-size-normal !important;
         line-height: 36px;
         margin-left: 0;
         padding-left: 0;
@@ -588,8 +590,22 @@ div.clockbox {
     }
 }
 
-span.datetimeshortcuts a {
-    color: $color-primary;
+span.datetimeshortcuts {
+    font-size: 0 !important;
+    a {
+        display: inline-block;
+        color: $gray-darker;
+        font-size: $font-size-normal !important;
+        padding: 10px;
+        margin-right: 10px;
+        margin-top: 10px !important;
+        border: solid 1px $gray-lighter;
+        border-radius: $border-radius-base;
+        &:before {
+            color: $color-primary;
+            margin: 0;
+        }
+    }
 }
 
 // filter horizontal
@@ -625,4 +641,9 @@ form select[multiple] {
 
 .fa-question-circle:before {
     font-size: $font-size-normal;
+}
+
+#id_password {
+    padding: 10px;
+    background-color: $gray-lightest;
 }
