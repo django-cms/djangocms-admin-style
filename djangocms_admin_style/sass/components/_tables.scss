@@ -194,6 +194,9 @@
                 color: $color-primary !important;
                 font-size: $font-size-small !important;
                 background-color: $white;
+                &.current.active {
+                    background-color: $white;
+                }
             }
         }
     }

@@ -374,6 +374,9 @@
     margin-right: 10px !important;
     border: solid 1px $color-primary;
     border-radius: 10px !important;
+    &.current.active {
+        background-color: $white;
+    }
 }
 .collapse {
     display: none;
