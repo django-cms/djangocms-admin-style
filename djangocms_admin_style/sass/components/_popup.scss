@@ -145,13 +145,20 @@
         }
     }
     &.delete-confirmation .colM {
+        box-shadow: none;
+        &#content {
+            padding: 0 !important;
+        }
         ul {
             margin: 20px -2% 0;
             li {
-                padding: 10px 2%;
+                padding: 10px 0 10px 2%;
             }
             ul {
                 margin: 10px -2% -10px;
+                li {
+                    padding: 10px 0 10px 2%;
+                }
                 ul {
                     margin-left: 0;
                     margin-right: 0;
