@@ -18,7 +18,9 @@ a.selector-chooseall,
 .selector-add,
 .add-another,
 a[id*="calendarlink"],
-a[id*="clocklink"] {
+a[id*="clocklink"],
+.calendarnav-previous,
+.calendarnav-next {
     background-image: none;
     &:hover {
       background-image: none;
@@ -56,7 +58,8 @@ a.selector-chooseall,
 .inline-deletelink {
     @include icon(remove);
 }
-.icon-arrow-right {
+.icon-arrow-right,
+.calendarnav-next {
     @include icon(arrow-right);
 }
 .icon-search,
@@ -72,7 +75,8 @@ a.selector-chooseall,
 #id_new_folder {
     @include icon(folder);
 }
-.backtoroot  {
+.backtoroot,
+.calendarnav-previous{
    @include icon(chevron-left);
 }
 .movetolink span {
