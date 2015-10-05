@@ -375,8 +375,7 @@
     border: solid 1px $color-primary;
     border-radius: 10px !important;
     &.current.active {
-        color: $white !important;
-        background-color: $color-primary;
+        background-color: $white;
     }
 }
 .collapse {
