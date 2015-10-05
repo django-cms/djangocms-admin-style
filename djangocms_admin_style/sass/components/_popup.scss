@@ -68,9 +68,6 @@
     .field-image {
         max-width: inherit !important;
         box-sizing: border-box;
-        & + .add-another {
-            margin-top: 10px;
-        }
     }
     #container {
         min-width: inherit !important;
