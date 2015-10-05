@@ -150,14 +150,19 @@
             margin: -2px 0;
             padding-right: 30px;
             & + .add-another {
-                height: 45px;
+                display: inline-block;
+                line-height: 10px;
                 width: 45px;
+                height: 45px;
                 margin: -2px 0 -2px 10px !important;
-                vertical-align: middle;
+                padding: 14px;
                 background-position: center;
                 border-radius: $border-radius-normal;
                 border: solid 1px $gray-lighter;
                 box-sizing: border-box;
+                &:before {
+                    vertical-align: middle;
+                }
             }
         }
         &.delete {

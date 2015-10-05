@@ -282,9 +282,6 @@ ul.messagelist + #content {
             margin: 5px 0;
         }
     }
-    + .add-another {
-        margin: 15px 0;
-    }
 }
 .selector {
     width: 100%;
@@ -310,6 +307,41 @@ ul.messagelist + #content {
             width: 252px;
             margin: -5px 0 2px;
         }
+        img {
+            width: 15px !important;
+            height: 15px !important;
+        }
+    }
+    .selector-add,
+    .selector-remove {
+        font-size: 0;
+        text-indent: 0;
+        width: 22px;
+        height: 22px;
+        background: none;
+        &:before {
+            font-size: 22px;
+            margin: 0;
+        }
+        &.active {
+            color: $gray-light;
+        }
+    }
+    a.selector-chooseall,
+    a.selector-clearall {
+        color: $color-primary;
+        font-weight: normal;
+        background-image: none;
+        &:before {
+            color: $gray-light;
+        }
+        &.active {
+            font-weight: normal;
+            background-image: none;
+            &:before {
+                color: $color-primary;
+            }
+        }
     }
     .selector-filter {
         padding-left: 0;
@@ -325,14 +357,22 @@ ul.messagelist + #content {
     select[multiple] {
         overflow-y: auto;
         width: 100% !important;
-        padding: 10px;
+        padding: 0;
         margin-bottom: 5px;
         border: 1px solid $gray-lighter !important;
+        option {
+            font-size: $font-size-normal;
+            line-height: $line-height-normal;
+            width: 100%;
+            padding: 10px;
+            border-bottom: solid 1px $gray-lighter;
+            white-space: normal;
+        }
     }
     a {
         font-size: $font-size-normal;
         &:hover {
-            color: $color-primary-dark !important;
+            color: $color-primary !important;
         }
     }
     ul.selector-chooser {

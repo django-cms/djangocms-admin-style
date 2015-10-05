@@ -446,6 +446,8 @@ a.button {
 // date time
 .form-row {
     p.datetime {
+        font-weight: normal;
+        font-size: $font-size-normal !important;
         line-height: 36px;
         margin-left: 0;
         padding-left: 0;
@@ -458,7 +460,7 @@ a.button {
 // calendar
 div.calendar {
     table {
-        width: 220px !important;
+        width: 230px !important;
         caption {
             color: $gray !important;
             padding: 10px 30px;
@@ -475,25 +477,26 @@ div.calendar {
             padding: 0;
             background: $gray-lightest;
             &.nonday {
-                background-color: $gray-lighter !important;
+                background-color: $gray-lightest !important;
             }
         }
         td a {
-            padding: 6px 4px;
+            padding: 7px;
             &:hover,
             &:active,
             &:focus {
-                background: $color-primary-dark !important;
+                color: $gray-darker;
+                background: $color-primary-light !important;
             }
         }
     }
     .today a {
-        color: $white;
-        background: $color-info-ultralight !important;
+        color: $gray-darker;
+        background-color: $color-primary;
     }
 }
 div.calendarbox {
-    width: 220px !important;
+    width: 230px !important;
     table {
         margin-bottom: 0 !important;
         td {
@@ -503,9 +506,11 @@ div.calendarbox {
                 a {
                     color: $white;
                     background-color: $color-primary;
+                    &:hover {
+                        color: $gray-darker;
+                    }
                 }
             }
-
         }
         th {
             padding: 10px;
@@ -513,14 +518,22 @@ div.calendarbox {
         }
         th,
         td {
-            font-size: $font-size-small;
+            font-size: $font-size-normal;
             line-height: $line-height-normal;
+            font-weight: normal;
             border-color: $gray-lighter;
+            background-color: $white;
+            a {
+                font-family: $base-font-family;
+                font-weight: normal;
+                color: $gray;
+            }
         }
     }
     .calendarnav-previous,
     .calendarnav-next {
-        color: $gray;
+        color: $color-primary;
+        font-size: 0;
         text-decoration: none;
         padding: 6px 7px;
         background: none;
@@ -532,9 +545,19 @@ div.calendarbox {
     .calendar-shortcuts {
         font-size: $font-size-small;
         line-height: $line-height-normal;
-        padding: 15px 0 10px;
         border-color: $gray-lighter !important;
         background: $white;
+        a {
+            font-size: $font-size-small !important;
+            margin-right: 5px !important;
+            margin-top: 0 !important;
+            &:first-child {
+                margin-left: 5px;
+            }
+        }
+    }
+    .calendar-cancel {
+        padding: 5px 0 !important;
     }
 }
 div.calendarbox,
@@ -552,8 +575,7 @@ div.clockbox {
     .calendar-cancel {
         font-size: $font-size-normal;
         line-height: $line-height-normal;
-        margin-top: 5px !important;
-        padding: 5px 0 !important;
+        margin-top: 0 !important;
         background: $white;
         border-color: $gray-lighter !important;
         border-bottom-radius: $border-radius-base;
@@ -568,15 +590,25 @@ div.clockbox {
         font-weight: normal;
         text-transform: uppercase;
         margin-bottom: 0;
-        padding: 5px 30px;
+        padding: 10px 30px;
         background-color: $white;
         background-image: none;
         border-radius: $border-radius-base;
     }
-    .timelist a {
-        font-size: $font-size-small;
-        line-height: $line-height-normal;
-        padding: 5px 2px;
+    .timelist li {
+        border-top: solid 1px $gray-lighter;
+        &:first-child {
+            border-top: 0;
+        }
+        a {
+            font-size: $font-size-normal;
+            line-height: $line-height-normal;
+            font-weight: normal;
+            padding: 10px 2px;
+        }
+    }
+    .calendar-cancel {
+        padding: 10px 0 !important;
     }
 }
 .timelist a {
@@ -588,8 +620,27 @@ div.clockbox {
     }
 }
 
-span.datetimeshortcuts a {
-    color: $color-primary;
+span.datetimeshortcuts,
+.calendar-shortcuts {
+    font-size: 0 !important;
+    padding: 4px 0 !important;
+    a {
+        display: inline-block;
+        color: $gray-darker;
+        font-size: $font-size-normal !important;
+        padding: 10px;
+        margin-right: 10px;
+        margin-top: 10px !important;
+        border: solid 1px $gray-lighter;
+        border-radius: $border-radius-base;
+        &:before {
+            color: $color-primary;
+            margin: 0;
+        }
+        &:hover {
+            color: $gray-darker;
+        }
+    }
 }
 
 // filter horizontal
@@ -625,4 +676,9 @@ form select[multiple] {
 
 .fa-question-circle:before {
     font-size: $font-size-normal;
+}
+
+#id_password {
+    padding: 10px;
+    background-color: $gray-lightest;
 }

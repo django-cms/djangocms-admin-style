@@ -11,7 +11,16 @@
 .movetolink span,
 .file-upload a,
 a.insertlinkButton,
-.field-get_attachment_address a {
+.field-get_attachment_address a,
+a.selector-clearall,
+a.selector-chooseall,
+.selector-remove,
+.selector-add,
+.add-another,
+a[id*="calendarlink"],
+a[id*="clocklink"],
+.calendarnav-previous,
+.calendarnav-next {
     background-image: none;
     &:hover {
       background-image: none;
@@ -29,8 +38,17 @@ a.insertlinkButton,
   @include icon(picture);
 }
 
+a.selector-clearall,
+.selector-remove {
+    @include icon(chevron-circle-left);
+}
+a.selector-chooseall,
+.selector-add {
+    @include icon(chevron-circle-right);
+}
 .addlink,
-.add-row a {
+.add-row a,
+.add-another {
     @include icon(plus);
 }
 .changelink {
@@ -40,7 +58,8 @@ a.insertlinkButton,
 .inline-deletelink {
     @include icon(remove);
 }
-.icon-arrow-right {
+.icon-arrow-right,
+.calendarnav-next {
     @include icon(arrow-right);
 }
 .icon-search,
@@ -56,7 +75,8 @@ a.insertlinkButton,
 #id_new_folder {
     @include icon(folder);
 }
-.backtoroot  {
+.backtoroot,
+.calendarnav-previous {
    @include icon(chevron-left);
 }
 .movetolink span {
@@ -68,6 +88,18 @@ a.insertlinkButton,
 .insertlinkButton {
     @include icon(arrow-left);
     padding: 0 !important;
+}
+a[id*="calendarlink"] {
+    @include icon(calendar);
+    img {
+        display: none;
+    }
+}
+a[id*="clocklink"] {
+    @include icon(clock);
+    img {
+        display: none;
+    }
 }
 
 .related-lookup {
@@ -107,12 +139,21 @@ a.insertlinkButton,
     }
 }
 .add-another {
-    @include hide-text();
     display: inline-block;
-    width: 14px;
+    width: 15px;
     height: 14px;
-    margin-top: 10px;
-    background: url("../img/icon_addlink_large.gif") 0 0 no-repeat;
+    padding: 10px;
+    margin: 10px 0;
+    border: solid 1px $gray-lighter;
+    border-radius: $border-radius-base;
+    &:before {
+        color: $gray-darker;
+        vertical-align: top;
+        margin: 0;
+    }
+    img {
+        display: none;
+    }
 }
 
 .tree {

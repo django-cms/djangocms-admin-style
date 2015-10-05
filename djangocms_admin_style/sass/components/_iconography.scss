@@ -33,44 +33,62 @@
     @if $filename == arrow-right {
         $char: "E002";
     }
-    @if $filename == camera {
+    @if $filename == calendar {
         $char: "E003";
     }
-    @if $filename == chevron-left {
+    @if $filename == camera {
         $char: "E004";
     }
-    @if $filename == clipboard {
+    @if $filename == chevron-circle-down {
         $char: "E005";
     }
-    @if $filename == folder {
+    @if $filename == chevron-circle-left {
         $char: "E006";
     }
-    @if $filename == logo {
+    @if $filename == chevron-circle-right {
         $char: "E007";
     }
-    @if $filename == pencil {
+    @if $filename == chevron-circle-up {
         $char: "E008";
     }
-    @if $filename == picture {
+    @if $filename == chevron-left {
         $char: "E009";
     }
-    @if $filename == plus {
+    @if $filename == clipboard {
         $char: "E00A";
     }
-    @if $filename == remove {
+    @if $filename == clock {
         $char: "E00B";
     }
-    @if $filename == scissors {
+    @if $filename == folder {
         $char: "E00C";
     }
-    @if $filename == search {
+    @if $filename == logo {
         $char: "E00D";
     }
-    @if $filename == trash {
+    @if $filename == pencil {
         $char: "E00E";
     }
-    @if $filename == upload {
+    @if $filename == picture {
         $char: "E00F";
+    }
+    @if $filename == plus {
+        $char: "E010";
+    }
+    @if $filename == remove {
+        $char: "E011";
+    }
+    @if $filename == scissors {
+        $char: "E012";
+    }
+    @if $filename == search {
+        $char: "E013";
+    }
+    @if $filename == trash {
+        $char: "E014";
+    }
+    @if $filename == upload {
+        $char: "E015";
     }
 
     @return $char;
@@ -98,8 +116,28 @@
     @include icon(arrow-right);
 }
 
+.cms-icon-calendar {
+    @include icon(calendar);
+}
+
 .cms-icon-camera {
     @include icon(camera);
+}
+
+.cms-icon-chevron-circle-down {
+    @include icon(chevron-circle-down);
+}
+
+.cms-icon-chevron-circle-left {
+    @include icon(chevron-circle-left);
+}
+
+.cms-icon-chevron-circle-right {
+    @include icon(chevron-circle-right);
+}
+
+.cms-icon-chevron-circle-up {
+    @include icon(chevron-circle-up);
 }
 
 .cms-icon-chevron-left {
@@ -108,6 +146,10 @@
 
 .cms-icon-clipboard {
     @include icon(clipboard);
+}
+
+.cms-icon-clock {
+    @include icon(clock);
 }
 
 .cms-icon-folder {
