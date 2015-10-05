@@ -682,9 +682,14 @@ a.addlink {
 
 // delete page
 .delete-confirmation .colM {
+    &#content {
+        padding: 25px !important;
+    }
     @include box();
     margin: 15px !important;
-    padding: 0;
+    padding: 25px !important;
+    box-shadow: $base-box-shadow;
+    background-color: $white;
     h1 {
         margin: 0 0 10px;
     }
@@ -694,7 +699,7 @@ a.addlink {
         line-height: 20px;
     }
     form {
-        padding-right: 0;
+        padding: 0 !important;
         background: none;
         box-shadow: none;
     }
