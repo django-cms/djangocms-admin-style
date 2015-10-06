@@ -395,6 +395,7 @@ ul.messagelist + #content {
 // login
 body.login {
     background: none !important;
+    background-color: $gray-lightest !important;
     #container {
         @include box();
         overflow: hidden;
@@ -402,7 +403,7 @@ body.login {
         min-width: auto !important;
         border: none;
         box-shadow: $base-box-shadow;
-        background-color: $gray-lightest !important;
+        background-color: $white !important;
         #content-main {
             float: none;
         }
@@ -453,15 +454,17 @@ body.login {
                 .submit-row {
                     float: right;
                     width: 100%;
-                    padding: 20px 0 0 !important;
-                    margin-top: 20px;
+                    padding: 0 !important;
+                    margin-top: 0;
                     margin-right: 0;
                     background: none;
+                    border-top: 0;
                     input,
                     input[type="submit"] {
                         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
                         float: right;
                         width: auto !important;
+                        padding: 10px 20px !important;
                         background-image: none;
                     }
                     label {
