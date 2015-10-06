@@ -1,40 +1,44 @@
-function toggleClass (element, className) {
+(function () {
+    function toggleClass(element, className) {
 
-    var classString = element.className;
-    var nameIndex = classString.indexOf(className);
+        var classString = element.className;
+        var nameIndex = classString.indexOf(className);
 
-    if (!element || !className) {
-        return true;
+        if (!element || !className) {
+            return true;
+        }
+
+        if (nameIndex === -1) {
+            classString += ' ' + className;
+        } else {
+            classString = classString.substr(0, nameIndex) + classString.substr(nameIndex + className.length);
+        }
+
+        element.className = classString;
     }
 
-    if (nameIndex === -1) {
-        classString += ' ' + className;
-    } else {
-        classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
-    }
-
-    element.className = classString;
-}
-
-var submenu = document.getElementsByClassName('submenu')[0];
-var menuItem = document.getElementsByClassName('menu-item')[0];
-var html = document.getElementsByTagName('html')[0];
+    var submenu = document.getElementsByClassName('submenu')[0];
+    var menuItem = document.getElementsByClassName('menu-item')[0];
+    var html = document.getElementsByTagName('html')[0];
 
 
-menuItem.addEventListener('click', function (event) {
-    event = event || window.event;
-    event.preventDefault();
+    menuItem.addEventListener('click', function (event) {
+        event = event || window.event;
+        event.preventDefault();
 
-    toggleClass(submenu, 'submenu-open');
-    toggleClass(menuItem, 'menu-item-open');
-});
+        toggleClass(submenu, 'submenu-open');
+        toggleClass(menuItem, 'menu-item-open');
+    });
 
-html.addEventListener('click', function (event) {
-    if (event.target !== menuItem) {
-        var submenuOpen = document.getElementsByClassName('submenu-open')[0];
-        var menuItemOpen = document.getElementsByClassName('menu-item-open')[0];
 
-        submenuOpen.className = submenuOpen.className.replace('submenu-open', '');
-        menuItemOpen.className = menuItemOpen.className.replace('menu-item-open', '');
-    }
-});
+    html.addEventListener('click', function (event) {
+        if (event.target !== menuItem) {
+            var submenuOpen = document.getElementsByClassName('submenu-open')[0];
+            var menuItemOpen = document.getElementsByClassName('menu-item-open')[0];
+            if (submenuOpen && menuItemOpen) {
+                submenuOpen.className = submenuOpen.className.replace('submenu-open', '');
+                menuItemOpen.className = menuItemOpen.className.replace('menu-item-open', '');
+            }
+        }
+    });
+})()
