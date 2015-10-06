@@ -438,7 +438,7 @@ body.login {
             margin: 0 !important;
             padding: 17px 20px 30px !important;
             .errornote {
-                width: 240px !important;
+                width: calc(100% - 20px) !important;
             }
             #content-main {
                 form {
