@@ -395,14 +395,15 @@ ul.messagelist + #content {
 // login
 body.login {
     background: none !important;
+    background-color: $gray-lightest !important;
     #container {
         @include box();
-        overflow: hidden;
-        width: 340px !important;
-        min-width: auto !important;
+        width: 35.5% !important;
+        min-width: 320px !important;
+        margin-top: 165px;
         border: none;
         box-shadow: $base-box-shadow;
-        background-color: $gray-lightest !important;
+        background-color: $white !important;
         #content-main {
             float: none;
         }
@@ -415,28 +416,38 @@ body.login {
                 float: none;
                 color: $gray-darkest;
                 font-size: $font-size-large;
-                margin: 20px 40px 30px !important;
+                line-height: inherit;
+                height: auto;
+                margin: 50px 20px 0 !important;
+            }
+        }
+        #header-logo{
+            float: none;
+            text-align: center;
+            margin-top: -70px;
+            a:before {
+                font-size: 35px;
             }
         }
         #header-btn,
-        #header-logo,
+        #header-logo h1,
         #site-name {
             display: none;
         }
         #content {
             margin: 0 !important;
-            padding: 25px 40px !important;
+            padding: 17px 20px 30px !important;
             .errornote {
                 width: 240px !important;
             }
             #content-main {
                 form {
-                    margin-top: 0 !important;
+                    margin: 0 !important;
                     padding: 0;
                     box-shadow: none;
                 }
                 .form-row {
-                    padding-bottom: 30px;
+                    padding-bottom: 10px;
                     label {
                         float: left !important;
                         color: $gray !important;
@@ -453,15 +464,17 @@ body.login {
                 .submit-row {
                     float: right;
                     width: 100%;
-                    padding: 20px 0 0 !important;
-                    margin-top: 20px;
+                    padding: 0 !important;
+                    margin-top: 10px;
                     margin-right: 0;
                     background: none;
+                    border-top: 0;
                     input,
                     input[type="submit"] {
                         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
                         float: right;
                         width: auto !important;
+                        padding: 10px 20px !important;
                         background-image: none;
                     }
                     label {
