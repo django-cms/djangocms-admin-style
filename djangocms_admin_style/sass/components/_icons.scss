@@ -208,12 +208,4 @@ only screen and (min-device-pixel-ratio:2) {
         background-image: url("../img/icon_softroot@2x.png");
         background-size: 15px;
     }
-    .add-another {
-        @include hide-text();
-        display: inline-block;
-        width: 14px;
-        height: 14px;
-        background: url("../img/icon_addlink_large@2x.gif") 0 0 no-repeat;
-        background-size: 14px;
-    }
 }
