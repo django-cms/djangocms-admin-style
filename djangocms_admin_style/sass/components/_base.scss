@@ -236,19 +236,39 @@ ul.errorlist {
 ul.messagelist {
     position: absolute;
     top: 0;
-    left: 3%;
-    right: 3%;
+    left: 285px;
+    right: 120px;
     margin-top: $messages-margin-top !important;
     z-index: 5;
     li {
-        color: $color-success;
+        color: $gray-lighter;
+        font-size: $font-size-normal;
         font-weight: normal;
-        padding: 2px 10px;
+        padding: 5px 10px 5px 15px;
         background-image: none;
+        background-color: $gray-darker !important;
         border-bottom: 0;
-        &.error {
-            color: $color-danger;
+        &:before {
+            font-size: 18px !important;
+            margin-right: 20px !important;
+        }
+        &.success {
             background-image: none;
+            &:before {
+                color: $color-success;
+            }
+        }
+        &.error {
+            background-image: none;
+            &:before {
+                color: $color-danger;
+            }
+        }
+        &.warning {
+            background-image: none;
+            &:before {
+                color: $color-warning;
+            }
         }
     }
 }

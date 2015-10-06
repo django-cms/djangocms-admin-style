@@ -20,7 +20,10 @@ a.selector-chooseall,
 a[id*="calendarlink"],
 a[id*="clocklink"],
 .calendarnav-previous,
-.calendarnav-next {
+.calendarnav-next,
+.messagelist li.success,
+.messagelist li.error,
+.messagelist li.warning {
     background-image: none;
     &:hover {
       background-image: none;
@@ -100,6 +103,15 @@ a[id*="clocklink"] {
     img {
         display: none;
     }
+}
+.messagelist li.success {
+    @include icon(check-circle);
+}
+.messagelist li.error {
+    @include icon(minus-circle);
+}
+.messagelist li.warning {
+    @include icon(exclamation-triangle);
 }
 
 .related-lookup {
