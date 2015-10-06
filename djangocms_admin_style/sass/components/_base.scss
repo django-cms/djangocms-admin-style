@@ -236,19 +236,22 @@ ul.errorlist {
 ul.messagelist {
     position: absolute;
     top: 0;
-    left: 285px;
-    right: 120px;
+    left: 20%;
+    right: 10%;
     margin-top: $messages-margin-top !important;
     z-index: 5;
     li {
+        position: relative;
         color: $gray-lighter;
         font-size: $font-size-normal;
         font-weight: normal;
-        padding: 5px 10px 5px 15px;
+        padding: 5px 10px 5px 45px;
         background-image: none;
         background-color: $gray-darker !important;
         border-bottom: 0;
         &:before {
+            position: absolute;
+            left: 10px;
             font-size: 18px !important;
             margin-right: 20px !important;
         }
