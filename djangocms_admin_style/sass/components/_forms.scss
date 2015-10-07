@@ -43,6 +43,10 @@ form {
                 width: calc(100% - 48px) !important;
                 margin-bottom: 10px;
             }
+            input[type="checkbox"] {
+                width: auto !important;
+                margin-bottom: 5px;
+            }
             .related-lookup {
                 float: right;
             }
