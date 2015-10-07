@@ -3,7 +3,7 @@ html,
 body {
     height: auto;
     #container {
-        min-width: 450px !important;
+        min-width: inherit !important;
         margin: 0;
     }
 }
