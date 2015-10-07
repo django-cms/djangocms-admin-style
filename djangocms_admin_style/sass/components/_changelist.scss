@@ -122,10 +122,11 @@
             }
             form #searchbar {
                 width: auto !important;
-                max-width: 310px !important;
+                max-width: 257px !important;
                 font-size: $font-size-small;
                 padding: 9px 5px !important;
                 vertical-align: middle;
+                box-sizing: border-box;
             }
         }
         #changelist-filter {
@@ -185,7 +186,7 @@
             background: none;
             select {
                 white-space: nowrap;
-                width: 310px !important;
+                width: 257px !important;
                 padding: 9px 40px 9px 20px;
                 margin-top: 3px;
                 margin-right: 10px;
@@ -256,7 +257,7 @@
         }
     }
     #changelist-search {
-        max-width: 338px;
+        max-width: 335px;
         #limit_search_to_folder {
             vertical-align: middle;
             margin-top: 2px;
@@ -284,6 +285,7 @@
             background-repeat: no-repeat !important;
             background-position: 10px center !important;
             background-size: 23px !important;
+            box-sizing: border-box;
             &:active {
                 background-image: url('../img/icon_search_white@2x.png') !important;
             }
