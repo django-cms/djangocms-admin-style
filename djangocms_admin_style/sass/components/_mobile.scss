@@ -266,10 +266,17 @@ form {
         padding-left: 0 !important;
     }
     .submit-row {
-        text-align: right;
+        text-align: left;
+        .deletelink-box {
+            float: none;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
         input {
+            display: block;
             float: none;
             margin-bottom: 10px !important;
+            margin-left: 0;
         }
     }
 }
