@@ -460,6 +460,9 @@ body.login {
                         width: 100% !important;
                         padding: 10px;
                     }
+                    #id_password {
+                        background-color: $white;
+                    }
                 }
                 .submit-row {
                     float: right;
