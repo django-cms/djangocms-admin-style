@@ -268,10 +268,8 @@ ul.messagelist + #content {
             border: 0 !important
         }
     }
+    input[type="checkbox"],
     label {
-        vertical-align: middle !important;
-    }
-    input[type="checkbox"] {
         vertical-align: middle !important;
     }
     .selector-filter {
