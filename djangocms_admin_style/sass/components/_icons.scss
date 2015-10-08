@@ -115,7 +115,7 @@ a[id*="clocklink"] {
     @include icon(exclamation-triangle);
 }
 .messagelist li.info {
-    @include icon(check-circle);
+    @include icon(info-circle);
 }
 
 .related-lookup {
