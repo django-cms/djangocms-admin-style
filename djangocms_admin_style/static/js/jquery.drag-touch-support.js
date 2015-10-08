@@ -20,13 +20,18 @@
         }
 
         function init() {
-            var dragHandler = $('.drag-handler');
-            dragHandler.addEventListener('touchstart', touchHandler, true);
-            dragHandler.addEventListener('touchmove', touchHandler, true);
-            dragHandler.addEventListener('touchend', touchHandler, true);
-            dragHandler.addEventListener('touchcancel', touchHandler, true);
+            var dragHandlers = $('.drag-handler');
+            var dragHandler = dragHandlers[0];
+            console.log(dragHandler);
+            for (var i = 0; i < dragHandler.length; i++) {
+                dragHandler[i].addEventListener('touchstart', touchHandler, true);
+                dragHandler[i].addEventListener('touchmove', touchHandler, true);
+                dragHandler[i].addEventListener('touchend', touchHandler, true);
+                dragHandler[i].addEventListener('touchcancel', touchHandler, true);
+            }
+
         }
-        
+
         init();
 
     };
