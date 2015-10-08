@@ -65,7 +65,7 @@
     #changelist {
         margin-bottom: 0;
         .paginator {
-            width: calc(75% - 30px) !important;
+            width: calc(70% - 30px) !important;
         }
     }
     &.change-list #changelist {
@@ -151,11 +151,12 @@
         }
     }
     #changelist-wrapper {
-        width: 75%;
+        width: 70%;
+        clear: both;
     }
     .clipboard {
         float: right !important;
-        width: 23% !important;
+        width: 28% !important;
         border-radius: $border-radius-base;
         border: 0 !important;
         box-shadow: $base-box-shadow;
