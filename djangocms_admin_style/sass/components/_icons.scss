@@ -23,6 +23,7 @@ a[id*="clocklink"],
 .calendarnav-next,
 .messagelist li.success,
 .messagelist li.error,
+.messagelist li.info,
 .messagelist li.warning {
     background-image: none;
     &:hover {
@@ -112,6 +113,9 @@ a[id*="clocklink"] {
 }
 .messagelist li.warning {
     @include icon(exclamation-triangle);
+}
+.messagelist li.info {
+    @include icon(check-circle);
 }
 
 .related-lookup {
