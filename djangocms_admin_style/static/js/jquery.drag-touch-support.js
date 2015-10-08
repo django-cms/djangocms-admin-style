@@ -3,7 +3,6 @@
     $.fn.touchSupport = function(){
         function touchHandler(event) {
             var touch = event.changedTouches[0];
-
             var simulatedEvent = document.createEvent('MouseEvent');
 
             simulatedEvent.initMouseEvent( {
@@ -16,25 +15,19 @@
                 false, false, false, 0, null);
 
             touch.target.dispatchEvent(simulatedEvent);
-            event.preventDefault();
+            event.stopPropagation();
         }
 
         function init() {
-            var dragHandlers = $('.drag-handler');
-            var dragHandler = dragHandlers[0];
-            console.log(dragHandler);
-            for (var i = 0; i < dragHandler.length; i++) {
-                dragHandler[i].addEventListener('touchstart', touchHandler, true);
-                dragHandler[i].addEventListener('touchmove', touchHandler, true);
-                dragHandler[i].addEventListener('touchend', touchHandler, true);
-                dragHandler[i].addEventListener('touchcancel', touchHandler, true);
+            var that = $(this);
+            for (var i = 0; i < $(this).length; i++) {
+                that[i].addEventListener('touchstart', touchHandler, true);
+                that[i].addEventListener('touchmove', touchHandler, true);
+                that[i].addEventListener('touchend', touchHandler, true);
+                that[i].addEventListener('touchcancel', touchHandler, true);
             }
-
         }
-
         init();
-
     };
-
     $('.drag-handler').touchSupport();
 })(jQuery);
