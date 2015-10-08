@@ -45,7 +45,7 @@ form {
             }
             input[type="checkbox"] {
                 width: auto !important;
-                margin-bottom: 5px;
+                margin-bottom: 3px;
             }
             .related-lookup {
                 float: right;
@@ -157,12 +157,11 @@ form {
     .vCheckboxLabel,
     .field-type label,
     .sortedm2m label {
-        display: inline-block !important;
-        vertical-align: middle;
+        vertical-align: bottom;
         color: $gray-darker !important;
         font-size: $font-size-large !important;
         text-transform: none;
-        margin-bottom: 2px;
+        margin-bottom: 0;
         + a {
             font-size: $font-size-large;
             font-weight: normal;
@@ -234,10 +233,13 @@ form {
     }
     input[type="checkbox"],
     input[type="radio"] {
-        display: inline;
-        vertical-align: middle;
-        width: auto !important;
-        margin-bottom: 2px;
+        position: relative;
+        top: -1px;
+        overflow: hidden;
+        vertical-align: bottom;
+        line-height: $base-line-height;
+        height: 13px;
+        width: 13px !important;
         margin-right: 10px;
         padding: 0 !important;
         border: 0 !important;

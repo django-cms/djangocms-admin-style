@@ -103,6 +103,10 @@
                     background-size: 5px;
                     cursor: move !important;
                 }
+                input[type="checkbox"],
+                input[type="radio"] {
+                    vertical-align: baseline;
+                }
             }
         }
         #toolbar {
