@@ -65,7 +65,7 @@
     #changelist {
         margin-bottom: 0;
         .paginator {
-            width: calc(80% - 30px) !important;
+            width: calc(70% - 30px) !important;
         }
     }
     &.change-list #changelist {
@@ -150,8 +150,13 @@
             height: 37px;
         }
     }
+    #changelist-wrapper {
+        width: 70%;
+        clear: both;
+    }
     .clipboard {
         float: right !important;
+        width: 28% !important;
         border-radius: $border-radius-base;
         border: 0 !important;
         box-shadow: $base-box-shadow;
@@ -240,7 +245,7 @@
                     display: none;
                 }
                 &[disabled] {
-                    opacity: 0.5;
+                    color: $gray-lighter !important;
                 }
             }
             &:before {
