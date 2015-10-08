@@ -74,13 +74,15 @@
     }
     #content,
     &.filebrowser #content {
-        margin: 20px 2% 0 !important;
+        margin: 20px 20px 0 !important;
     }
     #content .submit-row {
         margin: 20px -2% 0 !important;
         padding: 20px 2% !important;
     }
     .form-row {
+        padding-left: 0;
+        padding-right: 0;
         &.field-enable_registration,
         &.field-registration_deadline_at,
         &.field-is_published,
