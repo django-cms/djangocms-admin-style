@@ -7,12 +7,16 @@
     }
 }
 #ghost {
+    position: absolute;
+    left: 20px;
+    width: 220px;
     max-width: 220px;
     min-height: 22px;
     padding: 20px !important;
     background-color: $color-primary;
     box-shadow: $base-box-shadow;
     opacity: 1 !important;
+    z-index: 10;
     .drag-handler,
     .action-checkbox {
         display: none !important;
