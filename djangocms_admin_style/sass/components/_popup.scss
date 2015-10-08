@@ -77,8 +77,8 @@
         margin: 20px 20px 0 !important;
     }
     #content .submit-row {
-        margin: 20px -2% 0 !important;
-        padding: 20px 2% !important;
+        margin: 20px -20px 0 !important;
+        padding: 20px 20px !important;
     }
     .form-row {
         padding-left: 0;
@@ -152,14 +152,14 @@
             padding: 0 !important;
         }
         ul {
-            margin: 20px -2% 0;
+            margin: 20px -20px 0;
             li {
-                padding: 10px 0 10px 2%;
+                padding: 10px 0 10px 20px;
             }
             ul {
-                margin: 10px 0 -10px -2%;
+                margin: 10px 0 -10px -20px;
                 li {
-                    padding: 10px 0 10px 2%;
+                    padding: 10px 0 10px 20px;
                 }
                 ul {
                     margin-left: 0;
