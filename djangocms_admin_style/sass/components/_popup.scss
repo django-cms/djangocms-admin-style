@@ -168,6 +168,9 @@
             }
         }
     }
+    ul.messagelist + #content {
+        margin-top: 90px !important;
+    }
 }
 .cms-admin-sideframe {
     #content {
