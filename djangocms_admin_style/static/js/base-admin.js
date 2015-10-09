@@ -42,10 +42,12 @@
             }
         }
     });
-
-    // calls touch support function
-    if (window.jQuery && $.fn.touchSupport) {
-        $('.drag-handler').touchSupport();
+    if (window.jQuery){
+       (function ($) {
+            // calls touch support function
+            if ($.fn.touchSupport) {
+                $('.drag-handler').touchSupport();
+            }
+        })(jQuery);
     }
-
 })();
