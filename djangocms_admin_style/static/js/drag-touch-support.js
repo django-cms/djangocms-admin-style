@@ -31,6 +31,5 @@ if (window.jQuery) {
 
             init();
         };
-        $('.drag-handler').touchSupport();
     })(jQuery);
 }
