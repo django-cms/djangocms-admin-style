@@ -650,6 +650,9 @@ a.addlink {
             background-color: transparent !important;
         }
     }
+    a:before {
+        margin-left: -5px;
+    }
 }
 
 // object tools
