@@ -152,7 +152,7 @@
                 border-bottom: solid 1px $gray-lighter;
             }
             h2 {
-                font-size: $font-size-normal;
+                font-size: $font-size-normal !important;
                 color: $gray;
                 font-weight: normal;
                 text-transform: uppercase;
@@ -171,7 +171,7 @@
             }
             li {
                 font-size: $font-size-normal;
-                margin-bottom: 19px;
+                margin-bottom: 15px;
                 &.selected {
                     font-weight: bold;
                     border-left: 0 !important;
@@ -204,6 +204,7 @@
                 margin-bottom: 0;
             }
             button {
+                font-size: $font-size-normal;
                 vertical-align: bottom;
                 margin-right: 10px;
                 padding: 10px 15px !important
@@ -283,12 +284,12 @@
             @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
             vertical-align: middle;
             text-indent: -9999px;
-            padding: 10px 20px !important;
+            padding: 10px 16px !important;
             margin-left: 10px;
             background-image: url('../img/icon_search_white@2x.png') !important;
             background-repeat: no-repeat !important;
-            background-position: 10px center !important;
-            background-size: 23px !important;
+            background-position: center !important;
+            background-size: 20px !important;
             box-sizing: border-box;
             &:active {
                 background-image: url('../img/icon_search_white@2x.png') !important;
