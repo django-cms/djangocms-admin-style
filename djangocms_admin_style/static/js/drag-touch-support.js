@@ -20,7 +20,8 @@ if (window.jQuery) {
 
             function init() {
                 var that = $(this);
-                for (var i = 0; i < $(this).length; i++) {
+                var len = that.length;
+                for (var i = 0; i < len; i++) {
                     that[i].addEventListener('touchstart', touchHandler, true);
                     that[i].addEventListener('touchmove', touchHandler, true);
                     that[i].addEventListener('touchend', touchHandler, true);
