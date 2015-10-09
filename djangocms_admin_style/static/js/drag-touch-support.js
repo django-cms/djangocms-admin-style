@@ -20,7 +20,8 @@ if (window.jQuery) {
 
             function init() {
                 var that = $(this);
-                for (var i = 0; i < $(this).length; i++) {
+                var itemsLength = that.length;
+                for (var i = 0; i < itemsLength; i++) {
                     that[i].addEventListener('touchstart', touchHandler, true);
                     that[i].addEventListener('touchmove', touchHandler, true);
                     that[i].addEventListener('touchend', touchHandler, true);
@@ -30,6 +31,5 @@ if (window.jQuery) {
 
             init();
         };
-        $('.drag-handler').touchSupport();
     })(jQuery);
 }

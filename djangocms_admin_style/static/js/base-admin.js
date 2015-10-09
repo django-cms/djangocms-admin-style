@@ -1,4 +1,5 @@
 (function () {
+    // native javascript which opens menu on click
     function toggleClass(element, className) {
 
         var classString = element.className;
@@ -41,4 +42,12 @@
             }
         }
     });
+    if (window.jQuery){
+       (function ($) {
+            // calls touch support function
+            if ($.fn.touchSupport) {
+                $('.drag-handler').touchSupport();
+            }
+        })(jQuery);
+    }
 })();
