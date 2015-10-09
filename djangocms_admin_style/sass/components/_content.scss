@@ -499,6 +499,8 @@ body.login {
 .admin_shortcuts {
     margin: $toolbar-height 35% 0 3%;
     .shortcuts {
+        padding-left: 10px;
+        padding-right: 10px;
         background-color: transparent !important;
         border: 0 !important;
         h2 {
