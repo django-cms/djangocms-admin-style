@@ -31,7 +31,7 @@ Compiling CSS
 
 ::
 
-    compass watch .
+    gulp
 
 
-* for compiling the sass file, you need to ``gem install compass`` or use CodeKit / ScoutApp
+* for compiling the sass file, you need to ``npm install``
