@@ -495,7 +495,27 @@ body.login {
         }
     }
 }
-
+//shortcuts
+.admin_shortcuts {
+    margin: $toolbar-height 35% 0 3%;
+    .shortcuts {
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: transparent !important;
+        border: 0 !important;
+        h2 {
+            color: $gray-darkest;
+            font-weight: bold !important;
+            font-size: $font-size-large;
+        }
+        li a {
+            min-height: 20px;
+        }
+    }
+    + #content {
+        margin-top: 20px !important;
+    }
+}
 // dashboard
 .dashboard #container {
     #content-main {
