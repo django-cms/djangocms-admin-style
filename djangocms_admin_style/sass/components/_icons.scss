@@ -155,13 +155,12 @@ a[id*="clocklink"] {
     }
 }
 .add-another {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
     width: 15px;
     height: 14px;
-    padding: 10px;
+    padding: 10px !important;
     margin: 10px 0;
-    border: solid 1px $gray-lighter;
-    border-radius: $border-radius-base;
     &:before {
         color: $gray-darker;
         vertical-align: top;
