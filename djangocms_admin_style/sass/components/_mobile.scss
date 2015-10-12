@@ -11,6 +11,7 @@ body {
     margin: 160px 10px 0;
     h1 {
         margin-left: 0;
+        margin-right: 0;
     }
 }
 #branding {
@@ -181,7 +182,7 @@ body.login {
     }
     #changelist .paginator,
     #changelist.filtered .paginator {
-        width: calc(100% - 30px - 6%) !important;
+        width: calc(100% - 30px - 6% - 10px) !important;
     }
     .module #changelist-form .results {
         overflow: auto;

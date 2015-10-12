@@ -30,6 +30,10 @@ body {
                 }
             }
         }
+        .breadcrumbs + .messagelist + #content,
+        .breadcrumbs + #content {
+           margin-left: calc(3% + 10px) !important;
+        }
     }
 }
 ul.messagelist + #content {
