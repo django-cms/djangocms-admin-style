@@ -631,20 +631,17 @@ span.datetimeshortcuts,
     font-size: 0 !important;
     padding: 4px 0 !important;
     a {
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
         display: inline-block;
-        color: $gray-darker;
-        font-size: $font-size-normal !important;
-        padding: 10px;
+        font-size: $font-size-large !important;
+        line-height: $font-size-large;
+        height: 16px;
+        padding: 10px !important;
         margin-right: 10px;
         margin-top: 10px !important;
-        border: solid 1px $gray-lighter;
-        border-radius: $border-radius-base;
         &:before {
             color: $color-primary;
             margin: 0;
-        }
-        &:hover {
-            color: $gray-darker;
         }
     }
 }
