@@ -1,0 +1,52 @@
+// django-admin-shortcuts
+
+.admin_shortcuts {
+    margin: $toolbar-height 35% 0 3%;
+    border-bottom: solid 1px $gray-lighter;
+    + #content {
+        margin-top: 60px !important;
+    }
+    .shortcuts {
+        color: $gray-light;
+        padding: 10px !important;
+        background-color: transparent !important;
+        border: 0 !important;
+        box-shadow: none;
+        h2 {
+            color: $gray-darkest;
+            font-weight: bold !important;
+            font-size: $font-size-large;
+            border: 0;
+        }
+        li {
+            a,
+            a:link,
+            a:visited,
+            a:active {
+                color: $color-primary !important;
+                text-decoration: none;
+                min-height: 20px;
+                padding: 15px 0 15px 45px;
+                border: 1px solid $gray-lighter;
+                background-color: $white;
+                box-shadow: none;
+                background-size: 25px;
+                .count {
+                    color: $gray;
+                }
+                .count_new {
+                    border-color: $color-primary;
+                    background: $color-primary;
+                }
+                .title {
+                    text-shadow: none;
+                }
+            }
+            a:hover,
+            a:focus {
+                color: $color-primary-light !important;
+                background-color: $color-primary;
+            }
+        }
+    }
+}

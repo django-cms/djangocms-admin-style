@@ -1,0 +1,54 @@
+// This file must be imported before loading html5-boilerplate
+$base-font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;  // default font-family
+
+//##############################################################################
+// #COLORS
+
+$color-primary-light: #f1faff;
+$color-primary-dark: #48abd9;
+
+$color-info-ultralight: #addef6;
+$color-info-light: #5bbdee;
+$color-info-dark: #0072ac;
+
+$color-success-ultralight: #ebf8e6;
+$color-success-light: #7cbe5a;
+$color-success-dark: #5da03d;
+
+$color-warning-ultralight: #fffde4;
+$color-warning-light: #ffc600;
+$color-warning-dark: #ffa800;
+
+$color-danger-ultralight: #fff3f3;
+$color-danger-light: #ef4a4a;
+$color-danger-dark: #d50101;
+
+//##############################################################################
+// #MARGIN/PADDING
+$content-margin: 45px;
+$breadcrumb-padding: 11px;
+$filer-content-margin: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal;
+
+$toolbar-margin-button: ($toolbar-height - $toolbar-button-height) / 2;
+$toolbar-margin-logo: ($toolbar-height - $toolbar-logo-height) / 2;
+$content-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + $content-margin;
+$messages-breadcrumb-margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + 3; //3 stands for breadcrumb border and toolbar shadow size
+$messages-margin-top: $toolbar-height + 2; //2 stands for toolbar shadow size
+
+//##############################################################################
+// #BUTTONS
+$btn-cms-active: #e6e6e6;
+$btn-cms-active-hover: #d4d4d4;
+$btn-cms-active-hover-border: #8c8c8c;
+
+//##############################################################################
+// #SHADOW
+$base-box-shadow: 0 0 5px 0 rgba($black, 0.2);
+
+
+// Then we'll import the compass extension
+@import "libs/_html5-boilerplate.scss";
+
+// Now, you can simply include everything
+// (except media) by uncommeting this line
+@include html5-boilerplate;
