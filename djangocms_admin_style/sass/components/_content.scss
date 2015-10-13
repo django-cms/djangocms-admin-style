@@ -242,7 +242,7 @@ ul.messagelist + #content {
         margin: 0;
         .deletelink {
             @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
-            @include icon(trash);
+            @include icon(trash-o);
             display: block;
             padding: 8px 20px !important;
         }
