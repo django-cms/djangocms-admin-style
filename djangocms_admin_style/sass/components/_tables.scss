@@ -135,9 +135,9 @@
         td {
             color: $gray-darkest;
             font-size: $font-size-normal;
-            line-height: $line-height-normal !important;
+            line-height: inherit;
             text-transform: none;
-            vertical-align: middle;
+            vertical-align: middle !important;
             padding: 10px !important;
         }
     }
@@ -146,16 +146,16 @@
             float: left;
             width: auto !important;
             max-width: 160px !important;
-            height: 45px;
+            height: 42px;
             margin: -2px 0;
             padding-right: 30px;
             & + .add-another {
                 display: inline-block;
                 line-height: 10px;
-                width: 45px;
-                height: 45px;
+                width: 42px;
+                height: 42px;
                 margin: -2px 0 -2px 10px !important;
-                padding: 14px;
+                padding: 11px !important;
                 background-position: center;
                 border-radius: $border-radius-normal;
                 border: solid 1px $gray-lighter;
