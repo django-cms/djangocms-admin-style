@@ -477,6 +477,8 @@ div.calendar {
             border-top-radius: $border-radius-base;
         }
         th {
+            font-family: $base-font-family;
+            color: $gray-darkest;
             background: none;
         }
         td {
@@ -557,6 +559,7 @@ div.calendarbox {
             font-size: $font-size-small !important;
             margin-right: 5px !important;
             margin-top: 0 !important;
+            padding: 9px 10px !important;
             &:first-child {
                 margin-left: 5px;
             }
@@ -579,7 +582,7 @@ div.clockbox {
         font-size: $font-size-normal;
     }
     .calendar-cancel {
-        font-size: $font-size-normal;
+        font-size: $font-size-small !important;
         line-height: $line-height-normal;
         margin-top: 0 !important;
         background: $white;
