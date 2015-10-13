@@ -140,7 +140,7 @@
                         }
                     }
                     &.deletelink {
-                        @include icon(trash);
+                        @include icon(trash-o);
                     }
                 }
             }
@@ -232,7 +232,7 @@
                 outline: none;
             }
             &.deletelink {
-                @include icon(trash);
+                @include icon(trash-o);
                 border-top: solid 1px $gray-lighter;
                 &[disabled] {
                     opacity: 0.5;

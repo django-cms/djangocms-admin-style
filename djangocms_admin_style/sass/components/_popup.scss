@@ -146,24 +146,38 @@
             min-width: 215px;
         }
     }
-    &.delete-confirmation .colM {
-        box-shadow: none;
-        &#content {
-            padding: 0 !important;
+    &.delete-confirmation {
+        #container .breadcrumbs + .messagelist + #content,
+        #container .breadcrumbs + #content {
+            margin-left: 20px !important;
         }
-        ul {
-            margin: 20px -20px 0;
-            li {
-                padding: 10px 0 10px 20px;
+        .colM {
+            box-shadow: none;
+            > p {
+                @include icon(trash);
+                margin-top: -5px;
+                margin-bottom: 0;
+                &:before {
+                    font-size: 40px;
+                }
+            }
+            &#content {
+                padding: 0 !important;
             }
             ul {
-                margin: 10px 0 -10px -20px;
+                margin: 10px -20px 0;
                 li {
                     padding: 10px 0 10px 20px;
                 }
                 ul {
-                    margin-left: 0;
-                    margin-right: 0;
+                    margin: 10px 0 -10px -20px;
+                    li {
+                        padding: 10px 0 10px 20px;
+                    }
+                    ul {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
                 }
             }
         }
