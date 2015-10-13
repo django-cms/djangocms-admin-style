@@ -55,6 +55,9 @@
             padding: 5px 10px !important;
             white-space: nowrap;
             background-color: $white;
+            &.sorted:nth-child(2) {
+                width: 160px !important;
+            }
             .text {
                 float: left;
                 padding-right: 0 !important;
@@ -78,7 +81,7 @@
     thead th.sorted .sortoptions {
         float: right;
         display: inline-block;
-        padding-top: 0;
+        padding: 0;
         a {
             &.ascending {
                 background: url("../img/sorting-icons.png") -5px -50px no-repeat;
@@ -101,7 +104,6 @@
         }
     }
     thead th.sortable{
-        min-width: 160px;
         &:hover {
             background: $gray-lighter;
         }
