@@ -681,7 +681,8 @@ form select[multiple] {
     font-size: $font-size-normal;
 }
 
-#id_password {
-    padding: 10px;
+#id_password,
+.field-type p {
+    padding: 10px !important;
     background-color: $gray-lightest;
 }
