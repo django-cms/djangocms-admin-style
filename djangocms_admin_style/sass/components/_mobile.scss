@@ -91,6 +91,10 @@ body.login {
 }
 .dashboard {
     #container {
+        #content h1 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
         #content-main {
             float: none;
             min-width: 0;
@@ -120,6 +124,10 @@ body.login {
     }
     .module {
         background: none !important;
+    }
+    caption {
+        margin-left: 10px;
+        margin-right: 0;
     }
 }
 
@@ -335,7 +343,7 @@ form {
 
 // shortcuts
 .admin_shortcuts {
-    margin: 46px 10px 0 10px;
+    margin: 46px 3% 0 3%;
 }
 .admin_shortcuts .shortcuts li a {
     padding: 10px 10px 10px 40px;
@@ -343,7 +351,4 @@ form {
 }
 .admin_shortcuts .shortcuts li a span {
     padding: 0 !important;
-}
-.admin_shortcuts .shortcuts li:first-child a {
-    padding: 10px 20px;
 }

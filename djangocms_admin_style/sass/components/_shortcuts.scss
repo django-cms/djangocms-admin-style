@@ -1,6 +1,7 @@
 // django-admin-shortcuts
 
 .admin_shortcuts {
+    max-width: 900px;
     margin: $toolbar-height 35% 0 3%;
     border-bottom: solid 1px $gray-lighter;
     + #content {
@@ -26,7 +27,7 @@
                 color: $color-primary !important;
                 text-decoration: none;
                 min-height: 20px;
-                padding: 15px 0 15px 45px;
+                padding: 15px 10px 15px 45px;
                 border: 1px solid $gray-lighter;
                 background-color: $white;
                 box-shadow: none;
