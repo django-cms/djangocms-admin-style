@@ -614,6 +614,9 @@ div.clockbox {
             line-height: $line-height-normal;
             font-weight: normal;
             padding: 10px 2px;
+            &:hover {
+                background-color: $color-primary-light !important;
+            }
         }
     }
     .calendar-cancel {
