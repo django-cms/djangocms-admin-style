@@ -31,6 +31,14 @@
         fieldset {
             width: 100%;
         }
+        .form-row {
+             @include micro-clearfix;
+        }
+        .checkbox-row {
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+        }
     }
     .calendarbox table {
         td {
