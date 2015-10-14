@@ -716,6 +716,9 @@ a.addlink {
     padding: 25px !important;
     box-shadow: $base-box-shadow;
     background-color: $white;
+    ul {
+        margin-top: 10px;
+    }
     h1 + p {
         @include icon(trash);
         margin-top: -5px;
