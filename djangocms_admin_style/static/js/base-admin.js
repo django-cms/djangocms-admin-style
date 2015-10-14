@@ -51,17 +51,21 @@
         if (cmsFrameData.name && cmsFrameData.name === 'cms_frame') {
             headerLink.setAttribute('href', cmsFrameData.url);
         }
-    } catch(error) {
+    } catch (error) {
 
     }
 
     // load touch support function
     if (window.jQuery || (window.django && window.django.jQuery)) {
-       (function ($) {
-            // calls touch support function
-            if ($.fn.touchSupport) {
-                $('.drag-handler').touchSupport();
-            }
+        // scopes the jQuery
+        (function ($) {
+            // waits for the document.ready
+            $(function () {
+                // calls touch support function
+                if ($.fn.touchSupport && $('.drag-handler').length) {
+                    $(window).touchSupport();
+                }
+            });
         })(window.jQuery || window.django.jQuery);
     }
 })();
