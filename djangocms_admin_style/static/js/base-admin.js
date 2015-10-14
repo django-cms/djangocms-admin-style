@@ -46,12 +46,12 @@
     // Back to link
     var button = document.getElementById('header-btn');
 
-    if (window.name != '') {
-        var object =JSON.parse(window.name);
+    if (window.name !== '') {
+        var object = JSON.parse(window.name);
     }
 
     button.addEventListener('click', function () {
-        if (window.name != '') {
+        if (window.name !== '') {
             window.open(object.url, object.name);
         } else {
             window.open('/');
