@@ -1,4 +1,4 @@
-if (window.jQuery) {
+if (window.jQuery || (window.django && window.django.jQuery)) {
     (function ($) {
         $.fn.touchSupport = function () {
             function touchHandler(event) {
@@ -31,5 +31,5 @@ if (window.jQuery) {
 
             init();
         };
-    })(jQuery);
+    })(window.jQuery || window.django.jQuery);
 }

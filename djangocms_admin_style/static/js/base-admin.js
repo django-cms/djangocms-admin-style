@@ -44,27 +44,24 @@
     });
 
     // Back to link
-    var button = document.getElementById('header-btn');
+    try {
+        var cmsFrameData = JSON.parse(window.name);
+        var headerLink = document.getElementsByClassName('js-header-link')[0];
 
-    if (window.name !== '') {
-        var object = JSON.parse(window.name);
+        if (cmsFrameData.name && cmsFrameData.name === 'cms_frame') {
+            headerLink.setAttribute('href', cmsFrameData.url);
+        }
+    } catch(error) {
+
     }
 
-    button.addEventListener('click', function () {
-        if (window.name !== '') {
-            window.open(object.url, object.name);
-        } else {
-            window.open('/');
-        }
-    });
-
     // load touch support function
-    if (window.jQuery){
+    if (window.jQuery || (window.django && window.django.jQuery)) {
        (function ($) {
             // calls touch support function
             if ($.fn.touchSupport) {
                 $('.drag-handler').touchSupport();
             }
-        })(jQuery);
+        })(window.jQuery || window.django.jQuery);
     }
 })();
