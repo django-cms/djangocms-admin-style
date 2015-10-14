@@ -17,7 +17,7 @@ $list-left-margin: 1.8em !default;
     @include hand-cursor-inputs;
     @include reset-form-elements;
     //@include selected-text;
-    @include webkit-tap-highlight;
+    //@include webkit-tap-highlight;
     @include ie-hacks;
     @include no-nav-margins;
     html {
@@ -106,7 +106,7 @@ $list-left-margin: 1.8em !default;
         overflow: visible;
         font-family: sans-serif;
         font-size: 100%;
-        vertical-align: baseline; 
+        vertical-align: baseline;
         width: auto;
         margin: 0;
     }
@@ -121,7 +121,7 @@ $list-left-margin: 1.8em !default;
     // Remove extra padding and inner border in Firefox
     input::-moz-focus-inner,
     button::-moz-focus-inner {
-        padding: 0; 
+        padding: 0;
         border: 0;
     }
 }
@@ -136,12 +136,12 @@ $list-left-margin: 1.8em !default;
 @mixin selected-text {
     ::-moz-selection {
         color: $selected-font-color;
-        text-shadow: none; 
+        text-shadow: none;
         background: $selected-background-color;
     }
     ::selection {
         color: $selected-font-color;
-        text-shadow: none; 
+        text-shadow: none;
         background: $selected-background-color;
     }
 }
