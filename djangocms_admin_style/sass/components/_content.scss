@@ -650,7 +650,9 @@ a.addlink {
         &:hover,
         &:active,
         &:focus {
+            text-decoration: underline !important;
             background-color: transparent !important;
+            box-shadow: none !important;
         }
     }
     a:before {
