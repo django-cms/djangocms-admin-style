@@ -690,3 +690,7 @@ form select[multiple] {
     padding: 10px !important;
     background-color: $gray-lightest;
 }
+.field-type p:empty {
+    padding: 0 !important;
+    background-color: transparent;
+}
