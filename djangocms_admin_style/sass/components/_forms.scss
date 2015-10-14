@@ -297,7 +297,7 @@ form {
         }
     }
     .form-row {
-        padding: 8px 2px 15px;
+        padding: 0 2px 25px;
         border-bottom-color: $gray-lighter;
         &.errors {
             border: 0;
@@ -311,6 +311,9 @@ form {
         border-bottom-color: transparent;
     }
     .checkbox-row {
+        padding-top: 15px;
+        margin-bottom: -10px;
+        border-top: solid 1px $gray-lighter;
         label {
             color: $gray-darkest !important;
             font-size: $font-size-large;
