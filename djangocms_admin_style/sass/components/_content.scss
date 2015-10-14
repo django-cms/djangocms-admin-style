@@ -716,8 +716,19 @@ a.addlink {
     padding: 25px !important;
     box-shadow: $base-box-shadow;
     background-color: $white;
+    ul {
+        margin-top: 10px;
+    }
+    h1 + p {
+        @include icon(trash);
+        margin-top: -5px;
+        margin-bottom: 0;
+        &:before {
+            font-size: 40px;
+        }
+    }
     h1 {
-        margin: 0 0 10px;
+        display: none;
     }
     input[type="submit"] {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);

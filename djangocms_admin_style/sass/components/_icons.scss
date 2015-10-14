@@ -25,7 +25,8 @@ a[id*="clocklink"],
 .messagelist li.error,
 .messagelist li.info,
 .messagelist li.warning,
-.cms-admin-modal.delete-confirmation .colM > p {
+.cms-admin-modal.delete-confirmation .colM > p,
+.delete-confirmation .colM h1 + p {
     background-image: none;
     &:hover {
       background-image: none;
