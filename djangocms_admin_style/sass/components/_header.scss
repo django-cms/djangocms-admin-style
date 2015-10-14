@@ -122,6 +122,7 @@
         float: right;
         padding-right: $toolbar-right-space;
         margin: $toolbar-margin-button 0 $toolbar-margin-button $toolbar-left-space;
+        cursor: pointer;
         .btn {
             display: block;
             font-size: $toolbar-button-font-size !important;

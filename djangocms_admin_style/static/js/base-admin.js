@@ -42,6 +42,23 @@
             }
         }
     });
+
+    // Back to link
+    var button = document.getElementById('header-btn');
+
+    if (window.name !== '') {
+        var object = JSON.parse(window.name);
+    }
+
+    button.addEventListener('click', function () {
+        if (window.name !== '') {
+            window.open(object.url, object.name);
+        } else {
+            window.open('/');
+        }
+    });
+
+    // load touch support function
     if (window.jQuery){
        (function ($) {
             // calls touch support function
