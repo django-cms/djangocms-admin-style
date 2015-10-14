@@ -639,15 +639,13 @@ span.datetimeshortcuts,
     a {
         @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
         display: inline-block;
-        font-size: $font-size-large !important;
-        line-height: $font-size-large;
-        height: 16px;
+        height: 12px;
         padding: 10px !important;
         margin-right: 10px;
         margin-top: 10px !important;
         &:before {
             color: $color-primary;
-            margin: 0;
+            margin: -2px 0 0;
         }
     }
 }
