@@ -130,15 +130,21 @@ a[id*="clocklink"] {
 
 .addlink,
 .addlink a {
- color: $color-success;
+    color: $color-success;
+    &:hover {
+        color: $color-success-dark !important;
+    }
 }
 .changelink,
 .changelink a {
- color: $color-primary;
+    color: $color-primary;
+    &:hover {
+        color: $color-primary-dark !important;
+    }
 }
 .deletelink,
 .deletelink a {
- color: $color-danger;
+    color: $color-danger;
 }
 
 .addlink,

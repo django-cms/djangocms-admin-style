@@ -100,9 +100,11 @@ a,
 a:link {
     color: $color-primary;
     text-decoration: none;
-    &:visited,
     &:hover,
     &:active {
+        color: $color-primary !important;
+    }
+    &:visited {
         color: $color-primary;
     }
 }

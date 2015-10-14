@@ -26,6 +26,7 @@ body {
                     padding-left: 0;
                 }
                 &:hover {
+                    color: $color-primary-dark !important;
                     text-decoration: none;
                 }
             }
@@ -629,7 +630,7 @@ a.addlink {
     &:hover,
     &:focus,
     &:active {
-        color: $color-success;
+        color: $color-success-dark !important;
     }
 }
 
@@ -650,6 +651,7 @@ a.addlink {
         &:hover,
         &:active,
         &:focus {
+            color: $color-primary-dark !important;
             text-decoration: underline !important;
             background-color: transparent !important;
             box-shadow: none !important;
