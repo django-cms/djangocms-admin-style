@@ -716,6 +716,14 @@ a.addlink {
     padding: 25px !important;
     box-shadow: $base-box-shadow;
     background-color: $white;
+    > h1 {
+        @include icon(trash);
+        margin-top: -5px;
+        margin-bottom: 0;
+        &:before {
+            font-size: 40px;
+        }
+    }
     h1 {
         margin: 0 0 10px;
     }
