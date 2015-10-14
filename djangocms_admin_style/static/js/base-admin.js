@@ -44,7 +44,6 @@
     });
 
     // Back to link
-
     var button = document.getElementById('header-btn');
 
     if (window.name != '') {
@@ -59,6 +58,7 @@
         }
     });
 
+    // load touch support function
     if (window.jQuery){
        (function ($) {
             // calls touch support function
