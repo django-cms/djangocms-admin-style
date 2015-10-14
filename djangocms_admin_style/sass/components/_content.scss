@@ -149,9 +149,13 @@ ul.messagelist + #content {
             &:before {
                 color: $color-success;
             }
+            &:hover {
+                color: $color-success-dark !important;
+            }
         }
         .add-row td {
-            border-bottom: none;
+            padding: 10px 0 !important;
+            border-bottom: solid 1px $gray-lighter !important;
             background: none;
         }
         tr.add-row:hover {

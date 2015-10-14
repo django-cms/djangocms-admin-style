@@ -18,6 +18,10 @@
 }
 .popup,
 .cms-admin-modal {
+    #container .breadcrumbs + .messagelist + #content,
+    #container .breadcrumbs + #content {
+       margin-left: 20px !important;
+    }
     &.app-aldryn_bootstrap3 .filerFile .filerClearer {
         width: 36px !important;
         height: 36px !important;
@@ -51,7 +55,7 @@
                 background: none !important;
             }
             #changelist-form > input + .results {
-                clear: both ;
+                clear: both;
             }
         }
         #result_list {
@@ -61,8 +65,12 @@
             }
         }
     }
-    table td > select {
-       width: auto !important;
+    table {
+        margin-left: 0;
+        box-shadow: none !important;
+        td > select {
+           width: auto !important;
+        }
     }
     input[type=text],
     input[type=password],
