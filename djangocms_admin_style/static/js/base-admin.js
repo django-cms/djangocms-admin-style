@@ -59,7 +59,7 @@
     });
 
     // load touch support function
-    if (window.jQuery){
+    if (django.jQuery){
        (function ($) {
             // calls touch support function
             if ($.fn.touchSupport) {

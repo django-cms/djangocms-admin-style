@@ -1,4 +1,4 @@
-if (window.jQuery) {
+if (django.jQuery) {
     (function ($) {
         $.fn.touchSupport = function () {
             function touchHandler(event) {
