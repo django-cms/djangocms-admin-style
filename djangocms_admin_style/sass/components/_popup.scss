@@ -198,3 +198,17 @@
         margin-top: 46px !important;
     }
 }
+
+.cms-dialog {
+    background-color: $white;
+    form {
+        background: none;
+        box-shadow: none;
+    }
+    .submit-row {
+        margin: 10px -20px 0;
+        input {
+            margin-left: 0;
+        }
+    }
+}
