@@ -46,15 +46,15 @@
     // Back to link
     try {
         var cmsFrameData = JSON.parse(window.name);
-        var headerLink = document.getElementsByClassName('header-link')[0];
+        var headerLink = document.getElementsByClassName('js-header-link')[0];
 
         if (cmsFrameData.name && cmsFrameData.name === 'cms_frame') {
-            headerLink.setAttribute('href', cmsFrameData.url, cmsFrameData.name);
+            headerLink.setAttribute('href', cmsFrameData.url);
         }
     } catch(error) {
 
     }
-    
+
     // load touch support function
     if (window.jQuery || (window.django && window.django.jQuery)) {
        (function ($) {
