@@ -2,7 +2,7 @@ if (window.jQuery || (window.django && window.django.jQuery)) {
     (function ($) {
         $.fn.touchSupport = function () {
             function touchHandler(event) {
-                var touch = event.changedTouches[0];
+                var touch = event.originalEvent.changedTouches[0];
                 var simulatedEvent = document.createEvent('MouseEvent');
 
                 simulatedEvent.initMouseEvent({
@@ -18,18 +18,16 @@ if (window.jQuery || (window.django && window.django.jQuery)) {
                 event.stopPropagation();
             }
 
-            function init() {
-                var that = $(this);
-                var itemsLength = that.length;
-                for (var i = 0; i < itemsLength; i++) {
-                    that[i].addEventListener('touchstart', touchHandler, true);
-                    that[i].addEventListener('touchmove', touchHandler, true);
-                    that[i].addEventListener('touchend', touchHandler, true);
-                    that[i].addEventListener('touchcancel', touchHandler, true);
-                }
+            function init(elements) {
+                elements.on({
+                    touchstart: touchHandler,
+                    touchmove: touchHandler,
+                    touchend: touchHandler,
+                    touchcancel: touchHandler
+                });
             }
 
-            init();
+            init(this);
         };
     })(window.jQuery || window.django.jQuery);
 }
