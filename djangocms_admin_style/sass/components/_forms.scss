@@ -691,6 +691,7 @@ form select[multiple] {
 #id_password,
 .field-type p {
     padding: 10px !important;
+    margin: 15px 0;
     background-color: $gray-lightest;
 }
 .field-type p:empty {
