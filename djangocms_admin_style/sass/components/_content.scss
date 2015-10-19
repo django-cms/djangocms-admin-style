@@ -64,6 +64,11 @@ ul.messagelist + #content {
     .module {
         overflow: visible;
     }
+    table {
+        width: 100% !important;
+        margin-left: 0 !important;
+        box-shadow: none;
+    }
 }
 
 // module
