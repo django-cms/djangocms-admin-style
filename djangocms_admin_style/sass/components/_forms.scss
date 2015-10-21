@@ -310,6 +310,10 @@ form {
     .form-row:last-child {
         border-bottom-color: transparent;
     }
+    h2 + .form-row > .checkbox-row {
+        border-top: 0;
+        padding-top: 0;
+    }
     .checkbox-row {
         padding-top: 15px;
         margin-bottom: -10px;
