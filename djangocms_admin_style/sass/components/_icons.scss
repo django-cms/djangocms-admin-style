@@ -17,6 +17,9 @@ a.selector-chooseall,
 .selector-remove,
 .selector-add,
 .add-another,
+.add-related,
+.change-related,
+.delete-related,
 a[id*="calendarlink"],
 a[id*="clocklink"],
 .calendarnav-previous,
@@ -54,14 +57,17 @@ a.selector-chooseall,
 }
 .addlink,
 .add-row a,
-.add-another {
+.add-another,
+.add-related {
     @include icon(plus);
 }
-.changelink {
+.changelink,
+.change-related {
     @include icon(pencil);
 }
 .deletelink,
-.inline-deletelink {
+.inline-deletelink,
+.delete-related {
     @include icon(remove);
 }
 .icon-arrow-right,
@@ -162,7 +168,10 @@ a[id*="clocklink"] {
         text-decoration: none !important;
     }
 }
-.add-another {
+.add-another,
+.add-related,
+.change-related,
+.delete-related {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
     width: 15px;
