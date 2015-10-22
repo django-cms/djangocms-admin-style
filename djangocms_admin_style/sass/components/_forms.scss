@@ -39,8 +39,13 @@ form {
             }
         }
         &.field-file {
+            .related-widget-wrapper {
+                width: 100%;
+            }
             .related-widget-wrapper-link {
-                display: none;
+                width: 36px;
+                height: 36px;
+                margin-right: 5px;
             }
             input {
                 width: calc(100% - 48px) !important;
