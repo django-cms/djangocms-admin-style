@@ -4,9 +4,12 @@ django CMS Admin Style
 
 Adds pretty CSS styles for the django CMS admin interface.
 
-.. image:: https://raw.github.com/divio/djangocms-admin-style/gh-pages/images/img1.png
++------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/develop/djangocms_admin_style/static/preview_images/admin-style-1.png | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/develop/djangocms_admin_style/static/preview_images/admin-style-2.png |
++------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/develop/djangocms_admin_style/static/preview_images/admin-style-3.png | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/develop/djangocms_admin_style/static/preview_images/admin-style-4.png |
++------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. image:: https://raw.github.com/divio/djangocms-admin-style/gh-pages/images/img3.png
 
 * the shortcuts you see on top of the dashboard are from `django-admin-shortcuts <https://github.com/alesdotio/django-admin-shortcuts/>`_
 
@@ -31,7 +34,7 @@ Compiling CSS
 
 ::
 
-    compass watch .
+    gulp
 
 
-* for compiling the sass file, you need to ``gem install compass`` or use CodeKit / ScoutApp
+* for compiling the sass file, you need to ``npm install``

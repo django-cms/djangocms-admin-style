@@ -4,7 +4,11 @@ dist
 bin/
 include/
 lib/
+node_modules
 *.sqlite
 database.db
 .idea
 .sass-cache
+build
+dist
+.eggs

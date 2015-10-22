@@ -1,0 +1,354 @@
+// base
+html,
+body {
+    height: auto;
+    #container {
+        min-width: inherit !important;
+        margin: 0;
+    }
+}
+#content {
+    margin: 160px 10px 0;
+    h1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+#branding {
+    #site-name {
+        display: none;
+    }
+}
+.login #branding {
+    display: block;
+}
+#user-tools {
+    position: relative;
+    text-align: center;
+}
+
+// general
+.module {
+    padding: 5px 0 5px 0 !important;
+    border: none;
+    box-shadow: none !important;
+    caption {
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+}
+div.breadcrumbs {
+    padding-left: 5px;
+}
+.plugin-holder {
+    display: none !important;
+}
+
+// login
+body.login {
+    #container {
+        width: 90% !important;
+        max-width: 320px;
+        min-width: inherit !important;
+        margin-top: 100px;
+    }
+}
+
+//filebrowser
+.filebrowser #container #content-related {
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    margin-right: 0;
+}
+.filebrowser .clipboard,
+.filebrowser.change-list #changelist{
+    float: none !important;
+    width: 100% !important;
+}
+.filebrowser #content-top-bar .object-tools {
+    float: right !important;
+}
+.filebrowser #changelist {
+    margin-bottom: 20px;
+    #changelist-wrapper {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .paginator {
+        width: calc(100% - 30px) !important;
+    }
+    .clipboard {
+        margin-top: 60px !important
+    }
+}
+
+
+// dashboard
+#content.colMS {
+    margin-right: 3% !important;
+}
+.dashboard {
+    #container {
+        #content h1 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #content-main {
+            float: none;
+            min-width: 0;
+            max-width: none;
+            .module {
+                table td {
+                    padding-left: 0;
+                }
+            }
+        }
+        #content-related {
+            position: static;
+            float: none;
+            width: auto;
+            margin: 0 -3%;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            border-left: 0;
+        }
+        #content-related .module {
+            margin: 10px 0;
+            padding: 3% !important;
+            .actionlist {
+                margin-left: 10px;
+            }
+        }
+    }
+    .module {
+        background: none !important;
+    }
+    caption {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+}
+
+.object-tools {
+    float: left;
+    max-width: 100% !important;
+    li {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+// changelist
+
+.change-list,
+.change-form {
+    #content {
+        .object-tools {
+            overflow: hidden;
+            float: none;
+            margin: 0;
+            li {
+                padding-left: 0;
+                margin-left: 0;
+            }
+        }
+    }
+    #changelist {
+        position: static;
+        .actions {
+            select {
+                max-width: 230px !important;
+            }
+            .action-counter {
+                display: block !important;
+            }
+        }
+        #toolbar {
+            float: none !important;
+            padding-left: 0 !important;
+            margin-right: 0 !important;
+            label {
+                display: inline-block;
+            }
+            form #searchbar {
+                max-width: 230px !important;
+            }
+            .small {
+                display: block;
+            }
+        }
+    }
+    .filtered .results,
+    #changelist.filtered .paginator,
+    .filtered #toolbar,
+    #changelist.filtered .results,
+    #changelist.filtered div.xfull,
+    #changelist.filtered .actions {
+        margin-right: 0 !important;
+    }
+    #changelist .paginator,
+    #changelist.filtered .paginator {
+        width: calc(100% - 30px - 6% - 10px) !important;
+    }
+    .module #changelist-form .results {
+        overflow: auto;
+        width: 100%;
+    }
+    #changelist-search {
+        max-width: none;
+        input[type="submit"] {
+            margin-right: 10px;
+        }
+    }
+    .filtered {
+        .actions,
+        .paginator {
+            margin-right: 0 !important;
+        }
+        .actions {
+            padding-left: 0 !important;
+        }
+        .action-counter {
+            margin-left: 0 !important;
+        }
+    }
+    #changelist {
+        .actions,
+        .paginator {
+            margin-right: 0 !important;
+        }
+    }
+}
+#changelist-filter-button,
+#changelist-filter {
+    display: none !important;
+}
+.tree {
+    background: white;
+}
+
+// chageform
+.change-form {
+    h1 {
+        margin-left: 0;
+    }
+}
+
+// nani/hvad language buttons
+.nani-language-tabs {
+    > span {
+        font-size: 11px !important;
+        padding: 4px 1px !important;
+        a {
+            padding: 3px 5px !important;
+        }
+        .deletelink {
+            right: 0 !important;
+        }
+    }
+    > .current {
+        padding: 4px 10px 4px 5px !important;
+        .deletelink {
+            right: -8px !important;
+        }
+    }
+}
+
+// forms
+form label,
+.aligned label {
+    display: block;
+    float: none !important;
+    line-height: $font-size-normal;
+    width: auto;
+    margin-top: 5px;
+    padding: 0 !important;
+}
+form {
+    input,
+    input[type="file"],
+    textarea,
+    select {
+        width: auto; /*max-width: 200px;*/
+    }
+    .vTextField {
+        width: auto;
+    }
+    .aligned p,
+    .aligned ul {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+    .submit-row {
+        text-align: left;
+        .deletelink-box {
+            float: none;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        input {
+            display: block;
+            float: none;
+            margin-bottom: 10px !important;
+            margin-left: 0;
+        }
+    }
+}
+
+// inlines
+.inline-group {
+    margin-bottom: 10px;
+    padding: 5px;
+    .module {
+        h2 {
+            padding-left: 5px;
+        }
+    }
+}
+
+// filter horizontal m2m
+.selector {
+    float: none;
+    width: auto;
+    .selector-available,
+    .selector-chosen {
+        float: none;
+        width: auto;
+        p {
+            text-align: center;
+        }
+    }
+    .selector-chosen {
+        margin-top: 70px;
+    }
+    ul.selector-chooser {
+        display: block;
+        margin-top: 0;
+    }
+    select[multiple],
+    select {
+        width: 100%;
+        max-width: none;
+    }
+    label {
+        display: inline-block;
+    }
+    .selector-available input,
+    .selector-chosen input {
+        width: auto;
+    }
+}
+
+// shortcuts
+.admin_shortcuts {
+    margin: 46px 3% 0 3%;
+}
+.admin_shortcuts .shortcuts li a {
+    padding: 10px 10px 10px 40px;
+    background-size: 20px 20px;
+}
+.admin_shortcuts .shortcuts li a span {
+    padding: 0 !important;
+}
