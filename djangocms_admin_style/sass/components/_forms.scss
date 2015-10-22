@@ -39,6 +39,9 @@ form {
             }
         }
         &.field-file {
+            .related-widget-wrapper-link {
+                display: none;
+            }
             input {
                 width: calc(100% - 48px) !important;
                 margin-bottom: 10px;
@@ -49,6 +52,8 @@ form {
             }
             .related-lookup {
                 float: right;
+                width: 36px;
+                height: 36px;
             }
             .file-upload {
                 p {
