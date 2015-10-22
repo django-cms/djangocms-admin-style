@@ -39,13 +39,9 @@ form {
             }
         }
         &.field-file {
-            .related-widget-wrapper {
-                width: 100%;
-            }
             .related-widget-wrapper-link {
                 width: 36px;
                 height: 36px;
-                margin-right: 5px;
             }
             input {
                 width: calc(100% - 48px) !important;
@@ -57,6 +53,8 @@ form {
             }
             .related-lookup {
                 float: right;
+                width: 36px;
+                height: 36px;
             }
             .file-upload {
                 p {
@@ -709,4 +707,12 @@ form select[multiple] {
 .field-type p:empty {
     padding: 0 !important;
     background-color: transparent;
+}
+
+//related-widget
+.related-widget-wrapper {
+    width: 100%;
+}
+.related-widget-wrapper-link {
+    margin-right: 5px;
 }
