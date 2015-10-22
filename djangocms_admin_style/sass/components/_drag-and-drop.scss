@@ -1,7 +1,7 @@
 #drag_line {
-    border-top: solid 2px $color-primary;
+    border-top: solid 4px $color-primary !important;
     border-width: 2px !important;
-    background: transparent !important;
+    background: $color-primary-light !important;
     span {
         display: none;
     }
