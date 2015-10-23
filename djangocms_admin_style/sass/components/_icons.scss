@@ -29,8 +29,9 @@ a[id*="clocklink"],
 .messagelist li.info,
 .messagelist li.warning,
 .cms-admin-modal.delete-confirmation .colM > p,
-.delete-confirmation .colM h1 + p {
-    background-image: none;
+.delete-confirmation .colM h1 + p,
+.admin_shortcuts .shortcuts li a {
+    background-image: none !important;
     &:hover {
       background-image: none;
     }

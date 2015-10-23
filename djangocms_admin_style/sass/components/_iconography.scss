@@ -27,83 +27,227 @@
 @function icon-char($filename) {
     $char: "";
 
-    @if $filename == arrow-left {
+    @if $filename == archive {
         $char: "E001";
     }
-    @if $filename == arrow-right {
+    @if $filename == arrow-left {
         $char: "E002";
     }
-    @if $filename == calendar {
+    @if $filename == arrow-right {
         $char: "E003";
     }
-    @if $filename == camera {
+    @if $filename == calendar {
         $char: "E004";
     }
-    @if $filename == check-circle {
+    @if $filename == camera {
         $char: "E005";
     }
-    @if $filename == chevron-circle-down {
+    @if $filename == certificate {
         $char: "E006";
     }
-    @if $filename == chevron-circle-left {
+    @if $filename == check-circle {
         $char: "E007";
     }
-    @if $filename == chevron-circle-right {
+    @if $filename == check {
         $char: "E008";
     }
-    @if $filename == chevron-circle-up {
+    @if $filename == chevron-circle-down {
         $char: "E009";
     }
-    @if $filename == chevron-left {
+    @if $filename == chevron-circle-left {
         $char: "E00A";
     }
-    @if $filename == clipboard {
+    @if $filename == chevron-circle-right {
         $char: "E00B";
     }
-    @if $filename == clock {
+    @if $filename == chevron-circle-up {
         $char: "E00C";
     }
-    @if $filename == exclamation-triangle {
+    @if $filename == chevron-left {
         $char: "E00D";
     }
-    @if $filename == folder {
+    @if $filename == clipboard {
         $char: "E00E";
     }
-    @if $filename == info-circle {
+    @if $filename == clock {
         $char: "E00F";
     }
-    @if $filename == logo {
+    @if $filename == cloud-download {
         $char: "E010";
     }
-    @if $filename == minus-circle {
+    @if $filename == cloud-upload {
         $char: "E011";
     }
-    @if $filename == pencil {
+    @if $filename == cloud {
         $char: "E012";
     }
-    @if $filename == picture {
+    @if $filename == cog {
         $char: "E013";
     }
-    @if $filename == plus {
+    @if $filename == comment {
         $char: "E014";
     }
-    @if $filename == remove {
+    @if $filename == credit-card {
         $char: "E015";
     }
-    @if $filename == scissors {
+    @if $filename == cube {
         $char: "E016";
     }
-    @if $filename == search {
+    @if $filename == desktop {
         $char: "E017";
     }
-    @if $filename == trash-o {
+    @if $filename == envelope-square {
         $char: "E018";
     }
-    @if $filename == trash {
+    @if $filename == envelope {
         $char: "E019";
     }
-    @if $filename == upload {
+    @if $filename == exclamation-triangle {
         $char: "E01A";
+    }
+    @if $filename == file-text {
+        $char: "E01B";
+    }
+    @if $filename == file {
+        $char: "E01C";
+    }
+    @if $filename == files-o {
+        $char: "E01D";
+    }
+    @if $filename == film {
+        $char: "E01E";
+    }
+    @if $filename == flag {
+        $char: "E01F";
+    }
+    @if $filename == floppy-o {
+        $char: "E020";
+    }
+    @if $filename == folder-open {
+        $char: "E021";
+    }
+    @if $filename == folder {
+        $char: "E022";
+    }
+    @if $filename == gamepad {
+        $char: "E023";
+    }
+    @if $filename == gift {
+        $char: "E024";
+    }
+    @if $filename == heart {
+        $char: "E025";
+    }
+    @if $filename == home {
+        $char: "E026";
+    }
+    @if $filename == info-circle {
+        $char: "E027";
+    }
+    @if $filename == key {
+        $char: "E028";
+    }
+    @if $filename == laptop {
+        $char: "E029";
+    }
+    @if $filename == life-ring {
+        $char: "E02A";
+    }
+    @if $filename == lightbulb-o {
+        $char: "E02B";
+    }
+    @if $filename == lock {
+        $char: "E02C";
+    }
+    @if $filename == logo {
+        $char: "E02D";
+    }
+    @if $filename == map-marker {
+        $char: "E02E";
+    }
+    @if $filename == minus-circle {
+        $char: "E02F";
+    }
+    @if $filename == mobile {
+        $char: "E030";
+    }
+    @if $filename == money {
+        $char: "E031";
+    }
+    @if $filename == music {
+        $char: "E032";
+    }
+    @if $filename == newspaper-o {
+        $char: "E033";
+    }
+    @if $filename == pencil {
+        $char: "E034";
+    }
+    @if $filename == picture-o {
+        $char: "E035";
+    }
+    @if $filename == picture {
+        $char: "E036";
+    }
+    @if $filename == plus-circle {
+        $char: "E037";
+    }
+    @if $filename == plus {
+        $char: "E038";
+    }
+    @if $filename == print {
+        $char: "E039";
+    }
+    @if $filename == refresh {
+        $char: "E03A";
+    }
+    @if $filename == remove {
+        $char: "E03B";
+    }
+    @if $filename == reply {
+        $char: "E03C";
+    }
+    @if $filename == scissors {
+        $char: "E03D";
+    }
+    @if $filename == search-plus {
+        $char: "E03E";
+    }
+    @if $filename == search {
+        $char: "E03F";
+    }
+    @if $filename == shopping-cart {
+        $char: "E040";
+    }
+    @if $filename == suitcase {
+        $char: "E041";
+    }
+    @if $filename == tag {
+        $char: "E042";
+    }
+    @if $filename == ticket {
+        $char: "E043";
+    }
+    @if $filename == trash-o {
+        $char: "E044";
+    }
+    @if $filename == trash {
+        $char: "E045";
+    }
+    @if $filename == unlock-alt {
+        $char: "E046";
+    }
+    @if $filename == upload {
+        $char: "E047";
+    }
+    @if $filename == user {
+        $char: "E048";
+    }
+    @if $filename == volume-up {
+        $char: "E049";
+    }
+    @if $filename == wrench {
+        $char: "E04A";
     }
 
     @return $char;
@@ -123,6 +267,10 @@
 // use unicode characters for accessibility reasons and use aria-hidden="true" for decorative icons
 // DOCS: http://filamentgroup.com/lab/bulletproof_icon_fonts.html
 
+.cms-icon-archive {
+    @include icon(archive);
+}
+
 .cms-icon-arrow-left {
     @include icon(arrow-left);
 }
@@ -139,8 +287,16 @@
     @include icon(camera);
 }
 
+.cms-icon-certificate {
+    @include icon(certificate);
+}
+
 .cms-icon-check-circle {
     @include icon(check-circle);
+}
+
+.cms-icon-check {
+    @include icon(check);
 }
 
 .cms-icon-chevron-circle-down {
@@ -171,48 +327,212 @@
     @include icon(clock);
 }
 
+.cms-icon-cloud-download {
+    @include icon(cloud-download);
+}
+
+.cms-icon-cloud-upload {
+    @include icon(cloud-upload);
+}
+
+.cms-icon-cloud {
+    @include icon(cloud);
+}
+
+.cms-icon-cog {
+    @include icon(cog);
+}
+
+.cms-icon-comment {
+    @include icon(comment);
+}
+
+.cms-icon-credit-card {
+    @include icon(credit-card);
+}
+
+.cms-icon-cube {
+    @include icon(cube);
+}
+
+.cms-icon-desktop {
+    @include icon(desktop);
+}
+
+.cms-icon-envelope-square {
+    @include icon(envelope-square);
+}
+
+.cms-icon-envelope {
+    @include icon(envelope);
+}
+
 .cms-icon-exclamation-triangle {
     @include icon(exclamation-triangle);
+}
+
+.cms-icon-file-text {
+    @include icon(file-text);
+}
+
+.cms-icon-file {
+    @include icon(file);
+}
+
+.cms-icon-files-o {
+    @include icon(files-o);
+}
+
+.cms-icon-film {
+    @include icon(film);
+}
+
+.cms-icon-flag {
+    @include icon(flag);
+}
+
+.cms-icon-floppy-o {
+    @include icon(floppy-o);
+}
+
+.cms-icon-folder-open {
+    @include icon(folder-open);
 }
 
 .cms-icon-folder {
     @include icon(folder);
 }
 
+.cms-icon-gamepad {
+    @include icon(gamepad);
+}
+
+.cms-icon-gift {
+    @include icon(gift);
+}
+
+.cms-icon-heart {
+    @include icon(heart);
+}
+
+.cms-icon-home {
+    @include icon(home);
+}
+
 .cms-icon-info-circle {
     @include icon(info-circle);
+}
+
+.cms-icon-key {
+    @include icon(key);
+}
+
+.cms-icon-laptop {
+    @include icon(laptop);
+}
+
+.cms-icon-life-ring {
+    @include icon(life-ring);
+}
+
+.cms-icon-lightbulb-o {
+    @include icon(lightbulb-o);
+}
+
+.cms-icon-lock {
+    @include icon(lock);
 }
 
 .cms-icon-logo {
     @include icon(logo);
 }
 
+.cms-icon-map-marker {
+    @include icon(map-marker);
+}
+
 .cms-icon-minus-circle {
     @include icon(minus-circle);
+}
+
+.cms-icon-mobile {
+    @include icon(mobile);
+}
+
+.cms-icon-money {
+    @include icon(money);
+}
+
+.cms-icon-music {
+    @include icon(music);
+}
+
+.cms-icon-newspaper-o {
+    @include icon(newspaper-o);
 }
 
 .cms-icon-pencil {
     @include icon(pencil);
 }
 
+.cms-icon-picture-o {
+    @include icon(picture-o);
+}
+
 .cms-icon-picture {
     @include icon(picture);
+}
+
+.cms-icon-plus-circle {
+    @include icon(plus-circle);
 }
 
 .cms-icon-plus {
     @include icon(plus);
 }
 
+.cms-icon-print {
+    @include icon(print);
+}
+
+.cms-icon-refresh {
+    @include icon(refresh);
+}
+
 .cms-icon-remove {
     @include icon(remove);
+}
+
+.cms-icon-reply {
+    @include icon(reply);
 }
 
 .cms-icon-scissors {
     @include icon(scissors);
 }
 
+.cms-icon-search-plus {
+    @include icon(search-plus);
+}
+
 .cms-icon-search {
     @include icon(search);
+}
+
+.cms-icon-shopping-cart {
+    @include icon(shopping-cart);
+}
+
+.cms-icon-suitcase {
+    @include icon(suitcase);
+}
+
+.cms-icon-tag {
+    @include icon(tag);
+}
+
+.cms-icon-ticket {
+    @include icon(ticket);
 }
 
 .cms-icon-trash-o {
@@ -223,6 +543,22 @@
     @include icon(trash);
 }
 
+.cms-icon-unlock-alt {
+    @include icon(unlock-alt);
+}
+
 .cms-icon-upload {
     @include icon(upload);
+}
+
+.cms-icon-user {
+    @include icon(user);
+}
+
+.cms-icon-volume-up {
+    @include icon(volume-up);
+}
+
+.cms-icon-wrench {
+    @include icon(wrench);
 }
