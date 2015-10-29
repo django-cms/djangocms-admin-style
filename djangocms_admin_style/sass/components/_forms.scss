@@ -184,6 +184,7 @@ form {
         margin: 5px 0;
     }
     fieldset {
+        box-sizing: border-box;
         line-height: 2em;
         vertical-align: middle;
         &.collapse h2 {

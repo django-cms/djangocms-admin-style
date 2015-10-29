@@ -152,8 +152,8 @@
         }
     }
     td {
-        > select {
-            float: left;
+        white-space: nowrap;
+        select {
             width: auto !important;
             max-width: 160px !important;
             height: 42px;
@@ -182,6 +182,9 @@
         }
         &.original {
             vertical-align: top;
+        }
+        .related-widget-wrapper {
+            overflow: visible;
         }
     }
     tr {
@@ -238,7 +241,10 @@
 }
 .tabular table {
     tr.add-row td {
-       padding: 4px 5px 3px !important;
+        padding: 4px 5px 3px !important;
+        a {
+            margin-left: 8px;
+        }
     }
     tbody td {
         vertical-align: middle !important;
@@ -246,6 +252,15 @@
     td.original p {
         position: static !important;
         padding: 0 !important;
+    }
+    .field-can_change,
+    .field-can_add,
+    .field-can_delete,
+    .field-can_change_advanced_settings,
+    .field-can_publish,
+    .field-can_change_permissions,
+    .field-can_move_page {
+        text-align: center;
     }
 }
 #result_list tbody tr:hover,

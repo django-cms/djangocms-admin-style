@@ -3,9 +3,6 @@
         h2 {
             font-size: $font-size-large !important;
         }
-        table td {
-            padding: 1px 10px !important;
-        }
     }
     &.dashboard {
         #content-related {
@@ -34,9 +31,6 @@
         box-shadow: none;
         fieldset {
             width: 100%;
-        }
-        .form-row {
-             @include micro-clearfix;
         }
         .checkbox-row {
             margin-left: -20px;

@@ -137,6 +137,7 @@ ul.messagelist + #content {
     @include box();
     padding: 0;
     border: 0;
+    overflow: auto;
     .module {
         padding: 0;
         border: none !important;
@@ -204,8 +205,8 @@ ul.messagelist + #content {
     }
     .module {
         width: 100%;
-        padding: 10px;
-        margin: 5px -10px 0;
+        padding: 10px 0;
+        margin: 0;
         border-top: solid 1px $gray-lighter !important;
         border-bottom: solid 1px $gray-lighter !important;
     }
