@@ -716,6 +716,14 @@ a.addlink {
     }
 }
 
+// tools need to be visible on an apphook page #202
+.cms-admin-modal .object-tools {
+    margin-top: -7px;
+}
+.cms-admin-modal .hide-in-modal {
+    display: none;
+}
+
 
 // changeform
 
@@ -771,11 +779,13 @@ a.addlink {
 }
 
 // cms language buttons
-#page_form_lang_tabs {
+#page_form_lang_tabs,
+.parler-language-tabs {
     margin-bottom: 30px;
     border-bottom: solid 1px $gray-lighter;
 }
-#page_form_lang_tabs input {
+#page_form_lang_tabs input,
+.parler-language-tabs span {
     color: $gray-darkest !important;
     font-weight: normal !important;
     text-transform: uppercase;
@@ -787,12 +797,14 @@ a.addlink {
     background: transparent !important;
     box-shadow: none !important;
     &:hover,
-    &:focus {
+    a:hover,
+    &:focus,
+    a:focus {
         color: black !important;
-        background-color: $white !important;
-        border-bottom: solid 3px $white !important;
+        background-color: transparent !important;
     }
-    &.selected {
+    &.selected,
+    &.current {
         color: $color-primary !important;
         background: transparent !important;
         border-bottom: solid 3px $color-primary !important;
@@ -807,7 +819,19 @@ a.addlink {
             border-bottom: solid 3px $white !important;
         }
     }
+    a {
+        color: $gray-darkest !important;
+    }
 }
+.parler-language-tabs span {
+    padding: 0 !important;
+}
+.parler-language-tabs .current,
+.parler-language-tabs a {
+    display: inline-block;
+    padding: 10px 20px !important;
+}
+
 #lang_tab_content h2.header {
     position: relative;
     margin-bottom: -3px !important;
