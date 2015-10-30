@@ -716,6 +716,11 @@ a.addlink {
     }
 }
 
+// tools need to be visible on an apphook page #202
+.cms-admin-modal .object-tools {
+    margin-top: -7px;
+}
+
 
 // changeform
 
