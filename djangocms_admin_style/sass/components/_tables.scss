@@ -156,16 +156,16 @@
         select {
             width: auto !important;
             max-width: 160px !important;
-            height: 42px;
-            margin: -2px 0;
+            height: 36px;
+            margin: 0;
             padding-right: 30px;
             & + .add-another {
                 display: inline-block;
                 line-height: 10px;
-                width: 42px;
-                height: 42px;
-                margin: -2px 0 -2px 10px !important;
-                padding: 11px !important;
+                width: 36px;
+                height: 36px;
+                margin: 0 0 0 10px !important;
+                padding: 9px !important;
                 background-position: center;
                 border-radius: $border-radius-normal;
                 border: solid 1px $gray-lighter;
@@ -178,10 +178,22 @@
         &.delete {
             a {
                 float: left;
+                &.inline-deletelink{
+                    @include icon(trash);
+                    font: 0/0 a !important;
+                    color: $gray-darker;
+                    &:before {
+                        display: block;
+                        font-size: $font-size-large;
+                        text-indent: 0;
+                        margin-right: 0;
+                    }
+                }
             }
         }
         &.original {
             vertical-align: top;
+            padding: 0 !important;
         }
         .related-widget-wrapper {
             overflow: visible;
