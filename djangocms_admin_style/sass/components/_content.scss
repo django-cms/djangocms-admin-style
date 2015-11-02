@@ -286,6 +286,9 @@ ul.messagelist + #content {
     input[type="checkbox"],
     label {
         vertical-align: middle !important;
+        span {
+            font-size: 16px !important;
+        }
     }
     .selector-filter {
         position: relative;
