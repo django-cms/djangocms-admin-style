@@ -176,7 +176,7 @@ a[id*="clocklink"] {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
     width: 15px;
-    height: 14px;
+    height: 15px;
     padding: 10px !important;
     margin: 10px 0;
     &:before {
