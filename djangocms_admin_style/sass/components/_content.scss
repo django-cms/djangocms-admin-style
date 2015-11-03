@@ -699,6 +699,7 @@ a.addlink {
             @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
             line-height: inherit !important;
             margin-right: 0 !important;
+            height: auto !important;
         }
     }
     .addlink {
