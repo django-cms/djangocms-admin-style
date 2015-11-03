@@ -654,6 +654,7 @@ a.addlink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
         font-weight: normal;
         padding: 6px 20px !important;
+        height: auto !important;
     }
     .recoverlink {
         color: $color-primary !important;
@@ -698,6 +699,7 @@ a.addlink {
             @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
             line-height: inherit !important;
             margin-right: 0 !important;
+            height: auto !important;
         }
     }
     .addlink {
