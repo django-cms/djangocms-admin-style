@@ -44,7 +44,7 @@ ul.messagelist + #content {
     width: auto !important;
     min-width: 0 !important;
     margin: $content-margin-top 3% 0 !important;
-    padding-top: 0 !important;
+    padding: 0 !important;
     &.colMS {
         margin-right: 35% !important;
     }
@@ -574,11 +574,13 @@ body.login {
             background-color: transparent;
             ul.actionlist {
                 padding: 0;
+                margin: 0;
                 li {
                     position: relative;
                     font-size: $font-size-normal;
                     line-height: $font-size-normal;
                     padding: 6px 15px 6px 45px;
+                    margin-bottom: 0;
                     border-bottom: solid 1px $gray-lighter;
                     a {
                         padding-right: 10px;
@@ -650,8 +652,8 @@ a.addlink {
 #content-main .object-tools {
     .addlink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
-        padding: 6px 20px !important;
         font-weight: normal;
+        padding: 6px 20px !important;
     }
     .recoverlink {
         color: $color-primary !important;
@@ -718,6 +720,7 @@ a.addlink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
     }
 }
+
 
 // tools need to be visible on an apphook page #202
 .cms-admin-modal .object-tools {
