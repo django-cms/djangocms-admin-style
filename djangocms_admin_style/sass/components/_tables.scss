@@ -1,0 +1,291 @@
+.dashboard table,
+.change-list table,
+.tabular table,
+.results table,
+#change-history {
+    width: 100% !important;
+    margin: 0!important;
+    border: none;
+    border-radius: 0;
+    border: 0;
+    background: $white;
+    box-shadow: $base-box-shadow;
+    border-collapse: separate !important;
+    th,
+    td {
+        font-family: $base-font-family;
+        font-size: $font-size-normal;
+        font-weight: normal;
+        text-align: left;
+        vertical-align: middle;
+        border-left: 0 !important;
+        border-bottom: 1px solid $gray-lighter;
+        background: none !important;
+        &:first-child {
+            border-right: 0 !important;
+        }
+        p,
+        a {
+            font-size: $font-size-normal !important;
+            line-height: $font-size-normal;
+            font-weight: normal;
+            padding: 0;
+            margin: 0;
+            &.lang-code {
+                font-size: $font-size-small !important;
+            }
+
+        }
+        p {
+            position: static;
+            color: $gray-darkest !important;
+        }
+    }
+    thead th,
+    thead th.sorted,
+    tfoot td {
+        background-color: $white;
+    }
+    thead {
+        th {
+            font-size: $font-size-normal;
+            line-height: inherit !important;
+            font-weight: normal;
+            text-transform: uppercase;
+            padding: 5px 10px !important;
+            white-space: nowrap;
+            background-color: $white;
+            &.sorted:nth-child(2) {
+                width: 160px !important;
+            }
+            .text {
+                float: left;
+                padding-right: 0 !important;
+                a {
+                    display: inline-block;
+                    padding: 0 !important;
+                }
+                span {
+                    padding: 0;
+                }
+            }
+        }
+        a,
+        span {
+            font-size: $font-size-normal !important;
+            color: $gray !important;
+            font-weight: normal;
+            padding-left: 0 !important;
+        }
+    }
+    thead th.sorted {
+        min-width: 140px;
+        .sortoptions {
+            float: right;
+            display: inline-block;
+            padding: 0;
+            a {
+                &.ascending {
+                    background: url("../img/sorting-icons.png") -5px -50px no-repeat;
+                    &:hover {
+                        background: url("../img/sorting-icons.png") -5px -72px no-repeat;
+                    }
+                }
+                &.descending {
+                    background: url("../img/sorting-icons.png") -5px -94px no-repeat;
+                    &:hover {
+                        background: url("../img/sorting-icons.png") -5px -115px no-repeat;
+                    }
+                }
+                &.sortremove {
+                    background: url("../img/sorting-icons.png") -4px -5px no-repeat;
+                    &:hover {
+                        background: url("../img/sorting-icons.png") -4px -26px no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    thead th.sortable{
+        &:hover {
+            background: $gray-lighter;
+        }
+        &.column-app_config {
+            min-width: 220px;
+        }
+        .sortpriority {
+            vertical-align: middle;
+            color: white !important;
+            padding: 2px 6px !important;
+            background-color: $color-primary;
+            border-radius: 10px;
+        }
+    }
+    thead th.action-checkbox-column {
+        padding: 0 15px !important;
+    }
+    tbody {
+        td {
+            vertical-align: baseline !important;
+            &.field-_reorder,
+            &.drag-handler {
+                vertical-align: middle !important;
+                padding: 1px 5px !important;
+            }
+            &.field-app_config {
+                padding: 1px 10px !important;
+            }
+            img[src*="icon-no"],
+            img[src*="icon-yes"] {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        th,
+        td {
+            color: $gray-darkest;
+            font-size: $font-size-normal;
+            line-height: inherit;
+            text-transform: none;
+            vertical-align: middle !important;
+            padding: 10px !important;
+        }
+    }
+    td {
+        white-space: nowrap;
+        select {
+            width: auto !important;
+            max-width: 160px !important;
+            height: 36px;
+            margin: 0;
+            padding-right: 30px;
+            & + .add-another {
+                display: inline-block;
+                line-height: 10px;
+                width: 36px;
+                height: 36px;
+                margin: 0 0 0 10px !important;
+                padding: 9px !important;
+                background-position: center;
+                border-radius: $border-radius-normal;
+                border: solid 1px $gray-lighter;
+                box-sizing: border-box;
+                &:before {
+                    vertical-align: middle;
+                }
+            }
+        }
+        &.delete {
+            a {
+                float: left;
+                &.inline-deletelink{
+                    @include icon(trash);
+                    font: 0/0 a !important;
+                    color: $gray-darker;
+                    &:before {
+                        display: block;
+                        font-size: $font-size-large;
+                        text-indent: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        &.original {
+            vertical-align: top;
+            padding: 0 !important;
+        }
+        .related-widget-wrapper {
+            overflow: visible;
+        }
+    }
+    tr {
+        td {
+            border-bottom: 1px solid $gray-lighter;
+        }
+        &.selected {
+            color: $color-primary-light;
+            background: $color-primary !important;
+            a,
+            td,
+            span {
+                color: $color-primary-light !important;
+            }
+            .drag {
+                background: url('../img/drag-light.png');
+                background-size: 5px;
+            }
+            .lang-code {
+                color: $color-primary !important;
+                font-size: $font-size-small !important;
+                background-color: $white;
+                &.current.active {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+    th {
+        a,
+        a:link,
+        a:visited,
+        a:link:visited {
+            color: $gray-darkest;
+        }
+    }
+    .row1 {
+        background: $white;
+    }
+    .row2 {
+        background: $white;
+    }
+    .action-checkbox,
+    .action-checkbox-column {
+        text-align: left !important;
+        padding: 10px 15px !important;
+    }
+    .paginator {
+        box-shadow: none !important;
+    }
+    fieldset table {
+        border: none;
+    }
+}
+.tabular table {
+    tr.add-row td {
+        padding: 4px 5px 3px !important;
+        a {
+            margin-left: 8px;
+        }
+    }
+    tbody td {
+        vertical-align: middle !important;
+    }
+    td.original p {
+        position: static !important;
+        padding: 0 !important;
+    }
+    .field-can_change,
+    .field-can_add,
+    .field-can_delete,
+    .field-can_change_advanced_settings,
+    .field-can_publish,
+    .field-can_change_permissions,
+    .field-can_move_page {
+        text-align: center;
+    }
+}
+#result_list tbody tr:hover,
+.results table tbody tr:hover,
+#change-history tbody tr:hover {
+    background: $color-primary-light;
+}
+
+#change-history {
+    th,
+    td {
+        a {
+            color: $color-primary !important;
+        }
+    }
+}

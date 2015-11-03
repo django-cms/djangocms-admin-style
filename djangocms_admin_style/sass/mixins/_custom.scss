@@ -1,0 +1,87 @@
+// mixins
+
+@mixin box() {
+    margin-bottom: 5px;
+    padding: 0;
+    border: none;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+@mixin stripes($stripe-opacity) {
+    background-image: linear-gradient(-45deg, rgba($white, $stripe-opacity) 25%, rgba($white, 0) 25%, rgba($white, 0) 50%, rgba($white, $stripe-opacity) 50%, rgba($white, $stripe-opacity) 75%, rgba($white, 0) 75%, rgba($white, 0));
+    background-size: 100% 400%;
+}
+
+// taken from bootstrap with adaptations
+@function important($important) {
+    @if($important == true) {
+        @return !important;
+    } @else {
+        @return true;
+    }
+}
+@mixin button-variant($color, $background, $border, $important: false) {
+    background-image: none important($important);
+    margin-bottom: 0; // For input.btn
+    padding: 6px 20px important($important);
+    border-radius: $btn-border-radius-base important($important);
+    color: $color important($important);
+    font-size: $font-size-small important($important);
+    line-height: $font-size-small;
+    font-weight: normal;
+    text-transform: none important($important);
+    letter-spacing: normal important($important);
+    background-color: $background important($important);
+    border: 1px solid $border important($important);
+    appearance: none;
+    &:focus {
+        color: $color important($important);
+        background-color: darken($background, 5%) important($important);
+        border-color: darken($border, 5%) important($important);
+        text-decoration: none important($important);
+    }
+    &:hover {
+        color: $color important($important);
+        background-color: darken($background, 5%) important($important);
+        border-color: darken($border, 5%) important($important);
+        text-decoration: none important($important);
+    }
+    &:active {
+        color: $color important($important);
+        background-color: darken($background, 10%) important($important);
+        border-color: darken($border, 10%) important($important);
+        box-shadow: $btn-active-shadow important($important);
+
+        &:hover,
+        &:focus {
+            color: $color important($important);
+            background-color: darken($background, 17%) important($important);
+            border-color: darken($border, 25%) important($important);
+        }
+    }
+    &:active {
+        background-image: none important($important);
+    }
+    &[disabled] {
+        &,
+        &:hover,
+        &:focus
+        &:active {
+            background-color: rgba($background, 0.4) important($important);
+            border-color: rgba($border, 0.4) important($important);
+            color: rgba($color, 0.8) important(1);
+            cursor: not-allowed;
+            box-shadow: none important($important);
+            &:before {
+                color: rgba($color, 0.4) important(1);
+            }
+        }
+    }
+}

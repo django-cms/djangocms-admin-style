@@ -1,0 +1,50 @@
+#drag_line {
+    border-top: solid 4px $color-primary !important;
+    border-width: 2px !important;
+    background: $color-primary-light !important;
+    span {
+        display: none;
+    }
+}
+#ghost {
+    position: absolute;
+    left: 20px;
+    width: 220px;
+    max-width: 220px;
+    min-height: 22px;
+    padding: 20px !important;
+    background-color: $color-primary;
+    box-shadow: $base-box-shadow;
+    opacity: 1 !important;
+    z-index: 10;
+    .drag-handler,
+    .action-checkbox {
+        display: none !important;
+    }
+    tr {
+        background-color: $color-primary !important;
+        td {
+            font-weight: normal;
+            vertical-align: middle;
+            border-radius: $border-radius-base;
+        }
+    }
+    .collapse {
+        display: none;
+    }
+    a {
+        color: $white;
+        font-size: $font-size-large;
+        line-height: $line-height-normal;
+        font-weight: normal;
+    }
+}
+.drag-handler {
+    margin: 4px 0;
+    span {
+        width: 10px !important;
+        padding: 10px 0 !important;
+        background: url('../img/drag.png') repeat !important;
+        background-size: 5px !important;
+    }
+}

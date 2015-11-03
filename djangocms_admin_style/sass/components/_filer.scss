@@ -1,0 +1,356 @@
+// filer
+.filebrowser {
+    ul.messagelist + #content {
+        margin-top: $filer-content-margin + 27px !important; // plus messages list
+    }
+    #content {
+        margin-top: $filer-content-margin !important;
+    }
+    h2 {
+        display: none;
+    }
+    h1.folder_header {
+        float: left;
+        font-size: $font-size-large;
+        margin: 0;
+        background: none;
+        .changelink {
+            @include icon(pencil);
+            font-size: $font-size-large;
+            line-height: 30px;
+            font-weight: normal;
+        }
+        img {
+            height: 40px;
+            width: 40px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        .backtoroot {
+            display: inline-block;
+            font: 0/0 a;
+            padding-left: 15px;
+            vertical-align: middle;
+        }
+        .small {
+            margin-left: 5px;
+        }
+    }
+    #content-top-bar {
+        min-height: 47px;
+        padding-top: 10px !important;
+        border-bottom: solid 1px $gray-lighter;
+        .object-tools {
+            margin-top: 2px !important;
+            a {
+                padding: 6px 20px !important;
+            }
+            a:before {
+                font-size: $font-size-normal;
+            }
+            .changelink {
+                color: $color-primary !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                background-image: none !important;
+                &:before {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .module table td {
+        line-height: $font-size-large;
+    }
+    #changelist {
+        margin-bottom: 0;
+        .paginator {
+            width: calc(70% - 30px) !important;
+        }
+    }
+    &.change-list #changelist {
+        overflow: visible !important;
+        padding: 0 !important;
+        margin-right: 0 !important;
+    }
+    #changelist-form > input + #toolbartable {
+        clear: both;
+    }
+    #id_new_folder {
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    }
+    #toolbartable table {
+        thead th {
+            width: 0 !important;
+            &.action-checkbox-column {
+                text-align: left !important;
+            }
+        }
+        tbody {
+            tr.selected {
+                span,
+                td,
+                button span:before {
+                    color: $color-primary-light !important;
+                }
+            }
+            td:first-child {
+               text-align: left;
+                padding-left: 15px !important;
+            }
+            th,
+            td {
+                font-size: $font-size-small !important;
+                color: $gray-light !important;
+                outline: 0;
+                height: inherit !important;
+                padding: 1px 10px !important;
+                &.transpTiling {
+                    padding-top: 3px !important;
+                    padding-bottom: 3px !important;
+                    img {
+                        height: 35px;
+                        width: 35px;
+                    }
+                }
+                &.moveto {
+                    text-align: right !important;
+                    padding-left: 0 !important;
+                    .movetolink {
+                        margin: 0 0 0 20px;
+                        vertical-align: middle;
+                    }
+                }
+                .tiny {
+                    font-size: $font-size-small !important;
+                    color: $gray-light !important;
+                }
+                a {
+                    font-size: $font-size-normal !important;
+                    &.changelink,
+                    &.deletelink {
+                        display: inline-block;
+                        float: none !important;
+                        font: 0/0 a !important;
+                        padding: 0 !important;
+                        margin: 0 0 0 20px !important;
+                        vertical-align: middle;
+                        &:before {
+                           margin-right: 0;
+                        }
+                    }
+                    &.deletelink {
+                        @include icon(trash-o);
+                    }
+                }
+            }
+        }
+        img {
+            width: 38px;
+            height: 38px;
+        }
+    }
+    #changelist-wrapper {
+        width: 70%;
+        clear: both;
+    }
+    .clipboard {
+        float: right !important;
+        width: 28% !important;
+        border-radius: $border-radius-base;
+        border: 0 !important;
+        box-shadow: $base-box-shadow;
+        table {
+            padding: 0;
+            margin-bottom: 0 !important;
+            border: 0 !important;
+        }
+        .noItemsRow td {
+            text-align: left !important;
+            padding: 12px 0 12px 15px !important;
+        }
+        .clipboardItem {
+            .label {
+                color: $color-primary;
+                font-size: $font-size-normal !important;
+                padding: 0 0 0 10px !important;
+            }
+            .thumbnail {
+                padding: 7px 0 7px 10px !important;
+                img {
+                    width: 27px;
+                    height: 27px;
+                }
+            }
+        }
+        thead th {
+            font-size: $font-size-large;
+            font-weight: bold;
+            text-transform: none;
+            padding: 5px 10px !important;
+        }
+        tfoot td {
+            padding: 10px 10px 0;
+            button {
+                padding-bottom: 13px !important;
+            }
+        }
+        td {
+            height: auto !important;
+            border-bottom: solid 1px $gray-lighter !important;
+            border-top: 0;
+            form {
+                display: block !important;
+                margin: 0 -10px !important;
+                padding: 10px !important;
+                border-top: solid 1px $gray-lighter;
+                background: none;
+                &:first-child {
+                    padding-top: 0 !important;
+                    border-top: 0;
+                }
+                button {
+                    padding-bottom: 0 !important;
+                }
+            }
+        }
+        form {
+            padding: 0 !important;
+            box-shadow: none !important;
+        }
+        button {
+            text-align: left;
+            white-space: nowrap;
+            padding: 0 !important;
+            border: 0 !important;
+            &:hover,
+            &:active,
+            &focus {
+                border: 0;
+                background: none !important;
+                box-shadow: none !important;
+                outline: none;
+            }
+            &.deletelink {
+                @include icon(trash-o);
+                border-top: solid 1px $gray-lighter;
+                &[disabled] {
+                    opacity: 0.5;
+                }
+            }
+            &.pastelink {
+                font-size: $font-size-normal;
+                color: $color-primary !important;
+                span {
+                    display: none;
+                }
+                &[disabled] {
+                    color: $gray-lighter !important;
+                }
+            }
+            &:before {
+                vertical-align: top;
+                margin-right: 7px;
+                margin-left: 7px;
+            }
+        }
+    }
+    #toolbartable {
+        td,
+        th {
+            border-right: 0;
+            &:nth-child(1) {
+                width: 20px;
+            }
+            &:nth-child(2) {
+                width: 50px;
+            }
+        }
+        button {
+            padding: 0 !important;
+            border: 0 !important;
+            background: none !important;
+            box-shadow: none !important;
+            outline: none;
+            &:hover,
+            &:active,
+            &focus {
+                border: 0;
+                background: none !important;
+                outline: none;
+            }
+            span {
+                font: 0/0 a !important;
+                &:before {
+                    color: $color-primary;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    #toolbartable + .paginator {
+        position: absolute;
+        clip: rect(0, 99999px, 99999px, -2px);
+        border-right: 0;
+    }
+}
+.filerFile {
+    img {
+        width: 36px;
+        height: 36px;
+        margin-right: 10px;
+        &[src*="nofile"] {
+            margin-right: 0;
+            border: solid 1px $gray-lighter;
+            border-radius: $border-radius-base;
+            box-sizing: border-box;
+        }
+    }
+    img,
+    .related-lookup {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center !important;
+    }
+    .related-lookup {
+        float: right !important;
+    }
+    span {
+        display: inline-block;
+        color: $gray;
+        font-weight: normal;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        &:empty + .related-lookup {
+            float: none !important;
+            margin-left: 0 !important;
+        }
+    }
+
+    .related-lookup,
+    .filerClearer {
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+        float: right;
+        margin: 0 0 0 5px !important;
+        &:before {
+            color: $gray-light !important;
+            margin: 0;
+            vertical-align: middle;
+        }
+    }
+    .filerClearer {
+        width: 10px !important;
+        height: 10px !important;
+        padding: 12px !important;
+        border: solid 1px $gray-lighter;
+        border-radius: $border-radius-base;
+        cursor: pointer;
+    }
+    .related-lookup {
+        display: inline-block !important;
+        padding: 8px 10px !important;
+        img {
+            display: none;
+        }
+    }
+}

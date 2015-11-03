@@ -1,0 +1,291 @@
+// base
+
+body {
+    background-color: $gray-lightest;
+    h1 {
+        margin-left: 0;
+    }
+    .module {
+        h2 {
+            padding-left: 0;
+        }
+        p {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0 !important;
+        }
+        table {
+            margin-bottom: 20px !important;
+        }
+    }
+    &.dashboard {
+        background-color: $white;
+        h1 {
+            margin-left: 10px;
+        }
+        .breadcrumbs {
+            padding: $breadcrumb-padding 10px !important;
+        }
+    }
+}
+
+body,
+p {
+    font-family: $base-font-family !important;
+}
+
+body,
+select,
+input,
+textarea {
+    color: $gray-darkest;
+}
+
+h1 {
+    color: $gray-darkest;
+    font-size: $font-size-large;
+    font-weight: bold;
+    margin: 0 10px 25px;
+}
+h2 {
+    color: $gray-darkest;
+    font-size: 130%;
+    font-weight: bold;
+    line-height: 1.75em;
+    margin: 20px 10px 45px;
+}
+h3 {
+    color: $gray-darkest;
+    font-size: 120%;
+    font-weight: bold;
+}
+h4 {
+    color: $gray-darkest;
+    font-size: 110%;
+    font-weight: bold;
+}
+h5 {
+    color: $gray-darkest;
+    font-size: 100%;
+}
+h6 {
+    color: $gray-darkest;
+    font-size: 100%;
+}
+a.btn {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+}
+.cms-btn-group {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    display: inline-block;
+    padding: 10px 20px !important;
+    &:first-child {
+        border-radius: 3px 0 0 3px !important;
+    }
+    &:last-child {
+        margin-left: -4px;
+        border-radius: 0 3px 3px 0 !important;
+
+    }
+}
+.cms-btn-active {
+    box-shadow: $btn-active-shadow;
+    background-color: $btn-cms-active !important;
+    &:hover {
+        background-color: $btn-cms-active-hover !important;
+        border-color: $btn-cms-active-hover-border !important;
+    }
+}
+a,
+a:link {
+    color: $color-primary;
+    text-decoration: none;
+    &:hover,
+    &:active {
+        color: $color-primary !important;
+    }
+    &:visited {
+        color: $color-primary;
+    }
+}
+.cancel-link {
+    margin-left: 10px;
+}
+ul,
+ol {
+    margin-left: 20px;
+}
+.colM ul:not(.object-tools) {
+    margin: 20px 0 25px;
+    border-bottom: solid 1px $gray-lighter;
+    &:empty {
+        border-bottom: 0;
+    }
+    li {
+        color: $gray-darkest;
+        font-size: $font-size-normal;
+        font-weight: bold;
+        list-style-type: none;
+        padding: 10px 0;
+        border-top: solid 1px $gray-lighter;
+    }
+    ul {
+        margin: 10px 0 -10px;
+        border-bottom: 0;
+        li {
+            font-weight: normal;
+            padding-left: 2%;
+        }
+        ul {
+            margin-left: 20px;
+            li {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+p,
+.description,
+.timezonewarning {
+    font-size: $font-size-normal !important;
+    color: $gray !important;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+.datetimeshortcuts {
+    font-size: $font-size-small !important;
+}
+
+code {
+    color: $gray;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 11px;
+    background: inherit;
+    strong {
+        color: #930;
+    }
+}
+
+pre {
+    color: $gray;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 11px;
+    background: inherit;
+    &.literal-block {
+        background: $gray-lighter;
+    }
+}
+
+div hr {
+    margin: 20px 0;
+    border: none;
+    background: $gray-lighter;
+}
+
+strong {
+    font-weight: bold;
+}
+.small,
+small {
+    font-size: $font-size-small;
+    margin-top: 0;
+}
+
+.mini {
+    font-size: 11px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+.errornote {
+    display: inline-block;
+    font-weight: normal;
+    color: $color-danger !important;
+    font-size: $font-size-normal !important;
+    line-height: $line-height-normal;
+    width: calc(80% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: $border-radius-base;
+    background: none;
+    background-color: $color-danger-ultralight;
+}
+ul.errorlist {
+    color: $color-danger !important;
+    margin-bottom: 10px !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    li {
+        color: $color-danger !important;
+        font-size: $font-size-normal !important;
+        font-weight: normal !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0 !important;
+    }
+}
+.breadcrumbs + ul.messagelist {
+    margin-top: $messages-breadcrumb-margin-top!important;
+}
+ul.messagelist {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    margin-top: $messages-margin-top !important;
+    z-index: 5;
+    li {
+        position: relative;
+        color: $gray-lighter;
+        font-size: $font-size-normal;
+        font-weight: normal;
+        padding: 5px 10px 5px 45px;
+        background-image: none;
+        background-color: $gray-darker !important;
+        border-bottom: 0;
+        &:before {
+            position: absolute;
+            left: 10px;
+            font-size: 18px !important;
+            margin-right: 20px !important;
+        }
+        &.success {
+            background-image: none;
+            &:before {
+                color: $color-success;
+            }
+        }
+        &.error {
+            background-image: none;
+            &:before {
+                color: $color-danger;
+            }
+        }
+        &.warning {
+            background-image: none;
+            &:before {
+                color: $color-warning;
+            }
+        }
+        &.info {
+            background-image: none;
+            &:before {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+// FIXME: These are actually fixes in the django CMS code base but setting here too for a quicker release
+#sitemap li .cont {
+    overflow: visible !important;
+}

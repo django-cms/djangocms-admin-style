@@ -1,0 +1,723 @@
+form {
+    padding: 25px 25px;
+    margin-bottom: 20px;
+    background-color: $white;
+    box-shadow: $base-box-shadow;
+    fieldset {
+        width: 80%;
+    }
+    .form-row {
+        overflow: hidden;
+        border-bottom: 0;
+        clear: both;
+        &.field-get_attachment_address a {
+            position: relative;
+            display: block;
+            font-size: $font-size-large;
+            line-height: $font-size-large;
+            margin: 10px 0;
+            padding-left: 30px;
+            &:before {
+                position: absolute;
+                left: 0;
+                color: $gray;
+            }
+        }
+        &.field-sha1 {
+            label {
+                display: inline-block;
+            }
+            p {
+                display: inline-block;
+                color: $gray-darkest !important;
+            }
+        }
+        &.field-image {
+            .filerFile img {
+                width: 36px;
+                height: 36px;
+            }
+        }
+        &.field-file {
+            .related-widget-wrapper-link {
+                width: 36px;
+                height: 36px;
+            }
+            input {
+                width: calc(100% - 48px) !important;
+                margin-bottom: 10px;
+            }
+            input[type="checkbox"] {
+                width: auto !important;
+                margin-bottom: 3px;
+            }
+            .related-lookup {
+                float: right;
+                width: 36px;
+                height: 36px;
+            }
+            .file-upload {
+                p {
+                    font-weight: normal;
+                }
+                a {
+                    position: relative;
+                    padding-left: 30px;
+                    &:before {
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                a,
+                input[type="file"] {
+                    display: block;
+                    font-size: 16px;
+                    line-height: 16px;
+                    margin: 10px 0;
+                }
+                a:before {
+                    color: $gray;
+                    vertical-align: top;
+                }
+                .clearable-file-input {
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    label {
+                        font-size: 16px;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+        &.field-thumbnail {
+            margin: 0;
+        }
+        .field-box {
+            float: none;
+            margin-top: 20px;
+            margin-right: 0 !important;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        .vForeignKeyRawIdAdminField {
+            width: calc(100% - 48px) !important;
+        }
+        .related-lookup {
+            float: none;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            padding: 9px !important;
+            margin: 0 0 0 10px !important;
+            &:before {
+                margin: 0 !important;
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+    button,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="url"],
+    select,
+    textarea {
+        font-size: $font-size-small;
+        width: 100% !important;
+        max-width: none !important;
+        appearance: none;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    button {
+        width: auto !important;
+    }
+    .cke {
+        box-sizing: border-box;
+    }
+    .aligned {
+        .field-number_of_visits p {
+            padding-left: 0;
+            margin-left: 0;
+        }
+        p.help {
+            font-size: $font-size-small !important;
+            color: $gray;
+            margin-top: 10px;
+            padding: 0 !important;
+            margin-left: 0;
+            clear: both;
+        }
+        label {
+            padding: 0 !important;
+        }
+        label + label {
+            margin-left: 10px;
+        }
+    }
+    .vCheckboxLabel,
+    .field-type label,
+    .sortedm2m label {
+        vertical-align: bottom;
+        color: $gray-darker !important;
+        font-size: $font-size-large !important;
+        text-transform: none;
+        margin-bottom: 0;
+        + a {
+            font-size: $font-size-large;
+            font-weight: normal;
+        }
+    }
+    .sortedm2m a {
+        vertical-align: middle;
+        padding-top: 3px;
+    }
+    small {
+        color: $gray;
+    }
+    hr {
+        margin: 5px 0;
+    }
+    fieldset {
+        box-sizing: border-box;
+        line-height: 2em;
+        vertical-align: middle;
+        &.collapse h2 {
+            font-size: $font-size-large;
+            color: $gray-darkest;
+            background-image: none;
+        }
+        &.collapsed {
+            margin-bottom: 30px !important;
+        }
+    }
+    label select {
+        display: block;
+        margin-left: 0 !important;
+        margin-top: 5px;
+    }
+    label,
+    label.aligned {
+        display: block;
+        float: none !important;
+        color: $gray !important;
+        font-size: $font-size-normal;
+        line-height: $line-height-normal;
+        text-transform: uppercase;
+        font-weight: normal !important;
+        word-wrap: break-word;
+        width: auto !important;
+        margin-bottom: 5px;
+        &.required {
+            color: $gray !important;
+            font-weight: normal !important;
+        }
+        &.btn {
+            float: left !important;
+            color: $white !important;
+            padding: 6px 12px !important;
+        }
+        &.btn-default {
+            color: $gray-darker !important;
+        }
+        &:after {
+            height: 20px !important;
+        }
+    }
+    // input
+    input,
+    textarea {
+        color: $gray-darkest;
+        font-size: $font-size-small;
+        line-height: $font-size-small;
+        padding: 10px !important;
+        border: 1px solid $gray-lighter !important;
+        box-sizing: border-box;
+        border-radius: $border-radius-base;
+        outline: none;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        position: relative;
+        top: -1px;
+        overflow: hidden;
+        vertical-align: bottom;
+        line-height: $base-line-height;
+        height: 13px;
+        width: 13px !important;
+        margin-right: 10px;
+        padding: 0 !important;
+        border: 0 !important;
+    }
+    input[type="file"] {
+        color: $gray;
+        padding: 6px 5px;
+        border: 1px solid $gray-lighter;
+        border-radius: $border-radius-base;
+        outline: none;
+    }
+    select {
+        appearance: none;
+        font-size: $font-size-small;
+        line-height: $font-size-normal;
+        font-weight: normal;
+        height: auto !important;
+        min-width: 160px;
+        padding: 10px;
+        background: $white url('../img/icon_arrow_down.png') no-repeat right center !important;
+        background-size: 25px !important;
+        border: 1px solid $gray-lighter;
+        border-radius: $border-radius-base;
+    }
+    select + select {
+        margin-top: 10px !important;
+    }
+    small {
+        margin-left: 15px;
+    }
+    .form-controls {
+        text-align: right;
+        margin: 15px 0 0 0;
+        p {
+            margin-top: 6px;
+        }
+    }
+    .input-list {
+        display: inline-block;
+        line-height: 20px;
+        vertical-align: top;
+    }
+    .extra {
+        .right {
+            float: right;
+            margin-right: 10px;
+        }
+    }
+    .errors {
+        border: 0;
+        background: none;
+        input,
+        select,
+        textarea {
+           border-color: $gray-lighter;
+        }
+    }
+    .form-row {
+        padding: 0 2px 25px;
+        border-bottom-color: $gray-lighter;
+        &.errors {
+            border: 0;
+            background: none;
+        }
+        &.field-type {
+            padding-bottom: 0;
+        }
+    }
+    .form-row:last-child {
+        border-bottom-color: transparent;
+    }
+    h2 + .form-row > .checkbox-row {
+        padding-top: 0;
+        border-top: 0;
+    }
+    .checkbox-row {
+        padding-top: 15px;
+        margin-bottom: -10px;
+        border-top: solid 1px $gray-lighter;
+        label {
+            color: $gray-darkest !important;
+            font-size: $font-size-large;
+            text-transform: none;
+        }
+    }
+}
+
+.form-row .select2-container {
+    min-width: 250px + 12px;
+} //standard input width + default input paddings
+.inline-group .form-row input,
+.inline-group .form-row textarea {
+    width: auto;
+}
+
+// select2
+form {
+    .select2-container {
+        width: 100%;
+        &.select2-container-active {
+            .select2-choice,
+            .select2-choices {
+                box-shadow: none;
+            }
+        }
+        .select2-choice {
+            line-height: inherit;
+            height: auto;
+            padding: 10px 40px 10px 20px;
+            background: none;
+            border: 1px solid $gray-lighter;
+            border-radius: $border-radius-base;
+            & > .select2-chosen {
+                font-size: $font-size-small;
+                line-height: $font-size-small;
+            }
+            .select2-arrow {
+                right: 9px;
+                width: 17px;
+                background: none;
+                border: none;
+                border-radius: 0;
+                b {
+                    background: url('../img/select2.png') no-repeat 0 5px;
+                    background-size: 50px;
+                }
+
+            }
+        }
+    }
+    .select2-dropdown-open {
+        &.select2-drop-above {
+            .select2-choice,
+            .select2-choices {
+                background-image: none !important;
+                border-color: $gray-lighter !important
+            }
+        }
+        .select2-choice {
+            background-color: $white;
+            background-image: none;
+            .select2-arrow b {
+                background-position: -16px 5px;
+            }
+        }
+    }
+}
+.select2-drop-active {
+    border: 1px solid $gray-lighter !important;
+}
+.select2-results {
+    margin: 0 10px 10px !important;
+    padding: 0 !important;
+    .select2-no-results,
+    .select2-searching,
+    .select2-ajax-error,
+    .select2-selection-limit {
+        color: $gray;
+        font-size: $font-size-small;
+        padding: 0 !important;
+        background-color: transparent !important;
+    }
+    .select2-highlighted {
+        border-radius: $border-radius-base;
+        background-color: $color-primary !important;
+    }
+}
+.select2-match {
+    font-size: $font-size-normal !important;
+}
+.select2-search {
+    padding: 10px !important;
+    input {
+        font-size: $font-size-small !important;
+        width: 100% !important;
+        padding: 10px 40px 10px 20px !important;
+        background: url('../img/select2.png') no-repeat right -24px !important;
+        background-size: 50px !important;
+        border: 1px solid $gray-lighter !important;
+        border-radius: $border-radius-base !important;
+    }
+}
+
+
+input:invalid,
+textarea:invalid {
+    border-radius: $border-radius-base;
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+    background-color: $color-danger-ultralight;
+}
+
+// buttons
+button {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+}
+input[type="submit"],
+input[type="button"] {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    font-weight: normal !important;
+    width: auto !important;
+    padding: 10px 20px !important;
+    &.default {
+        @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+        padding: 10px 20px !important;
+    }
+}
+a.button {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    text-decoration: none;
+    cursor: pointer;
+    &.tab {
+        border-radius: 0;
+    }
+}
+
+// date time
+.form-row {
+    p.datetime {
+        font-weight: normal;
+        font-size: $font-size-normal !important;
+        line-height: 36px;
+        margin-left: 0;
+        padding-left: 0;
+        input {
+            display: block;
+        }
+    }
+}
+
+// calendar
+div.calendar {
+    table {
+        width: 230px !important;
+        caption {
+            color: $gray !important;
+            padding: 10px 30px;
+            margin: 0;
+            background-color: $white;
+            background-image: none;
+            border-bottom: solid 1px $gray-lighter;
+            border-top-radius: $border-radius-base;
+        }
+        th {
+            font-family: $base-font-family;
+            color: $gray-darkest;
+            background: none;
+        }
+        td {
+            padding: 0;
+            background: $gray-lightest;
+            &.nonday {
+                background-color: $gray-lightest !important;
+            }
+        }
+        td a {
+            padding: 7px;
+            &:hover,
+            &:active,
+            &:focus {
+                color: $gray-darker;
+                background: $color-primary-light !important;
+            }
+        }
+    }
+    .today a {
+        color: $gray-darker;
+        background-color: $color-primary;
+    }
+}
+div.calendarbox {
+    width: 230px !important;
+    table {
+        margin-bottom: 0 !important;
+        td {
+            height: auto !important;
+            padding: 0 !important;
+            &.selected {
+                a {
+                    color: $white;
+                    background-color: $color-primary;
+                    &:hover {
+                        color: $gray-darker;
+                    }
+                }
+            }
+        }
+        th {
+            padding: 10px;
+            border-bottom: 0;
+        }
+        th,
+        td {
+            font-size: $font-size-normal;
+            line-height: $line-height-normal;
+            font-weight: normal;
+            border-color: $gray-lighter;
+            background-color: $white;
+            a {
+                font-family: $base-font-family;
+                font-weight: normal;
+                color: $gray;
+            }
+        }
+    }
+    .calendarnav-previous,
+    .calendarnav-next {
+        color: $color-primary;
+        font-size: 0;
+        text-decoration: none;
+        padding: 6px 7px;
+        background: none;
+        &:hover,
+        &:focus {
+            background: none;
+        }
+    }
+    .calendar-shortcuts {
+        font-size: $font-size-small;
+        line-height: $line-height-normal;
+        border-color: $gray-lighter !important;
+        background: $white;
+        a {
+            font-size: $font-size-small !important;
+            margin-right: 5px !important;
+            margin-top: 0 !important;
+            padding: 9px 10px !important;
+            &:first-child {
+                margin-left: 5px;
+            }
+        }
+    }
+    .calendar-cancel {
+        padding: 5px 0 !important;
+    }
+}
+div.calendarbox,
+div.clockbox {
+    margin: 0;
+    padding: 0;
+    border: 1px solid $gray-lighter;
+    border-radius: $border-radius-base;
+    background: $white !important;
+    box-shadow: $base-box-shadow;
+    caption,
+    h2 {
+        font-size: $font-size-normal;
+    }
+    .calendar-cancel {
+        font-size: $font-size-small !important;
+        line-height: $line-height-normal;
+        margin-top: 0 !important;
+        background: $white;
+        border-color: $gray-lighter !important;
+        border-bottom-radius: $border-radius-base;
+    }
+}
+// clock
+div.clockbox {
+    border-top-radius: $border-radius-base;
+    h2 {
+        color: $gray !important;
+        font-size: 14px !important;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding: 10px 30px;
+        background-color: $white;
+        background-image: none;
+        border-radius: $border-radius-base;
+    }
+    .timelist li {
+        border-top: solid 1px $gray-lighter;
+        &:first-child {
+            border-top: 0;
+        }
+        a {
+            font-size: $font-size-normal;
+            line-height: $line-height-normal;
+            font-weight: normal;
+            padding: 10px 2px;
+            &:hover {
+                background-color: $color-primary-light !important;
+            }
+        }
+    }
+    .calendar-cancel {
+        padding: 10px 0 !important;
+    }
+}
+.timelist a {
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+        background: none !important;
+    }
+}
+
+span.datetimeshortcuts,
+.calendar-shortcuts {
+    font-size: 0 !important;
+    padding: 4px 0 !important;
+    a {
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+        display: inline-block;
+        height: 12px;
+        padding: 10px !important;
+        margin-right: 10px;
+        margin-top: 10px !important;
+        &:before {
+            color: $color-primary;
+            margin: -2px 0 0;
+        }
+    }
+}
+
+// filter horizontal
+.selector {
+    .selector-chooseall,
+    .selector-clearall {
+        font-size: $font-size-small;
+        line-height: $font-size-normal;
+    }
+    select {
+        overflow: hidden;
+    }
+}
+
+form select[multiple] {
+    overflow: auto;
+    width: 100%;
+    max-width: 240px;
+    padding: 10px;
+    background: none;
+}
+.js-icon-widgets {
+    select {
+        display: inline-block;
+        width: 88% !important;
+    }
+    .btn {
+        width: 10%;
+        margin-left: 1%;
+        padding: 0 !important;
+    }
+}
+
+.fa-question-circle:before {
+    font-size: $font-size-normal;
+}
+
+#id_password,
+.field-type p {
+    padding: 10px !important;
+    margin: 15px 0;
+    background-color: $gray-lightest;
+}
+.field-type p:empty {
+    padding: 0 !important;
+    background-color: transparent;
+}
+
+//related-widget
+.related-widget-wrapper {
+    width: 100%;
+}
+.related-widget-wrapper-link {
+    margin-right: 5px;
+}

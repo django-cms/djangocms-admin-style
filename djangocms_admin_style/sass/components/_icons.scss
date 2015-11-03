@@ -1,0 +1,232 @@
+.addlink,
+.changelink,
+.deletelink,
+.inline-deletelink,
+.pastelink,
+.icon-arrow-right,
+.icon-logo,
+.add-row a,
+.related-lookup,
+.backtoroot,
+.movetolink span,
+.file-upload a,
+a.insertlinkButton,
+.field-get_attachment_address a,
+a.selector-clearall,
+a.selector-chooseall,
+.selector-remove,
+.selector-add,
+.add-another,
+.add-related,
+.change-related,
+.delete-related,
+a[id*="calendarlink"],
+a[id*="clocklink"],
+.calendarnav-previous,
+.calendarnav-next,
+.messagelist li.success,
+.messagelist li.error,
+.messagelist li.info,
+.messagelist li.warning,
+.cms-admin-modal.delete-confirmation .colM > p,
+.delete-confirmation .colM h1 + p,
+.admin_shortcuts .shortcuts li a {
+    background-image: none !important;
+    &:hover {
+      background-image: none;
+    }
+    &:before {
+        @extend %icon;
+        font-size: $font-size-large;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}
+
+.file-upload a,
+.field-get_attachment_address a {
+  @include icon(picture);
+}
+
+a.selector-clearall,
+.selector-remove {
+    @include icon(chevron-circle-left);
+}
+a.selector-chooseall,
+.selector-add {
+    @include icon(chevron-circle-right);
+}
+.addlink,
+.add-row a,
+.add-another,
+.add-related {
+    @include icon(plus);
+}
+.changelink,
+.change-related {
+    @include icon(pencil);
+}
+.deletelink,
+.inline-deletelink,
+.delete-related {
+    @include icon(remove);
+}
+.icon-arrow-right,
+.calendarnav-next {
+    @include icon(arrow-right);
+}
+.icon-search,
+.related-lookup {
+    @include icon(search);
+}
+.icon-logo {
+    @include icon(logo);
+}
+#id_upload_button {
+   @include icon(upload);
+}
+#id_new_folder {
+    @include icon(folder);
+}
+.backtoroot,
+.calendarnav-previous {
+   @include icon(chevron-left);
+}
+.movetolink span {
+   @include icon(scissors);
+}
+.pastelink {
+    @include icon(clipboard);
+}
+.insertlinkButton {
+    @include icon(arrow-left);
+    padding: 0 !important;
+}
+a[id*="calendarlink"] {
+    @include icon(calendar);
+    img {
+        display: none;
+    }
+}
+a[id*="clocklink"] {
+    @include icon(clock);
+    img {
+        display: none;
+    }
+}
+.messagelist li.success {
+    @include icon(check-circle);
+}
+.messagelist li.error {
+    @include icon(minus-circle);
+}
+.messagelist li.warning {
+    @include icon(exclamation-triangle);
+}
+.messagelist li.info {
+    @include icon(info-circle);
+}
+
+.related-lookup {
+    @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
+    padding: 0;
+    &:before {
+        color: $white;
+    }
+}
+
+.addlink,
+.addlink a {
+    color: $color-success;
+    &:hover {
+        color: $color-success-dark !important;
+    }
+}
+.changelink,
+.changelink a {
+    color: $color-primary;
+    &:hover {
+        color: $color-primary-dark !important;
+    }
+}
+.deletelink,
+.deletelink a {
+    color: $color-danger;
+}
+
+.addlink,
+.changelink,
+.deletelink {
+    padding-left: 15px;
+}
+
+.related-lookup,
+.add-another {
+    margin: 0 5px;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none !important;
+    }
+}
+.add-another,
+.add-related,
+.change-related,
+.delete-related {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 10px !important;
+    margin: 10px 0;
+    &:before {
+        color: $gray-darker;
+        vertical-align: top;
+        margin: 0;
+    }
+    img {
+        display: none;
+    }
+}
+
+.tree {
+    .col-navigation img {
+        vertical-align: middle;
+    }
+    .col-language a {
+        vertical-align: top !important;
+    }
+    .changelink {
+        background-image: url("../img/icon_changelink_white.png");
+    }
+    .addlink,
+    .deletelink {
+        display: inline !important;
+        &:before {
+            font-size: $font-size-normal;
+            margin: 0;
+        }
+    }
+}
+
+#sitemap li .col-softroot span.icon {
+    width: 15px;
+    height: 15px;
+    margin: 7px 5px 0 0;
+    background: url("../img/icon_softroot.png") 0 0 no-repeat;
+}
+
+// retina
+@media only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (-o-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2) {
+    .tree .changelink {
+        background-image: url("../img/icon_changelink_white@2x.png");
+        background-size: 11px;
+    }
+    #sitemap li .col-softroot span.icon {
+        background-image: url("../img/icon_softroot@2x.png");
+        background-size: 15px;
+    }
+}

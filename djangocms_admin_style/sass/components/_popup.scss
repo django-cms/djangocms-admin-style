@@ -1,0 +1,227 @@
+.cms-admin-modal {
+    .module {
+        h2 {
+            font-size: $font-size-large !important;
+        }
+    }
+    &.dashboard {
+        #content-related {
+            padding-top: 30px !important;
+        }
+        #content {
+            margin-top: 74px !important;
+        }
+    }
+}
+.popup,
+.cms-admin-modal {
+    #container .breadcrumbs + .messagelist + #content,
+    #container .breadcrumbs + #content {
+       margin-left: 20px !important;
+    }
+    &.app-aldryn_bootstrap3 .filerFile .filerClearer {
+        width: 36px !important;
+        height: 36px !important;
+    }
+    background-color: $white;
+    form {
+        padding: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        box-shadow: none;
+        fieldset {
+            width: 100%;
+        }
+        .checkbox-row {
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+        }
+    }
+    .calendarbox table {
+        td {
+            padding: 0 !important;
+        }
+    }
+    &.change-list {
+        #changelist {
+            #changelist-filter {
+                background: none !important;
+            }
+            #changelist-form > input + .results {
+                clear: both;
+            }
+        }
+        #result_list {
+            tbody td,
+            tbody th {
+                height: 41px;
+            }
+        }
+    }
+    table {
+        margin-left: 0;
+        box-shadow: none !important;
+        td > select {
+           width: auto !important;
+        }
+    }
+    input[type=text],
+    input[type=password],
+    .vURLField,
+    .vTextField,
+    textarea,
+    select,
+    .select2-container,
+    .sortedm2m-container,
+    form .cke,
+    .field-image {
+        max-width: inherit !important;
+        box-sizing: border-box;
+    }
+    #container {
+        min-width: inherit !important;
+    }
+    #content,
+    &.filebrowser #content {
+        margin: 20px 20px 0 !important;
+    }
+    #content .submit-row {
+        margin: 20px -20px 0 !important;
+        padding: 20px 20px !important;
+    }
+    .form-row {
+        padding-left: 0;
+        padding-right: 0;
+        &.field-enable_registration,
+        &.field-registration_deadline_at,
+        &.field-is_published,
+        &.field-publish_at {
+             .field-box {
+                float: none;
+                margin-left: 0 !important;
+                margin-top: 20px;
+            }
+        }
+        .field-box {
+            float: left;
+            margin-right: 20px !important;
+            margin-top: 0;
+            &.field-registration_deadline_at {
+                margin-right: 0 !important;
+            }
+        }
+    }
+    .bootstrap3-column {
+        .form-row {
+            overflow: hidden;
+            padding: 14px 0 10px;
+            border-bottom: solid 1px $gray-lighter;
+            &.field-create {
+                input {
+                    width: 70px !important;
+                }
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 160px !important;
+                }
+            }
+            .field-box {
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 70px !important;
+                }
+                input {
+                    width: auto !important;
+                }
+                input[type="number"] {
+                    width: 60px !important;
+                }
+            }
+        }
+        .module {
+            margin-bottom: 20px;
+        }
+    }
+    .inline-group {
+        overflow: auto;
+        .module {
+            overflow: visible;
+            width: 100%;
+        }
+        .field-user,
+        .field-group {
+            min-width: 215px;
+        }
+    }
+    &.delete-confirmation {
+        #container .breadcrumbs + .messagelist + #content,
+        #container .breadcrumbs + #content {
+            margin-left: 20px !important;
+        }
+        .colM {
+            box-shadow: none;
+            > p {
+                @include icon(trash);
+                margin-top: -5px;
+                margin-bottom: 0;
+                &:before {
+                    font-size: 40px;
+                }
+            }
+            &#content {
+                padding: 0 !important;
+            }
+            ul {
+                margin: 10px -20px 0;
+                li {
+                    padding: 10px 0 10px 20px;
+                }
+                ul {
+                    margin: 10px 0 -10px -20px;
+                    li {
+                        padding: 10px 0 10px 20px;
+                    }
+                    ul {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    ul.messagelist + #content {
+        margin-top: 90px !important;
+    }
+    .well-wrapper {
+        margin-bottom: 20px;
+    }
+}
+.cms-admin-sideframe {
+    #container .breadcrumbs + .messagelist + #content,
+    #container .breadcrumbs + #content {
+       margin-left: 3% !important;
+    }
+    #content {
+        margin-top: $toolbar-height + $content-margin !important;
+    }
+    ul.messagelist {
+        margin-top: 46px !important;
+    }
+}
+
+.cms-dialog {
+    background-color: $white;
+    form {
+        background: none;
+        box-shadow: none;
+    }
+    .submit-row {
+        margin: 10px -20px 0;
+        input {
+            margin-left: 0;
+        }
+    }
+}

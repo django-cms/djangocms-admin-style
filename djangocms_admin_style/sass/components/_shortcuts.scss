@@ -1,0 +1,233 @@
+// django-admin-shortcuts
+
+.admin_shortcuts {
+    max-width: 900px;
+    margin: $toolbar-height 35% 0 3%;
+    border-bottom: solid 1px $gray-lighter;
+    + #content {
+        margin-top: 60px !important;
+    }
+    .shortcuts {
+        color: $gray-light;
+        padding: 10px !important;
+        background-color: transparent !important;
+        border: 0 !important;
+        box-shadow: none;
+        h2 {
+            color: $gray-darkest;
+            font-weight: bold !important;
+            font-size: $font-size-large;
+            border: 0;
+        }
+        li {
+            a,
+            a:link,
+            a:visited,
+            a:active {
+                color: $color-primary !important;
+                text-decoration: none;
+                min-height: 20px;
+                padding: 5px 10px;
+                border: 1px solid $gray-lighter;
+                background-color: $white;
+                box-shadow: none;
+                .count {
+                    color: $gray;
+                }
+                .count_new {
+                    border-color: $color-primary;
+                    background: $color-primary;
+                }
+                .title {
+                    vertical-align: middle;
+                    text-shadow: none;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                }
+            }
+            a:hover,
+            a:focus {
+                color: $color-primary-light !important;
+                background-color: $color-primary;
+            }
+            a:before {
+                font-size: 30px;
+                margin-right: 0;
+            }
+            .archive {
+                @include icon(archive);
+            }
+            .back {
+                @include icon(reply);
+            }
+            .basket {
+                @include icon(shopping-cart);
+            }
+            .blog {
+                @include icon(comment);
+            }
+            .camera {
+                @include icon(camera);
+            }
+            .card {
+                @include icon(credit-card);
+            }
+            .cash {
+                @include icon(money);
+            }
+            .certificate {
+                @include icon(certificate);
+            }
+            .clock {
+                @include icon(clock);
+            }
+            .cloud1 {
+                @include icon(cloud);
+            }
+            .cloud2 {
+                @include icon(cloud-upload);
+            }
+            .cloud3 {
+                @include icon(cloud-download);
+            }
+            .cloud4 {
+                @include icon(refresh);
+            }
+            .config {
+                @include icon(cog);
+            }
+            .config2 {
+                @include icon(cog);
+            }
+            .date {
+                @include icon(calendar);
+            }
+            .delivery1 {
+                @include icon(envelope-square);
+            }
+            .delivery2 {
+                @include icon(envelope);
+            }
+            .diskette {
+                @include icon(floppy-o);
+            }
+            .file1 {
+                @include icon(file);
+            }
+            .file2 {
+                @include icon(files-o);
+            }
+            .film {
+                @include icon(film);
+            }
+            .flag {
+                @include icon(flag);
+            }
+            .folder {
+                @include icon(folder-open);
+            }
+            .gamepad {
+                @include icon(gamepad);
+            }
+            .garbage {
+                @include icon(trash);
+            }
+            .gift {
+                @include icon(gift);
+            }
+            .help {
+                @include icon(life-ring);
+            }
+            .home {
+                @include icon(home);
+            }
+            .key {
+                @include icon(key);
+            }
+            .less {
+                @include icon(minus-circle);
+            }
+            .letter {
+                @include icon(file-text);
+            }
+            .letters {
+                @include icon(newspaper-o);
+            }
+            .light {
+                @include icon(lightbulb-o);
+            }
+            .lock {
+                @include icon(lock);
+            }
+            .love {
+                @include icon(heart);
+            }
+            .mail {
+                @include icon(envelope);
+            }
+            .monitor {
+                @include icon(desktop);
+            }
+            .music {
+                @include icon(music);
+            }
+            .note {
+                @include icon(file-text);
+            }
+            .notepad {
+                @include icon(file-text);
+            }
+            .ok {
+                @include icon(check);
+            }
+            .package {
+                @include icon(cube);
+            }
+            .pencil {
+                @include icon(pencil);
+            }
+            .phone {
+                @include icon(mobile);
+            }
+            .picture {
+                @include icon(picture-o);
+            }
+            .pin {
+                @include icon(map-marker);
+            }
+            .plus {
+                @include icon(plus-circle);
+            }
+            .print {
+                @include icon(print);
+            }
+            .sound {
+                @include icon(volume-up);
+            }
+            .suitcase {
+                @include icon(suitcase);
+            }
+            .tag {
+                @include icon(tag);
+            }
+            .ticket {
+                @include icon(ticket);
+            }
+            .tool {
+                @include icon(wrench);
+            }
+            .unlock {
+                @include icon(unlock-alt);
+            }
+            .user {
+                @include icon(user);
+            }
+            .warning {
+                @include icon(exclamation-triangle);
+            }
+            .zoom {
+                @include icon(search-plus);
+            }
+        }
+    }
+}
