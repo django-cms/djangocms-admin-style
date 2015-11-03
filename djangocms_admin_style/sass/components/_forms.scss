@@ -149,7 +149,7 @@ form {
             font-size: $font-size-small !important;
             color: $gray;
             margin-top: 10px;
-            padding-left: 0;
+            padding: 0 !important;
             margin-left: 0;
             clear: both;
         }
@@ -225,6 +225,9 @@ form {
         &.btn-default {
             color: $gray-darker !important;
         }
+        &:after {
+            height: 20px !important;
+        }
     }
     // input
     input,
@@ -232,7 +235,7 @@ form {
         color: $gray-darkest;
         font-size: $font-size-small;
         line-height: $font-size-small;
-        padding: 10px;
+        padding: 10px !important;
         border: 1px solid $gray-lighter !important;
         box-sizing: border-box;
         border-radius: $border-radius-base;
@@ -263,10 +266,11 @@ form {
         font-size: $font-size-small;
         line-height: $font-size-normal;
         font-weight: normal;
+        height: auto !important;
         min-width: 160px;
         padding: 10px;
-        background: $white url('../img/icon_arrow_down.png') no-repeat right center;
-        background-size: 25px;
+        background: $white url('../img/icon_arrow_down.png') no-repeat right center !important;
+        background-size: 25px !important;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
     }
