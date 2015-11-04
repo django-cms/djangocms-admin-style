@@ -64,26 +64,6 @@
                 if ($.fn.touchSupport && $('.drag-handler').length) {
                     $(window).touchSupport();
                 }
-                if ($('.sorted').length) {
-                    var sortAmount = $('.sorted').length;
-                    var tooltipTrigger = $('.sortpriority');
-
-                    var tooltip = '';
-                    for (var i = 0; i < sortAmount; i++) {
-                         tooltip += '<li><a href="#">' + [i+1] + '</a></li>';
-                    }
-                    tooltip = '<div class="sort-tooltip"><ul>' + tooltip + '</ul></div>';
-
-                    console.log(tooltip);
-
-                    tooltipTrigger.on('mouseenter', function () {
-                        $(this).append(tooltip)
-                    });
-                    tooltipTrigger.on('mouseleave', function () {
-                        $('.sort-tooltip').remove();
-                    });
-                }
-
             });
         })(window.jQuery || window.django.jQuery);
     }
