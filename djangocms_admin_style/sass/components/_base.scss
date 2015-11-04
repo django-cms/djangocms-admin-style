@@ -88,6 +88,12 @@ a.btn {
 
     }
 }
+.cms_btn-active {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    display: block;
+    color: $font-color;
+    padding: 10px 20px !important;
+}
 .cms-btn-active {
     box-shadow: $btn-active-shadow;
     background-color: $btn-cms-active !important;
