@@ -286,6 +286,12 @@ ul.messagelist {
     }
 }
 
+img[src*="icon-no"],
+img[src*="icon-yes"] {
+    width: 16px;
+    height: 16px;
+}
+
 // FIXME: These are actually fixes in the django CMS code base but setting here too for a quicker release
 #sitemap li .cont {
     overflow: visible !important;
