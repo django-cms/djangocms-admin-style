@@ -80,55 +80,6 @@
     }
     thead th.sorted {
         min-width: 140px;
-         &.sorted {
-            position: relative;
-            .sortpriority {
-                cursor: pointer;
-            }
-            .sort-tooltip {
-                position: absolute;
-                top: -5px;
-                right: 0;
-                background-color: $white;
-                box-shadow: $base-box-shadow;
-                z-index: 50;
-                &:before {
-                    content: ' ';
-                    display: block;
-                    position: absolute;
-                    left: -8px;
-                    top: 15px;
-                    width: 14px;
-                    height: 14px;
-                    background-color: #fff;
-                    box-shadow: -2px 2px 3.5px rgba(0, 0, 0, .5);
-                    -webkit-box-shadow: -2px 2px 3.5px rgba(0, 0, 0, .5);
-                    -moz-box-shadow: -2px 2px 3.5px rgba(0, 0, 0, .5);
-                    transform: rotate(45deg);
-                    -webkit-transform: rotate(45deg);
-                    -moz-transform: rotate(45deg);
-                }
-                ul {
-                    padding: 0;
-                    margin: 0;
-                }
-                li {
-                    list-style: none;
-                    border-top: solid 1px $gray-lighter;
-                    &:first-child {
-                        border-top: 0;
-                    }
-                    a {
-                        display: block;
-                        color: $color-primary !important;
-                        padding: 10px 12px !important;
-                        &:hover {
-                            color: $color-primary-dark;
-                        }
-                    }
-                }
-            }
-        }
         .sortoptions {
             float: right;
             display: inline-block;
