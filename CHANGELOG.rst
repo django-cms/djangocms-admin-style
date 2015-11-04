@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.0.3 (UNRELEASED)
+------------------
+
+* Fix ``extrastyle.html`` link in README.rst
+* Fix modal display in django CMS <= 3.1
+
 1.0.2 (2015-11-04)
 ------------------
 
