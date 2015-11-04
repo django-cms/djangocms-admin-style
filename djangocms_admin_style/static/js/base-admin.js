@@ -55,6 +55,7 @@
 
     }
 
+    // load touch support function
     if (window.jQuery || (window.django && window.django.jQuery)) {
         // scopes the jQuery
         (function ($) {
