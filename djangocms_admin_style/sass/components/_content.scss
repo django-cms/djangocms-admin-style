@@ -385,6 +385,7 @@ ul.messagelist + #content {
         padding: 0;
         margin-bottom: 5px;
         border: 1px solid $gray-lighter !important;
+        background: none !important;
         option {
             font-size: $font-size-normal;
             line-height: $line-height-normal;
@@ -405,6 +406,7 @@ ul.messagelist + #content {
         margin: 10em 5px 0 5px;
         border: 0;
         background-color: transparent;
+        background: none;
         li {
             text-align: center;
             padding: 3px;
