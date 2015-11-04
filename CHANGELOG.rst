@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.0.5 (UNRELEASED)
+------------------
+
+* Fix multiselect height
+
 1.0.4 (2015-11-04)
 ------------------
 
@@ -11,6 +16,11 @@ CHANGELOG
 * Fix box-shadow on buttons
 * Fix Advance and Basic button styling
 * Fix limit search checkbox on filer
+
+1.0.3 (2015-11-04)
+------------------
+
+* Internal release
 
 1.0.2 (2015-11-04)
 ------------------
