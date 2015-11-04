@@ -24,7 +24,7 @@ Customization
 
 The django CMS Admin Style overrides django admin's ``base_site.html``, but you can still partially customize this page.
 Look at the source of ``templates/admin/base_site.html`` and override the templates that are included in various blocks.
-For example, you can add your own CSS in ``templates/admin/extrastyle.html``.
+For example, you can add your own CSS in ``templates/admin/inc/extrastyle.html``.
 
 
 Compiling CSS
