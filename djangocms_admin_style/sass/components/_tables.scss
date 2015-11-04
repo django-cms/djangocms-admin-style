@@ -106,7 +106,7 @@
             }
         }
     }
-    thead th.sortable{
+    thead th.sortable {
         &:hover {
             background: $gray-lighter;
         }
@@ -134,11 +134,6 @@
             }
             &.field-app_config {
                 padding: 1px 10px !important;
-            }
-            img[src*="icon-no"],
-            img[src*="icon-yes"] {
-                width: 16px;
-                height: 16px;
             }
         }
         th,
