@@ -10,6 +10,7 @@ CHANGELOG
 * Fix magnifier icon in django-filer for files
 * Fix box-shadow on buttons
 * Fix Advance and Basic button styling
+* Fix limit search checkbox on filer
 
 1.0.2 (2015-11-04)
 ------------------
