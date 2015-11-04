@@ -6,6 +6,7 @@ CHANGELOG
 
 * Fix ``extrastyle.html`` link in README.rst
 * Fix modal display in django CMS <= 3.1
+* Fix multiple select showing dropdown icon
 
 1.0.2 (2015-11-04)
 ------------------
