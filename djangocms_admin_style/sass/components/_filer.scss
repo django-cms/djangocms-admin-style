@@ -315,6 +315,11 @@
     .related-lookup {
         float: right !important;
     }
+    // required for django CMS <= 3.1
+    a {
+        box-sizing: border-box;
+        padding-top: 10px !important;
+    }
     span {
         display: inline-block;
         color: $gray;
