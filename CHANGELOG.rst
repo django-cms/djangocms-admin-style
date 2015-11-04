@@ -8,6 +8,7 @@ CHANGELOG
 * Fix modal display in django CMS <= 3.1
 * Fix multiple select showing dropdown icon
 * Fix magnifier icon in django-filer for files
+* Fix selector chooser showing background color
 
 1.0.2 (2015-11-04)
 ------------------
