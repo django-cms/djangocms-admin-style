@@ -268,10 +268,10 @@
         }
     }
     #changelist-search {
-        max-width: 335px;
         #limit_search_to_folder {
             vertical-align: middle;
             margin-top: 2px;
+            margin-left: 10px;
             + label {
                 display: inline-block !important;
                 font-size: $font-size-small !important;

@@ -685,7 +685,7 @@ form select[multiple] {
     width: 100%;
     max-width: 240px;
     padding: 10px;
-    background: none;
+    background: none !important;
 }
 .js-icon-widgets {
     select {
