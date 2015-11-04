@@ -9,6 +9,7 @@ CHANGELOG
 * Fix multiple select showing dropdown icon
 * Fix magnifier icon in django-filer for files
 * Fix box-shadow on buttons
+* Fix Advance and Basic button styling
 
 1.0.2 (2015-11-04)
 ------------------
