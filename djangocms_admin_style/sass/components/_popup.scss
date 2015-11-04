@@ -1,4 +1,5 @@
-.cms-admin-modal {
+.cms-admin-modal,
+.cms_modal-window {
     background: $white;
     .module {
         h2 {
@@ -15,7 +16,8 @@
     }
 }
 .popup,
-.cms-admin-modal {
+.cms-admin-modal,
+.cms_modal-window {
     #container .breadcrumbs + .messagelist + #content,
     #container .breadcrumbs + #content {
        margin-left: 20px !important;

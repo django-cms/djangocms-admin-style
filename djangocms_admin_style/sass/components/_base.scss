@@ -88,6 +88,12 @@ a.btn {
 
     }
 }
+.cms_btn-active {
+    @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+    display: block;
+    color: $font-color;
+    padding: 10px 20px !important;
+}
 .cms-btn-active {
     box-shadow: $btn-active-shadow;
     background-color: $btn-cms-active !important;
@@ -284,6 +290,12 @@ ul.messagelist {
             }
         }
     }
+}
+
+img[src*="icon-no"],
+img[src*="icon-yes"] {
+    width: 16px;
+    height: 16px;
 }
 
 // FIXME: These are actually fixes in the django CMS code base but setting here too for a quicker release

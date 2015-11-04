@@ -1,6 +1,17 @@
 CHANGELOG
 =========
 
+1.0.3 (2015-11-04)
+------------------
+
+* Fix ``extrastyle.html`` link in README.rst
+* Fix modal display in django CMS <= 3.1
+* Fix multiple select showing dropdown icon
+* Fix magnifier icon in django-filer for files
+* Fix box-shadow on buttons
+* Fix Advance and Basic button styling
+* Fix limit search checkbox on filer
+
 1.0.2 (2015-11-04)
 ------------------
 
