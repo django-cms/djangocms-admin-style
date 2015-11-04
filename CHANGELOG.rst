@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.0.3 (2015-11-04)
+1.0.4 (2015-11-04)
 ------------------
 
 * Fix ``extrastyle.html`` link in README.rst
