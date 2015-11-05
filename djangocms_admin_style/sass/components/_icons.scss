@@ -190,8 +190,13 @@ a[id*="clocklink"] {
 }
 
 .tree {
-    .col-navigation img {
-        vertical-align: middle;
+    .col-navigation {
+        line-height: 26px !important;
+        img {
+            vertical-align: middle;
+            width: 14px;
+            height: 14px;
+        }
     }
     .col-language a {
         vertical-align: top !important;
