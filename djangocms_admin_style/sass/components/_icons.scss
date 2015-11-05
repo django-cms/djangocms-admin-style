@@ -188,6 +188,12 @@ a[id*="clocklink"] {
         display: none;
     }
 }
+.add-related,
+.change-related,
+.delete-related {
+    width: 36px;
+    height: 36px;
+}
 
 .tree {
     .col-navigation {

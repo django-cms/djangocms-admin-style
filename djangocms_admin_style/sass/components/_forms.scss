@@ -32,14 +32,16 @@ form {
                 color: $gray-darkest !important;
             }
         }
-        &.field-image {
+        &.field-image, {
             .filerFile img {
                 width: 36px;
                 height: 36px;
             }
         }
-        &.field-file {
+        &[class*="file"],
+        &[class*="image"] {
             .related-widget-wrapper-link {
+                display: none;
                 width: 36px;
                 height: 36px;
             }
@@ -717,6 +719,9 @@ form select[multiple] {
 //related-widget
 .related-widget-wrapper {
     width: 100%;
+    > .filerFile {
+
+    }
 }
 .related-widget-wrapper-link {
     margin-right: 5px;
