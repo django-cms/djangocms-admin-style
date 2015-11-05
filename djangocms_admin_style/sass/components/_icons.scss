@@ -175,8 +175,6 @@ a[id*="clocklink"] {
 .delete-related {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
-    width: 15px;
-    height: 15px;
     padding: 10px !important;
     margin: 10px 0;
     &:before {
@@ -187,12 +185,6 @@ a[id*="clocklink"] {
     img {
         display: none;
     }
-}
-.add-related,
-.change-related,
-.delete-related {
-    width: 36px;
-    height: 36px;
 }
 
 .tree {
