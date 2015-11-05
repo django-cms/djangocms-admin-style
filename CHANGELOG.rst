@@ -5,6 +5,7 @@ CHANGELOG
 ------------------
 
 * Fix multiselect height
+* Fix login screen
 
 1.0.4 (2015-11-04)
 ------------------
