@@ -1,6 +1,16 @@
 CHANGELOG
 =========
 
+1.0.5 (UNRELEASED)
+------------------
+
+* Fix multiselect height
+* Fix login screen
+* Fix icon position in pagetree
+* Fix showing widget icons on file, folder and image fields
+* Fix header and header button default text
+* Fix link/button plugin font-color and spaces
+
 1.0.4 (2015-11-04)
 ------------------
 
@@ -11,6 +21,11 @@ CHANGELOG
 * Fix box-shadow on buttons
 * Fix Advance and Basic button styling
 * Fix limit search checkbox on filer
+
+1.0.3 (2015-11-04)
+------------------
+
+* Internal release
 
 1.0.2 (2015-11-04)
 ------------------
@@ -26,3 +41,4 @@ CHANGELOG
 ------------------
 
 * Comprehensive visual overhaul with emphasis on supporting touch-devices
+* New header markup on branding.html template.

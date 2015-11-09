@@ -2,10 +2,10 @@
 <div id="header-logo">
     <a class="icon-logo" href="/"><span>django CMS</span></a>
 </div>
-<h1>{{ site_header|default:_('example.com') }}</h1>
+<h1>{{ site_header|default:_('Django Administration') }}</h1>
 <ul id="site-name" class="toolbar-item toolbar-item-navigation">
     <li>
-        <a class="menu-item" href="">{{ site_header|default:_('example.com') }}</a>
+        <a class="menu-item" href="">{{ site_header|default:_('Django Administration') }}</a>
         <ul class="submenu">
             {% if user.has_usable_password %}
                 <li>
@@ -23,7 +23,7 @@
 </ul>
 <div id="header-btn">
     <a href="/" class="icon-arrow-right btn js-header-link">
-        {% trans 'Open' %} {{ request.site.name|default:_('example.com') }}
+        {% trans 'Open' %} {{ request.site.name|default:_('my site') }}
     </a>
 </div>
 

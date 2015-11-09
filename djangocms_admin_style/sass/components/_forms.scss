@@ -32,14 +32,21 @@ form {
                 color: $gray-darkest !important;
             }
         }
-        &.field-image {
+        &.field-image, {
             .filerFile img {
                 width: 36px;
                 height: 36px;
             }
         }
-        &.field-file {
+        &.field-folder {
             .related-widget-wrapper-link {
+                display: none;
+            }
+        }
+        &[class*="file"],
+        &[class*="image"] {
+            .related-widget-wrapper-link {
+                display: none;
                 width: 36px;
                 height: 36px;
             }
@@ -222,7 +229,8 @@ form {
             color: $white !important;
             padding: 6px 12px !important;
         }
-        &.btn-default {
+        &.btn-default,
+        &.btn-link {
             color: $gray-darker !important;
         }
         &:after {
@@ -313,9 +321,6 @@ form {
         &.errors {
             border: 0;
             background: none;
-        }
-        &.field-type {
-            padding-bottom: 0;
         }
     }
     .form-row:last-child {
