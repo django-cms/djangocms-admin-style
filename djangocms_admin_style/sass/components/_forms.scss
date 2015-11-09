@@ -10,6 +10,9 @@ form {
         overflow: hidden;
         border-bottom: 0;
         clear: both;
+        .btn-group-sizes .btn-default {
+            min-height: inherit !important;
+        }
         &.field-get_attachment_address a {
             position: relative;
             display: block;
@@ -180,6 +183,10 @@ form {
             font-weight: normal;
         }
     }
+    .field-type label {
+        margin-left: 2px !important;
+        margin-top: 10px !important;
+    }
     .sortedm2m a {
         vertical-align: middle;
         padding-top: 3px;
@@ -229,7 +236,8 @@ form {
             color: $white !important;
             padding: 6px 12px !important;
         }
-        &.btn-default {
+        &.btn-default,
+        &.btn-link {
             color: $gray-darker !important;
         }
         &:after {
@@ -320,9 +328,6 @@ form {
         &.errors {
             border: 0;
             background: none;
-        }
-        &.field-type {
-            padding-bottom: 0;
         }
     }
     .form-row:last-child {
