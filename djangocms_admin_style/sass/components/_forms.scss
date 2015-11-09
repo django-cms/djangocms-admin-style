@@ -229,7 +229,8 @@ form {
             color: $white !important;
             padding: 6px 12px !important;
         }
-        &.btn-default {
+        &.btn-default,
+        &.btn-link {
             color: $gray-darker !important;
         }
         &:after {
@@ -320,9 +321,6 @@ form {
         &.errors {
             border: 0;
             background: none;
-        }
-        &.field-type {
-            padding-bottom: 0;
         }
     }
     .form-row:last-child {
