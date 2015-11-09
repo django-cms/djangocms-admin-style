@@ -7,7 +7,7 @@ CHANGELOG
 * Fix multiselect height
 * Fix login screen
 * Fix icon position in pagetree
-* Fix showing widget icons on file and image fields
+* Fix showing widget icons on file, folder and image fields
 * Fix header and header button default text
 
 1.0.4 (2015-11-04)
