@@ -38,6 +38,11 @@ form {
                 height: 36px;
             }
         }
+        &.field-folder {
+            .related-widget-wrapper-link {
+                display: none;
+            }
+        }
         &[class*="file"],
         &[class*="image"] {
             .related-widget-wrapper-link {

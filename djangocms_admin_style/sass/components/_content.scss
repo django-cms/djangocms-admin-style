@@ -338,6 +338,11 @@ ul.messagelist + #content {
             height: 15px !important;
         }
     }
+    .selector-chosen {
+        select[multiple] {
+            height: 248px !important;
+        }
+    }
     .selector-add,
     .selector-remove {
         font-size: 0;
