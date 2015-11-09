@@ -39,3 +39,4 @@ CHANGELOG
 ------------------
 
 * Comprehensive visual overhaul with emphasis on supporting touch-devices
+* New header markup on branding.html template.
