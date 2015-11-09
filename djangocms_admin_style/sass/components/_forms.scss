@@ -10,6 +10,9 @@ form {
         overflow: hidden;
         border-bottom: 0;
         clear: both;
+        .btn-group-sizes .btn-default {
+            min-height: inherit !important;
+        }
         &.field-get_attachment_address a {
             position: relative;
             display: block;
@@ -179,6 +182,10 @@ form {
             font-size: $font-size-large;
             font-weight: normal;
         }
+    }
+    .field-type label {
+       margin-left: 2px !important;
+        margin-top: 10px !important;
     }
     .sortedm2m a {
         vertical-align: middle;
