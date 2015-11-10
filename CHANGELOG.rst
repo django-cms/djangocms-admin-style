@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.0.5 (UNRELEASED)
+1.0.5 (2015-11-10)
 ------------------
 
 * Fix multiselect height
