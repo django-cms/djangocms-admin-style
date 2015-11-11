@@ -344,10 +344,10 @@ form {
 
 //sideframe
 .cms-admin-sideframe {
-    .change-list #changelist .paginator,
-    .change-list #changelist.filtered .paginator,
-    .change-form #changelist .paginator,
-    .change-form #changelist.filtered .paginator {
+    &.change-list #changelist .paginator,
+    &.change-list #changelist.filtered .paginator,
+    &.change-form #changelist .paginator,
+    &.change-form #changelist.filtered .paginator {
         width: calc(100% - 30px - 6%) !important;
     }
 }
