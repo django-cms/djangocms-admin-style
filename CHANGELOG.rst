@@ -4,7 +4,7 @@ CHANGELOG
 1.0.6 (Unreleased)
 ------------------
 
-* Fix hover and selected lang link color
+* Fix hover and selected lang link color in changelist table
 * Fix paginator width in users list on sideframe
 
 1.0.5 (2015-11-10)
