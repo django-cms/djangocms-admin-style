@@ -325,6 +325,7 @@ form {
     }
     ul.selector-chooser {
         display: block;
+        width: 100% !important;
         margin-top: 0;
     }
     select[multiple],
@@ -361,4 +362,14 @@ form {
 }
 .admin_shortcuts .shortcuts li a span {
     padding: 0 !important;
+}
+
+//icons
+a.selector-clearall,
+.selector-remove {
+    @include icon(chevron-circle-up);
+}
+a.selector-chooseall,
+.selector-add {
+    @include icon(chevron-circle-down);
 }
