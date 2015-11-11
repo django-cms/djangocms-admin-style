@@ -210,18 +210,6 @@
         margin-bottom: 20px;
     }
 }
-.cms-admin-sideframe {
-    #container .breadcrumbs + .messagelist + #content,
-    #container .breadcrumbs + #content {
-       margin-left: 3% !important;
-    }
-    #content {
-        margin-top: $toolbar-height + $content-margin !important;
-    }
-    ul.messagelist {
-        margin-top: 46px !important;
-    }
-}
 
 .cms-dialog {
     background-color: $white;
