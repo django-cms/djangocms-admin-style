@@ -5,6 +5,7 @@ CHANGELOG
 ------------------
 
 * Fix hover and selected lang link color
+* Fix paginator width in users list on sideframe
 
 1.0.5 (2015-11-10)
 ------------------
