@@ -211,11 +211,17 @@
                 background-size: 5px;
             }
             .lang-code {
-                color: $color-primary !important;
+                color: $white !important;
                 font-size: $font-size-small !important;
-                background-color: $white;
+                background-color: $gray-lighter;
                 &.current.active {
-                    background-color: $white;
+                    color: $color-primary !important;
+                    background-color: $white !important;
+                }
+                &.active {
+                    color: $white !important;
+                    border-color: $white;
+                    background-color: $color-primary !important;
                 }
             }
         }
