@@ -325,6 +325,7 @@ form {
     }
     ul.selector-chooser {
         display: block;
+        width: 100% !important;
         margin-top: 0;
     }
     select[multiple],
@@ -341,6 +342,16 @@ form {
     }
 }
 
+//sideframe
+.cms-admin-sideframe {
+    &.change-list #changelist .paginator,
+    &.change-list #changelist.filtered .paginator,
+    &.change-form #changelist .paginator,
+    &.change-form #changelist.filtered .paginator {
+        width: calc(100% - 30px - 6%) !important;
+    }
+}
+
 // shortcuts
 .admin_shortcuts {
     margin: 46px 3% 0 3%;
@@ -351,4 +362,14 @@ form {
 }
 .admin_shortcuts .shortcuts li a span {
     padding: 0 !important;
+}
+
+//icons
+a.selector-clearall,
+.selector-remove {
+    @include icon(chevron-circle-up);
+}
+a.selector-chooseall,
+.selector-add {
+    @include icon(chevron-circle-down);
 }

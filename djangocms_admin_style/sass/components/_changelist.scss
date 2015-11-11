@@ -384,17 +384,34 @@
     }
 }
 
-.lang-code {
+a.lang-code {
+    color: $white !important;
     font-size: $font-size-small !important;
     font-weight: bold !important;
     text-transform: uppercase;
     padding: 2px 8px !important;
     margin-right: 10px !important;
-    border: solid 1px $color-primary;
+    border: solid 1px $gray-lighter;
     border-radius: 10px !important;
-    &.current.active {
+    background-color: $gray-lighter;
+    &:hover {
+        color: $white !important;
+    }
+    &.active {
+        color: $white !important;
+        background-color: $color-primary !important;
+        border-color: $color-primary;
+        &:hover {
+            color: $white !important;
+        }
+    }
+    &.current {
         color: $color-primary !important;
         background-color: $white !important;
+        border-color: $color-primary;
+        &:hover {
+            color: $color-primary !important;
+        }
     }
 }
 .collapse {
