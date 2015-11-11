@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.0.6 (Unreleased)
+------------------
+
+* Fix hover and selected lang link color
+
 1.0.5 (2015-11-10)
 ------------------
 
