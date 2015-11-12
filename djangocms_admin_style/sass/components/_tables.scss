@@ -213,10 +213,15 @@
             .lang-code {
                 color: $white !important;
                 font-size: $font-size-small !important;
-                background-color: $gray-lighter;
+                background-color: $gray-lighter !important;
                 &.current.active {
                     color: $color-primary !important;
-                    background-color: $white !important;
+                    border-color: $color-primary ;
+                    background-color: $white  !important;
+                }
+                &.current {
+                    color: $white !important;
+                    background-color: $gray-lighter !important;
                 }
                 &.active {
                     color: $white !important;
