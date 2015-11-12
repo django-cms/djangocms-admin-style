@@ -397,20 +397,20 @@ a.lang-code {
     &:hover {
         color: $white !important;
     }
+    &.current.active {
+        color: $color-primary !important;
+        background-color: $white !important;
+        border-color: $color-primary;
+        &:hover {
+            color: $color-primary !important;
+        }
+    }
     &.active {
         color: $white !important;
         background-color: $color-primary !important;
         border-color: $color-primary;
         &:hover {
             color: $white !important;
-        }
-    }
-    &.current {
-        color: $color-primary !important;
-        background-color: $white !important;
-        border-color: $color-primary;
-        &:hover {
-            color: $color-primary !important;
         }
     }
 }
