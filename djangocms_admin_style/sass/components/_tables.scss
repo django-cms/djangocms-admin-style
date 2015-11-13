@@ -55,9 +55,6 @@
             padding: 5px 10px !important;
             white-space: nowrap;
             background-color: $white;
-            &.sorted:nth-child(2) {
-                width: 160px !important;
-            }
             .text {
                 float: left;
                 padding-right: 0 !important;
@@ -79,7 +76,7 @@
         }
     }
     thead th.sorted {
-        min-width: 140px;
+        min-width: 160px;
         .sortoptions {
             float: right;
             display: inline-block;
