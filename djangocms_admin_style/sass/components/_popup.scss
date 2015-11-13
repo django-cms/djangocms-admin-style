@@ -48,6 +48,19 @@
     }
     &.change-list {
         #changelist {
+            &.filtered {
+                #changelist-form {
+                    float: left;
+                    width: calc(100% - 220px) !important;
+                    .results {
+                        margin-right: 0 !important
+                    }
+                    #result_list tbody th,
+                    #result_list tbody td {
+                        height: auto;
+                    }
+                }
+            }
             #changelist-filter {
                 background: none !important;
             }
