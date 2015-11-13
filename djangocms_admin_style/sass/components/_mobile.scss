@@ -317,6 +317,7 @@ form {
     .selector-chosen {
         float: none;
         width: auto;
+        margin-bottom: 0;
         p {
             text-align: center;
         }
@@ -325,7 +326,9 @@ form {
         float: none;
         display: block;
         width: 100% !important;
-        margin-top: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
     }
     select[multiple],
     select {

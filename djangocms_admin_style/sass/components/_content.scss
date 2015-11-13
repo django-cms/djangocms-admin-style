@@ -420,7 +420,9 @@ ul.messagelist + #content {
         }
         a {
             display: inline-block;
+            vertical-align: middle;
             margin-right: 0;
+            margin-bottom: 0;
         }
     }
 }
