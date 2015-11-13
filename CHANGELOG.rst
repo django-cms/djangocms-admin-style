@@ -7,6 +7,9 @@ CHANGELOG
 * Fix hover and selected lang link color in changelist table
 * Fix paginator width in users list on sideframe
 * Fix multiselect icons on mobile view
+* Fix missing search icon
+* Fix filter position and background color on edit page list window
+* Fix calendar and time cancel link color
 
 1.0.5 (2015-11-10)
 ------------------

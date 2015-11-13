@@ -7,6 +7,11 @@ body {
         margin: 0;
     }
 }
+html,
+body,
+#container {
+    height: 100%;
+}
 #content {
     margin: 160px 10px 0;
     h1 {

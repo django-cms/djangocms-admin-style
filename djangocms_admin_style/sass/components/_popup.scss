@@ -211,6 +211,16 @@
     }
 }
 
+.cms-admin-modal {
+    &.changelist #changelist {
+        margin-top: 50px;
+        .changelist-filter {
+            z-index: 2000;
+            background-color: $white !important;
+        }
+    }
+}
+
 .cms-dialog {
     background-color: $white;
     form {
