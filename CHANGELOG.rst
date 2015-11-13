@@ -9,6 +9,7 @@ CHANGELOG
 * Fix multiselect icons on mobile view
 * Fix missing search icon
 * Fix filter position and background color on edit page list window
+* Fix calendar and time cancel link color
 
 1.0.5 (2015-11-10)
 ------------------
