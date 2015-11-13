@@ -10,6 +10,7 @@ CHANGELOG
 * Fix missing search icon
 * Fix filter position and background color on edit page list window
 * Fix calendar and time cancel link color
+* Fix result list view on popup
 
 1.0.5 (2015-11-10)
 ------------------
