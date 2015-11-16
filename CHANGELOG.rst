@@ -12,6 +12,7 @@ CHANGELOG
 * Fix calendar and time cancel link color
 * Fix result list view on popup
 * Fix basic and advance ink hover color
+* Shows admin breadcrumbs on side frame
 
 1.0.5 (2015-11-10)
 ------------------
