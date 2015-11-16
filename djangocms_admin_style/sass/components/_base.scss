@@ -75,10 +75,13 @@ h6 {
 a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
 }
-.cms-btn-group {
+a.cms-btn-group {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
     padding: 10px 20px !important;
+    &:link:hover {
+        color: $btn-default-color !important;
+    }
     &:first-child {
         border-radius: 3px 0 0 3px !important;
     }
@@ -93,14 +96,10 @@ a.btn {
     color: $font-color;
     padding: 10px 20px !important;
 }
-a.cms-btn-active,
-a.cms-btn-active:link,
-a.cms-btn-active:active,
-a.cms-btn-active:link:active {
+a.cms-btn-active {
     box-shadow: $btn-active-shadow;
     background-color: $btn-cms-active !important;
     &:hover {
-        color: $btn-default-color !important;
         background-color: $btn-cms-active-hover !important;
         border-color: $btn-cms-active-hover-border !important;
     }
