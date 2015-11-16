@@ -11,6 +11,7 @@ CHANGELOG
 * Fix filter position and background color on edit page list window
 * Fix calendar and time cancel link color
 * Fix result list view on popup
+* Fix basic active link hover color
 
 1.0.5 (2015-11-10)
 ------------------
