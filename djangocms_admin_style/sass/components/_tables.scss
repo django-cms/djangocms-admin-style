@@ -31,6 +31,9 @@
             font-weight: normal;
             padding: 0;
             margin: 0;
+            &.inlinechangelink {
+                padding-left: 12px;
+            }
             &.lang-code {
                 font-size: $font-size-small !important;
             }
