@@ -7,9 +7,9 @@ form {
         width: 80%;
     }
     .form-row {
-        overflow: hidden;
+        @include micro-clearfix;
+        overflow: visible;
         border-bottom: 0;
-        clear: both;
         .btn-group-sizes .btn-default {
             min-height: inherit !important;
         }
@@ -47,7 +47,8 @@ form {
             }
         }
         &[class*="file"],
-        &[class*="image"] {
+        &[class*="image"],
+        &[class*="visual"] {
             .related-widget-wrapper-link {
                 display: none;
                 width: 36px;

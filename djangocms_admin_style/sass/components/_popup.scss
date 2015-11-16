@@ -225,9 +225,13 @@
 }
 
 .cms-admin-modal {
-    &.changelist #changelist {
+    #header,
+    .breadcrumbs {
+        display: none;
+    }
+    &.change-list #changelist {
         margin-top: 50px;
-        .changelist-filter {
+        #changelist-filter {
             z-index: 2000;
             background-color: $white !important;
         }
