@@ -38,7 +38,7 @@
         .checkbox-row {
             margin-left: -20px;
             margin-right: -20px;
-            padding-left: 20px;
+            padding-left: 20px !important;
         }
     }
     .calendarbox table {
@@ -48,6 +48,19 @@
     }
     &.change-list {
         #changelist {
+            &.filtered {
+                #changelist-form {
+                    float: left;
+                    width: calc(100% - 220px) !important;
+                    .results {
+                        margin-right: 0 !important
+                    }
+                    #result_list tbody th,
+                    #result_list tbody td {
+                        height: auto;
+                    }
+                }
+            }
             #changelist-filter {
                 background: none !important;
             }
@@ -96,6 +109,14 @@
     .form-row {
         padding-left: 0;
         padding-right: 0;
+        .btn-group-context label {
+            margin-top: 0 !important;
+            margin-bottom: 5px;
+            &.active {
+                margin-top: -1px !important;
+                margin-bottom: 4px;
+            }
+        }
         &.field-enable_registration,
         &.field-registration_deadline_at,
         &.field-is_published,
@@ -202,16 +223,14 @@
         margin-bottom: 20px;
     }
 }
-.cms-admin-sideframe {
-    #container .breadcrumbs + .messagelist + #content,
-    #container .breadcrumbs + #content {
-       margin-left: 3% !important;
-    }
-    #content {
-        margin-top: $toolbar-height + $content-margin !important;
-    }
-    ul.messagelist {
-        margin-top: 46px !important;
+
+.cms-admin-modal {
+    &.changelist #changelist {
+        margin-top: 50px;
+        .changelist-filter {
+            z-index: 2000;
+            background-color: $white !important;
+        }
     }
 }
 

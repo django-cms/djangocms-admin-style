@@ -10,6 +10,9 @@ form {
         overflow: hidden;
         border-bottom: 0;
         clear: both;
+        .btn-group-sizes .btn-default {
+            min-height: inherit !important;
+        }
         &.field-get_attachment_address a {
             position: relative;
             display: block;
@@ -32,14 +35,21 @@ form {
                 color: $gray-darkest !important;
             }
         }
-        &.field-image {
+        &.field-image, {
             .filerFile img {
                 width: 36px;
                 height: 36px;
             }
         }
-        &.field-file {
+        &.field-folder {
             .related-widget-wrapper-link {
+                display: none;
+            }
+        }
+        &[class*="file"],
+        &[class*="image"] {
+            .related-widget-wrapper-link {
+                display: none;
                 width: 36px;
                 height: 36px;
             }
@@ -173,6 +183,10 @@ form {
             font-weight: normal;
         }
     }
+    .field-type label {
+        margin-left: 2px !important;
+        margin-top: 10px !important;
+    }
     .sortedm2m a {
         vertical-align: middle;
         padding-top: 3px;
@@ -222,7 +236,8 @@ form {
             color: $white !important;
             padding: 6px 12px !important;
         }
-        &.btn-default {
+        &.btn-default,
+        &.btn-link {
             color: $gray-darker !important;
         }
         &:after {
@@ -313,9 +328,6 @@ form {
         &.errors {
             border: 0;
             background: none;
-        }
-        &.field-type {
-            padding-bottom: 0;
         }
     }
     .form-row:last-child {
@@ -606,6 +618,9 @@ div.clockbox {
         background: $white;
         border-color: $gray-lighter !important;
         border-bottom-radius: $border-radius-base;
+        a {
+            color: $gray-darkest !important;
+        }
     }
 }
 // clock

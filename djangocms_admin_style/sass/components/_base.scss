@@ -85,7 +85,6 @@ a.btn {
     &:last-child {
         margin-left: -4px;
         border-radius: 0 3px 3px 0 !important;
-
     }
 }
 .cms_btn-active {
@@ -94,10 +93,14 @@ a.btn {
     color: $font-color;
     padding: 10px 20px !important;
 }
-.cms-btn-active {
+a.cms-btn-active,
+a.cms-btn-active:link,
+a.cms-btn-active:active,
+a.cms-btn-active:link:active {
     box-shadow: $btn-active-shadow;
     background-color: $btn-cms-active !important;
     &:hover {
+        color: $btn-default-color !important;
         background-color: $btn-cms-active-hover !important;
         border-color: $btn-cms-active-hover-border !important;
     }

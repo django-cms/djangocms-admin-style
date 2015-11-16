@@ -1,5 +1,6 @@
 // header
 #header {
+    @include micro-clearfix;
     overflow: visible;
     position: fixed;
     top: 0;

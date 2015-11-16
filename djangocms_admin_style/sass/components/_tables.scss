@@ -55,9 +55,6 @@
             padding: 5px 10px !important;
             white-space: nowrap;
             background-color: $white;
-            &.sorted:nth-child(2) {
-                width: 160px !important;
-            }
             .text {
                 float: left;
                 padding-right: 0 !important;
@@ -79,7 +76,7 @@
         }
     }
     thead th.sorted {
-        min-width: 140px;
+        min-width: 160px;
         .sortoptions {
             float: right;
             display: inline-block;
@@ -211,11 +208,22 @@
                 background-size: 5px;
             }
             .lang-code {
-                color: $color-primary !important;
+                color: $white !important;
                 font-size: $font-size-small !important;
-                background-color: $white;
+                background-color: $gray-lighter !important;
                 &.current.active {
-                    background-color: $white;
+                    color: $color-primary !important;
+                    border-color: $color-primary ;
+                    background-color: $white  !important;
+                }
+                &.current {
+                    color: $white !important;
+                    background-color: $gray-lighter !important;
+                }
+                &.active {
+                    color: $white !important;
+                    border-color: $white;
+                    background-color: $color-primary !important;
                 }
             }
         }

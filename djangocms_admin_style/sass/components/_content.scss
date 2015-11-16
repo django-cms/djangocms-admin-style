@@ -330,11 +330,17 @@ ul.messagelist + #content {
             margin: -5px 0 2px;
         }
         select[multiple] {
+            height: 17.2em !important;
             background: $white !important;
         }
         img {
             width: 15px !important;
             height: 15px !important;
+        }
+    }
+    .selector-chosen {
+        select[multiple] {
+            height: 248px !important;
         }
     }
     .selector-add,
@@ -414,7 +420,9 @@ ul.messagelist + #content {
         }
         a {
             display: inline-block;
+            vertical-align: middle;
             margin-right: 0;
+            margin-bottom: 0;
         }
     }
 }
