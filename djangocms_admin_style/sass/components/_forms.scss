@@ -47,7 +47,8 @@ form {
             }
         }
         &[class*="file"],
-        &[class*="image"] {
+        &[class*="image"],
+        &[class*="visual"] {
             .related-widget-wrapper-link {
                 display: none;
                 width: 36px;
