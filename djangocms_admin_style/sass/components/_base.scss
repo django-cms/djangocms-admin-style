@@ -75,7 +75,7 @@ h6 {
 a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
 }
-a.cms-btn-group {
+.cms-btn-group {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
     padding: 10px 20px !important;
@@ -96,7 +96,7 @@ a.cms-btn-group {
     color: $font-color;
     padding: 10px 20px !important;
 }
-a.cms-btn-active {
+.cms-btn-active {
     box-shadow: $btn-active-shadow;
     background-color: $btn-cms-active !important;
     &:hover {
