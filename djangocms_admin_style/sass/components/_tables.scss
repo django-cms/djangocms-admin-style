@@ -56,8 +56,6 @@
             white-space: nowrap;
             background-color: $white;
             .text {
-                float: left;
-                padding-right: 0 !important;
                 a {
                     display: inline-block;
                     padding: 0 !important;
@@ -76,7 +74,6 @@
         }
     }
     thead th.sorted {
-        min-width: 160px;
         .sortoptions {
             float: right;
             display: inline-block;
