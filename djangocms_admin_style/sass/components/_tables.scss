@@ -132,6 +132,16 @@
             &.field-app_config {
                 padding: 1px 10px !important;
             }
+            &.original p {
+                font-weight: normal !important;
+            }
+            &.drag {
+                width: 10px !important;
+                padding: 0 !important;
+                background: url('../img/drag.png') !important;
+                background-size: 5px !important;
+                cursor: move !important;
+            }
         }
         th,
         td {
@@ -253,6 +263,12 @@
     fieldset table {
         border: none;
     }
+    &.ui-sortable {
+        td,
+        &.original {
+            padding: 1px 10px !important;
+        }
+    }
 }
 .tabular table {
     tr.add-row td {
@@ -266,6 +282,7 @@
     }
     td.original p {
         position: static !important;
+        font-weight: normal !important;
         padding: 0 !important;
     }
     .field-can_change,
