@@ -13,6 +13,7 @@ CHANGELOG
 * Fix result list view on popup
 * Fix basic and advanced link hover color
 * Shows admin breadcrumbs on side frame
+* Fix ui sortable handler
 
 1.0.5 (2015-11-10)
 ------------------
