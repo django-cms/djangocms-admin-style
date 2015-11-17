@@ -195,6 +195,7 @@
         }
         &.original {
             vertical-align: top;
+            padding: 0 !important;
         }
         .related-widget-wrapper {
             overflow: visible;
@@ -263,7 +264,8 @@
         border: none;
     }
     &.ui-sortable {
-        td {
+        td,
+        &.original {
             padding: 1px 10px !important;
         }
     }
