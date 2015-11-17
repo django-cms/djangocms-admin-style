@@ -1,4 +1,7 @@
 .cms-admin-sideframe {
+    #header {
+        display: none;
+    }
     #container .breadcrumbs + .messagelist + #content,
     #container .breadcrumbs + #content {
        margin-left: 3% !important;
