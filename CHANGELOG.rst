@@ -14,6 +14,7 @@ CHANGELOG
 * Fix basic and advanced link hover color
 * Shows admin breadcrumbs on side frame
 * Fix ui sortable handler
+* Fix inline change link icon and position
 
 1.0.5 (2015-11-10)
 ------------------
