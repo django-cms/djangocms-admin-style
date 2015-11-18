@@ -20,6 +20,7 @@ a.selector-chooseall,
 .add-related,
 .change-related,
 .delete-related,
+.inlinechangelink,
 a[id*="calendarlink"],
 a[id*="clocklink"],
 .calendarnav-previous,
@@ -63,7 +64,8 @@ a.selector-chooseall,
     @include icon(plus);
 }
 .changelink,
-.change-related {
+.change-related,
+.inlinechangelink {
     @include icon(pencil);
 }
 .deletelink,
@@ -175,8 +177,6 @@ a[id*="clocklink"] {
 .delete-related {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
-    width: 15px;
-    height: 15px;
     padding: 10px !important;
     margin: 10px 0;
     &:before {
@@ -190,8 +190,13 @@ a[id*="clocklink"] {
 }
 
 .tree {
-    .col-navigation img {
-        vertical-align: middle;
+    .col-navigation {
+        line-height: 26px !important;
+        img {
+            vertical-align: middle;
+            width: 14px;
+            height: 14px;
+        }
     }
     .col-language a {
         vertical-align: top !important;

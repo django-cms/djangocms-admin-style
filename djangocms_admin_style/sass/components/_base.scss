@@ -79,13 +79,15 @@ a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
     padding: 10px 20px !important;
+    &:link:hover {
+        color: $btn-default-color !important;
+    }
     &:first-child {
         border-radius: 3px 0 0 3px !important;
     }
     &:last-child {
         margin-left: -4px;
         border-radius: 0 3px 3px 0 !important;
-
     }
 }
 .cms_btn-active {

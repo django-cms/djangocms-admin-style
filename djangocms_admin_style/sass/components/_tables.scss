@@ -31,6 +31,15 @@
             font-weight: normal;
             padding: 0;
             margin: 0;
+            &.inlinechangelink {
+                font: 0/0 a !important;
+                padding-left: 12px;
+                &:before {
+                    font-size: 16px;
+                    vertical-align: top;
+                    margin: 0;
+                }
+            }
             &.lang-code {
                 font-size: $font-size-small !important;
             }
@@ -55,12 +64,7 @@
             padding: 5px 10px !important;
             white-space: nowrap;
             background-color: $white;
-            &.sorted:nth-child(2) {
-                width: 160px !important;
-            }
             .text {
-                float: left;
-                padding-right: 0 !important;
                 a {
                     display: inline-block;
                     padding: 0 !important;
@@ -79,7 +83,6 @@
         }
     }
     thead th.sorted {
-        min-width: 140px;
         .sortoptions {
             float: right;
             display: inline-block;
@@ -135,6 +138,16 @@
             &.field-app_config {
                 padding: 1px 10px !important;
             }
+            &.original p {
+                font-weight: normal !important;
+            }
+            &.drag {
+                width: 10px !important;
+                padding: 0 !important;
+                background: url('../img/drag.png') !important;
+                background-size: 5px !important;
+                cursor: move !important;
+            }
         }
         th,
         td {
@@ -189,6 +202,7 @@
         &.original {
             vertical-align: top;
             padding: 0 !important;
+            padding-left: 10px !important;
         }
         .related-widget-wrapper {
             overflow: visible;
@@ -211,11 +225,22 @@
                 background-size: 5px;
             }
             .lang-code {
-                color: $color-primary !important;
+                color: $white !important;
                 font-size: $font-size-small !important;
-                background-color: $white;
+                background-color: $gray-lighter !important;
                 &.current.active {
-                    background-color: $white;
+                    color: $color-primary !important;
+                    border-color: $color-primary ;
+                    background-color: $white  !important;
+                }
+                &.current {
+                    color: $white !important;
+                    background-color: $gray-lighter !important;
+                }
+                &.active {
+                    color: $white !important;
+                    border-color: $white;
+                    background-color: $color-primary !important;
                 }
             }
         }
@@ -245,8 +270,15 @@
     fieldset table {
         border: none;
     }
+    &.ui-sortable {
+        td,
+        &.original {
+            padding: 1px 10px !important;
+        }
+    }
 }
 .tabular table {
+    box-shadow: none !important;
     tr.add-row td {
         padding: 4px 5px 3px !important;
         a {
@@ -256,9 +288,18 @@
     tbody td {
         vertical-align: middle !important;
     }
-    td.original p {
-        position: static !important;
-        padding: 0 !important;
+    td.original {
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+        p {
+            position: static !important;
+            font-weight: normal !important;
+            padding: 0 !important;
+        }
+        .vForeignKeyRawIdAdminField {
+            width: auto;
+        }
     }
     .field-can_change,
     .field-can_add,

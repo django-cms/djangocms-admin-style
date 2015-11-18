@@ -1,0 +1,18 @@
+.cms-admin-sideframe {
+    #header {
+        display: none;
+    }
+    #container .breadcrumbs + .messagelist + #content,
+    #container .breadcrumbs + #content {
+       margin-left: 3% !important;
+    }
+    .breadcrumbs {
+        padding-left: 0 !important;
+    }
+    #content {
+        margin-top: 117px !important;
+    }
+    ul.messagelist {
+        margin-top: 46px !important;
+    }
+}
