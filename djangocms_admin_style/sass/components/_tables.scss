@@ -278,6 +278,7 @@
     }
 }
 .tabular table {
+    box-shadow: none !important;
     tr.add-row td {
         padding: 4px 5px 3px !important;
         a {
@@ -287,10 +288,18 @@
     tbody td {
         vertical-align: middle !important;
     }
-    td.original p {
-        position: static !important;
-        font-weight: normal !important;
-        padding: 0 !important;
+    td.original {
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+        p {
+            position: static !important;
+            font-weight: normal !important;
+            padding: 0 !important;
+        }
+        .vForeignKeyRawIdAdminField {
+            width: auto;
+        }
     }
     .field-can_change,
     .field-can_add,
