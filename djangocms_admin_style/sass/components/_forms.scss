@@ -6,8 +6,10 @@ form {
     fieldset {
         width: 80%;
     }
-    .form-row {
+    .form-row:not(tr) {
         @include micro-clearfix;
+    }
+    .form-row {
         overflow: visible;
         border-bottom: 0;
         .btn-group-sizes .btn-default {
@@ -356,6 +358,9 @@ form {
 .inline-group .form-row input,
 .inline-group .form-row textarea {
     width: auto;
+}
+.inline-group .tabular tr td.original {
+    padding: 0 !important;
 }
 
 // select2
