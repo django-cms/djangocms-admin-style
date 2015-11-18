@@ -8,6 +8,9 @@ form {
     }
     .form-row:not(tr) {
         @include micro-clearfix;
+        .vForeignKeyRawIdAdminField {
+            width: calc(100% - 48px) !important;
+        }
     }
     .form-row {
         overflow: visible;
@@ -113,9 +116,6 @@ form {
                 margin-top: 0;
             }
         }
-        .vForeignKeyRawIdAdminField {
-            width: calc(100% - 48px) !important;
-        }
         .related-lookup {
             float: none;
             display: inline-block;
@@ -129,6 +129,9 @@ form {
             img {
                 display: none;
             }
+        }
+        .vForeignKeyRawIdAdminField {
+            width: auto !important;
         }
     }
     button,
@@ -231,8 +234,8 @@ form {
         width: auto !important;
         margin-bottom: 5px;
         &.required {
-            color: $gray !important;
-            font-weight: normal !important;
+            color: $black !important;
+            font-weight: bold !important;
         }
         &.btn {
             float: left !important;
@@ -358,9 +361,6 @@ form {
 .inline-group .form-row input,
 .inline-group .form-row textarea {
     width: auto;
-}
-.inline-group .tabular tr td.original {
-    padding: 0 !important;
 }
 
 // select2
