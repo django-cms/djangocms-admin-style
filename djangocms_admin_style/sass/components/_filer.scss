@@ -28,7 +28,7 @@
         }
         .backtoroot {
             display: inline-block;
-            font: 0/0 a;
+            font: 0/0 a; /* make sure that only icon is displayed */
             padding-left: 15px;
             vertical-align: middle;
         }
@@ -131,7 +131,7 @@
                     &.deletelink {
                         display: inline-block;
                         float: none !important;
-                        font: 0/0 a !important;
+                        font: 0/0 a !important; /* make sure that only icon is displayed */
                         padding: 0 !important;
                         margin: 0 0 0 20px !important;
                         vertical-align: middle;
@@ -157,7 +157,7 @@
     .clipboard {
         float: right !important;
         width: 28% !important;
-        margin-top: 0 !important;
+        margin-top: 0 !important; /* align clipboard with table/changelist */
         border-radius: $border-radius-base;
         border: 0 !important;
         box-shadow: $base-box-shadow;
@@ -281,7 +281,7 @@
                 outline: none;
             }
             span {
-                font: 0/0 a !important;
+                font: 0/0 a !important; /* make sure that only icon is displayed */
                 &:before {
                     color: $color-primary;
                     vertical-align: middle;

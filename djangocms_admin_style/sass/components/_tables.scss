@@ -32,12 +32,12 @@
             padding: 0;
             margin: 0;
             &.inlinechangelink {
-                font: 0/0 a !important;
+                font: 0/0 a !important; /* make sure that only icon is displayed */
                 padding-left: 12px;
                 &:before {
-                    font-size: 16px;
-                    vertical-align: top;
-                    margin: 0;
+                    font-size: 16px; /* gives icon a font size because link text is hidden by adding font size 0 */
+                    vertical-align: top; /* make sure that icon is not truncated */
+                    margin: 0; /* removes margin right which is needed to have a space between icon and text */
                 }
             }
             &.lang-code {
@@ -144,8 +144,8 @@
             &.drag {
                 width: 10px !important;
                 padding: 0 !important;
-                background: url('../img/drag.png') !important;
-                background-size: 5px !important;
+                background: url('../img/drag.png') !important; /* shows where drag handler is */
+                background-size: 5px !important; /* make sure that adds correct size because of retina image size */
                 cursor: move !important;
             }
         }
@@ -186,9 +186,9 @@
         &.delete {
             a {
                 float: left;
-                &.inline-deletelink{
+                &.inline-deletelink {
                     @include icon(trash);
-                    font: 0/0 a !important;
+                    font: 0/0 a !important; /* make sure that only icon is displayed */
                     color: $gray-darker;
                     &:before {
                         display: block;
@@ -202,10 +202,10 @@
         &.original {
             vertical-align: top;
             padding: 0 !important;
-            padding-left: 10px !important;
+            padding-left: 10px !important; /* there has to be a padding left to align text with table head content */
         }
         .related-widget-wrapper {
-            overflow: visible;
+            overflow: visible; /* make sure that form fields are not truncated on focus */
         }
     }
     tr {

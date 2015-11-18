@@ -1,6 +1,6 @@
 // header
 #header {
-    @include micro-clearfix;
+    @include micro-clearfix; /* replaced clearfix with overflow hidden to not truncate anything */
     overflow: visible;
     position: fixed;
     top: 0;
@@ -17,7 +17,7 @@
     #branding {
         width: 100%;
         h1 {
-            display: none;
+            display: none; /* hides h1 because of text appears in list on dropdown menu  */
             float: left;
             font-size: $font-size-normal;
             line-height: $toolbar-height;
@@ -29,7 +29,7 @@
         }
     }
     #user-tools {
-        display: none;
+        display: none; /* user tools are added to dropdown menu  */
         float: right;
         font-size: 13px;
         line-height: $toolbar-height;

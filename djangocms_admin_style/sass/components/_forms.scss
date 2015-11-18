@@ -6,14 +6,15 @@ form {
     fieldset {
         width: 80%;
     }
+    /* only uses this styles if form-row is not set on a table row */
     .form-row:not(tr) {
-        @include micro-clearfix;
+        @include micro-clearfix; /* adds clearfix because overflow hidden truncates highlighted focus fields */
         .vForeignKeyRawIdAdminField {
-            width: calc(100% - 48px) !important;
+            width: calc(100% - 48px) !important; /* calculates width that search button appears next to search input */
         }
     }
     .form-row {
-        overflow: visible;
+        overflow: visible; /* make sure that highlighted focus on fields is not truncated */
         border-bottom: 0;
         .btn-group-sizes .btn-default {
             min-height: inherit !important;
@@ -47,15 +48,18 @@ form {
             }
         }
         &.field-folder {
+            /* hides related widget wrapper links because they don't work correctly and are not necessary because of magnifier and delete link */
             .related-widget-wrapper-link {
                 display: none;
             }
         }
+        /* styles should only grab if there is an image upload */
+        /* appears on form rows with file, image and visual in class name */
         &[class*="file"],
         &[class*="image"],
         &[class*="visual"] {
             .related-widget-wrapper-link {
-                display: none;
+                display: none; /* hides related widget wrapper links because they don't work correctly and are not necessary because of magnifier and delete link */
                 width: 36px;
                 height: 36px;
             }
@@ -233,6 +237,7 @@ form {
         word-wrap: break-word;
         width: auto !important;
         margin-bottom: 5px;
+        /* make sure we can differentiate required from normal side */
         &.required {
             color: $black !important;
             font-weight: bold !important;
@@ -340,6 +345,7 @@ form {
         border-bottom-color: transparent;
     }
     h2 + .form-row > .checkbox-row {
+        /* make sure that there are is not a double line after h2 */
         padding-top: 0;
         border-top: 0;
     }
@@ -706,7 +712,7 @@ form select[multiple] {
     width: 100%;
     max-width: 240px;
     padding: 10px;
-    background: none !important;
+    background: none !important; /* hides dropdown icon which is added on not multiple select fields */
 }
 .js-icon-widgets {
     select {
@@ -731,12 +737,14 @@ form select[multiple] {
     background-color: $gray-lightest;
 }
 .field-type p:empty {
+    /* reset background color and padding if field type is empty */
     padding: 0 !important;
     background-color: transparent;
 }
 
 //related-widget
 .related-widget-wrapper {
+    /* required in admin/aldryn_newsblog/article/add to ensure outline is not cut off */
     overflow: visible;
     width: 100%;
 }

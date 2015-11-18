@@ -160,7 +160,7 @@ body.login {
         position: static;
         .actions {
             select {
-                max-width: 215px !important;
+                max-width: 215px !important; /* make sure that actions go button appears next to actions select field on mobile view */
             }
             .action-counter {
                 display: block !important;
@@ -174,7 +174,7 @@ body.login {
                 display: inline-block;
             }
             form #searchbar {
-                max-width: 215px !important;
+                max-width: 215px !important; /* make sure that search button appears next to search input field on mobile view */
             }
             .small {
                 display: block;
@@ -311,11 +311,11 @@ form {
 
 // filter horizontal m2m
 .selector {
-    float: none;
+    float: none; /* displays selector multiple inputs belong to each other */
     width: auto;
     .selector-available,
     .selector-chosen {
-        float: none;
+        float: none; /* displays selector multiple inputs belong to each other */
         width: auto;
         margin-bottom: 0;
         p {
@@ -323,7 +323,7 @@ form {
         }
     }
     ul.selector-chooser {
-        float: none;
+        float: none; /* displays selector multiple inputs belong to each other */
         display: block;
         width: 100% !important;
         margin-top: 10px;
@@ -350,7 +350,7 @@ form {
     &.change-list #changelist.filtered .paginator,
     &.change-form #changelist .paginator,
     &.change-form #changelist.filtered .paginator {
-        width: calc(100% - 30px - 6%) !important;
+        width: calc(100% - 30px - 6%) !important; /* make sure that paginator has same width as changelist */
     }
 }
 

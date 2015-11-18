@@ -49,6 +49,7 @@
     &.change-list {
         #changelist {
             &.filtered {
+                /* make sure that changelist form is floated left next to filter */
                 #changelist-form {
                     float: left;
                     width: calc(100% - 220px) !important;
@@ -62,7 +63,7 @@
                 }
             }
             #changelist-filter {
-                background: none !important;
+                background: none !important; /* removes background color if there is a white background not as on dashboard gray */
             }
             #changelist-form > input + .results {
                 clear: both;
@@ -77,7 +78,7 @@
     }
     table {
         margin-left: 0;
-        box-shadow: none !important;
+        box-shadow: none !important; /* reset box shadow on tables in modal window */
         td > select {
            width: auto !important;
         }
@@ -183,7 +184,7 @@
     &.delete-confirmation {
         #container .breadcrumbs + .messagelist + #content,
         #container .breadcrumbs + #content {
-            margin-left: 20px !important;
+            margin-left: 20px !important; /* make sure that margin is same as on modal window */
         }
         .colM {
             box-shadow: none;
@@ -219,6 +220,7 @@
     ul.messagelist + #content {
         margin-top: 90px !important;
     }
+    /* resets margin top of content if messagelist is empty */
     ul.messagelist:empty + #content {
         margin-top: 20px !important;
     }
@@ -230,13 +232,13 @@
 .cms-admin-modal {
     #header,
     .breadcrumbs {
-        display: none;
+        display: none; /* there is no need for breadcrumbs and header on modal windows */
     }
     &.change-list #changelist {
-        margin-top: 50px;
+        margin-top: 50px; /* make sure that changelist doesn't overlap object-tools */
         #changelist-filter {
-            z-index: 2000;
-            background-color: $white !important;
+            z-index: 2000; /* adds z-index of 2000 because pagetree has z-index of 1000 */
+            background-color: $white !important; /* needs a background color because filter is positioned absolute and appears over pagetree */
         }
     }
 }

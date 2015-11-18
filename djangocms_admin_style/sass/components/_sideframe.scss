@@ -1,5 +1,6 @@
 .cms-admin-sideframe {
     #header {
+        /* because there is already toolbar visible and header in sideframe has to be hidden to not see when scrolling on tablet */
         display: none;
     }
     #container .breadcrumbs + .messagelist + #content,
@@ -10,7 +11,7 @@
         padding-left: 0 !important;
     }
     #content {
-        margin-top: 117px !important;
+        margin-top: 117px !important; /* updates content margin top because of breadcrumbs */
     }
     ul.messagelist {
         margin-top: 46px !important;

@@ -54,6 +54,7 @@
                 font-size: 30px;
                 margin-right: 0;
             }
+            /* replaces shortcut link images with icon font */
             .archive {
                 @include icon(archive);
             }

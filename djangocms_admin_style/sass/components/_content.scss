@@ -215,7 +215,7 @@ ul.messagelist + #content {
     }
     .inline-deletelink {
         color: $gray-darkest !important;
-        font: 0/0 a;
+        font: 0/0 a; /* make sure that only icon is displayed */
         text-indent: inherit;
         &:before {
             font-size: $font-size-small;
@@ -391,7 +391,7 @@ ul.messagelist + #content {
         padding: 0;
         margin-bottom: 5px;
         border: 1px solid $gray-lighter !important;
-        background: none !important;
+        background: none !important; /* hides dropdown icon which is added on not multiple select fields */
         option {
             font-size: $font-size-normal;
             line-height: $line-height-normal;
@@ -412,7 +412,7 @@ ul.messagelist + #content {
         margin: 10em 5px 0 5px;
         border: 0;
         background-color: transparent;
-        background: none;
+        background: none; /* hides background image because of icon font replacement */
         li {
             text-align: center;
             padding: 3px;
@@ -536,7 +536,7 @@ body.login {
             margin-bottom: 45px;
         }
         table {
-            box-shadow: none;
+            box-shadow: none; /* reset box shadow which is added on every table */
         }
         table th,
         table td {
@@ -645,7 +645,7 @@ body.login {
         }
     }
     table tbody tr:hover {
-        background: none;
+        background: none; /* reset hover background on dashboard table */
     }
 }
 
@@ -771,7 +771,7 @@ a.addlink {
         }
     }
     h1 {
-        display: none;
+        display: none; /* hidden h1 because of doubled content */
     }
     input[type="submit"] {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);

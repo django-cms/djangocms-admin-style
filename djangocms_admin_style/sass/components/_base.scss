@@ -79,6 +79,7 @@ a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
     padding: 10px 20px !important;
+    /* link make sure that color is overwritten */
     &:link:hover {
         color: $btn-default-color !important;
     }
@@ -239,11 +240,12 @@ ul.errorlist {
         padding: 0 !important;
         margin: 0 !important;
         border: 0 !important;
-        background: none !important;
+        background: none !important; /* hides error icon which is replaced with icon font */
     }
 }
 .breadcrumbs + ul.messagelist {
-    margin-top: $messages-breadcrumb-margin-top!important;
+    /* updates messagelist position if there are breadcrumbs */
+    margin-top: $messages-breadcrumb-margin-top !important;
 }
 ul.messagelist {
     position: absolute;
@@ -293,7 +295,7 @@ ul.messagelist {
         }
     }
 }
-
+/* set image size to show retina images with correct size */
 img[src*="icon-no"],
 img[src*="icon-yes"] {
     width: 16px;

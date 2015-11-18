@@ -200,7 +200,7 @@
             }
             label {
                 display: inline-block;
-                font: 0/0 a;
+                font: 0/0 a; /* make sure that only icon is displayed */
                 margin-left: 0;
                 margin-bottom: 0;
             }
