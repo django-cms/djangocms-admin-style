@@ -32,7 +32,13 @@
             padding: 0;
             margin: 0;
             &.inlinechangelink {
+                font: 0/0 a !important;
                 padding-left: 12px;
+                &:before {
+                    font-size: 16px;
+                    vertical-align: top;
+                    margin: 0;
+                }
             }
             &.lang-code {
                 font-size: $font-size-small !important;
@@ -196,6 +202,7 @@
         &.original {
             vertical-align: top;
             padding: 0 !important;
+            padding-left: 10px !important;
         }
         .related-widget-wrapper {
             overflow: visible;
