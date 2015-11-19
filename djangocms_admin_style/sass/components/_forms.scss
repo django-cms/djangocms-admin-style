@@ -1,3 +1,6 @@
+//##############################################################################
+// FORMS
+
 form {
     padding: 25px 25px;
     margin-bottom: 20px;
@@ -456,7 +459,6 @@ form {
         border-radius: $border-radius-base !important;
     }
 }
-
 
 input:invalid,
 textarea:invalid {

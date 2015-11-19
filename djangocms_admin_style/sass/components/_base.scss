@@ -1,4 +1,5 @@
-// base
+//##############################################################################
+// BASE
 
 body {
     background-color: $gray-lightest;
@@ -18,17 +19,10 @@ body {
             margin-bottom: 20px !important;
         }
     }
-    &.dashboard {
-        background-color: $white;
-        h1 {
-            margin-left: 10px;
-        }
-        .breadcrumbs {
-            padding: $breadcrumb-padding 10px !important;
-        }
-    }
 }
 
+
+//General
 body,
 p {
     font-family: $base-font-family !important;
@@ -72,6 +66,13 @@ h6 {
     color: $gray-darkest;
     font-size: 100%;
 }
+
+ul,
+ol {
+    margin-left: 20px;
+}
+
+//buttons and links
 a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
 }
@@ -83,9 +84,11 @@ a.btn {
     &:link:hover {
         color: $btn-default-color !important;
     }
+    /* first-child stands for basic button */
     &:first-child {
         border-radius: 3px 0 0 3px !important;
     }
+    /* last-child stands for advanced button */
     &:last-child {
         margin-left: -4px;
         border-radius: 0 3px 3px 0 !important;
@@ -120,10 +123,7 @@ a:link {
 .cancel-link {
     margin-left: 10px;
 }
-ul,
-ol {
-    margin-left: 20px;
-}
+/* setting list styles for content.colM but not for lists in object-tools */
 .colM ul:not(.object-tools) {
     margin: 20px 0 25px;
     border-bottom: solid 1px $gray-lighter;
@@ -138,6 +138,7 @@ ol {
         padding: 10px 0;
         border-top: solid 1px $gray-lighter;
     }
+    /* 2nd level list */
     ul {
         margin: 10px 0 -10px;
         border-bottom: 0;
@@ -145,6 +146,7 @@ ol {
             font-weight: normal;
             padding-left: 2%;
         }
+        /* 3rd level list */
         ul {
             margin-left: 20px;
             li {
@@ -214,6 +216,8 @@ small {
     clear: both;
     height: 0;
 }
+
+//error notes and messages
 .errornote {
     display: inline-block;
     font-weight: normal;
@@ -270,25 +274,25 @@ ul.messagelist {
             margin-right: 20px !important;
         }
         &.success {
-            background-image: none;
+            background-image: none; /* background image icon is replaced by font icon */
             &:before {
                 color: $color-success;
             }
         }
         &.error {
-            background-image: none;
+            background-image: none; /* background image icon is replaced by font icon */
             &:before {
                 color: $color-danger;
             }
         }
         &.warning {
-            background-image: none;
+            background-image: none; /* background image icon is replaced by font icon */
             &:before {
                 color: $color-warning;
             }
         }
         &.info {
-            background-image: none;
+            background-image: none; /* background image icon is replaced by font icon */
             &:before {
                 color: $color-primary;
             }

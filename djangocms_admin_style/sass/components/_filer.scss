@@ -1,4 +1,6 @@
-// filer
+//##############################################################################
+// FILER
+
 .filebrowser {
     ul.messagelist + #content {
         margin-top: $filer-content-margin + 27px !important; // plus messages list
@@ -65,7 +67,7 @@
     #changelist {
         margin-bottom: 0;
         .paginator {
-            width: calc(70% - 30px) !important;
+            width: calc(70% - 30px) !important;  /* calculates the correct width because of margin left and right */
         }
     }
     &.change-list #changelist {
@@ -154,6 +156,7 @@
         width: 70%;
         clear: both;
     }
+    //clipboard
     .clipboard {
         float: right !important;
         width: 28% !important;
@@ -256,6 +259,7 @@
             }
         }
     }
+    //table
     #toolbartable {
         td,
         th {
@@ -291,10 +295,11 @@
     }
     #toolbartable + .paginator {
         position: absolute;
-        clip: rect(0, 99999px, 99999px, -2px);
+        clip: rect(0, 99999px, 99999px, -2px); /* removes boy shadow on top of paginator */
         border-right: 0;
     }
 }
+//file upload
 .filerFile {
     img {
         width: 36px;
@@ -332,7 +337,6 @@
             margin-left: 0 !important;
         }
     }
-
     .related-lookup,
     .filerClearer {
         @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);

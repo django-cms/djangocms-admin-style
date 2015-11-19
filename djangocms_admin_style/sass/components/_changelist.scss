@@ -1,3 +1,6 @@
+//##############################################################################
+// CHANGELIST
+
 // reset form background white
 #changelist-form,
 #changelist-search,
@@ -67,10 +70,10 @@
             .results + .paginator,
             #toolbartable .paginator {
                 position: absolute;
-                clip: rect(0, 99999px, 99999px, -2px);
+                clip: rect(0, 99999px, 99999px, -2px); /* removes box shadow top on paginator */
             }
             .paginator {
-                width: calc(100% - 250px) !important;
+                width: calc(100% - 250px) !important; /* calculates correct width because of margin right */
                 box-shadow: $base-box-shadow;
                 border-right: 0;
             }
@@ -135,7 +138,7 @@
             }
         }
         #changelist-filter {
-            position: static;
+            position: static; /* resets position to float filter next to changelist */
             float: right;
             width: 200px !important;
             min-height: 100%;
@@ -258,10 +261,10 @@
         #toolbartable .paginator,
         #has-filters + script + .paginator {
             position: absolute;
-            clip: rect(0, 99999px, 99999px, -2px);
+            clip: rect(0, 99999px, 99999px, -2px); /* removes box shadow top on paginator */
         }
         .paginator {
-            width: calc(100% - 30px);
+            width: calc(100% - 30px); /* calculates correct width because of margin left and right */
             box-shadow: $base-box-shadow !important;
             border-top: none;
             background: none;

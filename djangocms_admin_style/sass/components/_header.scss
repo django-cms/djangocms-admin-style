@@ -1,4 +1,6 @@
-// header
+//##############################################################################
+// HEADER
+
 #header {
     @include micro-clearfix; /* replaced clearfix with overflow hidden to not truncate anything */
     overflow: visible;
