@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.0.6 (Unreleased)
+1.0.6 (2015-11-19)
 ------------------
 
 * Fix hover and selected lang link color in changelist table
