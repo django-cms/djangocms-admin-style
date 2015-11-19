@@ -100,8 +100,10 @@
                     max-width: 10px;
                     height: 36px;
                     margin: 0 21px;
-                    background: url('../img/drag.png');
+                    // adds drag image without background repeat to have fixed background image width #252
+                    background: url('../img/drag-norepeat.png');
                     background-size: 5px;
+                    background-repeat: no-repeat;
                     cursor: move !important;
                 }
                 input[type="checkbox"],
