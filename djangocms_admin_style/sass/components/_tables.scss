@@ -144,10 +144,11 @@
             &.drag {
                 width: 10px !important;
                 padding: 0 !important;
-                // adds drag image without background repeat-x to have fixed background image width #252
+                // adds drag image without background repeat to have fixed background image size #252
                 background: url('../img/drag-norepeat.png') !important;
-                background-size: 12px 5px !important;
-                background-repeat: repeat-y !important;
+                background-size: 8px 30px !important;
+                background-repeat: no-repeat !important;
+                background-position: 5px !important;
                 cursor: move !important;
             }
         }
