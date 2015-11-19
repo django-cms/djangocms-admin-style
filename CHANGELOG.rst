@@ -17,6 +17,7 @@ CHANGELOG
 * Fix inline change link icon and position
 * Fix required fields label style
 * Fix tabular tables inline fields
+* Fix add another button size on advanced page settings
 
 1.0.5 (2015-11-10)
 ------------------
