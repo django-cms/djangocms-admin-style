@@ -144,8 +144,11 @@
             &.drag {
                 width: 10px !important;
                 padding: 0 !important;
-                background: url('../img/drag.png') !important;
-                background-size: 5px !important;
+                 // adds drag image without background repeat to have fixed background image width #252
+                background: url('../img/drag-norepeat.png') !important;
+                background-size: 12px 5px !important;
+                background-repeat: repeat-y !important;
+                background-position-x: 10px !important;
                 cursor: move !important;
             }
         }
@@ -289,9 +292,8 @@
         vertical-align: middle !important;
     }
     td.original {
-        padding-top: 0 !important;
-        padding-right: 0 !important;
-        padding-bottom: 0 !important;
+        // make sure that there is no padding if there is no content #252
+           padding: 0 !important;
         p {
             position: static !important;
             font-weight: normal !important;
