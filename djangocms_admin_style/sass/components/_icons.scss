@@ -177,6 +177,7 @@ a[id*="clocklink"] {
 .delete-related {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
+    /* make sure that add another button has correct width and height on advanced setting */
     width: 15px;
     height: 15px;
     padding: 10px !important;
