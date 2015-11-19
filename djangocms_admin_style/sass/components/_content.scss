@@ -235,6 +235,10 @@ ul.messagelist + #content {
             font-size: $font-size-normal;
             font-weight: normal;
         }
+        span.delete label {
+            display: inline-block; // float label next to checkbox on tagged items #253
+            margin-left: 0;
+        }
     }
     table {
         width: calc(100% - 4px) !important;

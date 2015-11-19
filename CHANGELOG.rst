@@ -18,6 +18,7 @@ CHANGELOG
 * Fix required fields label style
 * Fix tabular tables inline fields
 * Fix add another button size on advanced page settings
+* Fix tagged items delete label position
 
 1.0.5 (2015-11-10)
 ------------------
