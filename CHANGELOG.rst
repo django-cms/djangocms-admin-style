@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.0.7 (Unreleased)
+------------------
+
+* Fix login password field
+
 1.0.6 (2015-11-19)
 ------------------
 
