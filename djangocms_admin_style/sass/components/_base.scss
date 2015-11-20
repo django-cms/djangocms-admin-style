@@ -72,7 +72,7 @@ ol {
     margin-left: 20px;
 }
 
-//buttons and links
+// buttons and links
 a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
 }
