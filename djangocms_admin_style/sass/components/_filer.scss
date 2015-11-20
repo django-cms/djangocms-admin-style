@@ -1,7 +1,11 @@
-// filer
+//##############################################################################
+// FILER
+
 .filebrowser {
     ul.messagelist + #content {
-        margin-top: $filer-content-margin + 27px !important; // plus messages list
+        // calculates correct messagelist position #130
+        // plus 27px messages list height
+        margin-top: $filer-content-margin + 27px !important;
     }
     #content {
         margin-top: $filer-content-margin !important;
@@ -28,6 +32,7 @@
         }
         .backtoroot {
             display: inline-block;
+            // make sure that only icon is displayed
             font: 0/0 a;
             padding-left: 15px;
             vertical-align: middle;
@@ -65,6 +70,7 @@
     #changelist {
         margin-bottom: 0;
         .paginator {
+            // calculates the correct width because of margin left and right
             width: calc(70% - 30px) !important;
         }
     }
@@ -131,6 +137,7 @@
                     &.deletelink {
                         display: inline-block;
                         float: none !important;
+                        // make sure that only icon is displayed
                         font: 0/0 a !important;
                         padding: 0 !important;
                         margin: 0 0 0 20px !important;
@@ -154,9 +161,11 @@
         width: 70%;
         clear: both;
     }
+    // clipboard
     .clipboard {
         float: right !important;
         width: 28% !important;
+        // align clipboard with table/changelist
         margin-top: 0 !important;
         border-radius: $border-radius-base;
         border: 0 !important;
@@ -256,6 +265,7 @@
             }
         }
     }
+    // table
     #toolbartable {
         td,
         th {
@@ -281,6 +291,7 @@
                 outline: none;
             }
             span {
+                // make sure that only icon is displayed
                 font: 0/0 a !important;
                 &:before {
                     color: $color-primary;
@@ -291,10 +302,12 @@
     }
     #toolbartable + .paginator {
         position: absolute;
+        // removes boy shadow on top of paginator
         clip: rect(0, 99999px, 99999px, -2px);
         border-right: 0;
     }
 }
+// file upload
 .filerFile {
     img {
         width: 36px;
@@ -332,7 +345,6 @@
             margin-left: 0 !important;
         }
     }
-
     .related-lookup,
     .filerClearer {
         @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);

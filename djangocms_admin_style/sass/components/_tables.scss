@@ -1,3 +1,7 @@
+//##############################################################################
+// TABLES
+
+// adds general table styles only to specific tables not to break other ones like table view in ck editor #111
 .dashboard table,
 .change-list table,
 .tabular table,
@@ -32,11 +36,15 @@
             padding: 0;
             margin: 0;
             &.inlinechangelink {
+                // make sure that only icon is displayed #246
                 font: 0/0 a !important;
                 padding-left: 12px;
                 &:before {
+                    // gives icon a font size because link text is hidden by adding font size 0 #246
                     font-size: 16px;
+                    // make sure that icon is not truncated #246
                     vertical-align: top;
+                    // removes margin right which is needed to have a space between icon and text #246
                     margin: 0;
                 }
             }
@@ -189,8 +197,10 @@
         &.delete {
             a {
                 float: left;
-                &.inline-deletelink{
+                // displays icon on delete row #203
+                &.inline-deletelink {
                     @include icon(trash);
+                    // make sure that only icon is displayed
                     font: 0/0 a !important;
                     color: $gray-darker;
                     &:before {
@@ -205,9 +215,11 @@
         &.original {
             vertical-align: top;
             padding: 0 !important;
+            // there has to be a padding left to align text with table head content #246
             padding-left: 10px !important;
         }
         .related-widget-wrapper {
+            // make sure that form fields are not truncated on focus
             overflow: visible;
         }
     }
@@ -259,6 +271,7 @@
     .row1 {
         background: $white;
     }
+    // sets background color white to each table row #173
     .row2 {
         background: $white;
     }

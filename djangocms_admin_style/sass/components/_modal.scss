@@ -1,3 +1,6 @@
+//##############################################################################
+// MODAL
+
 .cms-admin-modal,
 .cms_modal-window {
     background: $white;
@@ -23,6 +26,7 @@
        margin-left: 20px !important;
     }
     &.app-aldryn_bootstrap3 .filerFile .filerClearer {
+        // make sure that file clear button has the correct size #140
         width: 36px !important;
         height: 36px !important;
     }
@@ -35,6 +39,7 @@
         fieldset {
             width: 100%;
         }
+        // resets checkbox row margin and padding in modal window because of wrapping border #188
         .checkbox-row {
             margin-left: -20px;
             margin-right: -20px;
@@ -49,6 +54,7 @@
     &.change-list {
         #changelist {
             &.filtered {
+                // make sure that changelist form is floated left next to filter #238
                 #changelist-form {
                     float: left;
                     width: calc(100% - 220px) !important;
@@ -62,6 +68,7 @@
                 }
             }
             #changelist-filter {
+                // removes background color if there is a white background not as on dashboard gray
                 background: none !important;
             }
             #changelist-form > input + .results {
@@ -75,6 +82,7 @@
             }
         }
     }
+    // resets table styles in modal window #189
     table {
         margin-left: 0;
         box-shadow: none !important;
@@ -136,6 +144,7 @@
             }
         }
     }
+    // resets column width on bootstrap row plugin #59
     .bootstrap3-column {
         .form-row {
             overflow: hidden;
@@ -183,6 +192,7 @@
     &.delete-confirmation {
         #container .breadcrumbs + .messagelist + #content,
         #container .breadcrumbs + #content {
+            // make sure that margin is same as on modal window
             margin-left: 20px !important;
         }
         .colM {
@@ -219,6 +229,7 @@
     ul.messagelist + #content {
         margin-top: 90px !important;
     }
+    // resets margin top of content if messagelist is empty #244
     ul.messagelist:empty + #content {
         margin-top: 20px !important;
     }
@@ -230,17 +241,22 @@
 .cms-admin-modal {
     #header,
     .breadcrumbs {
+        // there is no need for breadcrumbs and header on modal windows #242
         display: none;
     }
     &.change-list #changelist {
+        // make sure that changelist doesn't overlap object-tools #242
         margin-top: 50px;
         #changelist-filter {
+            // adds z-index of 2000 because page tree has z-index of 1000 #242
             z-index: 2000;
+            // needs a background color because filter is positioned absolute and appears over page tree #242
             background-color: $white !important;
         }
     }
 }
 
+// resets form and background styles in dialog window #186
 .cms-dialog {
     background-color: $white;
     form {

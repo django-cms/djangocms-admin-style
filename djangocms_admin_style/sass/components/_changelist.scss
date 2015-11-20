@@ -1,4 +1,7 @@
-// reset form background white
+//##############################################################################
+// CHANGELIST
+
+// resets form white background color #77
 #changelist-form,
 #changelist-search,
 #changelist form,
@@ -67,9 +70,11 @@
             .results + .paginator,
             #toolbartable .paginator {
                 position: absolute;
+                // removes box shadow top on paginator
                 clip: rect(0, 99999px, 99999px, -2px);
             }
             .paginator {
+                // calculates correct width because of margin right
                 width: calc(100% - 250px) !important;
                 box-shadow: $base-box-shadow;
                 border-right: 0;
@@ -127,6 +132,7 @@
             }
             form #searchbar {
                 width: auto !important;
+                // makes sure that search doesn't jumps to new line #155
                 max-width: 257px !important;
                 font-size: $font-size-small;
                 padding: 9px 5px !important;
@@ -135,6 +141,7 @@
             }
         }
         #changelist-filter {
+            // resets position to float filter next to changelist
             position: static;
             float: right;
             width: 200px !important;
@@ -191,6 +198,7 @@
             background: none;
             select {
                 white-space: nowrap;
+                // makes sure that action select doesn't jumps to new line #155
                 width: 257px !important;
                 padding: 9px 40px 9px 20px;
                 margin-top: 3px;
@@ -200,6 +208,7 @@
             }
             label {
                 display: inline-block;
+                // make sure that only icon is displayed
                 font: 0/0 a;
                 margin-left: 0;
                 margin-bottom: 0;
@@ -256,11 +265,13 @@
         }
         .results + .paginator,
         #toolbartable .paginator,
-        #has-filters + script + .paginator {
+        #has-filters ~ .paginator {
             position: absolute;
+            // removes box shadow top on paginator
             clip: rect(0, 99999px, 99999px, -2px);
         }
         .paginator {
+            // calculates correct width because of margin left and right
             width: calc(100% - 30px);
             box-shadow: $base-box-shadow !important;
             border-top: none;
@@ -271,6 +282,7 @@
         #limit_search_to_folder {
             vertical-align: middle;
             margin-top: 2px;
+            // adds space between search field and checkbox #216
             margin-left: 10px;
             + label {
                 display: inline-block !important;
@@ -325,7 +337,7 @@
             margin-top: 0;
         }
     }
-    // select field when multiple sites are available
+    // select field when multiple sites are available #201
     #site-selector {
         margin-top: -18px;
         margin-left: 0;

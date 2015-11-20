@@ -1,4 +1,5 @@
-// django-admin-shortcuts
+//##############################################################################
+// DJANGO ADMIN SHORTCUTS
 
 .admin_shortcuts {
     max-width: 900px;
@@ -54,6 +55,7 @@
                 font-size: 30px;
                 margin-right: 0;
             }
+            // replaces shortcut link images with icon font #199
             .archive {
                 @include icon(archive);
             }
