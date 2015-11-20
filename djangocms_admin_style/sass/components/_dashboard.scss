@@ -1,0 +1,138 @@
+//##############################################################################
+// DASHBOARD
+
+body.dashboard {
+    // resets background color only on dashboard
+    background-color: $white;
+    h1 {
+        // make sure that title is aligned with categories
+        margin-left: 10px;
+    }
+    .breadcrumbs {
+        padding: $breadcrumb-padding 10px !important;
+    }
+}
+
+.dashboard #container {
+    #content-main {
+        min-width: 400px;
+        max-width: 900px;
+        padding-bottom: 20px;
+        .module {
+            margin-bottom: 45px;
+        }
+        table {
+            // reset box shadow which is added on every table
+            box-shadow: none;
+        }
+        table th,
+        table td {
+            vertical-align: baseline;
+            line-height: $font-size-normal !important;
+            width: auto;
+            padding: 12px 10px !important;
+            border-color: $gray-lighter;
+            a {
+                font-size: $font-size-normal;
+                line-height: $font-size-normal;
+                color: $gray-darkest;
+                font-weight: normal;
+                padding: 0 10px 0 0;
+                &.addlink {
+                    color: $color-success;
+                }
+                &.changelink {
+                    color: $color-primary;
+                }
+            }
+        }
+        table th {
+            width: 100%;
+        }
+        .module tr:first-child {
+            th,
+            td {
+                border-top: 1px solid $gray-lighter;
+            }
+        }
+    }
+    #content-related {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 25%;
+        padding-top: 135px;
+        margin: 0;
+        border-left: 1px solid $gray-lighter;
+        background-color: $gray-lightest;
+        z-index: -1;
+        .module {
+            margin-left: 0;
+            padding: 0 30px 10px !important;
+            background-color: transparent;
+            ul.actionlist {
+                padding: 0;
+                margin: 0;
+                li {
+                    position: relative;
+                    font-size: $font-size-normal;
+                    line-height: $font-size-normal;
+                    padding: 6px 15px 6px 45px;
+                    margin-bottom: 0;
+                    border-bottom: solid 1px $gray-lighter;
+                    a {
+                        padding-right: 10px;
+                    }
+                    &:before {
+                        position: absolute;
+                        left: 15px;
+                        top: 50%;
+                        font-size: $font-size-normal;
+                        margin-top: -9px;
+                    }
+                    .mini {
+                        line-height: 11px;
+                    }
+                }
+                .changelink a {
+                    line-height: $font-size-large;
+                }
+                .mini {
+                    color: $gray !important;
+                }
+            }
+            h2 {
+                font-size: $font-size-large !important;
+                line-height: $font-size-large;
+                color: $gray-darkest;
+                font-weight: bold;
+                padding: 0 0 27px;
+                margin-bottom: 0;
+                background: none;
+                border-bottom: 0;
+            }
+            h3 {
+                font-size: $font-size-normal !important;
+                line-height: $font-size-normal;
+                color: $gray;
+                font-weight: normal;
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0 0 10px;
+                border-bottom: 1px solid $gray-lighter;
+            }
+            p {
+                color: $gray;
+                font-size: $font-size-normal;
+                padding: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+    table tbody tr:hover {
+        // reset hover background on dashboard table
+        background: none;
+    }
+}

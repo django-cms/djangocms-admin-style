@@ -1,3 +1,8 @@
+//##############################################################################
+// ICONS
+
+// Overwrites background images icons with font icon
+// adds every class which has to be overwritten because of there is no general icon class
 .addlink,
 .changelink,
 .deletelink,
@@ -193,6 +198,7 @@ a[id*="clocklink"] {
 }
 
 .tree {
+    // vertical align image icons in page tree #220
     .col-navigation {
         line-height: 26px !important;
         img {

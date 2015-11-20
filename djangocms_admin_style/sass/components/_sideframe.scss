@@ -1,5 +1,9 @@
+//##############################################################################
+// SIDEFRAME
+
 .cms-admin-sideframe {
     #header {
+        // because there is already toolbar visible, header in side frame has to be hidden to not be visible when scrolling on tablet #245
         display: none;
     }
     #container .breadcrumbs + .messagelist + #content,
@@ -7,9 +11,11 @@
        margin-left: 3% !important;
     }
     .breadcrumbs {
+        // removes padding left to align breadcrumbs #242
         padding-left: 0 !important;
     }
     #content {
+        // updates content margin top because of breadcrumbs #242
         margin-top: 117px !important;
     }
     ul.messagelist {

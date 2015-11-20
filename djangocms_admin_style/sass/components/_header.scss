@@ -1,5 +1,8 @@
-// header
+//##############################################################################
+// HEADER
+
 #header {
+    // replaced overflow hidden with clearfix to fix header on login page #220
     @include micro-clearfix;
     overflow: visible;
     position: fixed;
@@ -17,6 +20,7 @@
     #branding {
         width: 100%;
         h1 {
+            // hides h1 because of text appears in list on dropdown menu
             display: none;
             float: left;
             font-size: $font-size-normal;
@@ -29,6 +33,7 @@
         }
     }
     #user-tools {
+        // user tools are added to dropdown menu
         display: none;
         float: right;
         font-size: 13px;

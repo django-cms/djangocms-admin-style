@@ -1,27 +1,34 @@
-@import "settings/all";
+/*!
+ * @copyright: https://github.com/divio/djangocms-admin-style
+ */
 
+//##############################################################################
+// IMPORT SETTINGS
+@import "settings/all";
 @import "mixins/all";
 
+//##############################################################################
+// IMPORT COMPONENTS
 @import "components/base";
 @import "components/iconography";
 @import "components/icons";
-@import "components/popup";
+@import "components/modal";
 @import "components/sideframe";
 @import "components/forms";
 @import "components/tables";
 @import "components/changelist";
 @import "components/cmsplaceholders";
 @import "components/content";
+@import "components/dashboard";
+@import "components/login";
 @import "components/header";
 @import "components/filer";
 @import "components/footer";
 @import "components/shortcuts";
 @import "components/drag-and-drop";
 
-// TODO:
-//@import "partials/_messages.scss";
-
-
+//##############################################################################
+// IMPORT MOBILE
 @media only screen and (max-width: 768px), print {
     @import "components/mobile";
 }

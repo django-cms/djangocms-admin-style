@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.0.7 (Unreleased)
+------------------
+
+* Fix login password field
+
 1.0.6 (2015-11-19)
 ------------------
 
@@ -19,6 +24,7 @@ CHANGELOG
 * Fix tabular tables inline fields
 * Fix add another button size on advanced page settings
 * Fix tagged items delete label position
+* Fix login password field
 
 1.0.5 (2015-11-10)
 ------------------
