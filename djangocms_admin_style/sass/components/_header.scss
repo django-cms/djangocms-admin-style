@@ -2,7 +2,7 @@
 // HEADER
 
 #header {
-    @include micro-clearfix; /* replaced clearfix with overflow hidden to not truncate anything */
+    @include micro-clearfix; // replaced overflow hidden with clearfix to fix header on login page #220
     overflow: visible;
     position: fixed;
     top: 0;

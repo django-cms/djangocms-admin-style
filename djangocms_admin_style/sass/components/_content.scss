@@ -65,6 +65,7 @@ ul.messagelist + #content {
     .module {
         overflow: visible;
     }
+    // reset table styles in applications group #193
     table {
         width: 100% !important;
         margin-left: 0 !important;
@@ -292,7 +293,7 @@ ul.messagelist + #content {
     label {
         vertical-align: middle !important;
         span {
-            font-size: 16px !important;
+            font-size: 16px !important; // sets correct font size for labels #204
         }
     }
     .selector-filter {
@@ -396,7 +397,7 @@ ul.messagelist + #content {
         padding: 0;
         margin-bottom: 5px;
         border: 1px solid $gray-lighter !important;
-        background: none !important; /* hides dropdown icon which is added on general select fields */
+        background: none !important; // hides dropdown icon which is generally added to select fields #216
         option {
             font-size: $font-size-normal;
             line-height: $line-height-normal;
@@ -417,7 +418,7 @@ ul.messagelist + #content {
         margin: 10em 5px 0 5px;
         border: 0;
         background-color: transparent;
-        background: none; /* hides background image because of icon font replacement */
+        background: none; // hides background image because of icon font replacement #216
         li {
             text-align: center;
             padding: 3px;
@@ -540,6 +541,7 @@ a.addlink {
     ul {
         margin-top: 10px;
     }
+    // adds trash icon before p if it follows after h1 #184
     h1 + p {
         @include icon(trash);
         margin-top: -5px;
@@ -549,7 +551,7 @@ a.addlink {
         }
     }
     h1 {
-        display: none; /* hides h1 because of doubled content */
+        display: none; // hides h1 because of doubled content #184
     }
     input[type="submit"] {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);

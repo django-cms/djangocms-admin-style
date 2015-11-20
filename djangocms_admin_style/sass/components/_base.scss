@@ -80,7 +80,7 @@ a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
     padding: 10px 20px !important;
-    /* link make sure that color is overwritten */
+    // link make sure that hover color on basic and advanced buttons is overwritten #242
     &:link:hover {
         color: $btn-default-color !important;
     }
@@ -244,7 +244,7 @@ ul.errorlist {
         padding: 0 !important;
         margin: 0 !important;
         border: 0 !important;
-        background: none !important; /* hides error icon which is replaced with icon font */
+        background: none !important; // hides error icon which #207
     }
 }
 .breadcrumbs + ul.messagelist {
@@ -299,7 +299,7 @@ ul.messagelist {
         }
     }
 }
-/* set image size to show retina images with correct size */
+// set image size to show retina images with correct size #212
 img[src*="icon-no"],
 img[src*="icon-yes"] {
     width: 16px;

@@ -3,7 +3,7 @@
 
 .cms-admin-sideframe {
     #header {
-        /* because there is already toolbar visible and header in sideframe has to be hidden to not see when scrolling on tablet */
+        // because there is already toolbar visible, header in side frame has to be hidden to not be visible when scrolling on tablet #245
         display: none;
     }
     #container .breadcrumbs + .messagelist + #content,
@@ -11,10 +11,10 @@
        margin-left: 3% !important;
     }
     .breadcrumbs {
-        padding-left: 0 !important;
+        padding-left: 0 !important; // removes padding left to align breadcrumbs #242
     }
     #content {
-        margin-top: 117px !important; /* updates content margin top because of breadcrumbs */
+        margin-top: 117px !important; // updates content margin top because of breadcrumbs #242
     }
     ul.messagelist {
         margin-top: 46px !important;

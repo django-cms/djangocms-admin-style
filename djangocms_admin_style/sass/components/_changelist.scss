@@ -130,7 +130,7 @@
             }
             form #searchbar {
                 width: auto !important;
-                max-width: 257px !important;
+                max-width: 257px !important; //makes sure that search doesn't jumps to new line #155
                 font-size: $font-size-small;
                 padding: 9px 5px !important;
                 vertical-align: middle;
@@ -194,7 +194,7 @@
             background: none;
             select {
                 white-space: nowrap;
-                width: 257px !important;
+                width: 257px !important; //makes sure that action select doesn't jumps to new line #155
                 padding: 9px 40px 9px 20px;
                 margin-top: 3px;
                 margin-right: 10px;
@@ -274,7 +274,7 @@
         #limit_search_to_folder {
             vertical-align: middle;
             margin-top: 2px;
-            margin-left: 10px;
+            margin-left: 10px; // adds space between search field and checkbox #216
             + label {
                 display: inline-block !important;
                 font-size: $font-size-small !important;
@@ -328,7 +328,7 @@
             margin-top: 0;
         }
     }
-    // select field when multiple sites are available
+    // select field when multiple sites are available #201
     #site-selector {
         margin-top: -18px;
         margin-left: 0;

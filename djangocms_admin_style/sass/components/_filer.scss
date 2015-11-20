@@ -3,6 +3,7 @@
 
 .filebrowser {
     ul.messagelist + #content {
+        // calculates correct messagelist position #130
         margin-top: $filer-content-margin + 27px !important; // plus messages list
     }
     #content {
