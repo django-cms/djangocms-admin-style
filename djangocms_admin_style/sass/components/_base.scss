@@ -217,7 +217,7 @@ small {
     height: 0;
 }
 
-//error notes and messages
+// error notes and messages
 .errornote {
     display: inline-block;
     font-weight: normal;
@@ -244,7 +244,8 @@ ul.errorlist {
         padding: 0 !important;
         margin: 0 !important;
         border: 0 !important;
-        background: none !important; // hides error icon which #207
+        // hides error icon which #207
+        background: none !important;
     }
 }
 .breadcrumbs + ul.messagelist {
@@ -274,25 +275,29 @@ ul.messagelist {
             margin-right: 20px !important;
         }
         &.success {
-            background-image: none; // background image icon is replaced by font icon
+            // background image icon is replaced by font icon
+            background-image: none;
             &:before {
                 color: $color-success;
             }
         }
         &.error {
-            background-image: none; // background image icon is replaced by font icon
+            // background image icon is replaced by font icon
+            background-image: none;
             &:before {
                 color: $color-danger;
             }
         }
         &.warning {
-            background-image: none; // background image icon is replaced by font icon
+            // background image icon is replaced by font icon
+            background-image: none;
             &:before {
                 color: $color-warning;
             }
         }
         &.info {
-            background-image: none; // background image icon is replaced by font icon
+            // background image icon is replaced by font icon
+            background-image: none;
             &:before {
                 color: $color-primary;
             }

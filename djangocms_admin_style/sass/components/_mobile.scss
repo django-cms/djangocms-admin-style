@@ -6,7 +6,8 @@ html,
 body {
     height: auto;
     #container {
-        min-width: 0 !important; // fixes content alignment on mobile view #152
+        // fixes content alignment on mobile view #152
+        min-width: 0 !important;
         margin: 0;
     }
 }
@@ -162,7 +163,8 @@ body.login {
         position: static;
         .actions {
             select {
-                max-width: 215px !important; // make sure that actions go button appears next to actions select field #242
+                // make sure that actions go button appears next to actions select field #242
+                max-width: 215px !important;
             }
             .action-counter {
                 display: block !important;
@@ -176,7 +178,8 @@ body.login {
                 display: inline-block;
             }
             form #searchbar {
-                max-width: 215px !important; // make sure that search button appears next to search input field #242
+                // make sure that search button appears next to search input field #242
+                max-width: 215px !important;
             }
             .small {
                 display: block;
@@ -239,7 +242,7 @@ body.login {
     }
 }
 
-// nani/hvad language buttons
+// nani/head language buttons
 .nani-language-tabs {
     > span {
         font-size: 11px !important;
@@ -314,11 +317,13 @@ form {
 
 // filter horizontal m2m
 .selector {
-    float: none; // displays selector multiple inputs belong to each other
+    // displays selector multiple inputs belong to each other
+    float: none;
     width: auto;
     .selector-available,
     .selector-chosen {
-        float: none; // displays selector multiple inputs belong to each other
+        // displays selector multiple inputs belong to each other
+        float: none;
         width: auto;
         margin-bottom: 0;
         p {
@@ -326,9 +331,11 @@ form {
         }
     }
     ul.selector-chooser {
-        float: none; // displays selector multiple inputs belong to each other
+        // displays selector multiple inputs belong to each other
+        float: none;
         display: block;
-        width: 100% !important; // horizontally center chooser on mobile view #228
+        // horizontally center chooser on mobile view #228
+        width: 100% !important;
         margin-top: 10px;
         margin-bottom: 10px;
 
@@ -353,7 +360,8 @@ form {
     &.change-list #changelist.filtered .paginator,
     &.change-form #changelist .paginator,
     &.change-form #changelist.filtered .paginator {
-        width: calc(100% - 30px - 6%) !important; // make sure that paginator has same width as changelist #228
+        // make sure that paginator has same width as changelist #228
+        width: calc(100% - 30px - 6%) !important;
     }
 }
 
@@ -369,7 +377,7 @@ form {
     padding: 0 !important;
 }
 
-//icons
+// icons
 a.selector-clearall,
 .selector-remove {
     @include icon(chevron-circle-up);

@@ -11,10 +11,12 @@
        margin-left: 3% !important;
     }
     .breadcrumbs {
-        padding-left: 0 !important; // removes padding left to align breadcrumbs #242
+        // removes padding left to align breadcrumbs #242
+        padding-left: 0 !important;
     }
     #content {
-        margin-top: 117px !important; // updates content margin top because of breadcrumbs #242
+        // updates content margin top because of breadcrumbs #242
+        margin-top: 117px !important;
     }
     ul.messagelist {
         margin-top: 46px !important;

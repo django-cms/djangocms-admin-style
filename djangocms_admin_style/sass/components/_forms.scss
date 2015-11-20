@@ -11,13 +11,16 @@ form {
     }
     // only uses this styles if form-row is not set on a table row because before and after breaks tables #247
     .form-row:not(tr) {
-        @include micro-clearfix; // adds clearfix because overflow hidden truncates highlighted focus fields #242
+        // adds clearfix because overflow hidden truncates highlighted focus fields #242
+        @include micro-clearfix;
         .vForeignKeyRawIdAdminField {
-            width: calc(100% - 48px) !important; // calculates width that search button appears next to search input
+            // calculates width that search button appears next to search input
+            width: calc(100% - 48px) !important;
         }
     }
     .form-row {
-        overflow: visible; // make sure that highlighted focus on fields is not truncated #242
+        // make sure that highlighted focus on fields is not truncated #242
+        overflow: visible;
         border-bottom: 0;
         .btn-group-sizes .btn-default {
             min-height: inherit !important;
@@ -65,7 +68,7 @@ form {
         &[class*="visual"] {
             .related-widget-wrapper-link {
                 // hides related widget wrapper links because they don't work correctly and are not necessary
-                //because of magnifier and delete link #220
+                // because of magnifier and delete link #220
                 display: none;
                 width: 36px;
                 height: 36px;
@@ -371,7 +374,7 @@ form {
 
 .form-row .select2-container {
     min-width: 250px + 12px;
-} //standard input width + default input paddings
+} // standard input width + default input padding
 .inline-group .form-row input,
 .inline-group .form-row textarea {
     width: auto;
@@ -638,7 +641,8 @@ div.clockbox {
         border-color: $gray-lighter !important;
         border-bottom-radius: $border-radius-base;
         a {
-            color: $gray-darkest !important; // adds separate color to cancel link to have a clear difference to other links #236
+            // adds separate color to cancel link to have a clear difference to other links #236
+            color: $gray-darkest !important;
         }
     }
 }
@@ -719,7 +723,8 @@ form select[multiple] {
     width: 100%;
     max-width: 240px;
     padding: 10px;
-    background: none !important; // hides dropdown icon which is generally added to select fields #216
+    // hides dropdown icon which is generally added to select fields #216
+    background: none !important;
 }
 .js-icon-widgets {
     select {

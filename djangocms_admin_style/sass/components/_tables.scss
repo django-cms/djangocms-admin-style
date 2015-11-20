@@ -36,12 +36,16 @@
             padding: 0;
             margin: 0;
             &.inlinechangelink {
-                font: 0/0 a !important; // make sure that only icon is displayed #246
+                // make sure that only icon is displayed #246
+                font: 0/0 a !important;
                 padding-left: 12px;
                 &:before {
-                    font-size: 16px; // gives icon a font size because link text is hidden by adding font size 0 #246
-                    vertical-align: top; // make sure that icon is not truncated #246
-                    margin: 0; // removes margin right which is needed to have a space between icon and text #246
+                    // gives icon a font size because link text is hidden by adding font size 0 #246
+                    font-size: 16px;
+                    // make sure that icon is not truncated #246
+                    vertical-align: top;
+                    // removes margin right which is needed to have a space between icon and text #246
+                    margin: 0;
                 }
             }
             &.lang-code {
@@ -196,7 +200,8 @@
                 // displays icon on delete row #203
                 &.inline-deletelink {
                     @include icon(trash);
-                    font: 0/0 a !important; // make sure that only icon is displayed
+                    // make sure that only icon is displayed
+                    font: 0/0 a !important;
                     color: $gray-darker;
                     &:before {
                         display: block;
@@ -210,10 +215,12 @@
         &.original {
             vertical-align: top;
             padding: 0 !important;
-            padding-left: 10px !important; // there has to be a padding left to align text with table head content #246
+            // there has to be a padding left to align text with table head content #246
+            padding-left: 10px !important;
         }
         .related-widget-wrapper {
-            overflow: visible; // make sure that form fields are not truncated on focus
+            // make sure that form fields are not truncated on focus
+            overflow: visible;
         }
     }
     tr {

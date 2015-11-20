@@ -9,7 +9,8 @@ body {
     #container {
         position: static;
         width: auto !important;
-        min-width: 768px !important; // makes sure that object tools not overlaps title #84
+        // makes sure that object tools not overlaps title #84
+        min-width: 768px !important;
         padding-top: 0 !important;
         .breadcrumbs {
             position: absolute;
@@ -36,12 +37,14 @@ body {
         }
         .breadcrumbs + .messagelist + #content,
         .breadcrumbs + #content {
-           margin-left: calc(3% + 10px) !important; // calculates correct width by removing margin left and right
+            // calculates correct width by removing margin left and right
+            margin-left: calc(3% + 10px) !important;
         }
     }
 }
 ul.messagelist + #content {
-   margin-top: $content-margin-top + 27px !important; // plus messages list height
+    // plus messages list height
+    margin-top: $content-margin-top + 27px !important;
 }
 #content {
     width: auto !important;
@@ -217,7 +220,8 @@ ul.messagelist + #content {
     }
     .inline-deletelink {
         color: $gray-darkest !important;
-        font: 0/0 a; // make sure that only icon is displayed
+        // make sure that only icon is displayed
+        font: 0/0 a;
         text-indent: inherit;
         &:before {
             font-size: $font-size-small;
@@ -238,12 +242,14 @@ ul.messagelist + #content {
             font-weight: normal;
         }
         span.delete label {
-            display: inline-block; // float label next to checkbox on tagged items #253
+            // float label next to checkbox on tagged items #253
+            display: inline-block;
             margin-left: 0;
         }
     }
     table {
-        width: calc(100% - 4px) !important; // calculates the correct width by removing margin left and right
+        // calculates the correct width by removing margin left and right
+        width: calc(100% - 4px) !important;
         margin: 0 2px !important;
     }
 }
@@ -293,7 +299,8 @@ ul.messagelist + #content {
     label {
         vertical-align: middle !important;
         span {
-            font-size: 16px !important; // sets correct font size for labels #204
+            // sets correct font size for labels #204
+            font-size: 16px !important;
         }
     }
     .selector-filter {
@@ -397,7 +404,8 @@ ul.messagelist + #content {
         padding: 0;
         margin-bottom: 5px;
         border: 1px solid $gray-lighter !important;
-        background: none !important; // hides dropdown icon which is generally added to select fields #216
+        // hides dropdown icon which is generally added to select fields #216
+        background: none !important;
         option {
             font-size: $font-size-normal;
             line-height: $line-height-normal;
@@ -418,7 +426,8 @@ ul.messagelist + #content {
         margin: 10em 5px 0 5px;
         border: 0;
         background-color: transparent;
-        background: none; // hides background image because of icon font replacement #216
+        // hides background image because of icon font replacement #216
+        background: none;
         li {
             text-align: center;
             padding: 3px;
@@ -479,8 +488,10 @@ a.addlink {
 .object-tools {
     float: right;
     text-align: right;
-    max-width: 70%; // make sure that buttons don't overlap title
-    margin-top: -54px; // make sure that buttons are aligned with title
+    // make sure that buttons don't overlap title
+    max-width: 70%;
+    // make sure that buttons are aligned with title
+    margin-top: -54px;
     margin-left: 0;
     li {
         float: none;
@@ -551,7 +562,8 @@ a.addlink {
         }
     }
     h1 {
-        display: none; // hides h1 because of doubled content #184
+        // hides h1 because of doubled content #184
+        display: none;
     }
     input[type="submit"] {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
@@ -641,7 +653,7 @@ a.addlink {
 }
 
 
-// nani/hvad language buttons
+// nani/head language buttons
 .nani-language-tabs {
     position: relative;
     margin-bottom: -3px;

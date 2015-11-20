@@ -4,7 +4,8 @@
 .filebrowser {
     ul.messagelist + #content {
         // calculates correct messagelist position #130
-        margin-top: $filer-content-margin + 27px !important; // plus messages list
+        // plus 27px messages list height
+        margin-top: $filer-content-margin + 27px !important;
     }
     #content {
         margin-top: $filer-content-margin !important;
@@ -31,7 +32,8 @@
         }
         .backtoroot {
             display: inline-block;
-            font: 0/0 a; // make sure that only icon is displayed
+            // make sure that only icon is displayed
+            font: 0/0 a;
             padding-left: 15px;
             vertical-align: middle;
         }
@@ -68,7 +70,8 @@
     #changelist {
         margin-bottom: 0;
         .paginator {
-            width: calc(70% - 30px) !important;  // calculates the correct width because of margin left and right
+            // calculates the correct width because of margin left and right
+            width: calc(70% - 30px) !important;
         }
     }
     &.change-list #changelist {
@@ -134,7 +137,8 @@
                     &.deletelink {
                         display: inline-block;
                         float: none !important;
-                        font: 0/0 a !important; // make sure that only icon is displayed
+                        // make sure that only icon is displayed
+                        font: 0/0 a !important;
                         padding: 0 !important;
                         margin: 0 0 0 20px !important;
                         vertical-align: middle;
@@ -161,7 +165,8 @@
     .clipboard {
         float: right !important;
         width: 28% !important;
-        margin-top: 0 !important; // align clipboard with table/changelist
+        // align clipboard with table/changelist
+        margin-top: 0 !important;
         border-radius: $border-radius-base;
         border: 0 !important;
         box-shadow: $base-box-shadow;
@@ -286,7 +291,8 @@
                 outline: none;
             }
             span {
-                font: 0/0 a !important; // make sure that only icon is displayed
+                // make sure that only icon is displayed
+                font: 0/0 a !important;
                 &:before {
                     color: $color-primary;
                     vertical-align: middle;
@@ -296,7 +302,8 @@
     }
     #toolbartable + .paginator {
         position: absolute;
-        clip: rect(0, 99999px, 99999px, -2px); // removes boy shadow on top of paginator
+        // removes boy shadow on top of paginator
+        clip: rect(0, 99999px, 99999px, -2px);
         border-right: 0;
     }
 }

@@ -68,7 +68,8 @@
                 }
             }
             #changelist-filter {
-                background: none !important; // removes background color if there is a white background not as on dashboard gray
+                // removes background color if there is a white background not as on dashboard gray
+                background: none !important;
             }
             #changelist-form > input + .results {
                 clear: both;
@@ -191,7 +192,8 @@
     &.delete-confirmation {
         #container .breadcrumbs + .messagelist + #content,
         #container .breadcrumbs + #content {
-            margin-left: 20px !important; // make sure that margin is same as on modal window
+            // make sure that margin is same as on modal window
+            margin-left: 20px !important;
         }
         .colM {
             box-shadow: none;
@@ -239,12 +241,15 @@
 .cms-admin-modal {
     #header,
     .breadcrumbs {
-        display: none; // there is no need for breadcrumbs and header on modal windows #242
+        // there is no need for breadcrumbs and header on modal windows #242
+        display: none;
     }
     &.change-list #changelist {
-        margin-top: 50px; // make sure that changelist doesn't overlap object-tools #242
+        // make sure that changelist doesn't overlap object-tools #242
+        margin-top: 50px;
         #changelist-filter {
-            z-index: 2000; // adds z-index of 2000 because page tree has z-index of 1000 #242
+            // adds z-index of 2000 because page tree has z-index of 1000 #242
+            z-index: 2000;
             // needs a background color because filter is positioned absolute and appears over page tree #242
             background-color: $white !important;
         }

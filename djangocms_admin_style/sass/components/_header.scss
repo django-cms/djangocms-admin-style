@@ -2,7 +2,8 @@
 // HEADER
 
 #header {
-    @include micro-clearfix; // replaced overflow hidden with clearfix to fix header on login page #220
+    // replaced overflow hidden with clearfix to fix header on login page #220
+    @include micro-clearfix;
     overflow: visible;
     position: fixed;
     top: 0;
@@ -19,7 +20,8 @@
     #branding {
         width: 100%;
         h1 {
-            display: none; // hides h1 because of text appears in list on dropdown menu
+            // hides h1 because of text appears in list on dropdown menu
+            display: none;
             float: left;
             font-size: $font-size-normal;
             line-height: $toolbar-height;
@@ -31,7 +33,8 @@
         }
     }
     #user-tools {
-        display: none; // user tools are added to dropdown menu
+        // user tools are added to dropdown menu
+        display: none;
         float: right;
         font-size: 13px;
         line-height: $toolbar-height;
