@@ -68,7 +68,7 @@
                 }
             }
             #changelist-filter {
-                background: none !important; /* removes background color if there is a white background not as on dashboard gray */
+                background: none !important; // removes background color if there is a white background not as on dashboard gray
             }
             #changelist-form > input + .results {
                 clear: both;
@@ -191,7 +191,7 @@
     &.delete-confirmation {
         #container .breadcrumbs + .messagelist + #content,
         #container .breadcrumbs + #content {
-            margin-left: 20px !important; /* make sure that margin is same as on modal window */
+            margin-left: 20px !important; // make sure that margin is same as on modal window
         }
         .colM {
             box-shadow: none;

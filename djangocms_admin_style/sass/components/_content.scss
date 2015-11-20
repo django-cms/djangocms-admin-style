@@ -36,7 +36,7 @@ body {
         }
         .breadcrumbs + .messagelist + #content,
         .breadcrumbs + #content {
-           margin-left: calc(3% + 10px) !important; /* calculates correct width by removing margin left and right */
+           margin-left: calc(3% + 10px) !important; // calculates correct width by removing margin left and right
         }
     }
 }
@@ -217,7 +217,7 @@ ul.messagelist + #content {
     }
     .inline-deletelink {
         color: $gray-darkest !important;
-        font: 0/0 a; /* make sure that only icon is displayed */
+        font: 0/0 a; // make sure that only icon is displayed
         text-indent: inherit;
         &:before {
             font-size: $font-size-small;
@@ -243,7 +243,7 @@ ul.messagelist + #content {
         }
     }
     table {
-        width: calc(100% - 4px) !important; /* calculates the correct width by removing margin left and right */
+        width: calc(100% - 4px) !important; // calculates the correct width by removing margin left and right
         margin: 0 2px !important;
     }
 }
@@ -479,8 +479,8 @@ a.addlink {
 .object-tools {
     float: right;
     text-align: right;
-    max-width: 70%; /* make sure that buttons don't overlap title */
-    margin-top: -54px; /* make sure that buttons are aligned with title */
+    max-width: 70%; // make sure that buttons don't overlap title
+    margin-top: -54px; // make sure that buttons are aligned with title
     margin-left: 0;
     li {
         float: none;

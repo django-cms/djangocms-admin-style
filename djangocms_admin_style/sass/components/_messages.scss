@@ -1,8 +1,7 @@
 //##############################################################################
 // MESSAGES
 
-/* Statuses Mixins */
-
+//Statuses Mixins
 @mixin message-info {
     background-image: linear-gradient( $color-info-light, $color-primary 80%, $color-info-dark);
     .close {
@@ -62,7 +61,7 @@
     background-size: 60px 60px;
 }
 
-/* Messages */
+// Messages
 .messages {
     position: fixed;
     z-index: 1000;

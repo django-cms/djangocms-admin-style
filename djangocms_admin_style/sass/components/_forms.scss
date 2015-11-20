@@ -51,26 +51,21 @@ form {
             }
         }
         &.field-folder {
-            /*
-            hides related widget wrapper links because they don't work correctly and are not necessary because
-            of magnifier and delete link #224
-            */
+
+            // hides related widget wrapper links because they don't work correctly and are not necessary because
+            // of magnifier and delete link #224
             .related-widget-wrapper-link {
                 display: none;
             }
         }
-        /*
-        styles should only grab if there is an image upload
-        appears on form rows with file, image and visual in class name #242, #220
-        */
+        // styles should only grab if there is an image upload
+        // appears on form rows with file, image and visual in class name #242, #220
         &[class*="file"],
         &[class*="image"],
         &[class*="visual"] {
             .related-widget-wrapper-link {
-                /*
-                hides related widget wrapper links because they don't work correctly and are not necessary
-                because of magnifier and delete link #220
-                */
+                // hides related widget wrapper links because they don't work correctly and are not necessary
+                //because of magnifier and delete link #220
                 display: none;
                 width: 36px;
                 height: 36px;

@@ -213,7 +213,7 @@
             padding-left: 10px !important; // there has to be a padding left to align text with table head content #246
         }
         .related-widget-wrapper {
-            overflow: visible; /* make sure that form fields are not truncated on focus */
+            overflow: visible; // make sure that form fields are not truncated on focus
         }
     }
     tr {

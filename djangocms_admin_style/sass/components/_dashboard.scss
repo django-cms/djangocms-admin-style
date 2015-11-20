@@ -2,9 +2,9 @@
 // DASHBOARD
 
 body.dashboard {
-    background-color: $white; /* resets background color only on dashboard */
+    background-color: $white; // resets background color only on dashboard
     h1 {
-        margin-left: 10px; /* make sure that title is aligned with categories  */
+        margin-left: 10px; // make sure that title is aligned with categories
     }
     .breadcrumbs {
         padding: $breadcrumb-padding 10px !important;
@@ -20,7 +20,7 @@ body.dashboard {
             margin-bottom: 45px;
         }
         table {
-            box-shadow: none; /* reset box shadow which is added on every table */
+            box-shadow: none; // reset box shadow which is added on every table
         }
         table th,
         table td {
@@ -129,6 +129,6 @@ body.dashboard {
         }
     }
     table tbody tr:hover {
-        background: none; /* reset hover background on dashboard table */
+        background: none; // reset hover background on dashboard table
     }
 }

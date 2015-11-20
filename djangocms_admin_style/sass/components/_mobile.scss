@@ -274,7 +274,7 @@ form {
     input[type="file"],
     textarea,
     select {
-        width: auto; /*max-width: 200px;*/
+        width: auto;
     }
     .vTextField {
         width: auto;
@@ -314,11 +314,11 @@ form {
 
 // filter horizontal m2m
 .selector {
-    float: none; /* displays selector multiple inputs belong to each other */
+    float: none; // displays selector multiple inputs belong to each other
     width: auto;
     .selector-available,
     .selector-chosen {
-        float: none; /* displays selector multiple inputs belong to each other */
+        float: none; // displays selector multiple inputs belong to each other
         width: auto;
         margin-bottom: 0;
         p {
@@ -326,7 +326,7 @@ form {
         }
     }
     ul.selector-chooser {
-        float: none; /* displays selector multiple inputs belong to each other */
+        float: none; // displays selector multiple inputs belong to each other
         display: block;
         width: 100% !important; // horizontally center chooser on mobile view #228
         margin-top: 10px;
