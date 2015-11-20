@@ -265,7 +265,7 @@
         }
         .results + .paginator,
         #toolbartable .paginator,
-        #has-filters + script + .paginator {
+        #has-filters ~ .paginator {
             position: absolute;
             // removes box shadow top on paginator
             clip: rect(0, 99999px, 99999px, -2px);
