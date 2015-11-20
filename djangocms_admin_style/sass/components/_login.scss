@@ -58,7 +58,6 @@ body.login {
                     padding-bottom: 10px;
                     label {
                         float: left !important;
-                        color: $gray !important;
                         font-size: $font-size-normal;
                         line-height: $line-height-normal;
                     }
@@ -68,9 +67,11 @@ body.login {
                         width: 100% !important;
                         padding: 10px;
                     }
-                    // resets password field background color on login screen #175, #151
                     #id_password {
+                        // resets password field background color on login screen #175, #151
                         background-color: $white;
+                        // resets margin top on login screen which is used in general forms #255
+                        margin-top: 0 !important;
                     }
                 }
                 .submit-row {
