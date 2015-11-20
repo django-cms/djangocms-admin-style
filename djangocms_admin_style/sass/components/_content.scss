@@ -9,7 +9,7 @@ body {
     #container {
         position: static;
         width: auto !important;
-        min-width: 768px !important;
+        min-width: 768px !important; // makes sure that object tools not overlaps title #84
         padding-top: 0 !important;
         .breadcrumbs {
             position: absolute;
