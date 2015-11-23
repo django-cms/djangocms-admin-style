@@ -5,6 +5,7 @@ CHANGELOG
 ------------------
 
 * Fix login password field
+* Enable sourcemaps on gulpfile sass task
 
 1.0.6 (2015-11-19)
 ------------------
