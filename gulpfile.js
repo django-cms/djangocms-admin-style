@@ -10,6 +10,7 @@
 var autoprefixer = require('gulp-autoprefixer');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var gulpif = require('gulp-if');
 var karma = require('karma').server;
 var sass = require('gulp-sass');
 var iconfont = require('gulp-iconfont');
@@ -42,25 +43,19 @@ var PROJECT_PATTERNS = {
 // #TASKS#
 gulp.task('sass', function () {
     gulp.src(PROJECT_PATTERNS.sass)
-        // Sourcemaps are disabled by default to reduce filesize
-        // .pipe(sourcemaps.init())
-        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(gulpif(options.debug, sourcemaps.init()))
+        .pipe(sass())
         .on('error', function (error) {
-            gutil.log(gutil.colors.red(
-                'Error (' + error.plugin + '): ' + error.messageFormatted)
-            );
-            // Used on Aldryn to inform aldryn client about the errors in sass compilation
-            if (process.env.EXIT_ON_ERRORS) {
-                process.exit(1);
-            }
+            gutil.log(gutil.colors.red('Error (' + error.plugin + '): ' + error.messageFormatted));
         })
         .pipe(autoprefixer({
             // browsers are coming from browserslist file
             cascade: false
         }))
-        // .pipe(minifyCss())
-        // Sourcemaps are disabled by default to reduce filesize
-        // .pipe(sourcemaps.write())
+        .pipe(minifyCss({
+            rebase: false
+        }))
+        .pipe(gulpif(options.debug, sourcemaps.write()))
         .pipe(gulp.dest(PROJECT_PATH.css));
 });
 
