@@ -20,8 +20,13 @@ var minifyCss = require('gulp-minify-css');
 var protractor = require('gulp-protractor').protractor;
 var webdriverUpdate = require('gulp-protractor').webdriver_update;
 
+var argv = require('minimist')(process.argv.slice(2));
+
 // #############################################################################
 // #SETTINGS#
+var options = {
+    debug: argv.debug
+};
 var PROJECT_ROOT = __dirname;
 var PROJECT_PATH = {
     'sass': PROJECT_ROOT + '/djangocms_admin_style/sass',
