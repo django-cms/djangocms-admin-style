@@ -5,9 +5,9 @@ django CMS Admin Style
 Adds pretty CSS styles for the django CMS admin interface.
 
 +------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
-| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/develop/djangocms_admin_style/static/preview_images/admin-style-1.png | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/develop/djangocms_admin_style/static/preview_images/admin-style-2.png |
+| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/djangocms_admin_style/static/preview_images/admin-style-1.png | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/djangocms_admin_style/static/preview_images/admin-style-2.png |
 +------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
-| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/develop/djangocms_admin_style/static/preview_images/admin-style-3.png | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/develop/djangocms_admin_style/static/preview_images/admin-style-4.png |
+| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/djangocms_admin_style/static/preview_images/admin-style-3.png | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/djangocms_admin_style/static/preview_images/admin-style-4.png |
 +------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
