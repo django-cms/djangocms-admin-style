@@ -6,6 +6,7 @@ CHANGELOG
 
 * Fix login password field
 * Enable sourcemaps generation when using --debug param on Gulp
+* Fix restore cancel link height
 
 1.0.6 (2015-11-19)
 ------------------

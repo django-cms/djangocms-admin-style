@@ -120,8 +120,14 @@ a:link {
         color: $color-primary;
     }
 }
-.cancel-link {
+// make sure that cancel link has correct height #261
+a.button.cancel-link {
+    display: inline-block;
+    line-height: 32px !important;
+    height: 32px !important;
     margin-left: 10px;
+    margin-top: 0;
+    padding: 0 20px !important
 }
 // resets general list styles for object-tool list elements
 .colM ul:not(.object-tools) {
