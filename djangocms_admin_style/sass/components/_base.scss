@@ -120,6 +120,7 @@ a:link {
         color: $color-primary;
     }
 }
+// make sure that cancel link has correct height #261
 a.button.cancel-link {
     display: inline-block;
     line-height: 32px !important;
