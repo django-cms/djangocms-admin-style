@@ -51,6 +51,11 @@ form {
             .filerFile img {
                 width: 36px;
                 height: 36px;
+                // fixes clear button size in form fields #262
+                &.filerClearer {
+                    width: 10px;
+                    height: 10px;
+                }
             }
         }
         &.field-folder {
