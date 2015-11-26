@@ -8,6 +8,7 @@ CHANGELOG
 * Enable sourcemaps generation when using --debug param on Gulp
 * Fix restore cancel link height
 * Fix image upload clearer image size
+* Adds max height on filtered lists and filters to make it more usable for very long lists
 
 1.0.6 (2015-11-19)
 ------------------
