@@ -70,7 +70,11 @@
             // adds max height on filter to make it more usable for very long filters #263
             #changelist-filter {
                 overflow-y: auto;
+                width: 215px !important;
                 max-height: 585px;
+                padding-right: 15px;
+                padding-left: 0;
+                margin-left: 18px;
             }
             .results,
             .paginator,
@@ -85,7 +89,7 @@
             }
             .paginator {
                 // calculates correct width because of margin right
-                width: calc(100% - 250px) !important;
+                width: calc(100% - 278px) !important;
                 box-shadow: $base-box-shadow;
                 border-right: 0;
             }
