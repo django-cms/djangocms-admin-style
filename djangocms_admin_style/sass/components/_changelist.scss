@@ -62,6 +62,14 @@
             table {
                 border: 0;
             }
+            .results {
+                overflow-y: auto;
+                max-height: 500px;
+            }
+            #changelist-filter {
+                overflow-y: auto;
+                max-height: 585px;
+            }
             .results,
             .paginator,
             .xfull {

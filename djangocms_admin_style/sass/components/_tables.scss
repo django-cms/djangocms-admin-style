@@ -91,6 +91,10 @@
         }
     }
     thead th.sorted {
+        .text {
+            // make sure that clear sorting is not overlapped #263
+            padding-right: 60px;
+        }
         .sortoptions {
             float: right;
             display: inline-block;
