@@ -46,7 +46,7 @@
         font-size: $font-size-small;
         color: $gray-light !important;
         min-height: 20px;
-        padding: 5px 15px !important;
+        padding: 5px $paginator-padding !important;
         background-color: $white !important;
         .this-page {
             font-weight: normal;
@@ -70,16 +70,16 @@
             // adds max height on filter to make it more usable for very long filters #263
             #changelist-filter {
                 overflow-y: auto;
-                width: 215px !important;
+                width: $filtered-filter-width !important;
                 max-height: 585px;
-                padding-right: 15px;
+                padding-right: $filtered-filter-padding;
                 padding-left: 0;
-                margin-left: 18px;
+                margin-left: $filtered-filter-margin;
             }
             .results,
             .paginator,
             .xfull {
-                margin-right: 220px !important;
+                margin-right: $filtered-filter-width !important;
             }
             .results + .paginator,
             #toolbartable .paginator {
@@ -89,12 +89,12 @@
             }
             .paginator {
                 // calculates correct width because of margin right
-                width: calc(100% - 278px) !important;
+                width: calc(100% - #{$filter-changelist-margin}) !important;
                 box-shadow: $base-box-shadow;
                 border-right: 0;
             }
             .actions {
-                margin-right: 220px !important;
+                margin-right: $filtered-filter-width !important;
             }
         }
         table {
@@ -158,10 +158,8 @@
             // resets position to float filter next to changelist
             position: static;
             float: right;
-            width: 200px !important;
             min-height: 100%;
             margin-top: 8px;
-            padding-left: 18px;
             border-left: 0;
             border-top-right-radius: $border-radius-base;
             border-bottom-right-radius: $border-radius-base;
@@ -348,7 +346,8 @@
         + #changelist-filter {
             position: absolute;
             top: 30px;
-            margin-top: 0;
+            margin-top: 1px;
+            padding-left: 15px !important;
         }
     }
     // select field when multiple sites are available #201
