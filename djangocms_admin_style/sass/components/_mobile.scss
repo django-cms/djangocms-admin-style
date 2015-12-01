@@ -82,7 +82,7 @@ body.login {
         margin-right: 0;
     }
     .paginator {
-        width: calc(100% - 30px) !important;
+        width: calc(100% - #{$paginator-padding * 2}) !important;
     }
     .clipboard {
         margin-top: 60px !important
@@ -196,7 +196,7 @@ body.login {
     }
     #changelist .paginator,
     #changelist.filtered .paginator {
-        width: calc(100% - 30px - 6% - 10px) !important;
+        width: calc(100% - #{$paginator-padding * 2} - 6% - 10px) !important;
     }
     .module #changelist-form .results {
         overflow: auto;
@@ -361,7 +361,7 @@ form {
     &.change-form #changelist .paginator,
     &.change-form #changelist.filtered .paginator {
         // make sure that paginator has same width as changelist #228
-        width: calc(100% - 30px - 6%) !important;
+        width: calc(100% - #{$paginator-padding * 2} - 6%) !important;
     }
 }
 
@@ -385,4 +385,19 @@ a.selector-clearall,
 a.selector-chooseall,
 .selector-add {
     @include icon(chevron-circle-down);
+}
+
+//modal window
+.cms-admin-modal,
+.cms_modal-window,
+.popup {
+    &.change-list #changelist.filtered #changelist-form {
+       width: 100% !important;
+    }
+    &.change-form #changelist .paginator,
+    &.change-form #changelist.filtered .paginator,
+    &.change-list #changelist .paginator,
+    &.change-list #changelist.filtered .paginator {
+        width: calc(100% - 30px - 40px)!important;
+    }
 }
