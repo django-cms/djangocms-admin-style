@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Mikhail Kolesnik <mike@openbunker.org>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: djangocms-admin-style\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-01 14:52-0500\n"
-"PO-Revision-Date: 2015-12-01 19:40+0000\n"
-"Last-Translator: Martin Koistinen <martin.koistinen@divio.ch>\n"
+"PO-Revision-Date: 2015-12-01 20:36+0000\n"
+"Last-Translator: Mikhail Kolesnik <mike@openbunker.org>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/divio/djangocms-admin-style/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,11 +21,11 @@ msgstr ""
 #: templates/admin/delete_confirmation.html:9
 #: templates/admin/delete_selected_confirmation.html:9
 msgid "Home"
-msgstr ""
+msgstr "До"
 
 #: templates/admin/delete_confirmation.html:13
 msgid "Delete"
-msgstr ""
+msgstr "Видалити"
 
 #: templates/admin/delete_confirmation.html:20
 #, python-format
@@ -32,7 +33,7 @@ msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
 "related objects, but your account doesn't have permission to delete the "
 "following types of objects:"
-msgstr ""
+msgstr "Видалення %(object_name)s '%(escaped_object)s' призведе до видалення пов'язаних об'єктів, але ваш реєстраційний запис не має дозволу видаляти наступні типи об'єктів:"
 
 #: templates/admin/delete_confirmation.html:28
 #, python-format

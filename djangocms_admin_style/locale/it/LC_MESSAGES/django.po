@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: djangocms-admin-style\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-01 14:52-0500\n"
-"PO-Revision-Date: 2015-12-01 20:00+0000\n"
+"PO-Revision-Date: 2015-12-01 20:16+0000\n"
 "Last-Translator: yakky <i.spalletti@nephila.it>\n"
 "Language-Team: Italian (http://www.transifex.com/divio/djangocms-admin-style/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -33,21 +33,21 @@ msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
 "related objects, but your account doesn't have permission to delete the "
 "following types of objects:"
-msgstr "La cancellazione di %(object_name)s \"%(escaped_object)s\" causerà la cancellazione delle voci correlate, ma il tuo account non ha i permessi per cancellare i seguenti tipi di oggetto:"
+msgstr "La cancellazione di %(object_name)s '%(escaped_object)s' causerebbe la cancellazione di oggetti collegati, ma questo account non ha i permessi per cancellare i seguenti tipi di oggetti:"
 
 #: templates/admin/delete_confirmation.html:28
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the"
 " following protected related objects:"
-msgstr "La cancellazione di %(object_name)s \"%(escaped_object)s\" richiede la cancellazione delle seguenti voci correlate protette:"
+msgstr "La cancellazione di %(object_name)s '%(escaped_object)s' richiederebbe l'eliminazione dei seguenti oggetti protetti correlati:"
 
 #: templates/admin/delete_confirmation.html:36
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
-msgstr "Sei sicuro di voler cancellare %(object_name)s \"%(escaped_object)s\"? Tutte le seguenti voci correlate verranno cancellate:"
+msgstr "Confermi la cancellazione di %(object_name)s '%(escaped_object)s' ? Saranno rimossi tutte le loro voci correlate:"
 
 #: templates/admin/delete_confirmation.html:41
 #: templates/admin/delete_selected_confirmation.html:46
@@ -64,21 +64,21 @@ msgid ""
 "Deleting the selected %(objects_name)s would result in deleting related "
 "objects, but your account doesn't have permission to delete the following "
 "types of objects:"
-msgstr "La cancellazione dei %(objects_name)s selezionati causerà la cancellazione delle voci correlate, ma il tuo account non ha i permessi per cancellare i seguenti tipi di oggetto:"
+msgstr "Per eliminare l'elemento %(objects_name)s selezionato è necessario rimuovere anche gli oggetti correlati, ma il tuo account non dispone dell'autorizzazione a eliminare i seguenti tipi di oggetti:"
 
 #: templates/admin/delete_selected_confirmation.html:27
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
-msgstr "La cancellazione dei %(objects_name)s selezionati richiede la cancellazione delle seguenti voci correlate protette:"
+msgstr "L'eliminazione dell'elemento %(objects_name)s selezionato richiederebbe la rimozione dei seguenti oggetti protetti correlati:"
 
 #: templates/admin/delete_selected_confirmation.html:35
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
 "following objects and their related items will be deleted:"
-msgstr "Sei sicuro di voler cancellare i %(objects_name)s selezionati? Tutti i seguenti oggetti e le loro voci correlate verranno cancellati:"
+msgstr "Confermi la cancellazione dell'elemento %(objects_name)s selezionato? Saranno rimossi tutti i seguenti oggetti e le loro voci correlate:"
 
 #: templates/admin/inc/branding.html:6 templates/admin/inc/branding.html:9
 msgid "Django Administration"
