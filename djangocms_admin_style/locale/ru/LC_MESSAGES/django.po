@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Mikhail Kolesnik <mike@openbunker.org>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: djangocms-admin-style\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-01 14:52-0500\n"
+"PO-Revision-Date: 2015-12-01 20:37+0000\n"
+"Last-Translator: Mikhail Kolesnik <mike@openbunker.org>\n"
+"Language-Team: Russian (http://www.transifex.com/divio/djangocms-admin-style/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: templates/admin/delete_confirmation.html:9
+#: templates/admin/delete_selected_confirmation.html:9
+msgid "Home"
+msgstr "Домой"
+
+#: templates/admin/delete_confirmation.html:13
+msgid "Delete"
+msgstr "Удалить"
+
+#: templates/admin/delete_confirmation.html:20
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr "Удаление %(object_name)s '%(escaped_object)s' приведет к удалению связанных объектов, но ваша учетная запись не имеет прав для удаления следующих типов объектов:"
+
+#: templates/admin/delete_confirmation.html:28
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the"
+" following protected related objects:"
+msgstr "Удаление %(object_name)s '%(escaped_object)s' потребует удаления следующих связанных защищенных объектов:"
+
+#: templates/admin/delete_confirmation.html:36
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr "Вы уверены, что хотите удалить %(object_name)s «%(escaped_object)s»? Все перечисленные связанные объекты будут удалены:"
+
+#: templates/admin/delete_confirmation.html:41
+#: templates/admin/delete_selected_confirmation.html:46
+msgid "Yes, I'm sure"
+msgstr "Да, я уверен"
+
+#: templates/admin/delete_selected_confirmation.html:12
+msgid "Delete multiple objects"
+msgstr "Удалить несколько объектов"
+
+#: templates/admin/delete_selected_confirmation.html:19
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr "Удаление выбранных %(objects_name)s приведёт к удалению связанных объектов, но у вас нет прав на удаление следующих типов объектов:"
+
+#: templates/admin/delete_selected_confirmation.html:27
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr "Удаление выбранных %(objects_name)s потребует удаления следующих защищённых связанных объектов:"
+
+#: templates/admin/delete_selected_confirmation.html:35
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr "Вы уверены, что хотите удалить выбранные %(objects_name)s? Все перечисленные и связанные с ними объекты будут удалены:"
+
+#: templates/admin/inc/branding.html:6 templates/admin/inc/branding.html:9
+msgid "Django Administration"
+msgstr "Администрирование Django"
+
+#: templates/admin/inc/branding.html:13
+msgid "Change password"
+msgstr "Сменить пароль"
+
+#: templates/admin/inc/branding.html:19
+msgid "Log out"
+msgstr "Выйти"
+
+#: templates/admin/inc/branding.html:27
+msgid "Open"
+msgstr "Открыть"
+
+#: templates/admin/inc/branding.html:27
+msgid "my site"
+msgstr "мой сайт"
+
+#: templates/admin/inc/title.html:2
+msgid "Django site admin"
+msgstr "Административный сайт Django"

@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Mikhail Kolesnik <mike@openbunker.org>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: djangocms-admin-style\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-01 14:52-0500\n"
+"PO-Revision-Date: 2015-12-01 20:36+0000\n"
+"Last-Translator: Mikhail Kolesnik <mike@openbunker.org>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/divio/djangocms-admin-style/language/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: templates/admin/delete_confirmation.html:9
+#: templates/admin/delete_selected_confirmation.html:9
+msgid "Home"
+msgstr "До"
+
+#: templates/admin/delete_confirmation.html:13
+msgid "Delete"
+msgstr "Видалити"
+
+#: templates/admin/delete_confirmation.html:20
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr "Видалення %(object_name)s '%(escaped_object)s' призведе до видалення пов'язаних об'єктів, але ваш реєстраційний запис не має дозволу видаляти наступні типи об'єктів:"
+
+#: templates/admin/delete_confirmation.html:28
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the"
+" following protected related objects:"
+msgstr ""
+
+#: templates/admin/delete_confirmation.html:36
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+
+#: templates/admin/delete_confirmation.html:41
+#: templates/admin/delete_selected_confirmation.html:46
+msgid "Yes, I'm sure"
+msgstr ""
+
+#: templates/admin/delete_selected_confirmation.html:12
+msgid "Delete multiple objects"
+msgstr ""
+
+#: templates/admin/delete_selected_confirmation.html:19
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: templates/admin/delete_selected_confirmation.html:27
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+
+#: templates/admin/delete_selected_confirmation.html:35
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+
+#: templates/admin/inc/branding.html:6 templates/admin/inc/branding.html:9
+msgid "Django Administration"
+msgstr ""
+
+#: templates/admin/inc/branding.html:13
+msgid "Change password"
+msgstr ""
+
+#: templates/admin/inc/branding.html:19
+msgid "Log out"
+msgstr ""
+
+#: templates/admin/inc/branding.html:27
+msgid "Open"
+msgstr ""
+
+#: templates/admin/inc/branding.html:27
+msgid "my site"
+msgstr ""
+
+#: templates/admin/inc/title.html:2
+msgid "Django site admin"
+msgstr ""
