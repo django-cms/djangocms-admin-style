@@ -9,6 +9,7 @@ CHANGELOG
 * Fix restore cancel link height
 * Fix image upload clearer image size
 * Adds max height on filtered lists and filters to make it more usable for very long lists
+* Adds translations
 
 1.0.6 (2015-11-19)
 ------------------
