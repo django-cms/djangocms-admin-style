@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.0.7 (Unreleased)
+1.0.7 (2015-12-03)
 ------------------
 
 * Fix login password field
