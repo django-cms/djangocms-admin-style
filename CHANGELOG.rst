@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.0.8 (Unreleased)
+------------------
+
+* Fix file upload field in file plugin
+
 1.0.7 (2015-12-03)
 ------------------
 
