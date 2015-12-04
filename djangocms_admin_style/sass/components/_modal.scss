@@ -238,6 +238,14 @@
     }
 }
 
+// make sure that upload file field has correct height and full width #267
+.cms-admin-modal.model-file {
+    form input[type=file] {
+        width: 100% !important;
+        padding: 8px !important;
+    }
+}
+
 .cms-admin-modal {
     #header,
     .breadcrumbs {
