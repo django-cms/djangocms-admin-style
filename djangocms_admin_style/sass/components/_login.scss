@@ -67,6 +67,7 @@ body.login {
                         width: 100% !important;
                         padding: 10px;
                     }
+                    #id_username,
                     #id_password {
                         // resets password field background color on login screen #175, #151
                         background-color: $white;
