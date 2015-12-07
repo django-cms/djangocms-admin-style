@@ -5,6 +5,7 @@ CHANGELOG
 ------------------
 
 * Fix file upload field in file plugin
+* Resets input field background color for dark system
 
 1.0.7 (2015-12-03)
 ------------------
