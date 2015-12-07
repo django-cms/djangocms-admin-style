@@ -142,6 +142,9 @@ form {
             text-align: center;
             padding: 9px !important;
             margin: 0 0 0 10px !important;
+            //make sure that button has correct size #271
+            width: 36px;
+            height: 36px;
             &:before {
                 margin: 0 !important;
             }
@@ -165,6 +168,8 @@ form {
         width: 100% !important;
         max-width: none !important;
         appearance: none;
+        // resets background color for input fields for dark system #271
+        background-color: $white;
     }
     select::-ms-expand {
         display: none;
