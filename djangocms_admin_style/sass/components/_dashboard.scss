@@ -2,8 +2,6 @@
 // DASHBOARD
 
 body.dashboard {
-    // resets background color only on dashboard
-    background-color: $white;
     h1 {
         // make sure that title is aligned with categories
         margin-left: 10px;
@@ -20,6 +18,9 @@ body.dashboard {
         padding-bottom: 20px;
         .module {
             margin-bottom: 45px;
+            padding-top: 12px;
+            box-shadow: $base-box-shadow;
+            background: $white !important;
         }
         table {
             // reset box shadow which is added on every table
@@ -35,7 +36,7 @@ body.dashboard {
             a {
                 font-size: $font-size-normal;
                 line-height: $font-size-normal;
-                color: $gray-darkest;
+                color: $color-primary;
                 font-weight: normal;
                 padding: 0 10px 0 0;
                 &.addlink {
