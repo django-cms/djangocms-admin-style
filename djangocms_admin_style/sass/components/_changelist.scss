@@ -62,11 +62,6 @@
             table {
                 border: 0;
             }
-            // adds max height on filtered lists to make it more usable for very long lists #263
-            .results {
-                overflow-y: auto;
-                max-height: 500px;
-            }
             // adds max height on filter to make it more usable for very long filters #263
             #changelist-filter {
                 overflow-y: auto;

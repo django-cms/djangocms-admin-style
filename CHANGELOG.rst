@@ -7,7 +7,6 @@ CHANGELOG
 * Fix file upload field in file plugin
 * Resets input field background color for dark system
 * Fix filer clear button size
-* Makes sure that vertical scrollbar on html appears only if it is needed
 
 1.0.7 (2015-12-03)
 ------------------
