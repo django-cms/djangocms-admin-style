@@ -1,6 +1,11 @@
 //##############################################################################
 // CONTENT
 
+html {
+    // makes sure that content-related has a height of 100%
+    position: relative;
+}
+
 // containers
 body {
     #container {
