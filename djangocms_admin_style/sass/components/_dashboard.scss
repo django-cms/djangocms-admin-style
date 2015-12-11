@@ -2,6 +2,11 @@
 // DASHBOARD
 
 body.dashboard {
+    background-color: $white;
+    h1 {
+        // make sure that title is aligned with categories
+        margin-left: 10px;
+    }
     .breadcrumbs {
         padding: $breadcrumb-padding 10px !important;
     }
@@ -14,13 +19,14 @@ body.dashboard {
         padding-bottom: 20px;
         .module {
             margin-bottom: 45px;
-            padding-top: 12px;
-            box-shadow: $base-box-shadow;
-            background: $white !important;
         }
         table {
             // reset box shadow which is added on every table
             box-shadow: none;
+            // make sure caption has no blue hover
+            caption a:hover {
+                color: $black !important;
+            }
         }
         table th,
         table td {
@@ -35,11 +41,14 @@ body.dashboard {
                 color: $color-primary;
                 font-weight: normal;
                 padding: 0 10px 0 0;
+                &:hover {
+                    color: $color-primary-dark !important;
+                }
                 &.addlink {
                     color: $color-success;
-                }
-                &.changelink {
-                    color: $color-primary;
+                    &:hover {
+                        color: darken($color-success-dark, 10%) !important;
+                    }
                 }
             }
         }
