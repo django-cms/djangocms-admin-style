@@ -37,10 +37,6 @@ body {
     padding: 5px 0 5px 0 !important;
     border: none;
     box-shadow: none !important;
-    caption {
-        margin-bottom: 5px;
-        margin-left: 5px;
-    }
 }
 div.breadcrumbs {
     padding-left: 5px;
@@ -105,6 +101,10 @@ body.login {
             min-width: 0;
             max-width: none;
             .module {
+                // fixes mobile spacing behaviour to keep aligned with desktop
+                // #276
+                margin-top: -5px;
+                margin-bottom: 20px;
                 table td {
                     padding-left: 0;
                 }
