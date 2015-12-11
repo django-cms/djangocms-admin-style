@@ -7,6 +7,7 @@ CHANGELOG
 * Fix file upload field in file plugin
 * Resets input field background color for dark system
 * Fix filer clear button size
+* Adapt dashboard link color for better visibility
 
 1.0.7 (2015-12-03)
 ------------------
