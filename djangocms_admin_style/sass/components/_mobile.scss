@@ -101,6 +101,8 @@ body.login {
             min-width: 0;
             max-width: none;
             .module {
+                // fixes mobile spacing behaviour to keep aligned with desktop
+                // #276
                 margin-top: -5px;
                 margin-bottom: 20px;
                 table td {
