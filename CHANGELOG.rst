@@ -9,9 +9,9 @@ CHANGELOG
 * Fix filer clear button size
 * Adapt dashboard link color for better visibility
 * Fix sortedm2m label and link alignment on firefox
-# Fix sortedm2m list width on mobile
-# Align sortedm2m label if it breaks to new line
-# Remove sortedm2m vertical scrollbar and show full list content
+* Fix sortedm2m list width on mobile
+* Align sortedm2m label if it breaks to new line
+* Remove sortedm2m vertical scrollbar and show full list content
 
 1.0.7 (2015-12-03)
 ------------------
