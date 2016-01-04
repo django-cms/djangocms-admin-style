@@ -11,6 +11,7 @@ CHANGELOG
 * Fix sortedm2m label and link alignment on firefox
 # Fix sortedm2m list width on mobile
 # Align sortedm2m label if it breaks to new line
+# Remove sortedm2m vertical scrollbar and show full list content
 
 1.0.7 (2015-12-03)
 ------------------

@@ -294,7 +294,9 @@ ul.messagelist + #content {
         width: 100%;
     }
     .sortedm2m {
-        min-height: inherit !important;
+        min-height: initial !important;
+        // shows full list content without vertical scrollbar #284
+        max-height: initial !important;
         padding: 10px 0 !important;
         border: 0 !important;
         li {
