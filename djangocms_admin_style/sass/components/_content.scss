@@ -288,6 +288,11 @@ ul.messagelist + #content {
 // filter horizontal m2m
 .sortedm2m-container {
     width: 100% !important;
+    // make sure that list items don't have a fixed width to not break mobile view #222
+    ul.sortedm2m,
+    ul.sortedm2m li {
+        width: 100%;
+    }
     .sortedm2m {
         min-height: inherit !important;
         padding: 10px 0 !important;
