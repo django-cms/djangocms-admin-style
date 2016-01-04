@@ -8,6 +8,7 @@ CHANGELOG
 * Resets input field background color for dark system
 * Fix filer clear button size
 * Adapt dashboard link color for better visibility
+* Fix sortedm2m label and link alignment on firefox
 
 1.0.7 (2015-12-03)
 ------------------
