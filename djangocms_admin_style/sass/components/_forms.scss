@@ -216,6 +216,7 @@ form {
     }
     .sortedm2m a {
         vertical-align: middle;
+        // removed padding top makes sure that label is correct aligned with link #280
     }
     small {
         color: $gray;
