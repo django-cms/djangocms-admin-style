@@ -299,7 +299,8 @@ ul.messagelist + #content {
         border: 0 !important;
         li {
             padding: 0 !important;
-            border: 0 !important
+            border: 0 !important;
+            white-space: initial;
         }
     }
     input[type="checkbox"],
