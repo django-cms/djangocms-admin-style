@@ -302,6 +302,18 @@ ul.messagelist + #content {
             border: 0 !important;
             white-space: initial;
         }
+        // make sure that if label breaks to new line that it is aligned #283
+        label {
+            position: relative;
+            display: block;
+            line-height: 20px;
+            padding-left: 20px !important;
+            input {
+                position: absolute;
+                top: 4px;
+                left: 0;
+            }
+        }
     }
     input[type="checkbox"],
     label {
