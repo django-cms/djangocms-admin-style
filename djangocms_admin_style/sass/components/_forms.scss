@@ -767,6 +767,33 @@ form select[multiple] {
     // required in admin/aldryn_newsblog/article/add to ensure outline is not cut off #249
     overflow: visible;
     width: 100%;
+    // resets list styles that list looks same as sortedm2m #286
+    ul {
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0 !important;
+        li {
+            border: 0 !important;
+            padding: 0 !important;
+            label {
+                color: $gray-darkest !important;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: none;
+                input {
+                    vertical-align: middle !important;
+                }
+            }
+        }
+        // makes sure that inline list has space between elements and no border #286
+        &.inline {
+            @include micro-clearfix;
+            li {
+                margin-right: 10px;
+                border: 0;
+            }
+        }
+    }
 }
 .related-widget-wrapper-link {
     margin-right: 5px;
