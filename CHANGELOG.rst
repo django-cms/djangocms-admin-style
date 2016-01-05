@@ -12,6 +12,7 @@ CHANGELOG
 * Fix sortedm2m list width on mobile
 * Align sortedm2m label if it breaks to new line
 * Remove sortedm2m vertical scrollbar and show full list content
+* Fix changelist if no admin actions are visible
 
 1.0.7 (2015-12-03)
 ------------------
