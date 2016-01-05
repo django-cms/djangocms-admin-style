@@ -64,6 +64,10 @@
                 if ($.fn.touchSupport && $('.drag-handler').length) {
                     $(window).touchSupport();
                 }
+                // floats toolbar if actions are disabled #275, #285
+                if ($('#changelist-form').find('.actions').length) {
+                    $('#toolbar').addClass('actions-visible');
+                }
             });
         })(window.jQuery || window.django.jQuery);
     }

@@ -126,11 +126,10 @@
         }
         #toolbar {
             overflow: hidden;
-            float: left;
             height: auto;
             min-height: 30px;
             padding-left: 0;
-            margin: 0 30px 5px 0 !important;
+            margin: 0 30px 10px 0 !important;
             border: 0 !important;
             background: none !important;
             form label {
@@ -147,6 +146,10 @@
                 padding: 9px 5px !important;
                 vertical-align: middle;
                 box-sizing: border-box;
+            }
+            &.actions-visible {
+                float: left;
+                margin-bottom: 5px !important;
             }
         }
         #changelist-filter {
