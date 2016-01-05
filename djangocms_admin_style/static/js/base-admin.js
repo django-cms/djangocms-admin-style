@@ -64,7 +64,7 @@
                 if ($.fn.touchSupport && $('.drag-handler').length) {
                     $(window).touchSupport();
                 }
-                // floats toolbar if actions are disabled #275, #285
+                // floats toolbar if actions are visible #275, #285
                 if ($('#changelist-form').find('.actions').length) {
                     $('#toolbar').addClass('actions-visible');
                 }

@@ -147,6 +147,7 @@
                 vertical-align: middle;
                 box-sizing: border-box;
             }
+            //make sure that if admin cations are visible that toolbar floats to position next to actions #275, #285
             &.actions-visible {
                 float: left;
                 margin-bottom: 5px !important;
