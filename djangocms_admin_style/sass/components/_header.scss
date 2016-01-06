@@ -69,6 +69,9 @@
             .menu-item-open {
                 color: $white!important;
                 background: $color-primary;
+                &:hover {
+                    color: $white !important;
+                }
             }
             ul {
                 position: absolute;
@@ -98,6 +101,9 @@
                 height: $toolbar-height;
                 padding: 0 10px;
                 cursor: default;
+                &:hover {
+                    color: $black !important;
+                }
             }
             ul {
                 display: none;
