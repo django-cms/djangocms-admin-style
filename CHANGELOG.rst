@@ -6,6 +6,7 @@ CHANGELOG
 
 * Fix that link doesn't break to newline after sortedm2m label
 * Fix changelist paginator font size
+* Remove admin menu link hover
 
 1.0.8 (2016-01-05)
 ------------------
