@@ -43,7 +43,7 @@
         box-shadow: none !important;
     }
     .paginator {
-        font-size: $font-size-small;
+        font-size: $font-size-small !important;
         color: $gray-light !important;
         min-height: 20px;
         padding: 5px $paginator-padding !important;
