@@ -43,7 +43,8 @@
         box-shadow: none !important;
     }
     .paginator {
-        font-size: $font-size-small;
+        // important is needed to make sure that paginator has correct font size #288
+        font-size: $font-size-small !important;
         color: $gray-light !important;
         min-height: 20px;
         padding: 5px $paginator-padding !important;
