@@ -10,13 +10,21 @@
     #container .breadcrumbs + #content {
        margin-left: 3% !important;
     }
-    .breadcrumbs {
+    #container .breadcrumbs {
+        // makes sure that breadcrumbs scrolling with content #667
+        position: relative;
+        // makes sure that breadcrumb has the correct width to avoid horizontal scrollbar #667
+        width: 94%;
         // removes padding left to align breadcrumbs #242
         padding-left: 0 !important;
     }
     #content {
-        // updates content margin top because of breadcrumbs #242
-        margin-top: 117px !important;
+        // updates content margin top because of breadcrumbs #667
+        margin-top: 20px !important;
+        // reset position to absolute when breadcrumbs are in #content #667
+        .breadcrumbs {
+            position: absolute;
+        }
     }
     ul.messagelist {
         margin-top: 46px !important;
