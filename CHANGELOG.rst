@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+1.0.9 (Unreleased)
+------------------
+
+* Fix that link doesn't break to newline after sortedm2m label
+
 1.0.8 (2016-01-05)
 ------------------
 
