@@ -307,7 +307,8 @@ ul.messagelist + #content {
         // make sure that if label breaks to new line that it is aligned #283
         label {
             position: relative;
-            display: block;
+            // make sure that link after label doesn't break to new line #287
+            display: inline-block;
             line-height: 20px;
             padding-left: 20px !important;
             input {
