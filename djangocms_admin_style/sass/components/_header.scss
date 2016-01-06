@@ -69,6 +69,10 @@
             .menu-item-open {
                 color: $white!important;
                 background: $color-primary;
+                // removes hover color #289
+                &:hover {
+                    color: $white !important;
+                }
             }
             ul {
                 position: absolute;
@@ -98,6 +102,10 @@
                 height: $toolbar-height;
                 padding: 0 10px;
                 cursor: default;
+                // removes hover color #289
+                &:hover {
+                    color: $black !important;
+                }
             }
             ul {
                 display: none;
