@@ -8,6 +8,7 @@ CHANGELOG
 * Fix changelist paginator font size
 * Remove admin menu link hover
 * Fix related widget wrapper link size
+* Fix checkbox-row if first child
 
 1.0.8 (2016-01-05)
 ------------------

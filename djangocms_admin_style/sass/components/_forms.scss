@@ -371,6 +371,11 @@ form {
         padding-top: 15px;
         margin-bottom: -10px;
         border-top: solid 1px $gray-lighter;
+        // remove border top and padding on first child #291
+        &:first-child {
+            padding-top: 0;
+            border-top: 0;
+        }
         label {
             color: $gray-darkest !important;
             font-size: $font-size-large;
