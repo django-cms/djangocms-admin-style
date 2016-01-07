@@ -371,6 +371,11 @@ form {
         padding-top: 15px;
         margin-bottom: -10px;
         border-top: solid 1px $gray-lighter;
+        // remove border top and padding on first child #291
+        &:first-child {
+            padding-top: 0;
+            border-top: 0;
+        }
         label {
             color: $gray-darkest !important;
             font-size: $font-size-large;
@@ -796,5 +801,8 @@ form select[multiple] {
     }
 }
 .related-widget-wrapper-link {
+    // make sure that add another button has correct width and height on carousel slide plugin #291
+    width: 36px;
+    height: 36px;
     margin-right: 5px;
 }

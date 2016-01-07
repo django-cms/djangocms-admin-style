@@ -187,6 +187,8 @@ a[id*="clocklink"] {
     height: 15px;
     padding: 10px !important;
     margin: 10px 0;
+    // make sure that button has correct width and height on advanced setting #291
+    box-sizing: border-box;
     &:before {
         color: $gray-darker;
         vertical-align: top;
