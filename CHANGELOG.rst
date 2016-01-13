@@ -10,6 +10,7 @@ CHANGELOG
 * Fix related widget wrapper link size
 * Fix checkbox-row if first child
 * Remove input clear on every input for IE
+* Fix add-another button size on advanced settings
 
 1.0.8 (2016-01-05)
 ------------------
