@@ -9,6 +9,7 @@ CHANGELOG
 * Remove admin menu link hover
 * Fix related widget wrapper link size
 * Fix checkbox-row if first child
+* Remove input clear on every input for IE
 
 1.0.8 (2016-01-05)
 ------------------
