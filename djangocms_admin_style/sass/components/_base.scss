@@ -35,6 +35,11 @@ textarea {
     color: $gray-darkest;
 }
 
+// disable clear X on IE #292
+input::-ms-clear {
+    display: none;
+}
+
 h1 {
     color: $gray-darkest;
     font-size: $font-size-large;
