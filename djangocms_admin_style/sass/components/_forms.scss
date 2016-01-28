@@ -524,6 +524,8 @@ a.button {
         padding-left: 0;
         input {
             display: block;
+            // django 1.9
+            margin-left: 0px !important;
         }
     }
 }
