@@ -129,7 +129,7 @@
             overflow: hidden;
             height: auto;
             min-height: 30px;
-            padding-left: 0;
+            padding: 3px 3px 3px 0;
             margin: 0 30px 10px 0 !important;
             border: 0 !important;
             background: none !important;
@@ -139,12 +139,16 @@
                 min-width: auto;
                 padding: 0;
             }
+            @at-root #toolbar #changelist-search form #searchbar,
             form #searchbar {
                 width: auto !important;
+                // django 1.9
+                height: 34px !important;
                 // makes sure that search doesn't jumps to new line #155
                 max-width: 257px !important;
                 font-size: $font-size-small;
                 padding: 9px 5px !important;
+                border-radius: 3px !important;
                 vertical-align: middle;
                 box-sizing: border-box;
             }
@@ -315,12 +319,14 @@
             vertical-align: middle;
             text-indent: -9999px;
             padding: 10px 16px !important;
-            margin-left: 10px;
+            margin-left: 10px !important;
             background-image: url('../img/icon_search_white@2x.png') !important;
             background-repeat: no-repeat !important;
             background-position: center !important;
             background-size: 20px !important;
             box-sizing: border-box;
+            // django 1.9
+            box-shadow: none !important;
             &:active {
                 background-image: url('../img/icon_search_white@2x.png') !important;
             }

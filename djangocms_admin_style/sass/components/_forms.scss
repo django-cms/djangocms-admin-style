@@ -164,6 +164,7 @@ form {
         font-size: $font-size-small;
         width: 100% !important;
         max-width: none !important;
+        border-radius: 3px !important;
         appearance: none;
         // resets background color for input fields for dark system #271
         background-color: $white;
@@ -185,7 +186,7 @@ form {
         p.help {
             font-size: $font-size-small !important;
             color: $gray;
-            margin-top: 10px;
+            margin-top: 10px !important;
             padding: 0 !important;
             margin-left: 0;
             clear: both;
@@ -523,6 +524,8 @@ a.button {
         padding-left: 0;
         input {
             display: block;
+            // django 1.9
+            margin-left: 0px !important;
         }
     }
 }

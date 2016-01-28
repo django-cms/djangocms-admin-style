@@ -111,13 +111,13 @@ a.selector-chooseall,
 }
 a[id*="calendarlink"] {
     @include icon(calendar);
-    img {
+    img, .date-icon {
         display: none;
     }
 }
 a[id*="clocklink"] {
     @include icon(clock);
-    img {
+    img, .clock-icon {
         display: none;
     }
 }
