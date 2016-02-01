@@ -446,7 +446,7 @@ ul.messagelist + #content {
     }
     ul.selector-chooser {
         width: 5% !important;
-        margin: 10em 5px 0 5px;
+        margin: 10em 5px 0 5px !important;
         border: 0;
         background-color: transparent;
         // hides background image because of icon font replacement #216
