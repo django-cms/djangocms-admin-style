@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.1.0 (Unreleased)
+1.1.0 (2016-02-01)
 ------------------
 
 * Fix django 1.9 style changes
