@@ -373,3 +373,9 @@
         }
     }
 }
+
+// Django 1.9 fix for filer subject location view
+.app-filer .module.collapsed h2 {
+    padding-left: $padding-base * 2;
+}
+
