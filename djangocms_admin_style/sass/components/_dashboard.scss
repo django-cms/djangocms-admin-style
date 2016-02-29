@@ -5,7 +5,7 @@ body.dashboard {
     background-color: $white;
     h1 {
         // make sure that title is aligned with categories
-        margin-left: 10px;
+        margin-left: 10px !important;
     }
     .breadcrumbs {
         padding: $breadcrumb-padding 10px !important;
