@@ -714,6 +714,7 @@ span.datetimeshortcuts,
         padding: 10px !important;
         margin-right: 10px;
         margin-top: 10px !important;
+        box-sizing: content-box;
         &:before {
             color: $color-primary;
             margin: -2px 0 0;
