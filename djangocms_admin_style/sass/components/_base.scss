@@ -4,7 +4,7 @@
 body {
     background-color: $gray-lightest;
     h1 {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
     .module {
         h2 {
@@ -42,9 +42,9 @@ input::-ms-clear {
 
 h1 {
     color: $gray-darkest;
-    font-size: $font-size-large;
+    font-size: $font-size-large !important;
     font-weight: bold;
-    margin: 0 10px 25px;
+    margin: 0 10px 25px !important;
 }
 h2 {
     color: $gray-darkest;
