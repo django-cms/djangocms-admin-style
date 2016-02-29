@@ -6,6 +6,7 @@ CHANGELOG
 
 * Fix django 1.9 style changes
 * Fix selector chooser on mobile view because of django 1.9 style changes
+* Fix date and calendar shortcuts because of 1.9 style changes
 
 1.0.9 (2016-01-28)
 ------------------
