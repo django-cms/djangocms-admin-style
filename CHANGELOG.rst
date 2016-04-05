@@ -14,6 +14,7 @@ CHANGELOG
 * Fix date and calendar shortcuts because of 1.9 style changes
 * Fix h1 styles because of 1.9 style changes
 * Resets horizontal form fields to groups
+* Removes unnecessary icon files from filer and moves js into static/djangocms_admin_style folder
 
 1.0.9 (2016-01-28)
 ------------------
