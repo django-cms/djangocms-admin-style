@@ -5,6 +5,7 @@ CHANGELOG
 ------------------
 
 * Adds cancel link to delete confirmation page
+* Adds documentation link to dropdown
 
 1.1.0 (2016-02-01)
 ------------------
