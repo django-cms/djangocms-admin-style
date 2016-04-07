@@ -6,6 +6,7 @@ CHANGELOG
 
 * Adds cancel link to delete confirmation page
 * Adds documentation link to dropdown
+* Fix the bug that ckeditor toolbar was partially hidden under the django cms main toolbar
 
 1.1.0 (2016-02-01)
 ------------------
