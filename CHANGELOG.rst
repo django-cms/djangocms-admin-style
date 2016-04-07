@@ -7,6 +7,7 @@ CHANGELOG
 * Adds cancel link to delete confirmation page
 * Adds documentation link to dropdown
 * Fix hidden ckeditor toolbar under the django cms main toolbar
+* Floats related widget wrapper links next to select field
 
 1.1.0 (2016-02-01)
 ------------------
