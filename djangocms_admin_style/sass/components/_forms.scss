@@ -768,6 +768,14 @@ form select[multiple] {
     // required in admin/aldryn_newsblog/article/add to ensure outline is not cut off #249
     overflow: visible;
     width: 100%;
+    select {
+        float: left;
+        width: calc(100% - 96px) !important;
+        margin-right: 10px;
+    }
+    a {
+        margin-top: 0;
+    }
     // resets list styles that list looks same as sortedm2m #286
     ul {
         padding: 0 !important;
