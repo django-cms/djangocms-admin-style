@@ -8,6 +8,15 @@
     <li>
         <a class="menu-item" href="">{{ site_header|default:_('Django Administration') }}</a>
         <ul class="submenu">
+            {% if user.is_active and user.is_staff %}
+                <li>
+                    {% url 'django-admindocs-docroot' as docsroot %}
+                    {% if docsroot %}
+                        <a href="{{ docsroot }}">{% trans 'Documentation' %}</a>
+                    {% endif %}
+                </li>
+                <li class="toolbar-item-navigation-break">-----</li>
+            {% endif %}
             {% if user.has_usable_password %}
                 <li>
                     <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a>
