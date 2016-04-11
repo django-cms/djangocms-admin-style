@@ -8,6 +8,7 @@ CHANGELOG
 * Adds documentation link to dropdown
 * Fix hidden ckeditor toolbar under the django cms main toolbar
 * Floats related widget wrapper links next to select field
+* Adds djangocms-admin-style class to body
 
 1.1.0 (2016-02-01)
 ------------------

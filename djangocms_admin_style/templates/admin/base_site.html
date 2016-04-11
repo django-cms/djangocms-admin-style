@@ -12,6 +12,8 @@ if (window.self!==window.top) { document.write('<link rel="stylesheet" type="tex
 
 {% block title %}{% include 'admin/inc/title.html' %}{% endblock %}
 
+{% block bodyclass %}{{ block.super }} djangocms-admin-style{% endblock %}
+
 {% block branding %}{% include 'admin/inc/branding.html' %}{% endblock %}
 
 {% block userlinks %}{% include 'admin/inc/userlinks.html' %}{{ block.super }}{% endblock %}
