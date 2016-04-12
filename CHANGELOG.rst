@@ -9,6 +9,7 @@ CHANGELOG
 * Fix hidden ckeditor toolbar under the django cms main toolbar
 * Floats related widget wrapper links next to select field
 * Fix cropped input text
+* Adds djangocms-admin-style class to body
 
 1.1.0 (2016-02-01)
 ------------------
