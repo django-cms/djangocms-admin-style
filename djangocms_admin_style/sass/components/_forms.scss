@@ -163,6 +163,7 @@ form {
     }
     input.vDateField,
     input.vTimeField {
+        // caluclates width pf input field and removes date and calendar pickers to make sure that they floats next to input #319
         width: calc(100% - 112px) !important;
     }
     select::-ms-expand {
