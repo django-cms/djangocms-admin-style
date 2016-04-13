@@ -274,8 +274,8 @@ form {
     textarea {
         color: $gray-darkest;
         font-size: $font-size-small;
-        line-height: $font-size-small;
-        padding: 10px !important;
+        line-height: inherit;
+        padding: 7px !important;
         border: 1px solid $gray-lighter !important;
         box-sizing: border-box;
         border-radius: $border-radius-base;
