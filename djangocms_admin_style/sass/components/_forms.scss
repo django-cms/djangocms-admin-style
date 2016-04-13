@@ -275,7 +275,7 @@ form {
     textarea {
         color: $gray-darkest;
         font-size: $font-size-small;
-        line-height: inherit;
+        line-height: 22px;
         padding: 6px !important;
         border: 1px solid $gray-lighter !important;
         box-sizing: border-box;
@@ -519,11 +519,6 @@ a.button {
         line-height: 36px;
         margin-left: 0;
         padding-left: 0;
-        input {
-            display: block;
-            // django 1.9
-            margin-left: 0px !important;
-        }
     }
 }
 
