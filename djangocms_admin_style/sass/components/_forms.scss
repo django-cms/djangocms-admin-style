@@ -161,6 +161,11 @@ form {
         // resets background color for input fields for dark system #271
         background-color: $white;
     }
+    input.vDateField,
+    input.vTimeField {
+        // caluclates width pf input field and removes date and calendar pickers to make sure that they floats next to input #319
+        width: calc(100% - 112px) !important;
+    }
     select::-ms-expand {
         display: none;
     }
@@ -271,7 +276,7 @@ form {
         color: $gray-darkest;
         font-size: $font-size-small;
         line-height: inherit;
-        padding: 7px !important;
+        padding: 6px !important;
         border: 1px solid $gray-lighter !important;
         box-sizing: border-box;
         border-radius: $border-radius-base;
@@ -697,6 +702,7 @@ div.clockbox {
 
 span.datetimeshortcuts,
 .calendar-shortcuts {
+    display: inline-block;
     font-size: 0 !important;
     padding: 4px 0 !important;
     a {
@@ -704,13 +710,18 @@ span.datetimeshortcuts,
         display: inline-block;
         height: 12px;
         padding: 10px !important;
-        margin-right: 10px;
-        margin-top: 10px !important;
-        margin-bottom: 10px;
+        margin-top: 0 !important;
+        margin-bottom: 0;
         box-sizing: content-box;
         &:before {
             color: $color-primary;
             margin: -2px 0 0;
+        }
+        &:first-child {
+            text-align: center;
+            width: 40px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
     }
 }

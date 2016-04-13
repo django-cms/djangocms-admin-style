@@ -10,6 +10,7 @@ CHANGELOG
 * Floats related widget wrapper links next to select field
 * Fix cropped input text
 * Adds djangocms-admin-style class to body
+* Floats calendar and date pickers next to input field
 
 1.1.0 (2016-02-01)
 ------------------
