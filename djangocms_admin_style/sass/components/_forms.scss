@@ -9,7 +9,7 @@ form {
     fieldset {
         width: 80%;
     }
-    // only uses this styles if form-row is not set on a table inrow because before and after breaks tables #247
+    // only uses this styles if form-row is not set on a table row because before and after breaks tables #247
     .form-row:not(tr) {
         // adds clearfix because overflow hidden truncates highlighted focus fields #242
         @include micro-clearfix;
