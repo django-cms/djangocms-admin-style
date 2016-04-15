@@ -11,7 +11,8 @@ CHANGELOG
 * Fix cropped input text
 * Adds djangocms-admin-style class to body
 * Floats calendar and date pickers next to input field
-* Floats calendar and date fileds in modal
+* Floats calendar and date fields in modal
+* Removes disabled action button border
 
 1.1.0 (2016-02-01)
 ------------------
