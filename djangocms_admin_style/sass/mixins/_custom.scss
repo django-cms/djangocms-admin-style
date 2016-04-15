@@ -79,6 +79,7 @@
             color: rgba($color, 0.8) important(1);
             cursor: not-allowed;
             box-shadow: none important($important);
+            background-clip: padding-box;
             &:before {
                 color: rgba($color, 0.4) important(1);
             }
