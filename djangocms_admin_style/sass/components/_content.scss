@@ -255,14 +255,14 @@ ul.messagelist + #content {
         margin: 0 2px !important;
     }
 }
-.submit-row {
-    margin: 10px -25px 0 !important;
-    padding: 20px 25px 0 !important;
-    border: 0 !important;
-    border-top: 1px solid $gray-lighter !important;
-    border-radius: $border-radius-base !important;
-    background: none !important;
-    box-shadow: none !important;
+.djangocms-admin-style .submit-row {
+    margin: 10px -25px 0;
+    padding: 20px 25px 0;
+    border: 0;
+    border-top: 1px solid $gray-lighter;
+    border-radius: $border-radius-base;
+    background: none;
+    box-shadow: none;
     .deletelink-box {
         margin: 0;
         .deletelink {
