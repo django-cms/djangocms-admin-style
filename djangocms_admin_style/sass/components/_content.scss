@@ -140,7 +140,7 @@ ul.messagelist + #content {
     padding-left: 0;
     background: none;
 }
-.inline-group {
+.djangocms-admin-style .inline-group {
     @include box();
     padding: 0;
     border: 0;
