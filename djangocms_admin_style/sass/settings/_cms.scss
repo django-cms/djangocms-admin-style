@@ -46,7 +46,6 @@ $padding-large: 20px;
 // the map is built from highest to lowest as it appears on screen
 $z-layers: (
     "debug":            99999999,
-    "header":           1000,
     "ckmaximized":      9999999,
     "modal": (
         "base":         9999999,
@@ -97,6 +96,7 @@ $z-layers: (
             "dropdown":    1002,
         ),
     ),
+    "header":           1005,
     // parent dependant, but should be higher than quicksearch, but
     // lower than dropdown
     "hovertooltip":     1001,
