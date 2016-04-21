@@ -781,11 +781,14 @@ form select[multiple] {
     // makes sure that related widget wrapper links are floated next to select field #315
     select {
         float: left;
-        width: calc(100% - 96px) !important;
+        width: calc(100% - 91px) !important;
         margin-right: 10px;
     }
     a {
         margin-top: 0;
+        &.change-related {
+            margin-right: 5px;
+        }
     }
     // resets list styles that list looks same as sortedm2m #286
     ul {
@@ -819,5 +822,4 @@ form select[multiple] {
     // make sure that add another button has correct width and height on carousel slide plugin #291
     width: 36px;
     height: 36px;
-    margin-right: 5px;
 }
