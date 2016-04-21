@@ -60,6 +60,8 @@
         (function ($) {
             // waits for the document.ready
             $(function () {
+                var toplinks = $('.toplinks');
+
                 // calls touch support function
                 if ($.fn.touchSupport && $('.drag-handler').length) {
                     $(window).touchSupport();
@@ -68,6 +70,10 @@
                 // floats toolbar if actions are visible #275, #285
                 if ($('#changelist-form').find('.actions').length) {
                     $('#toolbar').addClass('actions-visible');
+                }
+                // adds class to toplinks if list is empty to remove unnecessary space
+                if (toplinks.children().length === 0 && toplinks.parent().hasClass('xfull')) {
+                    toplinks.parent().addClass('hidden');
                 }
             });
         })(window.jQuery || window.django.jQuery);
