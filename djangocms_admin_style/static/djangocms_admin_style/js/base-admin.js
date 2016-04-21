@@ -72,10 +72,8 @@
                     $('#toolbar').addClass('actions-visible');
                 }
                 // adds class to toplinks list is empty to remove unnecessary space
-                if (toplinks.children().length === 0) {
-                    if (toplinks.parent().hasClass('xfull')) {
-                        toplinks.parent().addClass('hidden');
-                    }
+                if (toplinks.children().length === 0 && toplinks.parent().hasClass('xfull')) {
+                    toplinks.parent().addClass('hidden');
                 }
             });
         })(window.jQuery || window.django.jQuery);
