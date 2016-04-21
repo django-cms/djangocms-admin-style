@@ -525,7 +525,7 @@ a.button {
 // calendar
 div.calendar {
     table {
-        width: 230px !important;
+        max-width: 250px !important;
         caption {
             color: $gray !important;
             padding: 10px 30px;
@@ -612,10 +612,12 @@ div.calendarbox {
     .calendar-shortcuts {
         font-size: $font-size-small;
         line-height: $line-height-normal;
+        width: 100%;
         border-color: $gray-lighter !important;
         background: $white;
         a {
             font-size: $font-size-small !important;
+            width: auto;
             margin-right: 5px !important;
             margin-top: 0 !important;
             padding: 9px 10px !important;
