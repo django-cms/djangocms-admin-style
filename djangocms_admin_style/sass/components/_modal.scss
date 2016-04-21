@@ -215,6 +215,9 @@
                 }
             }
         }
+        .cancel-link {
+            display: none;
+        }
     }
     ul.messagelist + #content {
         margin-top: 90px !important;
