@@ -758,9 +758,12 @@ form select[multiple] {
 }
 
 // adds background color to password and type fields #175
-#id_password,
 .field-type p {
     padding: 10px !important;
+    margin: 15px 0;
+    background-color: $gray-lightest;
+}
+#id_password {
     margin: 15px 0;
     background-color: $gray-lightest;
 }
