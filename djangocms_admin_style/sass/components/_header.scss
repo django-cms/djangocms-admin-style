@@ -16,7 +16,7 @@
     background-color: $white;
     background-image: none;
     box-shadow: $toolbar-shadow;
-    z-index: 9999;
+    z-index: z(header);
     #branding {
         width: 100%;
         h1 {

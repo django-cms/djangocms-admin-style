@@ -743,5 +743,5 @@ a.addlink {
 
 // CKEditor max-size fix #310
 .cke_maximized {
-    top: 47px !important;
+    z-index: z(ckmaximized);
 }
