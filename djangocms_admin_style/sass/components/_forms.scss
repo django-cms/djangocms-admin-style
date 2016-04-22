@@ -340,8 +340,11 @@ form {
         }
     }
     .errors {
+        padding: 10px;
+        margin-bottom: 20px;
         border: 0;
-        background: none;
+        border-radius: $border-radius-base;
+        background-color: $color-danger-ultralight;
         input,
         select,
         textarea {
