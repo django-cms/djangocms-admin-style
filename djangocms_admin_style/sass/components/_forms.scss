@@ -352,8 +352,11 @@ form {
         padding: 0 2px 25px;
         border-bottom-color: $gray-lighter;
         &.errors {
+            padding: 10px;
+            margin-bottom: 20px;
             border: 0;
-            background: none;
+            border-radius: $border-radius-base;
+            background-color: $color-danger-ultralight;
         }
     }
     .form-row:last-child {

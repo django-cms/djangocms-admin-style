@@ -13,6 +13,7 @@ CHANGELOG
 * Floats calendar and date pickers next to input field
 * Floats calendar and date fields in modal
 * Removes disabled action button border
+* Adds highlighted area to error messages
 
 1.1.0 (2016-02-01)
 ------------------
