@@ -21,6 +21,8 @@ $gray-light:      lighten($gray, 20%); // #999
 $gray-darker:     darken($gray, 13%); // #454545
 $gray-darkest:    darken($gray, 20%); // #333
 
+$gray-super-light: #f7f7f7;
+
 $gradient-toolbar: to bottom, rgba($gray-lightest, 0.97) 0%, rgba(lighten($gray-lightest, 1%), 0.97) 50%, rgba($gray-lightest, 0.95) 100%;
 $gradient-striped-light: 135deg, rgba($white, .1) 25%, transparent 25%, transparent 50%, rgba($white, .1) 50%, rgba($white, .1) 75%, transparent 75%, transparent;
 $gradient-striped-dark: 135deg, rgba($white, .8) 25%, transparent 25%, transparent 50%, rgba($white, .8) 50%, rgba($white, .8) 75%, transparent 75%, transparent;
@@ -114,7 +116,7 @@ $z-layers: (
 $btn-border-radius-base: $border-radius-base;
 $btn-active-shadow: inset 0 3px 5px rgba($black, 0.125);
 
-$btn-default-color: #555;
+$btn-default-color: $gray-darker;
 $btn-default-bgcolor: $white;
 $btn-default-border: $gray-lighter;
 
@@ -163,13 +165,13 @@ $structure-dragitem-fullheight: $structure-dragitem-height + 2 * $structure-drag
 // Structureboard
 $submenu-icon-area-size: 36px;
 $submenu-icon-size: 16px;
-$submenu-icon-color: #555;
+$submenu-icon-color: $gray-darker;
 $submenu-right: ($structure-dragarea-padding * 2 + $structure-dragitem-height - $submenu-icon-area-size) / 2;
 
 $submenu-item-font-size: $font-size-normal;
 $submenu-item-height: $line-height-normal + 6px;
 $submenu-item-padding-horizontal: $padding-large;
-$submenu-item-color: #555;
+$submenu-item-color: $gray-darker;
 $submenu-item-hover-color: $white;
 
 $submenu-dropdown-bgcolor: $white;
