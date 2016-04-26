@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.1.1 (xxxx-xx-xx)
+1.1.1 (2016-04-26)
 ------------------
 
 * Adds cancel link to delete confirmation page
