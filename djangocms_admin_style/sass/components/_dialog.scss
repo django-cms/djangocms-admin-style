@@ -1,0 +1,29 @@
+// resets form and background styles in dialog window #186
+// fixes missing border under copy permissions text & paddings/margins of the buttons #335
+
+.cms-dialog {
+    background-color: $white;
+    form {
+        background: none;
+        box-shadow: none;
+        p {
+            margin: 0 20px;
+            padding: $padding-normal 0 !important;
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 30px;
+                border-bottom: 1px solid $gray-lighter;
+            }
+        }
+    }
+    .submit-row {
+        margin: 10px -20px 0;
+        padding: 20px 20px 0px;
+        input {
+            margin-left: 0;
+        }
+    }
+}

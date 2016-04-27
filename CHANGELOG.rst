@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+Unreleased
+----------
+
+* Fix missing border under copy permissions text & paddings/margins of the buttons
+
 1.1.1 (2016-04-26)
 ------------------
 
