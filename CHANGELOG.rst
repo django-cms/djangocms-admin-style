@@ -5,6 +5,7 @@ Unreleased
 ----------
 
 * Fix missing border under copy permissions text & paddings/margins of the buttons
+* Added frontend integration tests (written with Casper JS)
 
 1.1.1 (2016-04-26)
 ------------------
