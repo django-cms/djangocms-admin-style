@@ -28,6 +28,8 @@
         "karma-sauce-launcher": "0.2.14",
         "phantomjs": "1.9.17",
         "protractor": "2.1.0",
-        "minimist": "1.1.1"
+        "minimist": "1.1.1",
+        "casperjs": "^1.1.0-beta5",
+        "phantomcss": "^1.0.0"
     }
 }
