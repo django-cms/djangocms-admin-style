@@ -10,7 +10,6 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var autoprefixer = require('gulp-autoprefixer');
-var postcss = require('gulp-postcss');
 var gulpif = require('gulp-if');
 var karma = require('karma').server;
 var sass = require('gulp-sass');
@@ -19,7 +18,6 @@ var iconfontCss = require('gulp-iconfont-css');
 var sourcemaps = require('gulp-sourcemaps');
 var minifyCss = require('gulp-minify-css');
 var protractor = require('gulp-protractor').protractor;
-var webdriverUpdate = require('gulp-protractor').webdriver_update;
 
 var argv = require('minimist')(process.argv.slice(2));
 
@@ -91,9 +89,6 @@ var INTEGRATION_TESTS = [
         'narrowScreen'
     ]
 ];
-
-var CMS_VERSION = fs.readFileSync('cms/__init__.py', { encoding: 'utf-8' })
-    .match(/__version__ = '(.*?)'/)[1];
 
 // #############################################################################
 // #TASKS#
