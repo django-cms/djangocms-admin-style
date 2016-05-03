@@ -135,7 +135,7 @@ gulp.task('icons', function () {
 
 // #######################################
 // #TESTS#
-gulp.task('tests', ['tests:integration']);
+gulp.task('test', ['tests:integration']);
 
 var integrationTests = {
     /**
