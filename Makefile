@@ -3,8 +3,8 @@ ENV18 = env-18
 ENV19 = env-19
 VENV18 = $(ENV18)/bin/activate
 VENV19 = $(ENV19)/bin/activate
-PTYHON18 = $(ENV18)/bin/python
-PTYHON19 = $(ENV19)/bin/python
+PYTHON18 = $(ENV18)/bin/python
+PYTHON19 = $(ENV19)/bin/python
 PIP18 = $(ENV18)/bin/pip
 PIP19 = $(ENV19)/bin/pip
 
@@ -29,8 +29,8 @@ install19:
 	. $(VENV19); $(PIP19) install -e .
 
 run18:
-	. $(VENV18); $(PTYHON18) testserver.py
+	. $(VENV18); $(PYTHON18) testserver.py
 
 run19:
-	. $(VENV19); $(PTYHON19) testserver.py
+	. $(VENV19); $(PYTHON19) testserver.py
 
