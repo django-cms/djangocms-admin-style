@@ -12,3 +12,7 @@ database.db
 build
 dist
 .eggs
+screenshots/results
+screenshots/failures
+env-18
+env-19
