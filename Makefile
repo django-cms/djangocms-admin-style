@@ -34,3 +34,8 @@ run18:
 run19:
 	. $(VENV19); $(PYTHON19) testserver.py
 
+test18:
+	. $(VENV18); gulp test
+
+test18:
+	. $(VENV19); gulp test
