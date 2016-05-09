@@ -18,6 +18,10 @@ var iconfontCss = require('gulp-iconfont-css');
 var sourcemaps = require('gulp-sourcemaps');
 var minifyCss = require('gulp-minify-css');
 var protractor = require('gulp-protractor').protractor;
+var child_process = require('child_process');
+var spawn = require('child_process').spawn;
+var terminate = require('terminate');
+var _ = require('lodash');
 
 var argv = require('minimist')(process.argv.slice(2));
 
@@ -45,48 +49,7 @@ var PROJECT_PATTERNS = {
 
 var INTEGRATION_TESTS = [
     [
-        'loginAdmin',
-        'toolbar',
-        'addFirstPage',
-        'wizard',
-        'editMode',
-        'sideframe',
-        'createContent',
-        'users',
-        'addNewUser',
-        'newPage',
-        'pageControl',
-        'modal',
-        'permissions',
-        'logout',
-        'clipboard'
-    ],
-    [
-        'pageTypes',
-        'switchLanguage',
-        'editContent',
-        'editContentTools',
-        'publish',
-        'loginToolbar',
-        'changeSettings',
-        'toolbar-login-apphooks',
-        {
-            serverArgs: '--CMS_PERMISSION=False --CMS_TOOLBAR_URL__EDIT_ON=test-edit',
-            file: 'copy-from-language'
-        },
-        {
-            serverArgs: '--CMS_PERMISSION=False --CMS_TOOLBAR_URL__EDIT_ON=test-edit',
-            file: 'pagetree-no-permission'
-        }
-    ],
-    [
-        'pagetree',
-        'disableToolbar',
-        'dragndrop',
-        'copy-apphook-page',
-        'history',
-        'revertLive',
-        'narrowScreen'
+        'loginAdmin'
     ]
 ];
 
@@ -130,7 +93,7 @@ gulp.task('icons', function () {
 
 // #######################################
 // #TESTS#
-gulp.task('test', ['tests:integration']);
+gulp.task('tests', ['tests:integration']);
 
 var integrationTests = {
     /**
