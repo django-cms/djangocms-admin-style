@@ -14,28 +14,28 @@ PIP19 = $(ENV19)/bin/pip
 
 install18:
 	##### create virtualenv
-	. $(VENV18) || virtualenv $(ENV18) --prompt="(`basename \`pwd\``)"
+	$(VENV18) || virtualenv $(ENV18) --prompt="(`basename \`pwd\``)"
 	##### install requirements
-	. $(VENV18); $(PIP18) install -r test_requirements/django-1.8.txt
+	$(VENV18); $(PIP18) install -r test_requirements/django-1.8.txt
 	npm install
-	. $(VENV18); $(PIP18) install -e .e
+	$(VENV18); $(PIP18) install -e .e
 
 install19:
-	##### create virtualenvmake run19
+	##### create virtualenv
 	$(VENV19) || virtualenv $(ENV19) --prompt="(`basename \`pwd\``)"
 	##### install requirements
-	. $(VENV19); $(PIP19) install -r test_requirements/django-1.9.txt
+	$(VENV19); $(PIP19) install -r test_requirements/django-1.9.txt
 	npm install
-	. $(VENV19); $(PIP19) install -e .
+	$(VENV19); $(PIP19) install -e .
 
 run18:
-	. $(VENV18); $(PYTHON18) testserver.py
+	$(VENV18); $(PYTHON18) testserver.py
 
 run19:
-	. $(VENV19); $(PYTHON19) testserver.py
+	$(VENV19); $(PYTHON19) testserver.py
 
 test18:
-	. $(VENV18); gulp tests
+	$(VENV18); gulp tests
 
 test18:
-	. $(VENV19); gulp tests
+	$(VENV19); gulp tests
