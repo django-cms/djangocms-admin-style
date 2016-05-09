@@ -18,7 +18,7 @@ install18:
 	##### install requirements
 	. $(VENV18); $(PIP18) install -r test_requirements/django-1.8.txt
 	npm install
-	. $(VENV18); $(PIP18) install -e .
+	. $(VENV18); $(PIP18) install -e .e
 
 install19:
 	##### create virtualenvmake run19
@@ -35,7 +35,7 @@ run19:
 	. $(VENV19); $(PYTHON19) testserver.py
 
 test18:
-	. $(VENV18); gulp test
+	. $(VENV18); gulp tests
 
 test18:
-	. $(VENV19); gulp test
+	. $(VENV19); gulp tests
