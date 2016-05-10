@@ -33,6 +33,18 @@ module.exports = {
             onPass: function (test) {
                 casper.test.pass('No changes found for screenshot ' + test.filename);
             },
+            fileNameGetter: function (root, filename) {
+                 // globally override output filename
+                 // files must exist under root
+                 // and use the .diff convention
+                 var name = root + '/' + filename.replace(/\s+/g, '-').toLowerCase();
+
+                 if (fs.isFile(name + '.png')) {
+                     return name + '.diff.png';
+                 } else {
+                     return name + '.png';
+                 }
+             },
             onComplete: function (allTests, noOfFails, noOfErrors) {
                 allTests.forEach(function (test) {
                     if (test.fail) {
