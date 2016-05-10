@@ -38,3 +38,19 @@ Compiling CSS
 
 
 * for compiling the sass file, you need to ``npm install``
+
+
+Integration tests
+=================
+
+In order to run integration tests you’ll have to install the testing infrastructure for djangocms admin style.
+All commands should be run from the root of the repository.
+
+There are Django version 1.8 and 1.9 provided.
+
+To install 1.8 infrastructure please run ``make install18`` and for 1.9 ``make install19``
+
+After this is done you could run tests with following command ``gulp tests``
+If you do not have virtualenv yet, create and activate it first:
+
+For Django 1.8 setup  ``. env-18/bin/activate`` and for Django 1.9 setup ``. env-19/bin/activate``
