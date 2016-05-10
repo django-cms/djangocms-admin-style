@@ -33,8 +33,6 @@ casper.test.begin('User Login (via Admin Panel)', function (test) {
             test.assertTitleMatch(titleRegExp, 'The CMS is available and admin panel title is correct');
             test.assertExists('#login-form', 'Admin login form is available');
 
-            phantomcss.screenshot('#container', 'Login form');
-
             this.fill('#login-form', {
                 username: 'fake',
                 password: 'credentials'
