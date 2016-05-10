@@ -9,7 +9,7 @@
 // #IMPORTS#
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('autoprefixer');
 var gulpif = require('gulp-if');
 var karma = require('karma').server;
 var sass = require('gulp-sass');
@@ -17,11 +17,13 @@ var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 var sourcemaps = require('gulp-sourcemaps');
 var minifyCss = require('gulp-minify-css');
+var jshint = require('gulp-jshint');
 var protractor = require('gulp-protractor').protractor;
 var child_process = require('child_process');
 var spawn = require('child_process').spawn;
 var terminate = require('terminate');
 var _ = require('lodash');
+var Promise = require('bluebird');
 
 var argv = require('minimist')(process.argv.slice(2));
 
@@ -34,7 +36,7 @@ var PROJECT_ROOT = __dirname;
 var PROJECT_PATH = {
     'sass': PROJECT_ROOT + '/djangocms_admin_style/sass',
     'css': PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/css',
-    'tests': PROJECT_ROOT + 'djangocms_admin_style/tests',
+    'tests': PROJECT_ROOT + '/djangocms_admin_style/tests',
     'icons': PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/fonts'
 };
 
@@ -89,6 +91,25 @@ gulp.task('icons', function () {
         gutil.log.bind(glyphs, options);
     })
     .pipe(gulp.dest(PROJECT_PATH.icons));
+});
+
+
+gulp.task('lint', ['lint:javascript']);
+gulp.task('lint:javascript', function () {
+    // DOCS: http://jshint.com/docs/
+    return gulp.src(PROJECT_PATTERNS.js)
+        .pipe(jshint())
+        .pipe(jscs())
+        // required for jscs
+        .on('error', function (error) {
+            gutil.log('\n' + error.message);
+            if (process.env.CI) {
+                // Force the process to exit with error code
+                process.exit(1);
+            }
+        })
+        .pipe(jshint.reporter('jshint-stylish'))
+        .pipe(jshint.reporter('fail'));
 });
 
 // #######################################
@@ -297,7 +318,6 @@ gulp.task('tests:integration', function (done) {
                     return obj.file;
                 });
                 var serverPid;
-
                 return integrationTests.startServer(serverArgs)
                     .then(function (pid) {
                         serverPid = pid;
@@ -339,6 +359,7 @@ gulp.task('tests:integration', function (done) {
 // #COMMANDS#
 gulp.task('watch', function () {
     gulp.watch(PROJECT_PATTERNS.sass, ['sass']);
+    gulp.watch(PROJECT_PATTERNS.js, ['lint']);
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'lint', 'watch']);
