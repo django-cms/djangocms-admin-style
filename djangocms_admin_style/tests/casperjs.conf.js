@@ -44,7 +44,7 @@ module.exports = {
                  } else {
                      return name + '.png';
                  }
-             },
+            },
             onComplete: function (allTests, noOfFails, noOfErrors) {
                 allTests.forEach(function (test) {
                     if (test.fail) {
