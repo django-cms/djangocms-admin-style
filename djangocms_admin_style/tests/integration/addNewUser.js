@@ -36,7 +36,7 @@ casper.test.begin('Add new user', function (test) {
         .waitUntilVisible('.form-row', function () {
             test.assertExists('#user_form', 'Username input field exists');
 
-            phantomcss.screenshot('#user_form', 'add user form');
+            phantomcss.screenshot('html', 'add user form');
 
             this.fill('#user_form', {
                 username: globals.user.username,
@@ -74,7 +74,7 @@ casper.test.begin('Add new user', function (test) {
                 'The User has been updated'
             );
 
-            phantomcss.screenshot('.change-list', 'user list');
+            phantomcss.screenshot('html', 'user list success');
 
         })
 
@@ -91,9 +91,16 @@ casper.test.begin('Add new user', function (test) {
             this.click('.deletelink');
         })
 
+        .waitForSelector('.delete-confirmation', function () {
+            test.assertExists('.delete-confirmation', 'Delete confirmation exists');
+
+            phantomcss.screenshot('html', 'user delete confirmation');
+        })
+
         // confirming that the user gets deleted
         .waitForSelector('.delete-confirmation', function () {
             test.assertExists('.delete-confirmation', 'Delete button clicked confirmed');
+
             this.click('input[type="submit"]');
         })
 

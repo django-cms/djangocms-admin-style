@@ -25,7 +25,7 @@ casper.test.begin('Dashboard view', function (test) {
         .waitForSelector('.dashboard', function () {
             test.assertExists('.dashboard', 'dashboard exists');
 
-            phantomcss.screenshot('.dashboard', 'Dashboard');
+            phantomcss.screenshot('html', 'Dashboard');
         })
         .then(function () {
             phantomcss.compareSession();
