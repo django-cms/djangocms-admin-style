@@ -14,9 +14,15 @@
         // removes padding left to align breadcrumbs #242
         padding-left: 0 !important;
     }
+    &.cms-debug #container  .breadcrumbs {
+        padding-top: $breadcrumb-padding + $toolbar-debug-height !important;
+    }
     #content {
         // updates content margin top because of breadcrumbs #242
         margin-top: 117px !important;
+    }
+    &.cms-debug #content {
+        margin-top: 117px + $toolbar-debug-height !important;
     }
     ul.messagelist {
         margin-top: 46px !important;
