@@ -67,6 +67,13 @@
                     }
                 }
             }
+            &.cms-pagetree-root {
+                // since 3.3 no need to do that for pagetree
+                #changelist-form {
+                    width: 100% !important;
+                    float: none;
+                }
+            }
             #changelist-filter {
                 // removes background color if there is a white background not as on dashboard gray
                 background: none !important;
@@ -254,5 +261,8 @@
             // needs a background color because filter is positioned absolute and appears over page tree #242
             background-color: $white !important;
         }
+    }
+    &.change-list #changelist.cms-pagetree-root {
+        margin-top: 40px;
     }
 }
