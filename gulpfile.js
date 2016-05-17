@@ -52,7 +52,8 @@ var PROJECT_PATTERNS = {
 var INTEGRATION_TESTS = [
     [
         'loginAdmin',
-        'dashboard'
+        'dashboard',
+        'addNewUser'
     ]
 ];
 
