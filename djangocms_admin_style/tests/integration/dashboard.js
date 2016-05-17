@@ -19,7 +19,7 @@ casper.test.tearDown(function (done) {
         .run(done);
 });
 
-casper.test.begin('User Login (via Admin Panel)', function (test) {
+casper.test.begin('Dashboard view', function (test) {
     casper
         .start(globals.adminUrl)
         .waitForSelector('.dashboard', function () {
