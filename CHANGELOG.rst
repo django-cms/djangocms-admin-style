@@ -5,6 +5,8 @@ Unreleased
 ----------
 
 * Fix missing border under copy permissions text & paddings/margins of the buttons
+* Fix breadcrumbs position when cms debug bar is present
+* Fix "take me back" button on delete confirmations
 * Added frontend integration tests (written with Casper JS)
 
 1.1.1 (2016-04-26)
