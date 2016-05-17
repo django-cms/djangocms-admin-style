@@ -51,6 +51,9 @@ There are Django version 1.8 and 1.9 provided.
 To install 1.8 infrastructure please run ``make install18`` and for 1.9 ``make install19``
 
 After this is done you could run tests with following command ``gulp tests``
+Or if you want to run a separate test run ``gulp tests:integration --tests=loginAdmin``
+And if you have to clean the database up from your ghost server run ``--clean`` with your test to clean up the database
+
 If you do not have virtualenv yet, create and activate it first:
 
 For Django 1.8 setup  ``. env-18/bin/activate`` and for Django 1.9 setup ``. env-19/bin/activate``
