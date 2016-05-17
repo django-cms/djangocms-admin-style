@@ -52,7 +52,7 @@ To install 1.8 infrastructure please run ``make install18`` and for 1.9 ``make i
 
 After this is done you could run tests with following command ``gulp tests``
 Or if you want to run a separate test run ``gulp tests:integration --tests=loginAdmin``
-And if you have to clean the database up from your ghost server run ``--clean`` with your test to clean up the database
+And if you have to clean the database up run ``--clean`` with your test
 
 If you do not have virtualenv yet, create and activate it first:
 
