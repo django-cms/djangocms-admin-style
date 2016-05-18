@@ -6,9 +6,9 @@
 #changelist-search,
 #changelist form,
 #content-related form {
-    padding: 0;
-    margin-bottom: 0;
     margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
     background-color: transparent;
     box-shadow: none;
 }
@@ -43,9 +43,9 @@
         box-shadow: none !important;
     }
     .paginator {
+        color: $gray-light !important;
         // important is needed to make sure that paginator has correct font size #288
         font-size: $font-size-small !important;
-        color: $gray-light !important;
         min-height: 20px;
         padding: 5px $paginator-padding !important;
         background-color: $white !important;
@@ -68,9 +68,9 @@
                 overflow-y: auto;
                 width: $filtered-filter-width !important;
                 max-height: 585px;
+                margin-left: $filtered-filter-margin;
                 padding-right: $filtered-filter-padding;
                 padding-left: 0;
-                margin-left: $filtered-filter-margin;
             }
             .results,
             .paginator,
@@ -86,8 +86,8 @@
             .paginator {
                 // calculates correct width because of margin right
                 width: calc(100% - #{$filter-changelist-margin}) !important;
-                box-shadow: $base-box-shadow;
                 border-right: 0;
+                box-shadow: $base-box-shadow;
             }
             .actions {
                 margin-right: $filtered-filter-width !important;
@@ -115,9 +115,9 @@
                     max-width: 10px;
                     height: 36px;
                     margin: 0 21px;
-                    background: url('../img/drag.png');
-                    background-size: 5px;
                     cursor: move !important;
+                    background: url("../img/drag.png");
+                    background-size: 5px;
                 }
                 input[type="checkbox"],
                 input[type="radio"] {
@@ -129,8 +129,8 @@
             overflow: hidden;
             height: auto;
             min-height: 30px;
-            padding: 3px 3px 3px 0;
             margin: 0 30px 10px 0 !important;
+            padding: 3px 3px 3px 0;
             border: 0 !important;
             background: none !important;
             form label {
@@ -141,16 +141,16 @@
             }
             @at-root #toolbar #changelist-search form #searchbar,
             form #searchbar {
-                width: auto !important;
-                // django 1.9
-                height: 36px !important;
-                // makes sure that search doesn't jumps to new line #155
-                max-width: 257px !important;
                 font-size: $font-size-small;
-                padding: 9px 5px !important;
-                border-radius: 3px !important;
                 vertical-align: middle;
                 box-sizing: border-box;
+                width: auto !important;
+                // makes sure that search doesn't jumps to new line #155
+                max-width: 257px !important;
+                // django 1.9
+                height: 36px !important;
+                padding: 9px 5px !important;
+                border-radius: 3px !important;
             }
             // makes sure that if admin cations are visible that toolbar floats to position next to actions #275, #285
             &.actions-visible {
@@ -171,13 +171,13 @@
             h2,
             h3 {
                 margin-bottom: 15px !important;
-                padding-left: 0 !important;
                 padding-bottom: 10px !important;
+                padding-left: 0 !important;
                 border-bottom: solid 1px $gray-lighter;
             }
             h2 {
-                font-size: $font-size-normal !important;
                 color: $gray;
+                font-size: $font-size-normal !important;
                 font-weight: normal;
                 text-transform: uppercase;
                 padding: 2px 9px;
@@ -190,17 +190,17 @@
             }
             ul {
                 font-size: $font-size-small;
-                margin-left: 0 !important;
                 margin-bottom: 10px;
+                margin-left: 0 !important;
             }
             li {
                 font-size: $font-size-normal;
                 margin-bottom: 15px;
                 &.selected {
                     font-weight: bold;
-                    border-left: 0 !important;
-                    padding-left: 0 !important;
                     margin-left: 0 !important;
+                    padding-left: 0 !important;
+                    border-left: 0 !important;
                     a {
                         color: $color-primary !important;
                     }
@@ -216,9 +216,9 @@
                 white-space: nowrap;
                 // makes sure that action select doesn't jumps to new line #155
                 width: 257px !important;
-                padding: 6px 40px 6px 20px;
                 margin-top: 3px;
                 margin-right: 10px;
+                padding: 6px 40px 6px 20px;
                 border: 1px solid $gray-lighter;
                 border-radius: $border-radius-base;
             }
@@ -226,16 +226,16 @@
                 display: inline-block;
                 // make sure that only icon is displayed
                 font: 0/0 a;
-                margin-left: 0;
                 margin-bottom: 0;
+                margin-left: 0;
             }
             button {
                 font-family: $base-font-family;
                 font-size: $font-size-small;
                 vertical-align: bottom;
                 height: 36px;
-                margin-right: 10px;
                 margin-top: 0;
+                margin-right: 10px;
                 margin-bottom: 0;
                 padding: 10px 15px !important;
                 box-shadow: none;
@@ -243,18 +243,18 @@
             .action-counter {
                 display: inline-block !important;
                 font-size: $font-size-small;
-                vertical-align: bottom;
                 line-height: 36px;
+                vertical-align: bottom;
             }
         }
         .toplinks {
-            overflow: hidden;
-            margin-bottom: 20px !important;
-            margin-top: 20px !important;
-            border-bottom: 0 !important;
-            border-top: 0;
-            background: none;
             clear: both;
+            overflow: hidden;
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;
+            border-top: 0;
+            border-bottom: 0 !important;
+            background: none;
             li {
                 display: inline;
                 float: left;
@@ -269,10 +269,10 @@
                 }
             }
             a {
-                position: relative;
                 display: block;
-                font-size: $font-size-normal;
+                position: relative;
                 color: $color-primary;
+                font-size: $font-size-normal;
                 font-weight: normal;
                 text-transform: uppercase;
             }
@@ -290,9 +290,9 @@
         .paginator {
             // calculates correct width because of margin left and right
             width: calc(100% - 30px);
-            box-shadow: $base-box-shadow !important;
             border-top: none;
             background: none;
+            box-shadow: $base-box-shadow !important;
         }
     }
     #changelist-search {
@@ -303,8 +303,8 @@
             margin-left: 10px;
             + label {
                 display: inline-block !important;
-                font-size: $font-size-small !important;
                 color: $gray-light !important;
+                font-size: $font-size-small !important;
                 text-transform: none;
             }
         }
@@ -319,17 +319,17 @@
             @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
             vertical-align: middle;
             text-indent: -9999px;
-            padding: 10px 16px !important;
+            box-sizing: border-box;
             margin-left: 10px !important;
-            background-image: url('../img/icon_search_white@2x.png') !important;
+            padding: 10px 16px !important;
+            background-image: url("../img/icon_search_white@2x.png") !important;
             background-repeat: no-repeat !important;
             background-position: center !important;
             background-size: 20px !important;
-            box-sizing: border-box;
             // django 1.9
             box-shadow: none !important;
             &:active {
-                background-image: url('../img/icon_search_white@2x.png') !important;
+                background-image: url("../img/icon_search_white@2x.png") !important;
             }
         }
         label {
@@ -342,14 +342,14 @@
     }
     #changelist-filter-button {
         color: $gray-light;
-        text-transform: uppercase;
         font-size: $font-size-normal;
+        text-transform: uppercase;
         width: 175px;
         margin-bottom: 5px;
         padding-left: 25px;
-        background: url('../img/icon_arrow_down.png') no-repeat left center;
-        background-size: 25px;
         border-left: 0;
+        background: url("../img/icon_arrow_down.png") no-repeat left center;
+        background-size: 25px;
         + #changelist-filter {
             position: absolute;
             top: 30px;
@@ -397,21 +397,20 @@
                 }
             }
             .sortoptions {
-                float: right;
                 display: inline-block;
+                float: right;
                 padding-top: 0;
             }
         }
     }
     .paginator {
-        box-shadow: none;
         background-color: transparent;
+        box-shadow: none;
         .this-page {
-            font-size: $font-size-small;
             color: $gray-light;
+            font-size: $font-size-small;
             font-weight: normal;
             padding: 0;
-
         }
     }
 }
@@ -421,8 +420,8 @@ a.lang-code {
     font-size: $font-size-small !important;
     font-weight: bold !important;
     text-transform: uppercase;
-    padding: 2px 8px !important;
     margin-right: 10px !important;
+    padding: 2px 8px !important;
     border: solid 1px $gray-lighter;
     border-radius: 10px !important;
     background-color: $gray-lighter;
@@ -431,16 +430,16 @@ a.lang-code {
     }
     &.current.active {
         color: $color-primary !important;
-        background-color: $white !important;
         border-color: $color-primary;
+        background-color: $white !important;
         &:hover {
             color: $color-primary !important;
         }
     }
     &.active {
         color: $white !important;
-        background-color: $color-primary !important;
         border-color: $color-primary;
+        background-color: $color-primary !important;
         &:hover {
             color: $white !important;
         }
