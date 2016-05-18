@@ -275,12 +275,17 @@ form {
     textarea {
         color: $gray-darkest;
         font-size: $font-size-small;
-        line-height: 22px;
+        line-height: 24px;
+        min-height: 24px;
+        height: 36px;
         padding: 6px !important;
         border: 1px solid $gray-lighter !important;
         box-sizing: border-box;
         border-radius: $border-radius-base;
         outline: none;
+    }
+    textarea {
+        height: auto;
     }
     input[type="checkbox"],
     input[type="radio"] {
@@ -289,8 +294,8 @@ form {
         overflow: hidden;
         vertical-align: bottom;
         line-height: $base-line-height;
-        height: 13px;
-        width: 13px !important;
+        height: auto;
+        width: auto !important;
         margin-right: 10px;
         padding: 0 !important;
         border: 0 !important;
@@ -305,15 +310,19 @@ form {
     select {
         appearance: none;
         font-size: $font-size-small;
-        line-height: $font-size-normal;
+        line-height: 20px;
         font-weight: normal;
-        height: auto !important;
+        height: 36px !important;
         min-width: 160px;
-        padding: 10px;
+        padding: 6px;
         background: $white url('../img/icon_arrow_down.png') no-repeat right center !important;
         background-size: 25px !important;
+        box-sizing: border-box;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
+    }
+    select[multiple] {
+        height: auto !important;
     }
     select + select {
         margin-top: 10px !important;
@@ -374,16 +383,25 @@ form {
         // wraps checkbox rows with border #188
         padding-top: 15px;
         margin-bottom: -10px;
+        line-height: 20px;
         border-top: solid 1px $gray-lighter;
         // remove border top and padding on first child #291
         &:first-child {
             padding-top: 0;
             border-top: 0;
         }
+        input[type=checkbox],
+        input[type=radio] {
+            vertical-align: middle;
+            width: auto !important;
+            height: auto !important;
+            top: auto;
+        }
         label {
             color: $gray-darkest !important;
             font-size: $font-size-large;
             text-transform: none;
+            vertical-align: middle;
         }
     }
 }
@@ -711,7 +729,8 @@ span.datetimeshortcuts,
     a {
         @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
         display: inline-block;
-        height: 12px;
+        height: 14px;
+        line-height: 14px;
         padding: 10px !important;
         margin-top: 0 !important;
         margin-bottom: 0;
@@ -791,6 +810,10 @@ form select[multiple] {
         float: left;
         width: calc(100% - 91px) !important;
         margin-right: 10px;
+    }
+    select + .related-widget-wrapper-link,
+    .related-widget-wrapper-link + .related-widget-wrapper-link {
+        margin: 0;
     }
     a {
         margin-top: 0;

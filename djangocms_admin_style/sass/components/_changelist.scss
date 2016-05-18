@@ -143,7 +143,7 @@
             form #searchbar {
                 width: auto !important;
                 // django 1.9
-                height: 34px !important;
+                height: 36px !important;
                 // makes sure that search doesn't jumps to new line #155
                 max-width: 257px !important;
                 font-size: $font-size-small;
@@ -216,7 +216,7 @@
                 white-space: nowrap;
                 // makes sure that action select doesn't jumps to new line #155
                 width: 257px !important;
-                padding: 9px 40px 9px 20px;
+                padding: 6px 40px 6px 20px;
                 margin-top: 3px;
                 margin-right: 10px;
                 border: 1px solid $gray-lighter;
@@ -233,7 +233,7 @@
                 font-family: $base-font-family;
                 font-size: $font-size-small;
                 vertical-align: bottom;
-                height: auto;
+                height: 36px;
                 margin-right: 10px;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -241,9 +241,10 @@
                 box-shadow: none;
             }
             .action-counter {
-                display: inline !important;
+                display: inline-block !important;
                 font-size: $font-size-small;
-                margin: 5px 0 0;
+                vertical-align: bottom;
+                line-height: 36px;
             }
         }
         .toplinks {

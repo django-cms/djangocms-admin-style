@@ -312,9 +312,9 @@ ul.messagelist + #content {
             line-height: 20px;
             padding-left: 20px !important;
             input {
-                position: absolute;
-                top: 4px;
-                left: 0;
+                position: relative;
+                margin-left: -20px;
+                top: auto;
             }
         }
     }
@@ -412,6 +412,7 @@ ul.messagelist + #content {
     }
     .selector-filter {
         padding-left: 0;
+        padding-right: 0;
         border: none;
         label {
             display: none;
