@@ -426,15 +426,15 @@ form {
             }
         }
         .select2-choice {
-            line-height: inherit;
-            height: auto;
-            padding: 10px 40px 10px 20px;
+            line-height: 22px;
+            height: 22px;
+            padding: 6px 40px 6px 20px;
             border: 1px solid $gray-lighter;
             border-radius: $border-radius-base;
             background: none;
             & > .select2-chosen {
                 font-size: $font-size-small;
-                line-height: $font-size-small;
+                line-height: 22px;
             }
             .select2-arrow {
                 right: 9px;
@@ -443,9 +443,13 @@ form {
                 border-radius: 0;
                 background: none;
                 b {
-                    background: url("../img/select2.png") no-repeat 0 5px;
+                    background: url("../img/select2.png") no-repeat 0 6px;
                     background-size: 50px;
                 }
+            }
+            .select2-search-choice-close {
+                top: 10px;
+                right: 35px;
             }
         }
     }
@@ -497,7 +501,7 @@ form {
         padding: 10px 40px 10px 20px !important;
         border: 1px solid $gray-lighter !important;
         border-radius: $border-radius-base !important;
-        background: url("../img/select2.png") no-repeat right -24px !important;
+        background: url("../img/select2.png") no-repeat right -27px !important;
         background-size: 50px !important;
     }
 }
