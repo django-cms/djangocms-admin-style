@@ -1,8 +1,8 @@
 CHANGELOG
 =========
 
-Unreleased
-----------
+1.2.0 (2016-05-19)
+------------------
 
 * Fix missing border under copy permissions text & paddings/margins of the buttons
 * Fix breadcrumbs position when cms debug bar is present
