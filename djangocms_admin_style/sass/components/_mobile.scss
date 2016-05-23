@@ -19,9 +19,13 @@ body {
         margin-right: 0;
     }
 }
-#branding {
-    #site-name {
-        display: none;
+
+// arbitrary width because it doesn't fit
+@media (max-width: 500px) {
+    #branding {
+        #site-name {
+            display: none;
+        }
     }
 }
 .login #branding {
