@@ -19,9 +19,13 @@ body {
         margin-right: 0;
     }
 }
-#branding {
-    #site-name {
-        display: none;
+
+// arbitrary width because it doesn't fit
+@media (max-width: 500px) {
+    #branding {
+        #site-name {
+            display: none;
+        }
     }
 }
 .login #branding {
@@ -287,19 +291,26 @@ form {
         margin-left: 0 !important;
         padding-left: 0 !important;
     }
-    // make sure that submit buttons are positioned correct on mobile #153
-    .submit-row {
-        text-align: left;
-        .deletelink-box {
-            float: none;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-        input {
-            display: block;
-            float: none;
-            margin-bottom: 10px !important;
-            margin-left: 0;
+
+    // arbitrary width because it doesn't fit on bigger than "mobile"
+    // breakpoint, but still ok on "tablet"
+    @media (max-width: 600px) {
+        // make sure that submit buttons are positioned correct on mobile #153
+        .submit-row {
+            text-align: left;
+            .deletelink-box {
+                float: none;
+                display: inline-block;
+                margin-bottom: 10px !important;
+            }
+            input {
+                display: block;
+                float: none;
+                margin-left: 0 !important;
+                + input {
+                    margin-bottom: 10px !important;
+                }
+            }
         }
     }
 }

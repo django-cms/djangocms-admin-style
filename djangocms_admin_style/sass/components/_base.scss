@@ -250,6 +250,15 @@ ul.errorlist {
     margin-bottom: 10px !important;
     background-color: transparent !important;
     border: 0 !important;
+    a {
+        &,
+        &:link,
+        &:hover,
+        &:focus,
+        &:visited {
+            color: $gray-darkest;
+        }
+    }
     li {
         color: $color-danger !important;
         font-size: $font-size-normal !important;

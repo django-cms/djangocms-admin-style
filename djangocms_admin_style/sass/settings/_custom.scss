@@ -53,11 +53,3 @@ $btn-cms-active-hover-border: #8c8c8c;
 //##############################################################################
 // #SHADOW
 $base-box-shadow: 0 0 5px 0 rgba($black, 0.2);
-
-
-// Then we'll import the compass extension
-@import "libs/_html5-boilerplate.scss";
-
-// Now, you can simply include everything
-// (except media) by uncommeting this line
-@include html5-boilerplate;
