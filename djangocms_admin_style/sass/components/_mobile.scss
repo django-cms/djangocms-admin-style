@@ -140,29 +140,35 @@ body.login {
     }
 }
 
-.object-tools {
-    float: left;
-    max-width: 100% !important;
-    li {
+@media (max-width: 600px) {
+    .object-tools {
         float: left;
-        margin-right: 20px;
-        margin-bottom: 10px;
+        max-width: 100% !important;
+        li {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
     }
-}
-// changelist
-.change-list,
-.change-form {
-    #content {
-        .object-tools {
-            overflow: hidden;
-            float: none;
-            margin: 0;
-            li {
-                padding-left: 0;
-                margin-left: 0;
+    // changelist
+    .change-list,
+    .change-form {
+        #content {
+            .object-tools {
+                overflow: hidden;
+                float: none;
+                margin: 0;
+                li {
+                    padding-left: 0;
+                    margin-left: 0;
+                }
             }
         }
     }
+}
+
+.change-list,
+.change-form {
     #changelist {
         position: static;
         .actions {
