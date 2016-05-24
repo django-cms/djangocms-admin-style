@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.2.1 (Unreleased)
+------------------
+
+* Fixed drag'n'drop on sortedm2m on touch devices
+* Fixed mispositioned elements on tablets
+
 1.2.0 (2016-05-19)
 ------------------
 
