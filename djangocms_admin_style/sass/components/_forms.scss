@@ -143,6 +143,27 @@ form {
         .vForeignKeyRawIdAdminField {
             width: auto !important;
         }
+
+        // only affects field boxes when they are next to each other
+        .field-box {
+            &:nth-of-type(1) {
+                &:nth-last-of-type(2) {
+                    width: 50%;
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding-right: 10px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                &:nth-last-of-type(1) {
+                    width: 50%;
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding-left: 10px;
+                }
+            }
+        }
     }
     button,
     input[type="text"],
