@@ -150,7 +150,7 @@ form {
                 &:nth-last-of-type(2) {
                     width: 50%;
                     box-sizing: border-box;
-                    margin: 0;
+                    margin: 0 !important;
                     padding-right: 10px;
                 }
             }
@@ -159,7 +159,7 @@ form {
                 &:nth-last-of-type(1) {
                     width: 50%;
                     box-sizing: border-box;
-                    margin: 0;
+                    margin: 0 !important;
                     padding-left: 10px;
                 }
             }
