@@ -5,6 +5,7 @@ Unreleased
 ----------
 
 * Fixed an issue with datetime fields being displayed incorrectly (#347)
+* Fixed a bug with related-widget add/change buttons inside changelist (#348)
 
 1.2.2 (2016-05-25)
 ------------------
