@@ -26,6 +26,16 @@
     }
 
     /**
+     * @function hasClass
+     * @param {Element} element
+     * @param {String} className
+     * @returns {Boolean}
+     */
+    function hasClass(element, className) {
+        return !!(element.className && element.className.match(new RegExp(className)));
+    }
+
+    /**
      * Finds closest element that has a provided class name.
      * NOT the real "closest"
      *
@@ -36,7 +46,7 @@
      */
     function closest(element, className) {
         while (element && element.nodeType === 1) {
-            if (element.classList.contains(className)) {
+            if (hasClass(element, className)) {
                 return element;
             }
 
@@ -56,11 +66,11 @@
         var datetimeWidgets = document.getElementsByTagName('input');
 
         return arrayFrom(datetimeWidgets).map(function (input) {
-            if (input.classList.contains('vDateField') || input.classList.contains('vTimeField')) {
+            if (hasClass(input, 'vDateField') || hasClass(input, 'vTimeField')) {
                 return input;
             }
         }).filter(function (item) {
-            return item;
+            return !!item;
         });
     }
 
@@ -83,7 +93,7 @@
                     return;
                 }
 
-                if (parent.classList.contains('datetime')) {
+                if (hasClass(parent, 'datetime')) {
                     var markup = parent.innerHTML.split(/<br ?\/*>/);
 
                     markup.forEach(function (part) {
