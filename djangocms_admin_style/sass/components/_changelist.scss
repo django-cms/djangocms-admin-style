@@ -38,6 +38,10 @@
     }
     .results #result_list {
         box-shadow: none;
+        .related-widget-wrapper a.change-related {
+            margin-right: 0;
+            margin-left: 5px;
+        }
     }
     #toolbartable .paginator {
         box-shadow: none !important;
