@@ -1,7 +1,7 @@
 //##############################################################################
 // LOGIN
 
-body.login {
+body.login.djangocms-admin-style {
     background: none !important;
     background-color: $gray-lightest !important;
     #container {
@@ -12,13 +12,15 @@ body.login {
         border: none;
         box-shadow: $base-box-shadow;
         background-color: $white !important;
+        overflow: visible;
         #content-main {
             float: none;
         }
         #header {
             position: static;
-            background: none !important;
+            background: none;
             box-shadow: none;
+            padding: 0;
             #branding h1 {
                 display: block;
                 float: none;
