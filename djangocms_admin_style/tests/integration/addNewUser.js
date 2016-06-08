@@ -36,7 +36,9 @@ casper.test.begin('Add new user', function (test) {
         // inserts the username and pw in the form fields
         .waitUntilVisible('.form-row', function () {
             test.assertExists('#user_form', 'Username input field exists');
-
+        })
+        .wait(1000)
+        .then(function () {
             phantomcss.screenshot('html', 'add user form');
 
             this.fill('#user_form', {
@@ -76,7 +78,6 @@ casper.test.begin('Add new user', function (test) {
             );
 
             phantomcss.screenshot('html', 'user list success');
-
         })
 
         .waitForSelector('.field-username', function () {
