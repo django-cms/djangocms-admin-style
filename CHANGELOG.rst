@@ -6,6 +6,8 @@ Unreleased
 
 * Fixed an issue with datetime fields being displayed incorrectly (#347)
 * Fixed a bug with related-widget add/change buttons inside changelist (#348)
+* Fixed an issue with login screen on django 1.9
+* Added css regression tests framework
 
 1.2.2 (2016-05-25)
 ------------------
