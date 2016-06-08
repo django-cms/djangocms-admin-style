@@ -43,17 +43,7 @@ Compiling CSS
 Integration tests
 =================
 
-In order to run integration tests you’ll have to install the testing infrastructure for djangocms admin style.
-All commands should be run from the root of the repository.
-
-There are Django version 1.8 and 1.9 provided.
-
-To install 1.8 infrastructure please run ``make install18`` and for 1.9 ``make install19``
-
-After this is done you could run tests with following command ``gulp tests``
-Or if you want to run a separate test run ``gulp tests:integration --tests=loginAdmin``
-And if you have to clean the database up run ``--clean`` with your test
-
-If you do not have virtualenv yet, create and activate it first:
-
-For Django 1.8 setup  ``. env-18/bin/activate`` and for Django 1.9 setup ``. env-19/bin/activate``
+In order to run integration tests you need to have Docker installed.
+They can be run using `make test18` and `make test19` commands for Django 1.8
+and Django 1.9. The integration tests are written using Casperjs, phantomcss and
+djangocms-casper-helpers.
