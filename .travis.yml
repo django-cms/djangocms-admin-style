@@ -1,0 +1,17 @@
+sudo: required
+
+language: python
+
+services:
+  - docker
+
+install:
+  - make build
+
+env:
+  matrix:
+    - TEST=test18
+    - TEST=test19
+
+script:
+  - make $TEST

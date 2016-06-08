@@ -14,5 +14,7 @@ dist
 .eggs
 screenshots/results
 screenshots/failures
+screenshots-django18
+screenshots-django19
 env-18
 env-19

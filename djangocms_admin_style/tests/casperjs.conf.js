@@ -1,5 +1,6 @@
 'use strict';
 var phantomcss = require('phantomcss');
+var fs = require('fs');
 
 // #############################################################################
 // CasperJS options
@@ -34,20 +35,21 @@ module.exports = {
                 casper.test.pass('No changes found for screenshot ' + test.filename);
             },
             fileNameGetter: function (root, filename) {
-                 // globally override output filename
-                 // files must exist under root
-                 // and use the .diff convention
-                 var name = root + '/' + filename.replace(/\s+/g, '-').toLowerCase();
+                // globally override output filename
+                // files must exist under root
+                // and use the .diff convention
+                var name = root + '/' + filename.replace(/\s+/g, '-').toLowerCase();
 
-                 if (fs.isFile(name + '.png')) {
-                     return name + '.diff.png';
-                 } else {
-                     return name + '.png';
-                 }
+                if (fs.isFile(name + '.png')) {
+                    return name + '.diff.png';
+                }
+
+                return name + '.png';
             },
-            onComplete: function (allTests, noOfFails, noOfErrors) {
+            onComplete: function (allTests) {
                 allTests.forEach(function (test) {
                     if (test.fail) {
+                        // eslint-disable-next-line no-console
                         console.log(test.filename, test.mismatch);
                     }
                 });
