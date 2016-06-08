@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-ARG nodejs=0.12.7
+ENV nodejs=0.12.7
 
 RUN apt-get -y update && apt-get -y install \
         curl \
