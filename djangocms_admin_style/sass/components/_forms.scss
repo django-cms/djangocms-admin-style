@@ -2,8 +2,8 @@
 // FORMS
 
 form {
-    padding: 25px 25px;
     margin-bottom: 20px;
+    padding: 25px 25px;
     background-color: $white;
     box-shadow: $base-box-shadow;
     fieldset {
@@ -26,8 +26,8 @@ form {
             min-height: inherit !important;
         }
         &.field-get_attachment_address a {
-            position: relative;
             display: block;
+            position: relative;
             font-size: $font-size-large;
             line-height: $font-size-large;
             margin: 10px 0;
@@ -59,7 +59,6 @@ form {
             }
         }
         &.field-folder {
-
             // hides related widget wrapper links because they don't work correctly and are not necessary because
             // of magnifier and delete link #224
             .related-widget-wrapper-link {
@@ -128,12 +127,12 @@ form {
             margin: 0;
         }
         .related-lookup {
-            float: none;
             display: inline-block;
-            vertical-align: top;
+            float: none;
             text-align: center;
-            padding: 9px !important;
+            vertical-align: top;
             margin: 0 0 0 10px !important;
+            padding: 9px !important;
             &:before {
                 margin: 0 !important;
             }
@@ -143,6 +142,27 @@ form {
         }
         .vForeignKeyRawIdAdminField {
             width: auto !important;
+        }
+
+        // only affects field boxes when they are next to each other
+        .field-box {
+            &:nth-of-type(1) {
+                &:nth-last-of-type(2) {
+                    width: 50%;
+                    box-sizing: border-box;
+                    margin: 0 !important;
+                    padding-right: 10px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                &:nth-last-of-type(1) {
+                    width: 50%;
+                    box-sizing: border-box;
+                    margin: 0 !important;
+                    padding-left: 10px;
+                }
+            }
         }
     }
     button,
@@ -157,9 +177,10 @@ form {
         width: 100% !important;
         max-width: none !important;
         border-radius: 3px !important;
-        appearance: none;
         // resets background color for input fields for dark system #271
         background-color: $white;
+
+        appearance: none;
     }
     input.vDateField,
     input.vTimeField {
@@ -177,16 +198,16 @@ form {
     }
     .aligned {
         .field-number_of_visits p {
-            padding-left: 0;
             margin-left: 0;
+            padding-left: 0;
         }
         p.help {
-            font-size: $font-size-small !important;
-            color: $gray;
-            margin-top: 10px !important;
-            padding: 0 !important;
-            margin-left: 0;
             clear: both;
+            color: $gray;
+            font-size: $font-size-small !important;
+            margin-top: 10px !important;
+            margin-left: 0;
+            padding: 0 !important;
         }
         label {
             padding: 0 !important;
@@ -198,9 +219,9 @@ form {
     .vCheckboxLabel,
     .field-type label,
     .sortedm2m label {
-        vertical-align: bottom;
         color: $gray-darker !important;
         font-size: $font-size-large !important;
+        vertical-align: bottom;
         text-transform: none;
         margin-bottom: 0;
         + a {
@@ -209,8 +230,8 @@ form {
         }
     }
     .field-type label {
-        margin-left: 2px !important;
         margin-top: 10px !important;
+        margin-left: 2px !important;
     }
     .sortedm2m a {
         vertical-align: middle;
@@ -223,12 +244,12 @@ form {
         margin: 5px 0;
     }
     fieldset {
-        box-sizing: border-box;
         line-height: 2em;
         vertical-align: middle;
+        box-sizing: border-box;
         &.collapse h2 {
-            font-size: $font-size-large;
             color: $gray-darkest;
+            font-size: $font-size-large;
             background-image: none;
         }
         &.collapsed {
@@ -237,8 +258,8 @@ form {
     }
     label select {
         display: block;
-        margin-left: 0 !important;
         margin-top: 5px;
+        margin-left: 0 !important;
     }
     label,
     label.aligned {
@@ -246,9 +267,9 @@ form {
         float: none !important;
         color: $gray !important;
         font-size: $font-size-normal;
+        font-weight: normal !important;
         line-height: $line-height-normal;
         text-transform: uppercase;
-        font-weight: normal !important;
         word-wrap: break-word;
         width: auto !important;
         margin-bottom: 5px;
@@ -275,22 +296,27 @@ form {
     textarea {
         color: $gray-darkest;
         font-size: $font-size-small;
-        line-height: 22px;
+        line-height: 24px;
+        box-sizing: border-box;
+        height: 36px;
+        min-height: 24px;
         padding: 6px !important;
         border: 1px solid $gray-lighter !important;
-        box-sizing: border-box;
         border-radius: $border-radius-base;
         outline: none;
+    }
+    textarea {
+        height: auto;
     }
     input[type="checkbox"],
     input[type="radio"] {
         position: relative;
         top: -1px;
         overflow: hidden;
-        vertical-align: bottom;
         line-height: $base-line-height;
-        height: 13px;
-        width: 13px !important;
+        vertical-align: bottom;
+        width: auto !important;
+        height: auto;
         margin-right: 10px;
         padding: 0 !important;
         border: 0 !important;
@@ -303,17 +329,22 @@ form {
         outline: none;
     }
     select {
-        appearance: none;
         font-size: $font-size-small;
-        line-height: $font-size-normal;
         font-weight: normal;
-        height: auto !important;
+        line-height: 20px;
+        box-sizing: border-box;
         min-width: 160px;
-        padding: 10px;
-        background: $white url('../img/icon_arrow_down.png') no-repeat right center !important;
-        background-size: 25px !important;
+        height: 36px !important;
+        padding: 6px;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
+        background: $white url("../img/icon_arrow_down.png") no-repeat right center !important;
+        background-size: 25px !important;
+
+        appearance: none;
+    }
+    select[multiple] {
+        height: auto !important;
     }
     select + select {
         margin-top: 10px !important;
@@ -340,23 +371,23 @@ form {
         }
     }
     .errors {
-        padding: 10px;
         margin-bottom: 20px;
+        padding: 10px;
         border: 0;
         border-radius: $border-radius-base;
         background-color: $color-danger-ultralight;
         input,
         select,
         textarea {
-           border-color: $gray-lighter;
+            border-color: $gray-lighter;
         }
     }
     .form-row {
         padding: 0 2px 25px;
         border-bottom-color: $gray-lighter;
         &.errors {
-            padding: 10px;
             margin-bottom: 20px;
+            padding: 10px;
             border: 0;
             border-radius: $border-radius-base;
             background-color: $color-danger-ultralight;
@@ -371,18 +402,27 @@ form {
         border-top: 0;
     }
     .checkbox-row {
+        line-height: 20px;
+        margin-bottom: -10px;
         // wraps checkbox rows with border #188
         padding-top: 15px;
-        margin-bottom: -10px;
         border-top: solid 1px $gray-lighter;
         // remove border top and padding on first child #291
         &:first-child {
             padding-top: 0;
             border-top: 0;
         }
+        input[type=checkbox],
+        input[type=radio] {
+            top: auto;
+            vertical-align: middle;
+            width: auto !important;
+            height: auto !important;
+        }
         label {
             color: $gray-darkest !important;
             font-size: $font-size-large;
+            vertical-align: middle;
             text-transform: none;
         }
     }
@@ -407,27 +447,30 @@ form {
             }
         }
         .select2-choice {
-            line-height: inherit;
-            height: auto;
-            padding: 10px 40px 10px 20px;
-            background: none;
+            line-height: 22px;
+            height: 22px;
+            padding: 6px 40px 6px 20px;
             border: 1px solid $gray-lighter;
             border-radius: $border-radius-base;
+            background: none;
             & > .select2-chosen {
                 font-size: $font-size-small;
-                line-height: $font-size-small;
+                line-height: 22px;
             }
             .select2-arrow {
                 right: 9px;
                 width: 17px;
-                background: none;
                 border: none;
                 border-radius: 0;
+                background: none;
                 b {
-                    background: url('../img/select2.png') no-repeat 0 5px;
+                    background: url("../img/select2.png") no-repeat 0 6px;
                     background-size: 50px;
                 }
-
+            }
+            .select2-search-choice-close {
+                top: 10px;
+                right: 35px;
             }
         }
     }
@@ -435,8 +478,8 @@ form {
         &.select2-drop-above {
             .select2-choice,
             .select2-choices {
+                border-color: $gray-lighter !important;
                 background-image: none !important;
-                border-color: $gray-lighter !important
             }
         }
         .select2-choice {
@@ -477,10 +520,10 @@ form {
         font-size: $font-size-small !important;
         width: 100% !important;
         padding: 10px 40px 10px 20px !important;
-        background: url('../img/select2.png') no-repeat right -24px !important;
-        background-size: 50px !important;
         border: 1px solid $gray-lighter !important;
         border-radius: $border-radius-base !important;
+        background: url("../img/select2.png") no-repeat right -27px !important;
+        background-size: 50px !important;
     }
 }
 
@@ -520,8 +563,8 @@ a.button {
 // date time
 .form-row {
     p.datetime {
-        font-weight: normal;
         font-size: $font-size-normal !important;
+        font-weight: normal;
         line-height: 36px;
         margin-left: 0;
         padding-left: 0;
@@ -534,16 +577,17 @@ div.calendar {
         max-width: 250px !important;
         caption {
             color: $gray !important;
-            padding: 10px 30px;
             margin: 0;
+            padding: 10px 30px;
+            border-bottom: solid 1px $gray-lighter;
             background-color: $white;
             background-image: none;
-            border-bottom: solid 1px $gray-lighter;
+
             border-top-radius: $border-radius-base;
         }
         th {
-            font-family: $base-font-family;
             color: $gray-darkest;
+            font-family: $base-font-family;
             background: none;
         }
         td {
@@ -592,14 +636,14 @@ div.calendarbox {
         th,
         td {
             font-size: $font-size-normal;
-            line-height: $line-height-normal;
             font-weight: normal;
+            line-height: $line-height-normal;
             border-color: $gray-lighter;
             background-color: $white;
             a {
+                color: $gray;
                 font-family: $base-font-family;
                 font-weight: normal;
-                color: $gray;
             }
         }
     }
@@ -624,8 +668,8 @@ div.calendarbox {
         a {
             font-size: $font-size-small !important;
             width: auto;
-            margin-right: 5px !important;
             margin-top: 0 !important;
+            margin-right: 5px !important;
             padding: 9px 10px !important;
             &:first-child {
                 margin-left: 5px;
@@ -652,8 +696,9 @@ div.clockbox {
         font-size: $font-size-small !important;
         line-height: $line-height-normal;
         margin-top: 0 !important;
-        background: $white;
         border-color: $gray-lighter !important;
+        background: $white;
+
         border-bottom-radius: $border-radius-base;
         a {
             // adds separate color to cancel link to have a clear difference to other links #236
@@ -671,9 +716,9 @@ div.clockbox {
         text-transform: uppercase;
         margin-bottom: 0;
         padding: 10px 30px;
+        border-radius: $border-radius-base;
         background-color: $white;
         background-image: none;
-        border-radius: $border-radius-base;
     }
     .timelist li {
         border-top: solid 1px $gray-lighter;
@@ -682,8 +727,8 @@ div.clockbox {
         }
         a {
             font-size: $font-size-normal;
-            line-height: $line-height-normal;
             font-weight: normal;
+            line-height: $line-height-normal;
             padding: 10px 2px;
             &:hover {
                 background-color: $color-primary-light !important;
@@ -711,11 +756,12 @@ span.datetimeshortcuts,
     a {
         @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
         display: inline-block;
-        height: 12px;
-        padding: 10px !important;
+        line-height: 14px;
+        box-sizing: content-box;
+        height: 14px;
         margin-top: 0 !important;
         margin-bottom: 0;
-        box-sizing: content-box;
+        padding: 10px !important;
         &:before {
             color: $color-primary;
             margin: -2px 0 0;
@@ -723,8 +769,8 @@ span.datetimeshortcuts,
         &:first-child {
             text-align: center;
             width: 40px;
-            margin-left: 5px;
             margin-right: 5px;
+            margin-left: 5px;
         }
     }
 }
@@ -767,8 +813,8 @@ form select[multiple] {
 
 // adds background color to password and type fields #175
 .field-type p {
-    padding: 10px !important;
     margin: 15px 0;
+    padding: 10px !important;
     background-color: $gray-lightest;
 }
 #id_password {
@@ -792,6 +838,10 @@ form select[multiple] {
         width: calc(100% - 91px) !important;
         margin-right: 10px;
     }
+    select + .related-widget-wrapper-link,
+    .related-widget-wrapper-link + .related-widget-wrapper-link {
+        margin: 0;
+    }
     a {
         margin-top: 0;
         &.change-related {
@@ -800,12 +850,12 @@ form select[multiple] {
     }
     // resets list styles that list looks same as sortedm2m #286
     ul {
-        padding: 0 !important;
         margin: 0 !important;
+        padding: 0 !important;
         border: 0 !important;
         li {
-            border: 0 !important;
             padding: 0 !important;
+            border: 0 !important;
             label {
                 color: $gray-darkest !important;
                 font-size: 16px;

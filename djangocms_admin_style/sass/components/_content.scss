@@ -100,8 +100,8 @@ ul.messagelist + #content {
     caption {
         color: $gray;
         font-size: $font-size-normal !important;
-        line-height: $font-size-normal;
         font-weight: normal;
+        line-height: $font-size-normal;
         text-transform: uppercase;
         margin: 0 0 10px 10px;
         padding: 0;
@@ -135,16 +135,16 @@ ul.messagelist + #content {
 .inline-group h2 {
     color: $gray-darkest;
     font-size: $font-size-normal;
-    line-height: $font-size-normal;
     font-weight: normal;
+    line-height: $font-size-normal;
     padding-left: 0;
     background: none;
 }
 .djangocms-admin-style .inline-group {
     @include box();
+    overflow: auto;
     padding: 0;
     border: 0;
-    overflow: auto;
     .module {
         padding: 0;
         border: none !important;
@@ -190,8 +190,8 @@ ul.messagelist + #content {
             background: none !important;
         }
         a {
-            font-size: $font-size-normal !important;
             color: $color-success;
+            font-size: $font-size-normal !important;
             padding-left: 0 !important;
             background: none !important;
             &:before {
@@ -203,8 +203,8 @@ ul.messagelist + #content {
 #taggit_taggeditem_items-group {
     width: 80%;
     h2 {
-        font-weight: bold;
         font-size: $font-size-large;
+        font-weight: bold;
     }
     h3 {
         color: $gray-darkest;
@@ -212,8 +212,8 @@ ul.messagelist + #content {
     }
     .module {
         width: 100%;
-        padding: 10px 0;
         margin: 0;
+        padding: 10px 0;
         border-top: solid 1px $gray-lighter !important;
         border-bottom: solid 1px $gray-lighter !important;
     }
@@ -235,11 +235,12 @@ ul.messagelist + #content {
     h3 {
         color: $gray;
         font-weight: normal;
-        padding: 0;
         margin-bottom: 0;
+        padding: 0;
         border-bottom: none;
         background: none;
-        b, span {
+        b,
+        span {
             font-size: $font-size-normal;
             font-weight: normal;
         }
@@ -300,21 +301,21 @@ ul.messagelist + #content {
         padding: 10px 0 !important;
         border: 0 !important;
         li {
+            white-space: initial;
             padding: 0 !important;
             border: 0 !important;
-            white-space: initial;
         }
         // make sure that if label breaks to new line that it is aligned #283
         label {
-            position: relative;
             // make sure that link after label doesn't break to new line #287
             display: inline-block;
+            position: relative;
             line-height: 20px;
             padding-left: 20px !important;
             input {
-                position: absolute;
-                top: 4px;
-                left: 0;
+                position: relative;
+                top: auto;
+                margin-left: -20px;
             }
         }
     }
@@ -336,8 +337,9 @@ ul.messagelist + #content {
         img {
             position: absolute;
             right: 0;
-            order: 2;
             margin: 5px 0;
+
+            order: 2;
         }
     }
 }
@@ -345,16 +347,16 @@ ul.messagelist + #content {
     width: 100%;
     .selector-available,
     .selector-chosen {
+        box-sizing: border-box;
         width: calc(47.5% - 5px);
         padding: 0 10px 10px;
-        background-color: $white;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
-        box-sizing: border-box;
+        background-color: $white;
         h2 {
             color: $gray !important;
-            font-weight: normal;
             font-size: $font-size-normal !important;
+            font-weight: normal;
             line-height: $line-height-normal;
             text-transform: uppercase;
             margin-bottom: 5px;
@@ -411,6 +413,7 @@ ul.messagelist + #content {
         }
     }
     .selector-filter {
+        padding-right: 0;
         padding-left: 0;
         border: none;
         label {
@@ -424,18 +427,18 @@ ul.messagelist + #content {
     select[multiple] {
         overflow-y: auto;
         width: 100% !important;
-        padding: 0;
         margin-bottom: 5px;
+        padding: 0;
         border: 1px solid $gray-lighter !important;
         // hides dropdown icon which is generally added to select fields #216
         background: none !important;
         option {
             font-size: $font-size-normal;
             line-height: $line-height-normal;
+            white-space: normal;
             width: 100%;
             padding: 10px;
             border-bottom: solid 1px $gray-lighter;
-            white-space: normal;
         }
     }
     a {
@@ -448,9 +451,9 @@ ul.messagelist + #content {
         width: 5% !important;
         margin: 10em 5px 0 5px !important;
         border: 0;
-        background-color: transparent;
         // hides background image because of icon font replacement #216
         background: none;
+        background-color: transparent;
         li {
             text-align: center;
             padding: 3px;
@@ -482,17 +485,17 @@ a.addlink {
     .addlink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
         font-weight: normal;
-        padding: 6px 20px !important;
         height: auto !important;
+        padding: 6px 20px !important;
     }
     .recoverlink {
         color: $color-primary !important;
         font-weight: normal;
         text-decoration: underline;
         padding: 9px 0 !important;
-        background-color: transparent !important;
-        border-radius: 0 !important;
         border: 0 !important;
+        border-radius: 0 !important;
+        background-color: transparent !important;
         &:hover,
         &:active,
         &:focus {
@@ -517,8 +520,8 @@ a.addlink {
     margin-top: -54px;
     margin-left: 0;
     li {
-        float: none;
         display: inline-block;
+        float: none;
         height: auto;
         margin-left: 10px;
         list-style: none;
@@ -529,8 +532,8 @@ a.addlink {
         > a {
             @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
             line-height: inherit !important;
-            margin-right: 0 !important;
             height: auto !important;
+            margin-right: 0 !important;
         }
     }
     .addlink {
@@ -564,14 +567,14 @@ a.addlink {
 
 // delete page
 .delete-confirmation .colM {
-    &#content {
-        padding: 25px !important;
-    }
     @include box();
     margin: 15px !important;
     padding: 25px !important;
-    box-shadow: $base-box-shadow;
     background-color: $white;
+    box-shadow: $base-box-shadow;
+    &#content {
+        padding: 25px !important;
+    }
     ul {
         margin-top: 10px;
     }
@@ -623,9 +626,9 @@ a.addlink {
 #page_form_lang_tabs input,
 .parler-language-tabs span {
     color: $gray-darkest !important;
+    font-size: $font-size-normal !important;
     font-weight: normal !important;
     text-transform: uppercase !important;
-    font-size: $font-size-normal !important;
     margin: 0;
     padding: 10px 20px !important;
     border: none !important;
@@ -642,8 +645,8 @@ a.addlink {
     &.selected,
     &.current {
         color: $color-primary !important;
-        background: transparent !important;
         border-bottom: solid 3px $color-primary !important;
+        background: transparent !important;
     }
     &.notfilled {
         color: $gray !important;
@@ -651,8 +654,8 @@ a.addlink {
         &:hover,
         &:focus {
             color: black !important;
-            background-color: $white !important;
             border-bottom: solid 3px $white !important;
+            background-color: $white !important;
         }
     }
     a {
@@ -708,6 +711,7 @@ a.addlink {
             bottom: 0 !important;
             margin: 0;
             padding: 0 0 0 12px !important;
+
             border-top-radius: 0;
         }
     }

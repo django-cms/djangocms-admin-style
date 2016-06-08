@@ -3,11 +3,10 @@
 
 {% block extrastyle %}{% include 'admin/inc/extrastyle.html' %}{% endblock %}
 
-{% block extrahead %}<link rel="stylesheet" type="text/css" href="{% static 'djangocms_admin_style/css/djangocms-admin.css' %}" />
+{% block extrahead %}
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<script type="text/javascript">
-if (window.self!==window.top) { document.write('<link rel="stylesheet" type="text/css" href="{% static 'djangocms_admin_style/css/djangocms-admin-frontend.css' %}" />'); }
-</script>
+<link rel="stylesheet" type="text/css" href="{% static 'djangocms_admin_style/css/djangocms-admin.css' %}" />
+<script src="{% static 'djangocms_admin_style/js/datetimefields.js' %}"></script>
 {% include 'admin/inc/extrahead.html' %}{% endblock %}
 
 {% block title %}{% include 'admin/inc/title.html' %}{% endblock %}

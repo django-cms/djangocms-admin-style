@@ -7,6 +7,9 @@
 @import "settings/all";
 @import "mixins/all";
 
+@import "libs/_html5-boilerplate.scss";
+@include html5-boilerplate;
+
 //##############################################################################
 // IMPORT COMPONENTS
 @import "components/base";

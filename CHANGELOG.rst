@@ -4,6 +4,18 @@ CHANGELOG
 Unreleased
 ----------
 
+* Fixed an issue with datetime fields being displayed incorrectly (#347)
+* Fixed a bug with related-widget add/change buttons inside changelist (#348)
+
+1.2.2 (2016-05-25)
+------------------
+
+* Fixed drag'n'drop on sortedm2m on touch devices
+* Fixed mispositioned elements on tablets
+
+1.2.0 (2016-05-19)
+------------------
+
 * Fix missing border under copy permissions text & paddings/margins of the buttons
 * Fix breadcrumbs position when cms debug bar is present
 * Fix "take me back" button on delete confirmations
