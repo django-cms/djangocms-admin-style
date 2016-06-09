@@ -207,10 +207,15 @@ form {
             font-size: $font-size-small !important;
             margin-top: 10px !important;
             margin-left: 0;
+            margin-bottom: 0;
             padding: 0 !important;
         }
         label {
             padding: 0 !important;
+            line-height: 20px;
+            &:not(.vCheckboxLabel):after {
+                content: none;
+            }
         }
         label + label {
             margin-left: 10px;
@@ -424,6 +429,10 @@ form {
             font-size: $font-size-large;
             vertical-align: middle;
             text-transform: none;
+            &.vCheckboxLabel {
+                display: inline;
+                vertical-align: middle;
+            }
         }
     }
 }
@@ -881,3 +890,16 @@ form select[multiple] {
     width: 36px;
     height: 36px;
 }
+.related-widget-wrapper-link {
+    opacity: 0.3;
+}
+
+.related-widget-wrapper-link:link {
+    opacity: 1;
+}
+
+.related-widget-wrapper-link:link:focus,
+.related-widget-wrapper-link:link:hover {
+    opacity: 1;
+}
+

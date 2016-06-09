@@ -60,6 +60,9 @@
     }
     #changelist {
         width: auto !important;
+        #action-toggle {
+            vertical-align: middle;
+        }
         .results {
             box-shadow: $base-box-shadow;
         }
@@ -75,6 +78,14 @@
                 margin-left: $filtered-filter-margin;
                 padding-right: $filtered-filter-padding;
                 padding-left: 0;
+
+                h2 {
+                    letter-spacing: 0;
+                }
+
+                h3 {
+                    font-weight: bold;
+                }
             }
             .results,
             .paginator,
@@ -189,6 +200,7 @@
             }
             h3 {
                 font-size: $font-size-normal;
+                font-weight: bold;
                 margin: 15px 0 10px !important;
                 padding-bottom: 7px !important;
             }
@@ -196,6 +208,9 @@
                 font-size: $font-size-small;
                 margin-bottom: 10px;
                 margin-left: 0 !important;
+                padding-left: 0;
+                padding-bottom: 0;
+                border-bottom: none;
             }
             li {
                 font-size: $font-size-normal;
@@ -220,6 +235,7 @@
                 white-space: nowrap;
                 // makes sure that action select doesn't jumps to new line #155
                 width: 257px !important;
+                font-size: 12px;
                 margin-top: 3px;
                 margin-right: 10px;
                 padding: 6px 40px 6px 20px;
@@ -377,7 +393,7 @@
         cursor: move !important;
     }
 }
-#toolbartable {
+.djangocms-admin-style {
     table {
         margin-bottom: 0 !important;
     }
@@ -387,6 +403,7 @@
             text-transform: uppercase;
             border-color: $gray-lighter;
             background-color: $white;
+            border-top: none;
             &.sorted {
                 background-color: $white;
             }
@@ -404,9 +421,16 @@
                 display: inline-block;
                 float: right;
                 padding-top: 0;
+                a.sortremove {
+                    &:after {
+                        display: none;
+                    }
+                }
             }
         }
     }
+}
+#toolbartable {
     .paginator {
         background-color: transparent;
         box-shadow: none;
