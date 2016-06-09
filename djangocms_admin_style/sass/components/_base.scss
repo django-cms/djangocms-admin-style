@@ -128,6 +128,7 @@ a:link {
 // make sure that cancel link has correct height #261
 a.button.cancel-link {
     float: right;
+    font-family: $base-font-family;
     display: inline-block;
     line-height: 34px !important;
     height: 34px !important;

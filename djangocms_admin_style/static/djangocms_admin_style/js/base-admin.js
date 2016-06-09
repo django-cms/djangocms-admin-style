@@ -1,12 +1,16 @@
 (function () {
-    // native javascript which opens menu on click
+    /**
+     * @function toggleClass
+     * @param {Element} element
+     * @param {String} className
+     * @returns {Boolean|void}
+     */
     function toggleClass(element, className) {
-
         var classString = element.className;
         var nameIndex = classString.indexOf(className);
 
         if (!element || !className) {
-            return true;
+            return false;
         }
 
         if (nameIndex === -1) {
@@ -24,8 +28,9 @@
 
 
     menuItem.addEventListener('click', function (event) {
-        event = event || window.event;
-        event.preventDefault();
+        var evt = event || window.event;
+
+        evt.preventDefault();
 
         toggleClass(submenu, 'submenu-open');
         toggleClass(menuItem, 'menu-item-open');
@@ -36,6 +41,7 @@
         if (event.target !== menuItem) {
             var submenuOpen = document.getElementsByClassName('submenu-open')[0];
             var menuItemOpen = document.getElementsByClassName('menu-item-open')[0];
+
             if (submenuOpen && menuItemOpen) {
                 submenuOpen.className = submenuOpen.className.replace('submenu-open', '');
                 menuItemOpen.className = menuItemOpen.className.replace('menu-item-open', '');

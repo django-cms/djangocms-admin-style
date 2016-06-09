@@ -24,8 +24,11 @@ body.dashboard {
             // reset box shadow which is added on every table
             box-shadow: none;
             // make sure caption has no blue hover
-            caption a:hover {
-                color: $black !important;
+            caption  {
+                letter-spacing: 0;
+                a:hover {
+                    color: $black !important;
+                }
             }
         }
         table th,

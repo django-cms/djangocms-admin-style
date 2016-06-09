@@ -275,6 +275,7 @@ ul.messagelist + #content {
     }
     input[type="submit"] {
         padding: 10px 20px !important;
+        height: 36px;
         &.default {
             margin-left: 10px;
             padding: 10px 20px !important;
@@ -282,6 +283,7 @@ ul.messagelist + #content {
     }
     input {
         width: auto !important;
+        height: 36px;
         margin-left: 10px;
     }
 }
@@ -349,7 +351,7 @@ ul.messagelist + #content {
     .selector-chosen {
         box-sizing: border-box;
         width: calc(47.5% - 5px);
-        padding: 0 10px 10px;
+        padding: 0 10px 5px;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
         background-color: $white;
@@ -371,6 +373,7 @@ ul.messagelist + #content {
             height: 17.2em !important;
             background: $white !important;
         }
+        .help-icon,
         img {
             width: 15px !important;
             height: 15px !important;
@@ -388,23 +391,31 @@ ul.messagelist + #content {
         width: 22px;
         height: 22px;
         background: none;
+        opacity: 0.5;
         &:before {
             font-size: 22px;
             margin: 0;
         }
         &.active {
-            color: $gray-light;
+            opacity: 1;
         }
     }
     a.selector-chooseall,
     a.selector-clearall {
+        display: inline-block;
+        height: 16px;
         color: $color-primary;
         font-weight: normal;
         background-image: none;
+        padding: 3px 0 3px 18px;
+        margin: 0;
+        opacity: 0.5;
+        overflow: visible;
         &:before {
             color: $gray-light;
         }
         &.active {
+            opacity: 1;
             font-weight: normal;
             background-image: none;
             &:before {
@@ -416,6 +427,7 @@ ul.messagelist + #content {
         padding-right: 0;
         padding-left: 0;
         border: none;
+        padding: 3px 0;
         label {
             display: none;
         }

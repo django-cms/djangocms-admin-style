@@ -1,33 +1,22 @@
 {
-    "name": "package",
-    "private": true,
-    "engines": {
-        "node": "0.9.0"
-    },
-    "devDependencies": {
-        "browserslist-saucelabs": "0.1.2",
-        "gulp": "3.9.0",
-        "gulp-autoprefixer": "2.3.1",
-        "gulp-minify-css": "1.2.0",
-        "gulp-protractor": "1.0.0",
-        "gulp-iconfont": "3.0.1",
-        "gulp-iconfont-css": "0.0.9",
-        "gulp-if": "1.2.5",
-        "gulp-sass": "2.0.3",
-        "gulp-sourcemaps": "1.5.2",
-        "gulp-util": "3.0.6",
-        "jasmine-core": "2.3.4",
-        "karma": "0.12.37",
-        "karma-coverage": "0.4.2",
-        "karma-coveralls": "1.1.0",
-        "karma-fixture": "0.2.5",
-        "karma-html2js-preprocessor": "0.1.0",
-        "karma-jasmine": "0.3.6",
-        "karma-json-fixtures-preprocessor": "0.0.4",
-        "karma-phantomjs-launcher": "0.2.0",
-        "karma-sauce-launcher": "0.2.14",
-        "phantomjs": "1.9.17",
-        "protractor": "2.1.0",
-        "minimist": "1.1.1"
-    }
+  "name": "djangocms-admin-style",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "djangocms-casper-helpers": "^1.1.1",
+    "gulp": "3.9.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-iconfont": "3.0.1",
+    "gulp-iconfont-css": "0.0.9",
+    "gulp-if": "1.2.5",
+    "gulp-minify-css": "1.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "2.0.3",
+    "gulp-sourcemaps": "1.5.2",
+    "gulp-util": "3.0.6",
+    "minimist": "1.1.1",
+    "phantomcss": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.7",
+    "resemblejs": "^2.2.0"
+  }
 }

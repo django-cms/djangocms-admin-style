@@ -1,0 +1,5 @@
+FROM djangocms-admin-style-test:base
+
+RUN pip install -r /app/test_requirements/django-1.8.txt
+
+ADD . /app

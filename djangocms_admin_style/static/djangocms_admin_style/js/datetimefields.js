@@ -7,10 +7,10 @@
      * @returns {void}
      */
     function ready(fn) {
-        if (document.readyState !== 'loading'){
-            fn();
-        } else {
+        if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            fn();
         }
     }
 
@@ -18,8 +18,8 @@
      * Creates arrays out of array-like collections
      *
      * @function arrayFrom
-     * @param {NodeList|HTMLElementsCollection|...} arrayLike
-     * @returns {Array<T>}
+     * @param {NodeList|HTMLElementsCollection} arrayLike
+     * @returns {Array}
      */
     function arrayFrom(arrayLike) {
         return [].slice.call(arrayLike);
@@ -45,12 +45,14 @@
      * @returns {Element|null}
      */
     function closest(element, className) {
-        while (element && element.nodeType === 1) {
-            if (hasClass(element, className)) {
-                return element;
+        var el = element;
+
+        while (el && el.nodeType === 1) {
+            if (hasClass(el, className)) {
+                return el;
             }
 
-            element = element.parentNode;
+            el = el.parentNode;
         }
 
         return null;
@@ -126,6 +128,7 @@
             arrayFrom(closestBox.childNodes).forEach(function (node) {
                 if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== '') {
                     var label = document.createElement('label');
+
                     label.appendChild(document.createTextNode(node.textContent));
                     node.parentNode.replaceChild(label, node);
                 }

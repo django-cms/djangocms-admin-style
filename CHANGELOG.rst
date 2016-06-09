@@ -6,6 +6,8 @@ Unreleased
 
 * Fixed an issue with datetime fields being displayed incorrectly (#347)
 * Fixed a bug with related-widget add/change buttons inside changelist (#348)
+* Fixed an issue with login screen on django 1.9
+* Added css regression tests framework
 
 1.2.2 (2016-05-25)
 ------------------
@@ -19,6 +21,7 @@ Unreleased
 * Fix missing border under copy permissions text & paddings/margins of the buttons
 * Fix breadcrumbs position when cms debug bar is present
 * Fix "take me back" button on delete confirmations
+* Added frontend integration tests (written with Casper JS)
 
 1.1.1 (2016-04-26)
 ------------------
