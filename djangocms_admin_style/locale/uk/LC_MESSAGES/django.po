@@ -6,11 +6,11 @@
 # Mikhail Kolesnik <mike@openbunker.org>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: djangocms-admin-style\n"
+"Project-Id-Version: django CMS Admin Style\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-01 14:52-0500\n"
-"PO-Revision-Date: 2015-12-01 20:36+0000\n"
-"Last-Translator: Mikhail Kolesnik <mike@openbunker.org>\n"
+"PO-Revision-Date: 2016-04-26 12:17+0000\n"
+"Last-Translator: Stefan Foulis <stefan.foulis@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/divio/djangocms-admin-style/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: templates/admin/delete_confirmation.html:9
 #: templates/admin/delete_selected_confirmation.html:9
 msgid "Home"
-msgstr "До"
+msgstr "Домівка"
 
 #: templates/admin/delete_confirmation.html:13
 msgid "Delete"
@@ -40,23 +40,23 @@ msgstr "Видалення %(object_name)s '%(escaped_object)s' призведе
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the"
 " following protected related objects:"
-msgstr ""
+msgstr "Видалення %(object_name)s '%(escaped_object)s' вимагатиме видалення наступних пов'язаних об'єктів:"
 
 #: templates/admin/delete_confirmation.html:36
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити %(object_name)s \"%(escaped_object)s\"? Всі пов'язані об'єкти, що перелічені, будуть видалені:"
 
 #: templates/admin/delete_confirmation.html:41
 #: templates/admin/delete_selected_confirmation.html:46
 msgid "Yes, I'm sure"
-msgstr ""
+msgstr "Так, я впевнений"
 
 #: templates/admin/delete_selected_confirmation.html:12
 msgid "Delete multiple objects"
-msgstr ""
+msgstr "Видалити кілька об'єктів"
 
 #: templates/admin/delete_selected_confirmation.html:19
 #, python-format
@@ -64,42 +64,42 @@ msgid ""
 "Deleting the selected %(objects_name)s would result in deleting related "
 "objects, but your account doesn't have permission to delete the following "
 "types of objects:"
-msgstr ""
+msgstr "Видалення обраних %(objects_name)s вимагатиме видалення пов'язаних об'єктів, але ваш обліковий запис не має прав для видалення таких типів об'єктів:"
 
 #: templates/admin/delete_selected_confirmation.html:27
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
-msgstr ""
+msgstr "Видалення обраних %(objects_name)s вимагатиме видалення наступних захищених пов'язаних об'єктів:"
 
 #: templates/admin/delete_selected_confirmation.html:35
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
 "following objects and their related items will be deleted:"
-msgstr ""
+msgstr "Ви впевнені, що хочете видалити вибрані %(objects_name)s? Всі об'єкти, що перелічені, та пов'язані з ними елементи будуть видалені:"
 
 #: templates/admin/inc/branding.html:6 templates/admin/inc/branding.html:9
 msgid "Django Administration"
-msgstr ""
+msgstr "Адміністрування Django"
 
 #: templates/admin/inc/branding.html:13
 msgid "Change password"
-msgstr ""
+msgstr "Змінити пароль"
 
 #: templates/admin/inc/branding.html:19
 msgid "Log out"
-msgstr ""
+msgstr "Вийти"
 
 #: templates/admin/inc/branding.html:27
 msgid "Open"
-msgstr ""
+msgstr "Відкрити"
 
 #: templates/admin/inc/branding.html:27
 msgid "my site"
-msgstr ""
+msgstr "мій сайт"
 
 #: templates/admin/inc/title.html:2
 msgid "Django site admin"
-msgstr ""
+msgstr "Aдміністрування Django сайта"
