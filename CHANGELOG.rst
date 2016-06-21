@@ -8,6 +8,7 @@ Unreleased
 * Fixed a bug with related-widget add/change buttons inside changelist (#348)
 * Fixed an issue with login screen on django 1.9
 * Added css regression tests framework
+* Fix inline grouped field with
 
 1.2.2 (2016-05-25)
 ------------------
