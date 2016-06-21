@@ -440,9 +440,10 @@ form {
 .form-row .select2-container {
     min-width: 250px + 12px;
 } // standard input width + default input padding
+
 .inline-group .form-row input,
 .inline-group .form-row textarea {
-    width: auto;
+    width: auto !important;
 }
 
 // select2
