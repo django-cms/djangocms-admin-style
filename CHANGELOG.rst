@@ -1,8 +1,8 @@
 CHANGELOG
 =========
 
-Unreleased
-----------
+1.2.3 (2016-06-22)
+------------------
 
 * Added css regression tests framework
 * Fixed an issue with datetime fields being displayed incorrectly (#347)
