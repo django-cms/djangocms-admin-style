@@ -1,30 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: django CMS Admin Style\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-01 14:52-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2016-06-20 15:12+0200\n"
+"PO-Revision-Date: 2016-04-26 12:17+0000\n"
+"Last-Translator: Stefan Foulis <stefan.foulis@gmail.com>\n"
+"Language-Team: English (http://www.transifex.com/divio/djangocms-admin-style/"
+"language/en/)\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: templates/admin/delete_confirmation.html:9
 #: templates/admin/delete_selected_confirmation.html:9
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #: templates/admin/delete_confirmation.html:13
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: templates/admin/delete_confirmation.html:20
 #, python-format
@@ -33,6 +34,9 @@ msgid ""
 "related objects, but your account doesn't have permission to delete the "
 "following types of objects:"
 msgstr ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
 
 #: templates/admin/delete_confirmation.html:28
 #, python-format
@@ -40,6 +44,8 @@ msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
 "following protected related objects:"
 msgstr ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
 
 #: templates/admin/delete_confirmation.html:36
 #, python-format
@@ -47,15 +53,21 @@ msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
 msgstr ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
 
 #: templates/admin/delete_confirmation.html:41
 #: templates/admin/delete_selected_confirmation.html:46
 msgid "Yes, I'm sure"
+msgstr "Yes, I'm sure"
+
+#: templates/admin/delete_confirmation.html:42
+msgid "No, take me back"
 msgstr ""
 
 #: templates/admin/delete_selected_confirmation.html:12
 msgid "Delete multiple objects"
-msgstr ""
+msgstr "Delete multiple objects"
 
 #: templates/admin/delete_selected_confirmation.html:19
 #, python-format
@@ -64,6 +76,9 @@ msgid ""
 "objects, but your account doesn't have permission to delete the following "
 "types of objects:"
 msgstr ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
 
 #: templates/admin/delete_selected_confirmation.html:27
 #, python-format
@@ -71,6 +86,8 @@ msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
 msgstr ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
 
 #: templates/admin/delete_selected_confirmation.html:35
 #, python-format
@@ -78,27 +95,33 @@ msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
 "following objects and their related items will be deleted:"
 msgstr ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
 
 #: templates/admin/inc/branding.html:6 templates/admin/inc/branding.html:9
 msgid "Django Administration"
+msgstr "Django Administration"
+
+#: templates/admin/inc/branding.html:15
+msgid "Documentation"
 msgstr ""
 
-#: templates/admin/inc/branding.html:13
+#: templates/admin/inc/branding.html:22
 msgid "Change password"
-msgstr ""
+msgstr "Change password"
 
-#: templates/admin/inc/branding.html:19
+#: templates/admin/inc/branding.html:28
 msgid "Log out"
-msgstr ""
+msgstr "Log out"
 
-#: templates/admin/inc/branding.html:27
+#: templates/admin/inc/branding.html:36
 msgid "Open"
-msgstr ""
+msgstr "Open"
 
-#: templates/admin/inc/branding.html:27
+#: templates/admin/inc/branding.html:36
 msgid "my site"
-msgstr ""
+msgstr "my site"
 
 #: templates/admin/inc/title.html:2
 msgid "Django site admin"
-msgstr ""
+msgstr "Django site admin"

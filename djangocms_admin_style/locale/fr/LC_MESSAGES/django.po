@@ -3,15 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Translators:
+# Frigory33 <chironsylvain@orange.fr>, 2016
 # Martin Koistinen <martin.koistinen@divio.ch>, 2015
 # Thibault Jamme <teebo@glaine.net>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: djangocms-admin-style\n"
+"Project-Id-Version: django CMS Admin Style\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-01 14:52-0500\n"
-"PO-Revision-Date: 2015-12-03 15:35+0000\n"
-"Last-Translator: Thibault Jamme <teebo@glaine.net>\n"
+"POT-Creation-Date: 2016-06-20 15:12+0200\n"
+"PO-Revision-Date: 2016-06-20 13:12+0000\n"
+"Last-Translator: Angelo Dini <finalangeljp@hotmail.com>\n"
 "Language-Team: French (http://www.transifex.com/divio/djangocms-admin-style/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,26 +36,30 @@ msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
 "related objects, but your account doesn't have permission to delete the "
 "following types of objects:"
-msgstr "Supprimer %(object_name)s '%(escaped_object)s' aura pour conséqunce de supprimer les objets de la même famile, mais votre compte n'a pas les permissions nécessaires pour supprimer les objets de ces types:"
+msgstr "Supprimer l'objet %(object_name)s « %(escaped_object)s » devrait provoquer la suppression des objets liés, mais votre compte n'a pas les permissions nécessaires pour supprimer les types d'objets suivants :"
 
 #: templates/admin/delete_confirmation.html:28
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the"
 " following protected related objects:"
-msgstr "Supprimer %(object_name)s '%(escaped_object)s' nécessite également la suppression des objets de la même famille suivants:"
+msgstr "Supprimer l'objet %(object_name)s « %(escaped_object)s » provoquera la suppression des objets protégés liés suivants :"
 
 #: templates/admin/delete_confirmation.html:36
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
-msgstr "Etes-vous certain/e de vouloir supprimer %(object_name)s \"%(escaped_object)s\"? Tous les objets de la même famille suivants seront supprimés:"
+msgstr "Êtes-vous sûr(e) de vouloir supprimer l'objet %(object_name)s « %(escaped_object)s » ? Tous les éléments liés suivants seront supprimés :"
 
 #: templates/admin/delete_confirmation.html:41
 #: templates/admin/delete_selected_confirmation.html:46
 msgid "Yes, I'm sure"
-msgstr "Oui, absolument"
+msgstr "Oui, j'en suis sûr"
+
+#: templates/admin/delete_confirmation.html:42
+msgid "No, take me back"
+msgstr ""
 
 #: templates/admin/delete_selected_confirmation.html:12
 msgid "Delete multiple objects"
@@ -65,42 +71,46 @@ msgid ""
 "Deleting the selected %(objects_name)s would result in deleting related "
 "objects, but your account doesn't have permission to delete the following "
 "types of objects:"
-msgstr "Supprimer l'objet sélectioné %(objects_name)s aura pour conséquence de supprimer également des objets de la même famille, mais votre compte n'a pas les permissions nécessaires pour supprimer les types d'objets suivants:"
+msgstr "Supprimer l'objet sélectionné %(objects_name)s devrait provoquer la suppression des objets liés, mais votre compte n'a pas les permissions nécessaires pour supprimer les types d'objets suivants :"
 
 #: templates/admin/delete_selected_confirmation.html:27
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
-msgstr "Supprimer l'objet sélectioné  %(objects_name)s aura pour conséquence la suppression des objets protégés suivants:"
+msgstr "Supprimer l'objet sélectionné %(objects_name)s provoquera la suppression des objets protégés liés suivants :"
 
 #: templates/admin/delete_selected_confirmation.html:35
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
 "following objects and their related items will be deleted:"
-msgstr "Etes-vous certain/e de vouloir supprimer l'object sélectioné %(objects_name)s? Tous les objets suivants ainsi que leurs dépendences seront supprimés:"
+msgstr "Êtes-vous sûr(e) de vouloir supprimer l'objet sélectionné %(objects_name)s ? Tous les objets suivants et les éléments liés seront supprimés :"
 
 #: templates/admin/inc/branding.html:6 templates/admin/inc/branding.html:9
 msgid "Django Administration"
 msgstr "Administration de Django"
 
-#: templates/admin/inc/branding.html:13
-msgid "Change password"
-msgstr "Changer le mot de passe"
+#: templates/admin/inc/branding.html:15
+msgid "Documentation"
+msgstr ""
 
-#: templates/admin/inc/branding.html:19
+#: templates/admin/inc/branding.html:22
+msgid "Change password"
+msgstr "Changer de mot de passe"
+
+#: templates/admin/inc/branding.html:28
 msgid "Log out"
 msgstr "Se déconnecter"
 
-#: templates/admin/inc/branding.html:27
+#: templates/admin/inc/branding.html:36
 msgid "Open"
 msgstr "Ouvrir"
 
-#: templates/admin/inc/branding.html:27
+#: templates/admin/inc/branding.html:36
 msgid "my site"
 msgstr "mon site"
 
 #: templates/admin/inc/title.html:2
 msgid "Django site admin"
-msgstr "Django administrateur du site"
+msgstr "Administrateur du site Django"
