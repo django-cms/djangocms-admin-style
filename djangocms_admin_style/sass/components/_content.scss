@@ -630,8 +630,8 @@ a.addlink {
 }
 
 // cms language buttons
-#page_form_lang_tabs,
-.parler-language-tabs {
+.djangocms-admin-style #page_form_lang_tabs,
+.djangocms-admin-style .parler-language-tabs {
     margin-bottom: 30px;
     border-bottom: solid 1px $gray-lighter;
 }
