@@ -256,13 +256,13 @@ form {
             color: $gray-darkest;
             font-size: $font-size-large;
             background: none;
-            a {
-                color: $color-primary;
-            }
         }
         &.collapsed {
             margin-bottom: 30px !important;
             border: 0;
+            .collapse-toggle {
+                color: $color-primary;
+            }
         }
     }
     label select {
