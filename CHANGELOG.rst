@@ -4,11 +4,12 @@ CHANGELOG
 Unreleased
 ----------
 
+* Added css regression tests framework
 * Fixed an issue with datetime fields being displayed incorrectly (#347)
 * Fixed a bug with related-widget add/change buttons inside changelist (#348)
-* Fixed an issue with login screen on django 1.9
-* Added css regression tests framework
-* Fix inline grouped field with
+* Fixed an issue with login screen on Django 1.9
+* Fixed inline grouped field with
+* Fixed an issue with calendar display in Django 1.9
 
 1.2.2 (2016-05-25)
 ------------------
