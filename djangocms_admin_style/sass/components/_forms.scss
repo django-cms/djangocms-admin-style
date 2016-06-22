@@ -255,10 +255,14 @@ form {
         &.collapse h2 {
             color: $gray-darkest;
             font-size: $font-size-large;
-            background-image: none;
+            background: none;
         }
         &.collapsed {
             margin-bottom: 30px !important;
+            border: 0;
+            .collapse-toggle {
+                color: $color-primary;
+            }
         }
     }
     label select {
@@ -440,9 +444,10 @@ form {
 .form-row .select2-container {
     min-width: 250px + 12px;
 } // standard input width + default input padding
+
 .inline-group .form-row input,
 .inline-group .form-row textarea {
-    width: auto;
+    width: auto !important;
 }
 
 // select2
@@ -618,6 +623,7 @@ div.calendar {
     }
     .today a {
         color: $gray-darker;
+        font-weight: normal;
         background-color: $gray-lighter;
     }
 }
@@ -658,6 +664,8 @@ div.calendarbox {
     }
     .calendarnav-previous,
     .calendarnav-next {
+        top: 0;
+        text-indent: initial;
         color: $color-primary;
         font-size: 0;
         text-decoration: none;
