@@ -445,9 +445,10 @@ form {
     min-width: 250px + 12px;
 } // standard input width + default input padding
 
-.inline-group .form-row input,
-.inline-group .form-row textarea {
+.inline-group .module:not(.aligned) .form-row input,
+.inline-group .module:not(.aligned) .form-row textarea {
     width: auto !important;
+    height: 36px;
 }
 
 // select2
