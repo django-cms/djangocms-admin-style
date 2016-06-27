@@ -141,7 +141,7 @@
     }
     tbody {
         td {
-            vertical-align: baseline !important;
+            vertical-align: baseline;
             &.field-_reorder,
             &.drag-handler {
                 vertical-align: middle !important;
@@ -170,8 +170,8 @@
             font-size: $font-size-normal;
             line-height: inherit;
             text-transform: none;
-            vertical-align: middle !important;
-            padding: 10px !important;
+            vertical-align: middle;
+            padding: 10px;
         }
     }
     td {
@@ -305,20 +305,11 @@
             margin-left: 8px;
         }
     }
-    tbody td {
-        vertical-align: middle !important;
+    tr.has_original td {
+        padding-top: 2em;
     }
-    td.original {
-            // make sure that there is no padding if there is no content #252
-           padding: 0 !important;
-        p {
-            position: static !important;
-            font-weight: normal !important;
-            padding: 0 !important;
-        }
-        .vForeignKeyRawIdAdminField {
-            width: auto;
-        }
+    tbody td {
+        vertical-align: middle;
     }
     .field-can_change,
     .field-can_add,
@@ -331,6 +322,19 @@
     }
     .related-widget-wrapper a.change-related {
         margin-left: 10px;
+    }
+}
+.inline-group .tabular {
+    tbody td.original {
+        // make sure that there is no padding if there is no content #252
+        padding: 0 !important;
+        vertical-align: top;
+        p {
+            padding: 5px 7px;
+        }
+        .vForeignKeyRawIdAdminField {
+            width: auto;
+        }
     }
 }
 #result_list tbody tr:hover,
