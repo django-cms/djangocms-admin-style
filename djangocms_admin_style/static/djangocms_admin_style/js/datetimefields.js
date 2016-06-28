@@ -28,7 +28,7 @@
     /**
      * @function hasClass
      * @param {Element} element
-     * @param {String} className
+     * @param {String} className only accepts single classname
      * @returns {Boolean}
      */
     function hasClass(element, className) {
@@ -78,7 +78,7 @@
 
     /**
      * Wraps each date and time input inside of ".datetime" into own
-     * field boxes.
+     * field boxes. But not the ones that already have ".field-box" as a parent somewhere up the tree.
      *
      * @function reorganizeMarkup
      */
@@ -87,6 +87,16 @@
 
         dateTimeFields.forEach(function (field) {
             var closestBox = closest(field, 'field-box');
+            var closestDateTime = closest(field, 'datetime');
+            var closestBoxToDateTime;
+
+            if (closestDateTime) {
+                closestBoxToDateTime = closest(closestDateTime, 'field-box');
+            }
+
+            if (closestBoxToDateTime && closestBoxToDateTime === closestBox) {
+                return;
+            }
 
             if (!closestBox) {
                 var parent = field.parentNode;
@@ -123,7 +133,15 @@
         var dateTimeFields = getDateTimeFields();
 
         dateTimeFields.forEach(function (field) {
-            var closestBox = closest(field, 'field-box');
+            var closestBox = closest(field, 'datetime');
+
+            if (!closestBox) {
+                closestBox = closest(field, 'field-box');
+            }
+
+            if (!closestBox) {
+                return;
+            }
 
             arrayFrom(closestBox.childNodes).forEach(function (node) {
                 if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== '') {
