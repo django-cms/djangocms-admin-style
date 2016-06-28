@@ -6,7 +6,7 @@ CHANGELOG
 
 * Fixes input and textarea fields in not aligned inline groups
 * Fixes select field width in table
-* Adding missing labels to datetime
+* Added missing labels to datetime fields that are already part of the field box
 
 1.2.3 (2016-06-22)
 ------------------
