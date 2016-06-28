@@ -28,7 +28,7 @@
     /**
      * @function hasClass
      * @param {Element} element
-     * @param {String} className only accepts single classname
+     * @param {String} className only accepts single class name
      * @returns {Boolean}
      */
     function hasClass(element, className) {
