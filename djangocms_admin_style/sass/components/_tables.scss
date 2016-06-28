@@ -177,8 +177,9 @@
     td {
         white-space: nowrap;
         select {
-            width: auto !important;
             max-width: 160px !important;
+            // makes sure that select with related widget links fits in table row #360
+            min-width: initial;
             height: 36px;
             margin: 0;
             padding-right: 30px;
