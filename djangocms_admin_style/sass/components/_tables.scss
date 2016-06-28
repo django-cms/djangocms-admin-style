@@ -178,6 +178,7 @@
         white-space: nowrap;
         select {
             max-width: 160px !important;
+            // makes sure that select with related widget links fits in table row #360
             min-width: initial;
             height: 36px;
             margin: 0;
