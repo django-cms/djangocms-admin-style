@@ -177,8 +177,8 @@
     td {
         white-space: nowrap;
         select {
-            width: auto !important;
             max-width: 160px !important;
+            min-width: initial;
             height: 36px;
             margin: 0;
             padding-right: 30px;
