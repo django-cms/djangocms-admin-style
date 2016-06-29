@@ -6,7 +6,7 @@ CHANGELOG
 
 * Fixes input and textarea fields in not aligned inline groups
 * Fixes select field width in table
-* Set different width for related widget wrapper select field depending on links
+* Set different width for related widget wrapper select field depending on amount of links
 
 1.2.3 (2016-06-22)
 ------------------
