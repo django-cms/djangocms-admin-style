@@ -52,12 +52,8 @@
         relatedWidgetWrappers.forEach(function (wrapper) {
             var links = wrapper.getElementsByClassName('related-widget-wrapper-link');
 
-            if (links.length === 1) {
-               wrapper.classList.add('widget-wrapper-links-1');
-            } else if (links.length === 2) {
-                wrapper.classList.add('widget-wrapper-links-2');
-            } else {
-               wrapper.classList.add('widget-wrapper-links-3');
+            if (links && links.length) {
+                wrapper.className += ' widget-wrapper-links-' + links.length;
             }
         });
     }
