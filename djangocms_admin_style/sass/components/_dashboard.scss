@@ -33,7 +33,7 @@ body.dashboard {
         }
         table th,
         table td {
-            vertical-align: baseline;
+            vertical-align: middle !important;
             line-height: $font-size-normal !important;
             width: auto;
             padding: 12px 10px !important;
