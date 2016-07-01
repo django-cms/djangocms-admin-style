@@ -170,7 +170,7 @@
             font-size: $font-size-normal;
             line-height: inherit;
             text-transform: none;
-            vertical-align: middle !important;
+            vertical-align: top !important;
             padding: 10px !important;
         }
     }
@@ -307,13 +307,22 @@
         }
     }
     tbody td {
-        vertical-align: middle !important;
+        input[type="checkbox"] {
+            line-height: 36px;
+            height: 36px;
+        }
+        a:not(.related-widget-wrapper-link):not(.add-another):before {
+            vertical-align: middle;
+            line-height: 36px;
+        }
     }
     td.original {
-            // make sure that there is no padding if there is no content #252
-           padding: 0 !important;
+        // make sure that there is no padding if there is no content #252
+        padding: 0 !important;
         p {
             position: static !important;
+            line-height: 36px  !important;
+            height: 36px  !important;
             font-weight: normal !important;
             padding: 0 !important;
         }
