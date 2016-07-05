@@ -71,6 +71,7 @@ HELPER_SETTINGS = dict(
         'reversion',
         'djangocms_text_ckeditor',
         'djangocms_grid',
+        'djangocms_admin_style.test_utils.project.test_app',
         # 'easy_thumbnails',
         # 'filer',
         # 'mptt',
