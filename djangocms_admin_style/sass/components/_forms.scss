@@ -333,6 +333,7 @@ form {
     input[type="file"] {
         color: $gray;
         padding: 6px 5px;
+        height: auto;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
         outline: none;
