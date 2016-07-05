@@ -9,6 +9,7 @@ CHANGELOG
 * Added missing labels to datetime fields that are already part of the field box
 * Fixes the "Open my site" button in admin views to use Site name
 * Set different width for related widget wrapper select field depending on amount of links
+* Fixed file inputs appearance in Firefox
 
 1.2.3 (2016-06-22)
 ------------------
