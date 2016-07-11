@@ -2,7 +2,7 @@
 from django.db import models
 
 
-class GenericFields(models.Model):
+class TestGenericFields(models.Model):
     """
     Model for integration test with all generic fields.
     Order of fields is important.
@@ -29,6 +29,17 @@ class GenericFields(models.Model):
     foreign_key = models.ForeignKey('RelatedModel', related_name='+')
     many_to_many_field = models.ManyToManyField('RelatedModel', related_name='+')
     one_to_one_field = models.OneToOneField('RelatedModel', related_name='+')
+
+
+class TestFieldsGrouping1(models.Model):
+    date_field_1 = models.DateTimeField()
+    date_field_2 = models.DateTimeField()
+    foreign_key = models.ForeignKey('RelatedModel', related_name='+')
+
+
+class TestEasySelect(models.Model):
+    foreign_key = models.ForeignKey('RelatedModel', related_name='+')
+    many_to_many_field = models.ManyToManyField('RelatedModel', related_name='+')
 
 
 class RelatedModel(models.Model):
