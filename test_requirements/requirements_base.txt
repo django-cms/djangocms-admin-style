@@ -2,3 +2,4 @@ djangocms-helper
 djangocms-grid
 django-reversion==1.10,<1.11
 six>=1.9.0
+django-easy-select2>=1.3
