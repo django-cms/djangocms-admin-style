@@ -10,6 +10,7 @@ CHANGELOG
 * Fixes the "Open my site" button in admin views to use Site name
 * Set different width for related widget wrapper select field depending on amount of links
 * Fixed file inputs appearance in Firefox
+* Fixed an issue with oversized table headers
 
 1.2.3 (2016-06-22)
 ------------------
