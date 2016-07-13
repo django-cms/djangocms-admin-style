@@ -55,7 +55,8 @@ var INTEGRATION_TESTS = [
     [
         'loginAdmin',
         'dashboard',
-        'addNewUser'
+        'addNewUser',
+        'adminsortable2'
     ]
 ];
 

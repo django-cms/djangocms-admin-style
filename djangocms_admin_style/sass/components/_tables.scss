@@ -295,6 +295,15 @@
         td,
         &.original {
             padding: 1px 10px !important;
+            vertical-align: middle !important;
+        }
+
+        .action-checkbox {
+            padding: 0 15px !important;
+        }
+
+        .ui-sortable-placeholder td {
+            height: 36px + 2px; // height + border
         }
     }
 }
