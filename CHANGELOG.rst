@@ -11,6 +11,8 @@ CHANGELOG
 * Set different width for related widget wrapper select field depending on amount of links
 * Fixed file inputs appearance in Firefox
 * Fixed an issue with oversized table headers
+* Fixed an issue with sortable tables
+* Fixed an issue with datetime fields
 
 1.2.3 (2016-06-22)
 ------------------

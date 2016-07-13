@@ -130,6 +130,9 @@ ul.messagelist + #content {
 }
 
 // inlines
+.inline-group {
+    margin-top: 10px; // consistency with django 1.8
+}
 .module h2,
 .module caption,
 .inline-group h2 {
@@ -138,7 +141,11 @@ ul.messagelist + #content {
     font-weight: normal;
     line-height: $font-size-normal;
     padding-left: 0;
+    letter-spacing: 0;
     background: none;
+}
+.inline-group h2 {
+    text-transform: none;
 }
 .djangocms-admin-style .inline-group {
     @include box();

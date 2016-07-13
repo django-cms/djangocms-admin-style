@@ -138,7 +138,8 @@ casper.test.begin('Creation of a new job opening', function (test) {
         .waitUntilVisible('#jobopening_form')
         .then(function () {
             test.assertVisible('#jobopening_form', 'Job opening creation form has been loaded');
-
+        })
+        .wait(2000, function () {
             phantomcss.screenshot('html', 'Job opening form');
         })
         .then(function () {
