@@ -182,10 +182,21 @@ form {
 
         appearance: none;
     }
-    input.vDateField,
-    input.vTimeField {
-        // caluclates width pf input field and removes date and calendar pickers to make sure that they floats next to input #319
-        width: calc(100% - 112px) !important;
+    &,
+    .datetime,
+    .form-row .datetime {
+        input.vDateField,
+        input.vTimeField {
+            // caluclates width pf input field and removes date and calendar pickers to make sure that they floats next to input #319
+            width: calc(100% - 112px) !important;
+            margin-left: 0; // django 1.9
+            margin-bottom: 0; // django 1.9
+        }
+
+        // add a little bit of space on top
+        br + label {
+            margin-top: 10px;
+        }
     }
     select::-ms-expand {
         display: none;
@@ -439,6 +450,13 @@ form {
                 vertical-align: middle;
             }
         }
+    }
+
+    // backport from django 1.9
+    .aligned label + p {
+        padding: 6px 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -925,4 +943,3 @@ form select[multiple] {
 .related-widget-wrapper-link:link:hover {
     opacity: 1;
 }
-

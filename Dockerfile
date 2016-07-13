@@ -10,6 +10,8 @@ RUN apt-get -y update && apt-get -y install \
         python \
         python-pip \
         git \
+        # aldryn-jobs deps
+        libxml2-dev libxslt-dev \
         # pillow deps
         libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk python-dev && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

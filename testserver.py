@@ -68,14 +68,25 @@ HELPER_SETTINGS = dict(
         }
     },
     INSTALLED_APPS=[
-        'reversion',
         'djangocms_text_ckeditor',
+        'reversion',
         'djangocms_grid',
-        # 'easy_thumbnails',
-        # 'filer',
-        # 'mptt',
-        # 'aldryn_bootstrap3',
-        # 'cms.test_utils.project.placeholderapp',
+
+        # aldryn_jobs
+        'absolute',
+        'aldryn_common',
+        'aldryn_boilerplates',
+        'aldryn_apphooks_config',
+        'aldryn_reversion',
+        'aldryn_categories',
+        'aldryn_jobs',
+        'aldryn_translation_tools',
+        'adminsortable2',
+        'bootstrap3',
+        'emailit',
+        'parler',
+        'sortedm2m',
+        'standard_form',
     ],
     MIDDLEWARE_CLASSES=[
         'cms.middleware.utils.ApphookReloadMiddleware',

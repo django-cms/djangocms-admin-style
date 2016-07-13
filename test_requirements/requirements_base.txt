@@ -1,4 +1,5 @@
 djangocms-helper
 djangocms-grid
 django-reversion==1.10,<1.11
+https://github.com/aldryn/aldryn-jobs/archive/master.zip#egg=aldryn-jobs
 six>=1.9.0
