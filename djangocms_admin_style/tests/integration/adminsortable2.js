@@ -81,6 +81,37 @@ casper.test.begin('Creation / deletion of the apphook', function (test) {
         });
 });
 
+[
+    [800, 1024],
+    [768, 1024],
+    [480, 1024],
+    [1280, 1024]
+].forEach(function (dimensions) {
+    casper.test.begin('Apphook config list ' + JSON.stringify(dimensions), function (test) {
+        casper
+            .start(globals.adminUrl)
+            .viewport(dimensions[0], dimensions[1])
+            .then(function () {
+                this.click(
+                    xPath(cms.getXPathForAdminSection({
+                        section: 'Aldryn Jobs',
+                        row: 'Aldryn Jobs configurations'
+                    }))
+                );
+            })
+            .waitForSelector('#result_list')
+            .then(function () {
+                phantomcss.screenshot('html', 'Apphooks ' + dimensions[0]);
+            })
+            .then(function () {
+                phantomcss.compareSession();
+            })
+            .run(function () {
+                test.done();
+            });
+    });
+});
+
 casper.test.begin('Creation of a new jobs category', function (test) {
     casper
         .start(globals.adminUrl)

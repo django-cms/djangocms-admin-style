@@ -533,11 +533,20 @@ a.addlink {
 .object-tools {
     float: right;
     text-align: right;
-    // make sure that buttons don't overlap title
-    max-width: 70%;
     // make sure that buttons are aligned with title
     margin-top: -54px;
     margin-left: 0;
+    background: $gray-lightest;
+    white-space: nowrap;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        left: -20px;
+        background: linear-gradient(to right, rgba($gray-lightest, 0), $gray-lightest);
+    }
     li {
         display: inline-block;
         float: none;
