@@ -1,5 +1,5 @@
 {% extends "admin/base.html" %}
-{% load i18n staticfiles %}
+{% load i18n staticfiles admin_style_tags %}
 
 {% block extrastyle %}{% include 'admin/inc/extrastyle.html' %}{% endblock %}
 
@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'djangocms_admin_style/css/djangocms-admin.css' %}" />
 <script src="{% static 'djangocms_admin_style/js/datetimefields.js' %}"></script>
 <script src="{% static 'djangocms_admin_style/js/related-widget-wrapper.js' %}"></script>
+{% if request.user.is_superuser %}{% render_update_notification %}{% endif %}
 {% include 'admin/inc/extrahead.html' %}{% endblock %}
 
 {% block title %}{% include 'admin/inc/title.html' %}{% endblock %}
