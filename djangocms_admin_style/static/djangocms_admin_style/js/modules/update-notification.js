@@ -1,7 +1,8 @@
 var $ = require('jquery');
 var Cookies = require('js-cookie');
 var RELEASES_URL = 'https://raw.githubusercontent.com/vxsx/djangocms-test-versions/master/latest.json';
-var COOKIE_EXPIRATION = 365; // ~1 year
+var MAIN_COOKIE_EXPIRATION = 365; // ~1 year
+var REQUEST_COOKIE_EXPIRATION = 14; // check only every two weeks
 
 /**
  * @function getLatestVersionData
@@ -83,9 +84,18 @@ function injectMessage(versionObject, checkType) {
                 type: checkType
             }),
             {
-                exprires: COOKIE_EXPIRATION
+                exprires: MAIN_COOKIE_EXPIRATION
             }
         );
+
+        Cookies.set(
+            'cms_upgrade_notification_closed_recently',
+            true,
+            {
+                expires: REQUEST_COOKIE_EXPIRATION
+            }
+        );
+
         messageTmpl.slideUp('fast', function () {
             messageTmpl.remove();
         });
@@ -124,7 +134,7 @@ function shouldShowMessage(versionObj, currentVersion, checkType) {
 function init() {
     var metaVersion = $('meta[name="djangocms_version"]');
 
-    if (!metaVersion.length) {
+    if (!metaVersion.length || Cookies.get('cms_upgrade_notification_closed_recently')) {
         return;
     }
 
