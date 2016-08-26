@@ -28,7 +28,7 @@ if (window.jQuery || (window.django && window.django.jQuery)) {
              * @function init
              * @param {jQuery} elements
              */
-            function init(elements) {
+            function initSupport(elements) {
                 elements.on({
                     touchstart: touchHandler,
                     touchmove: touchHandler,
@@ -37,7 +37,29 @@ if (window.jQuery || (window.django && window.django.jQuery)) {
                 });
             }
 
-            init(this);
+            initSupport(this);
         };
     })(window.jQuery || window.django.jQuery);
 }
+
+/**
+ * Initializes drag'n'drop support for TreeBeard
+ *
+ * @function init
+ * @public
+ */
+function init() {
+    if (!window.jQuery || !window.django || !window.django.jQuery) {
+        return;
+    }
+
+    // scopes the jQuery
+    (function ($) {
+        // calls touch support function
+        if ($.fn.touchSupport && $('.drag-handler').length) {
+            $(window).touchSupport();
+        }
+    })(window.jQuery || window.django.jQuery);
+}
+
+module.exports = init;

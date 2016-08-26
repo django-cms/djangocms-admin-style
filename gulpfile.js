@@ -19,6 +19,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var minifyCss = require('gulp-minify-css');
 var eslint = require('gulp-eslint');
 var integrationTests = require('djangocms-casper-helpers/gulp');
+var webpack = require('webpack');
 
 var argv = require('minimist')(process.argv.slice(2));
 
@@ -47,6 +48,7 @@ var PROJECT_PATTERNS = {
         PROJECT_PATH.js + '/**/*.js',
         PROJECT_PATH.tests + '/**/*.js',
         '!' + PROJECT_PATH.js + '/**/jquery.*.js',
+        '!' + PROJECT_PATH.js + '/dist/**/*.js',
         'gulpfile.js'
     ]
 };
@@ -109,6 +111,31 @@ gulp.task('lint:javascript', function () {
         .pipe(eslint.failAfterError());
 });
 
+var webpackBundle = function (opts) {
+    var webpackOptions = opts || {};
+
+    webpackOptions.PROJECT_PATH = PROJECT_PATH;
+    webpackOptions.debug = options.debug;
+
+    return function (done) {
+        var config = require('./webpack.config')(webpackOptions);
+
+        webpack(config, function (err, stats) {
+            if (err) {
+                throw new gutil.PluginError('webpack', err);
+            }
+            gutil.log('[webpack]', stats.toString({ colors: true }));
+            if (typeof done !== 'undefined' && (!opts || !opts.watch)) {
+                done();
+            }
+        });
+    };
+};
+
+gulp.task('bundle:watch', webpackBundle({ watch: true }));
+gulp.task('bundle', webpackBundle());
+
+
 // #######################################
 // #TESTS#
 gulp.task('tests', ['tests:integration']);
@@ -126,6 +153,7 @@ gulp.task('tests:integration', integrationTests({
 // #############################################################################
 // #COMMANDS#
 gulp.task('watch', function () {
+    gulp.start('bundle:watch');
     gulp.watch(PROJECT_PATTERNS.sass, ['sass']);
     gulp.watch(PROJECT_PATTERNS.js, ['lint']);
 });
