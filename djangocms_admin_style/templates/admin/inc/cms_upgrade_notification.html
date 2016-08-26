@@ -2,7 +2,7 @@
 <meta name="djangocms_version" content="{{ cms_version }}">
 <meta name="djangocms_version_check_type" content="{{ cms_version_check_type }}">
 <script type="text/template" id="cms-update-notification">
-    <div class="cms-update-message" style="display: none;">
+    <div class="cms-update-message" hidden>
         {% autoescape off %}
             {% blocktrans with version='<strong>'|add:cms_version|add:'</strong>' latest='<strong class="js-latest-version"></strong>' release_link_before='<a class="js-release-notes-link" href="">' release_link_after='</a>' %}
                 There is a django CMS upgrade available. You are using: {{ version }}, new version is: {{ latest }}.

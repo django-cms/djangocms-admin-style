@@ -16,12 +16,12 @@ function getLatestVersionData() {
 }
 
 /**
- * @function cmpVersion
+ * @function compareVersion
  * @param {String} a
  * @param {String} b
  * @returns {Number}
  */
-function cmpVersion(a, b) {
+function compareVersion(a, b) {
     var i;
     var cmp;
     var len;
@@ -42,13 +42,15 @@ function cmpVersion(a, b) {
 }
 
 /**
- * @function gtVersion
+ * is first version greater than second version?
+ *
+ * @function greaterThanVersion
  * @param {String} a
  * @param {String} b
  * @returns {Boolean} true if a > b or a === b but a is a dev/rc version
  */
-function gtVersion(a, b) {
-    var cmp = cmpVersion(a, b);
+function greaterThanVersion(a, b) {
+    var cmp = compareVersion(a, b);
 
     if (cmp > 0) {
         return true;
@@ -84,7 +86,7 @@ function injectMessage(versionObject, checkType) {
                 type: checkType
             }),
             {
-                exprires: MAIN_COOKIE_EXPIRATION
+                expires: MAIN_COOKIE_EXPIRATION
             }
         );
 
@@ -124,7 +126,7 @@ function shouldShowMessage(versionObj, currentVersion, checkType) {
         return false;
     }
 
-    return gtVersion(versionObj.version, currentVersion);
+    return greaterThanVersion(versionObj.version, currentVersion);
 }
 
 /**
