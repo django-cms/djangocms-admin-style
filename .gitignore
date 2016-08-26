@@ -1,5 +1,6 @@
 *.pyc
 dist
+!djangocms_admin_style/static/djangocms_admin_style/js/dist
 *egg-info*
 bin/
 include/
@@ -10,7 +11,6 @@ database.db
 .idea
 .sass-cache
 build
-dist
 .eggs
 screenshots/results
 screenshots/failures
