@@ -35,6 +35,7 @@ HELPER_SETTINGS = dict(
         'content': 0,
         'permissions': 0,
     },
+    CMS_ENABLE_UPDATE_CHECK=False,
     # required for integration tests
     LOGIN_URL='/admin/login/?user-login=test',
     CMS_LANGUAGES={
