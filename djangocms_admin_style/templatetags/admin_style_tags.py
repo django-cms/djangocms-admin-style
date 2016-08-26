@@ -23,8 +23,8 @@ def current_site_name(context):
     return site.name
 
 
-@register.simple_tag
-def render_update_notification():
+@register.simple_tag(takes_context=True)
+def render_update_notification(context):
     try:
         import cms
     except ImportError:
@@ -33,6 +33,15 @@ def render_update_notification():
     else:
         check_type = getattr(settings, 'CMS_UPDATE_CHECK_TYPE', 'patch')
         notifications_enabled = getattr(settings, 'CMS_ENABLE_UPDATE_CHECK', True)
+
+    request = context.get('request')
+
+    try:
+        index_page = request.resolver_match.url_name == 'index'
+    except AttributeError:
+        notifications_enabled = False
+    else:
+        notifications_enabled = index_page and notifications_enabled
 
     if notifications_enabled and check_type in VALID_VERSION_CHECK_TYPES:
         context = {
