@@ -1,6 +1,6 @@
 var $ = require('jquery');
 var Cookies = require('js-cookie');
-var RELEASES_URL = 'https://raw.githubusercontent.com/vxsx/djangocms-test-versions/master/latest.json';
+var RELEASES_URL = 'https://releases.django-cms.org/';
 var MAIN_COOKIE_EXPIRATION = 365; // ~1 year
 var REQUEST_COOKIE_EXPIRATION = 14; // check only every two weeks
 
