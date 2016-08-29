@@ -32,9 +32,9 @@ Settings
 
 * ``CMS_ENABLE_UPDATE_CHECK = True``
   Set to ``False`` to disable the update notification.
-* ``CMS_UPDATE_CHECK_TYPE = ('patch')``
-  Set to ``('minor', 'patch')`` if you want to get all update notifications.
-  (for 3.4.x and 3.x.x)
+* ``CMS_UPDATE_CHECK_TYPE = ('minor')``
+  Set to ``('patch')`` to get only patch notifications.
+  (minor = 3.x.x, patch = 3.4.x)
 
 
 Compiling CSS
