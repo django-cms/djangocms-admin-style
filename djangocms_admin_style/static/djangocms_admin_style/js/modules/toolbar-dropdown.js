@@ -32,6 +32,10 @@ function init() {
     var menuItem = document.getElementsByClassName('menu-item')[0];
     var html = document.getElementsByTagName('html')[0];
 
+    if (!submenu || !menuItem) {
+        return;
+    }
+
     menuItem.addEventListener('click', function (event) {
         var evt = event || window.event;
 
