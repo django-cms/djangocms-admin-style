@@ -7,11 +7,13 @@ var REQUEST_COOKIE_EXPIRATION = 14; // check only every two weeks
 /**
  * @function getLatestVersionData
  * @private
+ * @param {Object} data additional data to send as get params
  * @returns {$.Deferred}
  */
-function getLatestVersionData() {
+function getLatestVersionData(data) {
     return $.ajax({
-        url: RELEASES_URL
+        url: RELEASES_URL,
+        data: data
     });
 }
 
@@ -143,7 +145,10 @@ function init() {
     var currentVersion = metaVersion.attr('content');
     var checkType = $('meta[name="djangocms_version_check_type"]').attr('content');
 
-    getLatestVersionData().done(function (response) {
+    getLatestVersionData({
+        version: currentVersion,
+        type: checkType
+    }).done(function (response) {
         if (typeof response === 'string') {
             try {
                 // eslint-disable-next-line
