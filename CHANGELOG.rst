@@ -14,6 +14,7 @@ CHANGELOG
 * Fixed an issue with sortable tables
 * Fixed an issue with datetime fields
 * Fixed an issue with long names and smaller screens in change list
+* Fixed an issue with related widget wrappers and selects inside of tables
 * Added single js bundle vs many small javascript files
 
 1.2.3 (2016-06-22)
