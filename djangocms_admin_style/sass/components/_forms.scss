@@ -403,7 +403,7 @@ form {
             border-color: $gray-lighter;
         }
     }
-    .form-row {
+    .form-row:not(tr) {
         padding: 0 2px 25px;
         border-bottom-color: $gray-lighter;
         &.errors {
