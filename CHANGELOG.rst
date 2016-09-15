@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.2.4 (2016-xx-xx)
+1.2.4 (2016-09-15)
 ------------------
 
 * Fixes input and textarea fields in not aligned inline groups
