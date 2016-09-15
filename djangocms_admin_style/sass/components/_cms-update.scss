@@ -1,0 +1,18 @@
+.cms-update-message {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px 20px 10px 10px;
+    border: 1px solid $color-primary;
+    border-radius: 4px;
+    background-color: rgba($color-primary, 0.1);
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 20px;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+    }
+}

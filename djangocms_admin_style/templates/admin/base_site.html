@@ -1,11 +1,12 @@
 {% extends "admin/base.html" %}
-{% load i18n staticfiles %}
+{% load i18n staticfiles admin_style_tags %}
 
 {% block extrastyle %}{% include 'admin/inc/extrastyle.html' %}{% endblock %}
 
 {% block extrahead %}
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="stylesheet" type="text/css" href="{% static 'djangocms_admin_style/css/djangocms-admin.css' %}" />
+{% if request.user.is_superuser %}{% render_update_notification %}{% endif %}
 <script src="{% static 'djangocms_admin_style/js/dist/bundle.adminstyle.min.js' %}"></script>
 {% include 'admin/inc/extrahead.html' %}{% endblock %}
 

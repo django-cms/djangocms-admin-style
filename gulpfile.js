@@ -48,6 +48,7 @@ var PROJECT_PATTERNS = {
         PROJECT_PATH.js + '/**/*.js',
         PROJECT_PATH.tests + '/**/*.js',
         '!' + PROJECT_PATH.js + '/**/jquery.*.js',
+        '!' + PROJECT_PATH.js + '/libs/**/*.js',
         '!' + PROJECT_PATH.js + '/dist/**/*.js',
         'gulpfile.js'
     ]

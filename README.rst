@@ -27,6 +27,16 @@ Look at the source of ``templates/admin/base_site.html`` and override the templa
 For example, you can add your own CSS in ``templates/admin/inc/extrastyle.html``.
 
 
+Settings
+========
+
+* ``CMS_ENABLE_UPDATE_CHECK = True``
+  Set to ``False`` to disable the update notification.
+* ``CMS_UPDATE_CHECK_TYPE = ('minor')``
+  Set to ``('patch')`` to get only patch notifications.
+  (minor = 3.x.x, patch = 3.4.x)
+
+
 Compiling CSS
 =============
 

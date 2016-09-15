@@ -22,7 +22,8 @@ module.exports = function (opts) {
         resolve: {
             extensions: ['', '.js'],
             alias: {
-                jquery: PROJECT_PATH.js + '/libs/jquery.min.js'
+                'jquery': PROJECT_PATH.js + '/libs/jquery.min.js',
+                'js-cookie': PROJECT_PATH.js + '/libs/js.cookie-2.1.2.min.js'
             }
         },
         module: {
