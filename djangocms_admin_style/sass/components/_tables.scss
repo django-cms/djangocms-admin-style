@@ -178,8 +178,8 @@
         white-space: nowrap;
         select {
             max-width: 160px !important;
-            // makes sure that select with related widget links fits in table row #360
-            min-width: initial;
+            min-width: 120px !important;
+            width: auto !important;
             height: 36px;
             margin: 0;
             padding-right: 30px;
@@ -197,6 +197,13 @@
                 &:before {
                     vertical-align: middle;
                 }
+            }
+        }
+        .related-widget-wrapper {
+            select {
+                float: none;
+                vertical-align: top;
+                width: auto !important;
             }
         }
         &.delete {
@@ -226,6 +233,7 @@
         .related-widget-wrapper {
             // make sure that form fields are not truncated on focus
             overflow: visible;
+            float: none;
         }
     }
     tr {
@@ -363,6 +371,14 @@
     td {
         a {
             color: $color-primary !important;
+        }
+    }
+}
+
+.change-list table.navigator-table {
+    tbody {
+        td {
+            vertical-align: middle !important;
         }
     }
 }
