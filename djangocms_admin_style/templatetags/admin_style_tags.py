@@ -6,6 +6,7 @@ from django import template
 from django.conf import settings
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
+from django.utils.translation import ugettext
 
 
 # We follow the Semantic versioning convention
@@ -19,6 +20,10 @@ register = template.Library()
 @register.simple_tag(takes_context=True)
 def current_site_name(context):
     request = context.get('request')
+
+    if not request:
+        return ugettext('my site')
+
     site = get_current_site(request)
     return site.name
 
