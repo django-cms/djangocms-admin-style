@@ -29,7 +29,7 @@
             border-right: 0 !important;
         }
         p,
-        a {
+        a:not(.cke_button) {
             font-size: $font-size-normal !important;
             line-height: $font-size-normal;
             font-weight: normal;
@@ -324,9 +324,13 @@
         }
     }
     tbody td {
+        padding-top: 46px !important;
         input[type="checkbox"] {
             line-height: 36px;
             height: 36px;
+        }
+        > p {
+            line-height: 36px;
         }
         a:not(.related-widget-wrapper-link):not(.add-another):before {
             vertical-align: middle;
@@ -334,14 +338,13 @@
         }
     }
     td.original {
-        // make sure that there is no padding if there is no content #252
-        padding: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         p {
-            position: static !important;
             line-height: 36px  !important;
             height: 36px  !important;
             font-weight: normal !important;
-            padding: 0 !important;
+            padding: 0 13px !important;
         }
         .vForeignKeyRawIdAdminField {
             width: auto;

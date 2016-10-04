@@ -158,6 +158,7 @@ ul.messagelist + #content {
         border-radius: 0;
         background: none !important;
         box-shadow: none;
+        overflow: auto;
         h2 {
             font-size: $font-size-large !important;
             margin-bottom: 10px;
@@ -184,10 +185,6 @@ ul.messagelist + #content {
         .form-row {
             border-bottom: none !important;
         }
-    }
-    .module {
-        overflow: auto;
-        width: 80%;
     }
     .add-row {
         border-bottom: 0 !important;

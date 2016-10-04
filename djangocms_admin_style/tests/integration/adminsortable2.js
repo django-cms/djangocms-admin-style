@@ -211,6 +211,61 @@ casper.test.begin('Creation of a new job opening', function (test) {
         });
 });
 
+casper.test.begin('Submission of a job opening', function (test) {
+    casper.start()
+        .then(cms.addPage({ title: 'Home' }))
+        .then(cms.addPage({ title: 'Jobs' }))
+        .then(cms.addApphookToPage({
+            page: 'Jobs',
+            apphook: 'JobsApp'
+        }))
+        .then(cms.publishPage({
+            page: 'Jobs'
+        }))
+        .thenOpen(globals.baseUrl + 'jobs/')
+        .waitForSelector('article', function () {
+            this.clickLabel('Test job');
+        })
+        .waitForSelector('form', function () {
+            this.fill('form', {
+                salutation: 'male',
+                first_name: 'Vadim',
+                last_name: 'Sikora',
+                email: 'vadim.sikora@divio.com',
+                cover_letter: 'Oh boy, I am amazing!'
+            }, true);
+        })
+        .waitForSelector('.cms-messages-inner', function () {
+            test.assertSelectorHasText('.cms-messages-inner', 'You have successfully applied for');
+        })
+        .thenOpen(globals.adminUrl)
+        .waitUntilVisible('#content', function () {
+            this.click(
+                xPath(cms.getXPathForAdminSection({
+                    section: 'Aldryn Jobs',
+                    row: 'Job openings',
+                    link: 'Change'
+                }))
+            );
+        })
+        .waitForUrl(/jobopening/)
+        .waitForSelector('#changelist-form', function () {
+            this.clickLabel('Test job');
+        })
+        .waitUntilVisible('#jobopening_form')
+        .wait(2000, function () {
+            phantomcss.screenshot('html', 'Job opening with submissions');
+        })
+        .then(function () {
+            phantomcss.compareSession();
+        })
+        .then(cms.removePage())
+        .then(cms.removePage())
+        .run(function () {
+            test.done();
+        });
+});
+
 casper.test.begin('Deletion of a job opening', function (test) {
     casper
         .start(globals.adminUrl)

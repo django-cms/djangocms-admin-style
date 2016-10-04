@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.2.5 (unreleased)
+------------------
+
+* Fixed string representation in the tabular inline
+
+
 1.2.4 (2016-09-15)
 ------------------
 
