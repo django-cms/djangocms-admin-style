@@ -6,6 +6,8 @@ from django import template
 from django.conf import settings
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
+from django.utils.translation import ugettext
+from django.template.defaultfilters import conditional_escape
 
 
 # We follow the Semantic versioning convention
@@ -19,8 +21,14 @@ register = template.Library()
 @register.simple_tag(takes_context=True)
 def current_site_name(context):
     request = context.get('request')
-    site = get_current_site(request)
-    return site.name
+
+    try:
+        site_name = get_current_site(request).name
+    except AttributeError:
+        # This happens if request is None
+        # and sites framework is not in INSTALLED_APPS
+        site_name = ugettext('my site')
+    return conditional_escape(site_name)
 
 
 @register.simple_tag(takes_context=True)
