@@ -1,10 +1,13 @@
 CHANGELOG
 =========
 
-1.2.5 (unreleased)
+1.2.5 (2016-10-04)
 ------------------
 
 * Fixed string representation in the tabular inline
+* Fixed a regression which caused an error if the
+  ``django.core.context_processors.request`` context processor was not configured.
+* Fixed a potential security issue if the ``Site.name`` field contains malicious code.
 
 
 1.2.4 (2016-09-15)
