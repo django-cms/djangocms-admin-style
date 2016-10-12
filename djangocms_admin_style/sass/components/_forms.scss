@@ -896,6 +896,9 @@ form select[multiple] {
         margin-top: 0;
         &.change-related {
             margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
     // resets list styles that list looks same as sortedm2m #286

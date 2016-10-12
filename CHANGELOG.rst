@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+1.2.6 (unreleased)
+------------------
+
+* Fixed an issue with related-widget-links when only change link was showing up
+  after selects
+
+
 1.2.5 (2016-10-04)
 ------------------
 
