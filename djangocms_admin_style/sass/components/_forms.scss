@@ -65,63 +65,9 @@ form {
                 display: none;
             }
         }
-        // styles should only grab if there is an image upload
-        // appears on form rows with file, image and visual in class name #242, #220
-        &[class*="file"],
-        &[class*="image"],
-        &[class*="visual"] {
-            .related-widget-wrapper-link {
-                // hides related widget wrapper links because they don't work correctly and are not necessary
-                // because of magnifier and delete link #220
-                display: none;
-                width: 36px;
-                height: 36px;
-            }
-            input {
-                width: calc(100% - 48px) !important;
-                margin-bottom: 10px;
-            }
-            input[type="checkbox"] {
-                width: auto !important;
-                margin-bottom: 3px;
-            }
-            .related-lookup {
-                float: right;
-                width: 36px;
-                height: 36px;
-            }
-            .file-upload {
-                p {
-                    font-weight: normal;
-                }
-                a {
-                    position: relative;
-                    padding-left: 30px;
-                    &:before {
-                        position: absolute;
-                        left: 0;
-                    }
-                }
-                a,
-                input[type="file"] {
-                    display: block;
-                    font-size: 16px;
-                    line-height: 16px;
-                    margin: 10px 0;
-                }
-                a:before {
-                    color: $gray;
-                    vertical-align: top;
-                }
-                .clearable-file-input {
-                    display: inline-block;
-                    margin-bottom: 20px;
-                    label {
-                        font-size: 16px;
-                        text-transform: none;
-                    }
-                }
-            }
+        .filer-dropzone ~ .related-widget-wrapper-link {
+            // hides related widget wrapper links because they don't work with filer dropzones
+            display: none;
         }
         &.field-thumbnail {
             margin: 0;
