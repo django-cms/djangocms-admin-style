@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.2.6 (unreleased)
+1.2.6 (2016-10-24)
 ------------------
 
 * Fixed an issue with related-widget-links display after filer widgets
