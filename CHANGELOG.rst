@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+
+1.2.7 (unreleased)
+------------------
+
+* Fixes display issues when using django-nested-admin
+
+
 1.2.6 (2016-10-24)
 ------------------
 

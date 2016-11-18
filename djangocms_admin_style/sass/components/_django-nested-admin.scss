@@ -1,0 +1,32 @@
+//##############################################################################
+// TREEBEARD
+
+// https://github.com/theatlantic/django-nested-admin
+// style fixes for django-nested-admin integration
+
+.djn-tabular .tabular .module {
+    .inline-group .module h2 {
+        padding-top: 10px;
+    }
+    .djn-items {
+        border-left: 5px solid $gray-lighter !important;
+        margin-left: 0;
+    }
+    .djn-tr td {
+        vertical-align: top !important;
+        width: auto !important;
+        padding: 46px 0 0 7px !important;
+    }
+    .djn-tr td.original {
+        padding-top: 0 !important;
+    }
+    .djn-tr td .datetimeshortcuts {
+        margin-left: 10px;
+        a {
+            margin-right: 5px;
+        }
+        a:before {
+            line-height: 0;
+        }
+    }
+}
