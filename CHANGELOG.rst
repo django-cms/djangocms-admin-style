@@ -10,6 +10,7 @@ CHANGELOG
 * Moved ``test_requirements`` folder to ``tests``
 * Moved ``test_utils`` folder to ``tests``
 * Moved preview images folder to ``preview``
+* Moved javascript tests folder to ``tests``
 
 
 1.2.6 (2016-10-24)
