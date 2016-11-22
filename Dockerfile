@@ -25,6 +25,6 @@ ADD ./package.json /app/package.json
 WORKDIR /app
 RUN npm install
 
-ADD ./test_requirements /app/test_requirements
+ADD ./tests/requirements /app/tests/requirements
 
 CMD pip install -e . && gulp lint && gulp tests:integration
