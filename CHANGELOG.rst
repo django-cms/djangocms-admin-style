@@ -7,8 +7,9 @@ CHANGELOG
 
 * Fixes display issues when using django-nested-admin
 * Moved ``screenshots`` folder to ``tests``
-* Moved ``test_requirements`` to ``tests``
-* Moved preview images to ``preview``
+* Moved ``test_requirements`` folder to ``tests``
+* Moved ``test_utils`` folder to ``tests``
+* Moved preview images folder to ``preview``
 
 
 1.2.6 (2016-10-24)
