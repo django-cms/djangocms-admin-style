@@ -12,9 +12,6 @@ database.db
 .sass-cache
 build
 .eggs
-screenshots/results
-screenshots/failures
-screenshots-django18
-screenshots-django19
+!tests/screenshots/reference
 env-18
 env-19
