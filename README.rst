@@ -5,7 +5,7 @@ django CMS Admin Style
 Adds pretty CSS styles for the django CMS admin interface.
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/preview.png | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/listview.png |
+| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/dashboard.png | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/listview.png |
 +-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/datepicker.png | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/shortcuts.png |
 +-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
