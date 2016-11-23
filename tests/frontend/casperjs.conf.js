@@ -26,9 +26,9 @@ module.exports = {
     phantomcss: function () {
         phantomcss.init({
             libraryRoot: './node_modules/phantomcss',
-            screenshotRoot: './screenshots/reference',
-            failedComparisonsRoot: './screenshots/failures',
-            comparisonResultRoot: './screenshots/results',
+            screenshotRoot: './tests/screenshots/reference',
+            failedComparisonsRoot: './tests/screenshots/failures',
+            comparisonResultRoot: './tests/screenshots/results',
             cleanupComparisonImages: true,
             mismatchTolerance: 0.05,
             onPass: function (test) {

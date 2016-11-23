@@ -33,7 +33,7 @@ var PROJECT_PATH = {
     sass: PROJECT_ROOT + '/djangocms_admin_style/sass',
     css: PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/css',
     js: PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/js',
-    tests: PROJECT_ROOT + '/djangocms_admin_style/tests',
+    tests: PROJECT_ROOT + '/tests/frontend',
     icons: PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/fonts'
 };
 
@@ -147,7 +147,7 @@ gulp.task('tests:integration', integrationTests({
     pathToTests: PROJECT_PATH.tests,
     argv: argv,
     dbPath: 'testdb.sqlite',
-    serverCommand: 'testserver.py',
+    serverCommand: 'tests/testserver.py',
     logger: gutil.log.bind(gutil)
 }));
 

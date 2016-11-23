@@ -6,6 +6,7 @@ CHANGELOG
 ------------------
 
 * Fixes display issues when using django-nested-admin
+* Moved testing infrastructure to a centralised location ``/tests``
 
 
 1.2.6 (2016-10-24)
