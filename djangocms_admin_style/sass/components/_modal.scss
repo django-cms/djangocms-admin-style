@@ -46,6 +46,13 @@
             padding-left: 20px !important;
         }
     }
+    // resets background color and shadow which is needed in admin for very long names
+    .object-tools {
+        background-color: transparent;
+        &:before {
+            display: none;
+        }
+    }
     .calendarbox table {
         td {
             padding: 0 !important;
