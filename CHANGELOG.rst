@@ -7,6 +7,7 @@ CHANGELOG
 
 * Fixes display issues when using django-nested-admin
 * Moved testing infrastructure to a centralised location ``/tests``
+* Removes object tools background and shadow in modal windows
 
 
 1.2.6 (2016-10-24)
