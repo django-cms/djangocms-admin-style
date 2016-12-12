@@ -13,7 +13,7 @@ form {
     .form-row:not(tr) {
         // adds clearfix because overflow hidden truncates highlighted focus fields #242
         @include micro-clearfix;
-        .vForeignKeyRawIdAdminField {
+        .vForeignKeyRawIdAdminField, .vManyToManyRawIdAdminField {
             // calculates width that search button appears next to search input
             width: calc(100% - 48px) !important;
         }
@@ -86,7 +86,7 @@ form {
                 display: none;
             }
         }
-        .vForeignKeyRawIdAdminField {
+        .vForeignKeyRawIdAdminField, .vManyToManyRawIdAdminField {
             width: auto !important;
         }
 

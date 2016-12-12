@@ -346,7 +346,7 @@
             font-weight: normal !important;
             padding: 0 13px !important;
         }
-        .vForeignKeyRawIdAdminField {
+        .vForeignKeyRawIdAdminField, .vManyToManyRawIdAdminField {
             width: auto;
         }
     }
