@@ -425,6 +425,25 @@ form {
                 box-shadow: none;
             }
         }
+        &.select2-container--default .select2-selection--single {
+            border: 1px solid $gray-lighter;
+            border-radius: $border-radius-base;
+            height: 36px;
+            line-height: 36px;
+
+            .select2-selection__arrow {
+                height: 36px;
+            }
+
+            .select2-selection__rendered {
+                font-size: $font-size-small;
+                line-height: 34px;
+
+                .select2-selection__clear {
+                    line-height: 36px;
+                }
+            }
+        }
         .select2-choice {
             line-height: 22px;
             height: 22px;
@@ -469,6 +488,9 @@ form {
             }
         }
     }
+}
+.select2-dropdown {
+    border-color: $gray-lighter !important;
 }
 .select2-drop-active {
     border: 1px solid $gray-lighter !important;
