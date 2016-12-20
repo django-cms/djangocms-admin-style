@@ -5,6 +5,7 @@ CHANGELOG
 1.2.7 (unreleased)
 ------------------
 
+* Adjusted styles of the new version of django-select2
 * Fixes display issues when using django-nested-admin
 * Moved testing infrastructure to a centralised location ``/tests``
 * Removed object tools background and shadow in modal windows
