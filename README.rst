@@ -36,6 +36,8 @@ Settings
   Set to ``('patch')`` to get only patch notifications.
   (minor = 3.x.x, patch = 3.4.x)
 
+The update checker does not gather or record any data.
+
 
 Compiling CSS
 =============
