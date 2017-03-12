@@ -329,7 +329,8 @@ ul.messagelist {
 }
 // set image size to show retina images with correct size #212
 img[src*="icon-no"],
-img[src*="icon-yes"] {
+img[src*="icon-yes"],
+img[src*="icon-unknown"] {
     width: 16px;
     height: 16px;
 }
