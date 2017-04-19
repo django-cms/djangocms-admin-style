@@ -10,6 +10,7 @@ CHANGELOG
 * Moved testing infrastructure to a centralised location ``/tests``
 * Removed object tools background and shadow in modal windows
 * Fixed size of "unknown" state icon
+* Fixed an issue with tabular inlines restricting the size of <select>
 
 
 1.2.6 (2016-10-24)
