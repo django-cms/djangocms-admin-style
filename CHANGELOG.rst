@@ -2,7 +2,7 @@ CHANGELOG
 =========
 
 
-1.2.7 (unreleased)
+1.2.7 (2017-04-19)
 ------------------
 
 * Adjusted styles of the new version of django-select2
