@@ -260,6 +260,28 @@ ul.messagelist + #content {
         margin: 0 2px !important;
     }
 }
+.inline-group[data-inline-type="stacked"] .inline-related {
+    margin: 25px 5px 10px;
+    box-shadow: $base-box-shadow;
+    h3 {
+        padding: 20px 25px;
+        background: $gray-lightest;
+        b, span {
+            font-size: $font-size-large;
+        }
+        span {
+            color: $black;
+        }
+    }
+    fieldset.module {
+        padding: 20px 25px !important;
+    }
+    input.vTextField,
+    input.vURLField,
+    textarea.vLargeTextField {
+        width: 100% !important;
+    }
+}
 .djangocms-admin-style .submit-row {
     margin: 10px -25px 0;
     padding: 20px 25px 0;
