@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+1.2.8 (unreleased)
+------------------
+* Added styles for buttons in submit row
 
 1.2.7 (2017-04-19)
 ------------------
