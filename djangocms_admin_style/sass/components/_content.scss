@@ -251,7 +251,12 @@ ul.messagelist + #content {
         span.delete label {
             // float label next to checkbox on tagged items #253
             display: inline-block;
-            margin-left: 0;
+            line-height: 20px;
+            margin: 0 !important;
+        }
+        span.delete input {
+            top: -3px;
+            min-height: 0px;
         }
     }
     table {
