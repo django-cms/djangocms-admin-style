@@ -287,6 +287,11 @@ ul.messagelist + #content {
     .selector .selector-filter input {
         width: 100% !important;
     }
+    .selector .selector-available h2,
+    .selector .selector-chosen h2 {
+        font-size: $font-size-normal !important;
+        padding-top: 10px;
+    }
 }
 .djangocms-admin-style .submit-row {
     margin: 10px -25px 0;
