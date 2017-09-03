@@ -283,7 +283,8 @@ ul.messagelist + #content {
     }
     input.vTextField,
     input.vURLField,
-    textarea.vLargeTextField {
+    textarea.vLargeTextField,
+    .selector .selector-filter input {
         width: 100% !important;
     }
 }
