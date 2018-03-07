@@ -3,7 +3,7 @@
   "private": true,
   "devDependencies": {
     "autoprefixer": "^6.3.6",
-    "djangocms-casper-helpers": "^1.1.1",
+    "djangocms-casper-helpers": "^3.0.0",
     "gulp": "3.9.0",
     "gulp-eslint": "^2.0.0",
     "gulp-iconfont": "3.0.1",
@@ -18,6 +18,8 @@
     "minimist": "1.1.1",
     "phantomcss": "^1.0.0",
     "phantomjs-prebuilt": "^2.1.7",
+    "plugin-error": "^1.0.1",
+    "request": "^2.81.0",
     "resemblejs": "^2.2.0",
     "webpack": "^1.13.2"
   }

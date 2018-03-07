@@ -2,13 +2,13 @@
  * @author:    Divio AG
  * @copyright: http://www.divio.ch
  */
+/* eslint-disable no-console */
 
 'use strict';
 
 // #############################################################################
 // #IMPORTS#
 var gulp = require('gulp');
-var gutil = require('gulp-util');
 var autoprefixer = require('autoprefixer');
 var postcss = require('gulp-postcss');
 var gulpif = require('gulp-if');
@@ -20,6 +20,7 @@ var minifyCss = require('gulp-minify-css');
 var eslint = require('gulp-eslint');
 var integrationTests = require('djangocms-casper-helpers/gulp');
 var webpack = require('webpack');
+var PluginError = require('plugin-error');
 
 var argv = require('minimist')(process.argv.slice(2));
 
@@ -58,8 +59,8 @@ var INTEGRATION_TESTS = [
     [
         'loginAdmin',
         'dashboard',
-        'addNewUser',
-        'adminsortable2'
+        'addNewUser'
+        // 'adminsortable2' // FIXME reenable when aldryn-jobs is fixed
     ]
 ];
 
@@ -70,7 +71,7 @@ gulp.task('sass', function () {
         .pipe(gulpif(options.debug, sourcemaps.init()))
         .pipe(sass())
         .on('error', function (error) {
-            gutil.log(gutil.colors.red('Error (' + error.plugin + '): ' + error.messageFormatted));
+            console.log('Error (' + error.plugin + '): ' + error.messageFormatted);
         })
         .pipe(postcss([
             autoprefixer({
@@ -97,7 +98,7 @@ gulp.task('icons', function () {
         normalize: true
     }))
     .on('glyphs', function (glyphs, opts) {
-        gutil.log.bind(glyphs, opts);
+        console.log(glyphs, opts);
     })
     .pipe(gulp.dest(PROJECT_PATH.icons));
 });
@@ -123,9 +124,9 @@ var webpackBundle = function (opts) {
 
         webpack(config, function (err, stats) {
             if (err) {
-                throw new gutil.PluginError('webpack', err);
+                throw new PluginError('webpack', err);
             }
-            gutil.log('[webpack]', stats.toString({ colors: true }));
+            console.log('[webpack]', stats.toString({ colors: true }));
             if (typeof done !== 'undefined' && (!opts || !opts.watch)) {
                 done();
             }
@@ -148,7 +149,7 @@ gulp.task('tests:integration', integrationTests({
     argv: argv,
     dbPath: 'testdb.sqlite',
     serverCommand: 'tests/testserver.py',
-    logger: gutil.log.bind(gutil)
+    logger: console.log.bind(console)
 }));
 
 // #############################################################################

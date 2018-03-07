@@ -2,6 +2,6 @@ djangocms-helper
 djangocms-grid
 django-reversion==1.10,<1.11
 django-admin-sortable2==0.5.2
-https://github.com/aldryn/aldryn-jobs/archive/master.zip#egg=aldryn-jobs
+# https://github.com/aldryn/aldryn-jobs/archive/master.zip#egg=aldryn-jobs
 six>=1.9.0
 https://github.com/divio/djangocms-text-ckeditor/archive/master.zip
