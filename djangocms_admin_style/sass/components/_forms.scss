@@ -127,6 +127,11 @@ form {
         background-color: $white;
 
         appearance: none;
+
+        // resets default firefox error style
+        &:-moz-ui-invalid {
+            box-shadow: none;
+        }
     }
     &,
     .datetime,
