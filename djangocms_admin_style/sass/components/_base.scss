@@ -81,6 +81,20 @@ ol {
 a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
 }
+
+.submit-row {
+    .btn {
+        padding: 10px 20px !important;
+        height: 36px !important;
+        box-sizing: border-box;
+        display: inline-flex !important;
+        vertical-align: top;
+        align-items: center;
+        & + .btn {
+            margin-left: 10px;
+        }
+    }
+}
 .cms-btn-group {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
