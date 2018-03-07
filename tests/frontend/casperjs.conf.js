@@ -30,7 +30,7 @@ module.exports = {
             failedComparisonsRoot: './tests/screenshots/failures',
             comparisonResultRoot: './tests/screenshots/results',
             cleanupComparisonImages: true,
-            mismatchTolerance: 0.05,
+            mismatchTolerance: 0.08,
             onPass: function (test) {
                 casper.test.pass('No changes found for screenshot ' + test.filename);
             },
