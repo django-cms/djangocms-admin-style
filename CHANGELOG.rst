@@ -4,6 +4,7 @@ CHANGELOG
 1.2.8 (unreleased)
 ------------------
 * Added styles for buttons in submit row
+* Fixed multiple UI issues with Django 1.11
 
 1.2.7 (2017-04-19)
 ------------------

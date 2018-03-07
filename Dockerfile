@@ -28,3 +28,5 @@ RUN npm install
 ADD ./tests/requirements /app/tests/requirements
 
 CMD pip install -e . && gulp lint && gulp tests:integration
+
+ENV TZ="Europe/Zurich"

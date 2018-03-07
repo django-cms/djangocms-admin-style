@@ -1,0 +1,2 @@
+-r base.txt
+Django>=1.11,<1.12
