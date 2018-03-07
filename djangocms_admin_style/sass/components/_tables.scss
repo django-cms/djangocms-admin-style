@@ -363,6 +363,10 @@
         margin-left: 10px;
     }
 }
+.inline-group .tabular tr td.original p {
+    position: static !important;
+}
+
 #result_list tbody tr:hover,
 .results table tbody tr:hover,
 #change-history tbody tr:hover {
