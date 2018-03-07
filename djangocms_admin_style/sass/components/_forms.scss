@@ -127,6 +127,11 @@ form {
         background-color: $white;
 
         appearance: none;
+
+        // resets default firefox error style
+        &:-moz-ui-invalid {
+            box-shadow: none;
+        }
     }
     &,
     .datetime,
@@ -158,6 +163,7 @@ form {
             margin-left: 0;
             padding-left: 0;
         }
+        div.help,
         p.help {
             clear: both;
             color: $gray;
@@ -166,6 +172,20 @@ form {
             margin-left: 0;
             margin-bottom: 0;
             padding: 0 !important;
+        }
+
+        input + p.help,
+        textarea + p.help,
+        select + p.help,
+        input + div.help,
+        textarea + div.help,
+        select + div.help {
+            padding-left: 0;
+            margin-left: 0;
+        }
+        div + div.help {
+            margin-left: 0px;
+            padding-left: 0px;
         }
         label {
             padding: 0 !important;

@@ -16,6 +16,8 @@ HELPER_SETTINGS = dict(
         ('it', u'Italiano'),
         ('zh-cn', u'Chinese (Simplified)'),
     ),
+    USE_TZ=True,
+    TIME_ZONE='Europe/Zurich',
     LANGUAGE_CODE='en',
     PARLER_LANGUAGES={
         1: (
