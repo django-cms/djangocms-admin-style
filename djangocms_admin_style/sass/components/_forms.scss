@@ -15,7 +15,7 @@ form {
         @include micro-clearfix;
         .vForeignKeyRawIdAdminField, .vManyToManyRawIdAdminField {
             // calculates width that search button appears next to search input
-            width: calc(100% - 48px) !important;
+            width: calc(100% - 50px) !important;
         }
     }
     .form-row {

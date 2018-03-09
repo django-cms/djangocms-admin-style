@@ -328,6 +328,9 @@
     }
     .related-lookup {
         float: right !important;
+        ~ a.related-lookup {
+            display: none !important;
+        }
     }
     // required for django CMS <= 3.1
     a {
