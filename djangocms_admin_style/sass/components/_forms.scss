@@ -431,7 +431,7 @@ form {
 } // standard input width + default input padding
 
 .inline-group .module:not(.aligned) .form-row input,
-.inline-group .module:not(.aligned) .form-row textarea {
+.inline-group .module:not(.aligned) .form-row textarea:not(.cke_source) {
     width: auto !important;
 }
 

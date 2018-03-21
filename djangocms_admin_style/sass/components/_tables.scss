@@ -324,7 +324,7 @@
         }
     }
     tbody td {
-        padding-top: 46px !important;
+        // padding-top: 46px !important;
         input[type="checkbox"] {
             line-height: 36px;
             height: 36px;
@@ -337,9 +337,13 @@
             line-height: 36px;
         }
     }
+    tbody tr.has_original td {
+        padding-top: 36px !important;
+    }
     td.original {
         padding-left: 0 !important;
         padding-right: 0 !important;
+        padding-top: 0 !important;
         p {
             line-height: 36px  !important;
             height: 36px  !important;
@@ -349,6 +353,9 @@
         .vForeignKeyRawIdAdminField, .vManyToManyRawIdAdminField {
             width: auto;
         }
+    }
+    tbody tr.has_original td.original {
+        padding-top: 0 !important;
     }
     .field-can_change,
     .field-can_add,
@@ -364,7 +371,7 @@
     }
 }
 .inline-group .tabular tr td.original p {
-    position: static !important;
+    // position: static !important;
 }
 
 #result_list tbody tr:hover,
