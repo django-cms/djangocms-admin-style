@@ -343,6 +343,7 @@
     tbody tr.has_original td {
         padding-top: 36px !important;
     }
+    th.original,
     td.original {
         padding-left: 0 !important;
         padding-right: 0 !important;
@@ -375,8 +376,9 @@
         margin-left: 10px;
     }
 }
-.inline-group .tabular tr td.original p {
-    // position: static !important;
+.inline-group .tabular tr th.original {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 #result_list tbody tr:hover,
