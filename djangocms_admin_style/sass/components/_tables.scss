@@ -300,6 +300,9 @@
         border: none;
     }
     &.ui-sortable {
+        thead th:first-child {
+            font: 0/0 a;
+        }
         td,
         &.original {
             padding: 1px 10px !important;
@@ -349,6 +352,7 @@
             height: 36px  !important;
             font-weight: normal !important;
             padding: 0 13px !important;
+            top: 0;
         }
         .vForeignKeyRawIdAdminField, .vManyToManyRawIdAdminField {
             width: auto;
@@ -356,6 +360,7 @@
     }
     tbody tr.has_original td.original {
         padding-top: 0 !important;
+        position: relative;
     }
     .field-can_change,
     .field-can_add,
