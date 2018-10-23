@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+1.2.9 (unreleased)
+------------------
+* Fixed a bug where it was possible to submit the same form multiple times
+
 1.2.8 (2018-04-10)
 ------------------
 * Added styles for buttons in submit row
