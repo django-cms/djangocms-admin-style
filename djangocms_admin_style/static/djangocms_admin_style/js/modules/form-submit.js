@@ -8,7 +8,6 @@ function preventDoubleFormSubmissions() {
         }
         var form = $(e.target);
 
-        form.find('button, input[type=submit]').prop('disabled', true);
         form.on('submit', function (event) {
             event.preventDefault();
         });
