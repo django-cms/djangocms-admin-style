@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.2.9 (unreleased)
+1.2.9 (2018-10-31)
 ------------------
 * Fixed a bug where it was possible to submit the same form multiple times
 
