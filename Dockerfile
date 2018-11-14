@@ -6,7 +6,7 @@ RUN apt-get -y update && apt-get -y install \
         libfontconfig \
         rlwrap \
         python3 \
-        python3-pip \
+        python-pip \
         git \
         # aldryn-jobs deps
         libxml2-dev libxslt-dev \
