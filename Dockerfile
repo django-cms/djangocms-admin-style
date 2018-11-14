@@ -5,8 +5,8 @@ RUN apt-get -y update && apt-get -y install \
         libfreetype6 \
         libfontconfig \
         rlwrap \
-        python \
-        python-pip \
+        python3 \
+        python3-pip \
         git \
         # aldryn-jobs deps
         libxml2-dev libxslt-dev \
