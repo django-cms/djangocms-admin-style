@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+1.3.0 (unreleased)
+------------------
+* Added support for Django 1.11, 2.0 and 2.1
+* Removed support for Django 1.8, 1.9, 1.10
+* Adapted testing infrastructure (tox/travis) to incorporate
+  django CMS 3.5 and 4.0
+
 1.2.9 (2018-10-31)
 ------------------
 * Fixed a bug where it was possible to submit the same form multiple times
