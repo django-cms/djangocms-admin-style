@@ -188,7 +188,7 @@ form {
             padding-left: 0px;
         }
         label {
-            padding: 0 !important;
+            padding: 6px 0;
             line-height: 20px;
             &:not(.vCheckboxLabel):after {
                 content: none;
@@ -250,7 +250,7 @@ form {
     label,
     label.aligned {
         display: block;
-        float: none !important;
+        float: none;
         color: $gray !important;
         font-size: $font-size-normal;
         font-weight: normal !important;
