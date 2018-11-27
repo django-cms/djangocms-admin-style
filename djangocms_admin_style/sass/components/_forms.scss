@@ -188,10 +188,13 @@ form {
             padding-left: 0px;
         }
         label {
-            padding: 6px 0;
+            padding: 0 !important;
             line-height: 20px;
             &:not(.vCheckboxLabel):after {
                 content: none;
+            }
+            & + div.readonly {
+                margin-top: -30px
             }
         }
         label + label {
@@ -250,7 +253,7 @@ form {
     label,
     label.aligned {
         display: block;
-        float: none;
+        float: none !important;
         color: $gray !important;
         font-size: $font-size-normal;
         font-weight: normal !important;
