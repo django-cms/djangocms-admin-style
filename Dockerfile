@@ -18,8 +18,8 @@ RUN apt-get -y update && apt-get -y install \
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y nodejs
 RUN apt-get install -y build-essential
-RUN pip3 install --upgrade pip
-RUN pip3 install --upgrade setuptools
+#RUN pip3 install --upgrade pip
+#RUN pip3 install --upgrade setuptools
 
 RUN npm install -g gulp@3
 ADD ./package.json /app/package.json
