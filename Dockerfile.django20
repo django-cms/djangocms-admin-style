@@ -1,5 +1,5 @@
 FROM djangocms-admin-style-test:base
 
-RUN pip install -r /app/tests/requirements/django-2.0.txt
+RUN pip3 install -r /app/tests/requirements/django-2.0.txt
 
 ADD . /app
