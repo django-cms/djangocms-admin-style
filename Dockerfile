@@ -8,6 +8,7 @@ RUN apt-get -y update && apt-get -y install \
         python \
         python3 \
         python-pip \
+        python3-pip \
         git \
         # aldryn-jobs deps
         libxml2-dev libxslt-dev \

@@ -8,16 +8,11 @@ services:
 install:
   - make build
 
-matrix:
-  include:
-    - python: 3.5
-      env: TEST=test111
-    - python: 2.7
-      env: TEST=test111
-    - python: 3.5
-      env: TEST=test20
-    - python: 3.5
-      env: TEST=test21
+env:
+  matrix:
+    - TEST=test111
+    - TEST=test20
+    - TEST=test21
 
 script:
   - make $TEST
