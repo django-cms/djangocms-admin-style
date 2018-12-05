@@ -193,6 +193,9 @@ form {
             &:not(.vCheckboxLabel):after {
                 content: none;
             }
+            & + div.readonly {
+                margin-top: -30px
+            }
         }
         label + label {
             margin-left: 10px;
