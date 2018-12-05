@@ -5,13 +5,14 @@ RUN apt-get -y update && apt-get -y install \
         libfreetype6 \
         libfontconfig \
         rlwrap \
-        python \
-        python-pip \
+        python3 \
+        python3-pip \
+        python3-dev \
         git \
         # aldryn-jobs deps
         libxml2-dev libxslt-dev \
         # pillow deps
-        libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk python-dev && \
+        libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
@@ -27,6 +28,6 @@ RUN npm install
 
 ADD ./tests/requirements /app/tests/requirements
 
-CMD pip install -e . && gulp lint && gulp tests:integration
+CMD pip3 install -e . && gulp lint && gulp tests:integration
 
 ENV TZ="Europe/Zurich"

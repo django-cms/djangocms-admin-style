@@ -4,8 +4,10 @@ from __future__ import unicode_literals
 import os
 import sys
 
+
 def noop_gettext(s):
     return s
+
 
 gettext = noop_gettext
 
@@ -116,6 +118,7 @@ def run():
     # we use '.runner()', not '.cms()' nor '.run()' because it does not
     # add 'test' argument implicitly
     runner.runner([sys.argv[0], 'cms', '--cms', 'server', '--bind', '0.0.0.0'])
+
 
 if __name__ == "__main__":
     run()
