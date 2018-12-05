@@ -1,3 +1,2 @@
 -r base.txt
-djangocms-helper
 Django>=1.11,<1.12

@@ -5,9 +5,10 @@ RUN apt-get -y update && apt-get -y install \
         libfreetype6 \
         libfontconfig \
         rlwrap \
+        python \
+        python-pip \
         python3 \
         python3-pip \
-        python3-dev \
         git \
         # aldryn-jobs deps
         libxml2-dev libxslt-dev \
@@ -28,6 +29,6 @@ RUN npm install
 
 ADD ./tests/requirements /app/tests/requirements
 
-CMD pip3 install -e . && gulp lint && gulp tests:integration
+CMD pip install -e . && gulp lint && gulp tests:integration
 
 ENV TZ="Europe/Zurich"
