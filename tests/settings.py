@@ -74,8 +74,9 @@ HELPER_SETTINGS = dict(
     },
     INSTALLED_APPS=[
         'djangocms_text_ckeditor',
-        'reversion',
-        'djangocms_grid',
+
+        # 'reversion',
+        # djangocms_grid',
 
         # aldryn_jobs
         # 'absolute',

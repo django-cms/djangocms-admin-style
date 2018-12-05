@@ -5,8 +5,6 @@ RUN apt-get -y update && apt-get -y install \
         libfreetype6 \
         libfontconfig \
         rlwrap \
-        python \
-        python-pip \
         python3 \
         python3-pip \
         git \
@@ -20,14 +18,16 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y nodejs
 RUN apt-get install -y build-essential
 
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 1 \
+    && update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
 
 RUN npm install -g gulp@3
-ADD ./package.json /app/package.json
-ADD ./package-lock.json /app/package-lock.json
+COPY ./package.json /app/package.json
+COPY ./package-lock.json /app/package-lock.json
 WORKDIR /app
 RUN npm install
 
-ADD ./tests/requirements /app/tests/requirements
+COPY ./tests/requirements /app/tests/requirements
 
 CMD pip install -e . && gulp lint && gulp tests:integration
 
