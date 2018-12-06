@@ -12,7 +12,6 @@ env:
   matrix:
     - TEST=test111
     - TEST=test20
-    - TEST=test21
 
 script:
   - make $TEST
