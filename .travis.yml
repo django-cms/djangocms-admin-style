@@ -10,9 +10,8 @@ install:
 
 env:
   matrix:
-    - TEST=test18
-    - TEST=test19
     - TEST=test111
+    - TEST=test20
 
 script:
   - make $TEST

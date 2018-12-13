@@ -4,8 +4,10 @@ from __future__ import unicode_literals
 import os
 import sys
 
+
 def noop_gettext(s):
     return s
+
 
 gettext = noop_gettext
 
@@ -72,27 +74,6 @@ HELPER_SETTINGS = dict(
     },
     INSTALLED_APPS=[
         'djangocms_text_ckeditor',
-        'reversion',
-        'djangocms_grid',
-
-        # aldryn_jobs
-        # 'absolute',
-        # 'aldryn_common',
-        # 'aldryn_boilerplates',
-        # 'aldryn_apphooks_config',
-        # 'aldryn_reversion',
-        # 'aldryn_categories',
-        # 'aldryn_jobs',
-        # 'aldryn_translation_tools',
-        # 'adminsortable2',
-        # 'bootstrap3',
-        # 'emailit',
-        # 'parler',
-        # 'sortedm2m',
-        # 'standard_form',
-    ],
-    MIDDLEWARE_CLASSES=[
-        'cms.middleware.utils.ApphookReloadMiddleware',
     ],
     TEMPLATE_DIRS=(
         os.path.join(
@@ -116,6 +97,7 @@ def run():
     # we use '.runner()', not '.cms()' nor '.run()' because it does not
     # add 'test' argument implicitly
     runner.runner([sys.argv[0], 'cms', '--cms', 'server', '--bind', '0.0.0.0'])
+
 
 if __name__ == "__main__":
     run()

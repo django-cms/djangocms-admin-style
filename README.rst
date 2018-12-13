@@ -56,6 +56,6 @@ Integration tests
 =================
 
 In order to run integration tests you need to have Docker installed.
-They can be run using `make test18` and `make test19` commands for Django 1.8
-and Django 1.9. The integration tests are written using Casperjs, phantomcss and
+They can be run using ``make test111`` or ``make test20`` commands for Django 1.11
+or Django 2.0. The integration tests are written using Casperjs, phantomcss and
 djangocms-casper-helpers.

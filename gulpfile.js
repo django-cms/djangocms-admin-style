@@ -148,7 +148,7 @@ gulp.task('tests:integration', integrationTests({
     pathToTests: PROJECT_PATH.tests,
     argv: argv,
     dbPath: 'testdb.sqlite',
-    serverCommand: 'tests/testserver.py',
+    serverCommand: 'tests/settings.py',
     logger: console.log.bind(console)
 }));
 
