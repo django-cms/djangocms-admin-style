@@ -34,7 +34,7 @@ One of the easiest contributions you can make is helping to translate this addon
 Documentation
 =============
 
-See ``REQUIREMENTS`` in the `setup.py <https://github.com/divio/djangocms-audio/blob/master/setup.py>`_
+See ``REQUIREMENTS`` in the `setup.py <https://github.com/divio/djangocms-admin-style/blob/master/setup.py>`_
 file for additional dependencies:
 
 |python| |django| |djangocms|
@@ -90,3 +90,18 @@ You can run tests by executing::
 
 The integration tests are written using Casperjs, phantomcss and
 djangocms-casper-helpers.
+
+
+.. |pypi| image:: https://badge.fury.io/py/djangocms-admin-style.svg
+    :target: http://badge.fury.io/py/djangocms-admin-style
+.. |build| image:: https://travis-ci.org/divio/djangocms-admin-style.svg?branch=master
+    :target: https://travis-ci.org/divio/djangocms-admin-style
+.. |coverage| image:: https://codecov.io/gh/divio/djangocms-admin-style/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/divio/djangocms-admin-style
+
+.. |python| image:: https://img.shields.io/badge/python-2.7%20%7C%203.4+-blue.svg
+    :target: https://pypi.org/project/djangocms-admin-style/
+.. |django| image:: https://img.shields.io/badge/django-1.11%20%7C%202.0%20%7C%202.1-blue.svg
+    :target: https://www.djangoproject.com/
+.. |djangocms| image:: https://img.shields.io/badge/django%20CMS-3.4%2B-blue.svg
+    :target: https://www.django-cms.org/
