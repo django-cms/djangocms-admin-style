@@ -2,6 +2,8 @@
 django CMS Admin Style
 ======================
 
+|pypi| |build| |coverage|
+
 Adds pretty CSS styles for the django CMS admin interface.
 
 +---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
@@ -10,25 +12,54 @@ Adds pretty CSS styles for the django CMS admin interface.
 | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/datepicker.png  | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/shortcuts.png  |
 +---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 
+The shortcuts you see on top of the dashboard are from `django-admin-shortcuts <https://github.com/alesdotio/django-admin-shortcuts/>`_
 
-* the shortcuts you see on top of the dashboard are from `django-admin-shortcuts <https://github.com/alesdotio/django-admin-shortcuts/>`_
 
-Installation
+Contributing
 ============
 
-* add ``'djangocms_admin_style'`` to your INSTALLED_APPS just before ``'django.contrib.admin'``
+This is a an open-source project. We'll be delighted to receive your
+feedback in the form of issues and pull requests. Before submitting your
+pull request, please review our `contribution guidelines
+<http://docs.django-cms.org/en/latest/contributing/index.html>`_.
+
+We're grateful to all contributors who have helped create and maintain this package.
+Contributors are listed at the `contributors <https://github.com/divio/djangocms-admin-style/graphs/contributors>`_
+section.
+
+One of the easiest contributions you can make is helping to translate this addon on
+`Transifex <https://www.transifex.com/projects/p/djangocms-admin-style/>`_.
 
 
-Customization
+Documentation
 =============
 
-The django CMS Admin Style overrides django admin's ``base_site.html``, but you can still partially customize this page.
-Look at the source of ``templates/admin/base_site.html`` and override the templates that are included in various blocks.
-For example, you can add your own CSS in ``templates/admin/inc/extrastyle.html``.
+See ``REQUIREMENTS`` in the `setup.py <https://github.com/divio/djangocms-audio/blob/master/setup.py>`_
+file for additional dependencies:
+
+|python| |django| |djangocms|
 
 
-Settings
-========
+Installation
+------------
+
+For a manual install:
+
+* run ``pip install djangocms-admin-style``
+* add ``djangocms_admin_style`` to your ``INSTALLED_APPS`` just before ``'django.contrib.admin'``
+* run ``python manage.py migrate djangocms_admin_style``
+
+
+Configuration
+-------------
+
+The django CMS Admin Style overrides django admin's ``base_site.html``,
+but you can still partially customize this page. Look at the source of
+``templates/admin/base_site.html`` and override the templates that are included
+in various blocks. For example, you can add your own CSS in
+``templates/admin/inc/extrastyle.html``.
+
+The following additional settings can be set:
 
 * ``CMS_ENABLE_UPDATE_CHECK = True``
   Set to ``False`` to disable the update notification.
@@ -38,24 +69,24 @@ Settings
 
 The update checker does not gather or record any data.
 
+To **compile CSS** run the following commands:
 
-Compiling CSS
-=============
+* ``npm install``
+* ``gulp``
 
-* Command line
-
-::
-
-    gulp
+For further options have a look at the ``gulpfile.js``.
 
 
-* for compiling the sass file, you need to ``npm install``
+Running Tests
+-------------
+
+In order to run **integration tests** you need to have Docker installed.
+
+You can run tests by executing::
+
+    make test111
+    make test20
 
 
-Integration tests
-=================
-
-In order to run integration tests you need to have Docker installed.
-They can be run using ``make test111`` or ``make test20`` commands for Django 1.11
-or Django 2.0. The integration tests are written using Casperjs, phantomcss and
+The integration tests are written using Casperjs, phantomcss and
 djangocms-casper-helpers.

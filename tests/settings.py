@@ -1,27 +1,54 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
 import os
 import sys
 
 
-def noop_gettext(s):
-    return s
-
-
-gettext = noop_gettext
-
-HELPER_SETTINGS = dict(
-    LANGUAGES=(
-        ('en', u'English'),
-        ('de', u'Deutsch'),
-        ('it', u'Italiano'),
-        ('zh-cn', u'Chinese (Simplified)'),
+HELPER_SETTINGS = {
+    'INSTALLED_APPS': [
+        'djangocms_text_ckeditor',
+    ],
+    'CMS_LANGUAGES': {
+        1: [
+            {
+                'code': 'en',
+                'name': 'English',
+                'fallbacks': ['de',],
+            },
+            {
+                'code': 'de',
+                'name': 'German',
+                'fallbacks': ['en',],
+            },
+            {
+                'code': 'it',
+                'name': 'Italian',
+                'fallbacks': ['en',],
+            },
+            {
+                'code': 'zh-cn',
+                'name': 'Chinese Simplified',
+                'fallbacks': ['en',]
+            },
+        ],
+        'default': {
+            'fallbacks': ['en', 'de',],
+            'redirect_on_fallback': False,
+            'public': True,
+            'hide_untranslated': False,
+        }
+    },
+    'LANGUAGES': (
+        ('en', 'English'),
+        ('de', 'Deutsch'),
+        ('it', 'Italiano'),
+        ('zh-cn', 'Chinese (Simplified)'),
     ),
-    USE_TZ=True,
-    TIME_ZONE='Europe/Zurich',
-    LANGUAGE_CODE='en',
-    PARLER_LANGUAGES={
+    'LANGUAGE_CODE': 'en',
+    'ALLOWED_HOSTS': ['localhost'],
+    'USE_TZ': True,
+    'TIME_ZONE': 'Europe/Zurich',
+    'PARLER_LANGUAGES': {
         1: (
             {'code': 'en', 'fallbacks': ['de',]},
             {'code': 'de', 'fallbacks': ['en',]},
@@ -33,55 +60,22 @@ HELPER_SETTINGS = dict(
             'hide_untranslated': False,
         },
     },
-    PARLER_ENABLE_CACHING=False,
-    CMS_CACHE_DURATIONS={
+    'PARLER_ENABLE_CACHING': False,
+    'CMS_CACHE_DURATIONS': {
         'menus': 0,
         'content': 0,
         'permissions': 0,
     },
-    CMS_ENABLE_UPDATE_CHECK=False,
+    'CMS_ENABLE_UPDATE_CHECK': False,
     # required for integration tests
-    LOGIN_URL='/admin/login/?user-login=test',
-    CMS_LANGUAGES={
-        1: [
-            {
-                'code': 'en',
-                'name': gettext('English'),
-                'fallbacks': ['de',],
-            },
-            {
-                'code': 'de',
-                'name': gettext('German'),
-                'fallbacks': ['en',],
-            },
-            {
-                'code': 'it',
-                'name': gettext('Italian'),
-                'fallbacks': ['en',],
-            },
-            {
-                'code': 'zh-cn',
-                'name': gettext('Chinese Simplified'),
-                'fallbacks': ['en',]
-            },
-        ],
-        'default': {
-            'fallbacks': ['en', 'de',],
-            'redirect_on_fallback': False,
-            'public': True,
-            'hide_untranslated': False,
-        }
-    },
-    INSTALLED_APPS=[
-        'djangocms_text_ckeditor',
-    ],
-    TEMPLATE_DIRS=(
+    'LOGIN_URL': '/admin/login/?user-login=test',
+    'TEMPLATE_DIRS': (
         os.path.join(
             os.path.dirname(__file__),
             'integration'
         ),
     ),
-    CMS_TEMPLATES=(
+    'CMS_TEMPLATES': (
         ('fullwidth.html', 'Fullwidth'),
         ('page.html', 'Standard page'),
         ('simple.html', 'Simple page'),
@@ -99,5 +93,5 @@ def run():
     runner.runner([sys.argv[0], 'cms', '--cms', 'server', '--bind', '0.0.0.0'])
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     run()

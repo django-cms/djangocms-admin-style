@@ -1,17 +1,47 @@
-sudo: required
-
 language: python
+
+sudo: required
 
 services:
   - docker
-
-install:
-  - make build
 
 env:
   matrix:
     - TEST=test111
     - TEST=test20
 
+matrix:
+  include:
+    - python: 3.5
+      env: TOX_ENV='flake8'
+    - python: 3.5
+      env: TOX_ENV='isort'
+      # Django 1.11
+    - python: 2.7
+      env: DJANGO='dj111' CMS='cms34'
+    - python: 3.4
+      env: DJANGO='dj111' CMS='cms35'
+    - python: 3.5
+      env: DJANGO='dj111' CMS='cms36'
+    # Django 2.0
+    - python: 3.5
+      env: DJANGO='dj20' CMS='cms36'
+    # Django 2.1
+    - python: 3.6
+      env: DJANGO='dj21' CMS='cms36'
+
+install:
+  - make build
+  - pip install coverage isort tox
+  - "if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then export PY_VER=py27; fi"
+  - "if [[ $TRAVIS_PYTHON_VERSION == '3.4' ]]; then export PY_VER=py34; fi"
+  - "if [[ $TRAVIS_PYTHON_VERSION == '3.5' ]]; then export PY_VER=py35; fi"
+  - "if [[ $TRAVIS_PYTHON_VERSION == '3.6' ]]; then export PY_VER=py36; fi"
+  - "if [[ ${DJANGO}z != 'z' ]]; then export TOX_ENV=$PY_VER-$DJANGO-$CMS; fi"
+
 script:
   - make $TEST
+  - tox -e $TOX_EN
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

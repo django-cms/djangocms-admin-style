@@ -1,30 +1,34 @@
-CHANGELOG
+=========
+Changelog
 =========
 
 
 1.3.0 (unreleased)
-------------------
+==================
 
 * Added support for Django 1.11, 2.0 and 2.1
 * Removed support for Django 1.8, 1.9
 * Adapted testing infrastructure (tox/travis) to incorporate
   django CMS 3.5 and 3.6
+* Added isort and adapted imports
+* Adapted code base to align with other supported addons
 
 
 1.2.9 (2018-10-31)
-------------------
+==================
+
 * Fixed a bug where it was possible to submit the same form multiple times
 
 
 1.2.8 (2018-04-10)
-------------------
+==================
 
 * Added styles for buttons in submit row
 * Fixed multiple UI issues with Django 1.11
 
 
 1.2.7 (2017-04-19)
-------------------
+==================
 
 * Adjusted styles of the new version of django-select2
 * Fixes display issues when using django-nested-admin
@@ -35,7 +39,7 @@ CHANGELOG
 
 
 1.2.6 (2016-10-24)
-------------------
+==================
 
 * Fixed an issue with related-widget-links display after filer widgets
 * Fixed an issue with related-widget-links when only change link was showing up
@@ -43,7 +47,7 @@ CHANGELOG
 
 
 1.2.5 (2016-10-04)
-------------------
+==================
 
 * Fixed string representation in the tabular inline
 * Fixed a regression which caused an error if the
@@ -52,7 +56,7 @@ CHANGELOG
 
 
 1.2.4 (2016-09-15)
-------------------
+==================
 
 * Fixes input and textarea fields in not aligned inline groups
 * Fixes select field width in table
@@ -67,8 +71,9 @@ CHANGELOG
 * Fixed an issue with related widget wrappers and selects inside of tables
 * Added single js bundle vs many small javascript files
 
+
 1.2.3 (2016-06-22)
-------------------
+==================
 
 * Added css regression tests framework
 * Fixed an issue with datetime fields being displayed incorrectly (#347)
@@ -78,22 +83,25 @@ CHANGELOG
 * Fixed inline grouped field with
 * Synced translations with Transifex
 
+
 1.2.2 (2016-05-25)
-------------------
+==================
 
 * Fixed drag'n'drop on sortedm2m on touch devices
 * Fixed mispositioned elements on tablets
 
+
 1.2.0 (2016-05-19)
-------------------
+==================
 
 * Fix missing border under copy permissions text & paddings/margins of the buttons
 * Fix breadcrumbs position when cms debug bar is present
 * Fix "take me back" button on delete confirmations
 * Added frontend integration tests (written with Casper JS)
 
+
 1.1.1 (2016-04-26)
-------------------
+==================
 
 * Adds cancel link to delete confirmation page
 * Adds documentation link to dropdown
@@ -106,8 +114,9 @@ CHANGELOG
 * Removes disabled action button border
 * Adds highlighted area to error messages
 
+
 1.1.0 (2016-02-01)
-------------------
+==================
 
 * Fix django 1.9 style changes
 * Fix selector chooser on mobile view because of django 1.9 style changes
@@ -116,8 +125,9 @@ CHANGELOG
 * Resets horizontal form fields to groups
 * Removes unnecessary icon files from filer and moves js into static/djangocms_admin_style folder
 
+
 1.0.9 (2016-01-28)
-------------------
+==================
 
 * Fix that link doesn't break to newline after sortedm2m label
 * Fix changelist paginator font size
@@ -127,8 +137,9 @@ CHANGELOG
 * Remove input clear on every input for IE
 * Fix add-another button size on advanced settings
 
+
 1.0.8 (2016-01-05)
-------------------
+==================
 
 * Fix file upload field in file plugin
 * Resets input field background color for dark system
@@ -141,8 +152,9 @@ CHANGELOG
 * Fix changelist if no admin actions are visible
 * Fix related widget wrapper list styles
 
+
 1.0.7 (2015-12-03)
-------------------
+==================
 
 * Fix login password field
 * Enable sourcemaps generation when using --debug param on Gulp
@@ -151,8 +163,9 @@ CHANGELOG
 * Adds max height on filtered lists and filters to make it more usable for very long lists
 * Adds translations
 
+
 1.0.6 (2015-11-19)
-------------------
+==================
 
 * Fix hover and selected lang link color in changelist table
 * Fix paginator width in users list on sideframe
@@ -171,8 +184,9 @@ CHANGELOG
 * Fix tagged items delete label position
 * Fix login password field
 
+
 1.0.5 (2015-11-10)
-------------------
+==================
 
 * Fix multiselect height
 * Fix login screen
@@ -181,8 +195,9 @@ CHANGELOG
 * Fix header and header button default text
 * Fix link/button plugin font color, button sizes and spaces
 
+
 1.0.4 (2015-11-04)
-------------------
+==================
 
 * Fix ``extrastyle.html`` link in README.rst
 * Fix modal display in django CMS <= 3.1
@@ -192,23 +207,27 @@ CHANGELOG
 * Fix Advance and Basic button styling
 * Fix limit search checkbox on filer
 
+
 1.0.3 (2015-11-04)
-------------------
+==================
 
 * Internal release
 
+
 1.0.2 (2015-11-04)
-------------------
+==================
 
 * Fix icon sizes being to large on the pagetree
 
+
 1.0.1 (2015-11-03)
-------------------
+==================
 
 * Fix button and error messages in Django 1.6
 
+
 1.0.0 (2015-11-03)
-------------------
+==================
 
 * Comprehensive visual overhaul with emphasis on supporting touch-devices
 * New header markup on branding.html template.
