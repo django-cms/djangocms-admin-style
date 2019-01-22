@@ -41,7 +41,7 @@ install:
 
 script:
   - make $TEST
-  - tox -e $TOX_EN
+  - tox -e $TOX_ENV
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
