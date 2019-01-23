@@ -13,26 +13,26 @@ HELPER_SETTINGS = {
             {
                 'code': 'en',
                 'name': 'English',
-                'fallbacks': ['de',],
+                'fallbacks': ['de'],
             },
             {
                 'code': 'de',
                 'name': 'German',
-                'fallbacks': ['en',],
+                'fallbacks': ['en'],
             },
             {
                 'code': 'it',
                 'name': 'Italian',
-                'fallbacks': ['en',],
+                'fallbacks': ['en'],
             },
             {
                 'code': 'zh-cn',
                 'name': 'Chinese Simplified',
-                'fallbacks': ['en',]
+                'fallbacks': ['en']
             },
         ],
         'default': {
-            'fallbacks': ['en', 'de',],
+            'fallbacks': ['en', 'de'],
             'redirect_on_fallback': False,
             'public': True,
             'hide_untranslated': False,
@@ -50,10 +50,10 @@ HELPER_SETTINGS = {
     'TIME_ZONE': 'Europe/Zurich',
     'PARLER_LANGUAGES': {
         1: (
-            {'code': 'en', 'fallbacks': ['de',]},
-            {'code': 'de', 'fallbacks': ['en',]},
-            {'code': 'it', 'fallbacks': ['en',]},
-            {'code': 'zh-cn', 'fallbacks': ['en',]},
+            {'code': 'en', 'fallbacks': ['de']},
+            {'code': 'de', 'fallbacks': ['en']},
+            {'code': 'it', 'fallbacks': ['en']},
+            {'code': 'zh-cn', 'fallbacks': ['en']},
         ),
         'default': {
             'fallback': 'en',

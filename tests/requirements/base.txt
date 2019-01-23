@@ -1,3 +1,5 @@
 djangocms-text-ckeditor
 djangocms-helper
 https://github.com/divio/djangocms-text-ckeditor/archive/master.zip
+tox
+coverage
