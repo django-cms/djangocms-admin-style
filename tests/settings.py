@@ -80,7 +80,7 @@ HELPER_SETTINGS = {
         ('page.html', 'Standard page'),
         ('simple.html', 'Simple page'),
     ),
-)
+}
 
 
 def run():
