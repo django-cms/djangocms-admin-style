@@ -7,7 +7,7 @@ build:
 run111:
 	make build
 	docker build -t djangocms-admin-style-test:django111 -f Dockerfile.django111 .
-	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django111 bash -c "pip install -r tests/requirements/django-1.11.txt && python tests/settings.py"
+	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django111 bash -c "pip install -r tests/requirements/django-1.11.txt && python tests/settings-docker.py"
 
 test111:
 	make build
@@ -18,7 +18,7 @@ test111:
 run20:
 	make build
 	docker build -t djangocms-admin-style-test:django20 -f Dockerfile.django20 .
-	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django20 bash -c "pip install -r tests/requirements/django-2.0.txt && python tests/settings.py"
+	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django20 bash -c "pip install -r tests/requirements/django-2.0.txt && python tests/settings-docker.py"
 
 test20:
 	make build
@@ -29,7 +29,7 @@ test20:
 run21:
 	make build
 	docker build -t djangocms-admin-style-test:django21 -f Dockerfile.django21 .
-	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django21 bash -c "pip install -r tests/requirements/django-2.1.txt && python tests/settings.py"
+	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django21 bash -c "pip install -r tests/requirements/django-2.1.txt && python tests/settings-docker.py"
 
 test21:
 	make build

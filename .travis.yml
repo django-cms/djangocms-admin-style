@@ -27,6 +27,8 @@ matrix:
     # Docker
     - python: 2.7
       env: TOX_ENV='docker111'
+    - python: 3.5
+      env: TOX_ENV='docker20'
 
 install:
   - make build
