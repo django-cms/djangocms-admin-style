@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
-
 from __future__ import unicode_literals
 
 from django import template
 from django.conf import settings
 from django.contrib.sites.shortcuts import get_current_site
+from django.template.defaultfilters import conditional_escape
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext
-from django.template.defaultfilters import conditional_escape
 
 
 # We follow the Semantic versioning convention

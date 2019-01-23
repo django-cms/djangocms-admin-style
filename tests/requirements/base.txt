@@ -1,3 +1,6 @@
+# requirements from setup.py
 djangocms-text-ckeditor
+# other requirements
 djangocms-helper
-https://github.com/divio/djangocms-text-ckeditor/archive/master.zip
+tox
+coverage

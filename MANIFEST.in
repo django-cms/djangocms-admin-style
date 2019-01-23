@@ -2,6 +2,6 @@ include LICENSE
 include README.rst
 recursive-include djangocms_admin_style *
 recursive-include djangocms_admin_style/locale *
-recursive-exclude * *.pyc
+recursive-exclude * *.py[co]
 recursive-exclude * *.scssc
 recursive-exclude .*
