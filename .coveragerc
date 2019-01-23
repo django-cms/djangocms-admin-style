@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = djangocms_audio
+source = djangocms_admin_style
 omit =
     migrations/*
     tests/*
