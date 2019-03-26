@@ -34,6 +34,8 @@ matrix:
     # Django 2.2
     - python: 3.6
       env: DJANGO='dj22' CMS='cms37'
+      dist: xenial
+      sudo: true
     - python: 3.7
       env: DJANGO='dj22' CMS='cms37'
       dist: xenial
