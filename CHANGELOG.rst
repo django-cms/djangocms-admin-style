@@ -3,6 +3,14 @@ Changelog
 =========
 
 
+1.3.1 (unreleased)
+==================
+
+* Introduced support for CMS 3.7 and Django 2.2
+* Removed support for Django 2.0
+* Extended test matrix
+
+
 1.3.0 (2019-01-23)
 ==================
 
