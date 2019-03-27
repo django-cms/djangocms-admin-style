@@ -18,7 +18,7 @@ matrix:
       env: DJANGO='dj111' CMS='cms35'
     - python: 3.5
       env: DJANGO='dj111' CMS='cms36'
-    - python: 3.7
+    - python: 3.6
       env: DJANGO='dj111' CMS='cms37'
       dist: xenial
       sudo: true
@@ -27,10 +27,6 @@ matrix:
       env: DJANGO='dj21' CMS='cms36'
     - python: 3.6
       env: DJANGO='dj21' CMS='cms37'
-    - python: 3.7
-      env: DJANGO='dj22' CMS='cms37'
-      dist: xenial
-      sudo: true
     # Django 2.2
     - python: 3.6
       env: DJANGO='dj22' CMS='cms37'
