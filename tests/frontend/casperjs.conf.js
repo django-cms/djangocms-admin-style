@@ -1,6 +1,7 @@
 'use strict';
-var phantomcss = require('phantomcss');
 var fs = require('fs');
+var phantomcss = require('phantomcss');
+var system = require('system');
 
 // #############################################################################
 // CasperJS options
@@ -26,7 +27,7 @@ module.exports = {
     phantomcss: function () {
         phantomcss.init({
             libraryRoot: './node_modules/phantomcss',
-            screenshotRoot: './tests/screenshots/reference',
+            screenshotRoot: system.env.SCREENSHOT_REFERENCES,
             failedComparisonsRoot: './tests/screenshots/failures',
             comparisonResultRoot: './tests/screenshots/results',
             cleanupComparisonImages: true,

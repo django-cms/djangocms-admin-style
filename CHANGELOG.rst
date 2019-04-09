@@ -9,6 +9,8 @@ Changelog
 * Introduced support for Django 2.2 and django CMS 3.7
 * Removed support for Django 2.0
 * Extended test matrix
+* Fixed screenshot tests for Django 2.1 and higher
+* Added new classifiers
 
 
 1.3.0 (2019-01-23)
