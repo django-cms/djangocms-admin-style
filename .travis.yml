@@ -18,17 +18,31 @@ matrix:
       env: DJANGO='dj111' CMS='cms35'
     - python: 3.5
       env: DJANGO='dj111' CMS='cms36'
-    # Django 2.0
-    - python: 3.5
-      env: DJANGO='dj20' CMS='cms36'
+    - python: 3.6
+      env: DJANGO='dj111' CMS='cms37'
+      dist: xenial
+      sudo: true
     # Django 2.1
     - python: 3.6
       env: DJANGO='dj21' CMS='cms36'
+    - python: 3.6
+      env: DJANGO='dj21' CMS='cms37'
+    # Django 2.2
+    - python: 3.6
+      env: DJANGO='dj22' CMS='cms37'
+      dist: xenial
+      sudo: true
+    - python: 3.7
+      env: DJANGO='dj22' CMS='cms37'
+      dist: xenial
+      sudo: true
     # Docker
     - python: 2.7
       env: TOX_ENV='docker111'
     - python: 3.5
-      env: TOX_ENV='docker20'
+      env: TOX_ENV='docker21'
+    - python: 3.5
+      env: TOX_ENV='docker22'
 
 install:
   - make build
@@ -37,6 +51,7 @@ install:
   - "if [[ $TRAVIS_PYTHON_VERSION == '3.4' ]]; then export PY_VER=py34; fi"
   - "if [[ $TRAVIS_PYTHON_VERSION == '3.5' ]]; then export PY_VER=py35; fi"
   - "if [[ $TRAVIS_PYTHON_VERSION == '3.6' ]]; then export PY_VER=py36; fi"
+  - "if [[ $TRAVIS_PYTHON_VERSION == '3.7' ]]; then export PY_VER=py37; fi"
   - "if [[ ${DJANGO}z != 'z' ]]; then export TOX_ENV=$PY_VER-$DJANGO-$CMS; fi"
 
 script:
