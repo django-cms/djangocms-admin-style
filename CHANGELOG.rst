@@ -3,6 +3,12 @@ Changelog
 =========
 
 
+1.5.0 (unreleased)
+==================
+
+* Added support for Django 3.0
+
+
 1.4.0 (2019-04-15)
 ==================
 
