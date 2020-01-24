@@ -31,6 +31,7 @@ matrix:
       env: DJANGO='dj22' CMS='cms37'
     - python: 3.7
       env: DJANGO='dj22' CMS='cms37'
+  allow_failures:
     # Django 3.0
     - python: 3.7
       env: DJANGO='dj30' CMS='cms37'
