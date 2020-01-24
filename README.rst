@@ -85,7 +85,7 @@ In order to run **integration tests** you need to have Docker installed.
 You can run tests by executing::
 
     make test111
-    make test20
+    make test22
 
 
 The integration tests are written using Casperjs, phantomcss and
