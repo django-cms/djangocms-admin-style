@@ -3,7 +3,7 @@ Changelog
 =========
 
 
-1.5.0 (unreleased)
+1.5.0 (2020-01-24)
 ==================
 
 * Added support for Django 3.0
