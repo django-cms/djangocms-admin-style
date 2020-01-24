@@ -1,7 +1,7 @@
 FROM python:3.6
 
 # Pillow requirements
-RUN apt-get install libtiff5-dev libjpeg62-turbo-dev zlib1g-dev \
+RUN apt-get install libtiff-dev libjpeg62-turbo-dev zlib1g-dev \
     libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev
 
 # Node setup
