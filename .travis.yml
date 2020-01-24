@@ -1,5 +1,6 @@
 language: python
 
+dist: xenial
 sudo: required
 
 services:
@@ -20,8 +21,6 @@ matrix:
       env: DJANGO='dj111' CMS='cms36'
     - python: 3.6
       env: DJANGO='dj111' CMS='cms37'
-      dist: xenial
-      sudo: true
     # Django 2.1
     - python: 3.6
       env: DJANGO='dj21' CMS='cms36'
@@ -30,12 +29,13 @@ matrix:
     # Django 2.2
     - python: 3.6
       env: DJANGO='dj22' CMS='cms37'
-      dist: xenial
-      sudo: true
     - python: 3.7
       env: DJANGO='dj22' CMS='cms37'
-      dist: xenial
-      sudo: true
+    # Django 3.0
+    - python: 3.7
+      env: DJANGO='dj30' CMS='cms37'
+    - python: 3.8
+      env: DJANGO='dj30' CMS='cms37'
     # Docker
     - python: 2.7
       env: TOX_ENV='docker111'
@@ -52,6 +52,7 @@ install:
   - "if [[ $TRAVIS_PYTHON_VERSION == '3.5' ]]; then export PY_VER=py35; fi"
   - "if [[ $TRAVIS_PYTHON_VERSION == '3.6' ]]; then export PY_VER=py36; fi"
   - "if [[ $TRAVIS_PYTHON_VERSION == '3.7' ]]; then export PY_VER=py37; fi"
+  - "if [[ $TRAVIS_PYTHON_VERSION == '3.8' ]]; then export PY_VER=py38; fi"
   - "if [[ ${DJANGO}z != 'z' ]]; then export TOX_ENV=$PY_VER-$DJANGO-$CMS; fi"
 
 script:

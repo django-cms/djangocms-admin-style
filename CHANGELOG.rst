@@ -7,6 +7,7 @@ Changelog
 ==================
 
 * Added support for Django 3.0
+* Added support for Python 3.8
 
 
 1.4.0 (2019-04-15)

@@ -84,7 +84,7 @@ HELPER_SETTINGS = {
 
 
 def run():
-    from djangocms_helper import runner
+    from app_helper import runner
 
     os.environ.setdefault('DATABASE_URL', 'sqlite://localhost/testdb.sqlite')
 
