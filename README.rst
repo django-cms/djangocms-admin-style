@@ -85,7 +85,7 @@ In order to run **integration tests** you need to have Docker installed.
 You can run tests by executing::
 
     make test111
-    make test20
+    make test22
 
 
 The integration tests are written using Casperjs, phantomcss and
@@ -101,7 +101,7 @@ djangocms-casper-helpers.
 
 .. |python| image:: https://img.shields.io/badge/python-2.7%20%7C%203.4+-blue.svg
     :target: https://pypi.org/project/djangocms-admin-style/
-.. |django| image:: https://img.shields.io/badge/django-1.11%20%7C%202.1%20%7C%202.2-blue.svg
+.. |django| image:: https://img.shields.io/badge/django-1.11%20%7C%202.2%20%7C%203.0-blue.svg
     :target: https://www.djangoproject.com/
 .. |djangocms| image:: https://img.shields.io/badge/django%20CMS-3.4%2B-blue.svg
     :target: https://www.django-cms.org/
