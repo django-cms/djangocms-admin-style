@@ -282,6 +282,10 @@ form {
             height: 20px !important;
         }
     }
+    label.aligned + div.readonly {
+        width: 160px;
+        margin-left: 170px;
+    }
     // input
     input,
     textarea {
