@@ -23,6 +23,9 @@ matrix:
     # Django 3.0, always run the lowest supported version
     - python: 3.6
       env: DJANGO='dj30' CMS='cms37'
+    # Django 3.1, always run the lowest supported version
+    - python: 3.6
+      env: DJANGO='dj31' CMS='cms38'
   allow_failures:
     # Django 3.1, always run the lowest supported version
     - python: 3.6
