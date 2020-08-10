@@ -26,11 +26,12 @@ matrix:
     # Django 3.1, always run the lowest supported version
     - python: 3.6
       env: DJANGO='dj31' CMS='cms38'
+    # Screenshot tests
+    - python: 3.5
+      env: TOX_ENV='docker22'
   allow_failures:
-    # Django 3.1, always run the lowest supported version
     - python: 3.6
       env: DJANGO='dj31' CMS='cms38'
-    # Docker
     - python: 3.5
       env: TOX_ENV='docker22'
 
