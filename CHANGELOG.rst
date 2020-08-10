@@ -9,6 +9,7 @@ Changelog
 * Added support for Django 3.1
 * Dropped support for Python 2.7 and Python 3.4
 * Dropped support for Django < 2.2
+* Changed ``field-box`` class declarations to ``fieldBox``
 
 
 1.5.0 (2020-01-24)

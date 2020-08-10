@@ -23,7 +23,7 @@
 .cms_modal-window {
     #container .breadcrumbs + .messagelist + #content,
     #container .breadcrumbs + #content {
-       margin-left: 20px !important;
+        margin-left: 20px !important;
     }
     &.app-aldryn_bootstrap3 .filerFile .filerClearer {
         // make sure that file clear button has the correct size #140
@@ -66,7 +66,7 @@
                     float: left;
                     width: calc(100% - #{$filtered-changelist-margin}) !important;
                     .results {
-                        margin-right: 0 !important
+                        margin-right: 0 !important;
                     }
                     #result_list tbody th,
                     #result_list tbody td {
@@ -101,11 +101,11 @@
         margin-left: 0;
         box-shadow: none !important;
         td > select {
-           width: auto !important;
+            width: auto !important;
         }
     }
-    input[type=text],
-    input[type=password],
+    input[type="text"],
+    input[type="password"],
     .vURLField,
     .vTextField,
     textarea,
@@ -139,7 +139,7 @@
                 margin-bottom: 4px;
             }
         }
-        .field-box {
+        .fieldBox {
             float: left;
             margin-right: 20px !important;
             margin-top: 0;
@@ -164,7 +164,7 @@
                     width: 160px !important;
                 }
             }
-            .field-box {
+            .fieldBox {
                 label {
                     display: inline-block;
                     float: left;
@@ -247,7 +247,7 @@
 
 // make sure that upload file field has correct height and full width #267
 .cms-admin-modal.model-file {
-    form input[type=file] {
+    form input[type="file"] {
         width: 100% !important;
         padding: 8px !important;
     }
