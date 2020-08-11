@@ -69,7 +69,7 @@ The following additional settings can be set:
 
 The update checker does not gather or record any data.
 
-To **compile CSS** run the following commands using **node 10**:
+To **compile CSS** run the following commands using **node 8**:
 
 * ``npm install``
 * ``gulp``

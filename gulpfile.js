@@ -87,20 +87,20 @@ gulp.task('sass', function () {
 
 gulp.task('icons', function () {
     gulp.src(PROJECT_PATTERNS.icons)
-    .pipe(iconfontCss({
-        fontName: 'django-admin-iconfont',
-        fontPath: '../fonts/',
-        path: PROJECT_PATH.sass + '/libs/_iconfont.scss',
-        targetPath: '../../../sass/components/_iconography.scss'
-    }))
-    .pipe(iconfont({
-        fontName: 'django-admin-iconfont',
-        normalize: true
-    }))
-    .on('glyphs', function (glyphs, opts) {
-        console.log(glyphs, opts);
-    })
-    .pipe(gulp.dest(PROJECT_PATH.icons));
+        .pipe(iconfontCss({
+            fontName: 'django-admin-iconfont',
+            fontPath: '../fonts/',
+            path: PROJECT_PATH.sass + '/libs/_iconfont.scss',
+            targetPath: '../../../sass/components/_iconography.scss'
+        }))
+        .pipe(iconfont({
+            fontName: 'django-admin-iconfont',
+            normalize: true
+        }))
+        .on('glyphs', function (glyphs, opts) {
+            console.log(glyphs, opts);
+        })
+        .pipe(gulp.dest(PROJECT_PATH.icons));
 });
 
 
