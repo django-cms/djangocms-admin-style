@@ -90,9 +90,12 @@ You can run tests by executing::
 In order to run **integration tests** you need to have Docker installed,
 then run one of the following commands::
 
-    make test22
-    make test30
-    make test31
+    make test
+
+To test other Django versions simply append `VERSION=3.1``. You can also
+run the test server through::
+
+    make run
 
 The integration tests are written using Casperjs, phantomcss and
 djangocms-casper-helpers.
