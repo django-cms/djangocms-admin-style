@@ -27,7 +27,7 @@ var argv = require('minimist')(process.argv.slice(2));
 // #############################################################################
 // #SETTINGS#
 var options = {
-    debug: argv.debug,
+    debug: argv.debug
 };
 var PROJECT_ROOT = __dirname;
 var PROJECT_PATH = {
@@ -35,7 +35,7 @@ var PROJECT_PATH = {
     css: PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/css',
     js: PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/js',
     tests: PROJECT_ROOT + '/tests/frontend',
-    icons: PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/fonts',
+    icons: PROJECT_ROOT + '/djangocms_admin_style/static/djangocms_admin_style/fonts'
 };
 
 var PROJECT_PATTERNS = {
@@ -47,17 +47,17 @@ var PROJECT_PATTERNS = {
         '!' + PROJECT_PATH.js + '/**/jquery.*.js',
         '!' + PROJECT_PATH.js + '/libs/**/*.js',
         '!' + PROJECT_PATH.js + '/dist/**/*.js',
-        'gulpfile.js',
-    ],
+        'gulpfile.js'
+    ]
 };
 
 var INTEGRATION_TESTS = [
     [
         'loginAdmin',
         'dashboard',
-        'addNewUser',
+        'addNewUser'
         // 'adminsortable2' // FIXME reenable when aldryn-jobs is fixed
-    ],
+    ]
 ];
 
 // #############################################################################
@@ -72,13 +72,13 @@ gulp.task('sass', function () {
         .pipe(
             postcss([
                 autoprefixer({
-                    cascade: false,
-                }),
+                    cascade: false
+                })
             ])
         )
         .pipe(
             minifyCss({
-                rebase: false,
+                rebase: false
             })
         )
         .pipe(gulpif(options.debug, sourcemaps.write()))
@@ -92,13 +92,13 @@ gulp.task('icons', function () {
                 fontName: 'django-admin-iconfont',
                 fontPath: '../fonts/',
                 path: PROJECT_PATH.sass + '/libs/_iconfont.scss',
-                targetPath: '../../../sass/components/_iconography.scss',
+                targetPath: '../../../sass/components/_iconography.scss'
             })
         )
         .pipe(
             iconfont({
                 fontName: 'django-admin-iconfont',
-                normalize: true,
+                normalize: true
             })
         )
         .on('glyphs', function (glyphs, opts) {
@@ -150,7 +150,7 @@ gulp.task(
         argv: argv,
         dbPath: 'testdb.sqlite',
         serverCommand: 'tests/settings-docker.py',
-        logger: console.log.bind(console),
+        logger: console.log.bind(console)
     })
 );
 

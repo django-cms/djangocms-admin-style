@@ -37,10 +37,6 @@ matrix:
     - python: 3.6
       env: DJANGO='dj31' CMS='cms38'
     - python: 3.6
-      env: TOX_ENV='docker22'
-    - python: 3.6
-      env: TOX_ENV='docker30'
-    - python: 3.6
       env: TOX_ENV='docker31'
 
 install:
