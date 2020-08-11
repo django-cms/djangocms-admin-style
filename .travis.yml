@@ -27,13 +27,21 @@ matrix:
     - python: 3.6
       env: DJANGO='dj31' CMS='cms38'
     # Screenshot tests
-    - python: 3.5
+    - python: 3.6
       env: TOX_ENV='docker22'
+    - python: 3.6
+      env: TOX_ENV='docker30'
+    - python: 3.6
+      env: TOX_ENV='docker31'
   allow_failures:
     - python: 3.6
       env: DJANGO='dj31' CMS='cms38'
-    - python: 3.5
+    - python: 3.6
       env: TOX_ENV='docker22'
+    - python: 3.6
+      env: TOX_ENV='docker30'
+    - python: 3.6
+      env: TOX_ENV='docker31'
 
 install:
   - make build

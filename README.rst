@@ -80,13 +80,19 @@ For further options have a look at the ``gulpfile.js``.
 Running Tests
 -------------
 
-In order to run **integration tests** you need to have Docker installed.
-
 You can run tests by executing::
 
-    make test111
-    make test22
+    virtualenv env
+    source env/bin/activate
+    pip install -r tests/base.txt
+    python setup.py test
 
+In order to run **integration tests** you need to have Docker installed,
+then run one of the following commands::
+
+    make test22
+    make test30
+    make test31
 
 The integration tests are written using Casperjs, phantomcss and
 djangocms-casper-helpers.
@@ -99,9 +105,9 @@ djangocms-casper-helpers.
 .. |coverage| image:: https://codecov.io/gh/divio/djangocms-admin-style/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/divio/djangocms-admin-style
 
-.. |python| image:: https://img.shields.io/badge/python-2.7%20%7C%203.4+-blue.svg
+.. |python| image:: https://img.shields.io/badge/python-3.5+-blue.svg
     :target: https://pypi.org/project/djangocms-admin-style/
-.. |django| image:: https://img.shields.io/badge/django-1.11%20%7C%202.2%20%7C%203.0-blue.svg
+.. |django| image:: https://img.shields.io/badge/django-2.2,%203.0,%203.1-blue.svg
     :target: https://www.djangoproject.com/
-.. |djangocms| image:: https://img.shields.io/badge/django%20CMS-3.4%2B-blue.svg
+.. |djangocms| image:: https://img.shields.io/badge/django%20CMS-3.7%2B-blue.svg
     :target: https://www.django-cms.org/

@@ -18,7 +18,7 @@ COPY ./package.json /app/package.json
 COPY ./package-lock.json /app/package-lock.json
 COPY ./tests/requirements /app/tests/requirements
 
-RUN npm i -f
+RUN npm install
 
 CMD pip install -e . && gulp lint && gulp tests:integration
 
