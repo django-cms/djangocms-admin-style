@@ -88,7 +88,7 @@ You can run tests by executing::
     python setup.py test
 
 In order to run **integration tests** you need to have Docker installed,
-then run one of the following commands::
+then run the following command::
 
     make test
 
