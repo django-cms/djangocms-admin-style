@@ -45,7 +45,7 @@ HELPER_SETTINGS = {
         ('zh-cn', 'Chinese (Simplified)'),
     ),
     'LANGUAGE_CODE': 'en',
-    'ALLOWED_HOSTS': ['localhost'],
+    'ALLOWED_HOSTS': ['*'],
     'USE_TZ': True,
     'TIME_ZONE': 'Europe/Zurich',
     'PARLER_LANGUAGES': {

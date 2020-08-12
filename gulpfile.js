@@ -55,8 +55,8 @@ var INTEGRATION_TESTS = [
     [
         'loginAdmin',
         'dashboard',
-        'addNewUser'
-        // 'adminsortable2' // FIXME reenable when aldryn-jobs is fixed
+        'addNewUser',
+        'pagetree'
     ]
 ];
 
