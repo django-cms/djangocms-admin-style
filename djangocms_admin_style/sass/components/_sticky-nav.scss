@@ -1,0 +1,55 @@
+.djangocms-admin-style .main {
+    .sticky {
+        margin-top: $toolbar-height + ($breadcrumb-padding * 2) + $line-height-normal + 2px;
+        border-top: 1px solid $gray-lighter !important;
+    }
+
+    .toggle-nav-sidebar {
+        border-radius: 0 !important;
+    }
+
+    #nav-sidebar .module caption {
+        padding-left: 0;
+        background: $color-primary;
+        margin: 0;
+        padding: 10px;
+        // normalisation
+        font-weight: bold;
+    }
+
+    // active sidebar entry
+    #nav-sidebar .module caption a {
+        color: $white;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $white !important;
+        }
+    }
+
+    // ensure that the sidebar has the same look and feel on every page
+    #nav-sidebar th a {
+        color: $gray-darkest;
+    }
+    #nav-sidebar th a,
+    #nav-sidebar td a {
+        font-family: $base-font-family;
+        font-size: 14px !important;
+        line-height: 14px !important;
+        font-weight: normal;
+    }
+    #nav-sidebar td,
+    #nav-sidebar th {
+        font-size: 14px !important;
+        line-height: 14px !important;
+        padding: 12px 10px !important;
+        border-bottom: 1px solid $gray-lighter;
+    }
+    #nav-sidebar td {
+        white-space: nowrap;
+    }
+    #nav-sidebar table {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    }
+}
