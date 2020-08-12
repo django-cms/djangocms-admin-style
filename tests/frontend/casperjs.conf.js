@@ -25,6 +25,8 @@ module.exports = {
         };
     },
     phantomcss: function () {
+        casper.echo('Using: ' + system.env.SCREENSHOT_REFERENCES);
+
         phantomcss.init({
             libraryRoot: './node_modules/phantomcss',
             screenshotRoot: system.env.SCREENSHOT_REFERENCES,

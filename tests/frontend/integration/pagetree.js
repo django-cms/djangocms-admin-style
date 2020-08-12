@@ -29,7 +29,13 @@ casper.test.begin('Pagetree', function (test) {
         .waitUntilVisible('.cms-pagetree-empty', function () {
             test.assertExists('.cms-pagetree-empty em', 'There is no page around yet.');
             test.assertExists('.cms-pagetree a[href$="/en/admin/cms/page/add/"]', 'Page can be added.');
-
+        })
+        .thenEvaluate(function () {
+            if (window.django && window.django.jQuery('.sticky').length) {
+                window.django.jQuery('.sticky').remove();
+            }
+        })
+        .then(function () {
             phantomcss.screenshot('html', 'pagetree empty');
         })
 
@@ -39,7 +45,13 @@ casper.test.begin('Pagetree', function (test) {
         })
         .waitForSelector('#page_form', function () {
             test.assertExists('#page_form', 'Form is displayed.');
-
+        })
+        .thenEvaluate(function () {
+            if (window.django && window.django.jQuery('.sticky').length) {
+                window.django.jQuery('.sticky').remove();
+            }
+        })
+        .then(function () {
             phantomcss.screenshot('html', 'add page');
         })
 
@@ -52,7 +64,13 @@ casper.test.begin('Pagetree', function (test) {
         })
         .waitUntilVisible('.cms-pagetree-container', function () {
             test.assertExists('.jstree-container-ul', 'Pagetree is rendered.');
-
+        })
+        .thenEvaluate(function () {
+            if (window.django && window.django.jQuery('.sticky').length) {
+                window.django.jQuery('.sticky').remove();
+            }
+        })
+        .then(function () {
             phantomcss.screenshot('html', 'pagetree populated');
         })
 
