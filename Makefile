@@ -16,6 +16,7 @@ test:
 	docker run -t --rm -v `pwd`/tests/screenshots/django-$(VERSION):/app/tests/screenshots/results djangocms-admin-style-test:django-$(VERSION)
 
 local:
+	echo "make sure to run `npm install` using node 8 first"
 	pip install -r tests/requirements/django-$(VERSION).txt
 	pip install -e .
 	rm -rf *testdb.sqlite
