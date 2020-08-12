@@ -1,3 +1,6 @@
 -r base.txt
 Django>=3.1,<3.2
-django-cms>=3.8,<3.9
+git+git://github.com/Djailla/django-polymorphic.git@django31#egg=django-polymorphic
+git+git://github.com/divio/django-sekizai.git@feature/django31#egg=django-sekizai
+git+git://github.com/FinalAngel/django-cms.git@feature/django31#egg=django-cms
+# django-cms>=3.8,<3.9
