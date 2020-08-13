@@ -25,6 +25,7 @@ CLASSIFIERS = [
     'Framework :: Django :: 3.0',
     'Framework :: Django :: 3.1',
     'Framework :: Django CMS',
+    'Framework :: Django CMS :: 3.6',
     'Framework :: Django CMS :: 3.7',
     'Framework :: Django CMS :: 3.8',
     'Topic :: Internet :: WWW/HTTP',
