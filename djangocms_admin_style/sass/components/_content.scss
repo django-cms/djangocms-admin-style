@@ -271,7 +271,8 @@ ul.messagelist + #content {
     h3 {
         padding: 20px 25px;
         background: $gray-lightest;
-        b, span {
+        b,
+        span {
             font-size: $font-size-large;
         }
         span {
@@ -571,7 +572,7 @@ a.addlink {
     background: $gray-lightest;
     white-space: nowrap;
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         bottom: 0;
@@ -607,7 +608,7 @@ a.addlink {
         @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     }
     .revertlink {
-        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);;
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     }
     .historylink {
         @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
@@ -740,7 +741,6 @@ a.addlink {
     background: $color-primary !important;
 }
 
-
 // nani/hvad language buttons
 .nani-language-tabs {
     position: relative;
@@ -810,4 +810,12 @@ a.addlink {
 // CKEditor max-size fix #310
 .cke_maximized {
     z-index: z(ckmaximized);
+}
+
+// attributes field
+.attributes-pair .field-box {
+    margin-bottom: 10px;
+}
+.attributes-pair .field-box:first-child {
+    padding-right: 15px;
 }
