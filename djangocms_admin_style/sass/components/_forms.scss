@@ -264,6 +264,7 @@ form {
         line-height: $line-height-normal;
         text-transform: uppercase;
         word-wrap: break-word;
+        width: auto !important;
         margin-bottom: 5px;
         // make sure we can differentiate required from normal side #249
         &.required {
