@@ -112,5 +112,5 @@ djangocms-casper-helpers.
     :target: https://pypi.org/project/djangocms-admin-style/
 .. |django| image:: https://img.shields.io/badge/django-2.2,%203.0,%203.1-blue.svg
     :target: https://www.djangoproject.com/
-.. |djangocms| image:: https://img.shields.io/badge/django%20CMS-3.7%2B-blue.svg
+.. |djangocms| image:: https://img.shields.io/badge/django%20CMS-3.6%2B-blue.svg
     :target: https://www.django-cms.org/
