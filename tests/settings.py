@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 HELPER_SETTINGS = {
     'INSTALLED_APPS': [
         'djangocms_text_ckeditor',
