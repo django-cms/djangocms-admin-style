@@ -1,3 +1,0 @@
--r base.txt
-Django>=2.1,<2.2
-https://github.com/divio/django-cms/archive/release/3.6.x.zip#egg=django-cms

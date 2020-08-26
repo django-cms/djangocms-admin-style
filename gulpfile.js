@@ -39,12 +39,8 @@ var PROJECT_PATH = {
 };
 
 var PROJECT_PATTERNS = {
-    sass: [
-        PROJECT_PATH.sass + '/**/*.{scss,sass}'
-    ],
-    icons: [
-        PROJECT_PATH.icons + '/src/*.svg'
-    ],
+    sass: [PROJECT_PATH.sass + '/**/*.{scss,sass}'],
+    icons: [PROJECT_PATH.icons + '/src/*.svg'],
     js: [
         PROJECT_PATH.js + '/**/*.js',
         PROJECT_PATH.tests + '/**/*.js',
@@ -59,8 +55,8 @@ var INTEGRATION_TESTS = [
     [
         'loginAdmin',
         'dashboard',
-        'addNewUser'
-        // 'adminsortable2' // FIXME reenable when aldryn-jobs is fixed
+        'addNewUser',
+        'pagetree'
     ]
 ];
 
@@ -73,44 +69,48 @@ gulp.task('sass', function () {
         .on('error', function (error) {
             console.log('Error (' + error.plugin + '): ' + error.messageFormatted);
         })
-        .pipe(postcss([
-            autoprefixer({
-                cascade: false
+        .pipe(
+            postcss([
+                autoprefixer({
+                    cascade: false
+                })
+            ])
+        )
+        .pipe(
+            minifyCss({
+                rebase: false
             })
-        ]))
-        .pipe(minifyCss({
-            rebase: false
-        }))
+        )
         .pipe(gulpif(options.debug, sourcemaps.write()))
         .pipe(gulp.dest(PROJECT_PATH.css));
 });
 
 gulp.task('icons', function () {
     gulp.src(PROJECT_PATTERNS.icons)
-    .pipe(iconfontCss({
-        fontName: 'django-admin-iconfont',
-        fontPath: '../fonts/',
-        path: PROJECT_PATH.sass + '/libs/_iconfont.scss',
-        targetPath: '../../../sass/components/_iconography.scss'
-    }))
-    .pipe(iconfont({
-        fontName: 'django-admin-iconfont',
-        normalize: true
-    }))
-    .on('glyphs', function (glyphs, opts) {
-        console.log(glyphs, opts);
-    })
-    .pipe(gulp.dest(PROJECT_PATH.icons));
+        .pipe(
+            iconfontCss({
+                fontName: 'django-admin-iconfont',
+                fontPath: '../fonts/',
+                path: PROJECT_PATH.sass + '/libs/_iconfont.scss',
+                targetPath: '../../../sass/components/_iconography.scss'
+            })
+        )
+        .pipe(
+            iconfont({
+                fontName: 'django-admin-iconfont',
+                normalize: true
+            })
+        )
+        .on('glyphs', function (glyphs, opts) {
+            console.log(glyphs, opts);
+        })
+        .pipe(gulp.dest(PROJECT_PATH.icons));
 });
-
 
 gulp.task('lint', ['lint:javascript']);
 gulp.task('lint:javascript', function () {
     // DOCS: http://eslint.org
-    return gulp.src(PROJECT_PATTERNS.js)
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
+    return gulp.src(PROJECT_PATTERNS.js).pipe(eslint()).pipe(eslint.format()).pipe(eslint.failAfterError());
 });
 
 var webpackBundle = function (opts) {
@@ -137,20 +137,22 @@ var webpackBundle = function (opts) {
 gulp.task('bundle:watch', webpackBundle({ watch: true }));
 gulp.task('bundle', webpackBundle());
 
-
 // #######################################
 // #TESTS#
 gulp.task('tests', ['tests:integration']);
 
 // gulp tests:integration [--clean] [--screenshots] [--tests=loginAdmin,toolbar]
-gulp.task('tests:integration', integrationTests({
-    tests: INTEGRATION_TESTS,
-    pathToTests: PROJECT_PATH.tests,
-    argv: argv,
-    dbPath: 'testdb.sqlite',
-    serverCommand: 'tests/settings-docker.py',
-    logger: console.log.bind(console)
-}));
+gulp.task(
+    'tests:integration',
+    integrationTests({
+        tests: INTEGRATION_TESTS,
+        pathToTests: PROJECT_PATH.tests,
+        argv: argv,
+        dbPath: 'testdb.sqlite',
+        serverCommand: 'tests/settings-docker.py',
+        logger: console.log.bind(console)
+    })
+);
 
 // #############################################################################
 // #COMMANDS#

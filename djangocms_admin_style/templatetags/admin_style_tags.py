@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django import template
 from django.conf import settings
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.defaultfilters import conditional_escape
 from django.template.loader import render_to_string
-from django.utils.translation import ugettext
+from django.utils.translation import gettext
 
 
 # We follow the Semantic versioning convention
@@ -26,7 +23,7 @@ def current_site_name(context):
     except AttributeError:
         # This happens if request is None
         # and sites framework is not in INSTALLED_APPS
-        site_name = ugettext('my site')
+        site_name = gettext('my site')
     return conditional_escape(site_name)
 
 

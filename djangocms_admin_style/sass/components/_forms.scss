@@ -13,7 +13,8 @@ form {
     .form-row:not(tr) {
         // adds clearfix because overflow hidden truncates highlighted focus fields #242
         @include micro-clearfix;
-        .vForeignKeyRawIdAdminField, .vManyToManyRawIdAdminField {
+        .vForeignKeyRawIdAdminField,
+        .vManyToManyRawIdAdminField {
             // calculates width that search button appears next to search input
             width: calc(100% - 50px) !important;
         }
@@ -47,7 +48,7 @@ form {
                 color: $gray-darkest !important;
             }
         }
-        &.field-image, {
+        &.field-image {
             .filerFile img {
                 width: 36px;
                 height: 36px;
@@ -86,18 +87,20 @@ form {
                 display: none;
             }
         }
-        .vForeignKeyRawIdAdminField, .vManyToManyRawIdAdminField {
+        .vForeignKeyRawIdAdminField,
+        .vManyToManyRawIdAdminField {
             width: auto !important;
         }
 
         // only affects field boxes when they are next to each other
-        .field-box {
+        .fieldBox {
             &:nth-of-type(1) {
                 &:nth-last-of-type(2) {
                     width: 50%;
                     box-sizing: border-box;
                     margin: 0 !important;
                     padding-right: 10px;
+                    padding-left: 0;
                 }
             }
 
@@ -107,6 +110,7 @@ form {
                     box-sizing: border-box;
                     margin: 0 !important;
                     padding-left: 10px;
+                    padding-top: 0;
                 }
             }
         }
@@ -194,7 +198,7 @@ form {
                 content: none;
             }
             & + div.readonly {
-                margin-top: -30px
+                margin-top: -30px;
             }
         }
         label + label {
@@ -279,6 +283,10 @@ form {
         &:after {
             height: 20px !important;
         }
+    }
+    label.aligned + div.readonly {
+        width: 160px;
+        margin-left: 170px;
     }
     // input
     input,
@@ -402,8 +410,8 @@ form {
             padding-top: 0;
             border-top: 0;
         }
-        input[type=checkbox],
-        input[type=radio] {
+        input[type="checkbox"],
+        input[type="radio"] {
             top: auto;
             vertical-align: middle;
             width: auto !important;
@@ -872,8 +880,8 @@ form select[multiple] {
     select {
         float: left;
         min-width: inherit !important;
-        padding-right: 35px;
-        margin-right: 10px;
+        padding-right: 35px !important;
+        margin-right: 10px !important;
     }
     select + .related-widget-wrapper-link,
     .related-widget-wrapper-link + .related-widget-wrapper-link {

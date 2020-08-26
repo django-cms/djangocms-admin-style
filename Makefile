@@ -1,37 +1,29 @@
 PORT = 8000
+VERSION = 2.2
+
 
 build:
 	docker build -t djangocms-admin-style-test:base -f Dockerfile .
 
-# Django 1.11
-run111:
-	make build
-	docker build -t djangocms-admin-style-test:django111 -f Dockerfile.django111 .
-	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django111 bash -c "pip install -r tests/requirements/django-1.11.txt && python tests/settings-docker.py"
+cleanup:
+	rm -rf *testdb.sqlite
 
-test111:
+run:
+	make cleanup
 	make build
-	docker build -t djangocms-admin-style-test:django111 -f Dockerfile.django111 .
-	docker run -t --rm -v `pwd`/tests/screenshots/django111:/app/tests/screenshots/results djangocms-admin-style-test:django111
+	docker build -t djangocms-admin-style-test:django-$(VERSION) -f Dockerfile.django-$(VERSION) .
+	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django-$(VERSION) bash -c "pip install -r tests/requirements/django-$(VERSION).txt && python tests/settings-docker.py"
 
-# Django 2.1
-run21:
+test:
 	make build
-	docker build -t djangocms-admin-style-test:django21 -f Dockerfile.django21 .
-	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django21 bash -c "pip install -r tests/requirements/django-2.1.txt && python tests/settings-docker.py"
+	docker build -t djangocms-admin-style-test:django-$(VERSION) -f Dockerfile.django-$(VERSION) .
+	docker run -t --rm -v `pwd`/tests/screenshots/django-$(VERSION):/app/tests/screenshots/results djangocms-admin-style-test:django-$(VERSION)
 
-test21:
-	make build
-	docker build -t djangocms-admin-style-test:django21 -f Dockerfile.django21 .
-	docker run -t --rm -v `pwd`/tests/screenshots/django21:/app/tests/screenshots/results djangocms-admin-style-test:django21
-
-# Django 2.2
-run22:
-	make build
-	docker build -t djangocms-admin-style-test:django22 -f Dockerfile.django22 .
-	docker run -t --rm -p $(PORT):8000 -v `pwd`:/app djangocms-admin-style-test:django22 bash -c "pip install -r tests/requirements/django-2.2.txt && python tests/settings-docker.py"
-
-test22:
-	make build
-	docker build -t djangocms-admin-style-test:django22 -f Dockerfile.django22 .
-	docker run -t --rm -v `pwd`/tests/screenshots/django22:/app/tests/screenshots/results djangocms-admin-style-test:django22
+local:
+	@echo "> The reference files in "tests/screenshots" will differ locally from the Docker version (linux)."
+	@echo "> Make sure to run "npm install" using node 8 first."
+	@echo ""
+	make cleanup
+	pip install -r tests/requirements/django-$(VERSION).txt
+	pip install -e .
+	export SCREENSHOT_REFERENCES="./tests/screenshots/reference-$(VERSION)"; gulp lint && gulp tests:integration

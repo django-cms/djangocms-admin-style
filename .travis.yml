@@ -1,7 +1,6 @@
 language: python
 
 dist: xenial
-sudo: required
 
 services:
   - docker
@@ -12,44 +11,37 @@ matrix:
       env: TOX_ENV='flake8'
     - python: 3.5
       env: TOX_ENV='isort'
-      # Django 1.11
-    - python: 2.7
-      env: DJANGO='dj111' CMS='cms34'
-    - python: 3.4
-      env: DJANGO='dj111' CMS='cms35'
-    - python: 3.5
-      env: DJANGO='dj111' CMS='cms36'
-    - python: 3.6
-      env: DJANGO='dj111' CMS='cms37'
-    # Django 2.1
-    - python: 3.6
-      env: DJANGO='dj21' CMS='cms36'
-    - python: 3.6
-      env: DJANGO='dj21' CMS='cms37'
     # Django 2.2
+    - python: 3.5
+      env: DJANGO='dj22' CMS='cms37'
     - python: 3.6
       env: DJANGO='dj22' CMS='cms37'
     - python: 3.7
       env: DJANGO='dj22' CMS='cms37'
-  allow_failures:
-    # Django 3.0
-    - python: 3.7
-      env: DJANGO='dj30' CMS='cms37'
     - python: 3.8
+      env: DJANGO='dj22' CMS='cms37'
+    # Django 3.0, always run the lowest supported version
+    - python: 3.6
       env: DJANGO='dj30' CMS='cms37'
-    # Docker
-    - python: 2.7
-      env: TOX_ENV='docker111'
-    - python: 3.5
-      env: TOX_ENV='docker21'
-    - python: 3.5
+    # Django 3.1, always run the lowest supported version
+    - python: 3.6
+      env: DJANGO='dj31' CMS='cms38'
+    # Screenshot tests
+    - python: 3.6
       env: TOX_ENV='docker22'
+    - python: 3.6
+      env: TOX_ENV='docker30'
+    - python: 3.6
+      env: TOX_ENV='docker31'
+  allow_failures:
+    - python: 3.6
+      env: DJANGO='dj31' CMS='cms38'
+    - python: 3.6
+      env: TOX_ENV='docker31'
 
 install:
   - make build
   - pip install coverage isort tox
-  - "if [[ $TRAVIS_PYTHON_VERSION == '2.7' ]]; then export PY_VER=py27; fi"
-  - "if [[ $TRAVIS_PYTHON_VERSION == '3.4' ]]; then export PY_VER=py34; fi"
   - "if [[ $TRAVIS_PYTHON_VERSION == '3.5' ]]; then export PY_VER=py35; fi"
   - "if [[ $TRAVIS_PYTHON_VERSION == '3.6' ]]; then export PY_VER=py36; fi"
   - "if [[ $TRAVIS_PYTHON_VERSION == '3.7' ]]; then export PY_VER=py37; fi"

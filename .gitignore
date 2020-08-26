@@ -25,7 +25,8 @@ npm-debug.log
 package-lock.json
 
 local.sqlite
+testdb.sqlite*
 
 tests/screenshots/*
-!tests/screenshots/reference
+!tests/screenshots/reference-*
 !djangocms_admin_style/static/djangocms_admin_style/js/dist

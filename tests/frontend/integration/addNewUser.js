@@ -38,9 +38,15 @@ casper.test.begin('Add new user', function (test) {
             test.assertExists('#user_form', 'Username input field exists');
         })
         .wait(1000)
+        .thenEvaluate(function () {
+            if (window.django && window.django.jQuery('.sticky').length) {
+                window.django.jQuery('.sticky').remove();
+            }
+        })
         .then(function () {
             phantomcss.screenshot('html', 'add user form');
-
+        })
+        .then(function () {
             this.fill('#user_form', {
                 username: globals.user.username,
                 password1: globals.user.password,
@@ -77,6 +83,13 @@ casper.test.begin('Add new user', function (test) {
                 'The User has been updated'
             );
 
+        })
+        .thenEvaluate(function () {
+            if (window.django && window.django.jQuery('.sticky').length) {
+                window.django.jQuery('.sticky').remove();
+            }
+        })
+        .then(function () {
             phantomcss.screenshot('html', 'user list success');
         })
 
@@ -95,7 +108,13 @@ casper.test.begin('Add new user', function (test) {
 
         .waitForSelector('.delete-confirmation', function () {
             test.assertExists('.delete-confirmation', 'Delete confirmation exists');
-
+        })
+        .thenEvaluate(function () {
+            if (window.django && window.django.jQuery('.sticky').length) {
+                window.django.jQuery('.sticky').remove();
+            }
+        })
+        .then(function () {
             phantomcss.screenshot('html', 'user delete confirmation');
         })
 

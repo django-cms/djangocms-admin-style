@@ -1,9 +1,13 @@
 {% extends "admin/base.html" %}
 {% load i18n static admin_style_tags %}
 
-{% block extrastyle %}{% include 'admin/inc/extrastyle.html' %}{% endblock %}
+{% block extrastyle %}
+{{ block.super }}
+{% include 'admin/inc/extrastyle.html' %}
+{% endblock %}
 
 {% block extrahead %}
+{{ block.super }}
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="stylesheet" type="text/css" href="{% static 'djangocms_admin_style/css/djangocms-admin.css' %}" />
 {% if request.user.is_superuser %}{% render_update_notification %}{% endif %}
@@ -18,4 +22,4 @@
 
 {% block userlinks %}{% include 'admin/inc/userlinks.html' %}{{ block.super }}{% endblock %}
 
-{% block nav-global %}{{ block.super }}{% include 'admin/inc/nav-global.html' %}{% endblock %}
+{% block nav-global %}{% endblock %}

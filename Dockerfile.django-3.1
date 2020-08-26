@@ -1,0 +1,7 @@
+FROM djangocms-admin-style-test:base
+
+RUN pip install -r /app/tests/requirements/django-3.1.txt
+
+ENV SCREENSHOT_REFERENCES="./tests/screenshots/reference-3.1"
+
+COPY . /app

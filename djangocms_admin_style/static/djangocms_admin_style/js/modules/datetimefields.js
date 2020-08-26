@@ -51,18 +51,20 @@ function closest(element, className) {
 function getDateTimeFields() {
     var datetimeWidgets = document.getElementsByTagName('input');
 
-    return arrayFrom(datetimeWidgets).map(function (input) {
-        if (hasClass(input, 'vDateField') || hasClass(input, 'vTimeField')) {
-            return input;
-        }
-    }).filter(function (item) {
-        return !!item;
-    });
+    return arrayFrom(datetimeWidgets)
+        .map(function (input) {
+            if (hasClass(input, 'vDateField') || hasClass(input, 'vTimeField')) {
+                return input;
+            }
+        })
+        .filter(function (item) {
+            return !!item;
+        });
 }
 
 /**
  * Wraps each date and time input inside of ".datetime" into own
- * field boxes. But not the ones that already have ".field-box" as a parent somewhere up the tree.
+ * field boxes. But not the ones that already have ".fieldBox" as a parent somewhere up the tree.
  *
  * @function reorganizeMarkup
  */
@@ -70,12 +72,12 @@ function reorganizeMarkup() {
     var dateTimeFields = getDateTimeFields();
 
     dateTimeFields.forEach(function (field) {
-        var closestBox = closest(field, 'field-box');
+        var closestBox = closest(field, 'fieldBox');
         var closestDateTime = closest(field, 'datetime');
         var closestBoxToDateTime;
 
         if (closestDateTime) {
-            closestBoxToDateTime = closest(closestDateTime, 'field-box');
+            closestBoxToDateTime = closest(closestDateTime, 'fieldBox');
         }
 
         if (closestBoxToDateTime && closestBoxToDateTime === closestBox) {
@@ -94,7 +96,7 @@ function reorganizeMarkup() {
 
                 markup.forEach(function (part) {
                     if (document.body.contains(parent)) {
-                        parent.insertAdjacentHTML('beforebegin', '<div class="field-box">' + part + '</div>');
+                        parent.insertAdjacentHTML('beforebegin', '<div class="fieldBox">' + part + '</div>');
                     }
                 });
 
@@ -120,7 +122,7 @@ function ensureLabelsExist() {
         var closestBox = closest(field, 'datetime');
 
         if (!closestBox) {
-            closestBox = closest(field, 'field-box');
+            closestBox = closest(field, 'fieldBox');
         }
 
         if (!closestBox) {
