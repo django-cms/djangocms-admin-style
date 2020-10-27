@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Unreleased
+==========
+
+* Fixed the icon in the admin dashboard for models that are read only
+
 
 2.0.0 (2020-08-26)
 ==================
