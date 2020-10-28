@@ -167,6 +167,11 @@ a[id*="clocklink"] {
     padding-left: 15px;
 }
 
+// Viewlink uses a django supplied icon, we need to ensure that we don't override it's styling
+.viewlink {
+    padding-left: 15px !important;
+}
+
 .related-lookup,
 .add-another {
     margin: 0 5px;
