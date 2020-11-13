@@ -2,6 +2,10 @@
 Changelog
 =========
 
+Unreleased
+==========
+
+* Fix ``#changelist`` layout issue introduced since Django > 3.1.1
 
 2.0.1 (2020-10-28)
 ==========
