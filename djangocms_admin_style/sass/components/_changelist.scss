@@ -59,6 +59,7 @@
         }
     }
     #changelist {
+        display: block;
         width: auto !important;
         #action-toggle {
             vertical-align: middle;
@@ -106,6 +107,17 @@
             }
             .actions {
                 margin-right: $filtered-filter-width !important;
+            }
+
+            .changelist-form-container {
+                position: relative;
+                display: inline-block;
+                width: calc(100% - #{$filter-changelist-margin}) !important;
+
+                .results + .paginator {
+                    box-sizing: border-box;
+                    width: 100% !important;
+                }
             }
         }
         table {
