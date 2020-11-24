@@ -2,13 +2,14 @@
 Changelog
 =========
 
-Unreleased
-==========
+2.0.2 (2020-11-24)
+==================
 
 * Fix ``#changelist`` layout issue introduced since Django > 3.1.1
 
+
 2.0.1 (2020-10-28)
-==========
+==================
 
 * Fixed the icon in the admin dashboard for models that are read only
 
