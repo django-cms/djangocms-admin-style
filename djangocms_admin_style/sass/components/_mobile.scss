@@ -301,6 +301,9 @@ form {
     // arbitrary width because it doesn't fit on bigger than "mobile"
     // breakpoint, but still ok on "tablet"
     @media (max-width: 600px) {
+        .form-row .fieldBox {
+            width: 100% !important;
+        }
         // make sure that submit buttons are positioned correct on mobile #153
         .submit-row {
             text-align: left;

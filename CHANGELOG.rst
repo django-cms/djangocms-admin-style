@@ -2,6 +2,12 @@
 Changelog
 =========
 
+Unreleased
+==================
+
+* Fix datetime fields layout
+* Improve readability in form
+
 2.0.2 (2020-11-24)
 ==================
 

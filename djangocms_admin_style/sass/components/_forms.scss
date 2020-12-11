@@ -20,6 +20,13 @@ form {
         }
     }
     .form-row {
+        // Improve readability by increasing contrast
+        & > div > label:not(.vCheckboxLabel) {
+            color: $gray-darker !important;
+            font-weight: bold !important;
+            width: 100% !important;
+            text-transform: inherit;
+        }
         // make sure that highlighted focus on fields is not truncated #242
         overflow: visible;
         border-bottom: 0;
@@ -94,6 +101,23 @@ form {
 
         // only affects field boxes when they are next to each other
         .fieldBox {
+            margin-right: 0px;
+            box-sizing: border-box;
+            width: 50%;
+            max-width: 500px;
+
+            & > label {
+                text-transform: inherit;
+            }
+            & + .fieldBox {
+                padding-top: 0;
+            }
+
+            &:not(:first-child) {
+                border-top: none;
+                padding-right: 2vw;
+            }
+
             &:nth-of-type(1) {
                 &:nth-last-of-type(2) {
                     width: 50%;
@@ -129,7 +153,6 @@ form {
         border-radius: 3px !important;
         // resets background color for input fields for dark system #271
         background-color: $white;
-
         appearance: none;
 
         // resets default firefox error style
@@ -142,8 +165,6 @@ form {
     .form-row .datetime {
         input.vDateField,
         input.vTimeField {
-            // caluclates width pf input field and removes date and calendar pickers to make sure that they floats next to input #319
-            width: calc(100% - 112px) !important;
             margin-left: 0; // django 1.9
             margin-bottom: 0; // django 1.9
         }
@@ -172,8 +193,8 @@ form {
             clear: both;
             color: $gray;
             font-size: $font-size-small !important;
-            margin-top: 10px !important;
-            margin-left: 0;
+            margin-top: 7px !important;
+            margin-left: 2px !important;
             margin-bottom: 0;
             padding: 0 !important;
         }
@@ -788,24 +809,25 @@ span.datetimeshortcuts,
     display: inline-block;
     font-size: 0 !important;
     padding: 4px 0 !important;
+    margin-left: 0 !important;
+
     a {
-        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+        @include button-variant($btn-action-bgcolor, $btn-action-color, $btn-default-border, true);
         display: inline-block;
         line-height: 14px;
         box-sizing: content-box;
         height: 14px;
         margin-top: 0 !important;
         margin-bottom: 0;
-        padding: 10px !important;
+        padding: 10px 16px !important;
+
         &:before {
             color: $color-primary;
             margin: -2px 0 0;
         }
-        &:first-child {
-            text-align: center;
-            width: 40px;
+
+        &:not(:last-child) {
             margin-right: 5px;
-            margin-left: 5px;
         }
     }
 }
