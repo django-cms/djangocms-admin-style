@@ -6,6 +6,7 @@ Unreleased
 ==================
 
 * Fix datetime fields layout
+* Fix modal layout issue
 * Improve readability in form
 
 2.0.2 (2020-11-24)
