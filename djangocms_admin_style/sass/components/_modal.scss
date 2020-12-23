@@ -271,4 +271,11 @@
     &.change-list #changelist.cms-pagetree-root {
         margin-top: 40px;
     }
+    #nav-sidebar,
+    .toggle-nav-sidebar {
+        display: none;
+    }
+    .main.shifted .content {
+        max-width: 100% !important;
+    }
 }
