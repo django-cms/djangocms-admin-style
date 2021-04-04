@@ -20,6 +20,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
 
     - name: Run screeshots
       run: make test VERSION=${{ matrix.django-version }}
