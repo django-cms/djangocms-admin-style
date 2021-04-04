@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.6]
+        python-version: [3.6]  # dockerfile uses 3.6
         django-version: [
           '2.2',
           '3.0',  # Strings because otherwise 3.0 becomes 3
@@ -20,10 +20,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
 
     - name: Run screeshots
       run: make test VERSION=${{ matrix.django-version }}
