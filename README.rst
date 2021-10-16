@@ -6,6 +6,11 @@ django CMS Admin Style
 
 Adds pretty CSS styles for the django CMS admin interface.
 
+
+.. note:: 
+
+    This project is considered 3rd party (no supervision by the `django CMS Association <https://www.django-cms.org/en/about-us/>`_). Join us on `Slack                 <https://www.django-cms.org/slack/>`_ for more information.
+
 +---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/dashboard.png   | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/listview.png   |
 +---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
@@ -14,21 +19,26 @@ Adds pretty CSS styles for the django CMS admin interface.
 
 The shortcuts you see on top of the dashboard are from `django-admin-shortcuts <https://github.com/alesdotio/django-admin-shortcuts/>`_
 
+*******************************************
+Contribute to this project and win rewards
+*******************************************
 
-Contributing
-============
+Because this is a an open-source project, we welcome everyone to
+`get involved in the project <https://www.django-cms.org/en/contribute/>`_ and
+`receive a reward <https://www.django-cms.org/en/bounty-program/>`_ for their contribution. 
+Become part of a fantastic community and help us make django CMS the best CMS in the world.   
 
-This is a an open-source project. We'll be delighted to receive your
+We'll be delighted to receive your
 feedback in the form of issues and pull requests. Before submitting your
 pull request, please review our `contribution guidelines
 <http://docs.django-cms.org/en/latest/contributing/index.html>`_.
 
 We're grateful to all contributors who have helped create and maintain this package.
-Contributors are listed at the `contributors <https://github.com/divio/djangocms-admin-style/graphs/contributors>`_
+Contributors are listed at the `contributors <https://github.com/divio/djangocms-text-ckeditor/graphs/contributors>`_
 section.
 
 One of the easiest contributions you can make is helping to translate this addon on
-`Transifex <https://www.transifex.com/projects/p/djangocms-admin-style/>`_.
+`Transifex <https://www.transifex.com/projects/p/djangocms-text-ckeditor/>`_.
 
 
 Documentation
