@@ -21,5 +21,4 @@ $(function () {
     initRelatedWidgetWrappers();
     initToolbarDropdown();
     initUpdateNotification();
-    preventDoubleFormSubmissions();
 });
