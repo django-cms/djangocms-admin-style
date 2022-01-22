@@ -9,11 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         python-version: [3.6]  # dockerfile uses 3.6
-        django-version: [
-          '2.2',
-          '3.0',  # Strings because otherwise 3.0 becomes 3
-          '3.1'
-        ]
+        django-version: ['2.2', '3.1']
         os: [
           ubuntu-20.04,
         ]
