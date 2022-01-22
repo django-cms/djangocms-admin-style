@@ -2,9 +2,14 @@
 Changelog
 =========
 
-Unreleased
-==================
+unreleased
+==========
 
+3.0.0 2022-01-22
+================
+
+* Drop support for python 3.5, 3.6 and django 3.0
+* Increase calendar box width to show Sundays
 * Fix datetime fields layout
 * Fix modal layout issue
 * Improve readability in form
