@@ -37,7 +37,7 @@ long_description = (this_directory / "README.rst").read_text()
 
 setup(
     name='djangocms-admin-style',
-    version='2.0.2',
+    version='3.0.0',
     author='Divio AG',
     author_email='info@divio.ch',
     maintainer='Django CMS Association and contributors',
