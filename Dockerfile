@@ -1,4 +1,4 @@
-FROM python:3.6.6
+FROM python:3.8.12
 
 # Pillow requirements
 RUN apt-get update \
