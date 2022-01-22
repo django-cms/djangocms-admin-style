@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-from setuptools import find_packages, setup
+from pathlib import Path
 
-from djangocms_admin_style import __version__
+from setuptools import find_packages, setup
 
 
 REQUIREMENTS = []
@@ -15,13 +15,12 @@ CLASSIFIERS = [
     'Operating System :: OS Independent',
     'Programming Language :: Python',
     'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.5',
-    'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
     'Framework :: Django',
     'Framework :: Django :: 2.2',
-    'Framework :: Django :: 3.0',
     'Framework :: Django :: 3.1',
     'Framework :: Django CMS',
     'Framework :: Django CMS :: 3.6',
@@ -33,17 +32,22 @@ CLASSIFIERS = [
     'Topic :: Software Development :: Libraries',
 ]
 
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.rst").read_text()
 
 setup(
     name='djangocms-admin-style',
-    version=__version__,
+    version='2.0.2',
     author='Divio AG',
     author_email='info@divio.ch',
-    url='https://github.com/divio/djangocms-admin-style',
+    maintainer='Django CMS Association and contributors',
+    maintainer_email='info@django-cms.org',
+    url='https://github.com/django-cms/djangocms-admin-style',
     license='BSD-3-Clause',
     description='Adds pretty CSS styles for the django CMS admin interface.',
-    long_description=open('README.rst').read(),
-    packages=find_packages(exclude=['preview']),
+    long_description=long_description,
+    packages=find_packages(exclude=['preview', 'tests']),
+    python_requires='>=3.7',
     include_package_data=True,
     zip_safe=False,
     install_requires=REQUIREMENTS,
