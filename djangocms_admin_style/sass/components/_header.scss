@@ -153,14 +153,16 @@
                 background-size: 20px !important;
                 &:focus {
                     color: $btn-default-color !important;
-                    background-color: darken($btn-default-bgcolor, 10%) !important;
-                    border-color: darken($btn-default-border, 25%) !important;
+                    background-color: $btn-default-color !important;
+                    border-color: $btn-default-color !important;
+                    filter: brightness(calc(var(--focus-brightness) * var(--active-brightness)))  !important;
                     text-decoration: none !important;
                 }
                 &:hover {
                     color: $btn-default-color !important;
-                    background-color: darken($btn-default-bgcolor, 10%) !important;
-                    border-color: darken($btn-default-border, 12%) !important;
+                    background-color: $btn-default-color !important;
+                    border-color: $btn-default-color !important;
+                    filter: brightness(calc(var(--focus-brightness) * var(--active-brightness)))  !important;
                     text-decoration: none !important;
                 }
             }

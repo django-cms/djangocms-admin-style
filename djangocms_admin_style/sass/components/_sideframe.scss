@@ -2,6 +2,7 @@
 // SIDEFRAME
 
 .cms-admin-sideframe {
+    color-scheme: light dark;
     #header {
         // because there is already toolbar visible, header in side frame has to be hidden to not be visible when scrolling on tablet #245
         display: none;

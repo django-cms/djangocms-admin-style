@@ -702,7 +702,7 @@ a.addlink {
     a:hover,
     &:focus,
     a:focus {
-        color: black !important;
+        color: $black !important;
         background-color: transparent !important;
     }
     &.selected,
@@ -716,7 +716,7 @@ a.addlink {
         background: transparent !important;
         &:hover,
         &:focus {
-            color: black !important;
+            color: $black !important;
             border-bottom: solid 3px $white !important;
             background-color: $white !important;
         }
@@ -755,7 +755,7 @@ a.addlink {
         margin: 0 !important;
         padding: 8px 10px !important;
         border: none !important;
-        background: white;
+        background: $white;
 
         border-top-radius: $border-radius-base;
         a {
@@ -763,7 +763,7 @@ a.addlink {
             padding: 5px 10px;
             &:hover,
             &:focus {
-                color: black !important;
+                color: $black !important;
                 text-decoration: none;
             }
         }
@@ -783,7 +783,7 @@ a.addlink {
         background: $gray-lighter;
     }
     > .current {
-        color: white !important;
+        color: $white !important;
         text-shadow: 0 1px 1px rgba($black, 0.2);
         padding-right: 20px !important;
         padding-left: 20px !important;

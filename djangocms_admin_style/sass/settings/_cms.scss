@@ -4,26 +4,59 @@
 $speed-base: 200ms;
 
 // #COLORS#
-$white: #fff;
-$black: #000;
+$white: var(--dca-white);
+$black: var(--dca-black);
+:root {
+    --active-brightness: 0.9;
+    --focus-brightness: 0.95;
+}
 
-$color-primary: #00bbff;
+
+$color-primary: var(--dca-primary);
 $color-success: #693;
 $color-danger: #f00;
 $color-warning: #c93;
 $color-window: #fcfcfc;
 
 // #COLORS gray
-$gray:            lighten($black, 40%); // #666;
-$gray-lightest:   lighten($gray, 55%); // #f2f2f2
-$gray-lighter:    lighten($gray, 46.5%); // #ddd
-$gray-light:      lighten($gray, 20%); // #999
-$gray-darker:     darken($gray, 13%); // #454545
-$gray-darkest:    darken($gray, 20%); // #333
+$gray:            var(--dca-gray); // lighten(#000, 40%); // #666;
+$gray-lightest:   var(--dca-gray-lightest); //lighten($gray, 55%); // #f2f2f2
+$gray-lighter:    var(--dca-gray-lighter); //lighten($gray, 46.5%); // #ddd
+$gray-light:      var(--dca-gray-light); // // #999
+$gray-darker:     var(--dca-gray-darker); // // #454545
+$gray-darkest:    var(--dca-gray-darkest); // // #333
 
-$gray-super-light: #f7f7f7;
+// used in pagetree / filer headers
+$gray-super-lightest: var(--dca-gray-super-lightest); //;
 
-$gradient-toolbar: to bottom, rgba($gray-lightest, 0.97) 0%, rgba(lighten($gray-lightest, 1%), 0.97) 50%, rgba($gray-lightest, 0.95) 100%;
+:root {
+    --dca-white: #FFFFFF;
+    --dca-black: #000000;
+    --dca-primary: #00bbff;
+    --dca-gray: #666;
+    --dca-gray-lightest: #f2f2f2;
+    --dca-gray-lighter: #ddd;
+    --dca-gray-light: #999;
+    --dca-gray-darker: #454545;
+    --dca-gray-darkest: #333;
+    --dca-gray-super-lightest: #f7f7f7;
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+       --dca-white: #2A2C2E;
+       --dca-black: #FFF;
+       --dca-gray: #999; //$gray-light;
+       --dca-gray-lightest: #444; //$gray-darkest;
+       --dca-gray-lighter: #777; //$gray-darker;
+       --dca-gray-light: #888; // $gray-light;
+       --dca-gray-darker: #aaa; //$gray;
+       --dca-gray-darkest: #eee; // $gray-lighter;
+       --dca-gray-super-lightest: #070707;
+    }
+}
+
+$gradient-toolbar: to bottom, rgba($gray-lightest, 0.97) 0%, rgba($gray-lightest, 0.97) 50%, rgba($gray-lightest, 0.95) 100%;
 $gradient-striped-light: 135deg, rgba($white, .1) 25%, transparent 25%, transparent 50%, rgba($white, .1) 50%, rgba($white, .1) 75%, transparent 75%, transparent;
 $gradient-striped-dark: 135deg, rgba($white, .8) 25%, transparent 25%, transparent 50%, rgba($white, .8) 50%, rgba($white, .8) 75%, transparent 75%, transparent;
 
@@ -286,7 +319,7 @@ $login-form-input-color: $gray;
 $login-form-input-width: 100px;
 $login-form-input-height: 28px;
 $login-form-input-padding-horizontal: 5px;
-$login-form-input-border: lighten($gray, 45%);
+$login-form-input-border: $gray-lighter;
 $login-form-input-border-radius: $border-radius-base;
 
 $login-form-submit-color: $white;
