@@ -16,6 +16,7 @@ const browserSync = require('browser-sync').create();
 const gulpif = require('gulp-if');
 const iconfont = require('gulp-iconfont');
 const iconfontCss = require('gulp-iconfont-css');
+const log = require('fancy-log');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const minifyCss = require('gulp-clean-css');
@@ -106,7 +107,7 @@ const icons = () => {
             })
         )
         .on('glyphs', function (glyphs, opts) {
-            console.log(glyphs, opts);
+            log(glyphs, opts);
         })
         .pipe(gulp.dest(PROJECT_PATH.icons))
     )
@@ -172,6 +173,5 @@ gulp.task("sass", css);
 gulp.task("icons", icons);
 gulp.task("lint", lint);
 gulp.task('watch', gulp.parallel(watchFiles));
-gulp.task('bundle:watch', webpackBundle({ watch: true }));
 gulp.task('bundle', webpackBundle());
 gulp.task('tests', testsIntegration());
