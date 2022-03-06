@@ -30,6 +30,7 @@ $gray-darkest:    var(--dca-gray-darkest); // // #333
 $gray-super-lightest: var(--dca-gray-super-lightest); //;
 
 :root {
+    color-scheme: dark light;
     --dca-white: #FFFFFF;
     --dca-black: #000000;
     --dca-primary: #00bbff;
