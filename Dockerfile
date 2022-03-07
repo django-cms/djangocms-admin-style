@@ -7,9 +7,9 @@ RUN apt-get update \
     build-essential
 
 # Node setup
-RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
-RUN apt-get install -y nodejs npm
-RUN npm install -g gulp@3
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+RUN apt install -y nodejs npm
+RUN npm install -g gulp@4
 
 # Preparing files
 WORKDIR /app
