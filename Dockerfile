@@ -8,7 +8,7 @@ RUN apt-get update \
 
 # Node setup
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
-RUN apt install -y nodejs npm
+RUN apt install -y nodejs
 RUN npm install -g gulp@4
 
 # Preparing files
