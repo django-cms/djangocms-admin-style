@@ -147,7 +147,7 @@ const webpackBundle = function (opts) {
 // #######################################
 // #TESTS#
 
-const testsIntegration = () => {
+const testsIntegration = (done) => {
     integrationTests({
         tests: INTEGRATION_TESTS,
         pathToTests: PROJECT_PATH.tests,
@@ -157,6 +157,7 @@ const testsIntegration = () => {
         logger: gutil.log.bind(gutil),
         waitForMigrations: 5 // seconds
     });
+    done();
 };
 
 
@@ -172,5 +173,5 @@ gulp.task("sass", css);
 gulp.task("icons", icons);
 gulp.task("lint", lint);
 gulp.task('watch', gulp.parallel(watchFiles));
+gulp.task('tests', testsIntegration);
 gulp.task('bundle', webpackBundle());
-gulp.task('tests', testsIntegration());
