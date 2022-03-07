@@ -26,4 +26,4 @@ local:
 	make cleanup
 	pip install -r tests/requirements/django-$(VERSION).txt
 	pip install -e .
-	export SCREENSHOT_REFERENCES="./tests/screenshots/reference-$(VERSION)"; gulp lint && gulp tests:integration
+	export SCREENSHOT_REFERENCES="./tests/screenshots/reference-$(VERSION)"; gulp lint && gulp tests

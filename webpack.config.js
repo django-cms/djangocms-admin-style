@@ -20,7 +20,7 @@ module.exports = function (opts) {
         },
         plugins: [],
         resolve: {
-            extensions: ['', '.js'],
+            extensions: ['.js'],
             alias: {
                 'jquery': PROJECT_PATH.js + '/libs/jquery.min.js',
                 'js-cookie': PROJECT_PATH.js + '/libs/js.cookie-2.1.2.min.js'
@@ -31,7 +31,7 @@ module.exports = function (opts) {
                 {
                     test: /(modules\/jquery)/,
                     loaders: [
-                        'imports?jQuery=jquery'
+                        'imports-loader?jQuery=jquery'
                     ]
                 }
             ]
@@ -51,7 +51,7 @@ module.exports = function (opts) {
             new webpack.DefinePlugin({
                 __DEV__: 'false'
             }),
-            new webpack.optimize.OccurenceOrderPlugin(),
+            new webpack.optimize.OccurrenceOrderPlugin(),
             new webpack.optimize.DedupePlugin(),
             new webpack.optimize.UglifyJsPlugin({
                 comments: false,
