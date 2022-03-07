@@ -14,7 +14,7 @@
         ul.plugin-list li.active {
             background: url("../img/bg-pattern-light.jpg") $gray-lighter repeat;
             &:hover {
-                background: white url("../../cms/images/sitemap-li-bg.jpg") repeat-x 0 -100px;
+                background: $white url("../../cms/images/sitemap-li-bg.jpg") repeat-x 0 -100px;
             }
         }
     }

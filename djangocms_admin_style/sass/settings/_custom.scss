@@ -4,7 +4,7 @@ $base-font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;  // defau
 //##############################################################################
 // #COLORS
 
-$color-primary-light: #f1faff;
+$color-primary-light: rgba($color-primary, 30%);
 $color-primary-dark: #48abd9;
 
 $color-info-ultralight: #addef6;

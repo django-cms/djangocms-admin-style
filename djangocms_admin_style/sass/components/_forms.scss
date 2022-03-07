@@ -279,7 +279,8 @@ form {
     label.aligned {
         display: block;
         float: none !important;
-        color: $gray !important;
+        // FABR: !important not necessary
+        color: $gray;  // !important;
         font-size: $font-size-normal;
         font-weight: normal !important;
         line-height: $line-height-normal;
@@ -294,12 +295,13 @@ form {
         }
         &.btn {
             float: left !important;
-            color: $white !important;
+            // FABR: ! Important conflicts with unfilled buttons
+            color: $white; // !important;
             padding: 6px 12px !important;
         }
         &.btn-default,
         &.btn-link {
-            color: $gray-darker !important;
+            color: $gray-darker; // !important;  // dito
         }
         &:after {
             height: 20px !important;
