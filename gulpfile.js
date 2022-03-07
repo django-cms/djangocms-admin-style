@@ -49,7 +49,6 @@ const PROJECT_PATTERNS = {
         '!' + PROJECT_PATH.js + '/**/jquery.*.js',
         '!' + PROJECT_PATH.js + '/libs/**/*.js',
         '!' + PROJECT_PATH.js + '/dist/**/*.js',
-        'gulpfile.js'
     ]
 };
 
