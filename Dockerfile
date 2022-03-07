@@ -4,7 +4,7 @@ FROM python:3.8.12
 RUN apt-get update \
     && apt-get -y install libtiff5-dev libjpeg62-turbo-dev zlib1g-dev \
     libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev \
-    build-essential
+    build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
 
 # Node setup
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
