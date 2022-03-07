@@ -20,6 +20,6 @@ COPY ./tests/requirements /app/tests/requirements
 
 RUN npm install
 
-CMD pip install -e . && gulp lint && gulp tests:integration
+CMD pip install -e . && gulp lint && gulp tests
 
 ENV TZ="Europe/Zurich"
