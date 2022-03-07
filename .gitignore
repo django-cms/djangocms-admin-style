@@ -23,7 +23,6 @@ env/
 .sass-cache
 *.css.map
 npm-debug.log
-package-lock.json
 
 local.sqlite
 testdb.sqlite*
