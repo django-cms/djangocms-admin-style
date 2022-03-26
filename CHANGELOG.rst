@@ -7,7 +7,7 @@ unreleased
 
 * Add dark mode depending on system settings
 
-3.0.0 2022-01-22
+3.0.0 (2022-01-22)
 ================
 
 * Drop support for python 3.5, 3.6 and django 3.0
