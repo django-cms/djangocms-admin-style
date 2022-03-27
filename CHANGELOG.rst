@@ -5,6 +5,9 @@ Changelog
 unreleased
 ==========
 
+3.1.0 (2022-03-27)
+================
+
 * Add dark mode depending on system settings
 
 3.0.0 (2022-01-22)
