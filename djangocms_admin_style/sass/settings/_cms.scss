@@ -341,7 +341,7 @@ $sideframe-button-icon-size: 12px;
 $sideframe-button-space: 2px;
 $sideframe-resize-width: 15px;
 $sideframe-box-shadow: 10px 0 5px -5px rgba($black-fallback, 0.2);
-$sideframe-dimmer: rgba(0, 0, 0, 0.6);
+$sideframe-dimmer: rgba($black-fallback, 0.6);
 
 
 //##############################################################################
@@ -358,7 +358,7 @@ $clipboard-button-icon-size: 12px;
 // Tooltip
 $hover-tooltip-width: 160px;
 $hover-tooltip-arrow-height: 6px;
-$hover-tooltip-bgcolor: rgba($black, 0.8);
+$hover-tooltip-bgcolor: $gray-darkest;
 $hover-tooltip-padding: 6px 8px;
 
 
