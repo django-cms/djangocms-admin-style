@@ -85,7 +85,7 @@
                 border-top: none;
                 border-radius: 0 0 4px 4px;
                 background: rgba($white, .97);
-                box-shadow: 0 1px 1px rgba($black, .4);
+                box-shadow: 0 1px 1px rgba($black-fallback, .4);
                 &.submenu-open {
                     display: block;
                 }
@@ -153,14 +153,14 @@
                 background-size: 20px !important;
                 &:focus {
                     color: $btn-default-color !important;
-                    background-color: $btn-default-color !important;
+                    background-color: $btn-default-bgcolor !important;
                     border-color: $btn-default-color !important;
                     filter: brightness(calc(var(--focus-brightness) * var(--active-brightness)))  !important;
                     text-decoration: none !important;
                 }
                 &:hover {
                     color: $btn-default-color !important;
-                    background-color: $btn-default-color !important;
+                    background-color: $btn-default-bgcolor !important;
                     border-color: $btn-default-color !important;
                     filter: brightness(calc(var(--focus-brightness) * var(--active-brightness)))  !important;
                     text-decoration: none !important;

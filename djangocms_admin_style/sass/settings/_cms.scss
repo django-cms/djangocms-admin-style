@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // #############################################################################
 // #SETTINGS#
 
@@ -6,6 +8,8 @@ $speed-base: 200ms;
 // #COLORS#
 $white: var(--dca-white);
 $black: var(--dca-black);
+$black-fallback: rgb(0, 0, 0);
+
 :root {
     --active-brightness: 0.9;
     --focus-brightness: 0.95;
@@ -149,7 +153,7 @@ $z-layers: (
 //##############################################################################
 // #BUTTONS
 $btn-border-radius-base: $border-radius-base;
-$btn-active-shadow: inset 0 3px 5px rgba($black, 0.125);
+$btn-active-shadow: inset 0 3px 5px rgba($black-fallback, 0.125);
 
 $btn-default-color: $gray-darker;
 $btn-default-bgcolor: $white;
@@ -201,7 +205,7 @@ $structure-dragitem-fullheight: $structure-dragitem-height + 2 * $structure-drag
 $submenu-icon-area-size: 36px;
 $submenu-icon-size: 16px;
 $submenu-icon-color: $gray-darker;
-$submenu-right: ($structure-dragarea-padding * 2 + $structure-dragitem-height - $submenu-icon-area-size) / 2;
+$submenu-right: math.div($structure-dragarea-padding * 2 + $structure-dragitem-height - $submenu-icon-area-size, 2);
 
 $submenu-item-font-size: $font-size-normal;
 $submenu-item-height: $line-height-normal + 6px;
@@ -231,7 +235,7 @@ $tooltip-second-line-color: $white;
 //##############################################################################
 // Toolbar
 $toolbar-height: 46px; // has to be even number
-$toolbar-shadow: 0 0 5px rgba($black, 0.2);
+$toolbar-shadow: 0 0 5px rgba($black-fallback, 0.2);
 $toolbar-left-space: 15px;
 $toolbar-border: $gray-lighter;
 
@@ -249,13 +253,13 @@ $toolbar-trigger-loader-size: 20px;
 $toolbar-right-hide-breakpoint: 800px;
 $toolbar-right-space: 15px;
 
-$toolbar-menu-item-padding: 0 ($line-height-normal / 2); // has to be 0 $value;;
+$toolbar-menu-item-padding: 0 math.div($line-height-normal, 2); // has to be 0 $value;;
 $toolbar-menu-item-color: $black;
 $toolbar-menu-item-hover-color: $white;
 $toolbar-menu-item-hover-bgcolor: $color-primary;
 
 $toolbar-dropdown-padding: 3px 0;
-$toolbar-dropdown-shadow: 0 1px 1px rgba($black, 0.4);
+$toolbar-dropdown-shadow: 0 1px 1px rgba($black-fallback, 0.4);
 $toolbar-dropdown-bgcolor: $white;
 $toolbar-dropdown-border-radius: $border-radius-base + 1px;
 
@@ -273,7 +277,7 @@ $toolbar-button-border-radius: $border-radius-base;
 //##############################################################################
 // Modal
 $modal-header-title-font-size: $font-size-large;
-$modal-shadow: 0 0 20px rgba($black, .5);
+$modal-shadow: 0 0 20px rgba($black-fallback, .5);
 $modal-bgcolor: $white;
 $modal-border-radius: $border-radius-normal;
 
@@ -336,8 +340,8 @@ $sideframe-button-area-size: 30px;
 $sideframe-button-icon-size: 12px;
 $sideframe-button-space: 2px;
 $sideframe-resize-width: 15px;
-$sideframe-box-shadow: 10px 0 5px -5px rgba(0, 0, 0, 0.2);
-$sideframe-dimmer: rgba(0, 0, 0, 0.6);
+$sideframe-box-shadow: 10px 0 5px -5px rgba($black-fallback, 0.2);
+$sideframe-dimmer: rgba($black-fallback, 0.6);
 
 
 //##############################################################################
@@ -354,19 +358,19 @@ $clipboard-button-icon-size: 12px;
 // Tooltip
 $hover-tooltip-width: 160px;
 $hover-tooltip-arrow-height: 6px;
-$hover-tooltip-bgcolor: rgba($black, 0.8);
+$hover-tooltip-bgcolor: $gray-darkest;
 $hover-tooltip-padding: 6px 8px;
 
 
 //##############################################################################
 // Dropdown
 $dropdown-width: 180px;
-$dropdown-shadow: 0 0 10px rgba($black, 0.25);
+$dropdown-shadow: 0 0 10px rgba($black-fallback, 0.25);
 $dropdown-item-height: 46px;
 $dropdown-item-icon-space: 40px;
 $dropdown-item-icon-position: 14px;
 $dropdown-arrow-side: 10px;
-$dropdown-arrow-position: $submenu-right + $submenu-icon-area-size/2 - $dropdown-arrow-side/2;
+$dropdown-arrow-position: $submenu-right + math.div($submenu-icon-area-size, 2) - math.div($dropdown-arrow-side, 2);
 
 
 //##############################################################################
