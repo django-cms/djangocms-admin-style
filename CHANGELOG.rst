@@ -5,6 +5,9 @@ Changelog
 unreleased
 ==========
 
+3.1.1 (2022-04-13)
+================
+
 * Fix: Missing drop shadows and unreadable button coloring on hover
 
 3.1.0 (2022-03-27)
