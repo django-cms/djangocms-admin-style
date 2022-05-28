@@ -1,0 +1,51 @@
+:root.cms-light-mode {
+    --primary: inherit;
+    --secondary: inherit;
+    --accent: inherit;
+    --primary-fg: inherit;
+
+    --body-fg: inherit;
+    --body-bg: inherit;
+    --body-quiet-color: inherit;
+    --body-loud-color: inherit;
+
+    --header-color: inherit;
+    --header-branding-color: inherit;
+    --header-bg: inherit;
+    --header-link-color: inherit;
+
+    --breadcrumbs-fg: inherit;
+    --breadcrumbs-link-fg: inherit;
+    --breadcrumbs-bg: inherit;
+
+    --link-fg: inherit;
+    --link-hover-color: inherit;
+    --link-selected-fg: inherit;
+
+    --hairline-color: inherit;
+    --border-color: inherit;
+
+    --error-fg: inherit;
+
+    --message-success-bg: inherit;
+    --message-warning-bg: inherit;
+    --message-error-bg: inherit;
+
+    --darkened-bg: inherit; /* A bit darker than --body-bg */
+    --selected-bg: inherit; /* E.g. selected table cells */
+    --selected-row: inherit;
+
+    --button-fg: inherit;
+    --button-bg: inherit;
+    --button-hover-bg: inherit;
+    --default-button-bg: inherit;
+    --default-button-hover-bg: inherit;
+    --close-button-bg: inherit; /* Previously #bbb, contrast 1.92 */
+    --close-button-hover-bg: inherit;
+    --delete-button-bg: inherit;
+    --delete-button-hover-bg: inherit;
+
+    --object-tools-fg: inherit;
+    --object-tools-bg: inherit;
+    --object-tools-hover-bg: inherit;
+}
