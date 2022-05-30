@@ -39,7 +39,8 @@ $gray-super-lightest: var(--dca-gray-super-lightest); //;
 
 :root[data-color-scheme="light"] {
     color-scheme: light;
-    --dca-light-mode: " ";
+    --dca-light-mode: 1;
+    --dca-dark-mode: 0;
     --dca-white: #FFFFFF;
     --dca-black: #000000;
     --dca-primary: #00bbff;
@@ -54,7 +55,8 @@ $gray-super-lightest: var(--dca-gray-super-lightest); //;
 
 :root[data-color-scheme="dark"] {
     color-scheme: dark;
-    --dca-dark-mode: " ";
+    --dca-light-mode: 0;
+    --dca-dark-mode: 1;
     --dca-white: #2A2C2E;
     --dca-black: #FFF;
     --dca-primary: #58D1FC;
@@ -71,7 +73,8 @@ $gray-super-lightest: var(--dca-gray-super-lightest); //;
 }
 @media (prefers-color-scheme: dark) {
     :root:not([data-color-scheme]) {
-        --dca-dark-mode: " ";
+        --dca-light-mode: 0;
+        --dca-dark-mode: 1;
         --dca-white: #2A2C2E;
         --dca-black: #FFF;
         --dca-primary: #58D1FC;
