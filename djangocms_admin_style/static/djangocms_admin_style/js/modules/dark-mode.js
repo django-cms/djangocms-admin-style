@@ -9,7 +9,7 @@ function darkModeSettings() {
         var colorScheme = 'light'; // Default mode
         var cms_window = window;
 
-        if (cms_window.parent !== cms_window) {
+        while (cms_window.parent !== cms_window) {
             cms_window = cms_window.parent;
         }
         if (cms_window.CMS && cms_window.CMS.config) {
