@@ -17,7 +17,7 @@ function darkModeSettings() {
                 // Use color_scheme from settings.py
                 colorScheme = cms_window.CMS.settings.color_scheme;
             } else if (cms_window.CMS.config.color_scheme) {
-                // If overwritten by settings use settings
+                // If overwritten by config use config. This is the toggle button
                 colorScheme = cms_window.CMS.config.color_scheme;
             }
         }
