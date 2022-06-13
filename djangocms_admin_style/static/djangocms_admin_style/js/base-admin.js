@@ -6,6 +6,7 @@ var initRelatedWidgetWrappers = require('./modules/related-widget-wrapper');
 var initToolbarDropdown = require('./modules/toolbar-dropdown');
 var initUpdateNotification = require('./modules/update-notification');
 var preventDoubleFormSubmissions = require('./modules/form-submit');
+var darkModeSettings = require('./modules/dark-mode');
 
 // this attaches to global jQuery because
 // we need to touch punch the things like sortedm2m
@@ -22,4 +23,5 @@ $(function () {
     initToolbarDropdown();
     initUpdateNotification();
     preventDoubleFormSubmissions();
+    darkModeSettings();
 });
