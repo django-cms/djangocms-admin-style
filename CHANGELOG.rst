@@ -5,18 +5,23 @@ Changelog
 unreleased
 ==========
 
+3.2.0 (2022-06-13)
+==================
+
+* Added configurable dark mode (color scheme)
+
 3.1.1 (2022-04-13)
-================
+==================
 
 * Fix: Missing drop shadows and unreadable button coloring on hover
 
 3.1.0 (2022-03-27)
-================
+==================
 
 * Add dark mode depending on system settings
 
 3.0.0 (2022-01-22)
-================
+==================
 
 * Drop support for python 3.5, 3.6 and django 3.0
 * Increase calendar box width to show Sundays

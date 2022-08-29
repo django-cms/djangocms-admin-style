@@ -1,9 +1,15 @@
 ci:
-  autofix_prs: false
+    autofix_commit_msg: |
+        ci: auto fixes from pre-commit hooks
+
+        for more information, see https://pre-commit.ci
+    autofix_prs: false
+    autoupdate_commit_msg: 'ci: pre-commit autoupdate'
+    autoupdate_schedule: monthly
 
 repos:
   - repo: https://github.com/asottile/pyupgrade
-    rev: v2.32.1
+    rev: v2.37.3
     hooks:
       - id: pyupgrade
         args: ["--py37-plus"]
@@ -15,7 +21,7 @@ repos:
         args: [--target-version, "2.2"]
 
   - repo: https://github.com/PyCQA/flake8
-    rev: 4.0.1
+    rev: 5.0.2
     hooks:
       - id: flake8
 
@@ -25,7 +31,7 @@ repos:
       - id: yesqa
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.2.0
+    rev: v4.3.0
     hooks:
       - id: check-merge-conflict
       - id: mixed-line-ending
