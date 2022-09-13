@@ -37,7 +37,7 @@ $gray-super-lightest: var(--dca-gray-super-lightest); //;
     color-scheme: dark light;
 }
 
-:root[data-color-scheme="light"] {
+:root[data-color-scheme="light"], :root:not([data-color-scheme]) {
     color-scheme: light;
     --dca-light-mode: 1;
     --dca-dark-mode: 0;
