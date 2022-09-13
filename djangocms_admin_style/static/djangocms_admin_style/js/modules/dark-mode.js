@@ -14,7 +14,7 @@ function getTopWindow() {
     return cms_window;
 }
 
-function getColorSchemFromSettings(CMS) {
+function getColorSchemeFromSettings(CMS) {
     if (CMS.settings && CMS.settings.color_scheme) {
         // Use color_scheme from settings.py
         colorScheme = CMS.settings.color_scheme;
