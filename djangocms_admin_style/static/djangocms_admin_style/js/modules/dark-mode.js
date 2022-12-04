@@ -50,7 +50,7 @@ function darkModeSettings() {
             // CMS not loaded: set color scheme for admin site according to settings
             colorScheme = JSON.parse(localStorage.getItem('cms_cookie') || '{}').color_scheme;
         }
-        if (colorScheme === 'auto') {
+        if (colorScheme === 'auto' || colorScheme === undefined) {
             delete document.documentElement.dataset.colorScheme;
         } else {
             document.documentElement.dataset.colorScheme = colorScheme;
