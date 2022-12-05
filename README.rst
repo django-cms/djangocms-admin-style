@@ -76,8 +76,9 @@ The following additional settings can be set:
 
 The update checker does not gather or record any data.
 
-To **compile CSS** run the following commands using **node 8**:
+To **compile CSS** run the following commands using **node 16**:
 
+* ``nvm use``
 * ``npm install``
 * ``gulp``
 
@@ -99,7 +100,7 @@ then run the following command::
 
     make test
 
-To test other Django versions simply append `VERSION=3.1``. You can also
+To test other Django versions simply append `VERSION=4.1``. You can also
 run the test server through::
 
     make run

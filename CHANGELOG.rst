@@ -5,6 +5,9 @@ Changelog
 unreleased
 ==========
 
+* Removed unused css generating conflicts for icons fonts of
+  djangocms-admin-style and django-cms core.
+
 3.2.0 (2022-06-13)
 ==================
 
