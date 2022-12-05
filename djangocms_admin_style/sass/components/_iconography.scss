@@ -253,9 +253,6 @@
     @return $char;
 }
 
-.cms-icon {
-    @extend %icon;
-}
 @mixin icon($filename, $insert: before) {
     &:#{$insert} {
         content: #{"\"\\"}#{icon-char($filename) + "\""};
