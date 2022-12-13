@@ -5,6 +5,7 @@ Changelog
 unreleased
 ==========
 
+* Check updates based on pypi release
 * Removed unused css generating conflicts for icons fonts of
   djangocms-admin-style and django-cms core.
 

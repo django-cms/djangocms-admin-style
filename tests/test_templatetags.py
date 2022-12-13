@@ -16,8 +16,4 @@ class TemplateTagsTestCase(TestCase):
         from djangocms_admin_style.templatetags.admin_style_tags import render_update_notification
         self.assertEqual(render_update_notification(dict()), "")  # No update notification
 
-        from django.urls import reverse
-        print(reverse("index"))
         request = self.request_factory.get("/")
-        print(request.resolver_match)
-        print(render_update_notification(dict(request=request)))
