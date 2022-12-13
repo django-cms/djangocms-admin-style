@@ -44,7 +44,8 @@ Documentation
 See ``REQUIREMENTS`` in the `setup.py <https://github.com/divio/djangocms-admin-style/blob/master/setup.py>`_
 file for additional dependencies:
 
-|python| |django| |djangocms|
+|python| |django| |djangocms| |djangocms4|
+
 
 
 Installation
@@ -121,4 +122,6 @@ djangocms-casper-helpers.
 .. |django| image:: https://img.shields.io/badge/django-2.2,%203.0,%203.1-blue.svg
     :target: https://www.djangoproject.com/
 .. |djangocms| image:: https://img.shields.io/badge/django%20CMS-3.6%2B-blue.svg
+    :target: https://www.django-cms.org/
+.. |djangocms4| image:: https://img.shields.io/badge/django%20CMS-4-blue.svg
     :target: https://www.django-cms.org/
