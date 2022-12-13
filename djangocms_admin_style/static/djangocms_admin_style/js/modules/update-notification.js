@@ -120,6 +120,7 @@ function injectMessage(versionObject, checkType) {
 function shouldShowMessage(versionObj, currentVersion, checkType) {
     if (versionObj !== undefined) {
         var cookie = Cookies.get('cms_upgrade_notification_closed');
+
         if (cookie) {
             cookie = JSON.parse(cookie);
         }
@@ -127,9 +128,8 @@ function shouldShowMessage(versionObj, currentVersion, checkType) {
             return false;
         }
         return greaterThanVersion(versionObj.version, currentVersion);
-    } else {
-        return false;
     }
+    return false;
 }
 
 /**
@@ -140,15 +140,15 @@ function shouldShowMessage(versionObj, currentVersion, checkType) {
  * @param {String} checkType
  * @returns {Object}
  */
-function getVersionObject(versions, currentVersion, check_type) {
-    var comparison = currentVersion.split("rc")[0].split(".");
-    var version = undefined;
+function getVersionObject(versions, currentVersion, checkType) {
+    var comparison = currentVersion.split('rc')[0].split('.');
+    var version;
     var c;
 
     for (var v in versions) {
         if (!v.includes('rc')) {
             c = v.split('.');
-            if (c[0] === comparison[0] && (check_type !== 'patch' || c[1] === comparison[1])) {
+            if (c[0] === comparison[0] && (checkType !== 'patch' || c[1] === comparison[1])) {
                 if (version === undefined || greaterThanVersion(v, version)) {
                     version = v;
                 }
