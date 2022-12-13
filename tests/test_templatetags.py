@@ -1,5 +1,4 @@
 from django.test import TestCase
-
 from django.test.client import RequestFactory
 
 import cms
@@ -14,7 +13,9 @@ class TemplateTagsTestCase(TestCase):
         self.request_factory = RequestFactory()
 
     def test_current_site_name(self):
-        from djangocms_admin_style.templatetags.admin_style_tags import current_site_name
+        from djangocms_admin_style.templatetags.admin_style_tags import (
+            current_site_name,
+        )
         site_name = current_site_name(dict())
         self.assertEqual(site_name, "example.com")  # Default name
 
@@ -27,7 +28,9 @@ class TemplateTagsTestCase(TestCase):
             self.assertEqual(site_name, "my site")  # Generic name
 
     def test_render_update_notification(self):
-        from djangocms_admin_style.templatetags.admin_style_tags import render_update_notification
+        from djangocms_admin_style.templatetags.admin_style_tags import (
+            render_update_notification,
+        )
         self.assertEqual(render_update_notification(dict()), "")  # No update notification
 
         request = self.request_factory.get("/")
