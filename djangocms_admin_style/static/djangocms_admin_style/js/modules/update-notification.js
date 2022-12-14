@@ -1,6 +1,6 @@
 var $ = require('jquery');
 var Cookies = require('js-cookie');
-var RELEASES_URL = 'https://releases.django-cms.org/';
+var RELEASES_URL = 'https://pypi.org/pypi/django-cms/json';
 var MAIN_COOKIE_EXPIRATION = 365; // ~1 year
 var REQUEST_COOKIE_EXPIRATION = 14; // check only every two weeks
 
@@ -118,17 +118,49 @@ function injectMessage(versionObject, checkType) {
  * @returns {Boolean}
  */
 function shouldShowMessage(versionObj, currentVersion, checkType) {
-    var cookie = Cookies.get('cms_upgrade_notification_closed');
+    if (versionObj !== undefined) {
+        var cookie = Cookies.get('cms_upgrade_notification_closed');
 
-    if (cookie) {
-        cookie = JSON.parse(cookie);
+        if (cookie) {
+            cookie = JSON.parse(cookie);
+        }
+        if (cookie && cookie.type === checkType && cookie.version === versionObj.version) {
+            return false;
+        }
+        return greaterThanVersion(versionObj.version, currentVersion);
     }
+    return false;
+}
 
-    if (cookie && cookie.type === checkType && cookie.version === versionObj.version) {
-        return false;
+/**
+ * @function getVersionObject
+ * @private
+ * @param {Object} versions
+ * @param {String} currentVersion
+ * @param {String} checkType
+ * @returns {Object}
+ */
+function getVersionObject(versions, currentVersion, checkType) {
+    var comparison = currentVersion.split('rc')[0].split('.');
+    var version;
+    var c;
+
+    for (var v in versions) {
+        if (!v.includes('rc')) {
+            c = v.split('.');
+            if (c[0] === comparison[0] && (checkType !== 'patch' || c[1] === comparison[1])) {
+                if (version === undefined || greaterThanVersion(v, version)) {
+                    version = v;
+                }
+            }
+        }
     }
-
-    return greaterThanVersion(versionObj.version, currentVersion);
+    if (version) {
+        return {
+            version: version,
+            url: 'https://github.com/django-cms/django-cms/blob/' + version + '/CHANGELOG.rst'
+        };
+    }
 }
 
 /**
@@ -142,7 +174,7 @@ function init() {
         return;
     }
 
-    var currentVersion = metaVersion.attr('content');
+    var currentVersion = metaVersion.attr('content').split('rc')[0];
     var checkType = $('meta[name="djangocms_version_check_type"]').attr('content');
 
     getLatestVersionData({
@@ -156,15 +188,7 @@ function init() {
             } catch (e) { }
         }
 
-        var versionObj = response.latest;
-
-        if (checkType === 'patch') {
-            response.patches.forEach(function (patch) {
-                if (patch.version.match(new RegExp('^' + currentVersion.replace(/\.[^\.]+$/, '')))) {
-                    versionObj = patch;
-                }
-            });
-        }
+        var versionObj = getVersionObject(response.releases, currentVersion, checkType);
 
         if (shouldShowMessage(versionObj, currentVersion, checkType)) {
             injectMessage(versionObj, checkType);

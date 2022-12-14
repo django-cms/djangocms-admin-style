@@ -31,7 +31,7 @@ def current_site_name(context):
 def render_update_notification(context):
     try:
         import cms
-    except ImportError:
+    except ImportError:  # pragma: no cover
         check_type = None
         notifications_enabled = False
     else:
