@@ -64,7 +64,7 @@
                 // make sure that changelist form is floated left next to filter #238
                 #changelist-form {
                     float: left;
-                    width: calc(100% - #{$filtered-changelist-margin}) !important;
+                    width: 100%;
                     .results {
                         margin-right: 0 !important;
                     }
