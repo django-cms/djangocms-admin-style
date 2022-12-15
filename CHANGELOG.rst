@@ -5,7 +5,7 @@ Changelog
 3.2.1 (2022-12-15)
 ==================
 
-* Check updates based on pypi release
+* Check updates based on pypi releases
 * Fix too large margin for change list in modal window
 * Removed unused css generating conflicts for icons fonts of
   djangocms-admin-style and django-cms core.
