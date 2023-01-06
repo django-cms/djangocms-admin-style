@@ -1,3 +1,4 @@
+======================
 django CMS Admin Style
 ======================
 
@@ -11,9 +12,11 @@ django-shortcuts package.
 
     This project is considered 3rd party (no supervision by the `django CMS Association <https://www.django-cms.org/en/about-us/>`_). Join us on `Slack                 <https://www.django-cms.org/slack/>`_ for more information.
 
-| ![Dashboard](https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/dashboard.png)    | ![List view](https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/listview.png)  |
-|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| ![Date picker](https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/datepicker.png) | ![Shortcuts](https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/shortcuts.png) |
++---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/dashboard.png   | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/listview.png   |
++---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/datepicker.png  | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/shortcuts.png  |
++---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 
 The shortcuts you see on top of the dashboard are from `django-admin-shortcuts <https://github.com/alesdotio/django-admin-shortcuts/>`_
 
@@ -90,18 +93,30 @@ Django supports a dark mode admin since version 3.1. djangocms-admin-style
 introduces css variables that contain color codes and change with the selected
 mode:
 
-| CMS variable name           | Color   | Django admin fallback | Color   |
-|-----------------------------|---------|-----------------------|---------|
-| `--dca-white`               | #ffffff | `--body-bg`           | #ffffff |
-| `--dca-black`               | #000000 | `--body-fg`           | #303030 |
-| `--dca-gray`                | #666    | `--body-quiet-color`  | #666    |
-| `--dca-gray-lightest`       | #f2f2f2 | `--darkened-bg`       | #f8f8f8 |
-| `--dca-gray-lighter`        | #ddd    | `--border-color`      | #ccc    |
-| `--dca-gray-light`          | #999    | `--close-button-bg`   | #888    |
-| `--dca-gray-darker`         | #454545 |                       |         |
-| `--dca-gray-darkest`        | #333    |                       |         |
-| `--dca-gray-super-lightest` | #f7f7f7 |                       |         |
-| `--dca-primary`             | #00bbff | `--primary`           | #79aec8 |
++-------------------------------+-----------+---------------------------+-----------+
+| **CMS variable name**         | **Color** | **Django admin fallback** | **Color** |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-white``               | #ffffff   | ``--body-bg``             | #ffffff   |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-black``               | #000000   | ``--body-fg``             | #303030   |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray``                | #666      | ``--body-quiet-color``    | #666      |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-lightest``       | #f2f2f2   | ``--darkened-bg``         | #f8f8f8   |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-lighter``        | #ddd      | ``--border-color``        | #ccc      |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-light``          | #999      | ``--close-button-bg``     | #888      |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-darker``         | #454545   |                           |           |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-darkest``        | #333      |                           |           |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-super-lightest`` | #f7f7f7   |                           |           |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-primary``             | #00bbff   | ``--primary``             | #79aec8   |
++-------------------------------+-----------+---------------------------+-----------+
+
 
 Extending styles in your own app
 ---------------------------------
@@ -117,9 +132,11 @@ styling by adding the ``.djangocms-admin-style`` selector::
 
 We recommend to following rules for your app's admin css:
 
-- Try avoid using `color`, `background` etc. styles where possible and meaningful
-- If necessary use as few as possible standard django CMS colors (preferably from see above list with fallback colors)
-- Usage: ``var(--dca-color-var, var(--fallback-color-var, #xxxxxx))`` where `#xxxxxx` represents the light version of the color.
+- Try avoid using ``color``, ``background`` etc. styles where possible and meaningful
+- If necessary use as few as possible standard django CMS colors (preferably
+  from see above list with fallback colors)
+- Usage: ``var(--dca-color-var, var(--fallback-color-var, #xxxxxx))`` where
+  ``#xxxxxx`` represents the light version of the color.
 
 Running Tests
 -------------
