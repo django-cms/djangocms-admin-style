@@ -1,4 +1,3 @@
-======================
 django CMS Admin Style
 ======================
 
@@ -12,11 +11,9 @@ django-shortcuts package.
 
     This project is considered 3rd party (no supervision by the `django CMS Association <https://www.django-cms.org/en/about-us/>`_). Join us on `Slack                 <https://www.django-cms.org/slack/>`_ for more information.
 
-+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/dashboard.png   | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/listview.png   |
-+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/datepicker.png  | .. image:: https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/shortcuts.png  |
-+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| ![Dashboard](https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/dashboard.png)    | ![List view](https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/listview.png)  |
+|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| ![Date picker](https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/datepicker.png) | ![Shortcuts](https://raw.githubusercontent.com/divio/djangocms-admin-style/master/preview/shortcuts.png) |
 
 The shortcuts you see on top of the dashboard are from `django-admin-shortcuts <https://github.com/alesdotio/django-admin-shortcuts/>`_
 
