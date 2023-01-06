@@ -5,7 +5,7 @@ django CMS Admin Style
 |pypi| |build| |coverage|
 
 Adds pretty CSS styles for the django CMS admin interface. Supports optional
-``django-shortcuts`` package.
+``django-admin-shortcuts`` package.
 
 
 .. note::
