@@ -2,6 +2,11 @@
 Changelog
 =========
 
+3.2.2 (2023-01-06)
+==================
+
+* Fix support of django-shortcuts with original icons from django-shortcuts
+
 3.2.1 (2022-12-15)
 ==================
 

@@ -4,7 +4,8 @@ django CMS Admin Style
 
 |pypi| |build| |coverage|
 
-Adds pretty CSS styles for the django CMS admin interface.
+Adds pretty CSS styles for the django CMS admin interface. Supports optional
+``django-admin-shortcuts`` package.
 
 
 .. note::
@@ -85,6 +86,57 @@ To **compile CSS** run the following commands using **node 16**:
 
 For further options have a look at the ``gulpfile.js``.
 
+Dark mode support
+-----------------
+
+Django supports a dark mode admin since version 3.1. djangocms-admin-style
+introduces css variables that contain color codes and change with the selected
+mode:
+
++-------------------------------+-----------+---------------------------+-----------+
+| **CMS variable name**         | **Color** | **Django admin fallback** | **Color** |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-white``               | #ffffff   | ``--body-bg``             | #ffffff   |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-black``               | #000000   | ``--body-fg``             | #303030   |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray``                | #666      | ``--body-quiet-color``    | #666      |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-lightest``       | #f2f2f2   | ``--darkened-bg``         | #f8f8f8   |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-lighter``        | #ddd      | ``--border-color``        | #ccc      |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-light``          | #999      | ``--close-button-bg``     | #888      |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-darker``         | #454545   |                           |           |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-darkest``        | #333      |                           |           |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-gray-super-lightest`` | #f7f7f7   |                           |           |
++-------------------------------+-----------+---------------------------+-----------+
+| ``--dca-primary``             | #00bbff   | ``--primary``             | #79aec8   |
++-------------------------------+-----------+---------------------------+-----------+
+
+
+Extending styles in your own app
+---------------------------------
+
+If your project or app requires specific styles if djangocms-admin-style is
+installed (e.g., to better adjust to the django CMS style) you can add selective
+styling by adding the ``.djangocms-admin-style`` selector::
+
+    // Show widget in CMS colors if djangocms-admin-style is installed
+    .djangocms-admin-style #my-widget {
+        color:  var(--dca-primary, black);
+    }
+
+We recommend to following rules for your app's admin css:
+
+- Try avoid using ``color``, ``background`` etc. styles where possible and meaningful
+- If necessary use as few as possible standard django CMS colors (preferably
+  from see above list with fallback colors)
+- Usage: ``var(--dca-color-var, var(--fallback-color-var, #xxxxxx))`` where
+  ``#xxxxxx`` represents the light version of the color.
 
 Running Tests
 -------------

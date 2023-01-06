@@ -3,6 +3,8 @@ from pathlib import Path
 
 from setuptools import find_packages, setup
 
+from djangocms_admin_style import __version__
+
 
 REQUIREMENTS = []
 
@@ -35,6 +37,7 @@ CLASSIFIERS = [
     'Framework :: Django CMS :: 3.10',
     'Framework :: Django CMS :: 3.11',
     'Framework :: Django CMS :: 4.0',
+    'Framework :: Django CMS :: 4.1',
     'Topic :: Internet :: WWW/HTTP',
     'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     'Topic :: Software Development',
@@ -46,7 +49,7 @@ long_description = (this_directory / "README.rst").read_text()
 
 setup(
     name='djangocms-admin-style',
-    version='3.2.1',
+    version=__version__,
     author='Divio AG',
     author_email='info@divio.ch',
     maintainer='Django CMS Association and contributors',
