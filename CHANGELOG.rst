@@ -3,7 +3,7 @@ Changelog
 =========
 
 
-3.2.3 (unreleased)
+3.2.3 (2023-01-13)
 ==================
 
 * Fix paginator element overflowing its container.
