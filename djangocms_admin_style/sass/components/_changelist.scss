@@ -92,7 +92,6 @@
             .paginator,
             .results + .paginator,
             #toolbartable .paginator {
-                position: absolute;
                 // removes box shadow top on paginator
                 clip: rect(0, 99999px, 99999px, -2px);
             }
@@ -164,7 +163,7 @@
                 padding: 0;
             }
             @at-root #toolbar #changelist-search form #searchbar,
-            form #searchbar {
+                form #searchbar {
                 font-size: $font-size-small;
                 vertical-align: middle;
                 box-sizing: border-box;
@@ -312,7 +311,6 @@
         .results + .paginator,
         #toolbartable .paginator,
         #has-filters ~ .paginator {
-            position: absolute;
             // removes box shadow top on paginator
             clip: rect(0, 99999px, 99999px, -2px);
         }
@@ -395,7 +393,7 @@
 
 #result_list {
     margin-bottom: 0 !important;
-    tr[style*=background] {
+    tr[style*="background"] {
         background: $color-primary-light !important;
     }
     .drag {
