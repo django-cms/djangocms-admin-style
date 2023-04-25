@@ -2,6 +2,12 @@
 Changelog
 =========
 
+3.2.4 (2023-04-25)
+==================
+
+* Fix page tree dropdown cross styling
+* Fix misaligned apphooks in changelist views.
+
 
 3.2.3 (2023-01-13)
 ==================
