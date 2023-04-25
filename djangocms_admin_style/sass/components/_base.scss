@@ -133,7 +133,7 @@ a:link {
     text-decoration: none;
     &:hover,
     &:active {
-        color: $color-primary !important;
+        color: $color-primary;
     }
     &:visited {
         color: $color-primary;
