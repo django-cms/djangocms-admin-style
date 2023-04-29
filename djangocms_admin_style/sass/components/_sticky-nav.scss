@@ -32,6 +32,7 @@
     #nav-sidebar th a {
         color: $gray-darkest;
     }
+
     #nav-sidebar th a,
     #nav-sidebar td a {
         font-family: $base-font-family;
@@ -39,6 +40,7 @@
         line-height: 14px !important;
         font-weight: normal;
     }
+
     #nav-sidebar td,
     #nav-sidebar th {
         font-size: 14px !important;
@@ -46,10 +48,31 @@
         padding: 12px 10px !important;
         border-bottom: 1px solid $gray-lighter;
     }
+
     #nav-sidebar td {
         white-space: nowrap;
     }
+
     #nav-sidebar table {
         box-shadow: 0 0 5px 0 rgba($black-fallback, 0.2);
+    }
+
+    #nav-sidebar input#nav-filter {
+        // search in nav since Django 4.2
+        // essentialy the form input[type="text"] styling
+        font-size: $font-size-small;
+        width: 100% !important;
+        max-width: none !important;
+        height: 36px !important;
+        padding: 9px 5px !important;
+        border-radius: 3px !important;
+        // resets background color for input fields for dark system #271
+        background-color: $white;
+        appearance: none;
+
+        // resets default firefox error style
+        &:-moz-ui-invalid {
+            box-shadow: none;
+        }
     }
 }
