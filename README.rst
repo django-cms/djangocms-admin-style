@@ -2,7 +2,7 @@
 django CMS Admin Style
 ======================
 
-|pypi| |build| |coverage|
+|pypi| |python| |django| |djangocms| |djangocms4| |coverage|
 
 Adds pretty CSS styles for the django CMS admin interface. Supports optional
 ``django-admin-shortcuts`` package.
@@ -44,8 +44,6 @@ Documentation
 
 See ``REQUIREMENTS`` in the `setup.py <https://github.com/divio/djangocms-admin-style/blob/master/setup.py>`_
 file for additional dependencies:
-
-|python| |django| |djangocms| |djangocms4|
 
 
 
