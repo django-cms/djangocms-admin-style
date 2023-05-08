@@ -41,6 +41,7 @@ function getColorSchemeFromSettings(CMS) {
  */
 function darkModeSettings() {
     var colorScheme = document.documentElement.dataset.theme;
+
     if (!colorScheme) {
         colorScheme = localStorage.getItem('theme');
         if (!colorScheme) {
