@@ -1,4 +1,5 @@
-:root[data-color-scheme="light"] {
+:root[data-color-scheme="light"],
+:root[data-theme="light"] {
     --primary: #79aec8;
     --secondary: #417690;
     --accent: #f5dd5d;
@@ -50,7 +51,8 @@
     --object-tools-hover-bg: var(--close-button-hover-bg);
 }
 
-:root[data-color-scheme="dark"] {
+:root[data-color-scheme="dark"],
+:root[data-theme="dark"] {
     --primary: #264b5d;
     --primary-fg: #f7f7f7;
 

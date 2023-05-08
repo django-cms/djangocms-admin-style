@@ -37,7 +37,10 @@ $gray-super-lightest: var(--dca-gray-super-lightest); //;
     color-scheme: dark light;
 }
 
-:root[data-color-scheme="light"], :root:not([data-color-scheme]) {
+:root[data-color-scheme="light"],
+:root:not([data-color-scheme]):not([data-theme]),
+:root[data-theme="light"],
+:root[data-theme="auto"] {
     color-scheme: light;
     --dca-light-mode: 1;
     --dca-dark-mode: 0;
@@ -53,7 +56,7 @@ $gray-super-lightest: var(--dca-gray-super-lightest); //;
     --dca-gray-super-lightest: #f7f7f7;
 }
 
-:root[data-color-scheme="dark"] {
+:root[data-color-scheme="dark"], :root[data-theme="dark"] {
     color-scheme: dark;
     --dca-light-mode: 0;
     --dca-dark-mode: 1;
@@ -72,7 +75,8 @@ $gray-super-lightest: var(--dca-gray-super-lightest); //;
     --focus-brightness: 1.5;
 }
 @media (prefers-color-scheme: dark) {
-    :root:not([data-color-scheme]) {
+    :root:not([data-color-scheme]):not([data-theme]),
+    :root[data-theme="auto"] {
         --dca-light-mode: 0;
         --dca-dark-mode: 1;
         --dca-white: #2A2C2E;

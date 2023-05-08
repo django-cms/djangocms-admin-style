@@ -40,22 +40,30 @@ function getColorSchemeFromSettings(CMS) {
  * @returns {void}
  */
 function darkModeSettings() {
-    if (!document.documentElement.dataset.colorScheme) {
-        var colorScheme = 'auto'; // Default mode
-        var cms_window = getTopWindow();
+    var colorScheme = document.documentElement.dataset.theme;
+    if (!colorScheme) {
+        colorScheme = localStorage.getItem('theme');
+        if (!colorScheme) {
+            if (!document.documentElement.dataset.colorScheme) {
+                var cms_window = getTopWindow();
 
-        if (cms_window.CMS) {
-            colorScheme = getColorSchemeFromSettings(cms_window.CMS);
-        } else if (window.localStorage) {
-            // CMS not loaded: set color scheme for admin site according to settings
-            colorScheme = JSON.parse(localStorage.getItem('cms_cookie') || '{}').color_scheme;
-        }
-        if (colorScheme === 'auto' || colorScheme === undefined) {
-            delete document.documentElement.dataset.colorScheme;
-        } else {
-            document.documentElement.dataset.colorScheme = colorScheme;
+                colorScheme = 'auto'; // Default mode
+                if (cms_window.CMS) {
+                    colorScheme = getColorSchemeFromSettings(cms_window.CMS);
+                } else {
+                    // CMS not loaded: set color scheme for admin site according to settings
+                    colorScheme = JSON.parse(localStorage.getItem('cms_cookie') || '{}').color_scheme;
+                }
+
+                if (colorScheme === 'auto' || colorScheme === undefined) {
+                    document.documentElement.dataset.theme = 'auto';
+                } else {
+                    document.documentElement.dataset.theme = colorScheme;
+                }
+            }
         }
     }
+    document.documentElement.dataset.theme = colorScheme;
 }
 
 module.exports = darkModeSettings;
