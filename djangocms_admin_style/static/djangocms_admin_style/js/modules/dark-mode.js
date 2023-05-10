@@ -48,7 +48,6 @@ function darkModeSettings() {
             if (!document.documentElement.dataset.colorScheme) {
                 var cms_window = getTopWindow();
 
-                colorScheme = 'auto'; // Default mode
                 if (cms_window.CMS) {
                     colorScheme = getColorSchemeFromSettings(cms_window.CMS);
                 } else {
