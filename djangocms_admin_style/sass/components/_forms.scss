@@ -892,17 +892,25 @@ form select[multiple] {
     // required in admin/aldryn_newsblog/article/add to ensure outline is not cut off #249
     overflow: visible;
     width: 100%;
-    &.widget-wrapper-links-1 select {
-        width: calc(100% - 46px) !important;
+    &.widget-wrapper-links-1 {
+        select, .select2 {
+            width: calc(100% - 46px) !important;
+        }
     }
-    &.widget-wrapper-links-2 select {
-        width: calc(100% - 87px) !important;
+    &.widget-wrapper-links-2 {
+        select, .select2 {
+            width: calc(100% - 87px) !important;
+        }
     }
-    &.widget-wrapper-links-3 select {
-        width: calc(100% - 128px) !important;
+    &.widget-wrapper-links-3 {
+        select, .select2 {
+            width: calc(100% - 128px) !important;
+        }
     }
-    &.widget-wrapper-links-4 select {
-        width: calc(100% - 169px) !important;
+    &.widget-wrapper-links-4 {
+        select, .select2 {
+            width: calc(100% - 169px) !important;
+        }
     }
     // makes sure that related widget wrapper links are floated next to select field #315
     select {
