@@ -102,7 +102,8 @@ const icons = () => {
         .pipe(
             iconfont({
                 fontName: 'django-admin-iconfont',
-                normalize: true
+                normalize: true,
+                formats: ['svg', 'ttf', 'eot', 'woff', 'woff2']
             })
         )
         .on('glyphs', function (glyphs, opts) {

@@ -25,6 +25,7 @@ a.selector-chooseall,
 .add-related,
 .change-related,
 .delete-related,
+.view-related,
 .inlinechangelink,
 a[id*="calendarlink"],
 a[id*="clocklink"],
@@ -77,6 +78,9 @@ a.selector-chooseall,
 .inline-deletelink,
 .delete-related {
     @include icon(remove);
+}
+.view-related {
+    @include icon(eye);
 }
 .icon-arrow-right,
 .calendarnav-next {
@@ -184,7 +188,8 @@ a[id*="clocklink"] {
 .add-another,
 .add-related,
 .change-related,
-.delete-related {
+.delete-related,
+.view-related {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
     // make sure that add another button has correct width and height on advanced setting #293

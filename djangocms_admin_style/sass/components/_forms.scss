@@ -896,10 +896,13 @@ form select[multiple] {
         width: calc(100% - 46px) !important;
     }
     &.widget-wrapper-links-2 select {
-        width: calc(100% - 92px) !important;
+        width: calc(100% - 87px) !important;
     }
     &.widget-wrapper-links-3 select {
-        width: calc(100% - 138px) !important;
+        width: calc(100% - 128px) !important;
+    }
+    &.widget-wrapper-links-4 select {
+        width: calc(100% - 169px) !important;
     }
     // makes sure that related widget wrapper links are floated next to select field #315
     select {
