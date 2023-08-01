@@ -105,149 +105,152 @@
     @if $filename == exclamation-triangle {
         $char: "E01A";
     }
-    @if $filename == file-text {
+    @if $filename == eye {
         $char: "E01B";
     }
-    @if $filename == file {
+    @if $filename == file-text {
         $char: "E01C";
     }
-    @if $filename == files-o {
+    @if $filename == file {
         $char: "E01D";
     }
-    @if $filename == film {
+    @if $filename == files-o {
         $char: "E01E";
     }
-    @if $filename == flag {
+    @if $filename == film {
         $char: "E01F";
     }
-    @if $filename == floppy-o {
+    @if $filename == flag {
         $char: "E020";
     }
-    @if $filename == folder-open {
+    @if $filename == floppy-o {
         $char: "E021";
     }
-    @if $filename == folder {
+    @if $filename == folder-open {
         $char: "E022";
     }
-    @if $filename == gamepad {
+    @if $filename == folder {
         $char: "E023";
     }
-    @if $filename == gift {
+    @if $filename == gamepad {
         $char: "E024";
     }
-    @if $filename == heart {
+    @if $filename == gift {
         $char: "E025";
     }
-    @if $filename == home {
+    @if $filename == heart {
         $char: "E026";
     }
-    @if $filename == info-circle {
+    @if $filename == home {
         $char: "E027";
     }
-    @if $filename == key {
+    @if $filename == info-circle {
         $char: "E028";
     }
-    @if $filename == laptop {
+    @if $filename == key {
         $char: "E029";
     }
-    @if $filename == life-ring {
+    @if $filename == laptop {
         $char: "E02A";
     }
-    @if $filename == lightbulb-o {
+    @if $filename == life-ring {
         $char: "E02B";
     }
-    @if $filename == lock {
+    @if $filename == lightbulb-o {
         $char: "E02C";
     }
-    @if $filename == logo {
+    @if $filename == lock {
         $char: "E02D";
     }
-    @if $filename == map-marker {
+    @if $filename == logo {
         $char: "E02E";
     }
-    @if $filename == minus-circle {
+    @if $filename == map-marker {
         $char: "E02F";
     }
-    @if $filename == mobile {
+    @if $filename == minus-circle {
         $char: "E030";
     }
-    @if $filename == money {
+    @if $filename == mobile {
         $char: "E031";
     }
-    @if $filename == music {
+    @if $filename == money {
         $char: "E032";
     }
-    @if $filename == newspaper-o {
+    @if $filename == music {
         $char: "E033";
     }
-    @if $filename == pencil {
+    @if $filename == newspaper-o {
         $char: "E034";
     }
-    @if $filename == picture-o {
+    @if $filename == pencil {
         $char: "E035";
     }
-    @if $filename == picture {
+    @if $filename == picture-o {
         $char: "E036";
     }
-    @if $filename == plus-circle {
+    @if $filename == picture {
         $char: "E037";
     }
-    @if $filename == plus {
+    @if $filename == plus-circle {
         $char: "E038";
     }
-    @if $filename == print {
+    @if $filename == plus {
         $char: "E039";
     }
-    @if $filename == refresh {
+    @if $filename == print {
         $char: "E03A";
     }
-    @if $filename == remove {
+    @if $filename == refresh {
         $char: "E03B";
     }
-    @if $filename == reply {
+    @if $filename == remove {
         $char: "E03C";
     }
-    @if $filename == scissors {
+    @if $filename == reply {
         $char: "E03D";
     }
-    @if $filename == search-plus {
+    @if $filename == scissors {
         $char: "E03E";
     }
-    @if $filename == search {
+    @if $filename == search-plus {
         $char: "E03F";
     }
-    @if $filename == shopping-cart {
+    @if $filename == search {
         $char: "E040";
     }
-    @if $filename == suitcase {
+    @if $filename == shopping-cart {
         $char: "E041";
     }
-    @if $filename == tag {
+    @if $filename == suitcase {
         $char: "E042";
     }
-    @if $filename == ticket {
+    @if $filename == tag {
         $char: "E043";
     }
-    @if $filename == trash-o {
+    @if $filename == ticket {
         $char: "E044";
     }
-    @if $filename == trash {
+    @if $filename == trash-o {
         $char: "E045";
     }
-    @if $filename == unlock-alt {
+    @if $filename == trash {
         $char: "E046";
     }
-    @if $filename == upload {
+    @if $filename == unlock-alt {
         $char: "E047";
     }
-    @if $filename == user {
+    @if $filename == upload {
         $char: "E048";
     }
-    @if $filename == volume-up {
+    @if $filename == user {
         $char: "E049";
     }
-    @if $filename == wrench {
+    @if $filename == volume-up {
         $char: "E04A";
+    }
+    @if $filename == wrench {
+        $char: "E04B";
     }
 
     @return $char;

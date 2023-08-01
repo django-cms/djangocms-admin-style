@@ -152,7 +152,7 @@ a.button.cancel-link {
     padding: 0 20px !important
 }
 // resets general list styles for object-tool list elements
-.colM ul:not(.object-tools) {
+.colM ul:not(.object-tools):not(.messagelist) {
     margin: 20px 0 25px;
     border-bottom: solid 1px $gray-lighter;
     &:empty {
