@@ -2,6 +2,14 @@
 Changelog
 =========
 
+3.2.5 (2023-08-22)
+==================
+
+* Add support for Django 4.2+ dark mode switch buttons
+* Add support for Django 4 view related admin buttons
+* Improve styling compatibility with Django 4.2
+* Add support for search field in admin nav (new in Django 4.2)
+
 3.2.4 (2023-04-25)
 ==================
 
