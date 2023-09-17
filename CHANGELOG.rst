@@ -7,6 +7,7 @@ unreleased
 
 * Fix bug which adds 'data-theme="undefined"' to admin html tag
 * Fix broken color input (#429)
+* Add Django as requirement in setup.py (#423)
 
 3.2.5 (2023-08-22)
 ==================

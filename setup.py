@@ -6,7 +6,9 @@ from setuptools import find_packages, setup
 from djangocms_admin_style import __version__
 
 
-REQUIREMENTS = []
+REQUIREMENTS = [
+    "Django",
+]
 
 
 CLASSIFIERS = [
