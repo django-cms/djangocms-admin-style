@@ -139,6 +139,9 @@ form {
             }
         }
     }
+    input[type="color"] {
+        width: revert;
+    }
     button,
     input[type="text"],
     input[type="email"],
