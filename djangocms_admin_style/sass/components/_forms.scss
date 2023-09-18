@@ -984,3 +984,10 @@ form select[multiple] {
 .related-widget-wrapper-link:link:hover {
     opacity: 1;
 }
+
+form .flex-container {
+    display: block;
+    div.fieldBox {
+        display: inline-block;
+    }
+}
