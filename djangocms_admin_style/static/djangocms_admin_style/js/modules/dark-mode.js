@@ -23,6 +23,10 @@ function getTopWindow() {
 function getColorSchemeFromSettings(CMS) {
     var colorScheme;
 
+    if (!CMS) {
+        return;
+    }
+
     if (CMS.settings && CMS.settings.color_scheme) {
         // Use color_scheme from settings.py
         colorScheme = CMS.settings.color_scheme;
@@ -54,16 +58,12 @@ function darkModeSettings() {
                     // CMS not loaded: set color scheme for admin site according to settings
                     colorScheme = JSON.parse(localStorage.getItem('cms_cookie') || '{}').color_scheme;
                 }
-
-                if (colorScheme === 'auto' || colorScheme === undefined) {
-                    document.documentElement.dataset.theme = 'auto';
-                } else {
-                    document.documentElement.dataset.theme = colorScheme;
-                }
             }
         }
     }
-    document.documentElement.dataset.theme = colorScheme;
+    if (colorScheme) {
+        document.documentElement.dataset.theme = colorScheme;
+    }
 }
 
 module.exports = darkModeSettings;

@@ -139,6 +139,9 @@ form {
             }
         }
     }
+    input[type="color"] {
+        width: revert;
+    }
     button,
     input[type="text"],
     input[type="email"],
@@ -980,4 +983,11 @@ form select[multiple] {
 .related-widget-wrapper-link:link:focus,
 .related-widget-wrapper-link:link:hover {
     opacity: 1;
+}
+
+form .flex-container {
+    display: block;
+    div.fieldBox {
+        display: inline-block;
+    }
 }
