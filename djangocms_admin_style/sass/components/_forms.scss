@@ -6,7 +6,7 @@ form {
     padding: 25px 25px;
     background-color: $white;
     box-shadow: $base-box-shadow;
-    fieldset {
+    fieldset, .inline-group {
         width: 80%;
     }
     // only uses this styles if form-row is not set on a table row because before and after breaks tables #247
@@ -100,7 +100,9 @@ form {
         }
 
         // only affects field boxes when they are next to each other
-        & > .fieldBox, .flex-container > div:not(.related-widget-wrapper) {
+        & > .fieldBox, & > div > .fieldBox,
+        & > div > .flex-container > div:not(.related-widget-wrapper, .cke, .widget),
+        .form-multiline > div:not(.related-widget-wrapper, .cke, .widget) {
             margin-right: 0px;
             box-sizing: border-box;
             width: 50%;
@@ -115,7 +117,7 @@ form {
 
             &:not(:first-child) {
                 border-top: none;
-                padding-right: 2vw;
+                // padding-right: 2vw;
             }
 
             &:nth-of-type(1) {
@@ -992,4 +994,8 @@ form select[multiple] {
 .related-widget-wrapper-link:link:focus,
 .related-widget-wrapper-link:link:hover {
     opacity: 1;
+}
+
+fieldset .fieldBox {
+    margin-right: 0;
 }
