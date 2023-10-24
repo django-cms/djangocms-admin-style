@@ -5,9 +5,8 @@ Changelog
 unreleased
 ==========
 
-* Fix bug which adds 'data-theme="undefined"' to admin html tag
-* Fix broken color input (#429)
-* Add Django as requirement in setup.py (#423)
+* Style delete links
+* Fix read-only fields overlapping with their labels
 * Adjust flex-container in newer Django versions
 
 3.2.6 (2023-09-18)
