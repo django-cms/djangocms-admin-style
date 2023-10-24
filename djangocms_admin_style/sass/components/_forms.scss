@@ -996,6 +996,9 @@ form select[multiple] {
     opacity: 1;
 }
 
-fieldset .fieldBox {
-    margin-right: 0;
+form .flex-container {
+    display: block;
+    div.fieldBox {
+        display: inline-block;
+    }
 }
