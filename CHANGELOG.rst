@@ -2,6 +2,13 @@
 Changelog
 =========
 
+unreleased
+==========
+
+* Style delete links
+* Fix read-only fields overlapping with their labels
+* Adjust flex-container in newer Django versions
+
 3.2.6 (2023-09-18)
 ==================
 
