@@ -2,8 +2,8 @@
 Changelog
 =========
 
-unreleased
-==========
+3.2.7 (2024-01-04)
+==================
 
 * Style delete links
 * Fix read-only fields overlapping with their labels
