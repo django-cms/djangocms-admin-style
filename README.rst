@@ -80,7 +80,8 @@ To **compile CSS** run the following commands using **node 16**:
 
 * ``nvm use``
 * ``npm install``
-* ``gulp``
+* ``gulp icons sass bundle`` (or if gulp is not found by the shell ``npx gulp icons sass bundle``)
+
 
 For further options have a look at the ``gulpfile.js``.
 
