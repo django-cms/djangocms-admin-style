@@ -11,6 +11,7 @@ HELPER_SETTINGS = {
     },
     'LANGUAGE_CODE': 'en',
     'ALLOWED_HOSTS': ['*'],
+    'CMS_CONFIRM_VERSION4': True,
 }
 
 
