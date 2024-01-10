@@ -18,6 +18,7 @@
     box-shadow: $toolbar-shadow;
     z-index: z(header);
     #branding {
+        display: block;
         width: 100%;
         h1 {
             // hides h1 because of text appears in list on dropdown menu

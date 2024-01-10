@@ -304,14 +304,14 @@ ul.messagelist + #content {
     box-shadow: none;
     .deletelink-box {
         margin: 0;
-        .deletelink {
-            @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
-            @include icon(trash-o);
-            display: block;
-            padding: 9px 20px !important;
-            height: 36px;
-            box-sizing: border-box;
-        }
+    }
+    .deletelink {
+        @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
+        @include icon(trash-o);
+        display: block;
+        padding: 9px 20px !important;
+        height: 36px;
+        box-sizing: border-box;
     }
     input[type="submit"] {
         padding: 10px 20px !important;
