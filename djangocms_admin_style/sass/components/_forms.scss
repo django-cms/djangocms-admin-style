@@ -6,7 +6,7 @@ form {
     padding: 25px 25px;
     background-color: $white;
     box-shadow: $base-box-shadow;
-    fieldset {
+    fieldset, .inline-group {
         width: 80%;
     }
     // only uses this styles if form-row is not set on a table row because before and after breaks tables #247
@@ -21,7 +21,7 @@ form {
     }
     .form-row {
         // Improve readability by increasing contrast
-        & > div > label:not(.vCheckboxLabel) {
+        & div > label:not(.vCheckboxLabel) {
             color: $gray-darker !important;
             font-weight: bold !important;
             width: 100% !important;
@@ -100,13 +100,15 @@ form {
         }
 
         // only affects field boxes when they are next to each other
-        .fieldBox {
+        & > .fieldBox, & > div > .fieldBox,
+        & > div > .flex-container > div:not(.related-widget-wrapper, .cke, .widget),
+        .form-multiline > div:not(.related-widget-wrapper, .cke, .widget) {
             margin-right: 0px;
             box-sizing: border-box;
             width: 50%;
             max-width: 500px;
 
-            & > label {
+            & > label {
                 text-transform: inherit;
             }
             & + .fieldBox {
@@ -115,7 +117,7 @@ form {
 
             &:not(:first-child) {
                 border-top: none;
-                padding-right: 2vw;
+                // padding-right: 2vw;
             }
 
             &:nth-of-type(1) {
@@ -138,6 +140,9 @@ form {
                 }
             }
         }
+    }
+    input[type="color"] {
+        width: revert;
     }
     button,
     input[type="text"],
@@ -183,7 +188,7 @@ form {
     .cke {
         box-sizing: border-box;
     }
-    .aligned {
+    & {
         .field-number_of_visits p {
             margin-left: 0;
             padding-left: 0;
@@ -219,7 +224,7 @@ form {
                 content: none;
             }
             & + div.readonly {
-                margin-top: -30px;
+                margin-top: -5px;
             }
         }
         label + label {
@@ -463,6 +468,15 @@ form {
 
 .form-row .select2-container {
     min-width: 250px + 12px;
+    &.select2-container--admin-autocomplete .select2-selection {
+        min-height: 36px;
+        .select2-selection__arrow {
+            height: 32px;
+        }
+        .select2-selection__clear {
+            margin-top: 5px;
+        }
+    }
 } // standard input width + default input padding
 
 .inline-group .module:not(.aligned) .form-row input,
@@ -980,4 +994,11 @@ form select[multiple] {
 .related-widget-wrapper-link:link:focus,
 .related-widget-wrapper-link:link:hover {
     opacity: 1;
+}
+
+form .flex-container {
+    display: block;
+    div.fieldBox {
+        display: inline-block;
+    }
 }

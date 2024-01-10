@@ -85,7 +85,8 @@
                 border: 1px solid $white;
                 border-top: none;
                 border-radius: 0 0 4px 4px;
-                background: rgba($white, .97);
+                background: $white;
+                filter: opacity(.95);
                 box-shadow: 0 1px 1px rgba($black-fallback, .4);
                 &.submenu-open {
                     display: block;

@@ -6,7 +6,9 @@ from setuptools import find_packages, setup
 from djangocms_admin_style import __version__
 
 
-REQUIREMENTS = []
+REQUIREMENTS = [
+    "Django",
+]
 
 
 CLASSIFIERS = [
@@ -29,6 +31,7 @@ CLASSIFIERS = [
     'Framework :: Django :: 4.0',
     'Framework :: Django :: 4.1',
     'Framework :: Django :: 4.2',
+    'Framework :: Django :: 5.0',
     'Framework :: Django CMS',
     'Framework :: Django CMS :: 3.6',
     'Framework :: Django CMS :: 3.7',

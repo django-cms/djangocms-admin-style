@@ -5,7 +5,22 @@ Changelog
 unreleased
 ==========
 
+* Adjiust flex-container in newer Django versions (4.2+) for submit row and admin header
+
+3.2.7 (2024-01-04)
+==================
+
+* Style delete links
+* Fix read-only fields overlapping with their labels
+* Adjust flex-container in newer Django versions
+
+3.2.6 (2023-09-18)
+==================
+
 * Fix bug which adds 'data-theme="undefined"' to admin html tag
+* Fix broken styling with `.flex-container`
+* Fix broken color input (#429)
+* Add Django as requirement in setup.py (#423)
 
 
 3.2.5 (2023-08-22)
