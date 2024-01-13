@@ -905,6 +905,7 @@ form select[multiple] {
 .related-widget-wrapper {
     // required in admin/aldryn_newsblog/article/add to ensure outline is not cut off #249
     overflow: visible;
+    display: block;
     width: 100%;
     &.widget-wrapper-links-1 {
         select, .select2 {

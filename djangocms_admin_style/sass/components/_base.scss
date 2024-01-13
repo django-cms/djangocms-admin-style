@@ -82,7 +82,24 @@ a.btn {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
 }
 
+.button.default, input[type=submit].default, .submit-row input.default {
+    float: right;
+}
+
 .submit-row {
+    display: block;
+    text-align: right;
+    input {
+        display: inline-block;
+    }
+    .deletelink-box, .deletelink {
+        display: inline-block;
+        float: left;
+    }
+    a.deletelink {
+        margin-left: 10px;
+        display: inline-block;
+    }
     .btn {
         padding: 10px 20px !important;
         height: 36px !important;
