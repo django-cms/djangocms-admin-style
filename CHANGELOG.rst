@@ -2,8 +2,8 @@
 Changelog
 =========
 
-unreleased
-==========
+3.2.8 (2024-01-14)
+==================
 
 * Adjiust flex-container in newer Django versions (4.2+) for submit row and admin header
 
