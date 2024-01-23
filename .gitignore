@@ -15,8 +15,7 @@
 __pycache__/
 build/
 dist/
-env/
-.venv/
+/*env*/
 
 /~
 /node_modules
