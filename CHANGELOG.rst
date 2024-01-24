@@ -6,6 +6,7 @@ Changelog
 ==================
 
 * Adjiust flex-container in newer Django versions (4.2+) for submit row and admin header
+* Fix help texts for checkboxes and radio buttons
 
 3.2.7 (2024-01-04)
 ==================
