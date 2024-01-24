@@ -7,7 +7,7 @@ form {
     background-color: $white;
     box-shadow: $base-box-shadow;
     fieldset, .inline-group {
-        widtxh: 80%;
+        width: 80%;
     }
 
     // Newer Django admin styles use flexbox, we do not
