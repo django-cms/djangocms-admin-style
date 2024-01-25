@@ -23,11 +23,14 @@
                 </li>
                 <li class="toolbar-item-navigation-break">-----</li>
             {% endif %}
-            <li>
-                <a href="{% url 'admin:logout' %}">
-                    <span>{% trans 'Log out' %} {% firstof user.get_short_name user.get_username %}</span>
-                </a>
-            </li>
+            {% if user.is_authenticated %}
+                <li>
+                    <form method="POST" action="{% url 'admin:logout' %}"> 
+                        {% csrf_token %}
+                        <button type="submit">{% trans 'Log out' %} {% firstof user.get_short_name user.get_username %}</button>
+                    </form>
+                </li>
+            {% endif %}
         </ul>
     </li>
 </ul>

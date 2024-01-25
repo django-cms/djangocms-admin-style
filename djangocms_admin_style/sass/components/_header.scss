@@ -131,6 +131,41 @@
                             background: $color-primary;
                         }
                     }
+                    form {
+                        box-shadow: none;
+                        margin: 0;
+                        padding: 0;
+                        button {
+                            float: none;
+                            white-space: nowrap;
+                            line-height: 30px;
+                            height: 30px;
+                            padding: 0 10px 0 15px !important;
+                            cursor: pointer;
+
+                            border: none !important;
+                            border-radius: 0 !important;
+                            width: 100% !important;
+                            color: $black !important;
+                            font-size: $font-size-normal !important;
+                            font-weight: bold;
+                            font-family: $base-font-family !important;
+                            text-align: left;
+
+                            &:active,
+                            &:focus {
+                                filter: none !important;
+                                box-shadow: none !important;
+                                text-decoration: underline !important;
+                            }
+                            &:hover {
+                                filter: none !important;
+                                color: $white !important;
+                                background: $color-primary !important;
+                                text-decoration: none !important;
+                            }
+                        }
+                    }
                 }
             }
         }
