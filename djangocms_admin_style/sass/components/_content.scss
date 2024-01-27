@@ -374,12 +374,12 @@ ul.messagelist + #content {
         width: 100% !important;
         input {
             width: calc(100% - 50px) !important;
-            margin: 5px 50px 5px 0 !important;
+            margin: 0px 50px 5px 0 !important;
         }
         img {
             position: absolute;
             right: 0;
-            margin: 5px 0;
+            margin: 0;
 
             order: 2;
         }

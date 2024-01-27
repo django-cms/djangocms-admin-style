@@ -9,6 +9,27 @@ form {
     fieldset, .inline-group {
         width: 80%;
     }
+
+    // Newer Django admin styles use flexbox, we do not
+    .flex-container {
+        display: block;
+        margin-right: 20px;
+    }
+    .flex-container.form-multiline {
+        display: flex;
+        margin-right: 0;
+        div.fieldBox {
+            display: block;
+            //margin-right: 0;
+        }
+        div:has(div.hidden) {
+            display: none;
+        }
+    }
+    fieldset.module > h2 {
+        margin-right: 20px;
+    }
+
     // only uses this styles if form-row is not set on a table row because before and after breaks tables #247
     .form-row:not(tr) {
         // adds clearfix because overflow hidden truncates highlighted focus fields #242
@@ -100,9 +121,11 @@ form {
         }
 
         // only affects field boxes when they are next to each other
-        & > .fieldBox, & > div > .fieldBox,
-        & > div > .flex-container > div:not(.related-widget-wrapper, .cke, .widget),
-        .form-multiline > div:not(.related-widget-wrapper, .cke, .widget) {
+        & > .fieldBox, & > div:not([class]) > .fieldBox,
+        & > div:not([class]) > .flex-container > div:not(.related-widget-wrapper, .cke, .widget),
+        .form-multiline > div:not(.related-widget-wrapper,
+        .form-multiline > div:not([class]) > div:not(.related-widget-wrapper),
+        .cke, .widget) {
             margin-right: 0px;
             box-sizing: border-box;
             width: 50%;
@@ -118,26 +141,6 @@ form {
             &:not(:first-child) {
                 border-top: none;
                 // padding-right: 2vw;
-            }
-
-            &:nth-of-type(1) {
-                &:nth-last-of-type(2) {
-                    width: 50%;
-                    box-sizing: border-box;
-                    margin: 0 !important;
-                    padding-right: 10px;
-                    padding-left: 0;
-                }
-            }
-
-            &:nth-of-type(2) {
-                &:nth-last-of-type(1) {
-                    width: 50%;
-                    box-sizing: border-box;
-                    margin: 0 !important;
-                    padding-left: 10px;
-                    padding-top: 0;
-                }
             }
         }
     }
@@ -430,7 +433,7 @@ form {
     }
     .checkbox-row {
         line-height: 20px;
-        margin-bottom: -10px;
+        margin-bottom: -5px;
         // wraps checkbox rows with border #188
         padding-top: 15px;
         border-top: solid 1px $gray-lighter;
@@ -459,10 +462,13 @@ form {
     }
 
     // backport from django 1.9
-    .aligned label + p {
-        padding: 6px 0;
-        margin-top: 0;
-        margin-bottom: 0;
+    .aligned label.vCheckboxLabel {
+        display: inline;
+        + p {
+            padding: 6px 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -995,11 +1001,4 @@ form select[multiple] {
 .related-widget-wrapper-link:link:focus,
 .related-widget-wrapper-link:link:hover {
     opacity: 1;
-}
-
-form .flex-container {
-    display: block;
-    div.fieldBox {
-        display: inline-block;
-    }
 }
