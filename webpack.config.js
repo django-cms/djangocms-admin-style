@@ -1,66 +1,74 @@
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
+const TerserPlugin = require("terser-webpack-plugin");
 
-module.exports = function (opts) {
+module.exports = (opts) => {
     'use strict';
 
-    var PROJECT_PATH = opts.PROJECT_PATH;
-    var debug = opts.debug;
+    const PROJECT_PATH = opts.PROJECT_PATH;
+    const debug = opts.debug;
 
-    var baseConfig = {
+    const baseConfig = {
         devtool: false,
         watch: !!opts.watch,
         entry: {
-            adminstyle: PROJECT_PATH.js + '/base-admin.js'
+            adminstyle: path.join(PROJECT_PATH.js, 'base-admin.js'),
         },
         output: {
-            path: PROJECT_PATH.js + '/dist/',
+            path: path.join(PROJECT_PATH.js, 'dist'),
             filename: 'bundle.[name].min.js',
             chunkFilename: 'bundle.[name].min.js',
-            jsonpFunction: 'cmsWebpackJsonp'
+            publicPath: 'auto',
+            chunkLoadingGlobal: 'cmsWebpackJsonp',
         },
         plugins: [],
         resolve: {
             extensions: ['.js'],
             alias: {
-                'jquery': PROJECT_PATH.js + '/libs/jquery.min.js',
-                'js-cookie': PROJECT_PATH.js + '/libs/js.cookie-2.1.2.min.js'
-            }
+                'jquery': path.join(PROJECT_PATH.js, 'libs', 'jquery.min.js'),
+                'js-cookie': path.join(PROJECT_PATH.js, 'libs', 'js.cookie-2.1.2.min.js'),
+            },
         },
         module: {
-            loaders: [
+            rules: [
                 {
                     test: /(modules\/jquery)/,
-                    loaders: [
-                        'imports-loader?jQuery=jquery'
+                    use: [
+                        {
+                            loader: 'imports-loader',
+                            options: {
+                                additionalCode: 'var jQuery = require("jquery");',
+                            },
+                        }
                     ]
                 }
-            ]
-        }
+            ],
+        },
+        optimization: {
+            minimizer: [
+                new TerserPlugin({
+                    terserOptions: {
+                        compress: {
+                            drop_console: !debug,
+                        },
+                    },
+                }),
+            ],
+        },
     };
 
     if (debug) {
         baseConfig.devtool = 'inline-source-map';
-        baseConfig.plugins = baseConfig.plugins.concat([
-            new webpack.NoErrorsPlugin(),
-            new webpack.DefinePlugin({
-                __DEV__: 'true'
-            })
-        ]);
+        baseConfig.mode = 'development';
     } else {
-        baseConfig.plugins = baseConfig.plugins.concat([
-            new webpack.DefinePlugin({
-                __DEV__: 'false'
-            }),
-            new webpack.optimize.OccurrenceOrderPlugin(),
-            new webpack.optimize.DedupePlugin(),
-            new webpack.optimize.UglifyJsPlugin({
-                comments: false,
-                compressor: {
-                    drop_console: true // eslint-disable-line
-                }
-            })
-        ]);
+        baseConfig.mode = 'production';
     }
+
+    baseConfig.plugins.push(
+        new webpack.DefinePlugin({
+            __DEV__: JSON.stringify(debug),
+        })
+    );
 
     return baseConfig;
 };

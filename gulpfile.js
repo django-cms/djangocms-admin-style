@@ -135,7 +135,8 @@ const webpackBundle = function (opts) {
 
         webpack(config, function (err, stats) {
             if (err) {
-                throw new PluginError('webpack', err);
+                console.log(err, stats);
+                throw new Error('webpack:' + err);
             }
             log('[webpack]', stats.toString({ colors: true }));
             if (typeof done !== 'undefined' && (!opts || !opts.watch)) {
