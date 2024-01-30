@@ -9,24 +9,24 @@ ci:
 
 repos:
   - repo: https://github.com/asottile/pyupgrade
-    rev: v2.31.0
+    rev: v3.15.0
     hooks:
       - id: pyupgrade
         args: ["--py39-plus"]
 
   - repo: https://github.com/adamchainz/django-upgrade
-    rev: '1.4.0'
+    rev: '1.15.0'
     hooks:
       - id: django-upgrade
         args: [--target-version, "3.2"]
 
   - repo: https://github.com/asottile/yesqa
-    rev: v1.3.0
+    rev: v1.5.0
     hooks:
       - id: yesqa
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+    rev: v4.5.0
     hooks:
       - id: check-merge-conflict
       - id: debug-statements
@@ -34,12 +34,12 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.1.0
+    rev: v2.2.4
     hooks:
       - id: codespell
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.1.14
+    rev: v0.1.15
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
