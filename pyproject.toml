@@ -1,0 +1,20 @@
+[tool.ruff]
+select=[
+  "E",  # pycodestyle errors
+  "W",  # pycodestyle warnings
+  "F",  # pyflakes
+  "I",  # isort
+  "C",  # flake8-comprehensions
+  "B",  # flake8-bugbear
+  "PLE", # pylint error
+  "PLR", # pylint refactor
+  "PLW", # pylint warning
+  "UP", # pyupgrade
+]
+
+extend-ignore = [
+    # TODO fix separately
+    "E501", # line too long
+    "I001", # import block unsorted
+    "C408", # unnecessary dict call
+]
