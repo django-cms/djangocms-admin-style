@@ -11,10 +11,3 @@ select=[
   "PLW", # pylint warning
   "UP", # pyupgrade
 ]
-
-extend-ignore = [
-    # TODO fix separately
-    "E501", # line too long
-    "I001", # import block unsorted
-    "C408", # unnecessary dict call
-]
