@@ -25,7 +25,7 @@
             {% endif %}
             {% if user.is_authenticated %}
                 <li>
-                    <form method="POST" action="{% url 'admin:logout' %}"> 
+                    <form method="POST" action="{% url 'admin:logout' %}">
                         {% csrf_token %}
                         <button type="submit">
                             <b>{% trans 'Log out' %} {% firstof user.get_short_name user.get_username %}</b>
