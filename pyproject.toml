@@ -6,6 +6,7 @@ extend-exclude = [
   ".env",
   ".venv",
   ".po",
+  ".svg",
 ]
 
 [tool.ruff.lint]
