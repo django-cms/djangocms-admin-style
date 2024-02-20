@@ -1,4 +1,14 @@
 [tool.ruff]
+line-length = 119
+
+extend-exclude = [
+  ".ruff_cache",
+  ".env",
+  ".venv",
+  ".po",
+]
+
+[tool.ruff.lint]
 select=[
   "E",  # pycodestyle errors
   "W",  # pycodestyle warnings
