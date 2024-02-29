@@ -22,7 +22,7 @@ form {
             display: block;
             //margin-right: 0;
         }
-        div:has(div.hidden) {
+        & > div:has(> div.hidden) {
             display: none;
         }
     }
