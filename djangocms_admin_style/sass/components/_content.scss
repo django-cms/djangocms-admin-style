@@ -815,7 +815,13 @@ a.addlink {
 // attributes field
 .attributes-pair .field-box {
     margin-bottom: 10px;
+
+    .delete-attributes-pair {
+        // override admin-style
+        margin-left: 0px !important;
+        margin-inline-start: 16px !important;
+    }
 }
 .attributes-pair .field-box:first-child {
-    padding-right: 15px;
+    padding-inline-end: 15px;
 }

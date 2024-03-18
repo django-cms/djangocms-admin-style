@@ -277,6 +277,9 @@ form {
                 color: $color-primary;
             }
         }
+        .fieldBox {
+            margin-inline-end: 20px !important;  // override admin-style rtl
+        }
     }
     label select {
         display: block;
@@ -305,7 +308,12 @@ form {
             float: left !important;
             // FABR: ! Important conflicts with unfilled buttons
             color: $white; // !important;
-            padding: 6px 12px !important;
+            padding-block: 6px !important;
+            padding-inline: 12px !important;
+
+            [dir=rtl] & {
+                float: right !important;
+            }
         }
         &.btn-default,
         &.btn-link {
@@ -317,7 +325,18 @@ form {
     }
     label.aligned + div.readonly {
         width: 160px;
-        margin-left: 170px;
+        margin-inline-start: 170px;
+    }
+    .aligned {
+        // overriding admin style rtl.css
+        // to match the style of djangocms-admin-style
+        div.help {
+            margin-right: 0px !important;
+        }
+        .form-row input[type="text"] {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
     }
     // input
     input,
@@ -346,7 +365,7 @@ form {
         width: auto !important;
         height: auto;
         min-height: unset;
-        margin-right: 10px;
+        margin-inline-end: 10px !important;  // override admin-style rtl
         padding: 0 !important;
         border: 0 !important;
     }
@@ -372,6 +391,12 @@ form {
         background-size: 25px !important;
 
         appearance: none;
+
+        [dir=rtl] & {
+            // The png has a left padding of 30px. Its width is reduced from 60px to 25px
+            // so the right possition should start from 12.5px (30*25/60)
+            background-position: 12.5px center !important;
+        }
     }
     select[multiple] {
         height: auto !important;
