@@ -23,7 +23,7 @@
 .cms_modal-window {
     #container .breadcrumbs + .messagelist + #content,
     #container .breadcrumbs + #content {
-        margin-left: 20px !important;
+        margin-inline-start: 20px !important;
     }
     &.app-aldryn_bootstrap3 .filerFile .filerClearer {
         // make sure that file clear button has the correct size #140
@@ -41,9 +41,9 @@
         }
         // resets checkbox row margin and padding in modal window because of wrapping border #188
         .checkbox-row {
-            margin-left: -20px;
-            margin-right: -20px;
-            padding-left: 20px !important;
+            margin-inline-start: -20px;
+            margin-inline-end: -20px;
+            padding-inline-start: 20px !important;
         }
     }
     // resets background color and shadow which is needed in admin for very long names
@@ -66,11 +66,16 @@
                     float: left;
                     width: 100%;
                     .results {
-                        margin-right: 0 !important;
+                        margin-inline-end: 0 !important;
                     }
                     #result_list tbody th,
                     #result_list tbody td {
                         height: auto;
+                    }
+
+                    [dir=rtl] & {
+                        // inline-start & inline-end are not widely supported
+                        float: right;
                     }
                 }
             }
@@ -98,7 +103,7 @@
     }
     // resets table styles in modal window #189
     table {
-        margin-left: 0;
+        margin-inline-start: 0;
         box-shadow: none !important;
         td > select {
             width: auto !important;
@@ -122,15 +127,17 @@
     }
     #content,
     &.filebrowser #content {
-        margin: 20px 20px 0 !important;
+        margin-block: 20px 0 !important;
+        margin-inline: 20px !important;
     }
     #content .submit-row {
-        margin: 20px -20px 0 !important;
+        margin-block: 20px 0 !important;
+        margin-inline: -20px !important;
         padding: 20px 20px !important;
     }
     .form-row {
-        padding-left: 0;
-        padding-right: 0;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
         .btn-group-context label {
             margin-top: 0 !important;
             margin-bottom: 5px;
@@ -143,7 +150,12 @@
             float: left;
             margin-top: 0;
             &.field-registration_deadline_at {
-                margin-right: 0 !important;
+                margin-inline-end: 0 !important;
+            }
+
+            [dir=rtl] & {
+                // inline-start & inline-end are not widely supported
+                float: right;
             }
         }
     }
@@ -151,7 +163,8 @@
     .bootstrap3-column {
         .form-row {
             overflow: hidden;
-            padding: 14px 0 10px;
+            padding-block: 14px 10px;
+            padding-inline: 0px;
             border-bottom: solid 1px $gray-lighter;
             &.field-create {
                 input {
@@ -161,6 +174,11 @@
                     display: inline-block;
                     float: left;
                     width: 160px !important;
+
+                    [dir=rtl] & {
+                        // inline-start & inline-end are not widely supported
+                        float: right;
+                    }
                 }
             }
             .fieldBox {
@@ -168,6 +186,11 @@
                     display: inline-block;
                     float: left;
                     width: 70px !important;
+
+                    [dir=rtl] & {
+                        // inline-start & inline-end are not widely supported
+                        float: right;
+                    }
                 }
                 input {
                     width: auto !important;
@@ -196,7 +219,7 @@
         #container .breadcrumbs + .messagelist + #content,
         #container .breadcrumbs + #content {
             // make sure that margin is same as on modal window
-            margin-left: 20px !important;
+            margin-inline-start: 20px !important;
         }
         .colM {
             box-shadow: none;
@@ -212,18 +235,22 @@
                 padding: 0 !important;
             }
             ul {
-                margin: 10px -20px 0;
+                margin-block: 10px 0;
+                margin-inline: -20px;
                 li {
-                    padding: 10px 0 10px 20px;
+                    padding-block: 10px;
+                    padding-inline: 20px 0;
                 }
                 ul {
-                    margin: 10px 0 -10px -20px;
+                    margin-block: 10px -10px;
+                    margin-inline: -20px 0;
                     li {
-                        padding: 10px 0 10px 20px;
+                        padding-block: 10px;
+                        padding-inline: 20px 0;
                     }
                     ul {
-                        margin-left: 0;
-                        margin-right: 0;
+                        margin-inline-start: 0;
+                        margin-inline-end: 0;
                     }
                 }
             }
