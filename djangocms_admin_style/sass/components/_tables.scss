@@ -292,6 +292,8 @@
     }
     .paginator {
         box-shadow: none !important;
+        padding-left: 10px;
+        box-sizing: border-box;
     }
     fieldset table {
         border: none;
