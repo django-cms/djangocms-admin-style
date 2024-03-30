@@ -7,16 +7,10 @@ jobs:
     name: ruff
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-      - name: Install ruff
-        run: pip install --upgrade ruff
-      - name: Run ruff
-        uses: liskin/gh-problem-matcher-wrap@v1
-        with:
-          linters: ruff
-          run: ruff
+      - uses: actions/checkout@v4
+
+      - run: python -Im pip install --user ruff
+
+      - name: Run ruff on djangocms-admin-style
+        run: ruff --output-format=github djangocms_admin_style
+
