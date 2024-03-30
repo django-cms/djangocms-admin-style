@@ -84,7 +84,7 @@ body.login.djangocms-admin-style {
                 .submit-row {
                     float: right;
                     [dir="rtl"] & {
-                        float: right;
+                        float: left;
                     }
                     width: 100%;
                     padding: 0 !important;
@@ -97,7 +97,7 @@ body.login.djangocms-admin-style {
                         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
                         float: right;
                         [dir="rtl"] & {
-                            float: right;
+                            float: left;
                         }
                         width: auto !important;
                         padding: 10px 20px !important;

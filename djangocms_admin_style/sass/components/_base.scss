@@ -83,11 +83,8 @@ a.btn {
 
 .button.default, input[type=submit].default, .submit-row input.default {
     float: right;
-}
-
-[dir="rtl"] {
-    .button.default, input[type=submit].default, .submit-row input.default {
-        float: right;
+    [dir="rtl"] & {
+        float: left;
     }
 }
 
@@ -100,6 +97,9 @@ a.btn {
     .deletelink-box, .deletelink {
         display: inline-block;
         float: left;
+        [dir="rtl"] & {
+            float: right;
+        }
     }
     a.deletelink {
         margin-inline-start: 10px;
@@ -116,10 +116,6 @@ a.btn {
             margin-inline-start: 10px;
         }
     }
-}
-
-[dir="rtl"] .submit-row .deletelink-box, .deletelink {
-    float: right;
 }
 
 .cms-btn-group {
@@ -169,6 +165,9 @@ a:link {
 // make sure that cancel link has correct height #261
 a.button.cancel-link {
     float: right;
+    [dir="rtl"] & {
+        float: left;
+    }
     font-family: $base-font-family;
     display: inline-block;
     line-height: 34px !important;
@@ -176,10 +175,6 @@ a.button.cancel-link {
     margin-inline: 10px;
     margin-top: 0;
     padding: 0 20px !important
-}
-
-[dir="rtl"] a.button.cancel-link {
-    float: left;
 }
 
 // resets general list styles for object-tool list elements
@@ -337,7 +332,7 @@ ul.messagelist {
         border-bottom: 0;
         &:before {
             position: absolute;
-            inset-line-start: 10px;
+            inset-inline-start: 10px;
             font-size: 18px !important;
             margin-right: 20px !important;
         }
