@@ -61,6 +61,9 @@ body.login.djangocms-admin-style {
                     padding-bottom: 10px;
                     label {
                         float: left !important;
+                        [dir="rtl"] & {
+                            float: right !important;
+                        }
                         font-size: $font-size-normal;
                         line-height: $line-height-normal;
                     }
@@ -80,16 +83,22 @@ body.login.djangocms-admin-style {
                 }
                 .submit-row {
                     float: right;
+                    [dir="rtl"] & {
+                        float: right;
+                    }
                     width: 100%;
                     padding: 0 !important;
                     margin-top: 10px;
-                    margin-right: 0;
+                    margin-inline-end: 0;
                     background: none;
                     border-top: 0;
                     input,
                     input[type="submit"] {
                         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
                         float: right;
+                        [dir="rtl"] & {
+                            float: right;
+                        }
                         width: auto !important;
                         padding: 10px 20px !important;
                         background-image: none;

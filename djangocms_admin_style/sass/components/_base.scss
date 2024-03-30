@@ -4,19 +4,18 @@
 body {
     background-color: $gray-lightest;
     h1 {
-        margin-left: 0 !important;
+        margin-inline-start: 0 !important;
     }
     .module {
         h2 {
-            padding-left: 0;
+            padding-inline-start: 0;
         }
         p {
-            padding-left: 0;
-            padding-right: 0;
-            margin-left: 0 !important;
+            padding-inline: 0;
+            margin-inline-start: 0 !important;
         }
         table {
-            margin-bottom: 20px !important;
+            margin-block-end: 20px !important;
         }
     }
 }
@@ -74,7 +73,7 @@ h6 {
 
 ul,
 ol {
-    margin-left: 20px;
+    margin-inline-start: 20px;
 }
 
 // buttons and links
@@ -86,9 +85,15 @@ a.btn {
     float: right;
 }
 
+[dir="rtl"] {
+    .button.default, input[type=submit].default, .submit-row input.default {
+        float: right;
+    }
+}
+
 .submit-row {
     display: block;
-    text-align: right;
+    text-align: end;
     input {
         display: inline-block;
     }
@@ -97,7 +102,7 @@ a.btn {
         float: left;
     }
     a.deletelink {
-        margin-left: 10px;
+        margin-inline-start: 10px;
         display: inline-block;
     }
     .btn {
@@ -108,10 +113,15 @@ a.btn {
         vertical-align: top;
         align-items: center;
         & + .btn {
-            margin-left: 10px;
+            margin-inline-start: 10px;
         }
     }
 }
+
+[dir="rtl"] .submit-row .deletelink-box, .deletelink {
+    float: right;
+}
+
 .cms-btn-group {
     @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
     display: inline-block;
@@ -126,7 +136,7 @@ a.btn {
     }
     // last-child stands for advanced button
     &:last-child {
-        margin-left: -4px;
+        margin-inline-start: -4px;
         border-radius: 0 3px 3px 0 !important;
     }
 }
@@ -163,11 +173,15 @@ a.button.cancel-link {
     display: inline-block;
     line-height: 34px !important;
     height: 34px !important;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-inline: 10px;
     margin-top: 0;
     padding: 0 20px !important
 }
+
+[dir="rtl"] a.button.cancel-link {
+    float: left;
+}
+
 // resets general list styles for object-tool list elements
 .colM ul:not(.object-tools):not(.messagelist) {
     margin: 20px 0 25px;
@@ -193,10 +207,9 @@ a.button.cancel-link {
         }
         // 3rd level list
         ul {
-            margin-left: 20px;
+            margin-inline-start: 20px;
             li {
-                padding-left: 0;
-                padding-right: 0;
+                padding-inline: 0;
             }
         }
     }
@@ -209,7 +222,7 @@ p,
     color: $gray !important;
     font-weight: normal;
     margin-bottom: 10px;
-    padding-left: 0;
+    padding-inline-start: 0;
 }
 .datetimeshortcuts {
     font-size: $font-size-small !important;
@@ -324,7 +337,7 @@ ul.messagelist {
         border-bottom: 0;
         &:before {
             position: absolute;
-            left: 10px;
+            inset-line-start: 10px;
             font-size: 18px !important;
             margin-right: 20px !important;
         }

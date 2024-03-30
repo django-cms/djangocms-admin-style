@@ -29,7 +29,7 @@ body {
             a {
                 color: $color-primary;
                 &:first-child {
-                    padding-left: 0;
+                    padding-inline-start: 0;
                 }
                 &:hover {
                     color: $color-primary-dark !important;
@@ -40,7 +40,7 @@ body {
         .breadcrumbs + .messagelist + #content,
         .breadcrumbs + #content {
             // calculates correct width by removing margin left and right
-            margin-left: calc(3% + 10px) !important;
+            margin-inline-start: calc(3% + 10px) !important;
         }
     }
 }
@@ -54,7 +54,7 @@ ul.messagelist + #content {
     margin: $content-margin-top 3% 0 !important;
     padding: 0 !important;
     &.colMS {
-        margin-right: 35% !important;
+        margin-inline-end: 35% !important;
     }
     .module {
         padding: 0;
@@ -73,7 +73,7 @@ ul.messagelist + #content {
     // reset table styles in applications group #193
     table {
         width: 100% !important;
-        margin-left: 0 !important;
+        margin-inline-start: 0 !important;
         box-shadow: none;
     }
 }
@@ -140,7 +140,7 @@ ul.messagelist + #content {
     font-size: $font-size-normal;
     font-weight: normal;
     line-height: $font-size-normal;
-    padding-left: 0;
+    padding-inline-start: 0;
     letter-spacing: 0;
     background: none;
 }
@@ -196,7 +196,7 @@ ul.messagelist + #content {
         a {
             color: $color-success;
             font-size: $font-size-normal !important;
-            padding-left: 0 !important;
+            padding-inline-start: 0 !important;
             background: none !important;
             &:before {
                 color: $color-success;
@@ -317,14 +317,14 @@ ul.messagelist + #content {
         padding: 10px 20px !important;
         height: 36px;
         &.default {
-            margin-left: 10px;
+            margin-inline-start: 10px;
             padding: 10px 20px !important;
         }
     }
     input {
         width: auto !important;
         height: 36px;
-        margin-left: 10px;
+        margin-inline-start: 10px;
     }
 }
 
@@ -353,11 +353,11 @@ ul.messagelist + #content {
             display: inline-block;
             position: relative;
             line-height: 20px;
-            padding-left: 20px !important;
+            padding-inline-start: 20px !important;
             input {
                 position: relative;
                 top: auto;
-                margin-left: -20px;
+                margin-inline-start: -20px;
             }
         }
     }
@@ -378,7 +378,7 @@ ul.messagelist + #content {
         }
         img {
             position: absolute;
-            right: 0;
+            inset-inline-end: 0;
             margin: 0;
 
             order: 2;
@@ -464,8 +464,7 @@ ul.messagelist + #content {
         }
     }
     .selector-filter {
-        padding-right: 0;
-        padding-left: 0;
+        padding-inline: 0;
         border: none;
         padding: 3px 0;
         label {
@@ -514,7 +513,7 @@ ul.messagelist + #content {
         a {
             display: inline-block;
             vertical-align: middle;
-            margin-right: 0;
+            margin-inline-end: 0;
             margin-bottom: 0;
         }
     }
@@ -558,17 +557,17 @@ a.addlink {
         }
     }
     a:before {
-        margin-left: -5px;
+        margin-inline-start: -5px;
     }
 }
 
 // object tools
 .object-tools {
     float: right;
-    text-align: right;
+    text-align: end;
     // make sure that buttons are aligned with title
     margin-top: -54px;
-    margin-left: 0;
+    margin-inline-start: 0;
     background: $gray-lightest;
     white-space: nowrap;
     &:before {
@@ -577,14 +576,14 @@ a.addlink {
         top: 0;
         bottom: 0;
         width: 20px;
-        left: -20px;
+        inset-inline-start: -20px;
         background: linear-gradient(to right, rgba($gray-lightest, 0), $gray-lightest);
     }
     li {
         display: inline-block;
         float: none;
         height: auto;
-        margin-left: 10px;
+        margin-inline-start: 10px;
         list-style: none;
         background: none;
         &:hover {
@@ -594,7 +593,7 @@ a.addlink {
             @include button-variant($btn-default-color, $btn-default-bgcolor, $btn-default-border, true);
             line-height: inherit !important;
             height: auto !important;
-            margin-right: 0 !important;
+            margin-inline-end: 0 !important;
         }
     }
     .addlink {
@@ -616,6 +615,10 @@ a.addlink {
     .viewsitelink {
         @include button-variant($btn-action-color, $btn-action-bgcolor, $btn-action-border, true);
     }
+}
+
+[dir="rtl"] .object-tools {
+    float: left;
 }
 
 // tools need to be visible on an apphook page #202
@@ -664,6 +667,10 @@ a.addlink {
     }
 }
 
+[dir="rtl"] .delete-confirmation .colM input[type="submit"] {
+    float: left;
+}
+
 // cms pagelist
 #sitemap li a.addlink,
 #sitemap li a.deletelink {
@@ -675,6 +682,12 @@ a.addlink {
         float: left;
         line-height: $font-size-large !important;
         margin: 6px 0 0 15px !important;
+    }
+}
+
+[dir="rtl"] {
+    .tree .col1 .changelink {
+        float: right;
     }
 }
 
@@ -737,7 +750,7 @@ a.addlink {
 #lang_tab_content h2.header {
     position: relative;
     margin-bottom: -3px !important;
-    border-top-right-radius: $border-radius-base;
+    border-start-end-radius: $border-radius-base;
     background: $color-primary !important;
 }
 
@@ -769,7 +782,7 @@ a.addlink {
         }
         .deletelink {
             display: inline;
-            right: -3px !important;
+            inset-inline-end: -3px !important;
             bottom: 0 !important;
             margin: 0;
             padding: 0 0 0 12px !important;
@@ -785,12 +798,11 @@ a.addlink {
     > .current {
         color: $white !important;
         text-shadow: 0 1px 1px rgba($black-fallback, 0.2);
-        padding-right: 20px !important;
-        padding-left: 20px !important;
+        padding-inline: 20px !important;
         background: $color-primary;
     }
     > .current .deletelink {
-        right: -12px !important;
+        inset-inline-end: -12px !important;
     }
 }
 .inline-group .nani-language-tabs {
@@ -799,8 +811,7 @@ a.addlink {
         padding: 4px 10px !important;
     }
     > .current {
-        padding-right: 20px !important;
-        padding-left: 20px !important;
+        padding-inline: 20px !important;
     }
     > .available {
         background: $gray-lighter;

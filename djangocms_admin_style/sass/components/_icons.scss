@@ -46,7 +46,7 @@ a[id*="clocklink"],
         @extend %icon;
         font-size: $font-size-large;
         vertical-align: middle;
-        margin-right: 5px;
+        margin-inline-end: 5px;
     }
 }
 
@@ -168,12 +168,12 @@ a[id*="clocklink"] {
 .addlink,
 .changelink,
 .deletelink {
-    padding-left: 15px;
+    padding-inline-start: 15px;
 }
 
 // Viewlink uses a django supplied icon, we need to ensure that we don't override it's styling
 .viewlink {
-    padding-left: 15px !important;
+    padding-inline-start: 15px !important;
 }
 
 .related-lookup,

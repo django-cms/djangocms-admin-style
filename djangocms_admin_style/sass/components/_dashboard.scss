@@ -5,7 +5,7 @@ body.dashboard {
     background-color: $white;
     h1 {
         // make sure that title is aligned with categories
-        margin-left: 10px !important;
+        margin-inline-start: 10px !important;
     }
     .breadcrumbs {
         padding: $breadcrumb-padding 10px !important;
@@ -67,17 +67,17 @@ body.dashboard {
     }
     #content-related {
         position: absolute;
-        right: 0;
+        inset-inline-end: 0;
         top: 0;
         bottom: 0;
         height: 100%;
         width: 25%;
         padding-top: 135px;
         margin: 0;
-        border-left: 1px solid $gray-lighter;
+        border-inline-start: 1px solid $gray-lighter;
         background-color: $gray-lightest;
         .module {
-            margin-left: 0;
+            margin-inline-start: 0;
             padding: 0 30px 10px !important;
             background-color: transparent;
             ul.actionlist {
@@ -91,11 +91,11 @@ body.dashboard {
                     margin-bottom: 0;
                     border-bottom: solid 1px $gray-lighter;
                     a {
-                        padding-right: 10px;
+                        padding-inline-end: 10px;
                     }
                     &:before {
                         position: absolute;
-                        left: 15px;
+                        inset-inline-start: 15px;
                         top: 50%;
                         font-size: $font-size-normal;
                         margin-top: -9px;
