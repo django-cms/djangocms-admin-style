@@ -18,6 +18,9 @@ body {
             margin-block-end: 20px !important;
         }
     }
+    .skip-to-content-link {
+        display: none;  // hide skip to main content link in newer django admin versions
+    }
 }
 
 
