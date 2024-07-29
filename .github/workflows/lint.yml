@@ -12,5 +12,5 @@ jobs:
       - run: python -Im pip install --user ruff
 
       - name: Run ruff on djangocms-admin-style
-        run: ruff --output-format=github djangocms_admin_style
+        run: ruff check --output-format=github djangocms_admin_style
 
