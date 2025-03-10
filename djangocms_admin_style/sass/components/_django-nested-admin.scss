@@ -9,8 +9,8 @@
         padding-top: 10px;
     }
     .djn-items {
-        border-left: 5px solid $gray-lighter !important;
-        margin-left: 0;
+        border-inline-start: 5px solid $gray-lighter !important;
+        margin-inline-start: 0;
     }
     .djn-tr td {
         vertical-align: top !important;
@@ -23,7 +23,7 @@
     .djn-tr td .datetimeshortcuts {
         margin-left: 10px;
         a {
-            margin-right: 5px;
+            margin-inline-end: 5px;
         }
         a:before {
             line-height: 0;

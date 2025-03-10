@@ -39,8 +39,8 @@
     .results #result_list {
         box-shadow: none;
         .related-widget-wrapper a.change-related {
-            margin-right: 0;
-            margin-left: 5px;
+            margin-inline-start: 5px;
+            margin-inline-end: 0;
         }
     }
     #toolbartable .paginator {
@@ -76,9 +76,9 @@
                 overflow-y: auto;
                 width: $filtered-filter-width !important;
                 max-height: 585px;
-                margin-left: $filtered-filter-margin;
-                padding-right: $filtered-filter-padding;
-                padding-left: 0;
+                margin-inline-start: $filtered-filter-margin;
+                padding-inline-end: $filtered-filter-padding;
+                padding-inline-start: 0;
 
                 h2 {
                     letter-spacing: 0;
@@ -98,11 +98,11 @@
             .paginator {
                 // calculates correct width because of margin right
                 width: calc(100% - #{$filter-changelist-margin}) !important;
-                border-right: 0;
+                border-inline-end: 0;
                 box-shadow: $base-box-shadow;
             }
             .actions {
-                margin-right: $filtered-filter-width !important;
+                margin-inline-end: $filtered-filter-width !important;
             }
 
             .changelist-form-container {
@@ -178,6 +178,9 @@
             // makes sure that if admin cations are visible that toolbar floats to position next to actions #275, #285
             &.actions-visible {
                 float: left;
+                [dir="rtl"] & {
+                    float: right;
+                }
                 margin-bottom: 5px !important;
             }
         }
@@ -185,17 +188,20 @@
             // resets position to float filter next to changelist
             position: static;
             float: right;
+            [dir="rtl"] & {
+                float: left;
+            }
             min-height: 100%;
             margin-top: 8px;
             border-left: 0;
-            border-top-right-radius: $border-radius-base;
-            border-bottom-right-radius: $border-radius-base;
+            border-start-end-radius: $border-radius-base;
+            border-end-end-radius: $border-radius-base;
             background-color: $gray-lightest !important;
             h2,
             h3 {
                 margin-bottom: 15px !important;
                 padding-bottom: 10px !important;
-                padding-left: 0 !important;
+                padding-inline-start: 0 !important;
                 border-bottom: solid 1px $gray-lighter;
             }
             h2 {
@@ -215,8 +221,8 @@
             ul {
                 font-size: $font-size-small;
                 margin-bottom: 10px;
-                margin-left: 0 !important;
-                padding-left: 0;
+                margin-inline-start: 0 !important;
+                padding-inline-start: 0;
                 padding-bottom: 0;
                 border-bottom: none;
             }
@@ -225,9 +231,9 @@
                 margin-bottom: 15px;
                 &.selected {
                     font-weight: bold;
-                    margin-left: 0 !important;
-                    padding-left: 0 !important;
-                    border-left: 0 !important;
+                    margin-inline-start: 0 !important;
+                    padding-inline-start: 0 !important;
+                    border-inline-start: 0 !important;
                     a {
                         color: $color-primary !important;
                     }
@@ -245,7 +251,7 @@
                 width: 257px !important;
                 font-size: 12px;
                 margin-top: 3px;
-                margin-right: 10px;
+                margin-inline-end: 10px;
                 padding: 6px 40px 6px 20px;
                 border: 1px solid $gray-lighter;
                 border-radius: $border-radius-base;
@@ -255,7 +261,7 @@
                 // make sure that only icon is displayed
                 font: 0/0 a;
                 margin-bottom: 0;
-                margin-left: 0;
+                margin-inline-start: 0;
             }
             button {
                 font-family: $base-font-family;
@@ -263,7 +269,7 @@
                 vertical-align: bottom;
                 height: 36px;
                 margin-top: 0;
-                margin-right: 10px;
+                margin-inline-end: 10px;
                 margin-bottom: 0;
                 padding: 10px 15px !important;
                 box-shadow: none;
@@ -286,14 +292,17 @@
             li {
                 display: inline;
                 float: left;
+                [dir="rtl"] & {
+                    float: right;
+                }
                 color: $gray-darkest;
                 font-size: $font-size-normal;
                 font-weight: normal;
                 text-transform: uppercase;
-                margin-left: 25px;
+                margin-inline-start: 25px;
                 cursor: pointer;
                 &:first-child {
-                    margin-left: 0;
+                    margin-inline-start: 0;
                 }
             }
             a {
@@ -327,7 +336,7 @@
             vertical-align: middle;
             margin-top: 2px;
             // adds space between search field and checkbox #216
-            margin-left: 10px;
+            margin-inline-start: 10px;
             + label {
                 display: inline-block !important;
                 color: $gray-light !important;
@@ -339,7 +348,7 @@
             display: inline-block;
             margin-top: 5px;
         }
-        input[type="chekbox"] {
+        input[type="checkbox"] {
             display: block;
         }
         input[type="submit"] {
@@ -347,7 +356,7 @@
             vertical-align: middle;
             text-indent: -9999px;
             box-sizing: border-box;
-            margin-left: 10px !important;
+            margin-inline-start: 10px !important;
             padding: 10px 16px !important;
             background-image: url("../img/icon_search_white@2x.png") !important;
             background-repeat: no-repeat !important;
@@ -373,21 +382,21 @@
         text-transform: uppercase;
         width: 175px;
         margin-bottom: 5px;
-        padding-left: 25px;
-        border-left: 0;
+        padding-inline-start: 25px;
+        border-inline-start: 0;
         background: url("../img/icon_arrow_down.png") no-repeat left center;
         background-size: 25px;
         + #changelist-filter {
             position: absolute;
             top: 30px;
             margin-top: 1px;
-            padding-left: 15px !important;
+            padding-inline-start: 15px !important;
         }
     }
     // select field when multiple sites are available #201
     #site-selector {
         margin-top: -18px;
-        margin-left: 0;
+        margin-inline-start: 0;
     }
 }
 
@@ -419,7 +428,7 @@
             }
             .text {
                 float: none;
-                padding-right: 0;
+                padding-inline-end: 0;
                 a {
                     padding: 0 !important;
                 }
@@ -427,6 +436,9 @@
             .sortoptions {
                 display: inline-block;
                 float: right;
+                [dir="rtl"] & {
+                    float: left;
+                }
                 padding-top: 0;
                 a.sortremove {
                     &:after {
@@ -455,7 +467,7 @@ a.lang-code {
     font-size: $font-size-small !important;
     font-weight: bold !important;
     text-transform: uppercase;
-    margin-right: 10px !important;
+    margin-inline-end: 10px !important;
     padding: 2px 8px !important;
     border: solid 1px $gray-lighter;
     border-radius: 10px !important;
