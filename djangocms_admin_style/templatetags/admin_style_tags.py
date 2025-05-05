@@ -5,7 +5,6 @@ from django.template.defaultfilters import conditional_escape
 from django.template.loader import render_to_string
 from django.utils.translation import gettext
 
-
 # We follow the Semantic versioning convention
 # minor - Refers to the minor release track (3.x.1)
 # patch - Refers to the patch release track (3.4.x)
