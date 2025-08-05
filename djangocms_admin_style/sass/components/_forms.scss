@@ -13,11 +13,11 @@ form {
     // Newer Django admin styles use flexbox, we do not
     .flex-container {
         display: block;
-        margin-right: 20px;
+        margin-inline-end: 20px;
     }
     .flex-container.form-multiline {
         display: flex;
-        margin-right: 0;
+        margin-inline-end: 0;
         div.fieldBox {
             display: block;
             //margin-right: 0;
@@ -27,7 +27,7 @@ form {
         }
     }
     fieldset.module > h2 {
-        margin-right: 20px;
+        margin-inline-end: 20px;
     }
 
     // only uses this styles if form-row is not set on a table row because before and after breaks tables #247
@@ -60,10 +60,10 @@ form {
             font-size: $font-size-large;
             line-height: $font-size-large;
             margin: 10px 0;
-            padding-left: 30px;
+            padding-inline-start: 30px;
             &:before {
                 position: absolute;
-                left: 0;
+                inset-inline-start: 0;
                 color: $gray;
             }
         }
@@ -126,7 +126,7 @@ form {
         .form-multiline > div:not(.related-widget-wrapper,
         .form-multiline > div:not([class]) > div:not(.related-widget-wrapper),
         .cke, .widget) {
-            margin-right: 0px;
+            margin-inline-end: 0px;
             box-sizing: border-box;
             width: 50%;
             max-width: 500px;
@@ -173,7 +173,7 @@ form {
     .form-row .datetime {
         input.vDateField,
         input.vTimeField {
-            margin-left: 0; // django 1.9
+            margin-inline-start: 0; // django 1.9
             margin-bottom: 0; // django 1.9
         }
 
@@ -193,8 +193,8 @@ form {
     }
     & {
         .field-number_of_visits p {
-            margin-left: 0;
-            padding-left: 0;
+            margin-inline-start: 0;
+            padding-inline-start: 0;
         }
         div.help,
         p.help {
@@ -202,7 +202,7 @@ form {
             color: $gray;
             font-size: $font-size-small !important;
             margin-top: 7px !important;
-            margin-left: 2px !important;
+            margin-inline-start: 2px !important;
             margin-bottom: 0;
             padding: 0 !important;
         }
@@ -213,12 +213,12 @@ form {
         input + div.help,
         textarea + div.help,
         select + div.help {
-            padding-left: 0;
-            margin-left: 0;
+            padding-inline-start: 0;
+            margin-inline-start: 0;
         }
         div + div.help {
-            margin-left: 0px;
-            padding-left: 0px;
+            margin-inline-start: 0px;
+            padding-inline-start: 0px;
         }
         label {
             padding: 0 !important;
@@ -231,7 +231,7 @@ form {
             }
         }
         label + label {
-            margin-left: 10px;
+            margin-inline-start: 10px;
         }
     }
     .vCheckboxLabel,
@@ -249,7 +249,7 @@ form {
     }
     .field-type label {
         margin-top: 10px !important;
-        margin-left: 2px !important;
+        margin-inline-start: 2px !important;
     }
     .sortedm2m a {
         vertical-align: middle;
@@ -284,7 +284,7 @@ form {
     label select {
         display: block;
         margin-top: 5px;
-        margin-left: 0 !important;
+        margin-inline-start: 0 !important;
     }
     label,
     label.aligned {
@@ -306,14 +306,13 @@ form {
         }
         &.btn {
             float: left !important;
+            [dir=rtl] & {
+                float: right !important;
+            }
             // FABR: ! Important conflicts with unfilled buttons
             color: $white; // !important;
             padding-block: 6px !important;
             padding-inline: 12px !important;
-
-            [dir=rtl] & {
-                float: right !important;
-            }
         }
         &.btn-default,
         &.btn-link {
@@ -331,11 +330,10 @@ form {
         // overriding admin style rtl.css
         // to match the style of djangocms-admin-style
         div.help {
-            margin-right: 0px !important;
+            margin-inline-end: 0px !important;
         }
         .form-row input[type="text"] {
-            margin-right: 0px !important;
-            margin-left: 0px !important;
+            margin-inline: 0px !important;
         }
     }
     // input
@@ -387,14 +385,14 @@ form {
         padding: 6px;
         border: 1px solid $gray-lighter;
         border-radius: $border-radius-base;
-        background: $white url("../img/icon_arrow_down.png") no-repeat right center !important;
+        background: $white url("../img/icon_arrow_down.png") no-repeat inline-end center !important;
         background-size: 25px !important;
 
         appearance: none;
 
         [dir=rtl] & {
             // The png has a left padding of 30px. Its width is reduced from 60px to 25px
-            // so the right possition should start from 12.5px (30*25/60)
+            // so the right position should start from 12.5px (30*25/60)
             background-position: 12.5px center !important;
         }
     }
@@ -405,10 +403,10 @@ form {
         margin-top: 10px !important;
     }
     small {
-        margin-left: 15px;
+        margin-inline-start: 15px;
     }
     .form-controls {
-        text-align: right;
+        text-align: end;
         margin: 15px 0 0 0;
         p {
             margin-top: 6px;
@@ -422,7 +420,10 @@ form {
     .extra {
         .right {
             float: right;
-            margin-right: 10px;
+            [dir=rtl] & {
+                float: left;
+            }
+            margin-inline-end: 10px;
         }
     }
     .errors {
@@ -556,7 +557,7 @@ form {
                 line-height: 22px;
             }
             .select2-arrow {
-                right: 9px;
+                inset-inline-end: 9px;
                 width: 17px;
                 border: none;
                 border-radius: 0;
@@ -568,7 +569,7 @@ form {
             }
             .select2-search-choice-close {
                 top: 10px;
-                right: 35px;
+                inset-inline-end: 35px;
             }
         }
     }
@@ -623,7 +624,7 @@ form {
         padding: 10px 40px 10px 20px !important;
         border: 1px solid $gray-lighter !important;
         border-radius: $border-radius-base !important;
-        background: url("../img/select2.png") no-repeat right -27px !important;
+        background: url("../img/select2.png") no-repeat inline-end -27px !important;
         background-size: 50px !important;
     }
 }
@@ -667,8 +668,8 @@ a.button {
         font-size: $font-size-normal !important;
         font-weight: normal;
         line-height: 36px;
-        margin-left: 0;
-        padding-left: 0;
+        margin-inline-start: 0;
+        padding-inline-start: 0;
     }
 }
 
@@ -773,10 +774,10 @@ div.calendarbox {
             font-size: $font-size-small !important;
             width: auto;
             margin-top: 0 !important;
-            margin-right: 5px !important;
+            margin-inline-end: 5px !important;
             padding: 9px 10px !important;
             &:first-child {
-                margin-left: 5px;
+                margin-inline-start: 5px;
             }
         }
     }
@@ -857,7 +858,7 @@ span.datetimeshortcuts,
     display: inline-block;
     font-size: 0 !important;
     padding: 4px 0 !important;
-    margin-left: 0 !important;
+    margin-inline-start: 0 !important;
 
     a {
         @include button-variant($btn-action-bgcolor, $btn-action-color, $btn-default-border, true);
@@ -875,7 +876,7 @@ span.datetimeshortcuts,
         }
 
         &:not(:last-child) {
-            margin-right: 5px;
+            margin-inline-end: 5px;
         }
     }
 }
@@ -907,7 +908,7 @@ form select[multiple] {
     }
     .btn {
         width: 10%;
-        margin-left: 1%;
+        margin-inline-start: 1%;
         padding: 0 !important;
     }
 }
@@ -961,24 +962,27 @@ form select[multiple] {
     // makes sure that related widget wrapper links are floated next to select field #315
     select {
         float: left;
+        [dir=rtl] & {
+            float: right;
+        }
         min-width: inherit !important;
-        padding-right: 35px !important;
-        margin-right: 10px !important;
+        padding-inline-end: 35px !important;
+        margin-inline-end: 10px !important;
     }
     select + .related-widget-wrapper-link,
     .related-widget-wrapper-link + .related-widget-wrapper-link {
         margin: 0;
     }
     .related-widget-wrapper-link + .related-widget-wrapper-link + .related-widget-wrapper-link {
-        margin-left: 5px;
-        margin-right: 0;
+        margin-inline-start: 5px;
+        margin-inline-end: 0;
     }
     a {
         margin-top: 0;
         &.change-related {
-            margin-right: 5px;
+            margin-inline-end: 5px;
             &:last-child {
-                margin-right: 0;
+                margin-inline-end: 0;
             }
         }
     }
@@ -1004,7 +1008,7 @@ form select[multiple] {
         &.inline {
             @include micro-clearfix;
             li {
-                margin-right: 10px;
+                margin-inline-end: 10px;
                 border: 0;
             }
         }
