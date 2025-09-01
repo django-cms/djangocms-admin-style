@@ -15,7 +15,7 @@ repos:
         args: ["--py39-plus"]
 
   - repo: https://github.com/adamchainz/django-upgrade
-    rev: '1.25.0'
+    rev: '1.27.0'
     hooks:
       - id: django-upgrade
         args: [--target-version, "3.2"]
@@ -26,7 +26,7 @@ repos:
       - id: yesqa
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-merge-conflict
       - id: debug-statements
@@ -39,7 +39,7 @@ repos:
       - id: codespell
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.7
+    rev: v0.12.11
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
