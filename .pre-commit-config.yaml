@@ -39,11 +39,11 @@ repos:
       - id: codespell
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.11
+    rev: v0.12.12 # Use the desired Ruff version
     hooks:
-      - id: ruff
-        args: [--fix, --exit-non-zero-on-fix]
-      - id: ruff-format
+      - id: ruff-check # For linting checks
+        args: [--fix] # Optional: automatically fix fixable issues
+      - id: ruff-format # For code formatting
 
   - repo: https://github.com/rstcheck/rstcheck
     rev: v6.2.5
