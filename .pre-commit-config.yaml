@@ -9,13 +9,13 @@ ci:
 
 repos:
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.20.0
+    rev: v3.21.2
     hooks:
       - id: pyupgrade
         args: ["--py39-plus"]
 
   - repo: https://github.com/adamchainz/django-upgrade
-    rev: '1.27.0'
+    rev: '1.29.1'
     hooks:
       - id: django-upgrade
         args: [--target-version, "3.2"]
@@ -39,7 +39,7 @@ repos:
       - id: codespell
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.12 # Use the desired Ruff version
+    rev: v0.14.7 # Use the desired Ruff version
     hooks:
       - id: ruff-check # For linting checks
         args: [--fix] # Optional: automatically fix fixable issues
