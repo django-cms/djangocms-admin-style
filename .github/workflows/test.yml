@@ -16,7 +16,7 @@ jobs:
           django-5.0.txt,
         ]
         os: [
-          ubuntu-20.04,
+          ubuntu-24.04,
         ]
         exclude:
         - requirements-file: django-5.0.txt
