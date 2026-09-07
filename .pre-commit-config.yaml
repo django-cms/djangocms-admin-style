@@ -15,7 +15,7 @@ repos:
         args: ["--py39-plus"]
 
   - repo: https://github.com/adamchainz/django-upgrade
-    rev: '1.31.1'
+    rev: '1.32.0'
     hooks:
       - id: django-upgrade
         args: [--target-version, "3.2"]
@@ -34,19 +34,19 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.2
+    rev: v2.4.3
     hooks:
       - id: codespell
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.20 # Use the desired Ruff version
+    rev: v0.16.6 # Use the desired Ruff version
     hooks:
       - id: ruff-check # For linting checks
         args: [--fix] # Optional: automatically fix fixable issues
       - id: ruff-format # For code formatting
 
   - repo: https://github.com/rstcheck/rstcheck
-    rev: v6.2.5
+    rev: v6.3.0
     hooks:
     - id: rstcheck
       additional_dependencies:
