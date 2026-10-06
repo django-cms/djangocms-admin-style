@@ -8,36 +8,32 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ '3.8', '3.9', '3.10', '3.11']
+        python-version: [ '3.9', '3.10', '3.11']
         requirements-file: [
-          django-2.2.txt,
-          django-3.2.txt,
           django-4.2.txt,
           django-5.0.txt,
         ]
         os: [
-          ubuntu-20.04,
+          ubuntu-latest,
         ]
         exclude:
-        - requirements-file: django-5.0.txt
-          python-version: 3.8
         - requirements-file: django-5.0.txt
           python-version: 3.9
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v6
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r tests/requirements/${{ matrix.requirements-file }}
-        python setup.py install
+        pip install .
 
     - name: Run coverage
-      run: coverage run setup.py test
+      run: coverage run tests/settings.py
 
     - name: Upload Coverage to Codecov
-      uses: codecov/codecov-action@v1
+      uses: codecov/codecov-action@v6

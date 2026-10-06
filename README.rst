@@ -145,7 +145,7 @@ You can run tests by executing::
     virtualenv env
     source env/bin/activate
     pip install -r tests/requirements/base.txt
-    python setup.py test
+    python tests/settings.py
 
 In order to run **integration tests** you need to have Docker installed,
 then run the following command::
