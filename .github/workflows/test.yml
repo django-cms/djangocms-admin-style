@@ -10,8 +10,6 @@ jobs:
       matrix:
         python-version: [ '3.8', '3.9', '3.10', '3.11']
         requirements-file: [
-          django-2.2.txt,
-          django-3.2.txt,
           django-4.2.txt,
           django-5.0.txt,
         ]
