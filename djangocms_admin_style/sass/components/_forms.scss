@@ -339,7 +339,8 @@ form {
         }
     }
     // input
-    input,
+    // Select2 manages its own search field inside Django's autocomplete widget.
+    input:not(.select2-search__field),
     textarea {
         color: $gray-darkest;
         font-size: $font-size-small;
@@ -510,7 +511,7 @@ form {
     }
 } // standard input width + default input padding
 
-.inline-group .module:not(.aligned) .form-row input,
+.inline-group .module:not(.aligned) .form-row input:not(.select2-search__field),
 .inline-group .module:not(.aligned) .form-row textarea:not(.cke_source) {
     width: auto !important;
 }
@@ -615,7 +616,7 @@ form {
 .select2-match {
     font-size: $font-size-normal !important;
 }
-.select2-search {
+.select2-search:not(.select2-search--inline) {
     padding: 10px !important;
     input {
         font-size: $font-size-small !important;
