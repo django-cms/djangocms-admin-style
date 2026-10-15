@@ -511,7 +511,7 @@ form {
     }
 } // standard input width + default input padding
 
-.inline-group .module:not(.aligned) .form-row input,
+.inline-group .module:not(.aligned) .form-row input:not(.select2-search__field),
 .inline-group .module:not(.aligned) .form-row textarea:not(.cke_source) {
     width: auto !important;
 }
