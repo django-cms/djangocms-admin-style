@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Unreleased
+==========
+
+* Clarify the update check's request to PyPI.org and its browser-cookie behavior.
+
 3.3.0 (2024-01-14)
 ==================
 
