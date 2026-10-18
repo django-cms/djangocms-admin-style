@@ -7,7 +7,7 @@ RUN apt-get update \
     build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
 
 # Node setup
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash -
 RUN apt install -y nodejs
 RUN npm install -g gulp@4
 

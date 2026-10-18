@@ -21,7 +21,7 @@ test:
 
 local:
 	@echo "> The reference files in "tests/screenshots" will differ locally from the Docker version (linux)."
-	@echo "> Make sure to run "npm install" using node 8 first."
+	@echo "> Make sure to run "npm install" using node 24 first."
 	@echo ""
 	make cleanup
 	pip install -r tests/requirements/django-$(VERSION).txt

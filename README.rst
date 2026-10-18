@@ -79,7 +79,7 @@ without sending the installed CMS version or check type. Dismissing a
 notification stores its version and check type in first-party browser cookies
 and suppresses further update checks for two weeks.
 
-To **compile CSS** run the following commands using **node 16**:
+To **compile CSS** run the following commands using **node 24**:
 
 * ``nvm use``
 * ``npm install``
