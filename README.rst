@@ -74,10 +74,10 @@ The following additional settings can be set:
   Set to ``('patch')`` to get only patch notifications.
   (minor = 3.x.x, patch = 3.4.x)
 
-The update checker sends the installed django CMS version and configured check
-type to PyPI.org to retrieve release metadata. Dismissing a notification stores
-its version and check type in browser cookies, along with a short-term
-suppression flag.
+The update checker requests the public django CMS release list from PyPI.org
+without sending the installed CMS version or check type. Dismissing a
+notification stores its version and check type in first-party browser cookies
+and suppresses further update checks for two weeks.
 
 To **compile CSS** run the following commands using **node 16**:
 
